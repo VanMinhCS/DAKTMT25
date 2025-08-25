@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090873.23 
+libarchive-native-3.6.2-r0: do_patch
+Elapsed time: 3.20 seconds
+utime: 28
+stime: 6
+cutime: 115
+cstime: 41
+IO rchar: 5684904
+IO wchar: 1523968
+IO syscr: 6935
+IO syscw: 1036
+IO read_bytes: 0
+IO write_bytes: 1581056
+IO cancelled_write_bytes: 4096
+rusage ru_utime: 0.28683
+rusage ru_stime: 0.061463
+rusage ru_maxrss: 108748
+rusage ru_minflt: 4335
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 144
+rusage ru_nvcsw: 69
+rusage ru_nivcsw: 56
+Child rusage ru_utime: 1.15693
+Child rusage ru_stime: 0.41482399999999997
+Child rusage ru_maxrss: 108748
+Child rusage ru_minflt: 126695
+Child rusage ru_majflt: 7
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 2944
+Child rusage ru_nvcsw: 1821
+Child rusage ru_nivcsw: 738
+Status: PASSED 
+Ended: 1756090876.44 

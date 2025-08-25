@@ -1,0 +1,83 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are []
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_fetch
+DEBUG: Executing python function base_do_fetch
+DEBUG: Trying PREMIRRORS
+DEBUG: For url ['https', 'ftp.gnu.org', '/gnu/gawk/gawk-5.1.1.tar.gz', '', '', OrderedDict()] comparing ['git', 'sourceware.org', '/git/glibc.git', '', '', OrderedDict()] to ['https', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['https', 'ftp.gnu.org', '/gnu/gawk/gawk-5.1.1.tar.gz', '', '', OrderedDict()] comparing ['git', 'sourceware.org', '/git/binutils-gdb.git', '', '', OrderedDict()] to ['https', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: Trying Upstream
+DEBUG: Fetching https://ftp.gnu.org/gnu/gawk/gawk-5.1.1.tar.gz using command '/usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/gawk-5.1.1.tar.gz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://ftp.gnu.org/gnu/gawk/gawk-5.1.1.tar.gz''
+DEBUG: Fetcher accessed the network with the command /usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/gawk-5.1.1.tar.gz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://ftp.gnu.org/gnu/gawk/gawk-5.1.1.tar.gz'
+DEBUG: Running export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gawk/5.1.1-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gawk/5.1.1-r0/recipe-sysroot/usr/bin/crossscripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gawk/5.1.1-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gawk/5.1.1-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gawk/5.1.1-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gawk/5.1.1-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; /usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/gawk-5.1.1.tar.gz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://ftp.gnu.org/gnu/gawk/gawk-5.1.1.tar.gz' --progress=dot -v
+--2025-08-25 03:02:21--  https://ftp.gnu.org/gnu/gawk/gawk-5.1.1.tar.gz
+Resolving ftp.gnu.org (ftp.gnu.org)... 209.51.188.20, 2001:470:142:3::b
+Connecting to ftp.gnu.org (ftp.gnu.org)|209.51.188.20|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 6257874 (6.0M) [application/x-gzip]
+Saving to: ‘/home/ubuntu/yocto/rpi-build/downloads/gawk-5.1.1.tar.gz.tmp’
+
+
+2025-08-25 03:03:16 (119 KB/s) - ‘/home/ubuntu/yocto/rpi-build/downloads/gawk-5.1.1.tar.gz.tmp’ saved [6257874/6257874]
+
+DEBUG: Searching for remove-sensitive-tests.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/gawk-5.1.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/gawk/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/gawk-5.1.1/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/gawk/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/gawk-5.1.1/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/gawk/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/gawk-5.1.1/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/gawk/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/gawk-5.1.1/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/gawk/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/gawk-5.1.1/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/gawk/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/files/
+DEBUG: Searching for run-ptest in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/gawk-5.1.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/gawk/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/gawk-5.1.1/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/gawk/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/gawk-5.1.1/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/gawk/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/gawk-5.1.1/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/gawk/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/gawk-5.1.1/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/gawk/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/gawk-5.1.1/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/gawk/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/files/
+DEBUG: Searching for CVE-2023-4156.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/gawk-5.1.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/gawk/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/gawk-5.1.1/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/gawk/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/gawk-5.1.1/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/gawk/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/gawk-5.1.1/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/gawk/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/gawk-5.1.1/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/gawk/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/gawk-5.1.1/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/gawk/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/gawk/files/
+DEBUG: Python function base_do_fetch finished
+DEBUG: Python function do_fetch finished

@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090968.25 
+pseudo-native-1.9.0+gitAUTOINC+28dcefb809-r0: do_patch
+Elapsed time: 0.27 seconds
+utime: 18
+stime: 2
+cutime: 15
+cstime: 6
+IO rchar: 1254584
+IO wchar: 275759
+IO syscr: 1646
+IO syscw: 262
+IO read_bytes: 0
+IO write_bytes: 294912
+IO cancelled_write_bytes: 4096
+rusage ru_utime: 0.181258
+rusage ru_stime: 0.028835999999999997
+rusage ru_maxrss: 110248
+rusage ru_minflt: 4293
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 128
+rusage ru_nvcsw: 22
+rusage ru_nivcsw: 2
+Child rusage ru_utime: 0.152368
+Child rusage ru_stime: 0.06885999999999999
+Child rusage ru_maxrss: 110248
+Child rusage ru_minflt: 29182
+Child rusage ru_majflt: 2
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 448
+Child rusage ru_nvcsw: 342
+Child rusage ru_nivcsw: 13
+Status: PASSED 
+Ended: 1756090968.52 

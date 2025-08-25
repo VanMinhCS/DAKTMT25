@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:libcap-ng-native:x86_64-linux:0.8.2:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 622f8b95a698ef6198acf7978b29ece61dc1e814c5e031b243ee99fa9e548640 ./deploy-source-date-epoch/__source_date_epoch.txt

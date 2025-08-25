@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090886.73 
+sqlite3-3_3.38.5-r0: do_fetch
+Elapsed time: 0.05 seconds
+utime: 21
+stime: 4
+cutime: 0
+cstime: 0
+IO rchar: 77323
+IO wchar: 66047
+IO syscr: 25
+IO syscw: 58
+IO read_bytes: 0
+IO write_bytes: 61440
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.214773
+rusage ru_stime: 0.041302
+rusage ru_maxrss: 108904
+rusage ru_minflt: 4042
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 120
+rusage ru_nvcsw: 0
+rusage ru_nivcsw: 7
+Child rusage ru_utime: 0.0
+Child rusage ru_stime: 0.0
+Child rusage ru_maxrss: 0
+Child rusage ru_minflt: 0
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 0
+Child rusage ru_nvcsw: 0
+Child rusage ru_nivcsw: 0
+Status: PASSED 
+Ended: 1756090886.79 

@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090848.58 
+libnsl2-native-2.0.0-r0: do_unpack
+Elapsed time: 1.02 seconds
+utime: 25
+stime: 5
+cutime: 27
+cstime: 15
+IO rchar: 4300113
+IO wchar: 243404
+IO syscr: 1565
+IO syscw: 215
+IO read_bytes: 221184
+IO write_bytes: 487424
+IO cancelled_write_bytes: 12288
+rusage ru_utime: 0.253762
+rusage ru_stime: 0.052502
+rusage ru_maxrss: 107916
+rusage ru_minflt: 8135
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 64
+rusage ru_nvcsw: 30
+rusage ru_nivcsw: 135
+Child rusage ru_utime: 0.278199
+Child rusage ru_stime: 0.158494
+Child rusage ru_maxrss: 107916
+Child rusage ru_minflt: 14238
+Child rusage ru_majflt: 3
+Child rusage ru_inblock: 432
+Child rusage ru_oublock: 888
+Child rusage ru_nvcsw: 45
+Child rusage ru_nivcsw: 165
+Status: PASSED 
+Ended: 1756090849.59 

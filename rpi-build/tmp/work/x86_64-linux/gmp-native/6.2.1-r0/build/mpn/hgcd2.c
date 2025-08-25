@@ -1,0 +1,1 @@
+../../gmp-6.2.1/mpn/generic/hgcd2.c

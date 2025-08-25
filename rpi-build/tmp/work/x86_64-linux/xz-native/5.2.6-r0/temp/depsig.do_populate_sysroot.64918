@@ -1,0 +1,65 @@
+OEOuthashBasic
+14
+autoconf-native: a082d55df4b7dac9894c5feaf9f362ebbbf3242ae22430b84c4e8dd6f794fd94
+automake-native: 14963faa76d47d1639f6c0b28acf6361fc204ea39070d937e3951fc646a0a957
+gettext-minimal-native: 0d39582068b641490d184ea9f722f819aafcee1d652d8d8c5248ab8e4971ea09
+gnu-config-native: dcfcdd2de1b71130dc89903a2fc775551b0256cdcd7880cbdc731dcb33a59563
+libtool-native: edf42e87001d7a64879d4959f5b66885251d0230f2a9095a0fb57a5e3f9993fb
+m4-native: 2e220b13b48306f3a02a7bf65e00356873aed6cd266e2e6ce4daa34264a50398
+quilt-native: 3057d956d8a64c8d0c95902855fb8674038582d1c445513dc0b3cc45351763ca
+texinfo-dummy-native: c19dfc74595ada505d502217fe29d7dea1eb64a849a4eeb895b475baa979ac9e
+SSTATE_PKGSPEC=sstate:xz-native:x86_64-linux:5.2.6:r0:x86_64:10:
+task=populate_sysroot
+drwx                                                                                       .
+drwx                                                                                       ./recipe-sysroot-native
+drwx                                                                                       ./recipe-sysroot-native/sysroot-providers
+-rw-                    9 41fcb0c9fd1b9f23e2c574407963725e868ecdc9e31964d11529add9eee4b99c ./recipe-sysroot-native/sysroot-providers/xz-native
+drwx                                                                                       ./recipe-sysroot-native/usr
+drwx                                                                                       ./recipe-sysroot-native/usr/bin
+lrwx                                                                                       ./recipe-sysroot-native/usr/bin/lzcat -> xz
+lrwx                                                                                       ./recipe-sysroot-native/usr/bin/lzcmp -> xzdiff
+lrwx                                                                                       ./recipe-sysroot-native/usr/bin/lzdiff -> xzdiff
+lrwx                                                                                       ./recipe-sysroot-native/usr/bin/lzegrep -> xzgrep
+lrwx                                                                                       ./recipe-sysroot-native/usr/bin/lzfgrep -> xzgrep
+lrwx                                                                                       ./recipe-sysroot-native/usr/bin/lzgrep -> xzgrep
+lrwx                                                                                       ./recipe-sysroot-native/usr/bin/lzless -> xzless
+lrwx                                                                                       ./recipe-sysroot-native/usr/bin/lzma -> xz
+-rwx                14440 d9c0ca1a202a2562f169483ed24dd952a73069712e09f0c16011f4b9b42887c1 ./recipe-sysroot-native/usr/bin/lzmadec
+-rwx                14432 b60003a9cf425c8ed3ca45d7a3483b72099b114a4f4fdbfb17b70a92902bdd0c ./recipe-sysroot-native/usr/bin/lzmainfo
+lrwx                                                                                       ./recipe-sysroot-native/usr/bin/lzmore -> xzmore
+lrwx                                                                                       ./recipe-sysroot-native/usr/bin/unlzma -> xz
+lrwx                                                                                       ./recipe-sysroot-native/usr/bin/unxz -> xz
+-rwx                80248 18e715854cf139f0a3bddfd1f3089cbeb89ec51aef98b4aba93a8fd53649ce9e ./recipe-sysroot-native/usr/bin/xz
+lrwx                                                                                       ./recipe-sysroot-native/usr/bin/xzcat -> xz
+lrwx                                                                                       ./recipe-sysroot-native/usr/bin/xzcmp -> xzdiff
+-rwx                14440 d28585fc6dca404118ce928b2fe1e0cad6f87b4b5ed09642112d2006a6674cf4 ./recipe-sysroot-native/usr/bin/xzdec
+-rwx                 7307 b6526d09d24c97ac9cc7b046efc9056eb904410dbe1056928fc7dafbf179e832 ./recipe-sysroot-native/usr/bin/xzdiff
+lrwx                                                                                       ./recipe-sysroot-native/usr/bin/xzegrep -> xzgrep
+lrwx                                                                                       ./recipe-sysroot-native/usr/bin/xzfgrep -> xzgrep
+-rwx                10293 d2cf18d6e564b8ddf2b6bb01f971d030e4bf35ac1855fc1d29e756a137ebc6cd ./recipe-sysroot-native/usr/bin/xzgrep
+-rwx                 1821 02c071c8c565ca6e0ee6ff22d1737ec56248274f82d248fb31a1396573168be3 ./recipe-sysroot-native/usr/bin/xzless
+-rwx                 2198 1eb23d10501ef995cecabf23d22d52c276425dd455cf08fd66b9cc9172df4f75 ./recipe-sysroot-native/usr/bin/xzmore
+drwx                                                                                       ./recipe-sysroot-native/usr/include
+-rw-                 9922 d831a8daf0b288b4bc512ba09eef2d8a6c519f1be679ea1d6df7483726376070 ./recipe-sysroot-native/usr/include/lzma.h
+drwx                                                                                       ./recipe-sysroot-native/usr/include/lzma
+-rw-                24859 2e4b5ffe0e729ef43c35600936a570b3d7e692fdbeaf8c887646c87de7aef31a ./recipe-sysroot-native/usr/include/lzma/base.h
+-rw-                 2630 485ee1ac185747b6e5324094aa462af194ba3a22a0206314e25f70423045e43d ./recipe-sysroot-native/usr/include/lzma/bcj.h
+-rw-                21929 d62b1e56044a7be0991f1c421c8da1b3dba4b4b347583eac7d8a0f87300e3058 ./recipe-sysroot-native/usr/include/lzma/block.h
+-rw-                 4255 79ef75b06fe389ccbc47ebeea1bb704157a58fe9710ddfbac8a62035359f9ae1 ./recipe-sysroot-native/usr/include/lzma/check.h
+-rw-                24844 13fbba65515bed9d108e97cba3227604291545290fec3f11d9f5babcc6811404 ./recipe-sysroot-native/usr/include/lzma/container.h
+-rw-                 1865 db9db049ab07363921bf19320174afbab16a1b4d401f797a5b2232dcb89b9d64 ./recipe-sysroot-native/usr/include/lzma/delta.h
+-rw-                16520 0c30f1e1271e4bd06e07934b31b76edddbb7d8616e2b8043b36771ade8eb294b ./recipe-sysroot-native/usr/include/lzma/filter.h
+-rw-                 2604 7c9c7fdd29650a730e59281ea38e3826d94b518fa7e23573b9303ac8f3421083 ./recipe-sysroot-native/usr/include/lzma/hardware.h
+-rw-                23491 9eb7451f4d8de7d51a17585b7a86c3b4eb02d00d7e7fc1c390255e34231f3516 ./recipe-sysroot-native/usr/include/lzma/index.h
+-rw-                 3914 0840c2ae8dedc05a7ffe1597ead131532a8dc03521728d1d38e55da0fa769831 ./recipe-sysroot-native/usr/include/lzma/index_hash.h
+-rw-                14744 caf8948b9306d508026cc3bbadea579eb8e75a24c444fdbe9986a4cc01a7b362 ./recipe-sysroot-native/usr/include/lzma/lzma12.h
+-rw-                 8253 beba70fa9d83dc6a7fcfae9b1f8d07b3b5acbbdc789f008e63da4206e2434acc ./recipe-sysroot-native/usr/include/lzma/stream_flags.h
+-rw-                 3497 83038dff2305cfc1a7baf1330fc7c2b47de793d6347a3b1e433988c4db86e57c ./recipe-sysroot-native/usr/include/lzma/version.h
+-rw-                 6622 1efbbbfc93d109aff5bc6ec025437bbf8b99410975d97244781e9a163fe50f4d ./recipe-sysroot-native/usr/include/lzma/vli.h
+drwx                                                                                       ./recipe-sysroot-native/usr/lib
+lrwx                                                                                       ./recipe-sysroot-native/usr/lib/liblzma.so -> liblzma.so.5.2.6
+lrwx                                                                                       ./recipe-sysroot-native/usr/lib/liblzma.so.5 -> liblzma.so.5.2.6
+-rwx               158424 f5f223c5d52734f0b47d5e052f22a35b7249061a84734f843fe23844b1182535 ./recipe-sysroot-native/usr/lib/liblzma.so.5.2.6
+drwx                                                                                       ./recipe-sysroot-native/usr/lib/pkgconfig
+-rw-                  474 4d81c2607e6fc66ec175bccc2a5951a4ad558c43339aebc5bf7522c7a702312a ./recipe-sysroot-native/usr/lib/pkgconfig/liblzma.pc
+drwx                                                                                       ./recipe-sysroot-native/usr/share

@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090843.12 
+libmpc-native-1.2.1-r0: do_deploy_source_date_epoch
+Elapsed time: 0.24 seconds
+utime: 35
+stime: 4
+cutime: 2
+cstime: 3
+IO rchar: 315004
+IO wchar: 141662
+IO syscr: 378
+IO syscw: 107
+IO read_bytes: 0
+IO write_bytes: 114688
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.35970799999999997
+rusage ru_stime: 0.041825999999999995
+rusage ru_maxrss: 108024
+rusage ru_minflt: 8295
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 184
+rusage ru_nvcsw: 13
+rusage ru_nivcsw: 110
+Child rusage ru_utime: 0.021254
+Child rusage ru_stime: 0.039624
+Child rusage ru_maxrss: 108024
+Child rusage ru_minflt: 4339
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 40
+Child rusage ru_nvcsw: 70
+Child rusage ru_nivcsw: 22
+Status: PASSED 
+Ended: 1756090843.36 

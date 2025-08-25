@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090849.25 
+libtool-cross-2.4.7-r0: do_unpack
+Elapsed time: 0.63 seconds
+utime: 18
+stime: 8
+cutime: 12
+cstime: 13
+IO rchar: 10875998
+IO wchar: 17070895
+IO syscr: 1611
+IO syscw: 1400
+IO read_bytes: 4096
+IO write_bytes: 8896512
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.18711
+rusage ru_stime: 0.08505
+rusage ru_maxrss: 107556
+rusage ru_minflt: 12488
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 104
+rusage ru_nvcsw: 33
+rusage ru_nivcsw: 115
+Child rusage ru_utime: 0.122917
+Child rusage ru_stime: 0.138559
+Child rusage ru_maxrss: 107556
+Child rusage ru_minflt: 8373
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 8
+Child rusage ru_oublock: 17272
+Child rusage ru_nvcsw: 337
+Child rusage ru_nivcsw: 230
+Status: PASSED 
+Ended: 1756090849.88 

@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:dwarfsrcfiles-native:x86_64-linux:1.0:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 a79e9376e824322eb3edf4562706945a6f09e836ea03a20d4c87efa3811d0a98 ./deploy-source-date-epoch/__source_date_epoch.txt

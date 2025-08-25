@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:ncurses-native:x86_64-linux:6.3+20220423:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 73954f77d79ec60213698dbd6d69311f98de1b7f565abcf0e1605c82f1599651 ./deploy-source-date-epoch/__source_date_epoch.txt

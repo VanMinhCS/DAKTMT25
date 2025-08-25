@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:python3-installer-native:x86_64-linux:0.5.1:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 03d929470803c2c23a8a4598679c9280aa9c752755f0e6463c15aea18c43bc90 ./deploy-source-date-epoch/__source_date_epoch.txt

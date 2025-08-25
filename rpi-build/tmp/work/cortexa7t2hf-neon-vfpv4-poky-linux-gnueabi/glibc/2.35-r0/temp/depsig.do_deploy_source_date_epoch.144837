@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:glibc:cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi:2.35:r0:cortexa7t2hf-neon-vfpv4:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 08ae55b7b03aa2aef0f729fa72ef058bba9c01a6b08ebfb9a8ee528669ba57b6 ./deploy-source-date-epoch/__source_date_epoch.txt

@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756091152.58 
+bzip2-native-1.0.8-r0: do_configure
+Elapsed time: 17.76 seconds
+utime: 47
+stime: 6
+cutime: 706
+cstime: 208
+IO rchar: 59442802
+IO wchar: 9309791
+IO syscr: 32621
+IO syscw: 11372
+IO read_bytes: 0
+IO write_bytes: 8597504
+IO cancelled_write_bytes: 4243456
+rusage ru_utime: 0.47591999999999995
+rusage ru_stime: 0.061693
+rusage ru_maxrss: 111140
+rusage ru_minflt: 9027
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 248
+rusage ru_nvcsw: 164
+rusage ru_nivcsw: 81
+Child rusage ru_utime: 7.066589
+Child rusage ru_stime: 2.080363
+Child rusage ru_maxrss: 111012
+Child rusage ru_minflt: 394387
+Child rusage ru_majflt: 15
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 16544
+Child rusage ru_nvcsw: 4477
+Child rusage ru_nivcsw: 3276
+Status: PASSED 
+Ended: 1756091170.34 

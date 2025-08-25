@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:lua-native:x86_64-linux:5.4.4:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 1a294a9144aca5c1a2644f3c9b93a6a737ab0074294d7a8dbdf7490894eaac1e ./deploy-source-date-epoch/__source_date_epoch.txt

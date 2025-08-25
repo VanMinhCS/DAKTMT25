@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090913.10 
+rpm-native-1_4.17.1-r0: do_deploy_source_date_epoch
+Elapsed time: 0.17 seconds
+utime: 27
+stime: 3
+cutime: 1
+cstime: 2
+IO rchar: 335730
+IO wchar: 145912
+IO syscr: 391
+IO syscw: 110
+IO read_bytes: 0
+IO write_bytes: 114688
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.276957
+rusage ru_stime: 0.037766
+rusage ru_maxrss: 109728
+rusage ru_minflt: 8832
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 184
+rusage ru_nvcsw: 14
+rusage ru_nivcsw: 9
+Child rusage ru_utime: 0.017067
+Child rusage ru_stime: 0.025363
+Child rusage ru_maxrss: 109728
+Child rusage ru_minflt: 4368
+Child rusage ru_majflt: 2
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 40
+Child rusage ru_nvcsw: 72
+Child rusage ru_nivcsw: 7
+Status: PASSED 
+Ended: 1756090913.27 

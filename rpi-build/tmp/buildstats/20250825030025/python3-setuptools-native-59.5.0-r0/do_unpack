@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090862.60 
+python3-setuptools-native-59.5.0-r0: do_unpack
+Elapsed time: 0.52 seconds
+utime: 24
+stime: 5
+cutime: 8
+cstime: 12
+IO rchar: 9433439
+IO wchar: 13223293
+IO syscr: 1110
+IO syscw: 1251
+IO read_bytes: 2326528
+IO write_bytes: 7127040
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.242669
+rusage ru_stime: 0.053925999999999995
+rusage ru_maxrss: 108236
+rusage ru_minflt: 8514
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 72
+rusage ru_nvcsw: 18
+rusage ru_nivcsw: 119
+Child rusage ru_utime: 0.085952
+Child rusage ru_stime: 0.127774
+Child rusage ru_maxrss: 108108
+Child rusage ru_minflt: 4182
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 4544
+Child rusage ru_oublock: 13848
+Child rusage ru_nvcsw: 291
+Child rusage ru_nivcsw: 140
+Status: PASSED 
+Ended: 1756090863.12 

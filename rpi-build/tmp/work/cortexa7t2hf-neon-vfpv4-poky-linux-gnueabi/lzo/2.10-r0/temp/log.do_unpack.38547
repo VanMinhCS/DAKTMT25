@@ -1,0 +1,71 @@
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+NOTE: Unpacking /home/ubuntu/yocto/rpi-build/downloads/lzo-2.10.tar.gz to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/lzo/2.10-r0/
+DEBUG: Searching for 0001-Use-memcpy-instead-of-reinventing-it.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo-2.10/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo-2.10/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo-2.10/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo-2.10/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo-2.10/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo-2.10/
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo/
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo/0001-Use-memcpy-instead-of-reinventing-it.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/lzo/2.10-r0/
+DEBUG: Searching for 0001-Add-pkgconfigdir-to-solve-the-undefine-error.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo-2.10/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo-2.10/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo-2.10/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo-2.10/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo-2.10/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo-2.10/
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo/
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo/0001-Add-pkgconfigdir-to-solve-the-undefine-error.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/lzo/2.10-r0/
+DEBUG: Searching for run-ptest in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo-2.10/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo-2.10/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo-2.10/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo-2.10/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo-2.10/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo-2.10/
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo/
+    /home/ubuntu/yocto/poky/meta/recipes-support/lzo/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-support/lzo/lzo/run-ptest to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/lzo/2.10-r0/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function create_source_date_epoch_stamp
+DEBUG: Newest file found: /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/lzo/2.10-r0/lzo-2.10/CMakeLists.txt
+DEBUG: SOURCE_DATE_EPOCH: 1488398054
+DEBUG: Python function create_source_date_epoch_stamp finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

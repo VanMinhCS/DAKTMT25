@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090916.63 
+libical-3.0.16-r0: do_fetch
+Elapsed time: 1.14 seconds
+utime: 15
+stime: 1
+cutime: 2
+cstime: 1
+IO rchar: 1060945
+IO wchar: 987654
+IO syscr: 625
+IO syscw: 1419
+IO read_bytes: 0
+IO write_bytes: 987136
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.157223
+rusage ru_stime: 0.019652
+rusage ru_maxrss: 110640
+rusage ru_minflt: 5581
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 120
+rusage ru_nvcsw: 53
+rusage ru_nivcsw: 2
+Child rusage ru_utime: 0.024090999999999998
+Child rusage ru_stime: 0.011327
+Child rusage ru_maxrss: 105480
+Child rusage ru_minflt: 1105
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 1808
+Child rusage ru_nvcsw: 82
+Child rusage ru_nivcsw: 1
+Status: PASSED 
+Ended: 1756090917.77 

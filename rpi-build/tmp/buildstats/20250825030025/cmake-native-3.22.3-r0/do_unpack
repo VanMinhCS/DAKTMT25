@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090903.61 
+cmake-native-3.22.3-r0: do_unpack
+Elapsed time: 3.58 seconds
+utime: 33
+stime: 21
+cutime: 56
+cstime: 236
+IO rchar: 70636008
+IO wchar: 103840032
+IO syscr: 6740
+IO syscw: 25089
+IO read_bytes: 40960
+IO write_bytes: 110219264
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.338064
+rusage ru_stime: 0.21850499999999998
+rusage ru_maxrss: 108616
+rusage ru_minflt: 8115
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 72
+rusage ru_nvcsw: 19
+rusage ru_nivcsw: 89
+Child rusage ru_utime: 0.565925
+Child rusage ru_stime: 2.36001
+Child rusage ru_maxrss: 108616
+Child rusage ru_minflt: 4105
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 80
+Child rusage ru_oublock: 215200
+Child rusage ru_nvcsw: 3523
+Child rusage ru_nivcsw: 1371
+Status: PASSED 
+Ended: 1756090907.19 

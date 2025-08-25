@@ -1,0 +1,123 @@
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+NOTE: Unpacking /home/ubuntu/yocto/rpi-build/downloads/sqlite-autoconf-3380500.tar.gz to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/
+DEBUG: Searching for CVE-2022-35737.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3-3.38.5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3-3.38.5/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3-3.38.5/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3-3.38.5/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/CVE-2022-35737.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/
+DEBUG: Searching for CVE-2022-46908.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3-3.38.5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3-3.38.5/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3-3.38.5/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3-3.38.5/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/CVE-2022-46908.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/
+DEBUG: Searching for CVE-2023-36191.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3-3.38.5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3-3.38.5/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3-3.38.5/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3-3.38.5/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/CVE-2023-36191.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/
+DEBUG: Searching for CVE-2023-7104.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3-3.38.5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3-3.38.5/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3-3.38.5/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3-3.38.5/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/CVE-2023-7104.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/
+DEBUG: Searching for CVE-2025-29088.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3-3.38.5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3-3.38.5/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3-3.38.5/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3-3.38.5/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/CVE-2025-29088.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/
+DEBUG: Searching for CVE-2025-6965.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3-3.38.5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3-3.38.5/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3-3.38.5/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3-3.38.5/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/CVE-2025-6965.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/
+DEBUG: Searching for 0001-This-branch-attempts-to-improve-the-detection-of-cov.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3-3.38.5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3-3.38.5/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3-3.38.5/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3-3.38.5/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/0001-This-branch-attempts-to-improve-the-detection-of-cov.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/
+DEBUG: Searching for CVE-2025-7458.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3-3.38.5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3-3.38.5/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3-3.38.5/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3-3.38.5/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/sqlite3/
+    /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-support/sqlite/files/CVE-2025-7458.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function create_source_date_epoch_stamp
+DEBUG: Newest file found: /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/sqlite-autoconf-3380500/tea/configure
+DEBUG: SOURCE_DATE_EPOCH: 1651852002
+DEBUG: Python function create_source_date_epoch_stamp finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

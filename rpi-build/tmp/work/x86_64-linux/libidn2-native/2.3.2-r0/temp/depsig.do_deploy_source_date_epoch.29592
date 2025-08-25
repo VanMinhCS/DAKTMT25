@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:libidn2-native:x86_64-linux:2.3.2:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 2f1279ede5979047f52d83043dfe67a3000c8d21e2ce5f56c2247e2c33567e9b ./deploy-source-date-epoch/__source_date_epoch.txt

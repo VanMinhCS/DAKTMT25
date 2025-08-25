@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090846.09 
+bzip2-native-1.0.8-r0: do_unpack
+Elapsed time: 1.39 seconds
+utime: 26
+stime: 7
+cutime: 39
+cstime: 16
+IO rchar: 8333405
+IO wchar: 11391359
+IO syscr: 2038
+IO syscw: 1026
+IO read_bytes: 4575232
+IO write_bytes: 8859648
+IO cancelled_write_bytes: 8192
+rusage ru_utime: 0.26802899999999996
+rusage ru_stime: 0.07275
+rusage ru_maxrss: 107988
+rusage ru_minflt: 10599
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 72
+rusage ru_nvcsw: 32
+rusage ru_nivcsw: 159
+Child rusage ru_utime: 0.393613
+Child rusage ru_stime: 0.164236
+Child rusage ru_maxrss: 107988
+Child rusage ru_minflt: 17345
+Child rusage ru_majflt: 35
+Child rusage ru_inblock: 8936
+Child rusage ru_oublock: 17232
+Child rusage ru_nvcsw: 180
+Child rusage ru_nivcsw: 192
+Status: PASSED 
+Ended: 1756090847.49 

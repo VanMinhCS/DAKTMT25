@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090925.86 
+libxrender-1_0.9.10-r0: do_fetch
+Elapsed time: 8.16 seconds
+utime: 17
+stime: 2
+cutime: 1
+cstime: 1
+IO rchar: 434961
+IO wchar: 361807
+IO syscr: 324
+IO syscw: 582
+IO read_bytes: 0
+IO write_bytes: 368640
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.172584
+rusage ru_stime: 0.020545
+rusage ru_maxrss: 110220
+rusage ru_minflt: 5197
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 112
+rusage ru_nvcsw: 31
+rusage ru_nivcsw: 1
+Child rusage ru_utime: 0.011864
+Child rusage ru_stime: 0.011273
+Child rusage ru_maxrss: 105712
+Child rusage ru_minflt: 1084
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 608
+Child rusage ru_nvcsw: 32
+Child rusage ru_nivcsw: 0
+Status: PASSED 
+Ended: 1756090934.02 

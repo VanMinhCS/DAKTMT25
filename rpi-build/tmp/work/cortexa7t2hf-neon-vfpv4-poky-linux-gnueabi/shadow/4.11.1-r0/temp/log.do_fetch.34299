@@ -1,0 +1,202 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are []
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_fetch
+DEBUG: Executing python function base_do_fetch
+DEBUG: Trying PREMIRRORS
+DEBUG: For url ['https', 'github.com', '/shadow-maint/shadow/releases/download/v4.11.1/shadow-4.11.1.tar.gz', '', '', OrderedDict()] comparing ['git', 'sourceware.org', '/git/glibc.git', '', '', OrderedDict()] to ['https', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['https', 'github.com', '/shadow-maint/shadow/releases/download/v4.11.1/shadow-4.11.1.tar.gz', '', '', OrderedDict()] comparing ['git', 'sourceware.org', '/git/binutils-gdb.git', '', '', OrderedDict()] to ['https', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: Trying Upstream
+DEBUG: Fetching https://github.com/shadow-maint/shadow/releases/download/v4.11.1/shadow-4.11.1.tar.gz using command '/usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/shadow-4.11.1.tar.gz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://github.com/shadow-maint/shadow/releases/download/v4.11.1/shadow-4.11.1.tar.gz''
+DEBUG: Fetcher accessed the network with the command /usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/shadow-4.11.1.tar.gz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://github.com/shadow-maint/shadow/releases/download/v4.11.1/shadow-4.11.1.tar.gz'
+DEBUG: Running export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/shadow/4.11.1-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/shadow/4.11.1-r0/recipe-sysroot/usr/bin/crossscripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/shadow/4.11.1-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/shadow/4.11.1-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/shadow/4.11.1-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/shadow/4.11.1-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; /usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/shadow-4.11.1.tar.gz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://github.com/shadow-maint/shadow/releases/download/v4.11.1/shadow-4.11.1.tar.gz' --progress=dot -v
+--2025-08-25 03:01:45--  https://github.com/shadow-maint/shadow/releases/download/v4.11.1/shadow-4.11.1.tar.gz
+Resolving github.com (github.com)... 20.205.243.166
+Connecting to github.com (github.com)|20.205.243.166|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://release-assets.githubusercontent.com/github-production-release-asset/10508169/d9f15d1e-9cc2-4e81-9a15-e6efdf19cc98?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-08-25T03%3A57%3A41Z&rscd=attachment%3B+filename%3Dshadow-4.11.1.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-08-25T02%3A57%3A05Z&ske=2025-08-25T03%3A57%3A41Z&sks=b&skv=2018-11-09&sig=spboXJ9llcFwipeaY8ajpyY6KheWCMwbjDp7HGMZNG4%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc1NjA5MTIwNywibmJmIjoxNzU2MDkwOTA3LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.7kaYWXTvnibXX8cvf25yCJuRq7jOi5ufDnVoARoOQFg&response-content-disposition=attachment%3B%20filename%3Dshadow-4.11.1.tar.gz&response-content-type=application%2Foctet-stream [following]
+--2025-08-25 03:01:46--  https://release-assets.githubusercontent.com/github-production-release-asset/10508169/d9f15d1e-9cc2-4e81-9a15-e6efdf19cc98?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-08-25T03%3A57%3A41Z&rscd=attachment%3B+filename%3Dshadow-4.11.1.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-08-25T02%3A57%3A05Z&ske=2025-08-25T03%3A57%3A41Z&sks=b&skv=2018-11-09&sig=spboXJ9llcFwipeaY8ajpyY6KheWCMwbjDp7HGMZNG4%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc1NjA5MTIwNywibmJmIjoxNzU2MDkwOTA3LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.7kaYWXTvnibXX8cvf25yCJuRq7jOi5ufDnVoARoOQFg&response-content-disposition=attachment%3B%20filename%3Dshadow-4.11.1.tar.gz&response-content-type=application%2Foctet-stream
+Resolving release-assets.githubusercontent.com (release-assets.githubusercontent.com)... 185.199.110.133, 185.199.111.133, 185.199.108.133, ...
+Connecting to release-assets.githubusercontent.com (release-assets.githubusercontent.com)|185.199.110.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4110191 (3.9M) [application/octet-stream]
+Saving to: ‘/home/ubuntu/yocto/rpi-build/downloads/shadow-4.11.1.tar.gz.tmp’
+
+
+2025-08-25 03:01:46 (18.1 MB/s) - ‘/home/ubuntu/yocto/rpi-build/downloads/shadow-4.11.1.tar.gz.tmp’ saved [4110191/4110191]
+
+DEBUG: Searching for shadow-4.1.3-dots-in-usernames.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/
+DEBUG: Searching for shadow-relaxed-usernames.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/
+DEBUG: Searching for useradd in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/
+DEBUG: Searching for CVE-2023-29383.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/
+DEBUG: Searching for 0001-Overhaul-valid_field.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/
+DEBUG: Searching for CVE-2023-4641-0001.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/
+DEBUG: Searching for CVE-2023-4641-0002.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/
+DEBUG: Searching for login_defs_pam.sed in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/
+DEBUG: Searching for shadow-update-pam-conf.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-4.11.1/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/
+DEBUG: Python function base_do_fetch finished
+DEBUG: Python function do_fetch finished

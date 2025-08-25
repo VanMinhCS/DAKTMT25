@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090854.41 
+perlcross-native-1.5.2-r0: do_populate_sysroot
+Elapsed time: 1.75 seconds
+utime: 50
+stime: 18
+cutime: 16
+cstime: 23
+IO rchar: 2669599
+IO wchar: 1288357
+IO syscr: 1752
+IO syscw: 304
+IO read_bytes: 1314816
+IO write_bytes: 438272
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.508275
+rusage ru_stime: 0.181526
+rusage ru_maxrss: 108676
+rusage ru_minflt: 13981
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 632
+rusage ru_nvcsw: 20
+rusage ru_nivcsw: 211
+Child rusage ru_utime: 0.16835699999999998
+Child rusage ru_stime: 0.235647
+Child rusage ru_maxrss: 108676
+Child rusage ru_minflt: 16706
+Child rusage ru_majflt: 10
+Child rusage ru_inblock: 2568
+Child rusage ru_oublock: 224
+Child rusage ru_nvcsw: 210
+Child rusage ru_nivcsw: 153
+Status: PASSED 
+Ended: 1756090856.16 

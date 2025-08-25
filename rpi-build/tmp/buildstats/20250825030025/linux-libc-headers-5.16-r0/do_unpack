@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756091026.50 
+linux-libc-headers-5.16-r0: do_unpack
+Elapsed time: 40.00 seconds
+utime: 79
+stime: 51
+cutime: 1767
+cstime: 1513
+IO rchar: 1275843706
+IO wchar: 2245001718
+IO syscr: 173083
+IO syscw: 343664
+IO read_bytes: 124162048
+IO write_bytes: 1269817344
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.7995829999999999
+rusage ru_stime: 0.515467
+rusage ru_maxrss: 110040
+rusage ru_minflt: 6617
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 144
+rusage ru_nvcsw: 10
+rusage ru_nivcsw: 131
+Child rusage ru_utime: 17.678974
+Child rusage ru_stime: 15.139795
+Child rusage ru_maxrss: 110040
+Child rusage ru_minflt: 18708
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 242504
+Child rusage ru_oublock: 2479968
+Child rusage ru_nvcsw: 73517
+Child rusage ru_nivcsw: 46617
+Status: PASSED 
+Ended: 1756091066.49 

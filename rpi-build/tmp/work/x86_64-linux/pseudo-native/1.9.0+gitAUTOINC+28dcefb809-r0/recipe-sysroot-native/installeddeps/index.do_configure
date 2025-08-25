@@ -1,0 +1,9 @@
+TaskDeps: do_deploy_source_date_epoch do_prepare_recipe_sysroot do_patch do_fetch do_unpack
+attr-native
+gettext-minimal-native
+libtool-native
+pkgconfig-native
+quilt-native
+sqlite3-native
+texinfo-dummy-native
+xz-native

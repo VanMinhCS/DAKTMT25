@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090899.93 
+libxcb-1.14-r0: do_fetch
+Elapsed time: 4.19 seconds
+utime: 13
+stime: 4
+cutime: 0
+cstime: 1
+IO rchar: 566990
+IO wchar: 496169
+IO syscr: 315
+IO syscw: 743
+IO read_bytes: 0
+IO write_bytes: 503808
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.136655
+rusage ru_stime: 0.042704
+rusage ru_maxrss: 109892
+rusage ru_minflt: 5511
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 120
+rusage ru_nvcsw: 32
+rusage ru_nivcsw: 10
+Child rusage ru_utime: 0.006474
+Child rusage ru_stime: 0.017353
+Child rusage ru_maxrss: 105168
+Child rusage ru_minflt: 1085
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 864
+Child rusage ru_nvcsw: 29
+Child rusage ru_nivcsw: 10
+Status: PASSED 
+Ended: 1756090904.12 

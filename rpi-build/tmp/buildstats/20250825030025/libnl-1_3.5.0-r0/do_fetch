@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090925.11 
+libnl-1_3.5.0-r0: do_fetch
+Elapsed time: 1.01 seconds
+utime: 19
+stime: 3
+cutime: 1
+cstime: 1
+IO rchar: 1122395
+IO wchar: 1036753
+IO syscr: 648
+IO syscw: 1506
+IO read_bytes: 110592
+IO write_bytes: 1040384
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.19087199999999999
+rusage ru_stime: 0.033932
+rusage ru_maxrss: 110944
+rusage ru_minflt: 5766
+rusage ru_majflt: 0
+rusage ru_inblock: 216
+rusage ru_oublock: 128
+rusage ru_nvcsw: 54
+rusage ru_nivcsw: 5
+Child rusage ru_utime: 0.017713
+Child rusage ru_stime: 0.019205
+Child rusage ru_maxrss: 105788
+Child rusage ru_minflt: 1105
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 1904
+Child rusage ru_nvcsw: 77
+Child rusage ru_nivcsw: 0
+Status: PASSED 
+Ended: 1756090926.12 

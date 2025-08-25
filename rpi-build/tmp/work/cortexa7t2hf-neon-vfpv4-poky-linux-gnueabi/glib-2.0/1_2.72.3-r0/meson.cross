@@ -1,0 +1,37 @@
+[binaries]
+c = ['arm-poky-linux-gnueabi-gcc', '-mthumb', '-mfpu=neon-vfpv4', '-mfloat-abi=hard', '-mcpu=cortex-a7', '-fstack-protector-strong', '-O2', '-D_FORTIFY_SOURCE=2', '-Wformat', '-Wformat-security', '-Werror=format-security', '--sysroot=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glib-2.0/1_2.72.3-r0/recipe-sysroot']
+cpp = ['arm-poky-linux-gnueabi-g++', '-mthumb', '-mfpu=neon-vfpv4', '-mfloat-abi=hard', '-mcpu=cortex-a7', '-fstack-protector-strong', '-O2', '-D_FORTIFY_SOURCE=2', '-Wformat', '-Wformat-security', '-Werror=format-security', '--sysroot=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glib-2.0/1_2.72.3-r0/recipe-sysroot']
+cython = 'cython3'
+ar = 'arm-poky-linux-gnueabi-gcc-ar'
+nm = 'arm-poky-linux-gnueabi-gcc-nm'
+strip = 'arm-poky-linux-gnueabi-strip'
+readelf = 'arm-poky-linux-gnueabi-readelf'
+objcopy = 'arm-poky-linux-gnueabi-objcopy'
+pkgconfig = 'pkg-config'
+llvm-config = 'llvm-config13.0.1'
+cups-config = 'cups-config'
+g-ir-scanner = '/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glib-2.0/1_2.72.3-r0/recipe-sysroot/usr/bin/g-ir-scanner-wrapper'
+g-ir-compiler = '/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glib-2.0/1_2.72.3-r0/recipe-sysroot/usr/bin/g-ir-compiler-wrapper'
+
+exe_wrapper = '/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glib-2.0/1_2.72.3-r0/meson-qemuwrapper'
+
+[built-in options]
+c_args = ['-O2', '-pipe', '-g', '-feliminate-unused-debug-types', '-fmacro-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glib-2.0/1_2.72.3-r0=/usr/src/debug/glib-2.0/1_2.72.3-r0', '-fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glib-2.0/1_2.72.3-r0=/usr/src/debug/glib-2.0/1_2.72.3-r0', '-fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glib-2.0/1_2.72.3-r0/recipe-sysroot=', '-fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glib-2.0/1_2.72.3-r0/recipe-sysroot-native=']
+c_link_args = ['-Wl,-O1', '-Wl,--hash-style=gnu', '-Wl,--as-needed', '-fmacro-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glib-2.0/1_2.72.3-r0=/usr/src/debug/glib-2.0/1_2.72.3-r0', '-fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glib-2.0/1_2.72.3-r0=/usr/src/debug/glib-2.0/1_2.72.3-r0', '-fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glib-2.0/1_2.72.3-r0/recipe-sysroot=', '-fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glib-2.0/1_2.72.3-r0/recipe-sysroot-native=', '-Wl,-z,relro,-z,now']
+cpp_args = ['-O2', '-pipe', '-g', '-feliminate-unused-debug-types', '-fmacro-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glib-2.0/1_2.72.3-r0=/usr/src/debug/glib-2.0/1_2.72.3-r0', '-fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glib-2.0/1_2.72.3-r0=/usr/src/debug/glib-2.0/1_2.72.3-r0', '-fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glib-2.0/1_2.72.3-r0/recipe-sysroot=', '-fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glib-2.0/1_2.72.3-r0/recipe-sysroot-native=', '-fvisibility-inlines-hidden']
+cpp_link_args = ['-Wl,-O1', '-Wl,--hash-style=gnu', '-Wl,--as-needed', '-fmacro-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glib-2.0/1_2.72.3-r0=/usr/src/debug/glib-2.0/1_2.72.3-r0', '-fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glib-2.0/1_2.72.3-r0=/usr/src/debug/glib-2.0/1_2.72.3-r0', '-fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glib-2.0/1_2.72.3-r0/recipe-sysroot=', '-fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glib-2.0/1_2.72.3-r0/recipe-sysroot-native=', '-Wl,-z,relro,-z,now']
+
+[properties]
+needs_exe_wrapper = true
+
+[host_machine]
+system = 'linux'
+cpu_family = 'arm'
+cpu = 'arm'
+endian = 'little'
+
+[target_machine]
+system = 'linux'
+cpu_family = 'arm'
+cpu = 'arm'
+endian = 'little'

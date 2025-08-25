@@ -1,0 +1,21 @@
+     ../../attr-2.5.1/include/error_context.h \
+     ../../attr-2.5.1/include/misc.h \
+     ../../attr-2.5.1/include/nls.h \
+     ../../attr-2.5.1/include/walk_tree.h \
+     ../../attr-2.5.1/include/libattr.h \
+     ../../attr-2.5.1/include/attributes.h \
+     ../../attr-2.5.1/libattr/libattr.h \
+     ../../attr-2.5.1/libattr/attr_copy_action.c \
+     ../../attr-2.5.1/libattr/attr_copy_check.c \
+     ../../attr-2.5.1/libattr/attr_copy_fd.c \
+     ../../attr-2.5.1/libattr/attr_copy_file.c \
+     ../../attr-2.5.1/libattr/syscalls.c \
+     ../../attr-2.5.1/libattr/libattr.c \
+     ../../attr-2.5.1/libmisc/high_water_alloc.c \
+     ../../attr-2.5.1/libmisc/next_line.c \
+     ../../attr-2.5.1/libmisc/quote.c \
+     ../../attr-2.5.1/libmisc/unquote.c \
+     ../../attr-2.5.1/libmisc/walk_tree.c \
+     ../../attr-2.5.1/tools/setfattr.c \
+     ../../attr-2.5.1/tools/getfattr.c \
+     ../../attr-2.5.1/tools/attr.c

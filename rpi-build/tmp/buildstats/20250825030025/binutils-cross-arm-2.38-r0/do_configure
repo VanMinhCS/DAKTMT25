@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756091091.49 
+binutils-cross-arm-2.38-r0: do_configure
+Elapsed time: 5.93 seconds
+utime: 42
+stime: 9
+cutime: 356
+cstime: 160
+IO rchar: 28257375
+IO wchar: 10569877
+IO syscr: 19213
+IO syscw: 9482
+IO read_bytes: 4096
+IO write_bytes: 3567616
+IO cancelled_write_bytes: 2584576
+rusage ru_utime: 0.428641
+rusage ru_stime: 0.095716
+rusage ru_maxrss: 110500
+rusage ru_minflt: 8728
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 248
+rusage ru_nvcsw: 179
+rusage ru_nivcsw: 63
+Child rusage ru_utime: 3.565674
+Child rusage ru_stime: 1.602748
+Child rusage ru_maxrss: 110500
+Child rusage ru_minflt: 300167
+Child rusage ru_majflt: 5
+Child rusage ru_inblock: 8
+Child rusage ru_oublock: 6720
+Child rusage ru_nvcsw: 4586
+Child rusage ru_nivcsw: 1551
+Status: PASSED 
+Ended: 1756091097.42 

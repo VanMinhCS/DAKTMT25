@@ -1,0 +1,36 @@
+OEOuthashBasic
+14
+autoconf-native: a082d55df4b7dac9894c5feaf9f362ebbbf3242ae22430b84c4e8dd6f794fd94
+automake-native: 14963faa76d47d1639f6c0b28acf6361fc204ea39070d937e3951fc646a0a957
+gettext-minimal-native: 0d39582068b641490d184ea9f722f819aafcee1d652d8d8c5248ab8e4971ea09
+gnu-config-native: dcfcdd2de1b71130dc89903a2fc775551b0256cdcd7880cbdc731dcb33a59563
+libtool-native: edf42e87001d7a64879d4959f5b66885251d0230f2a9095a0fb57a5e3f9993fb
+m4-native: 2e220b13b48306f3a02a7bf65e00356873aed6cd266e2e6ce4daa34264a50398
+quilt-native: 3057d956d8a64c8d0c95902855fb8674038582d1c445513dc0b3cc45351763ca
+texinfo-dummy-native: c19dfc74595ada505d502217fe29d7dea1eb64a849a4eeb895b475baa979ac9e
+SSTATE_PKGSPEC=sstate:gdbm-native:x86_64-linux:1.23:r0:x86_64:10:
+task=populate_sysroot
+drwx                                                                                       .
+drwx                                                                                       ./recipe-sysroot-native
+drwx                                                                                       ./recipe-sysroot-native/sysroot-providers
+-rw-                   11 0e3257fda50d16370e3770505544cec17935fa46730e62f28c2f1b1ae8c94c49 ./recipe-sysroot-native/sysroot-providers/gdbm-native
+drwx                                                                                       ./recipe-sysroot-native/usr
+drwx                                                                                       ./recipe-sysroot-native/usr/bin
+-rwx                31448 1c19354312c12bf91253cf77fa0bf453172aa507b36534c6a7dc8eb64beee2c4 ./recipe-sysroot-native/usr/bin/gdbm_dump
+-rwx                35800 7c671c587f680b8da0874314e1c2144ed8b545b02c771aff2fb91f52f101c3d8 ./recipe-sysroot-native/usr/bin/gdbm_load
+-rwx               145360 e62a7bea23582b229898d2b56c3c30d79e275c1993692acab16178753c7fded5 ./recipe-sysroot-native/usr/bin/gdbmtool
+drwx                                                                                       ./recipe-sysroot-native/usr/include
+-rw-                 1403 bfdedbe2c5a08fd26eefb77165b5e76ee001fc9dc24cc292137a2a02883ffac1 ./recipe-sysroot-native/usr/include/dbm.h
+-rw-                12181 9e96eb1a716eca607768776ebf2c192313c0d03e0b86fb4da0bcc3df260ea8d9 ./recipe-sysroot-native/usr/include/gdbm.h
+-rw-                 2443 e7bde9a63b6f9ec44d9f221cdc1a941fd12b5c469e22024973e1a2ef2c399e57 ./recipe-sysroot-native/usr/include/ndbm.h
+drwx                                                                                       ./recipe-sysroot-native/usr/include/gdbm
+lrwx                                                                                       ./recipe-sysroot-native/usr/include/gdbm/gdbm.h -> ../gdbm.h
+lrwx                                                                                       ./recipe-sysroot-native/usr/include/gdbm/ndbm.h -> ../ndbm.h
+drwx                                                                                       ./recipe-sysroot-native/usr/lib
+lrwx                                                                                       ./recipe-sysroot-native/usr/lib/libgdbm.so -> libgdbm.so.6.0.0
+lrwx                                                                                       ./recipe-sysroot-native/usr/lib/libgdbm.so.6 -> libgdbm.so.6.0.0
+-rwx                76984 d6129b4e5b6567c7ab097cffc2f70f20fc79939f8ec94098d35d0565f1b42a26 ./recipe-sysroot-native/usr/lib/libgdbm.so.6.0.0
+lrwx                                                                                       ./recipe-sysroot-native/usr/lib/libgdbm_compat.so -> libgdbm_compat.so.4.0.0
+lrwx                                                                                       ./recipe-sysroot-native/usr/lib/libgdbm_compat.so.4 -> libgdbm_compat.so.4.0.0
+-rwx                18576 031494cdba762b7b148620f430bb790bdb4da20e1b10edbb33d2a6564fd20329 ./recipe-sysroot-native/usr/lib/libgdbm_compat.so.4.0.0
+drwx                                                                                       ./recipe-sysroot-native/usr/share

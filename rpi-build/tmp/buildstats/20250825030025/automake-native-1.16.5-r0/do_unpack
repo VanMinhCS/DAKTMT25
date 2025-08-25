@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090832.47 
+automake-native-1.16.5-r0: do_unpack
+Elapsed time: 0.35 seconds
+utime: 22
+stime: 8
+cutime: 11
+cstime: 17
+IO rchar: 12753438
+IO wchar: 19154446
+IO syscr: 1411
+IO syscw: 2766
+IO read_bytes: 2510848
+IO write_bytes: 12759040
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.2246
+rusage ru_stime: 0.084225
+rusage ru_maxrss: 107228
+rusage ru_minflt: 7918
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 64
+rusage ru_nvcsw: 18
+rusage ru_nivcsw: 98
+Child rusage ru_utime: 0.115161
+Child rusage ru_stime: 0.171733
+Child rusage ru_maxrss: 107228
+Child rusage ru_minflt: 3677
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 4904
+Child rusage ru_oublock: 24856
+Child rusage ru_nvcsw: 433
+Child rusage ru_nivcsw: 218
+Status: PASSED 
+Ended: 1756090832.82 

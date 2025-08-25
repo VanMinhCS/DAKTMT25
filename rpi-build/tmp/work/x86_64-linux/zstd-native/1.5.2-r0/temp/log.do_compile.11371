@@ -1,0 +1,181 @@
+DEBUG: Executing shell function do_compile
+NOTE: make -j 8 HAVE_LZ4=0 HAVE_LZMA=0 HAVE_ZLIB=0 ZSTD_LEGACY_SUPPORT=4
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/git/lib'
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/git/programs'
+creating pkgconfig
+CC obj/conf_02ab37cd07f64f7a9bb8644485c7500f/static/debug.o
+CC obj/conf_02ab37cd07f64f7a9bb8644485c7500f/static/entropy_common.o
+CC obj/conf_d41b425f63e5890876a2a3a7b145a800/dynamic/debug.o
+CC obj/conf_d41b425f63e5890876a2a3a7b145a800/dynamic/entropy_common.o
+CC obj/conf_02ab37cd07f64f7a9bb8644485c7500f/static/error_private.o
+CC obj/conf_02ab37cd07f64f7a9bb8644485c7500f/static/fse_decompress.o
+CC obj/conf_02ab37cd07f64f7a9bb8644485c7500f/static/pool.o
+CC obj/conf_d41b425f63e5890876a2a3a7b145a800/dynamic/error_private.o
+CC obj/conf_02ab37cd07f64f7a9bb8644485c7500f/static/threading.o
+CC obj/conf_02ab37cd07f64f7a9bb8644485c7500f/static/xxhash.o
+CC obj/conf_02ab37cd07f64f7a9bb8644485c7500f/static/zstd_common.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/debug.o
+CC obj/conf_02ab37cd07f64f7a9bb8644485c7500f/static/zstd_v04.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/entropy_common.o
+CC obj/conf_02ab37cd07f64f7a9bb8644485c7500f/static/zstd_v05.o
+CC obj/conf_d41b425f63e5890876a2a3a7b145a800/dynamic/fse_decompress.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/error_private.o
+CC obj/conf_d41b425f63e5890876a2a3a7b145a800/dynamic/pool.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/fse_decompress.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/pool.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/threading.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/xxhash.o
+CC obj/conf_d41b425f63e5890876a2a3a7b145a800/dynamic/threading.o
+CC obj/conf_02ab37cd07f64f7a9bb8644485c7500f/static/zstd_v06.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/zstd_common.o
+CC obj/conf_02ab37cd07f64f7a9bb8644485c7500f/static/zstd_v07.o
+CC obj/conf_d41b425f63e5890876a2a3a7b145a800/dynamic/xxhash.o
+CC obj/conf_d41b425f63e5890876a2a3a7b145a800/dynamic/zstd_common.o
+CC obj/conf_d41b425f63e5890876a2a3a7b145a800/dynamic/zstd_v04.o
+CC obj/conf_d41b425f63e5890876a2a3a7b145a800/dynamic/zstd_v05.o
+CC obj/conf_02ab37cd07f64f7a9bb8644485c7500f/static/fse_compress.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/fse_compress.o
+CC obj/conf_02ab37cd07f64f7a9bb8644485c7500f/static/hist.o
+CC obj/conf_02ab37cd07f64f7a9bb8644485c7500f/static/huf_compress.o
+CC obj/conf_02ab37cd07f64f7a9bb8644485c7500f/static/zstd_compress.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/hist.o
+CC obj/conf_d41b425f63e5890876a2a3a7b145a800/dynamic/zstd_v06.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/huf_compress.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/zstd_compress.o
+CC obj/conf_d41b425f63e5890876a2a3a7b145a800/dynamic/zstd_v07.o
+CC obj/conf_d41b425f63e5890876a2a3a7b145a800/dynamic/fse_compress.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/zstd_compress_literals.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/zstd_compress_sequences.o
+CC obj/conf_d41b425f63e5890876a2a3a7b145a800/dynamic/hist.o
+CC obj/conf_d41b425f63e5890876a2a3a7b145a800/dynamic/huf_compress.o
+CC obj/conf_02ab37cd07f64f7a9bb8644485c7500f/static/zstd_compress_literals.o
+CC obj/conf_d41b425f63e5890876a2a3a7b145a800/dynamic/zstd_compress.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/zstd_compress_superblock.o
+CC obj/conf_02ab37cd07f64f7a9bb8644485c7500f/static/zstd_compress_sequences.o
+CC obj/conf_02ab37cd07f64f7a9bb8644485c7500f/static/zstd_compress_superblock.o
+CC obj/conf_02ab37cd07f64f7a9bb8644485c7500f/static/zstd_double_fast.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/zstd_double_fast.o
+CC obj/conf_d41b425f63e5890876a2a3a7b145a800/dynamic/zstd_compress_literals.o
+CC obj/conf_02ab37cd07f64f7a9bb8644485c7500f/static/zstd_fast.o
+CC obj/conf_d41b425f63e5890876a2a3a7b145a800/dynamic/zstd_compress_sequences.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/zstd_fast.o
+CC obj/conf_d41b425f63e5890876a2a3a7b145a800/dynamic/zstd_compress_superblock.o
+CC obj/conf_d41b425f63e5890876a2a3a7b145a800/dynamic/zstd_double_fast.o
+CC obj/conf_d41b425f63e5890876a2a3a7b145a800/dynamic/zstd_fast.o
+CC obj/conf_d41b425f63e5890876a2a3a7b145a800/dynamic/zstd_lazy.o
+CC obj/conf_02ab37cd07f64f7a9bb8644485c7500f/static/zstd_lazy.o
+CC obj/conf_02ab37cd07f64f7a9bb8644485c7500f/static/zstd_ldm.o
+CC obj/conf_02ab37cd07f64f7a9bb8644485c7500f/static/zstd_opt.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/zstd_lazy.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/zstd_ldm.o
+CC obj/conf_d41b425f63e5890876a2a3a7b145a800/dynamic/zstd_ldm.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/zstd_opt.o
+CC obj/conf_d41b425f63e5890876a2a3a7b145a800/dynamic/zstd_opt.o
+CC obj/conf_02ab37cd07f64f7a9bb8644485c7500f/static/zstdmt_compress.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/zstdmt_compress.o
+CC obj/conf_02ab37cd07f64f7a9bb8644485c7500f/static/huf_decompress.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/huf_decompress.o
+CC obj/conf_02ab37cd07f64f7a9bb8644485c7500f/static/zstd_ddict.o
+CC obj/conf_d41b425f63e5890876a2a3a7b145a800/dynamic/zstdmt_compress.o
+CC obj/conf_d41b425f63e5890876a2a3a7b145a800/dynamic/huf_decompress.o
+AS obj/conf_662430c8674bc4286a83a9007d4e57b9/huf_decompress_amd64.o
+CC obj/conf_02ab37cd07f64f7a9bb8644485c7500f/static/zstd_decompress.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/zstd_ddict.o
+CC obj/conf_d41b425f63e5890876a2a3a7b145a800/dynamic/zstd_ddict.o
+CC obj/conf_d41b425f63e5890876a2a3a7b145a800/dynamic/zstd_decompress.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/zstd_decompress.o
+CC obj/conf_d41b425f63e5890876a2a3a7b145a800/dynamic/zstd_decompress_block.o
+CC obj/conf_02ab37cd07f64f7a9bb8644485c7500f/static/zstd_decompress_block.o
+AS obj/conf_d41b425f63e5890876a2a3a7b145a800/dynamic/huf_decompress_amd64.o
+CC obj/conf_d41b425f63e5890876a2a3a7b145a800/dynamic/cover.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/zstd_decompress_block.o
+CC obj/conf_d41b425f63e5890876a2a3a7b145a800/dynamic/divsufsort.o
+CC obj/conf_d41b425f63e5890876a2a3a7b145a800/dynamic/fastcover.o
+CC obj/conf_d41b425f63e5890876a2a3a7b145a800/dynamic/zdict.o
+AS obj/conf_02ab37cd07f64f7a9bb8644485c7500f/static/huf_decompress_amd64.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/cover.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/divsufsort.o
+CC obj/conf_02ab37cd07f64f7a9bb8644485c7500f/static/cover.o
+CC obj/conf_02ab37cd07f64f7a9bb8644485c7500f/static/divsufsort.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/fastcover.o
+CC obj/conf_02ab37cd07f64f7a9bb8644485c7500f/static/fastcover.o
+CC obj/conf_02ab37cd07f64f7a9bb8644485c7500f/static/zdict.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/zdict.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/zstd_v04.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/zstd_v05.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/zstd_v06.o
+compiling multi-threaded dynamic library 1.5.2
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/zstd_v07.o
+creating versioned links
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/benchfn.o
+compiling single-threaded static library 1.5.2
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/benchzstd.o
+release build completed
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/git/lib'
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/datagen.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/dibio.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/fileio.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/timefn.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/util.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/zstdcli.o
+CC obj/conf_662430c8674bc4286a83a9007d4e57b9/zstdcli_trace.o
+==> building with threading support
+==> no zlib, building zstd without .gz support
+==> no liblzma, building zstd without .xz/.lzma support
+==> no liblz4, building zstd without .lz4 support
+LINK obj/conf_662430c8674bc4286a83a9007d4e57b9/zstd
+zstd build completed
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/git/programs'
+NOTE: make -j 8 HAVE_LZ4=0 HAVE_LZMA=0 HAVE_ZLIB=0 ZSTD_LEGACY_SUPPORT=4 -C contrib/pzstd
+make: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/git/contrib/pzstd'
+g++  -MMD -MP -MF main.Td  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/usr/include -I../../lib -I../../lib/common -I../../programs -I. -DNDEBUG -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/usr/include -O2 -pipe  -std=c++11 -c main.cpp  -o main.o
+gcc   -MMD -MP -MF util.Td  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/usr/include -I../../lib -I../../lib/common -I../../programs -I. -DNDEBUG -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/usr/include -O2 -pipe -Wno-deprecated-declarations      -c ../../programs/util.c  -o ../../programs/util.o
+g++  -MMD -MP -MF Options.Td  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/usr/include -I../../lib -I../../lib/common -I../../programs -I. -DNDEBUG -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/usr/include -O2 -pipe  -std=c++11 -c Options.cpp  -o Options.o
+g++  -MMD -MP -MF Pzstd.Td  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/usr/include -I../../lib -I../../lib/common -I../../programs -I. -DNDEBUG -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/usr/include -O2 -pipe  -std=c++11 -c Pzstd.cpp  -o Pzstd.o
+g++  -MMD -MP -MF SkippableFrame.Td  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/usr/include -I../../lib -I../../lib/common -I../../programs -I. -DNDEBUG -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/usr/include -O2 -pipe  -std=c++11 -c SkippableFrame.cpp  -o SkippableFrame.o
+CFLAGS=" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/usr/include -I../../lib -I../../lib/common -I../../programs -I. -DNDEBUG -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/usr/include -O2 -pipe -Wno-deprecated-declarations   " LDFLAGS=" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/usr/include -O2 -pipe -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/usr/lib                         -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/lib                         -Wl,--enable-new-dtags                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/lib                         -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2 " make -C ../../lib libzstd.a
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/git/lib'
+CC obj/conf_35b7189a759f1aab9cb65d65edb7983b/static/entropy_common.o
+CC obj/conf_35b7189a759f1aab9cb65d65edb7983b/static/error_private.o
+CC obj/conf_35b7189a759f1aab9cb65d65edb7983b/static/debug.o
+CC obj/conf_35b7189a759f1aab9cb65d65edb7983b/static/fse_decompress.o
+CC obj/conf_35b7189a759f1aab9cb65d65edb7983b/static/pool.o
+CC obj/conf_35b7189a759f1aab9cb65d65edb7983b/static/threading.o
+mv -f util.Td util.d
+CC obj/conf_35b7189a759f1aab9cb65d65edb7983b/static/xxhash.o
+CC obj/conf_35b7189a759f1aab9cb65d65edb7983b/static/zstd_common.o
+CC obj/conf_35b7189a759f1aab9cb65d65edb7983b/static/zstd_v04.o
+CC obj/conf_35b7189a759f1aab9cb65d65edb7983b/static/zstd_v05.o
+CC obj/conf_35b7189a759f1aab9cb65d65edb7983b/static/zstd_v06.o
+CC obj/conf_35b7189a759f1aab9cb65d65edb7983b/static/zstd_v07.o
+mv -f SkippableFrame.Td SkippableFrame.d
+CC obj/conf_35b7189a759f1aab9cb65d65edb7983b/static/fse_compress.o
+mv -f main.Td main.d
+CC obj/conf_35b7189a759f1aab9cb65d65edb7983b/static/hist.o
+CC obj/conf_35b7189a759f1aab9cb65d65edb7983b/static/huf_compress.o
+CC obj/conf_35b7189a759f1aab9cb65d65edb7983b/static/zstd_compress.o
+CC obj/conf_35b7189a759f1aab9cb65d65edb7983b/static/zstd_compress_literals.o
+CC obj/conf_35b7189a759f1aab9cb65d65edb7983b/static/zstd_compress_sequences.o
+mv -f Options.Td Options.d
+CC obj/conf_35b7189a759f1aab9cb65d65edb7983b/static/zstd_compress_superblock.o
+CC obj/conf_35b7189a759f1aab9cb65d65edb7983b/static/zstd_double_fast.o
+CC obj/conf_35b7189a759f1aab9cb65d65edb7983b/static/zstd_fast.o
+CC obj/conf_35b7189a759f1aab9cb65d65edb7983b/static/zstd_lazy.o
+CC obj/conf_35b7189a759f1aab9cb65d65edb7983b/static/zstd_ldm.o
+CC obj/conf_35b7189a759f1aab9cb65d65edb7983b/static/zstd_opt.o
+CC obj/conf_35b7189a759f1aab9cb65d65edb7983b/static/zstdmt_compress.o
+CC obj/conf_35b7189a759f1aab9cb65d65edb7983b/static/huf_decompress.o
+CC obj/conf_35b7189a759f1aab9cb65d65edb7983b/static/zstd_ddict.o
+CC obj/conf_35b7189a759f1aab9cb65d65edb7983b/static/zstd_decompress.o
+CC obj/conf_35b7189a759f1aab9cb65d65edb7983b/static/zstd_decompress_block.o
+AS obj/conf_35b7189a759f1aab9cb65d65edb7983b/static/huf_decompress_amd64.o
+CC obj/conf_35b7189a759f1aab9cb65d65edb7983b/static/cover.o
+CC obj/conf_35b7189a759f1aab9cb65d65edb7983b/static/divsufsort.o
+CC obj/conf_35b7189a759f1aab9cb65d65edb7983b/static/fastcover.o
+CC obj/conf_35b7189a759f1aab9cb65d65edb7983b/static/zdict.o
+mv -f Pzstd.Td Pzstd.d
+compiling single-threaded static library 1.5.2
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/git/lib'
+g++  main.o ../../programs/util.o Options.o Pzstd.o SkippableFrame.o ../../lib/libzstd.a           -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/usr/include -O2 -pipe -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/usr/lib                         -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/lib                         -Wl,--enable-new-dtags                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/lib                         -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2   -pthread -o pzstd
+make: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/git/contrib/pzstd'
+DEBUG: Shell function do_compile finished

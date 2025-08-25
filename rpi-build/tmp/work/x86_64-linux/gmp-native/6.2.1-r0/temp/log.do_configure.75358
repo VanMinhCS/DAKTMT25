@@ -1,0 +1,535 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are ['/home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-native_2.4.7.bb:do_populate_sysroot', '/home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-native_0.67.bb:do_populate_sysroot', '/home/ubuntu/yocto/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-native.bb:do_populate_sysroot', 'virtual:native:/home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf_2.71.bb:do_populate_sysroot', 'virtual:native:/home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake_1.16.5.bb:do_populate_sysroot']
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: ['libtool-native', 'quilt-native', 'texinfo-dummy-native', 'autoconf-native', 'automake-native', 'm4-native', 'gnu-config-native', 'gettext-minimal-native']
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing shell function autotools_preconfigure
+DEBUG: Shell function autotools_preconfigure finished
+DEBUG: Executing python function autotools_aclocals
+DEBUG: SITE files ['endian-little', 'common-linux', 'common-glibc', 'bit-64', 'x86_64-linux', 'common']
+DEBUG: Python function autotools_aclocals finished
+DEBUG: Executing shell function do_configure
+automake (GNU automake) 1.16.5
+Copyright (C) 2021 Free Software Foundation, Inc.
+License GPLv2+: GNU GPL version 2 or later <https://gnu.org/licenses/gpl-2.0.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Tom Tromey <tromey@redhat.com>
+       and Alexandre Duret-Lutz <adl@gnu.org>.
+AUTOV is 1.16
+NOTE: Executing ACLOCAL="aclocal --system-acdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/share/aclocal/ --automake-acdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/share/aclocal-1.16" autoreconf -Wcross --verbose --install --force --exclude=autopoint --exclude=gtkdocize
+autoreconf: export WARNINGS=cross,no-obsolete
+autoreconf: Entering directory '.'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: aclocal --system-acdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/share/aclocal/ --automake-acdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/share/aclocal-1.16 --force 
+autoreconf: configure.ac: tracing
+autoreconf: running: libtoolize --copy --force
+libtoolize: putting auxiliary files in '.'.
+libtoolize: copying file './ltmain.sh'
+libtoolize: Consider adding 'AC_CONFIG_MACRO_DIRS([m4])' to configure.ac,
+libtoolize: and rerunning libtoolize and aclocal.
+libtoolize: Consider adding '-I m4' to ACLOCAL_AMFLAGS in Makefile.am.
+autoreconf: configure.ac: not using Intltool
+autoreconf: configure.ac: not using Gtkdoc
+autoreconf: running: aclocal --system-acdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/share/aclocal/ --automake-acdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/share/aclocal-1.16 --force 
+autoreconf: running: /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/bin/autoconf --force
+autoreconf: running: /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/bin/autoheader --force
+autoreconf: running: automake --add-missing --copy --force-missing
+configure.ac:2463: installing './compile'
+configure.ac:81: installing './missing'
+autoreconf: Leaving directory '.'
+NOTE: Running ../gmp-6.2.1/configure  --build=x86_64-linux 		  --host=x86_64-linux 		  --target=x86_64-linux 		  --prefix=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr 		  --exec_prefix=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr 		  --bindir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/bin 		  --sbindir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/sbin 		  --libexecdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/libexec 		  --datadir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/share 		  --sysconfdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/etc 		  --sharedstatedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/com 		  --localstatedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/var 		  --libdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/lib 		  --includedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/include 		  --oldincludedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/include 		  --infodir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/share/info 		  --mandir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/share/man 		  --disable-silent-rules 		  --disable-dependency-tracking 		     --enable-cxx=detect --disable-static  --with-readline=no 
+configure: WARNING: unrecognized options: --disable-dependency-tracking
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/endian-little
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/common-linux
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/common-glibc
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/x86_64-linux
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/common
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for a BSD-compatible install... /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking ABI=64
+checking compiler gcc  -O2 -pedantic -fomit-frame-pointer -m64 ... yes
+checking compiler gcc  -O2 -pedantic -fomit-frame-pointer -m64  -mtune=k8... yes
+checking compiler gcc  -O2 -pedantic -fomit-frame-pointer -m64 -mtune=k8  -march=k8... yes
+checking for x86_64-linux-gcc... gcc 
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc  accepts -g... yes
+checking for gcc  option to enable C11 features... none needed
+checking whether gcc  understands -c and -o together... yes
+checking how to run the C preprocessor... gcc  -E
+checking build system compiler gcc ... yes
+checking for build system preprocessor... gcc  -E
+checking for build system executable suffix... 
+checking whether build system compiler is ANSI... yes
+checking for build system compiler math library... -lm
+checking whether the compiler supports GNU C++... yes
+checking whether g++  accepts -g... yes
+checking for g++  option to enable C++11 features... none needed
+checking C++ compiler g++   -O2 -pedantic -fomit-frame-pointer -m64 -mtune=k8 -march=k8 -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/include -O2 -pipe... yes
+checking how to run the C++ preprocessor... g++  -E
+checking for grep that handles long lines and -e... /home/ubuntu/yocto/rpi-build/tmp/hosttools/grep
+checking for egrep... /home/ubuntu/yocto/rpi-build/tmp/hosttools/grep -E
+using ABI="64"
+      CC="gcc "
+      CFLAGS="-O2 -pedantic -fomit-frame-pointer -m64 -mtune=k8 -march=k8 -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/include -O2 -pipe"
+      CPPFLAGS=" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/include"
+      CXX="g++ "
+      CXXFLAGS="-O2 -pedantic -fomit-frame-pointer -m64 -mtune=k8 -march=k8 -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/include -O2 -pipe"
+      MPN_PATH=" x86_64/k8 x86_64 generic"
+checking whether assembler supports --noexecstack option... yes
+checking for x86_64-linux-ar... ar
+checking for BSD- or MS-compatible name lister (nm)... nm
+checking the name lister (nm) interface... BSD nm
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) sed
+checking for fgrep... /home/ubuntu/yocto/rpi-build/tmp/hosttools/grep -F
+checking for ld used by gcc ... ld 
+checking if the linker (ld ) is GNU ld... yes
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for ld  option to reload object files... -r
+checking for x86_64-linux-file... no
+checking for file... file
+checking for x86_64-linux-objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for x86_64-linux-dlltool... dlltool
+checking how to associate runtime and link libraries... printf %s\n
+checking for x86_64-linux-ar... (cached) ar
+checking for archiver @FILE support... @
+checking for x86_64-linux-strip... strip
+checking for x86_64-linux-ranlib... ranlib -D
+checking command to parse nm output from gcc  object... ok
+checking for sysroot... no
+checking for a working dd... /home/ubuntu/yocto/rpi-build/tmp/hosttools/dd
+checking how to truncate binary pipes... /home/ubuntu/yocto/rpi-build/tmp/hosttools/dd bs=4096 count=1
+checking for x86_64-linux-mt... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for sys/time.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc  supports -fno-rtti -fno-exceptions... no
+checking for gcc  option to produce PIC... -fPIC -DPIC
+checking if gcc  PIC flag -fPIC -DPIC works... yes
+checking if gcc  static flag -static works... yes
+checking if gcc  supports -c -o file.o... yes
+checking if gcc  supports -c -o file.o... (cached) yes
+checking whether the gcc  linker (ld  -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking how to run the C++ preprocessor... g++  -E
+checking for ld used by g++ ... ld  -m elf_x86_64
+checking if the linker (ld  -m elf_x86_64) is GNU ld... yes
+checking whether the g++  linker (ld  -m elf_x86_64) supports shared libraries... yes
+checking for g++  option to produce PIC... -fPIC -DPIC
+checking if g++  PIC flag -fPIC -DPIC works... yes
+checking if g++  static flag -static works... yes
+checking if g++  supports -c -o file.o... yes
+checking if g++  supports -c -o file.o... (cached) yes
+checking whether the g++  linker (ld  -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for egrep... (cached) /home/ubuntu/yocto/rpi-build/tmp/hosttools/grep -E
+checking for fcntl.h... yes
+checking for float.h... yes
+checking for invent.h... no
+checking for langinfo.h... yes
+checking for locale.h... yes
+checking for nl_types.h... yes
+checking for sys/attributes.h... no
+checking for sys/iograph.h... no
+checking for sys/mman.h... yes
+checking for sys/param.h... yes
+checking for sys/processor.h... no
+checking for sys/pstat.h... no
+checking for sys/sysinfo.h... yes
+checking for sys/syssgi.h... no
+checking for sys/systemcfg.h... no
+checking for sys/time.h... (cached) yes
+checking for sys/times.h... yes
+checking for sys/resource.h... yes
+checking for sys/sysctl.h... no
+checking for machine/hal_sysinfo.h... no
+checking for gcc  options needed to detect all undeclared functions... none needed
+checking whether fgetc is declared... yes
+checking whether fscanf is declared... yes
+checking whether optarg is declared... yes
+checking whether ungetc is declared... yes
+checking whether vfprintf is declared... yes
+checking whether sys_errlist is declared... no
+checking whether sys_nerr is declared... no
+checking return type of signal handlers... void
+checking for intmax_t... yes
+checking for long double... yes
+checking for long long... yes
+checking for ptrdiff_t... yes
+checking for quad_t... yes
+checking for uint_least32_t... yes
+checking for intptr_t... yes
+checking for working volatile... yes
+checking for C/C++ restrict keyword... __restrict__
+checking whether gcc __attribute__ ((const)) works... yes
+checking whether gcc __attribute__ ((malloc)) works... yes
+checking whether gcc __attribute__ ((mode (XX))) works... yes
+checking whether gcc __attribute__ ((noreturn)) works... yes
+checking whether gcc hidden aliases work... yes
+checking for inline... inline
+checking for cos in -lm... yes
+checking for working alloca.h... yes
+checking for alloca (via gmp-impl.h)... yes
+checking how to allocate temporary memory... alloca
+checking whether byte ordering is bigendian... (cached) no
+checking format of `double' floating point... IEEE little endian
+checking for alarm... yes
+checking for attr_get... no
+checking for clock... yes
+checking for cputime... no
+checking for getpagesize... (cached) yes
+checking for getrusage... yes
+checking for gettimeofday... yes
+checking for getsysinfo... no
+checking for localeconv... yes
+checking for memset... yes
+checking for mmap... yes
+checking for mprotect... yes
+checking for nl_langinfo... yes
+checking for obstack_vprintf... yes
+checking for popen... yes
+checking for processor_info... no
+checking for pstat_getprocessor... no
+checking for raise... yes
+checking for read_real_time... no
+checking for sigaction... yes
+checking for sigaltstack... yes
+checking for sigstack... yes
+checking for syssgi... no
+checking for strchr... yes
+checking for strerror... (cached) yes
+checking for strnlen... yes
+checking for strtol... yes
+checking for strtoul... yes
+checking for sysconf... yes
+checking for sysctl... no
+checking for sysctlbyname... no
+checking for times... yes
+checking for library containing clock_gettime... none required
+checking for vsnprintf... yes
+checking whether vsnprintf works... yes
+checking whether sscanf needs writable input... no
+checking for struct pst_processor.psp_iticksperclktick... no
+checking for suitable m4... m4
+checking if m4wrap produces spurious output... no
+checking how to switch to text section... .text
+checking how to switch to data section... .data
+checking for assembler label suffix... :
+checking for assembler global directive... .globl
+checking for assembler global directive attribute... 
+checking if globals are prefixed by underscore... no
+checking how to switch to read-only data section... 	.section	.rodata
+checking for assembler .type directive... .type	$1,@$2
+checking for assembler .size directive... .size	$1,$2
+checking for assembler local label prefix... .L
+checking for assembler byte directive... .byte
+checking how to define a 32-bit word... .long
+checking if .align assembly directive is logarithmic... no
+checking if the .align directive accepts an 0x90 fill in .text... yes
+checking for assembler COFF type directives... no
+checking size of void *... (cached) 8
+checking size of unsigned short... (cached) 2
+checking size of unsigned... 4
+checking size of unsigned long... (cached) 8
+checking size of mp_limb_t... 8
+checking for stack_t... yes
+checking for bison... no
+checking for byacc... no
+checking for flex... no
+checking for lex... no
+creating config.m4
+configure: creating ./config.status
+config.status: creating demos/pexpr-config.h
+config.status: creating demos/calc/calc-config.h
+config.status: creating Makefile
+config.status: creating mpf/Makefile
+config.status: creating mpn/Makefile
+config.status: creating mpq/Makefile
+config.status: creating mpz/Makefile
+config.status: creating printf/Makefile
+config.status: creating scanf/Makefile
+config.status: creating rand/Makefile
+config.status: creating cxx/Makefile
+config.status: creating tests/Makefile
+config.status: creating tests/devel/Makefile
+config.status: creating tests/mpf/Makefile
+config.status: creating tests/mpn/Makefile
+config.status: creating tests/mpq/Makefile
+config.status: creating tests/mpz/Makefile
+config.status: creating tests/rand/Makefile
+config.status: creating tests/misc/Makefile
+config.status: creating tests/cxx/Makefile
+config.status: creating doc/Makefile
+config.status: creating tune/Makefile
+config.status: creating demos/Makefile
+config.status: creating demos/calc/Makefile
+config.status: creating demos/expr/Makefile
+config.status: creating gmp.h
+config.status: creating gmp.pc
+config.status: creating gmpxx.pc
+config.status: creating config.h
+config.status: linking ../gmp-6.2.1/mpn/x86_64/invert_limb_table.asm to mpn/invert_limb_table.asm
+config.status: linking ../gmp-6.2.1/mpn/generic/add.c to mpn/add.c
+config.status: linking ../gmp-6.2.1/mpn/generic/add_1.c to mpn/add_1.c
+config.status: linking ../gmp-6.2.1/mpn/x86_64/aors_n.asm to mpn/add_n.asm
+config.status: linking ../gmp-6.2.1/mpn/generic/sub.c to mpn/sub.c
+config.status: linking ../gmp-6.2.1/mpn/generic/sub_1.c to mpn/sub_1.c
+config.status: linking ../gmp-6.2.1/mpn/x86_64/aors_n.asm to mpn/sub_n.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/cnd_aors_n.asm to mpn/cnd_add_n.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/cnd_aors_n.asm to mpn/cnd_sub_n.asm
+config.status: linking ../gmp-6.2.1/mpn/generic/cnd_swap.c to mpn/cnd_swap.c
+config.status: linking ../gmp-6.2.1/mpn/generic/neg.c to mpn/neg.c
+config.status: linking ../gmp-6.2.1/mpn/x86_64/com.asm to mpn/com.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/mul_1.asm to mpn/mul_1.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/aorsmul_1.asm to mpn/addmul_1.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/aorsmul_1.asm to mpn/submul_1.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/aors_err1_n.asm to mpn/add_err1_n.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/aors_err2_n.asm to mpn/add_err2_n.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/aors_err3_n.asm to mpn/add_err3_n.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/aors_err1_n.asm to mpn/sub_err1_n.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/aors_err2_n.asm to mpn/sub_err2_n.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/aors_err3_n.asm to mpn/sub_err3_n.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/lshift.asm to mpn/lshift.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/rshift.asm to mpn/rshift.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/dive_1.asm to mpn/dive_1.asm
+config.status: linking ../gmp-6.2.1/mpn/generic/diveby3.c to mpn/diveby3.c
+config.status: linking ../gmp-6.2.1/mpn/generic/divis.c to mpn/divis.c
+config.status: linking ../gmp-6.2.1/mpn/generic/divrem.c to mpn/divrem.c
+config.status: linking ../gmp-6.2.1/mpn/x86_64/divrem_1.asm to mpn/divrem_1.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/divrem_2.asm to mpn/divrem_2.asm
+config.status: linking ../gmp-6.2.1/mpn/generic/fib2_ui.c to mpn/fib2_ui.c
+config.status: linking ../gmp-6.2.1/mpn/generic/fib2m.c to mpn/fib2m.c
+config.status: linking ../gmp-6.2.1/mpn/generic/mod_1.c to mpn/mod_1.c
+config.status: linking ../gmp-6.2.1/mpn/x86_64/mod_34lsub1.asm to mpn/mod_34lsub1.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/mode1o.asm to mpn/mode1o.asm
+config.status: linking ../gmp-6.2.1/mpn/generic/pre_mod_1.c to mpn/pre_mod_1.c
+config.status: linking ../gmp-6.2.1/mpn/generic/dump.c to mpn/dump.c
+config.status: linking ../gmp-6.2.1/mpn/x86_64/mod_1_1.asm to mpn/mod_1_1.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/mod_1_2.asm to mpn/mod_1_2.asm
+config.status: linking ../gmp-6.2.1/mpn/generic/mod_1_3.c to mpn/mod_1_3.c
+config.status: linking ../gmp-6.2.1/mpn/x86_64/mod_1_4.asm to mpn/mod_1_4.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/lshiftc.asm to mpn/lshiftc.asm
+config.status: linking ../gmp-6.2.1/mpn/generic/mul.c to mpn/mul.c
+config.status: linking ../gmp-6.2.1/mpn/generic/mul_fft.c to mpn/mul_fft.c
+config.status: linking ../gmp-6.2.1/mpn/generic/mul_n.c to mpn/mul_n.c
+config.status: linking ../gmp-6.2.1/mpn/generic/sqr.c to mpn/sqr.c
+config.status: linking ../gmp-6.2.1/mpn/x86_64/k8/mul_basecase.asm to mpn/mul_basecase.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/k8/sqr_basecase.asm to mpn/sqr_basecase.asm
+config.status: linking ../gmp-6.2.1/mpn/generic/nussbaumer_mul.c to mpn/nussbaumer_mul.c
+config.status: linking ../gmp-6.2.1/mpn/x86_64/k8/mulmid_basecase.asm to mpn/mulmid_basecase.asm
+config.status: linking ../gmp-6.2.1/mpn/generic/toom42_mulmid.c to mpn/toom42_mulmid.c
+config.status: linking ../gmp-6.2.1/mpn/generic/mulmid_n.c to mpn/mulmid_n.c
+config.status: linking ../gmp-6.2.1/mpn/generic/mulmid.c to mpn/mulmid.c
+config.status: linking ../gmp-6.2.1/mpn/generic/random.c to mpn/random.c
+config.status: linking ../gmp-6.2.1/mpn/generic/random2.c to mpn/random2.c
+config.status: linking ../gmp-6.2.1/mpn/generic/pow_1.c to mpn/pow_1.c
+config.status: linking ../gmp-6.2.1/mpn/generic/rootrem.c to mpn/rootrem.c
+config.status: linking ../gmp-6.2.1/mpn/generic/sqrtrem.c to mpn/sqrtrem.c
+config.status: linking ../gmp-6.2.1/mpn/generic/sizeinbase.c to mpn/sizeinbase.c
+config.status: linking ../gmp-6.2.1/mpn/generic/get_str.c to mpn/get_str.c
+config.status: linking ../gmp-6.2.1/mpn/generic/set_str.c to mpn/set_str.c
+config.status: linking ../gmp-6.2.1/mpn/generic/compute_powtab.c to mpn/compute_powtab.c
+config.status: linking ../gmp-6.2.1/mpn/generic/scan0.c to mpn/scan0.c
+config.status: linking ../gmp-6.2.1/mpn/generic/scan1.c to mpn/scan1.c
+config.status: linking ../gmp-6.2.1/mpn/x86_64/popham.asm to mpn/popcount.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/popham.asm to mpn/hamdist.asm
+config.status: linking ../gmp-6.2.1/mpn/generic/cmp.c to mpn/cmp.c
+config.status: linking ../gmp-6.2.1/mpn/generic/zero_p.c to mpn/zero_p.c
+config.status: linking ../gmp-6.2.1/mpn/generic/perfsqr.c to mpn/perfsqr.c
+config.status: linking ../gmp-6.2.1/mpn/generic/perfpow.c to mpn/perfpow.c
+config.status: linking ../gmp-6.2.1/mpn/generic/strongfibo.c to mpn/strongfibo.c
+config.status: linking ../gmp-6.2.1/mpn/x86_64/gcd_11.asm to mpn/gcd_11.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/gcd_22.asm to mpn/gcd_22.asm
+config.status: linking ../gmp-6.2.1/mpn/generic/gcd_1.c to mpn/gcd_1.c
+config.status: linking ../gmp-6.2.1/mpn/generic/gcd.c to mpn/gcd.c
+config.status: linking ../gmp-6.2.1/mpn/generic/gcdext_1.c to mpn/gcdext_1.c
+config.status: linking ../gmp-6.2.1/mpn/generic/gcdext.c to mpn/gcdext.c
+config.status: linking ../gmp-6.2.1/mpn/generic/gcd_subdiv_step.c to mpn/gcd_subdiv_step.c
+config.status: linking ../gmp-6.2.1/mpn/generic/gcdext_lehmer.c to mpn/gcdext_lehmer.c
+config.status: linking ../gmp-6.2.1/mpn/generic/div_q.c to mpn/div_q.c
+config.status: linking ../gmp-6.2.1/mpn/generic/tdiv_qr.c to mpn/tdiv_qr.c
+config.status: linking ../gmp-6.2.1/mpn/generic/jacbase.c to mpn/jacbase.c
+config.status: linking ../gmp-6.2.1/mpn/generic/jacobi_2.c to mpn/jacobi_2.c
+config.status: linking ../gmp-6.2.1/mpn/generic/jacobi.c to mpn/jacobi.c
+config.status: linking ../gmp-6.2.1/mpn/generic/get_d.c to mpn/get_d.c
+config.status: linking ../gmp-6.2.1/mpn/generic/matrix22_mul.c to mpn/matrix22_mul.c
+config.status: linking ../gmp-6.2.1/mpn/generic/matrix22_mul1_inverse_vector.c to mpn/matrix22_mul1_inverse_vector.c
+config.status: linking ../gmp-6.2.1/mpn/generic/hgcd_matrix.c to mpn/hgcd_matrix.c
+config.status: linking ../gmp-6.2.1/mpn/generic/hgcd2.c to mpn/hgcd2.c
+config.status: linking ../gmp-6.2.1/mpn/generic/hgcd_step.c to mpn/hgcd_step.c
+config.status: linking ../gmp-6.2.1/mpn/generic/hgcd_reduce.c to mpn/hgcd_reduce.c
+config.status: linking ../gmp-6.2.1/mpn/generic/hgcd.c to mpn/hgcd.c
+config.status: linking ../gmp-6.2.1/mpn/generic/hgcd_appr.c to mpn/hgcd_appr.c
+config.status: linking ../gmp-6.2.1/mpn/generic/hgcd2_jacobi.c to mpn/hgcd2_jacobi.c
+config.status: linking ../gmp-6.2.1/mpn/generic/hgcd_jacobi.c to mpn/hgcd_jacobi.c
+config.status: linking ../gmp-6.2.1/mpn/generic/mullo_n.c to mpn/mullo_n.c
+config.status: linking ../gmp-6.2.1/mpn/x86_64/k8/mullo_basecase.asm to mpn/mullo_basecase.asm
+config.status: linking ../gmp-6.2.1/mpn/generic/sqrlo.c to mpn/sqrlo.c
+config.status: linking ../gmp-6.2.1/mpn/generic/sqrlo_basecase.c to mpn/sqrlo_basecase.c
+config.status: linking ../gmp-6.2.1/mpn/generic/toom22_mul.c to mpn/toom22_mul.c
+config.status: linking ../gmp-6.2.1/mpn/generic/toom32_mul.c to mpn/toom32_mul.c
+config.status: linking ../gmp-6.2.1/mpn/generic/toom42_mul.c to mpn/toom42_mul.c
+config.status: linking ../gmp-6.2.1/mpn/generic/toom52_mul.c to mpn/toom52_mul.c
+config.status: linking ../gmp-6.2.1/mpn/generic/toom62_mul.c to mpn/toom62_mul.c
+config.status: linking ../gmp-6.2.1/mpn/generic/toom33_mul.c to mpn/toom33_mul.c
+config.status: linking ../gmp-6.2.1/mpn/generic/toom43_mul.c to mpn/toom43_mul.c
+config.status: linking ../gmp-6.2.1/mpn/generic/toom53_mul.c to mpn/toom53_mul.c
+config.status: linking ../gmp-6.2.1/mpn/generic/toom54_mul.c to mpn/toom54_mul.c
+config.status: linking ../gmp-6.2.1/mpn/generic/toom63_mul.c to mpn/toom63_mul.c
+config.status: linking ../gmp-6.2.1/mpn/generic/toom44_mul.c to mpn/toom44_mul.c
+config.status: linking ../gmp-6.2.1/mpn/generic/toom6h_mul.c to mpn/toom6h_mul.c
+config.status: linking ../gmp-6.2.1/mpn/generic/toom6_sqr.c to mpn/toom6_sqr.c
+config.status: linking ../gmp-6.2.1/mpn/generic/toom8h_mul.c to mpn/toom8h_mul.c
+config.status: linking ../gmp-6.2.1/mpn/generic/toom8_sqr.c to mpn/toom8_sqr.c
+config.status: linking ../gmp-6.2.1/mpn/generic/toom_couple_handling.c to mpn/toom_couple_handling.c
+config.status: linking ../gmp-6.2.1/mpn/generic/toom2_sqr.c to mpn/toom2_sqr.c
+config.status: linking ../gmp-6.2.1/mpn/generic/toom3_sqr.c to mpn/toom3_sqr.c
+config.status: linking ../gmp-6.2.1/mpn/generic/toom4_sqr.c to mpn/toom4_sqr.c
+config.status: linking ../gmp-6.2.1/mpn/generic/toom_eval_dgr3_pm1.c to mpn/toom_eval_dgr3_pm1.c
+config.status: linking ../gmp-6.2.1/mpn/generic/toom_eval_dgr3_pm2.c to mpn/toom_eval_dgr3_pm2.c
+config.status: linking ../gmp-6.2.1/mpn/generic/toom_eval_pm1.c to mpn/toom_eval_pm1.c
+config.status: linking ../gmp-6.2.1/mpn/generic/toom_eval_pm2.c to mpn/toom_eval_pm2.c
+config.status: linking ../gmp-6.2.1/mpn/generic/toom_eval_pm2exp.c to mpn/toom_eval_pm2exp.c
+config.status: linking ../gmp-6.2.1/mpn/generic/toom_eval_pm2rexp.c to mpn/toom_eval_pm2rexp.c
+config.status: linking ../gmp-6.2.1/mpn/generic/toom_interpolate_5pts.c to mpn/toom_interpolate_5pts.c
+config.status: linking ../gmp-6.2.1/mpn/generic/toom_interpolate_6pts.c to mpn/toom_interpolate_6pts.c
+config.status: linking ../gmp-6.2.1/mpn/generic/toom_interpolate_7pts.c to mpn/toom_interpolate_7pts.c
+config.status: linking ../gmp-6.2.1/mpn/generic/toom_interpolate_8pts.c to mpn/toom_interpolate_8pts.c
+config.status: linking ../gmp-6.2.1/mpn/generic/toom_interpolate_12pts.c to mpn/toom_interpolate_12pts.c
+config.status: linking ../gmp-6.2.1/mpn/generic/toom_interpolate_16pts.c to mpn/toom_interpolate_16pts.c
+config.status: linking ../gmp-6.2.1/mpn/generic/invertappr.c to mpn/invertappr.c
+config.status: linking ../gmp-6.2.1/mpn/generic/invert.c to mpn/invert.c
+config.status: linking ../gmp-6.2.1/mpn/generic/binvert.c to mpn/binvert.c
+config.status: linking ../gmp-6.2.1/mpn/generic/mulmod_bnm1.c to mpn/mulmod_bnm1.c
+config.status: linking ../gmp-6.2.1/mpn/generic/sqrmod_bnm1.c to mpn/sqrmod_bnm1.c
+config.status: linking ../gmp-6.2.1/mpn/generic/div_qr_1.c to mpn/div_qr_1.c
+config.status: linking ../gmp-6.2.1/mpn/x86_64/k8/div_qr_1n_pi1.asm to mpn/div_qr_1n_pi1.asm
+config.status: linking ../gmp-6.2.1/mpn/generic/div_qr_2.c to mpn/div_qr_2.c
+config.status: linking ../gmp-6.2.1/mpn/x86_64/div_qr_2n_pi1.asm to mpn/div_qr_2n_pi1.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/div_qr_2u_pi1.asm to mpn/div_qr_2u_pi1.asm
+config.status: linking ../gmp-6.2.1/mpn/generic/sbpi1_div_q.c to mpn/sbpi1_div_q.c
+config.status: linking ../gmp-6.2.1/mpn/generic/sbpi1_div_qr.c to mpn/sbpi1_div_qr.c
+config.status: linking ../gmp-6.2.1/mpn/generic/sbpi1_divappr_q.c to mpn/sbpi1_divappr_q.c
+config.status: linking ../gmp-6.2.1/mpn/generic/dcpi1_div_q.c to mpn/dcpi1_div_q.c
+config.status: linking ../gmp-6.2.1/mpn/generic/dcpi1_div_qr.c to mpn/dcpi1_div_qr.c
+config.status: linking ../gmp-6.2.1/mpn/generic/dcpi1_divappr_q.c to mpn/dcpi1_divappr_q.c
+config.status: linking ../gmp-6.2.1/mpn/generic/mu_div_qr.c to mpn/mu_div_qr.c
+config.status: linking ../gmp-6.2.1/mpn/generic/mu_divappr_q.c to mpn/mu_divappr_q.c
+config.status: linking ../gmp-6.2.1/mpn/generic/mu_div_q.c to mpn/mu_div_q.c
+config.status: linking ../gmp-6.2.1/mpn/x86_64/k8/bdiv_q_1.asm to mpn/bdiv_q_1.asm
+config.status: linking ../gmp-6.2.1/mpn/generic/sbpi1_bdiv_q.c to mpn/sbpi1_bdiv_q.c
+config.status: linking ../gmp-6.2.1/mpn/generic/sbpi1_bdiv_qr.c to mpn/sbpi1_bdiv_qr.c
+config.status: linking ../gmp-6.2.1/mpn/generic/sbpi1_bdiv_r.c to mpn/sbpi1_bdiv_r.c
+config.status: linking ../gmp-6.2.1/mpn/generic/dcpi1_bdiv_q.c to mpn/dcpi1_bdiv_q.c
+config.status: linking ../gmp-6.2.1/mpn/generic/dcpi1_bdiv_qr.c to mpn/dcpi1_bdiv_qr.c
+config.status: linking ../gmp-6.2.1/mpn/generic/mu_bdiv_q.c to mpn/mu_bdiv_q.c
+config.status: linking ../gmp-6.2.1/mpn/generic/mu_bdiv_qr.c to mpn/mu_bdiv_qr.c
+config.status: linking ../gmp-6.2.1/mpn/generic/bdiv_q.c to mpn/bdiv_q.c
+config.status: linking ../gmp-6.2.1/mpn/generic/bdiv_qr.c to mpn/bdiv_qr.c
+config.status: linking ../gmp-6.2.1/mpn/generic/broot.c to mpn/broot.c
+config.status: linking ../gmp-6.2.1/mpn/generic/brootinv.c to mpn/brootinv.c
+config.status: linking ../gmp-6.2.1/mpn/generic/bsqrt.c to mpn/bsqrt.c
+config.status: linking ../gmp-6.2.1/mpn/generic/bsqrtinv.c to mpn/bsqrtinv.c
+config.status: linking ../gmp-6.2.1/mpn/generic/divexact.c to mpn/divexact.c
+config.status: linking ../gmp-6.2.1/mpn/x86_64/bdiv_dbm1c.asm to mpn/bdiv_dbm1c.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/k8/redc_1.asm to mpn/redc_1.asm
+config.status: linking ../gmp-6.2.1/mpn/generic/redc_2.c to mpn/redc_2.c
+config.status: linking ../gmp-6.2.1/mpn/generic/redc_n.c to mpn/redc_n.c
+config.status: linking ../gmp-6.2.1/mpn/generic/powm.c to mpn/powm.c
+config.status: linking ../gmp-6.2.1/mpn/generic/powlo.c to mpn/powlo.c
+config.status: linking ../gmp-6.2.1/mpn/generic/sec_powm.c to mpn/sec_powm.c
+config.status: linking ../gmp-6.2.1/mpn/generic/sec_mul.c to mpn/sec_mul.c
+config.status: linking ../gmp-6.2.1/mpn/generic/sec_sqr.c to mpn/sec_sqr.c
+config.status: linking ../gmp-6.2.1/mpn/generic/sec_div.c to mpn/sec_div_qr.c
+config.status: linking ../gmp-6.2.1/mpn/generic/sec_div.c to mpn/sec_div_r.c
+config.status: linking ../gmp-6.2.1/mpn/generic/sec_pi1_div.c to mpn/sec_pi1_div_qr.c
+config.status: linking ../gmp-6.2.1/mpn/generic/sec_pi1_div.c to mpn/sec_pi1_div_r.c
+config.status: linking ../gmp-6.2.1/mpn/generic/sec_aors_1.c to mpn/sec_add_1.c
+config.status: linking ../gmp-6.2.1/mpn/generic/sec_aors_1.c to mpn/sec_sub_1.c
+config.status: linking ../gmp-6.2.1/mpn/generic/sec_invert.c to mpn/sec_invert.c
+config.status: linking ../gmp-6.2.1/mpn/generic/trialdiv.c to mpn/trialdiv.c
+config.status: linking ../gmp-6.2.1/mpn/generic/remove.c to mpn/remove.c
+config.status: linking ../gmp-6.2.1/mpn/x86_64/logops_n.asm to mpn/and_n.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/logops_n.asm to mpn/andn_n.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/logops_n.asm to mpn/nand_n.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/logops_n.asm to mpn/ior_n.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/logops_n.asm to mpn/iorn_n.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/logops_n.asm to mpn/nior_n.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/logops_n.asm to mpn/xor_n.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/logops_n.asm to mpn/xnor_n.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/copyi.asm to mpn/copyi.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/copyd.asm to mpn/copyd.asm
+config.status: linking ../gmp-6.2.1/mpn/generic/zero.c to mpn/zero.c
+config.status: linking ../gmp-6.2.1/mpn/x86_64/sec_tabselect.asm to mpn/sec_tabselect.asm
+config.status: linking ../gmp-6.2.1/mpn/generic/comb_tables.c to mpn/comb_tables.c
+config.status: linking ../gmp-6.2.1/mpn/x86_64/invert_limb.asm to mpn/invert_limb.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/sqr_diag_addlsh1.asm to mpn/sqr_diag_addlsh1.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/mul_2.asm to mpn/mul_2.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/k8/addmul_2.asm to mpn/addmul_2.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/aorrlsh1_n.asm to mpn/addlsh1_n.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/sublsh1_n.asm to mpn/sublsh1_n.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/aorrlsh1_n.asm to mpn/rsblsh1_n.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/rsh1aors_n.asm to mpn/rsh1add_n.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/rsh1aors_n.asm to mpn/rsh1sub_n.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/aorrlsh2_n.asm to mpn/addlsh2_n.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/aorrlsh2_n.asm to mpn/rsblsh2_n.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/k8/aorrlsh_n.asm to mpn/addlsh_n.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/k8/aorrlsh_n.asm to mpn/rsblsh_n.asm
+config.status: linking ../gmp-6.2.1/mpn/generic/add_n_sub_n.c to mpn/add_n_sub_n.c
+config.status: linking ../gmp-6.2.1/mpn/x86_64/addaddmul_1msb0.asm to mpn/addaddmul_1msb0.asm
+config.status: linking ../gmp-6.2.1/mpn/x86_64/k8/gmp-mparam.h to gmp-mparam.h
+config.status: executing libtool commands
+configure: summary of build options:
+
+  Version:           GNU MP 6.2.1
+  Host type:         x86_64-pc-linux-gnu
+  ABI:               64
+  Install prefix:    /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr
+  Compiler:          gcc 
+  Static libraries:  no
+  Shared libraries:  yes
+
+configure: WARNING: unrecognized options: --disable-dependency-tracking
+DEBUG: Shell function do_configure finished
+DEBUG: Executing python function do_qa_configure
+NOTE: Checking autotools environment for common misconfiguration
+NOTE: Checking configure output for unrecognised options
+DEBUG: Python function do_qa_configure finished
+DEBUG: Executing shell function autotools_postconfigure
+DEBUG: Shell function autotools_postconfigure finished

@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:quilt-native:x86_64-linux:0.67:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 819f6558dbc8f3560fa0aec91e092f81825fa4370f42e9406d167ac748006f8f ./deploy-source-date-epoch/__source_date_epoch.txt

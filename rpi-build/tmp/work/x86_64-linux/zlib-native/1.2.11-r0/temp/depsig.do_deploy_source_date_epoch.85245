@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:zlib-native:x86_64-linux:1.2.11:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 adb7da148c6b040c0d3bbeca40bf616a9d568876a76f8d6b1bba1e0aeb3c950b ./deploy-source-date-epoch/__source_date_epoch.txt

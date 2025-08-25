@@ -1,0 +1,4 @@
+TaskDeps: do_fetch
+gettext-minimal-native
+gnu-config-native
+texinfo-dummy-native

@@ -1,0 +1,331 @@
+DEBUG: Executing shell function do_compile
+NOTE: make -j 8 -e MAKEFLAGS= STRIP=true LF2= CF_NOOPT=-I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe -f unix/Makefile generic
+sh unix/configure "gcc " "-I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe" "bzip2"
+Check C compiler operation
+  Ok
+Check C compiler type (optimization options)
+  GNU C ()
+Check for the C preprocessor
+Check if we can use asm code
+Check for ANSI options
+Check for prototypes
+Check the handling of const
+Check for time_t
+Check for size_t
+Check for off_t
+Check for Large File Support
+-- yes we have Large File Support!
+Check for wide char support
+-- have wchar_t with known UCS encoding - enabling Unicode support!
+Check for setlocale support (needed for UNICODE Native check)
+-- have setlocale, can check for charset type
+--  - enabling UTF8-native support!
+Check for gcc no-builtin flag
+Check for fchmod
+Check for fchown
+Check for lchown
+Check for nl_langinfo
+Check for lchmod
+conftest.c: In function ‘main’:
+conftest.c:2:14: error: implicit declaration of function ‘lchmod’ [-Werror=implicit-function-declaration]
+    2 | int main() { lchmod("/tmp/unzip_test_22954", 0666); }
+      |              ^~~~~~
+cc1: some warnings being treated as errors
+Check for memset
+Check for errno declaration
+Check for directory libraries
+Check for readlink
+Check for directory include file
+Check for non existent include files
+Check for term I/O include file
+Check for MBCS include files
+Check for MBCS support
+-- have MBCS support
+Check for MBCS mbschr
+Check for MBCS mbsrchr
+Check for valloc
+Check for /usr/local/bin and /usr/local/man
+Checking for OS specialties
+Check for symbolic links
+Check bzip2 support
+  Check for bzip2 sources in unzip's bzip2 subdirectory
+-- bzip2 sources not found - no bzip2 support
+eval make -f unix/Makefile unzips ACONF_DEP=flags `cat flags`
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/unzip60'
+gcc  -c -I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DNO_LCHMOD -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  unzip.c
+In file included from unzip.h:719,
+                 from unzip.c:68:
+unzip.c: In function ‘usage’:
+unzpriv.h:1009:45: warning: format ‘%c’ expects argument of type ‘int’, but argument 3 has type ‘char *’ [-Wformat=]
+ 1009 | #    define LoadFarString(x)        (char *)(x)
+      |                                             ^
+unzpriv.h:2718:61: note: in definition of macro ‘Info’
+ 2718 |        (*G.message)((zvoid *)&G, (uch *)(buf), (ulg)sprintf sprf_arg, (flag))
+      |                                                             ^~~~~~~~
+unzip.c:2118:43: note: in expansion of macro ‘LoadFarString’
+ 2118 |         Info(slide, flag, ((char *)slide, LoadFarString(ZipInfoUsageLine3),
+      |                                           ^~~~~~~~~~~~~
+unzpriv.h:1009:45: warning: format ‘%c’ expects a matching ‘int’ argument [-Wformat=]
+ 1009 | #    define LoadFarString(x)        (char *)(x)
+      |                                             ^
+unzpriv.h:2718:61: note: in definition of macro ‘Info’
+ 2718 |        (*G.message)((zvoid *)&G, (uch *)(buf), (ulg)sprintf sprf_arg, (flag))
+      |                                                             ^~~~~~~~
+unzip.c:2118:43: note: in expansion of macro ‘LoadFarString’
+ 2118 |         Info(slide, flag, ((char *)slide, LoadFarString(ZipInfoUsageLine3),
+      |                                           ^~~~~~~~~~~~~
+unzpriv.h:1009:45: warning: format ‘%c’ expects a matching ‘int’ argument [-Wformat=]
+ 1009 | #    define LoadFarString(x)        (char *)(x)
+      |                                             ^
+unzpriv.h:2718:61: note: in definition of macro ‘Info’
+ 2718 |        (*G.message)((zvoid *)&G, (uch *)(buf), (ulg)sprintf sprf_arg, (flag))
+      |                                                             ^~~~~~~~
+unzip.c:2118:43: note: in expansion of macro ‘LoadFarString’
+ 2118 |         Info(slide, flag, ((char *)slide, LoadFarString(ZipInfoUsageLine3),
+      |                                           ^~~~~~~~~~~~~
+unzpriv.h:1009:45: warning: format ‘%c’ expects a matching ‘int’ argument [-Wformat=]
+ 1009 | #    define LoadFarString(x)        (char *)(x)
+      |                                             ^
+unzpriv.h:2718:61: note: in definition of macro ‘Info’
+ 2718 |        (*G.message)((zvoid *)&G, (uch *)(buf), (ulg)sprintf sprf_arg, (flag))
+      |                                                             ^~~~~~~~
+unzip.c:2118:43: note: in expansion of macro ‘LoadFarString’
+ 2118 |         Info(slide, flag, ((char *)slide, LoadFarString(ZipInfoUsageLine3),
+      |                                           ^~~~~~~~~~~~~
+unzpriv.h:1009:45: warning: format ‘%s’ expects a matching ‘char *’ argument [-Wformat=]
+ 1009 | #    define LoadFarString(x)        (char *)(x)
+      |                                             ^
+unzpriv.h:2718:61: note: in definition of macro ‘Info’
+ 2718 |        (*G.message)((zvoid *)&G, (uch *)(buf), (ulg)sprintf sprf_arg, (flag))
+      |                                                             ^~~~~~~~
+unzip.c:2118:43: note: in expansion of macro ‘LoadFarString’
+ 2118 |         Info(slide, flag, ((char *)slide, LoadFarString(ZipInfoUsageLine3),
+      |                                           ^~~~~~~~~~~~~
+unzip.c: In function ‘uz_opts’:
+unzpriv.h:2718:53: warning: ‘%s’ directive writing up to 74535 bytes into a region of size 65528 [-Wformat-overflow=]
+ 2718 |        (*G.message)((zvoid *)&G, (uch *)(buf), (ulg)sprintf sprf_arg, (flag))
+unzip.c:2587:9: note: in expansion of macro ‘Info’
+ 2587 |         Info(slide, 0, ((char *)slide, LoadFarString(CompileOptFormat),
+      |         ^~~~
+In file included from /usr/include/stdio.h:894,
+                 from unzpriv.h:634,
+                 from unzip.h:719,
+                 from unzip.c:68:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:38:10: note: ‘__builtin___sprintf_chk’ output between 10 and 74545 bytes into a destination of size 65536
+   38 |   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   39 |                                   __glibc_objsize (__s), __fmt,
+      |                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   40 |                                   __va_arg_pack ());
+      |                                   ~~~~~~~~~~~~~~~~~
+In file included from unzip.h:719,
+                 from unzip.c:68:
+unzpriv.h:2718:53: warning: ‘%s’ directive writing up to 74535 bytes into a region of size 65528 [-Wformat-overflow=]
+ 2718 |        (*G.message)((zvoid *)&G, (uch *)(buf), (ulg)sprintf sprf_arg, (flag))
+unzip.c:2598:9: note: in expansion of macro ‘Info’
+ 2598 |         Info(slide, 0, ((char *)slide, LoadFarString(CompileOptFormat),
+      |         ^~~~
+In file included from /usr/include/stdio.h:894,
+                 from unzpriv.h:634,
+                 from unzip.h:719,
+                 from unzip.c:68:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:38:10: note: ‘__builtin___sprintf_chk’ output between 10 and 74545 bytes into a destination of size 65536
+   38 |   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   39 |                                   __glibc_objsize (__s), __fmt,
+      |                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   40 |                                   __va_arg_pack ());
+      |                                   ~~~~~~~~~~~~~~~~~
+gcc  -c -I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DNO_LCHMOD -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  crc32.c
+gcc  -c -I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DNO_LCHMOD -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  crypt.c
+gcc  -c -I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DNO_LCHMOD -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  envargs.c
+gcc  -c -I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DNO_LCHMOD -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  explode.c
+gcc  -c -I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DNO_LCHMOD -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  extract.c
+extract.c: In function ‘extract_or_test_files’:
+extract.c:773:9: warning: ignoring return value of ‘read’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  773 |         read(G.zipfd, (char *)G.inbuf, INBUFSIZ);  /* been here before... */
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+extract.c: In function ‘store_info’:
+extract.c:1085:13: warning: ignoring return value of ‘fgets’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+ 1085 |             fgets(G.answerbuf, sizeof(G.answerbuf), stdin);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+extract.c: In function ‘extract_or_test_entrylist’:
+extract.c:1666:29: warning: ignoring return value of ‘fgets’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+ 1666 |                             fgets(G.filename, FILNAMSIZ, stdin);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc  -c -I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DNO_LCHMOD -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  fileio.c
+fileio.c: In function ‘disk_error’:
+fileio.c:1225:5: warning: ignoring return value of ‘fgets’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+ 1225 |     fgets(G.answerbuf, sizeof(G.answerbuf), stdin);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc  -c -I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DNO_LCHMOD -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  globals.c
+gcc  -c -I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DNO_LCHMOD -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  inflate.c
+gcc  -c -I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DNO_LCHMOD -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  list.c
+list.c: In function ‘list_files’:
+list.c:350:45: warning: ‘%03u’ directive writing between 3 and 5 bytes into a region of size 4 [-Wformat-overflow=]
+  350 |                     sprintf( &methbuf[ 4], "%03u", G.crec.compression_method);
+      |                                             ^~~~
+list.c:350:44: note: directive argument in the range [0, 65535]
+  350 |                     sprintf( &methbuf[ 4], "%03u", G.crec.compression_method);
+      |                                            ^~~~~~
+In file included from /usr/include/stdio.h:894,
+                 from unzpriv.h:634,
+                 from unzip.h:719,
+                 from list.c:24:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:38:10: note: ‘__builtin___sprintf_chk’ output between 4 and 6 bytes into a destination of size 4
+   38 |   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   39 |                                   __glibc_objsize (__s), __fmt,
+      |                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   40 |                                   __va_arg_pack ());
+      |                                   ~~~~~~~~~~~~~~~~~
+gcc  -c -I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DNO_LCHMOD -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  match.c
+gcc  -c -I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DNO_LCHMOD -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  process.c
+gcc  -c -I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DNO_LCHMOD -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  ttyio.c
+ttyio.c: In function ‘zgetch’:
+ttyio.c:463:5: warning: ignoring return value of ‘read’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  463 |     read(f, &c, 1);             /* read our character */
+      |     ^~~~~~~~~~~~~~
+ttyio.c: In function ‘getp’:
+ttyio.c:631:13: warning: ignoring return value of ‘read’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  631 |             read(f, &c, 1);
+      |             ^~~~~~~~~~~~~~
+gcc  -c -I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DNO_LCHMOD -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  ubz2err.c
+gcc  -c -I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DNO_LCHMOD -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  unreduce.c
+gcc  -c -I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DNO_LCHMOD -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  unshrink.c
+gcc  -c -I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DNO_LCHMOD -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  zipinfo.c
+zipinfo.c: In function ‘zipinfo’:
+zipinfo.c:1994:37: warning: ‘%03u’ directive writing between 3 and 5 bytes into a region of size 4 [-Wformat-overflow=]
+ 1994 |             sprintf( &methbuf[ 1], "%03u", G.crec.compression_method);
+      |                                     ^~~~
+zipinfo.c:1994:36: note: directive argument in the range [0, 65535]
+ 1994 |             sprintf( &methbuf[ 1], "%03u", G.crec.compression_method);
+      |                                    ^~~~~~
+In file included from /usr/include/stdio.h:894,
+                 from unzpriv.h:634,
+                 from unzip.h:719,
+                 from zipinfo.c:26:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:38:10: note: ‘__builtin___sprintf_chk’ output between 4 and 6 bytes into a destination of size 4
+   38 |   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   39 |                                   __glibc_objsize (__s), __fmt,
+      |                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   40 |                                   __va_arg_pack ());
+      |                                   ~~~~~~~~~~~~~~~~~
+zipinfo.c:2045:49: warning: ‘__builtin___sprintf_chk’ may write a terminating nul past the end of the destination [-Wformat-overflow=]
+ 2045 |                     sprintf(&attribs[12], "%u.%u", hostver/10, hostver%10);
+      |                                                 ^
+In file included from /usr/include/stdio.h:894,
+                 from unzpriv.h:634,
+                 from unzip.h:719,
+                 from zipinfo.c:26:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:38:10: note: ‘__builtin___sprintf_chk’ output between 4 and 5 bytes into a destination of size 4
+   38 |   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   39 |                                   __glibc_objsize (__s), __fmt,
+      |                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   40 |                                   __va_arg_pack ());
+      |                                   ~~~~~~~~~~~~~~~~~
+zipinfo.c:2088:41: warning: ‘__builtin___sprintf_chk’ may write a terminating nul past the end of the destination [-Wformat-overflow=]
+ 2088 |             sprintf(&attribs[12], "%u.%u", hostver/10, hostver%10);
+      |                                         ^
+In file included from /usr/include/stdio.h:894,
+                 from unzpriv.h:634,
+                 from unzip.h:719,
+                 from zipinfo.c:26:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:38:10: note: ‘__builtin___sprintf_chk’ output between 4 and 5 bytes into a destination of size 4
+   38 |   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   39 |                                   __glibc_objsize (__s), __fmt,
+      |                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   40 |                                   __va_arg_pack ());
+      |                                   ~~~~~~~~~~~~~~~~~
+zipinfo.c:2063:41: warning: ‘__builtin___sprintf_chk’ may write a terminating nul past the end of the destination [-Wformat-overflow=]
+ 2063 |             sprintf(&attribs[12], "%u.%u", hostver/10, hostver%10);
+      |                                         ^
+In file included from /usr/include/stdio.h:894,
+                 from unzpriv.h:634,
+                 from unzip.h:719,
+                 from zipinfo.c:26:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:38:10: note: ‘__builtin___sprintf_chk’ output between 4 and 5 bytes into a destination of size 4
+   38 |   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   39 |                                   __glibc_objsize (__s), __fmt,
+      |                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   40 |                                   __va_arg_pack ());
+      |                                   ~~~~~~~~~~~~~~~~~
+zipinfo.c:2134:52: warning: ‘__builtin___sprintf_chk’ may write a terminating nul past the end of the destination [-Wformat-overflow=]
+ 2134 |                 sprintf(attribs, ".r.-...     %u.%u", hostver/10, hostver%10);
+      |                                                    ^
+In file included from /usr/include/stdio.h:894,
+                 from unzpriv.h:634,
+                 from unzip.h:719,
+                 from zipinfo.c:26:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:38:10: note: ‘__builtin___sprintf_chk’ output between 16 and 17 bytes into a destination of size 16
+   38 |   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   39 |                                   __glibc_objsize (__s), __fmt,
+      |                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   40 |                                   __va_arg_pack ());
+      |                                   ~~~~~~~~~~~~~~~~~
+zipinfo.c:2190:41: warning: ‘__builtin___sprintf_chk’ may write a terminating nul past the end of the destination [-Wformat-overflow=]
+ 2190 |             sprintf(&attribs[12], "%u.%u", hostver/10, hostver%10);
+      |                                         ^
+In file included from /usr/include/stdio.h:894,
+                 from unzpriv.h:634,
+                 from unzip.h:719,
+                 from zipinfo.c:26:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:38:10: note: ‘__builtin___sprintf_chk’ output between 4 and 5 bytes into a destination of size 4
+   38 |   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   39 |                                   __glibc_objsize (__s), __fmt,
+      |                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   40 |                                   __va_arg_pack ());
+      |                                   ~~~~~~~~~~~~~~~~~
+gcc  -c -I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DNO_LCHMOD -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  unix/unix.c
+gcc  -o unzip -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/lib -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/lib -Wl,--enable-new-dtags -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/lib -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/lib -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/lib -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/lib -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2 -Lbzip2 unzip.o crc32.o  crypt.o envargs.o explode.o extract.o fileio.o globals.o inflate.o list.o match.o process.o ttyio.o ubz2err.o unreduce.o unshrink.o zipinfo.o unix.o  
+gcc  -c -I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DNO_LCHMOD -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  funzip.c
+gcc  -c -I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DNO_LCHMOD -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  -DFUNZIP -o cryptf.o crypt.c
+gcc  -c -I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DNO_LCHMOD -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  -DFUNZIP -o globalsf.o globals.c
+gcc  -c -I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DNO_LCHMOD -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  -DFUNZIP -o inflatef.o inflate.c
+gcc  -c -I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DNO_LCHMOD -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  -DFUNZIP -o ttyiof.o ttyio.c
+ttyio.c: In function ‘getp’:
+ttyio.c:631:13: warning: ignoring return value of ‘read’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  631 |             read(f, &c, 1);
+      |             ^~~~~~~~~~~~~~
+gcc  -o funzip -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/lib -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/lib -Wl,--enable-new-dtags -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/lib -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/lib -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/lib -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/lib -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2 funzip.o crc32.o  cryptf.o globalsf.o inflatef.o ttyiof.o 
+gcc  -c -I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DNO_LCHMOD -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  -DSFX -o unzipsfx.o unzip.c
+gcc  -c -I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DNO_LCHMOD -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  -DSFX -o crc32_.o crc32.c
+gcc  -c -I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DNO_LCHMOD -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  -DSFX -o crypt_.o crypt.c
+gcc  -c -I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DNO_LCHMOD -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  -DSFX -o extract_.o extract.c
+extract.c: In function ‘extract_or_test_files’:
+extract.c:773:9: warning: ignoring return value of ‘read’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  773 |         read(G.zipfd, (char *)G.inbuf, INBUFSIZ);  /* been here before... */
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+extract.c: In function ‘store_info’:
+extract.c:1085:13: warning: ignoring return value of ‘fgets’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+ 1085 |             fgets(G.answerbuf, sizeof(G.answerbuf), stdin);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+extract.c: In function ‘extract_or_test_entrylist’:
+extract.c:1666:29: warning: ignoring return value of ‘fgets’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+ 1666 |                             fgets(G.filename, FILNAMSIZ, stdin);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc  -c -I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DNO_LCHMOD -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  -DSFX -o fileio_.o fileio.c
+fileio.c: In function ‘disk_error’:
+fileio.c:1225:5: warning: ignoring return value of ‘fgets’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+ 1225 |     fgets(G.answerbuf, sizeof(G.answerbuf), stdin);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc  -c -I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DNO_LCHMOD -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  -DSFX -o globals_.o globals.c
+gcc  -c -I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DNO_LCHMOD -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  -DSFX -o inflate_.o inflate.c
+gcc  -c -I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DNO_LCHMOD -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  -DSFX -o match_.o match.c
+gcc  -c -I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DNO_LCHMOD -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  -DSFX -o process_.o process.c
+gcc  -c -I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DNO_LCHMOD -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  -DSFX -o ttyio_.o ttyio.c
+ttyio.c: In function ‘zgetch’:
+ttyio.c:463:5: warning: ignoring return value of ‘read’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  463 |     read(f, &c, 1);             /* read our character */
+      |     ^~~~~~~~~~~~~~
+gcc  -c -I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DNO_LCHMOD -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  -DSFX -o ubz2err_.o ubz2err.c
+gcc  -c -I. -Ibzip2 -DUNIX -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/include -O2 -pipe -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DNO_LCHMOD -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  -DSFX -o unix_.o unix/unix.c
+gcc  -o unzipsfx -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/lib -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/lib -Wl,--enable-new-dtags -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/lib -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/lib -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/usr/lib -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/lib -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2 unzipsfx.o crc32_.o  crypt_.o extract_.o fileio_.o globals_.o inflate_.o match_.o process_.o ttyio_.o ubz2err_.o unix_.o 
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/unzip60'
+DEBUG: Shell function do_compile finished

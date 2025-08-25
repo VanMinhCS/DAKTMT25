@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:libffi-native:x86_64-linux:3.4.4:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 e4de2b8322ea341c7ca2262975df33c53c0a02abf0c63e3b82a6c981e697b561 ./deploy-source-date-epoch/__source_date_epoch.txt

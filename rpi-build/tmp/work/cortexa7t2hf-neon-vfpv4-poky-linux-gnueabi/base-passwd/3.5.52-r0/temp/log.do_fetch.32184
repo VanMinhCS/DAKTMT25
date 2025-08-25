@@ -1,0 +1,202 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are []
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_fetch
+DEBUG: Executing python function base_do_fetch
+DEBUG: Trying PREMIRRORS
+DEBUG: For url ['https', 'launchpad.net', '/debian/+archive/primary/+files/base-passwd_3.5.52.tar.xz', '', '', OrderedDict()] comparing ['git', 'sourceware.org', '/git/glibc.git', '', '', OrderedDict()] to ['https', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['https', 'launchpad.net', '/debian/+archive/primary/+files/base-passwd_3.5.52.tar.xz', '', '', OrderedDict()] comparing ['git', 'sourceware.org', '/git/binutils-gdb.git', '', '', OrderedDict()] to ['https', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: Trying Upstream
+DEBUG: Fetching https://launchpad.net/debian/+archive/primary/+files/base-passwd_3.5.52.tar.xz using command '/usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/base-passwd_3.5.52.tar.xz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://launchpad.net/debian/+archive/primary/+files/base-passwd_3.5.52.tar.xz''
+DEBUG: Fetcher accessed the network with the command /usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/base-passwd_3.5.52.tar.xz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://launchpad.net/debian/+archive/primary/+files/base-passwd_3.5.52.tar.xz'
+DEBUG: Running export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/base-passwd/3.5.52-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/base-passwd/3.5.52-r0/recipe-sysroot/usr/bin/crossscripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/base-passwd/3.5.52-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/base-passwd/3.5.52-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/base-passwd/3.5.52-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/base-passwd/3.5.52-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; /usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/base-passwd_3.5.52.tar.xz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://launchpad.net/debian/+archive/primary/+files/base-passwd_3.5.52.tar.xz' --progress=dot -v
+--2025-08-25 03:01:35--  https://launchpad.net/debian/+archive/primary/+files/base-passwd_3.5.52.tar.xz
+Resolving launchpad.net (launchpad.net)... 185.125.189.223, 185.125.189.222, 2620:2d:4000:1009::3ba, ...
+Connecting to launchpad.net (launchpad.net)|185.125.189.223|:443... connected.
+HTTP request sent, awaiting response... 303 See Other
+Location: https://launchpadlibrarian.net/560087330/base-passwd_3.5.52.tar.xz [following]
+--2025-08-25 03:01:36--  https://launchpadlibrarian.net/560087330/base-passwd_3.5.52.tar.xz
+Resolving launchpadlibrarian.net (launchpadlibrarian.net)... 185.125.189.229, 185.125.189.228, 2620:2d:4000:1009::3b8, ...
+Connecting to launchpadlibrarian.net (launchpadlibrarian.net)|185.125.189.229|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 54336 (53K) [application/octet-stream]
+Saving to: ‘/home/ubuntu/yocto/rpi-build/downloads/base-passwd_3.5.52.tar.xz.tmp’
+
+
+2025-08-25 03:01:37 (131 KB/s) - ‘/home/ubuntu/yocto/rpi-build/downloads/base-passwd_3.5.52.tar.xz.tmp’ saved [54336/54336]
+
+DEBUG: Searching for 0001-Add-a-shutdown-group.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/
+DEBUG: Searching for 0002-Use-bin-sh-instead-of-bin-bash-for-the-root-user.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/
+DEBUG: Searching for 0003-Remove-for-root-since-we-do-not-have-an-etc-shadow.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/
+DEBUG: Searching for 0004-Add-an-input-group-for-the-dev-input-devices.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/
+DEBUG: Searching for 0005-Add-kvm-group.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/
+DEBUG: Searching for 0006-Make-it-possible-to-build-without-debconf-support.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/
+DEBUG: Searching for 0007-Make-it-possible-to-disable-the-generation-of-the-do.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/
+DEBUG: Searching for 0008-Add-wheel-group.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/
+DEBUG: Searching for 0001-base-passwd-Add-the-sgx-group.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd-3.5.52/
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/base-passwd/
+    /home/ubuntu/yocto/poky/meta/recipes-core/base-passwd/files/
+DEBUG: Python function base_do_fetch finished
+DEBUG: Python function do_fetch finished

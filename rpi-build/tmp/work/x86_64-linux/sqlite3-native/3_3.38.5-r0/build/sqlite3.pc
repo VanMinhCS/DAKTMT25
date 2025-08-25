@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/recipe-sysroot-native/usr
+exec_prefix=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/recipe-sysroot-native/usr
+libdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/recipe-sysroot-native/usr/lib
+includedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/recipe-sysroot-native/usr/include
+
+Name: SQLite
+Description: SQL database engine
+Version: 3.38.5
+Libs: -L${libdir} -lsqlite3
+Libs.private: -lm 
+Cflags: -I${includedir}

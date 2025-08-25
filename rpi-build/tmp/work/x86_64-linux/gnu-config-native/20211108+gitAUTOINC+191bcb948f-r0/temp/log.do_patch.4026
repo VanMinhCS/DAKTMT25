@@ -1,0 +1,25 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are ['/home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-native_0.67.bb:do_populate_sysroot']
+NOTE: Installed into sysroot: ['quilt-native']
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: sed -e 's:^[^/]*/:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gnu-config-native/20211108+gitAUTOINC+191bcb948f-r0/recipe-sysroot-native/:g' /home/ubuntu/yocto/rpi-build/tmp/sysroots-components/x86_64/quilt-native/fixmepath | xargs sed -i -e 's:FIXMESTAGINGDIRTARGET:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gnu-config-native/20211108+gitAUTOINC+191bcb948f-r0/recipe-sysroot:g; s:FIXMESTAGINGDIRHOST:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gnu-config-native/20211108+gitAUTOINC+191bcb948f-r0/recipe-sysroot-native:g' -e 's:FIXME_PSEUDO_SYSROOT:/home/ubuntu/yocto/rpi-build/tmp/sysroots-components/x86_64/pseudo-native:g' -e 's:FIXME_HOSTTOOLS_DIR:/home/ubuntu/yocto/rpi-build/tmp/hosttools:g' -e 's:FIXME_PKGDATA_DIR:/home/ubuntu/yocto/rpi-build/tmp/pkgdata/raspberrypi4:g' -e 's:FIXME_PSEUDO_LOCALSTATEDIR:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gnu-config-native/20211108+gitAUTOINC+191bcb948f-r0/pseudo/:g' -e 's:FIXME_LOGFIFO:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gnu-config-native/20211108+gitAUTOINC+191bcb948f-r0/temp/fifo.4026:g'
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_patch
+DEBUG: Executing python function patch_do_patch
+DEBUG: Searching for gnu-configize.in in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/gnu-config/gnu-config-20211108+gitAUTOINC+191bcb948f/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/gnu-config/gnu-config/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/gnu-config/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/gnu-config/gnu-config-20211108+gitAUTOINC+191bcb948f/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/gnu-config/gnu-config/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/gnu-config/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/gnu-config/gnu-config-20211108+gitAUTOINC+191bcb948f/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/gnu-config/gnu-config/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/gnu-config/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/gnu-config/gnu-config-20211108+gitAUTOINC+191bcb948f/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/gnu-config/gnu-config/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/gnu-config/files/
+DEBUG: Python function patch_do_patch finished
+DEBUG: Python function do_patch finished
+DEBUG: Executing python function do_qa_patch
+DEBUG: Python function do_qa_patch finished

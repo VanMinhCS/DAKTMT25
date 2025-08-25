@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090835.73 
+quilt-native-0.67-r0: do_install
+Elapsed time: 0.44 seconds
+utime: 25
+stime: 3
+cutime: 11
+cstime: 16
+IO rchar: 1670632
+IO wchar: 621199
+IO syscr: 1214
+IO syscw: 151
+IO read_bytes: 94208
+IO write_bytes: 704512
+IO cancelled_write_bytes: 20480
+rusage ru_utime: 0.257278
+rusage ru_stime: 0.039244999999999995
+rusage ru_maxrss: 107472
+rusage ru_minflt: 5904
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 112
+rusage ru_nvcsw: 27
+rusage ru_nivcsw: 43
+Child rusage ru_utime: 0.115475
+Child rusage ru_stime: 0.163888
+Child rusage ru_maxrss: 107344
+Child rusage ru_minflt: 8940
+Child rusage ru_majflt: 3
+Child rusage ru_inblock: 184
+Child rusage ru_oublock: 1264
+Child rusage ru_nvcsw: 94
+Child rusage ru_nivcsw: 60
+Status: PASSED 
+Ended: 1756090836.17 

@@ -1,0 +1,40 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are ['/home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-native_0.67.bb:do_populate_sysroot']
+NOTE: Installed into sysroot: ['quilt-native']
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: sed -e 's:^[^/]*/:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/:g' /home/ubuntu/yocto/rpi-build/tmp/sysroots-components/x86_64/quilt-native/fixmepath | xargs sed -i -e 's:FIXMESTAGINGDIRTARGET:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot:g; s:FIXMESTAGINGDIRHOST:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native:g' -e 's:FIXME_PSEUDO_SYSROOT:/home/ubuntu/yocto/rpi-build/tmp/sysroots-components/x86_64/pseudo-native:g' -e 's:FIXME_HOSTTOOLS_DIR:/home/ubuntu/yocto/rpi-build/tmp/hosttools:g' -e 's:FIXME_PKGDATA_DIR:/home/ubuntu/yocto/rpi-build/tmp/pkgdata/raspberrypi4:g' -e 's:FIXME_PSEUDO_LOCALSTATEDIR:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/pseudo/:g' -e 's:FIXME_LOGFIFO:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/temp/fifo.4052:g'
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_patch
+DEBUG: Executing python function patch_do_patch
+DEBUG: Searching for ac_config_links.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/m4/m4-1.4.19/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/m4/m4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/m4/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/m4/m4-1.4.19/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/m4/m4/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/m4/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/m4/m4-1.4.19/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/m4/m4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/m4/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/m4/m4-1.4.19/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/m4/m4/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/m4/files/
+DEBUG: Searching for 0001-sigsegv-Fix-build-on-ppc-musl.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/m4/m4-1.4.19/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/m4/m4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/m4/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/m4/m4-1.4.19/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/m4/m4/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/m4/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/m4/m4-1.4.19/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/m4/m4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/m4/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/m4/m4-1.4.19/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/m4/m4/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/m4/files/
+NOTE: Applying patch 'ac_config_links.patch' (../poky/meta/recipes-devtools/m4/m4/ac_config_links.patch)
+NOTE: Applying patch '0001-sigsegv-Fix-build-on-ppc-musl.patch' (../poky/meta/recipes-devtools/m4/m4/0001-sigsegv-Fix-build-on-ppc-musl.patch)
+DEBUG: Python function patch_do_patch finished
+DEBUG: Python function do_patch finished
+DEBUG: Executing python function do_qa_patch
+DEBUG: Python function do_qa_patch finished

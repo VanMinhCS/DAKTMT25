@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090832.84 
+quilt-native-0.67-r0: do_deploy_source_date_epoch
+Elapsed time: 0.28 seconds
+utime: 25
+stime: 3
+cutime: 1
+cstime: 4
+IO rchar: 320791
+IO wchar: 140728
+IO syscr: 388
+IO syscw: 104
+IO read_bytes: 1265664
+IO write_bytes: 118784
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.260056
+rusage ru_stime: 0.039008
+rusage ru_maxrss: 107460
+rusage ru_minflt: 7848
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 192
+rusage ru_nvcsw: 14
+rusage ru_nivcsw: 75
+Child rusage ru_utime: 0.019618
+Child rusage ru_stime: 0.046311
+Child rusage ru_maxrss: 107460
+Child rusage ru_minflt: 4303
+Child rusage ru_majflt: 28
+Child rusage ru_inblock: 2472
+Child rusage ru_oublock: 40
+Child rusage ru_nvcsw: 108
+Child rusage ru_nivcsw: 18
+Status: PASSED 
+Ended: 1756090833.12 

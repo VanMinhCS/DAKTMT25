@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090864.27 
+unzip-native-1_6.0-r5: do_configure
+Elapsed time: 0.13 seconds
+utime: 28
+stime: 3
+cutime: 0
+cstime: 0
+IO rchar: 111028
+IO wchar: 58805
+IO syscr: 206
+IO syscw: 51
+IO read_bytes: 0
+IO write_bytes: 69632
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.283233
+rusage ru_stime: 0.032848999999999996
+rusage ru_maxrss: 108668
+rusage ru_minflt: 5201
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 128
+rusage ru_nvcsw: 2
+rusage ru_nivcsw: 164
+Child rusage ru_utime: 0.001181
+Child rusage ru_stime: 0.00902
+Child rusage ru_maxrss: 104644
+Child rusage ru_minflt: 554
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 8
+Child rusage ru_nvcsw: 4
+Child rusage ru_nivcsw: 9
+Status: PASSED 
+Ended: 1756090864.40 

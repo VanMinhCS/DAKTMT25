@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090912.44 
+libice-1_1.0.10-r0: do_unpack
+Elapsed time: 0.15 seconds
+utime: 14
+stime: 2
+cutime: 10
+cstime: 4
+IO rchar: 2760011
+IO wchar: 4483401
+IO syscr: 703
+IO syscw: 865
+IO read_bytes: 0
+IO write_bytes: 2359296
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.147944
+rusage ru_stime: 0.020547
+rusage ru_maxrss: 108920
+rusage ru_minflt: 4907
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 56
+rusage ru_nvcsw: 6
+rusage ru_nivcsw: 6
+Child rusage ru_utime: 0.103527
+Child rusage ru_stime: 0.041923999999999996
+Child rusage ru_maxrss: 108920
+Child rusage ru_minflt: 1717
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 4552
+Child rusage ru_nvcsw: 359
+Child rusage ru_nivcsw: 13
+Status: PASSED 
+Ended: 1756090912.59 

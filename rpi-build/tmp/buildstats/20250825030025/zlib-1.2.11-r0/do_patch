@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756091150.68 
+zlib-1.2.11-r0: do_patch
+Elapsed time: 0.70 seconds
+utime: 23
+stime: 3
+cutime: 41
+cstime: 26
+IO rchar: 2389971
+IO wchar: 466217
+IO syscr: 3199
+IO syscw: 475
+IO read_bytes: 0
+IO write_bytes: 487424
+IO cancelled_write_bytes: 4096
+rusage ru_utime: 0.23444299999999998
+rusage ru_stime: 0.035165999999999996
+rusage ru_maxrss: 110472
+rusage ru_minflt: 4215
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 136
+rusage ru_nvcsw: 32
+rusage ru_nivcsw: 13
+Child rusage ru_utime: 0.414113
+Child rusage ru_stime: 0.265237
+Child rusage ru_maxrss: 110472
+Child rusage ru_minflt: 59087
+Child rusage ru_majflt: 1
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 816
+Child rusage ru_nvcsw: 788
+Child rusage ru_nivcsw: 110
+Status: PASSED 
+Ended: 1756091151.38 

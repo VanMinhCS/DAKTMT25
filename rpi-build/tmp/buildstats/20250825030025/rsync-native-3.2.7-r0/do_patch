@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090841.99 
+rsync-native-3.2.7-r0: do_patch
+Elapsed time: 2.32 seconds
+utime: 35
+stime: 5
+cutime: 117
+cstime: 66
+IO rchar: 6116191
+IO wchar: 1404804
+IO syscr: 7962
+IO syscw: 1105
+IO read_bytes: 0
+IO write_bytes: 1445888
+IO cancelled_write_bytes: 4096
+rusage ru_utime: 0.35514599999999996
+rusage ru_stime: 0.059904
+rusage ru_maxrss: 108352
+rusage ru_minflt: 4144
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 152
+rusage ru_nvcsw: 76
+rusage ru_nivcsw: 61
+Child rusage ru_utime: 1.178179
+Child rusage ru_stime: 0.669742
+Child rusage ru_maxrss: 108352
+Child rusage ru_minflt: 144185
+Child rusage ru_majflt: 8
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 2672
+Child rusage ru_nvcsw: 2199
+Child rusage ru_nivcsw: 665
+Status: PASSED 
+Ended: 1756090844.32 

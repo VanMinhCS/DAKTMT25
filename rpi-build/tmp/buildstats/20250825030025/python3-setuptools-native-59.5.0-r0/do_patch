@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090863.55 
+python3-setuptools-native-59.5.0-r0: do_patch
+Elapsed time: 2.13 seconds
+utime: 27
+stime: 4
+cutime: 69
+cstime: 17
+IO rchar: 2671344
+IO wchar: 467263
+IO syscr: 3845
+IO syscw: 474
+IO read_bytes: 0
+IO write_bytes: 483328
+IO cancelled_write_bytes: 4096
+rusage ru_utime: 0.271586
+rusage ru_stime: 0.047231999999999996
+rusage ru_maxrss: 108768
+rusage ru_minflt: 4158
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 136
+rusage ru_nvcsw: 34
+rusage ru_nivcsw: 108
+Child rusage ru_utime: 0.6939179999999999
+Child rusage ru_stime: 0.17330099999999998
+Child rusage ru_maxrss: 108768
+Child rusage ru_minflt: 67900
+Child rusage ru_majflt: 3
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 808
+Child rusage ru_nvcsw: 951
+Child rusage ru_nivcsw: 379
+Status: PASSED 
+Ended: 1756090865.68 

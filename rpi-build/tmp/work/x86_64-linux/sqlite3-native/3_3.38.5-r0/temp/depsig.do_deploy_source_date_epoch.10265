@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:sqlite3-native:x86_64-linux:3.38.5:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 9284347323cdb0e3ca0ccaccbe666654101830588a2a4aff238840733df9007f ./deploy-source-date-epoch/__source_date_epoch.txt

@@ -1,0 +1,53 @@
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+NOTE: Unpacking /home/ubuntu/yocto/rpi-build/downloads/lua-5.4.4.tar.gz to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/lua-native/5.4.4-r0/
+DEBUG: Searching for lua.pc.in in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/lua-5.4.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/lua/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/lua-5.4.4/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/lua/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/lua-5.4.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/lua/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/lua-5.4.4/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/lua/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/lua/lua.pc.in to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/lua-native/5.4.4-r0/
+DEBUG: Searching for CVE-2022-28805.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/lua-5.4.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/lua/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/lua-5.4.4/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/lua/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/lua-5.4.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/lua/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/lua-5.4.4/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/lua/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/lua/CVE-2022-28805.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/lua-native/5.4.4-r0/
+DEBUG: Searching for CVE-2022-33099.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/lua-5.4.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/lua/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/lua-5.4.4/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/lua/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/lua-5.4.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/lua/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/lua-5.4.4/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/lua/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/lua/lua/CVE-2022-33099.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/lua-native/5.4.4-r0/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function create_source_date_epoch_stamp
+DEBUG: Newest file found: /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/lua-native/5.4.4-r0/lua-5.4.4/README
+DEBUG: SOURCE_DATE_EPOCH: 1642090520
+DEBUG: Python function create_source_date_epoch_stamp finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

@@ -1,0 +1,663 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are ['/home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-native_2.4.7.bb:do_populate_sysroot', '/home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-native_0.67.bb:do_populate_sysroot', 'virtual:native:/home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf_2.71.bb:do_populate_sysroot', 'virtual:native:/home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake_1.16.5.bb:do_populate_sysroot']
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: ['libtool-native', 'quilt-native', 'autoconf-native', 'automake-native', 'texinfo-dummy-native', 'm4-native', 'gnu-config-native', 'gettext-minimal-native']
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing shell function autotools_preconfigure
+DEBUG: Shell function autotools_preconfigure finished
+DEBUG: Executing python function autotools_aclocals
+DEBUG: SITE files ['endian-little', 'common-linux', 'common-glibc', 'bit-64', 'x86_64-linux', 'common']
+DEBUG: Python function autotools_aclocals finished
+DEBUG: Executing shell function do_configure
+automake (GNU automake) 1.16.5
+Copyright (C) 2021 Free Software Foundation, Inc.
+License GPLv2+: GNU GPL version 2 or later <https://gnu.org/licenses/gpl-2.0.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Tom Tromey <tromey@redhat.com>
+       and Alexandre Duret-Lutz <adl@gnu.org>.
+AUTOV is 1.16
+NOTE: Executing ACLOCAL="aclocal --system-acdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/share/aclocal/ --automake-acdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/share/aclocal-1.16" autoreconf -Wcross --verbose --install --force --exclude=autopoint --exclude=gtkdocize -I .
+autoreconf: export WARNINGS=cross,no-obsolete
+autoreconf: Entering directory '.'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: aclocal --system-acdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/share/aclocal/ --automake-acdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/share/aclocal-1.16 -I . --force ${ACLOCAL_FLAGS}
+autoreconf: configure.ac: tracing
+autoreconf: configure.ac: adding subdirectory glib to autoreconf
+autoreconf: Entering directory 'glib'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: aclocal --system-acdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/share/aclocal/ --automake-acdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/share/aclocal-1.16 -I . --force -I m4macros ${ACLOCAL_FLAGS}
+autoreconf: configure.ac: tracing
+autoreconf: running: libtoolize --copy --force
+libtoolize: putting auxiliary files in '.'.
+libtoolize: copying file './ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4macros'.
+libtoolize: copying file 'm4macros/libtool.m4'
+libtoolize: copying file 'm4macros/ltoptions.m4'
+libtoolize: copying file 'm4macros/ltsugar.m4'
+libtoolize: copying file 'm4macros/ltversion.m4'
+libtoolize: copying file 'm4macros/lt~obsolete.m4'
+autoreconf: configure.ac: not using Intltool
+autoreconf: configure.ac: not using Gtkdoc
+autoreconf: running: aclocal --system-acdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/share/aclocal/ --automake-acdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/share/aclocal-1.16 -I . --force -I m4macros ${ACLOCAL_FLAGS}
+autoreconf: running: /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/bin/autoconf --include=. --force
+configure.ac:497: warning: AC_RUN_IFELSE called without default to allow cross compiling
+../autoconf-2.71/lib/autoconf/general.m4:2981: AC_RUN_IFELSE is expanded from...
+../autoconf-2.71/lib/autoconf/general.m4:2997: AC_TRY_RUN is expanded from...
+../autoconf-2.71/lib/m4sugar/m4sh.m4:699: AS_IF is expanded from...
+configure.ac:497: the top level
+configure.ac:608: warning: AC_RUN_IFELSE called without default to allow cross compiling
+../autoconf-2.71/lib/autoconf/general.m4:2981: AC_RUN_IFELSE is expanded from...
+../autoconf-2.71/lib/autoconf/general.m4:2997: AC_TRY_RUN is expanded from...
+../autoconf-2.71/lib/m4sugar/m4sh.m4:692: _AS_IF_ELSE is expanded from...
+../autoconf-2.71/lib/m4sugar/m4sh.m4:699: AS_IF is expanded from...
+../autoconf-2.71/lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+../autoconf-2.71/lib/autoconf/general.m4:2270: AC_CACHE_CHECK is expanded from...
+configure.ac:608: the top level
+configure.ac:1243: warning: AC_RUN_IFELSE called without default to allow cross compiling
+../autoconf-2.71/lib/autoconf/general.m4:2981: AC_RUN_IFELSE is expanded from...
+../autoconf-2.71/lib/autoconf/general.m4:2997: AC_TRY_RUN is expanded from...
+../autoconf-2.71/lib/m4sugar/m4sh.m4:692: _AS_IF_ELSE is expanded from...
+../autoconf-2.71/lib/m4sugar/m4sh.m4:699: AS_IF is expanded from...
+../autoconf-2.71/lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+../autoconf-2.71/lib/autoconf/general.m4:2270: AC_CACHE_CHECK is expanded from...
+../autoconf-2.71/lib/m4sugar/m4sh.m4:699: AS_IF is expanded from...
+configure.ac:1243: the top level
+configure.ac:1548: warning: AC_RUN_IFELSE called without default to allow cross compiling
+../autoconf-2.71/lib/autoconf/general.m4:2981: AC_RUN_IFELSE is expanded from...
+../autoconf-2.71/lib/autoconf/general.m4:2997: AC_TRY_RUN is expanded from...
+../autoconf-2.71/lib/m4sugar/m4sh.m4:692: _AS_IF_ELSE is expanded from...
+../autoconf-2.71/lib/m4sugar/m4sh.m4:699: AS_IF is expanded from...
+../autoconf-2.71/lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+../autoconf-2.71/lib/autoconf/general.m4:2270: AC_CACHE_CHECK is expanded from...
+../autoconf-2.71/lib/m4sugar/m4sh.m4:699: AS_IF is expanded from...
+configure.ac:1548: the top level
+configure.ac:2079: warning: AC_RUN_IFELSE called without default to allow cross compiling
+../autoconf-2.71/lib/autoconf/general.m4:2981: AC_RUN_IFELSE is expanded from...
+../autoconf-2.71/lib/autoconf/general.m4:2997: AC_TRY_RUN is expanded from...
+../autoconf-2.71/lib/m4sugar/m4sh.m4:692: _AS_IF_ELSE is expanded from...
+../autoconf-2.71/lib/m4sugar/m4sh.m4:699: AS_IF is expanded from...
+../autoconf-2.71/lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+../autoconf-2.71/lib/autoconf/general.m4:2270: AC_CACHE_CHECK is expanded from...
+../autoconf-2.71/lib/m4sugar/m4sh.m4:699: AS_IF is expanded from...
+configure.ac:2079: the top level
+configure.ac:2118: warning: AC_RUN_IFELSE called without default to allow cross compiling
+../autoconf-2.71/lib/autoconf/general.m4:2981: AC_RUN_IFELSE is expanded from...
+../autoconf-2.71/lib/autoconf/general.m4:2997: AC_TRY_RUN is expanded from...
+../autoconf-2.71/lib/m4sugar/m4sh.m4:692: _AS_IF_ELSE is expanded from...
+../autoconf-2.71/lib/m4sugar/m4sh.m4:699: AS_IF is expanded from...
+../autoconf-2.71/lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+../autoconf-2.71/lib/autoconf/general.m4:2270: AC_CACHE_CHECK is expanded from...
+../autoconf-2.71/lib/m4sugar/m4sh.m4:699: AS_IF is expanded from...
+configure.ac:2118: the top level
+autoreconf: running: /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/bin/autoheader --include=. --force
+autoreconf: running: automake --add-missing --copy --force-missing
+configure.ac:112: installing './compile'
+configure.ac:118: installing './config.guess'
+configure.ac:118: installing './config.sub'
+configure.ac:66: installing './install-sh'
+configure.ac:66: installing './missing'
+parallel-tests: installing './test-driver'
+glib/Makefile.am:79: warning: source file 'deprecated/gallocator.c' is in a subdirectory,
+glib/Makefile.am:79: but option 'subdir-objects' is disabled
+automake: warning: possible forward-incompatibility.
+automake: At least one source file is in a subdirectory, but the 'subdir-objects'
+automake: automake option hasn't been enabled.  For now, the corresponding output
+automake: object file(s) will be placed in the top-level directory.  However, this
+automake: behavior may change in a future Automake major version, with object
+automake: files being placed in the same subdirectory as the corresponding sources.
+automake: You are advised to start using 'subdir-objects' option throughout your
+automake: project, to avoid future incompatibilities.
+glib/Makefile.am:79: warning: source file 'deprecated/gcache.c' is in a subdirectory,
+glib/Makefile.am:79: but option 'subdir-objects' is disabled
+glib/Makefile.am:79: warning: source file 'deprecated/gcompletion.c' is in a subdirectory,
+glib/Makefile.am:79: but option 'subdir-objects' is disabled
+glib/Makefile.am:79: warning: source file 'deprecated/grel.c' is in a subdirectory,
+glib/Makefile.am:79: but option 'subdir-objects' is disabled
+glib/Makefile.am:79: warning: source file 'deprecated/gthread-deprecated.c' is in a subdirectory,
+glib/Makefile.am:79: but option 'subdir-objects' is disabled
+glib/Makefile.am: installing './depcomp'
+autoreconf: Leaving directory 'glib'
+autoreconf: running: libtoolize --copy --force
+libtoolize: putting auxiliary files in '.'.
+libtoolize: copying file './ltmain.sh'
+libtoolize: Consider adding 'AC_CONFIG_MACRO_DIRS([m4])' to configure.ac,
+libtoolize: and rerunning libtoolize and aclocal.
+libtoolize: Consider adding '-I m4' to ACLOCAL_AMFLAGS in Makefile.am.
+autoreconf: configure.ac: not using Intltool
+autoreconf: configure.ac: not using Gtkdoc
+autoreconf: running: aclocal --system-acdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/share/aclocal/ --automake-acdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/share/aclocal-1.16 -I . --force ${ACLOCAL_FLAGS}
+autoreconf: running: /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/bin/autoconf --include=. --force
+autoreconf: running: /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/bin/autoheader --include=. --force
+autoreconf: running: automake --add-missing --copy --force-missing
+configure.ac:25: installing './compile'
+configure.ac:25: installing './config.guess'
+configure.ac:25: installing './config.sub'
+configure.ac:21: installing './install-sh'
+configure.ac:21: installing './missing'
+Makefile.am:14: warning: subst /,\/,$(pc_path: non-POSIX variable name
+Makefile.am:14: (probably a GNU make extension)
+Makefile.am:14: warning: subst /,\/,$(system_include_path: non-POSIX variable name
+Makefile.am:14: (probably a GNU make extension)
+Makefile.am:14: warning: subst /,\/,$(system_library_path: non-POSIX variable name
+Makefile.am:14: (probably a GNU make extension)
+Makefile.am: installing './INSTALL'
+Makefile.am: installing './depcomp'
+autoreconf: Leaving directory '.'
+NOTE: Running ../git/configure  --build=x86_64-linux 		  --host=x86_64-linux 		  --target=x86_64-linux 		  --prefix=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr 		  --exec_prefix=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr 		  --bindir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/bin 		  --sbindir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/sbin 		  --libexecdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/libexec 		  --datadir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/share 		  --sysconfdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/etc 		  --sharedstatedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/com 		  --localstatedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/var 		  --libdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/lib 		  --includedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/include 		  --oldincludedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/include 		  --infodir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/share/info 		  --mandir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/share/man 		  --disable-silent-rules 		  --disable-dependency-tracking 		    --disable-indirect-deps --disable-static  --with-internal-glib 
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/endian-little
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/common-linux
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/common-glibc
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/x86_64-linux
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/common
+checking for a BSD-compatible install... /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking whether make supports the include directive... yes (GNU style)
+checking for x86_64-linux-gcc... gcc 
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc  accepts -g... yes
+checking for gcc  option to enable C11 features... none needed
+checking whether gcc  understands -c and -o together... yes
+checking dependency style of gcc ... none
+checking for a sed that does not truncate output... (cached) sed
+checking for grep that handles long lines and -e... /home/ubuntu/yocto/rpi-build/tmp/hosttools/grep
+checking for egrep... /home/ubuntu/yocto/rpi-build/tmp/hosttools/grep -E
+checking for fgrep... /home/ubuntu/yocto/rpi-build/tmp/hosttools/grep -F
+checking for ld used by gcc ... ld 
+checking if the linker (ld ) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... nm
+checking the name lister (nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for ld  option to reload object files... -r
+checking for x86_64-linux-file... no
+checking for file... file
+checking for x86_64-linux-objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for x86_64-linux-dlltool... no
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for x86_64-linux-ar... ar
+checking for archiver @FILE support... @
+checking for x86_64-linux-strip... strip
+checking for x86_64-linux-ranlib... ranlib -D
+checking command to parse nm output from gcc  object... ok
+checking for sysroot... no
+checking for a working dd... /home/ubuntu/yocto/rpi-build/tmp/hosttools/dd
+checking how to truncate binary pipes... /home/ubuntu/yocto/rpi-build/tmp/hosttools/dd bs=4096 count=1
+checking for x86_64-linux-mt... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc  supports -fno-rtti -fno-exceptions... no
+checking for gcc  option to produce PIC... -fPIC -DPIC
+checking if gcc  PIC flag -fPIC -DPIC works... yes
+checking if gcc  static flag -static works... yes
+checking if gcc  supports -c -o file.o... yes
+checking if gcc  supports -c -o file.o... (cached) yes
+checking whether the gcc  linker (ld  -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking whether make supports nested variables... (cached) yes
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for x86_64-linux-gcc... (cached) gcc 
+checking whether the compiler supports GNU C... (cached) yes
+checking whether gcc  accepts -g... (cached) yes
+checking for gcc  option to enable C11 features... (cached) none needed
+checking whether gcc  understands -c and -o together... (cached) yes
+checking dependency style of gcc ... (cached) none
+checking for ln... ln
+checking for dirent.h... yes
+checking for unistd.h... (cached) yes
+checking for sys/wait.h... yes
+checking for malloc.h... yes
+checking for bash... /home/ubuntu/yocto/rpi-build/tmp/hosttools/bash
+checking for default search path for .pc files... ${libdir}/pkgconfig:${datadir}/pkgconfig
+checking for system include path to avoid -I flags... /usr/include
+checking for system library path to avoid -L flags... /usr/lib:/lib
+configure: creating ./config.lt
+config.lt: creating libtool
+checking whether to list both direct and indirect dependencies... no
+checking for Win32... no
+checking if prefix should be redefined at runtime... no
+checking if internal glib should be used... yes
+checking if host- prefixed tool should be installed... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating pkg.m4
+config.status: creating check/Makefile
+config.status: creating check/config.sh
+config.status: creating config.h.win32
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+=== configuring in glib (/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build/glib)
+configure: running /bin/bash ../../git/glib/configure --disable-option-checking '--prefix=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr'  '--build=x86_64-linux' '--host=x86_64-linux' '--target=x86_64-linux' '--exec_prefix=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr' '--bindir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/bin' '--sbindir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/sbin' '--libexecdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/libexec' '--datadir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/share' '--sysconfdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/etc' '--sharedstatedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/com' '--localstatedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/var' '--libdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/lib' '--includedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/include' '--oldincludedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/include' '--infodir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/share/info' '--mandir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/share/man' '--disable-silent-rules' '--disable-dependency-tracking' '--disable-indirect-deps' '--disable-static' '--with-internal-glib' 'build_alias=x86_64-linux' 'host_alias=x86_64-linux' 'target_alias=x86_64-linux' 'CC=gcc ' 'CFLAGS=-isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/include -O2 -pipe' 'LDFLAGS=-L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/lib                         -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/lib                         -Wl,--enable-new-dtags                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/lib                         -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2' 'CPPFLAGS=-isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/include' 'PKG_CONFIG_PATH=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/lib/pkgconfig:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/share/pkgconfig' 'PKG_CONFIG_LIBDIR=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/lib/pkgconfig' --cache-file=/dev/null --srcdir=../../git/glib
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/endian-little
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/common-linux
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/common-glibc
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/x86_64-linux
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/common
+checking for a BSD-compatible install... /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking whether to enable maintainer-specific portions of Makefiles... yes
+checking whether make supports nested variables... (cached) yes
+checking for x86_64-linux-gcc... gcc 
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc  accepts -g... yes
+checking for gcc  option to enable C11 features... none needed
+checking whether gcc  understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc ... none
+checking how to run the C preprocessor... gcc  -E
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for the BeOS... no
+checking for Win32... no
+checking for the Android... no
+checking for Mac OS X Carbon support... no
+checking for Mac OS X Cocoa support... no
+checking whether to enable garbage collector friendliness... no
+checking whether to disable memory pools... no
+checking for x86_64-linux-c++... g++ 
+checking whether the compiler supports GNU C++... yes
+checking whether g++  accepts -g... yes
+checking for g++  option to enable C++11 features... none needed
+checking dependency style of g++ ... none
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for gawk... (cached) gawk
+checking for perl5... no
+checking for perl... perl
+checking for indent... no
+checking for perl... /home/ubuntu/yocto/rpi-build/tmp/hosttools/perl
+checking for a Python interpreter with version >= 2.5... python3
+checking for python3... /home/ubuntu/yocto/rpi-build/tmp/hosttools/python3
+checking for python3 version... 3.10
+checking for python3 platform... linux
+checking for GNU default python3 prefix... ${prefix}
+checking for GNU default python3 exec_prefix... ${exec_prefix}
+checking for python3 script directory (pythondir)... ${libdir}/python3.10/site-packages
+checking for python3 extension module directory (pyexecdir)... ${libdir}/python3.10/site-packages
+checking for iconv_open... yes
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) sed
+checking for grep that handles long lines and -e... /home/ubuntu/yocto/rpi-build/tmp/hosttools/grep
+checking for egrep... /home/ubuntu/yocto/rpi-build/tmp/hosttools/grep -E
+checking for fgrep... /home/ubuntu/yocto/rpi-build/tmp/hosttools/grep -F
+checking for ld used by gcc ... ld  -m elf_x86_64
+checking if the linker (ld  -m elf_x86_64) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... nm
+checking the name lister (nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for ld  -m elf_x86_64 option to reload object files... -r
+checking for x86_64-linux-file... no
+checking for file... file
+checking for x86_64-linux-objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for x86_64-linux-dlltool... no
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for x86_64-linux-ar... ar
+checking for archiver @FILE support... @
+checking for x86_64-linux-strip... strip
+checking for x86_64-linux-ranlib... ranlib -D
+checking command to parse nm output from gcc  object... ok
+checking for sysroot... no
+checking for a working dd... /home/ubuntu/yocto/rpi-build/tmp/hosttools/dd
+checking how to truncate binary pipes... /home/ubuntu/yocto/rpi-build/tmp/hosttools/dd bs=4096 count=1
+checking for x86_64-linux-mt... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc  supports -fno-rtti -fno-exceptions... no
+checking for gcc  option to produce PIC... -fPIC -DPIC
+checking if gcc  PIC flag -fPIC -DPIC works... yes
+checking if gcc  static flag -static works... yes
+checking if gcc  supports -c -o file.o... yes
+checking if gcc  supports -c -o file.o... (cached) yes
+checking whether the gcc  linker (ld  -m elf_x86_64 -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking how to run the C++ preprocessor... g++  -E
+checking for ld used by g++ ... ld  -m elf_x86_64 -m elf_x86_64
+checking if the linker (ld  -m elf_x86_64 -m elf_x86_64) is GNU ld... yes
+checking whether the g++  linker (ld  -m elf_x86_64 -m elf_x86_64) supports shared libraries... yes
+checking for g++  option to produce PIC... -fPIC -DPIC
+checking if g++  PIC flag -fPIC -DPIC works... yes
+checking if g++  static flag -static works... yes
+checking if g++  supports -c -o file.o... yes
+checking if g++  supports -c -o file.o... (cached) yes
+checking whether the g++  linker (ld  -m elf_x86_64 -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+configure: creating ./config.lt
+config.lt: creating libtool
+checking for extra flags to get ANSI library prototypes... ../../git/glib/configure: line 21726: ac_fn_c_try_run: command not found
+
+configure: WARNING: No ANSI prototypes found in library. (-std1 didn't work.)
+checking for extra flags for POSIX compliance... none needed
+checking for vprintf... yes
+checking for size_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for mmap... yes
+checking for posix_memalign... yes
+checking for memalign... yes
+checking for valloc... yes
+checking for fsync... yes
+checking for pipe2... yes
+checking for issetugid... no
+checking for atexit... yes
+checking for on_exit... yes
+checking for timegm... yes
+checking for gmtime_r... yes
+checking for __libc_enable_secure... yes
+checking size of char... (cached) 1
+checking size of short... (cached) 2
+checking size of long... (cached) 8
+checking size of int... (cached) 4
+checking size of void *... (cached) 8
+checking size of long long... (cached) 8
+checking for sig_atomic_t... yes
+checking for format to printf and scanf a guint64... (cached) %llu
+checking for an ANSI C-conforming const... yes
+checking for growing stack pointer... (cached) no
+checking for __inline... (cached) yes
+checking for __inline__... (cached) yes
+checking for inline... (cached) yes
+checking if inline functions in headers work... yes
+checking for working do while(0) macros... yes
+checking for ISO C99 varargs macros in C... yes
+checking for ISO C99 varargs macros in C++... yes
+checking for GNUC varargs macros... yes
+checking for GNUC visibility attribute... yes
+checking whether using Sun Studio C compiler... no
+checking whether byte ordering is bigendian... (cached) no
+checking for dirent.h... yes
+checking for float.h... yes
+checking for limits.h... yes
+checking for pwd.h... yes
+checking for grp.h... yes
+checking for sys/param.h... yes
+checking for sys/poll.h... yes
+checking for sys/resource.h... yes
+checking for sys/time.h... yes
+checking for sys/times.h... yes
+checking for sys/wait.h... yes
+checking for unistd.h... (cached) yes
+checking for values.h... yes
+checking for sys/select.h... yes
+checking for sys/types.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for sched.h... yes
+checking for malloc.h... yes
+checking for sys/vfs.h... yes
+checking for sys/vmount.h... no
+checking for sys/statfs.h... yes
+checking for sys/statvfs.h... yes
+checking for sys/filio.h... no
+checking for mntent.h... yes
+checking for sys/mnttab.h... no
+checking for sys/vfstab.h... no
+checking for sys/mntctl.h... no
+checking for fstab.h... yes
+checking for sys/uio.h... yes
+checking for sys/mkdev.h... no
+checking for linux/magic.h... yes
+checking for sys/prctl.h... yes
+checking for sys/mount.h... yes
+checking for sys/sysctl.h... no
+checking for sysctlbyname... no
+checking for xlocale.h... no
+checking for struct stat.st_mtimensec... no
+checking for struct stat.st_mtim.tv_nsec... yes
+checking for struct stat.st_atimensec... no
+checking for struct stat.st_atim.tv_nsec... yes
+checking for struct stat.st_ctimensec... no
+checking for struct stat.st_ctim.tv_nsec... yes
+checking for struct stat.st_blksize... yes
+checking for struct stat.st_blocks... yes
+checking for struct statfs.f_fstypename... no
+checking for struct statfs.f_bavail... yes
+checking for struct statvfs.f_basetype... no
+checking for struct statvfs.f_fstypename... no
+checking for struct tm.tm_gmtoff... yes
+checking for struct tm.__tm_gmtoff... no
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for struct dirent.d_type... yes
+checking for nl_langinfo and CODESET... yes
+checking for stddef.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for setlocale... yes
+checking whether we are using the GNU C Library 2.1 or newer... yes
+checking size of size_t... (cached) 8
+checking for the appropriate definition for size_t... unsigned long
+checking size of ssize_t... 8
+checking for the appropriate definition for ssize_t... long
+checking for lstat... yes
+checking for strerror... (cached) yes
+checking for strsignal... yes
+checking for memmove... yes
+checking for vsnprintf... yes
+checking for stpcpy... yes
+checking for strcasecmp... yes
+checking for strncasecmp... yes
+checking for poll... yes
+checking for getcwd... yes
+checking for vasprintf... yes
+checking for setenv... yes
+checking for unsetenv... yes
+checking for getc_unlocked... yes
+checking for readlink... yes
+checking for symlink... yes
+checking for fdwalk... no
+checking for memmem... yes
+checking for chown... yes
+checking for lchmod... yes
+checking for lchown... yes
+checking for fchmod... yes
+checking for fchown... yes
+checking for link... yes
+checking for utimes... yes
+checking for getgrgid... yes
+checking for getpwuid... yes
+checking for getresuid... yes
+checking for getmntent_r... yes
+checking for setmntent... yes
+checking for endmntent... yes
+checking for hasmntopt... yes
+checking for getfsstat... no
+checking for getvfsstat... no
+checking for fallocate... yes
+checking for splice... yes
+checking for prlimit... yes
+checking for statvfs... yes
+checking for statfs... yes
+checking whether to use statfs or statvfs... statfs
+checking for crt_externs.h... no
+checking for _NSGetEnviron... no
+checking for newlocale... yes
+checking for uselocale... yes
+checking for strtod_l... yes
+checking for strtoll_l... yes
+checking for strtoull_l... yes
+checking for C99 vsnprintf... (cached) yes
+checking whether printf supports positional parameters... (cached) yes
+checking value of AF_INET... 2
+checking value of AF_INET6... 10
+checking value of AF_UNIX... 1
+checking value of MSG_PEEK... 2
+checking value of MSG_OOB... 1
+checking value of MSG_DONTROUTE... 4
+checking for getprotobyname_r... yes
+checking for endservent... yes
+checking for if_nametoindex... yes
+checking for if_indextoname... yes
+checking if arpa/nameser_compat.h is needed... no
+checking for res_query... yes
+checking for socket... yes
+checking for res_init... yes
+checking for linux/netlink.h... yes
+checking for struct ip_mreqn... yes
+checking number of arguments to statfs()... 2
+checking for signed... yes
+checking for long long... yes
+checking for long double... yes
+checking for wchar_t... yes
+checking for wint_t... yes
+checking for size_t... (cached) yes
+checking for ptrdiff_t... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for snprintf... yes
+checking for wcslen... yes
+checking for C99 snprintf... (cached) yes
+checking for fd_set... yes, found in sys/types.h
+checking for nl_langinfo (CODESET)... yes
+checking for nl_langinfo (PM_STR)... yes
+checking for nl_langinfo (_NL_CTYPE_OUTDIGITn_MB)... yes
+checking for a compliant posix_memalign() implementation... (cached) yes
+checking for OpenBSD strlcpy/strlcat... no
+checking for an implementation of va_copy()... (cached) yes
+checking for an implementation of __va_copy()... (cached) yes
+checking whether va_lists can be copied by value... (cached) no
+checking for dlopen... yes
+checking for dlsym... yes
+checking for RTLD_GLOBAL brokenness... (cached) yes
+checking for preceeding underscore in symbols... (cached) no
+checking for dlerror... yes
+checking for the suffix of module shared libraries... .so
+checking for gspawn implementation... gspawn.lo
+checking for GIOChannel implementation... giounix.lo
+checking for sys/inotify.h... yes
+checking for inotify_init1... yes
+checking for sys/event.h... no
+checking for platform-dependent source... 
+checking whether to compile timeloop... yes
+checking if building for some Win32 platform... no
+checking for thread implementation... posix
+checking thread related cflags... -pthread
+checking thread related libraries... -pthread
+checking for localtime_r... yes
+checking for gmtime_r... (cached) yes
+checking for posix getpwuid_r... (cached) yes
+checking for posix getgrgid_r... (cached) yes
+checking for pthread_attr_setstacksize... yes
+checking for pthread_condattr_setclock... yes
+checking for pthread_cond_timedwait_monotonic... no
+checking for pthread_cond_timedwait_monotonic_np... no
+checking for clock_gettime... yes
+checking for lock-free atomic intrinsics... yes
+checking for futex(2) system call... yes
+checking for eventfd(2) system call... yes
+checking value of POLLIN... 1
+checking value of POLLOUT... 4
+checking value of POLLPRI... 2
+checking value of POLLERR... 8
+checking value of POLLHUP... 16
+checking value of POLLNVAL... 32
+checking for broken poll... no
+checking for EILSEQ... yes
+checking for guint32... yes
+checking alignment of guint32... (cached) 4
+checking for guint64... yes
+checking alignment of guint64... (cached) 8
+checking for unsigned long... yes
+checking alignment of unsigned long... (cached) 8
+checking for -Bsymbolic-functions linker flag... yes
+checking for -fvisibility=hidden compiler flag... yes
+checking if gcc  supports flag -Wall in envvar CFLAGS... yes
+checking if gcc  supports flag -Wstrict-prototypes in envvar CFLAGS... yes
+checking if gcc  supports flag -Werror=declaration-after-statement in envvar CFLAGS... yes
+checking if gcc  supports flag -Werror=missing-prototypes in envvar CFLAGS... yes
+checking if gcc  supports flag -Werror=implicit-function-declaration in envvar CFLAGS... yes
+checking if gcc  supports flag -Werror=pointer-arith in envvar CFLAGS... yes
+checking if gcc  supports flag -Werror=init-self in envvar CFLAGS... yes
+checking if gcc  supports flag -Werror=format-security in envvar CFLAGS... yes
+checking if gcc  supports flag -Werror=format=2 in envvar CFLAGS... yes
+checking if gcc  supports flag -Werror=missing-include-dirs in envvar CFLAGS... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating glib/Makefile
+config.status: creating glib/libcharset/Makefile
+config.status: creating glib/gnulib/Makefile
+config.status: creating m4macros/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing glib/glibconfig.h commands
+DEBUG: Shell function do_configure finished
+DEBUG: Executing python function do_qa_configure
+NOTE: Checking autotools environment for common misconfiguration
+NOTE: Checking configure output for unrecognised options
+DEBUG: Python function do_qa_configure finished
+DEBUG: Executing shell function autotools_postconfigure
+DEBUG: Shell function autotools_postconfigure finished

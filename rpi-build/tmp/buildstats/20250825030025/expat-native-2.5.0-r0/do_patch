@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090923.47 
+expat-native-2.5.0-r0: do_patch
+Elapsed time: 1.67 seconds
+utime: 26
+stime: 4
+cutime: 85
+cstime: 61
+IO rchar: 11617796
+IO wchar: 5335428
+IO syscr: 10508
+IO syscw: 2268
+IO read_bytes: 122880
+IO write_bytes: 5349376
+IO cancelled_write_bytes: 4096
+rusage ru_utime: 0.265332
+rusage ru_stime: 0.042795
+rusage ru_maxrss: 110092
+rusage ru_minflt: 4480
+rusage ru_majflt: 0
+rusage ru_inblock: 240
+rusage ru_oublock: 160
+rusage ru_nvcsw: 92
+rusage ru_nivcsw: 2
+Child rusage ru_utime: 0.85617
+Child rusage ru_stime: 0.6153339999999999
+Child rusage ru_maxrss: 110092
+Child rusage ru_minflt: 194360
+Child rusage ru_majflt: 16
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 10288
+Child rusage ru_nvcsw: 2211
+Child rusage ru_nivcsw: 111
+Status: PASSED 
+Ended: 1756090925.14 

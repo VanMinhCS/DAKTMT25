@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090862.07 
+gettext-native-0.21-r0: do_patch
+Elapsed time: 2.43 seconds
+utime: 29
+stime: 6
+cutime: 75
+cstime: 20
+IO rchar: 2885486
+IO wchar: 283019
+IO syscr: 4380
+IO syscw: 490
+IO read_bytes: 0
+IO write_bytes: 311296
+IO cancelled_write_bytes: 4096
+rusage ru_utime: 0.290169
+rusage ru_stime: 0.062179
+rusage ru_maxrss: 108984
+rusage ru_minflt: 4298
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 136
+rusage ru_nvcsw: 44
+rusage ru_nivcsw: 107
+Child rusage ru_utime: 0.758593
+Child rusage ru_stime: 0.206448
+Child rusage ru_maxrss: 108984
+Child rusage ru_minflt: 77702
+Child rusage ru_majflt: 4
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 472
+Child rusage ru_nvcsw: 1086
+Child rusage ru_nivcsw: 463
+Status: PASSED 
+Ended: 1756090864.50 

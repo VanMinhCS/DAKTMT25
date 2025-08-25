@@ -1,0 +1,31 @@
+OEOuthashBasic
+14
+autoconf-native: a082d55df4b7dac9894c5feaf9f362ebbbf3242ae22430b84c4e8dd6f794fd94
+automake-native: 14963faa76d47d1639f6c0b28acf6361fc204ea39070d937e3951fc646a0a957
+gettext-minimal-native: 0d39582068b641490d184ea9f722f819aafcee1d652d8d8c5248ab8e4971ea09
+gnu-config-native: dcfcdd2de1b71130dc89903a2fc775551b0256cdcd7880cbdc731dcb33a59563
+libtool-native: edf42e87001d7a64879d4959f5b66885251d0230f2a9095a0fb57a5e3f9993fb
+m4-native: 2e220b13b48306f3a02a7bf65e00356873aed6cd266e2e6ce4daa34264a50398
+quilt-native: 3057d956d8a64c8d0c95902855fb8674038582d1c445513dc0b3cc45351763ca
+texinfo-dummy-native: c19dfc74595ada505d502217fe29d7dea1eb64a849a4eeb895b475baa979ac9e
+SSTATE_PKGSPEC=sstate:gmp-native:x86_64-linux:6.2.1:r0:x86_64:10:
+task=populate_sysroot
+drwx                                                                                       .
+drwx                                                                                       ./recipe-sysroot-native
+drwx                                                                                       ./recipe-sysroot-native/sysroot-providers
+-rw-                   10 af41bd57b5a69a8d44c9473d153f5862dce1cf6c50cf4d5b922d8c1a22393fd6 ./recipe-sysroot-native/sysroot-providers/gmp-native
+drwx                                                                                       ./recipe-sysroot-native/usr
+drwx                                                                                       ./recipe-sysroot-native/usr/include
+-rw-                84014 b1fc303920db93e7b6102502eac5648b0e56d1cc0cf60eeb5c983ae8a45f31af ./recipe-sysroot-native/usr/include/gmp.h
+-rw-               129113 0011ae411a0bc1030e07d968b32fdc1343f5ac2a17b7d28f493e7976dde2ac82 ./recipe-sysroot-native/usr/include/gmpxx.h
+drwx                                                                                       ./recipe-sysroot-native/usr/lib
+lrwx                                                                                       ./recipe-sysroot-native/usr/lib/libgmp.so -> libgmp.so.10.4.1
+lrwx                                                                                       ./recipe-sysroot-native/usr/lib/libgmp.so.10 -> libgmp.so.10.4.1
+-rwx               504544 96c49647cdfff435239bc701e6f953275e7ef4ff7e4eabbd0514cdc63329ff9f ./recipe-sysroot-native/usr/lib/libgmp.so.10.4.1
+lrwx                                                                                       ./recipe-sysroot-native/usr/lib/libgmpxx.so -> libgmpxx.so.4.6.1
+lrwx                                                                                       ./recipe-sysroot-native/usr/lib/libgmpxx.so.4 -> libgmpxx.so.4.6.1
+-rwx                31120 bcbc26af453d10499a2657afbe7323b44aec4117907de663c72b7ae00af90961 ./recipe-sysroot-native/usr/lib/libgmpxx.so.4.6.1
+drwx                                                                                       ./recipe-sysroot-native/usr/lib/pkgconfig
+-rw-                  309 41af57b2eeef7ed81b49e07da809bca58383e9d3a72ce0db3ec0b766160afd41 ./recipe-sysroot-native/usr/lib/pkgconfig/gmp.pc
+-rw-                  344 6a46ae297bcd2c7fb7870efea56630735c8430ea631487b72bf5ed433480c6d8 ./recipe-sysroot-native/usr/lib/pkgconfig/gmpxx.pc
+drwx                                                                                       ./recipe-sysroot-native/usr/share

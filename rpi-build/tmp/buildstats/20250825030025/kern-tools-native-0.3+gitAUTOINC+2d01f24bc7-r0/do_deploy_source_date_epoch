@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090925.54 
+kern-tools-native-0.3+gitAUTOINC+2d01f24bc7-r0: do_deploy_source_date_epoch
+Elapsed time: 0.19 seconds
+utime: 15
+stime: 7
+cutime: 2
+cstime: 2
+IO rchar: 303701
+IO wchar: 135989
+IO syscr: 374
+IO syscw: 96
+IO read_bytes: 0
+IO write_bytes: 114688
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.15842299999999998
+rusage ru_stime: 0.073047
+rusage ru_maxrss: 109672
+rusage ru_minflt: 8216
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 184
+rusage ru_nvcsw: 14
+rusage ru_nivcsw: 7
+Child rusage ru_utime: 0.024589
+Child rusage ru_stime: 0.022826
+Child rusage ru_maxrss: 109672
+Child rusage ru_minflt: 4344
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 40
+Child rusage ru_nvcsw: 75
+Child rusage ru_nivcsw: 3
+Status: PASSED 
+Ended: 1756090925.74 

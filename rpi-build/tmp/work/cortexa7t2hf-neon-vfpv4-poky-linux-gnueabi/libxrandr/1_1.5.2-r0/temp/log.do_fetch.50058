@@ -1,0 +1,26 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are []
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_fetch
+DEBUG: Executing python function base_do_fetch
+DEBUG: Trying PREMIRRORS
+DEBUG: For url ['https', 'www.x.org', '/releases//individual/lib/libXrandr-1.5.2.tar.bz2', '', '', OrderedDict()] comparing ['git', 'sourceware.org', '/git/glibc.git', '', '', OrderedDict()] to ['https', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['https', 'www.x.org', '/releases//individual/lib/libXrandr-1.5.2.tar.bz2', '', '', OrderedDict()] comparing ['git', 'sourceware.org', '/git/binutils-gdb.git', '', '', OrderedDict()] to ['https', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: Trying Upstream
+DEBUG: Fetching https://www.x.org/releases//individual/lib/libXrandr-1.5.2.tar.bz2 using command '/usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/libXrandr-1.5.2.tar.bz2.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://www.x.org/releases//individual/lib/libXrandr-1.5.2.tar.bz2''
+DEBUG: Fetcher accessed the network with the command /usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/libXrandr-1.5.2.tar.bz2.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://www.x.org/releases//individual/lib/libXrandr-1.5.2.tar.bz2'
+DEBUG: Running export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxrandr/1_1.5.2-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxrandr/1_1.5.2-r0/recipe-sysroot/usr/bin/crossscripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxrandr/1_1.5.2-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxrandr/1_1.5.2-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxrandr/1_1.5.2-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxrandr/1_1.5.2-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; /usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/libXrandr-1.5.2.tar.bz2.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://www.x.org/releases//individual/lib/libXrandr-1.5.2.tar.bz2' --progress=dot -v
+--2025-08-25 03:02:19--  https://www.x.org/releases//individual/lib/libXrandr-1.5.2.tar.bz2
+Resolving www.x.org (www.x.org)... 131.252.210.176
+Connecting to www.x.org (www.x.org)|131.252.210.176|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 330726 (323K) [application/x-bzip2]
+Saving to: ‘/home/ubuntu/yocto/rpi-build/downloads/libXrandr-1.5.2.tar.bz2.tmp’
+
+
+2025-08-25 03:02:26 (347 KB/s) - ‘/home/ubuntu/yocto/rpi-build/downloads/libXrandr-1.5.2.tar.bz2.tmp’ saved [330726/330726]
+
+DEBUG: Python function base_do_fetch finished
+DEBUG: Python function do_fetch finished

@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756091002.63 
+zlib-native-1.2.11-r0: do_populate_sysroot
+Elapsed time: 0.41 seconds
+utime: 42
+stime: 7
+cutime: 9
+cstime: 7
+IO rchar: 2476237
+IO wchar: 961706
+IO syscr: 1318
+IO syscw: 257
+IO read_bytes: 0
+IO write_bytes: 569344
+IO cancelled_write_bytes: 102400
+rusage ru_utime: 0.42545
+rusage ru_stime: 0.072326
+rusage ru_maxrss: 110128
+rusage ru_minflt: 12266
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 480
+rusage ru_nvcsw: 34
+rusage ru_nivcsw: 32
+Child rusage ru_utime: 0.093307
+Child rusage ru_stime: 0.0795
+Child rusage ru_maxrss: 110128
+Child rusage ru_minflt: 10963
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 632
+Child rusage ru_nvcsw: 188
+Child rusage ru_nivcsw: 48
+Status: PASSED 
+Ended: 1756091003.04 

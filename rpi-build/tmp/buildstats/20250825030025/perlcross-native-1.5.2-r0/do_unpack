@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090836.12 
+perlcross-native-1.5.2-r0: do_unpack
+Elapsed time: 0.28 seconds
+utime: 26
+stime: 10
+cutime: 2
+cstime: 14
+IO rchar: 970424
+IO wchar: 1079980
+IO syscr: 291
+IO syscw: 241
+IO read_bytes: 139264
+IO write_bytes: 724992
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.266474
+rusage ru_stime: 0.10047299999999999
+rusage ru_maxrss: 107232
+rusage ru_minflt: 6676
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 64
+rusage ru_nvcsw: 13
+rusage ru_nivcsw: 100
+Child rusage ru_utime: 0.026357
+Child rusage ru_stime: 0.14783
+Child rusage ru_maxrss: 107232
+Child rusage ru_minflt: 2773
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 272
+Child rusage ru_oublock: 1352
+Child rusage ru_nvcsw: 79
+Child rusage ru_nivcsw: 54
+Status: PASSED 
+Ended: 1756090836.40 

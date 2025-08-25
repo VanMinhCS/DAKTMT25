@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:rsync-native:x86_64-linux:3.2.7:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 76beeb89d78cddccd693900de8d22d3cb1c198f77b73e8954c5e4ff7289bde6b ./deploy-source-date-epoch/__source_date_epoch.txt

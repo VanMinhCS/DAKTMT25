@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090884.48 
+libffi-3.4.4-r0: do_unpack
+Elapsed time: 0.15 seconds
+utime: 12
+stime: 5
+cutime: 3
+cstime: 8
+IO rchar: 7275544
+IO wchar: 11173388
+IO syscr: 836
+IO syscw: 1186
+IO read_bytes: 135168
+IO write_bytes: 6451200
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.128401
+rusage ru_stime: 0.059919999999999994
+rusage ru_maxrss: 108492
+rusage ru_minflt: 6650
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 64
+rusage ru_nvcsw: 12
+rusage ru_nivcsw: 5
+Child rusage ru_utime: 0.037739999999999996
+Child rusage ru_stime: 0.088327
+Child rusage ru_maxrss: 108492
+Child rusage ru_minflt: 2283
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 264
+Child rusage ru_oublock: 12536
+Child rusage ru_nvcsw: 240
+Child rusage ru_nivcsw: 9
+Status: PASSED 
+Ended: 1756090884.63 

@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090869.01 
+libgpg-error-native-1.44-r0: do_unpack
+Elapsed time: 0.96 seconds
+utime: 24
+stime: 4
+cutime: 37
+cstime: 7
+IO rchar: 6972758
+IO wchar: 11388190
+IO syscr: 1599
+IO syscw: 2281
+IO read_bytes: 1032192
+IO write_bytes: 6234112
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.245201
+rusage ru_stime: 0.044216
+rusage ru_maxrss: 108516
+rusage ru_minflt: 6332
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 56
+rusage ru_nvcsw: 7
+rusage ru_nivcsw: 87
+Child rusage ru_utime: 0.376052
+Child rusage ru_stime: 0.079666
+Child rusage ru_maxrss: 108388
+Child rusage ru_minflt: 2612
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 2016
+Child rusage ru_oublock: 12120
+Child rusage ru_nvcsw: 829
+Child rusage ru_nivcsw: 743
+Status: PASSED 
+Ended: 1756090869.96 

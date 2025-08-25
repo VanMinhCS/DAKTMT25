@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756091117.71 
+util-linux-libuuid-native-2.37.4-r0: do_unpack
+Elapsed time: 5.88 seconds
+utime: 36
+stime: 14
+cutime: 81
+cstime: 58
+IO rchar: 59207457
+IO wchar: 99710418
+IO syscr: 8402
+IO syscw: 14660
+IO read_bytes: 6205440
+IO write_bytes: 55201792
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.365585
+rusage ru_stime: 0.1439
+rusage ru_maxrss: 110712
+rusage ru_minflt: 12153
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 168
+rusage ru_nvcsw: 32
+rusage ru_nivcsw: 155
+Child rusage ru_utime: 0.8133509999999999
+Child rusage ru_stime: 0.587482
+Child rusage ru_maxrss: 110712
+Child rusage ru_minflt: 9933
+Child rusage ru_majflt: 1
+Child rusage ru_inblock: 12120
+Child rusage ru_oublock: 107648
+Child rusage ru_nvcsw: 3007
+Child rusage ru_nivcsw: 2117
+Status: PASSED 
+Ended: 1756091123.59 

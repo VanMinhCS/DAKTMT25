@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:meson-native:x86_64-linux:0.61.3:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 1793241546c6edf4b7405c33dc881921271c70e3efff2cb475f0f29bd82dcdf8 ./deploy-source-date-epoch/__source_date_epoch.txt

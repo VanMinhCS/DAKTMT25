@@ -1,0 +1,12 @@
+TaskDeps: do_prepare_recipe_sysroot do_deploy_source_date_epoch do_patch do_fetch do_unpack
+acl-native
+attr-native
+autoconf-native
+automake-native
+gettext-minimal-native
+gnu-config-native
+libtool-native
+m4-native
+popt-native
+quilt-native
+texinfo-dummy-native

@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090841.16 
+sqlite3-native-3_3.38.5-r0: do_patch
+Elapsed time: 1.51 seconds
+utime: 28
+stime: 7
+cutime: 81
+cstime: 55
+IO rchar: 55542661
+IO wchar: 53006944
+IO syscr: 4269
+IO syscw: 13344
+IO read_bytes: 0
+IO write_bytes: 53022720
+IO cancelled_write_bytes: 4096
+rusage ru_utime: 0.28623499999999996
+rusage ru_stime: 0.076598
+rusage ru_maxrss: 108556
+rusage ru_minflt: 4170
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 136
+rusage ru_nvcsw: 45
+rusage ru_nivcsw: 62
+Child rusage ru_utime: 0.813611
+Child rusage ru_stime: 0.552654
+Child rusage ru_maxrss: 108556
+Child rusage ru_minflt: 92855
+Child rusage ru_majflt: 8
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 103424
+Child rusage ru_nvcsw: 1183
+Child rusage ru_nivcsw: 332
+Status: PASSED 
+Ended: 1756090842.67 

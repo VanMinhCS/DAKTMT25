@@ -1,0 +1,13 @@
+0001-Somehow-this-module-breaks-through-the-perl-wrapper-.patch
+errno_ver.diff
+native-perlinc.patch
+perl-dynloader.patch
+0002-Constant-Fix-up-shebang.patch
+determinism.patch
+0001-cpan-Sys-Syslog-Makefile.PL-Fix-_PATH_LOG-for-determ.patch
+0001-Fix-build-with-gcc-12.patch
+CVE-2023-31484.patch
+CVE-2023-31486-0001.patch
+CVE-2023-31486-0002.patch
+0001-CVE-2024-56406-Heap-buffer-overflow-with-tr.patch
+perl-configpm-switch.patch

@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:libtirpc-native:x86_64-linux:1.3.2:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 011045da78db3e3b46c414b786be358e713a4910cb72c2b4c671fc09b39ccc54 ./deploy-source-date-epoch/__source_date_epoch.txt

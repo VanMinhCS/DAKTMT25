@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:bison-native:x86_64-linux:3.8.2:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 43fb1e419ef2b1247065314a5f3af7b901d385d97a81557046d127b98f788cb3 ./deploy-source-date-epoch/__source_date_epoch.txt

@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090911.77 
+rpm-native-1_4.17.1-r0: do_patch
+Elapsed time: 1.14 seconds
+utime: 18
+stime: 6
+cutime: 60
+cstime: 37
+IO rchar: 5042432
+IO wchar: 633232
+IO syscr: 7895
+IO syscw: 866
+IO read_bytes: 0
+IO write_bytes: 622592
+IO cancelled_write_bytes: 4096
+rusage ru_utime: 0.188889
+rusage ru_stime: 0.061678
+rusage ru_maxrss: 109656
+rusage ru_minflt: 4395
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 152
+rusage ru_nvcsw: 65
+rusage ru_nivcsw: 7
+Child rusage ru_utime: 0.609749
+Child rusage ru_stime: 0.370027
+Child rusage ru_maxrss: 109656
+Child rusage ru_minflt: 136489
+Child rusage ru_majflt: 10
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 1064
+Child rusage ru_nvcsw: 1497
+Child rusage ru_nivcsw: 106
+Status: PASSED 
+Ended: 1756090912.91 

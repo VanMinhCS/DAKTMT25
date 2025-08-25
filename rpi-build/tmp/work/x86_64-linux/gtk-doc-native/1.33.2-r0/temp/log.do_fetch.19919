@@ -1,0 +1,74 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are []
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_fetch
+DEBUG: Executing python function base_do_fetch
+DEBUG: Searching for 0001-Do-not-hardocode-paths-to-perl-python-in-scripts.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc-1.33.2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc/poky
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc-1.33.2/
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc/
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/files/
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc-1.33.2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc-1.33.2/
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc/
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/files/
+DEBUG: Searching for 0001-Do-not-error-out-if-xsltproc-is-not-found.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc-1.33.2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc/poky
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc-1.33.2/
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc/
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/files/
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc-1.33.2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc-1.33.2/
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc/
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/files/
+DEBUG: Searching for conditionaltests.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc-1.33.2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc/poky
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc-1.33.2/
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc/
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/files/
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc-1.33.2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc-1.33.2/
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc/
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/files/
+DEBUG: Searching for no-clobber.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc-1.33.2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc/poky
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc-1.33.2/
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc/
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/files/
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc-1.33.2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc-1.33.2/
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc/
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/files/
+DEBUG: Searching for pkg-config-native.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc-1.33.2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc/poky
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc-1.33.2/
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc/
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/files/
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc-1.33.2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc-1.33.2/
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/gtk-doc/
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gtk-doc/files/
+DEBUG: Python function base_do_fetch finished
+DEBUG: Python function do_fetch finished

@@ -1,0 +1,7 @@
+TaskDeps: do_fetch
+autoconf-native
+automake-native
+gettext-minimal-native
+gnu-config-native
+m4-native
+texinfo-dummy-native

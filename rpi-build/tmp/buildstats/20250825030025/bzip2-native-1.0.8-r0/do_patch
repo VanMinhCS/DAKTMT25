@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090848.09 
+bzip2-native-1.0.8-r0: do_patch
+Elapsed time: 0.14 seconds
+utime: 29
+stime: 3
+cutime: 1
+cstime: 0
+IO rchar: 251760
+IO wchar: 124770
+IO syscr: 165
+IO syscw: 87
+IO read_bytes: 0
+IO write_bytes: 126976
+IO cancelled_write_bytes: 4096
+rusage ru_utime: 0.299096
+rusage ru_stime: 0.033701
+rusage ru_maxrss: 108804
+rusage ru_minflt: 4230
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 120
+rusage ru_nvcsw: 5
+rusage ru_nivcsw: 112
+Child rusage ru_utime: 0.013321
+Child rusage ru_stime: 0.0018399999999999998
+Child rusage ru_maxrss: 108804
+Child rusage ru_minflt: 825
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 128
+Child rusage ru_nvcsw: 9
+Child rusage ru_nivcsw: 9
+Status: PASSED 
+Ended: 1756090848.23 

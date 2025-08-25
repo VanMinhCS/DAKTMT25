@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090879.59 
+elfutils-native-0.186-r0: do_patch
+Elapsed time: 2.59 seconds
+utime: 28
+stime: 8
+cutime: 110
+cstime: 41
+IO rchar: 5171326
+IO wchar: 1057366
+IO syscr: 7130
+IO syscw: 909
+IO read_bytes: 4096
+IO write_bytes: 1073152
+IO cancelled_write_bytes: 4096
+rusage ru_utime: 0.288228
+rusage ru_stime: 0.088685
+rusage ru_maxrss: 109144
+rusage ru_minflt: 4407
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 152
+rusage ru_nvcsw: 64
+rusage ru_nivcsw: 88
+Child rusage ru_utime: 1.104643
+Child rusage ru_stime: 0.41542799999999996
+Child rusage ru_maxrss: 109144
+Child rusage ru_minflt: 127845
+Child rusage ru_majflt: 1
+Child rusage ru_inblock: 8
+Child rusage ru_oublock: 1944
+Child rusage ru_nvcsw: 1775
+Child rusage ru_nivcsw: 590
+Status: PASSED 
+Ended: 1756090882.18 

@@ -1,0 +1,13 @@
+prefix=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr
+exec_prefix=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr
+libdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr/lib
+sharedlibdir=${libdir}
+includedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.11
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

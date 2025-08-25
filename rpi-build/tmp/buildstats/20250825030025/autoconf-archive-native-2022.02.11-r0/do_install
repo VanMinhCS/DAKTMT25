@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756091043.99 
+autoconf-archive-native-2022.02.11-r0: do_install
+Elapsed time: 1.37 seconds
+utime: 43
+stime: 7
+cutime: 57
+cstime: 36
+IO rchar: 5775292
+IO wchar: 2402127
+IO syscr: 35646
+IO syscw: 1325
+IO read_bytes: 57344
+IO write_bytes: 3518464
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.437988
+rusage ru_stime: 0.07925499999999999
+rusage ru_maxrss: 110112
+rusage ru_minflt: 6353
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 184
+rusage ru_nvcsw: 36
+rusage ru_nivcsw: 130
+Child rusage ru_utime: 0.578969
+Child rusage ru_stime: 0.36675399999999997
+Child rusage ru_maxrss: 109984
+Child rusage ru_minflt: 17803
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 112
+Child rusage ru_oublock: 6688
+Child rusage ru_nvcsw: 160
+Child rusage ru_nivcsw: 179
+Status: PASSED 
+Ended: 1756091045.36 

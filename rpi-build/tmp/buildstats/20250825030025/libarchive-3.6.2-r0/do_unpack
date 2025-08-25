@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090934.60 
+libarchive-3.6.2-r0: do_unpack
+Elapsed time: 0.34 seconds
+utime: 14
+stime: 5
+cutime: 17
+cstime: 17
+IO rchar: 30727772
+IO wchar: 44931357
+IO syscr: 3129
+IO syscw: 4269
+IO read_bytes: 163840
+IO write_bytes: 25100288
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.149339
+rusage ru_stime: 0.052469999999999996
+rusage ru_maxrss: 109600
+rusage ru_minflt: 11507
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 96
+rusage ru_nvcsw: 33
+rusage ru_nivcsw: 7
+Child rusage ru_utime: 0.173709
+Child rusage ru_stime: 0.174097
+Child rusage ru_maxrss: 109600
+Child rusage ru_minflt: 6934
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 320
+Child rusage ru_oublock: 48928
+Child rusage ru_nvcsw: 620
+Child rusage ru_nivcsw: 11
+Status: PASSED 
+Ended: 1756090934.94 

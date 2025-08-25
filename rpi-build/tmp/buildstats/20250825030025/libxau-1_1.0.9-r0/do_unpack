@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090908.97 
+libxau-1_1.0.9-r0: do_unpack
+Elapsed time: 0.12 seconds
+utime: 14
+stime: 3
+cutime: 7
+cstime: 3
+IO rchar: 2181111
+IO wchar: 3472953
+IO syscr: 597
+IO syscw: 683
+IO read_bytes: 0
+IO write_bytes: 1839104
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.14812899999999998
+rusage ru_stime: 0.037031999999999995
+rusage ru_maxrss: 108808
+rusage ru_minflt: 4927
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 56
+rusage ru_nvcsw: 6
+rusage ru_nivcsw: 12
+Child rusage ru_utime: 0.079487
+Child rusage ru_stime: 0.035419
+Child rusage ru_maxrss: 108808
+Child rusage ru_minflt: 1717
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 3536
+Child rusage ru_nvcsw: 313
+Child rusage ru_nivcsw: 7
+Status: PASSED 
+Ended: 1756090909.09 

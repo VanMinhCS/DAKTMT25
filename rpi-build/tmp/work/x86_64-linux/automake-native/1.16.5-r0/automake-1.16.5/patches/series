@@ -1,0 +1,6 @@
+0001-automake-Update-for-python.m4-to-respect-libdir.patch -p1
+buildtest.patch -p1
+performance.patch -p1
+new_rt_path_for_test-driver.patch -p1
+0001-automake-Add-default-libtool_tag-to-cppasm.patch -p1
+0001-build-fix-race-in-parallel-builds.patch -p1

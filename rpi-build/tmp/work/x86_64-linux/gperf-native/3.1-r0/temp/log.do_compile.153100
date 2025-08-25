@@ -1,0 +1,43 @@
+DEBUG: Executing python function autotools_aclocals
+DEBUG: SITE files ['endian-little', 'common-linux', 'common-glibc', 'bit-64', 'x86_64-linux', 'common']
+DEBUG: Python function autotools_aclocals finished
+DEBUG: Executing shell function do_compile
+NOTE: make -j 8
+cd lib; make all
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/build/lib'
+gcc  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include -O2 -pipe -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include -I../../gperf-3.1/lib -c ../../gperf-3.1/lib/getopt.c
+gcc  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include -O2 -pipe -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include -I../../gperf-3.1/lib -c ../../gperf-3.1/lib/getopt1.c
+g++  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include -O2 -pipe -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include -I../../gperf-3.1/lib -c ../../gperf-3.1/lib/getline.cc
+g++  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include -O2 -pipe -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include -I../../gperf-3.1/lib -c ../../gperf-3.1/lib/hash.cc
+../../gperf-3.1/lib/getline.cc: In function ‘int getstr(char**, size_t*, FILE*, char, size_t)’:
+../../gperf-3.1/lib/getline.cc:58:20: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+   58 |       register int c = getc (stream);
+      |                    ^
+rm -f libgp.a
+ar rc libgp.a getopt.o getopt1.o getline.o hash.o
+ranlib -D libgp.a
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/build/lib'
+cd src; make all
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/build/src'
+g++  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include -O2 -pipe -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include -I. -I../../gperf-3.1/src/../lib -c ../../gperf-3.1/src/version.cc
+g++  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include -O2 -pipe -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include -I. -I../../gperf-3.1/src/../lib -c ../../gperf-3.1/src/positions.cc
+g++  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include -O2 -pipe -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include -I. -I../../gperf-3.1/src/../lib -c ../../gperf-3.1/src/options.cc
+g++  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include -O2 -pipe -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include -I. -I../../gperf-3.1/src/../lib -c ../../gperf-3.1/src/keyword.cc
+g++  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include -O2 -pipe -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include -I. -I../../gperf-3.1/src/../lib -c ../../gperf-3.1/src/keyword-list.cc
+g++  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include -O2 -pipe -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include -I. -I../../gperf-3.1/src/../lib -c ../../gperf-3.1/src/input.cc
+g++  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include -O2 -pipe -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include -I. -I../../gperf-3.1/src/../lib -c ../../gperf-3.1/src/bool-array.cc
+g++  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include -O2 -pipe -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include -I. -I../../gperf-3.1/src/../lib -c ../../gperf-3.1/src/hash-table.cc
+g++  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include -O2 -pipe -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include -I. -I../../gperf-3.1/src/../lib -c ../../gperf-3.1/src/search.cc
+g++  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include -O2 -pipe -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include -I. -I../../gperf-3.1/src/../lib -c ../../gperf-3.1/src/output.cc
+g++  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include -O2 -pipe -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include -I. -I../../gperf-3.1/src/../lib -c ../../gperf-3.1/src/main.cc
+g++  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include -O2 -pipe -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/lib                         -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/lib                         -Wl,--enable-new-dtags                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/lib                         -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2 -o gperf version.o positions.o options.o keyword.o keyword-list.o input.o bool-array.o hash-table.o search.o output.o main.o ../lib/libgp.a -lm
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/build/src'
+cd tests; make all
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/build/tests'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/build/tests'
+cd doc; make all
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/build/doc'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/build/doc'
+DEBUG: Shell function do_compile finished

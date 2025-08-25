@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:unzip-native:x86_64-linux:6.0:r5:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 b2f40578ebdb00f3b076f8a1ebe48aa1e578cc8fd5c15ff93332b14374d4493a ./deploy-source-date-epoch/__source_date_epoch.txt

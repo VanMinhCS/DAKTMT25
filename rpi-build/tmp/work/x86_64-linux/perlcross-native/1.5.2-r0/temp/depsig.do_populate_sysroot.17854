@@ -1,0 +1,584 @@
+OEOuthashBasic
+14
+quilt-native: 3057d956d8a64c8d0c95902855fb8674038582d1c445513dc0b3cc45351763ca
+SSTATE_PKGSPEC=sstate:perlcross-native:x86_64-linux:1.5.2:r0:x86_64:10:
+task=populate_sysroot
+drwx                                                                                       .
+drwx                                                                                       ./recipe-sysroot-native
+drwx                                                                                       ./recipe-sysroot-native/sysroot-providers
+-rw-                   16 ff9ce10685c1cc2d533fa0538f24e84608299fec98f9d63beecff63e5895c82a ./recipe-sysroot-native/sysroot-providers/perlcross-native
+drwx                                                                                       ./recipe-sysroot-native/usr
+drwx                                                                                       ./recipe-sysroot-native/usr/share
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross
+-rw-                16295 6ae09c75e9e99d7ac1e3acaf2755a4b29433c259174ca03571483ec7b441719b ./recipe-sysroot-native/usr/share/perl-cross/Makefile
+-rwx                 3841 8f7c6612ffbdd3235f006a5d97ceba7a7d9b0b882293f0d1d076a43951c26a5c ./recipe-sysroot-native/usr/share/perl-cross/Makefile.config.SH
+-rwx                 4772 c7461ed4de2264d75e18dd774595b435f588e1f78d42a05130d11bf7c1768b59 ./recipe-sysroot-native/usr/share/perl-cross/TESTPACK.px
+-rw-                 1088 15ec4ae4d181fb0fa6feed10037ceb833722997e8166c344da10db641ca849a7 ./recipe-sysroot-native/usr/share/perl-cross/TestInit.pm.testpack
+-rwx                 1319 06023db42c207aa2d3fd342e20964c19b908dd36be49e5a4ae25ccfc6fa3a660 ./recipe-sysroot-native/usr/share/perl-cross/configure
+-rwx                  309 6d4ee5000356332a7a49d593725159c0e3c77a1a6d0ec0e40a90ac8c9740afd9 ./recipe-sysroot-native/usr/share/perl-cross/extlibs
+-rw-                 3548 d7e63cad73442e5445f93e2985ba0114fff188ab87487bf306dd863701728a6f ./recipe-sysroot-native/usr/share/perl-cross/make_ext_Makefile.pl
+-rwx                 1605 8aa5b2e257cf60840f6111b760edbb57b46bdd73b03fa0896133608d41235800 ./recipe-sysroot-native/usr/share/perl-cross/miniperl_top
+-rwx                 1373 cecd9f9f65cd155ea2420387088be2e367fbd3e808d784b91f0edf45b9441822 ./recipe-sysroot-native/usr/share/perl-cross/modclean
+-rw-                  316 3786467586966ee3534e1c2f248d3d622896c9434d9daefdce6bfbe288ff5fc6 ./recipe-sysroot-native/usr/share/perl-cross/statars
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf
+-rwx                49348 af8a1922c9b3c240bf2119d4ec0965a0b5ec36b1016017ba66db44b3b53e9cea ./recipe-sysroot-native/usr/share/perl-cross/cnf/config.guess
+-rwx                35276 d611751fba98e807c9684d253bb02aa73d6825fe0e0b9ae3cbf258a59171c9b0 ./recipe-sysroot-native/usr/share/perl-cross/cnf/config.sub
+-rwx                 5830 b3baece61eef148e03bf50b612cd7cd8ddb46a8ef9d9193d1cb96d6d35d70460 ./recipe-sysroot-native/usr/share/perl-cross/cnf/configure
+-rw-                 6051 820ea8de84b46c5e54f4a9f2d2e68d8e255439510183935b95f33d248d3551ae ./recipe-sysroot-native/usr/share/perl-cross/cnf/configure__f.sh
+-rw-                 6368 af7da6af517c5769025a76a1f166c46c832e19a9d54c332c4e1d3569ee95aac7 ./recipe-sysroot-native/usr/share/perl-cross/cnf/configure_args.sh
+-rw-                 3869 1dae6fd5dbe718a395456fbd4a7bf145c98a1485f996b38a1f5f07c753004846 ./recipe-sysroot-native/usr/share/perl-cross/cnf/configure_attr.sh
+-rw-                14772 ab0afebd4e6521da6ec0b568ab71f2f25e4fa5a51e1b45a89a6e7d1099c4b6e1 ./recipe-sysroot-native/usr/share/perl-cross/cnf/configure_func.sh
+-rw-                 3340 1d9d7f9de43f88c0dc6fdace46f3da98ce4c9462c0075beaf26f77ed017223be ./recipe-sysroot-native/usr/share/perl-cross/cnf/configure_func_dbl.sh
+-rw-                 1305 90bf0d9ed3162e844c5a2e678bd1c215b79b59d6570ccaba3280ce56d9f32db7 ./recipe-sysroot-native/usr/share/perl-cross/cnf/configure_func_def.sh
+-rw-                 2280 b698b9148063066fe064e77ff3c70acf2b903dde8dabd526a761aa11872e3310 ./recipe-sysroot-native/usr/share/perl-cross/cnf/configure_func_ext.sh
+-rw-                 2881 94c368160b0da5bbfc81655064385351fde8a29c6f7c97799c4fbbebb7b96521 ./recipe-sysroot-native/usr/share/perl-cross/cnf/configure_func_sel.sh
+-rw-                 4983 01b79a7d4da71304e7629b085a828d264145c8e2e7dc0680f8e27ca89c02493e ./recipe-sysroot-native/usr/share/perl-cross/cnf/configure_hdrs.sh
+-rw-                 5660 fe5410de8a1db805e6d6d49c3fa08f5d415d81ee46c607680765b7c2ed6420b8 ./recipe-sysroot-native/usr/share/perl-cross/cnf/configure_help.sh
+-rw-                 2201 d18b5f25fc68cffc24b9b694ca755e5744a2d24db0a247eae7a0e93a54640be7 ./recipe-sysroot-native/usr/share/perl-cross/cnf/configure_hint.sh
+-rw-                 2350 07f04f38d0049729633297767a0ba509605e7868812b851a33f5f0c03fab8443 ./recipe-sysroot-native/usr/share/perl-cross/cnf/configure_libs.sh
+-rw-                 9676 b5d9682e6eea084fdc8a3bd1a7ce2046bd460831129c2a20c934a35671d175f6 ./recipe-sysroot-native/usr/share/perl-cross/cnf/configure_misc.sh
+-rw-                 5011 867a21132cac01321890e97d42afe19bc034352aca5525329418bc7b946a9458 ./recipe-sysroot-native/usr/share/perl-cross/cnf/configure_mods.sh
+-rw-                 5442 a1efee80c7ca8b7f9f837c7026d9d588ee8739ff13860058e0294829209bc1b8 ./recipe-sysroot-native/usr/share/perl-cross/cnf/configure_path.sh
+-rw-                 1458 56ee7e8df392b280405d6f6a99e4ca381fe7b2f01a3d787dfe8fdf2e33516dff ./recipe-sysroot-native/usr/share/perl-cross/cnf/configure_pfmt.sh
+-rw-                 1595 32f0902ec17b2659a8d6175a11b1ad1a14556cf62808bbb6289896fa6542e654 ./recipe-sysroot-native/usr/share/perl-cross/cnf/configure_sigs.sh
+-rw-                 9427 df954e487dd683186465920bef7fe7309be67702997b2b26b13718e4d3c24faf ./recipe-sysroot-native/usr/share/perl-cross/cnf/configure_thrd.sh
+-rw-                 7681 fb37352da933ca5dc6cf288fbba5f7714888fc24f941bf3f67c8c91dc5979c1b ./recipe-sysroot-native/usr/share/perl-cross/cnf/configure_tool.sh
+-rw-                 4115 0d949f4c51897ce68ecbfde8720f01743e5899bf7d09202f8d3341315890bcf2 ./recipe-sysroot-native/usr/share/perl-cross/cnf/configure_type.sh
+-rw-                 7875 dc09ee8a5872fb2fff083ac40dcdf23d059541ee1f9bf0f4d1cb232a64ca0842 ./recipe-sysroot-native/usr/share/perl-cross/cnf/configure_type_dbl.sh
+-rw-                 1882 53d8f755f40883cce7a1af1df596f89c7c087919e23e72dfc58ac2c54c454ccf ./recipe-sysroot-native/usr/share/perl-cross/cnf/configure_type_ext.sh
+-rw-                 4351 aeb3ce6dc7daa46f76fa55eb9391e9eb6be0771c7691d4591d59be455854d7b2 ./recipe-sysroot-native/usr/share/perl-cross/cnf/configure_type_sel.sh
+-rw-                 2163 11446d73078516e72996a5c3115a80aab7f3bdcbb42d8e0e3abb94673ad40dcd ./recipe-sysroot-native/usr/share/perl-cross/cnf/configure_version.sh
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/cpan
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/cpan/Digest
+-rw-                 5707 ba69ddf97fcdf4b2d6142ae8578b0a8e616caf83f9d18c0f4dca7e8a6b42062b ./recipe-sysroot-native/usr/share/perl-cross/cnf/cpan/Digest/MD5.pm
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs
+-rw-                  348 7fb54de4b4f6f116d2c0a654cb5537a37fa7673938b85532736642d249e17fdc ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/README
+-rwx                  985 e8c70217a53b99097826481f43d4349dcfb7a1076826f5377a21dffac04e953c ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/dedup.px
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.24.0
+-rw-                 1185 00baf6c5ac109eae0600cd0e6d6a9033c216855f59576b12f37ec11615e8abf6 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.24.0/customized.patch
+-rw-                  489 42a760dbdb381fc288556529e102462c01240b2e14bcf7817f2a9570ebd1ce90 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.24.0/dynaloader.patch
+-rw-                 1794 de3bb765cc4234cd9cb87aac4dbb14a616947e4db85a292f3008933fb084d953 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.24.0/extconfigxs.patch
+-rw-                  553 6ab1579fc7ccc2fa5d8e54a70983a92c11583063b82a5f5659a0452eb7232139 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.24.0/findext.patch
+-rw-                 2709 504b35210683f7b3dc4f4af9990240af3530817513f1f03df5ce30d3d9989b6e ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.24.0/installscripts.patch
+-rw-                  723 fd6d5e3df93613c95f328b188eb9f4a9943bf0db1f404cb42c41b25fb24f8178 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.24.0/makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.24.0/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.24.0/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.24.0/xconfig.patch -> ../perl5-5.22.3/xconfig.patch
+-rw-                 1520 20704031b0d5ab06be1a21454c4a66091ff0f9501c953f1a5efdcb94e0916a03 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.24.0/xsconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.24.1
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.24.1/customized.patch -> ../cperl-5.24.0/customized.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.24.1/dynaloader.patch -> ../cperl-5.24.0/dynaloader.patch
+-rw-                 1796 e2c10fdd5df70282625f5435d089a2d590cb90449305711c1fdf1ad66bc25d14 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.24.1/extconfigxs.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.24.1/findext.patch -> ../cperl-5.24.0/findext.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.24.1/installscripts.patch -> ../cperl-5.24.0/installscripts.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.24.1/makemaker.patch -> ../cperl-5.24.0/makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.24.1/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+-rw-                  810 d9a114bee462f4b69e5cf946b7c5240694de5ea5b69e1adfdd97cbfba818e00e ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.24.1/term-readkey.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.24.1/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.24.1/xconfig.patch -> ../perl5-5.22.3/xconfig.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.24.1/xsconfig.patch -> ../cperl-5.24.0/xsconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.24.2
+-rw-                 1185 238ee76cd7f4978a95cdb45c362d231b0e8ad4e60d96ddf22c9a5fcb8ebad47e ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.24.2/customized.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.24.2/dynaloader.patch -> ../cperl-5.24.0/dynaloader.patch
+-rw-                 1796 20bdb5126bbe27bf4608d7152e0f81cc0593485e3b08461b18fee165a07259ab ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.24.2/extconfigxs.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.24.2/findext.patch -> ../cperl-5.24.0/findext.patch
+-rw-                 2715 0c4571333564318423b9f9e90208da3419fbcba292c4b53ac647be22fdd35cfa ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.24.2/installscripts.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.24.2/makemaker.patch -> ../cperl-5.24.0/makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.24.2/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+-rw-                 1230 0022eb97f7a919d85f3414caf7f218caabc9677eaa99eadcc36cfe5770f19c98 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.24.2/term-readkey.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.24.2/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.24.2/xconfig.patch -> ../perl5-5.22.3/xconfig.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.24.2/xsconfig.patch -> ../cperl-5.24.0/xsconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.26.0
+-rw-                 1185 40ece6eef34df7a0420be7dbd3422ea58bf49c72bb05d96129f56d07a159f6e4 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.26.0/customized.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.26.0/dynaloader.patch -> ../cperl-5.24.0/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.26.0/extconfigxs.patch -> ../cperl-5.24.1/extconfigxs.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.26.0/findext.patch -> ../cperl-5.24.0/findext.patch
+-rw-                 5475 341dfd9ece9ef2de7c31697473bf107677b55d379ec75f9e93fd8e5be12635f1 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.26.0/makemaker-test.patch
+-rw-                  723 3f735cf9b055d4c6cfa838a5dad538f050b1a8e6ecccbe4557ac77abcdaa01cc ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.26.0/makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.26.0/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+-rw-                  828 600f668d60c0d358fab856d54a3b6538d322ea88cf535594d6edfbb1b5418dc2 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.26.0/term-readkey.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.26.0/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+-rw-                  494 84475321acf7a62cd3ed6eae4ef6911a031214c5d854a7af49b86171b99a8782 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.26.0/xconfig.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.26.0/xsconfig.patch -> ../cperl-5.24.0/xsconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.26.1
+-rw-                 1178 e1c7d8a4fe62c593175fa78b0a07443b0925d51b4731b8462c435834d6fdae72 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.26.1/customized.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.26.1/dynaloader.patch -> ../cperl-5.24.0/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.26.1/extconfigxs.patch -> ../cperl-5.24.1/extconfigxs.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.26.1/findext.patch -> ../cperl-5.24.0/findext.patch
+-rw-                  723 dbbbb796872c2d7c84bec33ce9e3a9f27502fcad5bc371eb2462fa5352dd2d6c ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.26.1/makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.26.1/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.26.1/term-readkey.patch -> ../cperl-5.26.0/term-readkey.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.26.1/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.26.1/xconfig.patch -> ../cperl-5.26.0/xconfig.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.26.1/xsconfig.patch -> ../cperl-5.24.0/xsconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.28.0
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.28.0/dynaloader.patch -> ../cperl-5.24.0/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.28.0/extconfigxs.patch -> ../cperl-5.24.1/extconfigxs.patch
+-rw-                  553 07e1083b4748cfcf2096bf996e8a223a0b17877ba28be239f73f1e1fa3c56a6a ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.28.0/findext.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.28.0/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+-rw-                  828 d67671ff3ae35b20d6456fbb8455246e2f16bf609d1a22c5006d6889b96bc184 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.28.0/term-readkey.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.28.0/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.28.0/xconfig.patch -> ../cperl-5.26.0/xconfig.patch
+-rw-                 1520 3caedce6828ae092c4752710b5274d26399a8cff9badc21f56c40ad78cbb8324 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.28.0/xsconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.28.2
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.28.2/dynaloader.patch -> ../cperl-5.24.0/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.28.2/extconfigxs.patch -> ../cperl-5.24.1/extconfigxs.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.28.2/findext.patch -> ../cperl-5.28.0/findext.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.28.2/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.28.2/term-readkey.patch -> ../cperl-5.28.0/term-readkey.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.28.2/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.28.2/xconfig.patch -> ../cperl-5.26.0/xconfig.patch
+-rw-                 1520 e5d4a7be1049d1aff2a285f1bfcdb8139e74f1a5c847b1af1027dbe7d84577c1 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.28.2/xsconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.30.0
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.30.0/dynaloader.patch -> ../cperl-5.24.0/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.30.0/extconfigxs.patch -> ../cperl-5.24.1/extconfigxs.patch
+-rw-                  553 0a3333126eaa387f3dc3d70ed3fd0e794dc8288f923720da7f96d9cf96140ea2 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.30.0/findext.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.30.0/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.30.0/term-readkey.patch -> ../cperl-5.28.0/term-readkey.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.30.0/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.30.0/xconfig.patch -> ../cperl-5.26.0/xconfig.patch
+-rw-                 1520 bb75a8622d771f007db64337eb3e43b6a9ce534e2b6c7e23a5a9a97cc75a5287 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/cperl-5.30.0/xsconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.22.3
+-rw-                  972 e6f5c88e2886791e0c446bb2fe86a6374012eabc843dc2165a6f0f7c3dfbaa86 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.22.3/constant.patch
+-rw-                  363 b6882a2e2116d717031a0b837ce81300e30f8a7ab31f66ab007a97dbec84b77e ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.22.3/dynaloader.patch
+-rw-                  553 b9131924680ce1f8c7f120807dbde21e19c36f7f40ddf05a5aa30cb26327664c ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.22.3/findext.patch
+-rw-                 2649 4924d4d33417b6cd630b9ccb8acb8c1d401da78b315f7eed7335d7757a5cea59 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.22.3/installscripts.patch
+-rw-                 5678 80c4c7bc7d39ec5e996410e7e9ad83177e813400892405e8cdd8c79f9491d8ed ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.22.3/makemaker-test.patch
+-rw-                  372 04181702e80a4597810d4761b8d3ac4499e17ca005984118eadcdb4641438b58 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.22.3/posix-makefile.patch
+-rw-                  460 43addf31dc799e438c5d56cc690ee1324c42ecdb9cda1bdb8d479f4d1ea11a11 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.22.3/test-checkcase.patch
+-rw-                  508 69ed8e739b8d65daf20f165640173ddd149ee90a8cc0b6d72fd64d64c182db2a ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.22.3/xconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.22.4
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.22.4/constant.patch -> ../perl5-5.22.3/constant.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.22.4/dynaloader.patch -> ../perl5-5.22.3/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.22.4/findext.patch -> ../perl5-5.22.3/findext.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.22.4/installscripts.patch -> ../perl5-5.22.3/installscripts.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.22.4/makemaker-test.patch -> ../perl5-5.22.3/makemaker-test.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.22.4/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.22.4/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.22.4/xconfig.patch -> ../perl5-5.22.3/xconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.0
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.0/constant.patch -> ../perl5-5.22.3/constant.patch
+-rw-                 3190 0a90805529c85b5c240cb5148eb27df628afb079fb90f34913308fe885d4807f ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.0/customized.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.0/dynaloader.patch -> ../perl5-5.22.3/dynaloader.patch
+-rw-                  553 bc4f9c5d7ba3f61346544bad559063135c57aaf47732b62ac35b3dbfb0831d53 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.0/findext.patch
+-rw-                 2709 5a18fb460778cfb49fc67600c55427e2ed2bdd47cd9cc75c8aa8b22396b0e900 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.0/installscripts.patch
+-rw-                 2801 b4c138bc09bd4947f726537a97fcf98998f745571c9a319d8032a283132b77e6 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.0/liblist.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.0/makemaker-test.patch -> ../perl5-5.22.3/makemaker-test.patch
+-rw-                  695 493d1b35541db47f517e76af867e029849acf1e4e4017348bef118b7296c5160 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.0/makemaker-unix.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.0/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.0/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.0/xconfig.patch -> ../perl5-5.22.3/xconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.1
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.1/constant.patch -> ../perl5-5.22.3/constant.patch
+-rw-                 3479 92975e242ab3298d420a46759f2985c494f214e988643fc7ac968ebb1be6466b ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.1/customized.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.1/dynaloader.patch -> ../perl5-5.22.3/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.1/findext.patch -> ../perl5-5.24.0/findext.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.1/installscripts.patch -> ../perl5-5.24.0/installscripts.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.1/liblist.patch -> ../perl5-5.24.0/liblist.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.1/makemaker-test.patch -> ../perl5-5.22.3/makemaker-test.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.1/makemaker-unix.patch -> ../perl5-5.24.0/makemaker-unix.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.1/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.1/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.1/xconfig.patch -> ../perl5-5.22.3/xconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.2
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.2/constant.patch -> ../perl5-5.22.3/constant.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.2/customized.patch -> ../perl5-5.24.1/customized.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.2/dynaloader.patch -> ../perl5-5.22.3/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.2/findext.patch -> ../perl5-5.24.0/findext.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.2/installscripts.patch -> ../perl5-5.24.0/installscripts.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.2/liblist.patch -> ../perl5-5.24.0/liblist.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.2/makemaker-test.patch -> ../perl5-5.22.3/makemaker-test.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.2/makemaker-unix.patch -> ../perl5-5.24.0/makemaker-unix.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.2/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.2/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.2/xconfig.patch -> ../perl5-5.22.3/xconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.3
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.3/constant.patch -> ../perl5-5.22.3/constant.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.3/customized.patch -> ../perl5-5.24.1/customized.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.3/dynaloader.patch -> ../perl5-5.22.3/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.3/findext.patch -> ../perl5-5.24.0/findext.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.3/installscripts.patch -> ../perl5-5.24.0/installscripts.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.3/liblist.patch -> ../perl5-5.24.0/liblist.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.3/makemaker-test.patch -> ../perl5-5.22.3/makemaker-test.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.3/makemaker-unix.patch -> ../perl5-5.24.0/makemaker-unix.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.3/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.3/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.3/xconfig.patch -> ../perl5-5.22.3/xconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.4
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.4/constant.patch -> ../perl5-5.22.3/constant.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.4/customized.patch -> ../perl5-5.24.1/customized.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.4/dynaloader.patch -> ../perl5-5.22.3/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.4/findext.patch -> ../perl5-5.24.0/findext.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.4/installscripts.patch -> ../perl5-5.24.0/installscripts.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.4/liblist.patch -> ../perl5-5.24.0/liblist.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.4/makemaker-test.patch -> ../perl5-5.22.3/makemaker-test.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.4/makemaker-unix.patch -> ../perl5-5.24.0/makemaker-unix.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.4/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.4/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.24.4/xconfig.patch -> ../perl5-5.22.3/xconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.0
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.0/constant.patch -> ../perl5-5.22.3/constant.patch
+-rw-                  908 aeb40e548b4ee9819a76fa2585ab25f4a654ec1bb4b12f4bc01b4425d4bd2745 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.0/customized.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.0/dynaloader.patch -> ../perl5-5.22.3/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.0/findext.patch -> ../perl5-5.24.0/findext.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.0/installscripts.patch -> ../perl5-5.24.0/installscripts.patch
+-rw-                 2801 1b00b13d86e924d919d053207d9f27d9fbc992f601beb0a42957f4c6cd7c0e64 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.0/liblist.patch
+-rw-                  695 557bbad52a14bb24a7affd39faa5202a6e123176d5b901d8bbe7687e5516391b ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.0/makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.0/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.0/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+-rw-                  426 970ffdca220732debe0afdf358141dfc2f602de5d6398cd450dcb4cd48d680c8 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.0/test-commonsense.patch
+-rw-                  466 19416968ef5acc11530a52576c830b42253640adf0acd42f68b2641b8cdb3553 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.0/xconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.1
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.1/constant.patch -> ../perl5-5.22.3/constant.patch
+-rw-                  908 5e5d166a5e7fe646bbea441f86f3f0bc4728ec6e2c86be4a5d7dbfa51f44572a ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.1/customized.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.1/dynaloader.patch -> ../perl5-5.22.3/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.1/findext.patch -> ../perl5-5.24.0/findext.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.1/installscripts.patch -> ../perl5-5.24.0/installscripts.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.1/liblist.patch -> ../perl5-5.26.0/liblist.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.1/makemaker.patch -> ../perl5-5.26.0/makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.1/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.1/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.1/test-commonsense.patch -> ../perl5-5.26.0/test-commonsense.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.1/xconfig.patch -> ../perl5-5.26.0/xconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.2
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.2/constant.patch -> ../perl5-5.22.3/constant.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.2/customized.patch -> ../perl5-5.26.1/customized.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.2/dynaloader.patch -> ../perl5-5.22.3/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.2/findext.patch -> ../perl5-5.24.0/findext.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.2/installscripts.patch -> ../perl5-5.24.0/installscripts.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.2/liblist.patch -> ../perl5-5.26.0/liblist.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.2/makemaker.patch -> ../perl5-5.26.0/makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.2/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.2/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.2/test-commonsense.patch -> ../perl5-5.26.0/test-commonsense.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.2/xconfig.patch -> ../perl5-5.26.0/xconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.3
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.3/constant.patch -> ../perl5-5.22.3/constant.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.3/customized.patch -> ../perl5-5.26.1/customized.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.3/dynaloader.patch -> ../perl5-5.22.3/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.3/findext.patch -> ../perl5-5.24.0/findext.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.3/installscripts.patch -> ../perl5-5.24.0/installscripts.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.3/liblist.patch -> ../perl5-5.26.0/liblist.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.3/makemaker.patch -> ../perl5-5.26.0/makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.3/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.3/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.3/test-commonsense.patch -> ../perl5-5.26.0/test-commonsense.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.26.3/xconfig.patch -> ../perl5-5.26.0/xconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.0
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.0/constant.patch -> ../perl5-5.22.3/constant.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.0/dynaloader.patch -> ../perl5-5.22.3/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.0/findext.patch -> ../perl5-5.22.3/findext.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.0/installscripts.patch -> ../perl5-5.24.0/installscripts.patch
+-rw-                 2801 76acf6934fb93a5bc205ad5bdeb4c0e4debbd6004cf9f0626ac2828ae2ee4557 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.0/liblist.patch
+-rw-                  675 a79538c0f242676a0a3ccfaa722ae9c78f92c81627819895875c643cf36c07a4 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.0/locale.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.0/makemaker.patch -> ../perl5-5.26.0/makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.0/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.0/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.0/test-commonsense.patch -> ../perl5-5.26.0/test-commonsense.patch
+-rw-                 1417 76f20ddf9b942f1e00f006278bbf1e96e305089a0a0f506fe36036da542c6ae6 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.0/time-hires.patch
+-rw-                  746 761c1d46c90d237fdce0fc9065116d94e192146d32632706f7f41efd88020fec ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.0/xconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.1
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.1/constant.patch -> ../perl5-5.22.3/constant.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.1/dynaloader.patch -> ../perl5-5.22.3/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.1/findext.patch -> ../perl5-5.22.3/findext.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.1/installscripts.patch -> ../perl5-5.24.0/installscripts.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.1/liblist.patch -> ../perl5-5.28.0/liblist.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.1/locale.patch -> ../perl5-5.28.0/locale.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.1/makemaker.patch -> ../perl5-5.26.0/makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.1/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.1/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.1/test-commonsense.patch -> ../perl5-5.26.0/test-commonsense.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.1/time-hires.patch -> ../perl5-5.28.0/time-hires.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.1/xconfig.patch -> ../perl5-5.28.0/xconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.2
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.2/constant.patch -> ../perl5-5.22.3/constant.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.2/dynaloader.patch -> ../perl5-5.22.3/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.2/findext.patch -> ../perl5-5.22.3/findext.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.2/installscripts.patch -> ../perl5-5.24.0/installscripts.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.2/liblist.patch -> ../perl5-5.28.0/liblist.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.2/locale.patch -> ../perl5-5.28.0/locale.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.2/makemaker.patch -> ../perl5-5.26.0/makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.2/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.2/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.2/test-commonsense.patch -> ../perl5-5.26.0/test-commonsense.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.2/time-hires.patch -> ../perl5-5.28.0/time-hires.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.2/xconfig.patch -> ../perl5-5.28.0/xconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.3
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.3/constant.patch -> ../perl5-5.22.3/constant.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.3/dynaloader.patch -> ../perl5-5.22.3/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.3/findext.patch -> ../perl5-5.22.3/findext.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.3/installscripts.patch -> ../perl5-5.24.0/installscripts.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.3/liblist.patch -> ../perl5-5.28.0/liblist.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.3/locale.patch -> ../perl5-5.28.0/locale.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.3/makemaker.patch -> ../perl5-5.26.0/makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.3/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.3/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.3/test-commonsense.patch -> ../perl5-5.26.0/test-commonsense.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.3/time-hires.patch -> ../perl5-5.28.0/time-hires.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.28.3/xconfig.patch -> ../perl5-5.28.0/xconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.0
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.0/constant.patch -> ../perl5-5.22.3/constant.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.0/dynaloader.patch -> ../perl5-5.22.3/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.0/findext.patch -> ../perl5-5.22.3/findext.patch
+-rw-                 2709 e42a281d0f2b149af869590907096db86723087739c20a6ef3358068a2012a90 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.0/installscripts.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.0/liblist.patch -> ../perl5-5.28.0/liblist.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.0/makemaker.patch -> ../perl5-5.26.0/makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.0/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.0/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.0/test-commonsense.patch -> ../perl5-5.26.0/test-commonsense.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.0/time-hires.patch -> ../perl5-5.28.0/time-hires.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.0/xconfig.patch -> ../perl5-5.28.0/xconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.1
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.1/constant.patch -> ../perl5-5.22.3/constant.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.1/dynaloader.patch -> ../perl5-5.22.3/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.1/findext.patch -> ../perl5-5.22.3/findext.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.1/installscripts.patch -> ../perl5-5.30.0/installscripts.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.1/liblist.patch -> ../perl5-5.28.0/liblist.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.1/makemaker.patch -> ../perl5-5.26.0/makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.1/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.1/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.1/test-commonsense.patch -> ../perl5-5.26.0/test-commonsense.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.1/time-hires.patch -> ../perl5-5.28.0/time-hires.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.1/xconfig.patch -> ../perl5-5.28.0/xconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.2
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.2/constant.patch -> ../perl5-5.22.3/constant.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.2/dynaloader.patch -> ../perl5-5.22.3/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.2/findext.patch -> ../perl5-5.22.3/findext.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.2/installscripts.patch -> ../perl5-5.30.0/installscripts.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.2/liblist.patch -> ../perl5-5.28.0/liblist.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.2/makemaker.patch -> ../perl5-5.26.0/makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.2/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.2/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.2/test-commonsense.patch -> ../perl5-5.26.0/test-commonsense.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.2/time-hires.patch -> ../perl5-5.28.0/time-hires.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.2/xconfig.patch -> ../perl5-5.28.0/xconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.3
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.3/constant.patch -> ../perl5-5.22.3/constant.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.3/dynaloader.patch -> ../perl5-5.22.3/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.3/findext.patch -> ../perl5-5.22.3/findext.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.3/installscripts.patch -> ../perl5-5.30.0/installscripts.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.3/liblist.patch -> ../perl5-5.28.0/liblist.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.3/makemaker.patch -> ../perl5-5.26.0/makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.3/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.3/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.3/test-commonsense.patch -> ../perl5-5.26.0/test-commonsense.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.3/time-hires.patch -> ../perl5-5.28.0/time-hires.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.30.3/xconfig.patch -> ../perl5-5.28.0/xconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.32.0
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.32.0/constant.patch -> ../perl5-5.22.3/constant.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.32.0/dynaloader.patch -> ../perl5-5.22.3/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.32.0/findext.patch -> ../perl5-5.22.3/findext.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.32.0/installscripts.patch -> ../perl5-5.30.0/installscripts.patch
+-rw-                 2801 0641fa88a4384f7be779468ecfab2cf8b5b0fec12f78f77bb91fc662a84273ad ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.32.0/liblist.patch
+-rw-                  830 bca8450edbe16e780dd24fe537e88cca5105fdd47aa1d0f2416af3612bc47e61 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.32.0/makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.32.0/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.32.0/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.32.0/test-commonsense.patch -> ../perl5-5.26.0/test-commonsense.patch
+-rw-                 1473 945b3894a980eb29b9b62132aa47cff83bd01a385592e1860375b5f85df03702 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.32.0/time-hires.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.32.0/xconfig.patch -> ../perl5-5.28.0/xconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.32.1
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.32.1/constant.patch -> ../perl5-5.22.3/constant.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.32.1/dynaloader.patch -> ../perl5-5.22.3/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.32.1/findext.patch -> ../perl5-5.22.3/findext.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.32.1/installscripts.patch -> ../perl5-5.30.0/installscripts.patch
+-rw-                 2801 d17cbf54550b3aabda4cd849703a11fd2e868a40cfa281d29bb408607cccf435 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.32.1/liblist.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.32.1/makemaker.patch -> ../perl5-5.32.0/makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.32.1/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.32.1/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.32.1/test-commonsense.patch -> ../perl5-5.26.0/test-commonsense.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.32.1/time-hires.patch -> ../perl5-5.32.0/time-hires.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.32.1/xconfig.patch -> ../perl5-5.28.0/xconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.0
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.0/constant.patch -> ../perl5-5.22.3/constant.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.0/dynaloader.patch -> ../perl5-5.22.3/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.0/findext.patch -> ../perl5-5.22.3/findext.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.0/installscripts.patch -> ../perl5-5.30.0/installscripts.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.0/liblist.patch -> ../perl5-5.32.1/liblist.patch
+-rw-                  830 50698645c5d2c44bbc0d80d7df62d7c37a25e9310cfc4adb9b98aa3c75832366 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.0/makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.0/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.0/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.0/test-commonsense.patch -> ../perl5-5.26.0/test-commonsense.patch
+-rw-                  661 016782403d6d52460ba9267f59bbf14c5dff67a5d7d4244a9762cfd4ffe6214e ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.0/test-makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.0/time-hires.patch -> ../perl5-5.32.0/time-hires.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.0/xconfig.patch -> ../perl5-5.28.0/xconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.1
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.1/constant.patch -> ../perl5-5.22.3/constant.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.1/dynaloader.patch -> ../perl5-5.22.3/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.1/findext.patch -> ../perl5-5.22.3/findext.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.1/installscripts.patch -> ../perl5-5.30.0/installscripts.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.1/liblist.patch -> ../perl5-5.32.1/liblist.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.1/makemaker.patch -> ../perl5-5.34.0/makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.1/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.1/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.1/test-commonsense.patch -> ../perl5-5.26.0/test-commonsense.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.1/test-makemaker.patch -> ../perl5-5.34.0/test-makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.1/time-hires.patch -> ../perl5-5.32.0/time-hires.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.1/xconfig.patch -> ../perl5-5.28.0/xconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.2
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.2/constant.patch -> ../perl5-5.22.3/constant.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.2/dynaloader.patch -> ../perl5-5.22.3/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.2/findext.patch -> ../perl5-5.22.3/findext.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.2/installscripts.patch -> ../perl5-5.30.0/installscripts.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.2/liblist.patch -> ../perl5-5.32.1/liblist.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.2/makemaker.patch -> ../perl5-5.34.0/makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.2/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.2/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.2/test-commonsense.patch -> ../perl5-5.26.0/test-commonsense.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.2/test-makemaker.patch -> ../perl5-5.34.0/test-makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.2/time-hires.patch -> ../perl5-5.32.0/time-hires.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.2/xconfig.patch -> ../perl5-5.28.0/xconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.3
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.3/constant.patch -> ../perl5-5.22.3/constant.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.3/dynaloader.patch -> ../perl5-5.22.3/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.3/findext.patch -> ../perl5-5.22.3/findext.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.3/installscripts.patch -> ../perl5-5.30.0/installscripts.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.3/liblist.patch -> ../perl5-5.32.1/liblist.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.3/makemaker.patch -> ../perl5-5.34.0/makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.3/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.3/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.3/test-commonsense.patch -> ../perl5-5.26.0/test-commonsense.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.3/test-makemaker.patch -> ../perl5-5.34.0/test-makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.3/time-hires.patch -> ../perl5-5.32.0/time-hires.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.34.3/xconfig.patch -> ../perl5-5.28.0/xconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.0
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.0/constant.patch -> ../perl5-5.22.3/constant.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.0/dynaloader.patch -> ../perl5-5.22.3/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.0/findext.patch -> ../perl5-5.22.3/findext.patch
+-rw-                 2709 0eb3c86a2e9a81cbd1bbc7c336efd7c21dd5075e096445b1b161b1dfd34337c1 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.0/installscripts.patch
+-rw-                 2801 2c9aaa5c82a5df9e574d4f934118bd17bff2183b09753db873447d64e6e6188a ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.0/liblist.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.0/makemaker.patch -> ../perl5-5.34.0/makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.0/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.0/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.0/test-makemaker.patch -> ../perl5-5.34.0/test-makemaker.patch
+-rw-                  691 27f216e697e7b9e79171798f670cdf14336db4e6c244984629a05445f0bd2742 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.0/xconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.1
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.1/constant.patch -> ../perl5-5.22.3/constant.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.1/dynaloader.patch -> ../perl5-5.22.3/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.1/findext.patch -> ../perl5-5.22.3/findext.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.1/installscripts.patch -> ../perl5-5.36.0/installscripts.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.1/liblist.patch -> ../perl5-5.36.0/liblist.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.1/makemaker.patch -> ../perl5-5.34.0/makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.1/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.1/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.1/test-makemaker.patch -> ../perl5-5.34.0/test-makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.1/xconfig.patch -> ../perl5-5.36.0/xconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.2
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.2/constant.patch -> ../perl5-5.22.3/constant.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.2/dynaloader.patch -> ../perl5-5.22.3/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.2/findext.patch -> ../perl5-5.22.3/findext.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.2/installscripts.patch -> ../perl5-5.36.0/installscripts.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.2/liblist.patch -> ../perl5-5.36.0/liblist.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.2/makemaker.patch -> ../perl5-5.34.0/makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.2/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.2/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.2/test-makemaker.patch -> ../perl5-5.34.0/test-makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.2/xconfig.patch -> ../perl5-5.36.0/xconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.3
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.3/constant.patch -> ../perl5-5.22.3/constant.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.3/dynaloader.patch -> ../perl5-5.22.3/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.3/findext.patch -> ../perl5-5.22.3/findext.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.3/installscripts.patch -> ../perl5-5.36.0/installscripts.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.3/liblist.patch -> ../perl5-5.36.0/liblist.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.3/makemaker.patch -> ../perl5-5.34.0/makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.3/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.3/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.3/test-makemaker.patch -> ../perl5-5.34.0/test-makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.36.3/xconfig.patch -> ../perl5-5.36.0/xconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.38.0
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.38.0/constant.patch -> ../perl5-5.22.3/constant.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.38.0/dynaloader.patch -> ../perl5-5.22.3/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.38.0/findext.patch -> ../perl5-5.22.3/findext.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.38.0/installscripts.patch -> ../perl5-5.36.0/installscripts.patch
+-rw-                 2801 f7ed8d49fd0994f5aa20174f9c635347289725978e8ad789a5faf8752179268c ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.38.0/liblist.patch
+-rw-                  808 5511c825aeaed8a9042f44339ef26f4c87c905168bcb76c07d244e68bbbb75f3 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.38.0/makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.38.0/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.38.0/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.38.0/test-makemaker.patch -> ../perl5-5.34.0/test-makemaker.patch
+-rw-                  691 d467e8753f7f466d435ec880b2c6fb24d2049df480afd33d2e3133680de66982 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.38.0/xconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.38.1
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.38.1/constant.patch -> ../perl5-5.22.3/constant.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.38.1/dynaloader.patch -> ../perl5-5.22.3/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.38.1/findext.patch -> ../perl5-5.22.3/findext.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.38.1/installscripts.patch -> ../perl5-5.36.0/installscripts.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.38.1/liblist.patch -> ../perl5-5.38.0/liblist.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.38.1/makemaker.patch -> ../perl5-5.38.0/makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.38.1/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.38.1/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.38.1/test-makemaker.patch -> ../perl5-5.34.0/test-makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.38.1/xconfig.patch -> ../perl5-5.38.0/xconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.38.2
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.38.2/constant.patch -> ../perl5-5.22.3/constant.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.38.2/dynaloader.patch -> ../perl5-5.22.3/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.38.2/findext.patch -> ../perl5-5.22.3/findext.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.38.2/installscripts.patch -> ../perl5-5.36.0/installscripts.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.38.2/liblist.patch -> ../perl5-5.38.0/liblist.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.38.2/makemaker.patch -> ../perl5-5.38.0/makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.38.2/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.38.2/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.38.2/test-makemaker.patch -> ../perl5-5.34.0/test-makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.38.2/xconfig.patch -> ../perl5-5.38.0/xconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.2
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.2/constant.patch -> ../perl5-5.22.3/constant.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.2/dynaloader.patch -> ../perl5-5.22.3/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.2/findext.patch -> ../perl5-5.22.3/findext.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.2/installscripts.patch -> ../perl5-5.36.0/installscripts.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.2/liblist.patch -> ../perl5-5.38.0/liblist.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.2/makemaker.patch -> ../perl5-5.38.0/makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.2/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.2/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.2/test-makemaker.patch -> ../perl5-5.34.0/test-makemaker.patch
+-rw-                  802 13f93802fd62cc745dcaa5b1af66acb8d2e1b5cfd93d75f9a8d5e18aab82b9c5 ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.2/xconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.3
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.3/constant.patch -> ../perl5-5.22.3/constant.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.3/dynaloader.patch -> ../perl5-5.22.3/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.3/findext.patch -> ../perl5-5.22.3/findext.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.3/installscripts.patch -> ../perl5-5.36.0/installscripts.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.3/liblist.patch -> ../perl5-5.38.0/liblist.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.3/makemaker.patch -> ../perl5-5.38.0/makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.3/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.3/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.3/test-makemaker.patch -> ../perl5-5.34.0/test-makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.3/xconfig.patch -> ../perl5-5.39.2/xconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.4
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.4/constant.patch -> ../perl5-5.22.3/constant.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.4/dynaloader.patch -> ../perl5-5.22.3/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.4/findext.patch -> ../perl5-5.22.3/findext.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.4/installscripts.patch -> ../perl5-5.36.0/installscripts.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.4/liblist.patch -> ../perl5-5.38.0/liblist.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.4/makemaker.patch -> ../perl5-5.38.0/makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.4/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.4/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.4/test-makemaker.patch -> ../perl5-5.34.0/test-makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.4/xconfig.patch -> ../perl5-5.39.2/xconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.5
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.5/constant.patch -> ../perl5-5.22.3/constant.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.5/dynaloader.patch -> ../perl5-5.22.3/dynaloader.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.5/findext.patch -> ../perl5-5.22.3/findext.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.5/installscripts.patch -> ../perl5-5.36.0/installscripts.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.5/liblist.patch -> ../perl5-5.38.0/liblist.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.5/makemaker.patch -> ../perl5-5.38.0/makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.5/posix-makefile.patch -> ../perl5-5.22.3/posix-makefile.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.5/test-checkcase.patch -> ../perl5-5.22.3/test-checkcase.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.5/test-makemaker.patch -> ../perl5-5.34.0/test-makemaker.patch
+lrwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/diffs/perl5-5.39.5/xconfig.patch -> ../perl5-5.39.2/xconfig.patch
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/hints
+-rw-                  604 483ecc0ac2ff976175bc46527787ad7aa8bb79b1c0bb372ea87e2c98bdb0f30c ./recipe-sysroot-native/usr/share/perl-cross/cnf/hints/android
+-rw-                  387 b8483d3ea938a814f00da04d19fc1f89b806ff4baa128201ce2e85e3271c0baa ./recipe-sysroot-native/usr/share/perl-cross/cnf/hints/gnu
+-rw-                  399 b7e88fc62e7f60ff64f17c97c579e9cca845f7d7a742c49a08ba1b9be0cc3047 ./recipe-sysroot-native/usr/share/perl-cross/cnf/hints/linux
+-rw-                  505 6a3326bac7efcb7b6085bce3bdbd7256807ba90a5bbc012bb03f7b211d6fca54 ./recipe-sysroot-native/usr/share/perl-cross/cnf/hints/midipix
+-rw-                  595 73993c877f09fc3ed12993efa7d2e9304b74272ab8f34fe000958da5d4be03c0 ./recipe-sysroot-native/usr/share/perl-cross/cnf/hints/mswin32
+-rw-                  140 205ab42889fe5c8d5718cc000356c3bd102ce1094b64550a5e578402af14166d ./recipe-sysroot-native/usr/share/perl-cross/cnf/hints/mswin32-x64
+-rw-                   75 f728af2e6ff77aed5fcb73d0a7532da9015b4330904980ab8c8fe10fe3037c6d ./recipe-sysroot-native/usr/share/perl-cross/cnf/hints/netbsd
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/stub
+-rw-                  400 bb174ee5b044b22eb88c86c444c1ab2a9ef0c71324f984c90407bc1d47634ba1 ./recipe-sysroot-native/usr/share/perl-cross/cnf/stub/Cwd.pm
+-rw-                  187 571f199b55a5cf2d3637e6cc9bcb745ecd4f2f5962a8304e5691bcc713170003 ./recipe-sysroot-native/usr/share/perl-cross/cnf/stub/Encode.pm
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/stub/File
+-rw-                 8983 ddeb59257f7da4c7b046f602cc9c285177aa0a9f275fcff089c7db7e26ee8daa ./recipe-sysroot-native/usr/share/perl-cross/cnf/stub/File/Spec.pm
+-rw-                  341 94b08ea55de2efa5daf132143b3482c00fb9461314aabebf0bd63a86769d2581 ./recipe-sysroot-native/usr/share/perl-cross/cnf/stub/File/Temp.pm
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/stub/File/Spec
+-rw-                 2103 089385d43d7694ac1ffc14e1209c80c289f64f037482b7e316d67bd68414017d ./recipe-sysroot-native/usr/share/perl-cross/cnf/stub/File/Spec/Functions.pm
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/cnf/stub/IPC
+-rw-                   49 f1606cc26eb7c40cb8e37b13439aa9cd5b58d5058b32441de564e189bee3863f ./recipe-sysroot-native/usr/share/perl-cross/cnf/stub/IPC/Cmd.pm
+drwx                                                                                       ./recipe-sysroot-native/usr/share/perl-cross/utils
+-rw-                  437 50c6d6ed5a7dbf3aa9f597b9d7bfb2710f322c28564795bb9a2f829916063e4d ./recipe-sysroot-native/usr/share/perl-cross/utils/Makefile

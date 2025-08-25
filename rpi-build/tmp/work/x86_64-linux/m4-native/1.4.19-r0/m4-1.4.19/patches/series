@@ -1,0 +1,2 @@
+ac_config_links.patch -p1
+0001-sigsegv-Fix-build-on-ppc-musl.patch -p1

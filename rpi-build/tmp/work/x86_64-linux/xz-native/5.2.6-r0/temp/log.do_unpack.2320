@@ -1,0 +1,11 @@
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+NOTE: Unpacking /home/ubuntu/yocto/rpi-build/downloads/xz-5.2.6.tar.gz to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function create_source_date_epoch_stamp
+DEBUG: Newest file found: /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/xz-5.2.6/doc/man/pdf-letter/xzless-letter.pdf
+DEBUG: SOURCE_DATE_EPOCH: 1660304523
+DEBUG: Python function create_source_date_epoch_stamp finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

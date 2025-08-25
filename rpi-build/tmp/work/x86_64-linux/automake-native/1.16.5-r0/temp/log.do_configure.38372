@@ -1,0 +1,136 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are ['/home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-native_0.67.bb:do_populate_sysroot', '/home/ubuntu/yocto/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-native.bb:do_populate_sysroot', 'virtual:native:/home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf_2.71.bb:do_populate_sysroot']
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: ['quilt-native', 'texinfo-dummy-native', 'autoconf-native', 'm4-native', 'gnu-config-native', 'gettext-minimal-native']
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing shell function autotools_preconfigure
+DEBUG: Shell function autotools_preconfigure finished
+DEBUG: Executing python function autotools_aclocals
+DEBUG: SITE files ['endian-little', 'common-linux', 'common-glibc', 'bit-64', 'x86_64-linux', 'common']
+DEBUG: Python function autotools_aclocals finished
+DEBUG: Executing shell function do_configure
+NOTE: Running ../automake-1.16.5/configure  --build=x86_64-linux 		  --host=x86_64-linux 		  --target=x86_64-linux 		  --prefix=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/automake-native/1.16.5-r0/recipe-sysroot-native/usr 		  --exec_prefix=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/automake-native/1.16.5-r0/recipe-sysroot-native/usr 		  --bindir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/automake-native/1.16.5-r0/recipe-sysroot-native/usr/bin 		  --sbindir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/automake-native/1.16.5-r0/recipe-sysroot-native/usr/sbin 		  --libexecdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/automake-native/1.16.5-r0/recipe-sysroot-native/usr/libexec 		  --datadir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/automake-native/1.16.5-r0/recipe-sysroot-native/usr/share 		  --sysconfdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/automake-native/1.16.5-r0/recipe-sysroot-native/etc 		  --sharedstatedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/automake-native/1.16.5-r0/recipe-sysroot-native/com 		  --localstatedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/automake-native/1.16.5-r0/recipe-sysroot-native/var 		  --libdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/automake-native/1.16.5-r0/recipe-sysroot-native/usr/lib 		  --includedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/automake-native/1.16.5-r0/recipe-sysroot-native/usr/include 		  --oldincludedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/automake-native/1.16.5-r0/recipe-sysroot-native/usr/include 		  --infodir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/automake-native/1.16.5-r0/recipe-sysroot-native/usr/share/info 		  --mandir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/automake-native/1.16.5-r0/recipe-sysroot-native/usr/share/man 		  --disable-silent-rules 		  --disable-dependency-tracking 		    --disable-static  
+configure: WARNING: unrecognized options: --disable-dependency-tracking, --disable-static
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/endian-little
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/common-linux
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/common-glibc
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/x86_64-linux
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/common
+checking whether make supports nested variables... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for a BSD-compatible install... /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether ln -s works... yes
+checking for perl... (cached) /usr/bin/env perl
+checking for tex... no
+checking for yacc... no
+checking for byacc... no
+checking for bison... no
+checking for lex... no
+checking for flex... no
+checking whether autoconf is installed... yes
+checking whether autoconf works... yes
+checking whether autoconf is recent enough... yes
+checking whether ln works... yes
+checking for grep that handles long lines and -e... /home/ubuntu/yocto/rpi-build/tmp/hosttools/grep
+checking for egrep... /home/ubuntu/yocto/rpi-build/tmp/hosttools/grep -E
+checking for fgrep... /home/ubuntu/yocto/rpi-build/tmp/hosttools/grep -F
+configure: will now look for a sturdy POSIX shell, for our testsuite
+checking for sh... /home/ubuntu/yocto/rpi-build/tmp/hosttools/sh
+checking for sh5... no
+checking for dash... no
+checking for ash... no
+checking for bash... /home/ubuntu/yocto/rpi-build/tmp/hosttools/bash
+checking for zsh... no
+checking for ksh... no
+checking for pdksh... no
+checking whether /bin/bash supports $(cmd)... yes
+checking whether /bin/bash supports $((expr))... yes
+checking whether /bin/bash supports ${#var}... yes
+checking whether /bin/bash supports ${var#glob} and ${var%glob}... yes
+checking whether /bin/bash preserves exit traps with "set -e"... yes
+checking whether /bin/bash can define exit traps in a shell function... yes
+checking whether /bin/bash corrupts stderr with "set -x"... no
+checking whether /bin/bash can return early from "dot-sourced" files... yes
+checking whether /bin/bash supports alias named like shell builtins... yes
+checking whether /bin/bash supports "test -e"... yes
+configure: shell /bin/bash is good enough, stop looking
+configure: will use /bin/bash as the testsuite shell
+configure: will now look for generic compilers
+checking for x86_64-linux-cc... gcc 
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc  accepts -g... yes
+checking for gcc  option to enable C11 features... none needed
+checking whether gcc  understands -c and -o together... yes
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C++... yes
+checking whether g++  accepts -g... yes
+checking for g++  option to enable C++11 features... none needed
+checking for x86_64-linux-xlf95... gfortran 
+checking whether the Fortran compiler works... no
+configure: WARNING: Fortran compiler cannot create executables
+configure: tests requiring the Fortran compiler will be skipped
+checking for x86_64-linux-xlf... no
+checking for x86_64-linux-f77... no
+checking for x86_64-linux-frt... no
+checking for x86_64-linux-pgf77... no
+checking for x86_64-linux-cf77... no
+checking for x86_64-linux-fort77... no
+checking for x86_64-linux-fl32... no
+checking for x86_64-linux-af77... no
+checking for x86_64-linux-g77... no
+checking for x86_64-linux-armflang... no
+checking for x86_64-linux-flang... no
+checking for x86_64-linux-gfortran... no
+checking for xlf... no
+checking for f77... no
+checking for frt... no
+checking for pgf77... no
+checking for cf77... no
+checking for fort77... no
+checking for fl32... no
+checking for af77... no
+checking for g77... no
+checking for armflang... no
+checking for flang... no
+checking for gfortran... no
+checking whether the Fortran 77 compiler works... no
+configure: WARNING: Fortran 77 compiler cannot create executables
+configure: tests requiring the Fortran 77 compiler will be skipped
+configure: will now look for GNU compilers
+configure: gcc  is already a GNU C compiler
+configure: g++  is already a GNU C++ compiler
+checking for x86_64-linux-gfortran... no
+checking for gfortran... no
+checking for x86_64-linux-g77... no
+checking for x86_64-linux-gfortran... no
+checking for g77... no
+checking for gfortran... no
+checking for x86_64-linux-gcj... no
+checking for gcj... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating pre-inst-env
+config.status: linking ../automake-1.16.5/GNUmakefile to GNUmakefile
+configure: WARNING: unrecognized options: --disable-dependency-tracking, --disable-static
+DEBUG: Shell function do_configure finished
+DEBUG: Executing python function do_qa_configure
+NOTE: Checking autotools environment for common misconfiguration
+NOTE: Checking configure output for unrecognised options
+DEBUG: Python function do_qa_configure finished
+DEBUG: Executing shell function autotools_postconfigure
+DEBUG: Shell function autotools_postconfigure finished

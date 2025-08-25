@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090882.84 
+lzo-native-2.10-r0: do_deploy_source_date_epoch
+Elapsed time: 0.17 seconds
+utime: 28
+stime: 2
+cutime: 1
+cstime: 2
+IO rchar: 329205
+IO wchar: 140955
+IO syscr: 387
+IO syscw: 107
+IO read_bytes: 0
+IO write_bytes: 114688
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.290048
+rusage ru_stime: 0.025221
+rusage ru_maxrss: 109068
+rusage ru_minflt: 8683
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 184
+rusage ru_nvcsw: 14
+rusage ru_nivcsw: 5
+Child rusage ru_utime: 0.010321
+Child rusage ru_stime: 0.029658
+Child rusage ru_maxrss: 109068
+Child rusage ru_minflt: 4341
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 40
+Child rusage ru_nvcsw: 75
+Child rusage ru_nivcsw: 4
+Status: PASSED 
+Ended: 1756090883.01 

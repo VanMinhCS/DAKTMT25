@@ -1,0 +1,27 @@
+DEBUG: Executing python function autotools_aclocals
+DEBUG: SITE files ['endian-little', 'common-linux', 'common-glibc', 'bit-64', 'x86_64-linux', 'common']
+DEBUG: Python function autotools_aclocals finished
+DEBUG: Executing shell function do_install
+NOTE: make -j 8 DESTDIR=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/image install
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/build'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/recipe-sysroot-native/usr/include'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/recipe-sysroot-native/usr/lib'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/recipe-sysroot-native/usr/lib/pkgconfig'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/recipe-sysroot-native/usr/share/man/man1'
+ /bin/bash ./libtool   --mode=install /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c   libsqlite3.la '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/recipe-sysroot-native/usr/lib'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../sqlite-autoconf-3380500/sqlite3.h ../sqlite-autoconf-3380500/sqlite3ext.h '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/recipe-sysroot-native/usr/include'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 sqlite3.pc '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/recipe-sysroot-native/usr/lib/pkgconfig'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../sqlite-autoconf-3380500/sqlite3.1 '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/recipe-sysroot-native/usr/share/man/man1'
+libtool: install: /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c .libs/libsqlite3.so.0.8.6 /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/recipe-sysroot-native/usr/lib/libsqlite3.so.0.8.6
+libtool: install: (cd /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/recipe-sysroot-native/usr/lib && { ln -s -f libsqlite3.so.0.8.6 libsqlite3.so.0 || { rm -f libsqlite3.so.0 && ln -s libsqlite3.so.0.8.6 libsqlite3.so.0; }; })
+libtool: install: (cd /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/recipe-sysroot-native/usr/lib && { ln -s -f libsqlite3.so.0.8.6 libsqlite3.so || { rm -f libsqlite3.so && ln -s libsqlite3.so.0.8.6 libsqlite3.so; }; })
+libtool: install: /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c .libs/libsqlite3.lai /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/recipe-sysroot-native/usr/lib/libsqlite3.la
+libtool: warning: remember to run 'libtool --finish /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/recipe-sysroot-native/usr/lib'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/recipe-sysroot-native/usr/bin'
+  /bin/bash ./libtool   --mode=install /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c sqlite3 '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/recipe-sysroot-native/usr/bin'
+libtool: warning: 'libsqlite3.la' has not been installed in '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/recipe-sysroot-native/usr/lib'
+libtool: install: /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c .libs/sqlite3 /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/recipe-sysroot-native/usr/bin/sqlite3
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/sqlite3-native/3_3.38.5-r0/build'
+DEBUG: Shell function do_install finished
+DEBUG: Executing shell function remove_libtool_la
+DEBUG: Shell function remove_libtool_la finished

@@ -1,0 +1,194 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are ['/home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-native_0.67.bb:do_populate_sysroot']
+NOTE: Installed into sysroot: ['quilt-native']
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: sed -e 's:^[^/]*/:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libarchive-native/3.6.2-r0/recipe-sysroot-native/:g' /home/ubuntu/yocto/rpi-build/tmp/sysroots-components/x86_64/quilt-native/fixmepath | xargs sed -i -e 's:FIXMESTAGINGDIRTARGET:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libarchive-native/3.6.2-r0/recipe-sysroot:g; s:FIXMESTAGINGDIRHOST:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libarchive-native/3.6.2-r0/recipe-sysroot-native:g' -e 's:FIXME_PSEUDO_SYSROOT:/home/ubuntu/yocto/rpi-build/tmp/sysroots-components/x86_64/pseudo-native:g' -e 's:FIXME_HOSTTOOLS_DIR:/home/ubuntu/yocto/rpi-build/tmp/hosttools:g' -e 's:FIXME_PKGDATA_DIR:/home/ubuntu/yocto/rpi-build/tmp/pkgdata/raspberrypi4:g' -e 's:FIXME_PSEUDO_LOCALSTATEDIR:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libarchive-native/3.6.2-r0/pseudo/:g' -e 's:FIXME_LOGFIFO:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libarchive-native/3.6.2-r0/temp/fifo.25209:g'
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_patch
+DEBUG: Executing python function patch_do_patch
+DEBUG: Searching for 0001-pax-writer-fix-multiple-security-vulnerabilities.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/
+DEBUG: Searching for CVE-2024-26256.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/
+DEBUG: Searching for CVE-2024-48957.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/
+DEBUG: Searching for CVE-2024-48958.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/
+DEBUG: Searching for CVE-2024-20696.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/
+DEBUG: Searching for CVE-2025-25724.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/
+DEBUG: Searching for CVE-2025-5914.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/
+DEBUG: Searching for CVE-2025-5915.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/
+DEBUG: Searching for CVE-2025-5916.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/
+DEBUG: Searching for CVE-2025-5917.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/
+DEBUG: Searching for 0001-FILE-seeking-support-2539.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/
+DEBUG: Searching for 0001-Improve-lseek-handling-2564.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/
+DEBUG: Searching for CVE-2025-5918.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive-3.6.2/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/libarchive/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libarchive/files/
+NOTE: Applying patch '0001-pax-writer-fix-multiple-security-vulnerabilities.patch' (../poky/meta/recipes-extended/libarchive/libarchive/0001-pax-writer-fix-multiple-security-vulnerabilities.patch)
+NOTE: Applying patch 'CVE-2024-26256.patch' (../poky/meta/recipes-extended/libarchive/libarchive/CVE-2024-26256.patch)
+NOTE: Applying patch 'CVE-2024-48957.patch' (../poky/meta/recipes-extended/libarchive/libarchive/CVE-2024-48957.patch)
+NOTE: Applying patch 'CVE-2024-48958.patch' (../poky/meta/recipes-extended/libarchive/libarchive/CVE-2024-48958.patch)
+NOTE: Applying patch 'CVE-2024-20696.patch' (../poky/meta/recipes-extended/libarchive/libarchive/CVE-2024-20696.patch)
+NOTE: Applying patch 'CVE-2025-25724.patch' (../poky/meta/recipes-extended/libarchive/libarchive/CVE-2025-25724.patch)
+NOTE: Applying patch 'CVE-2025-5914.patch' (../poky/meta/recipes-extended/libarchive/libarchive/CVE-2025-5914.patch)
+NOTE: Applying patch 'CVE-2025-5915.patch' (../poky/meta/recipes-extended/libarchive/libarchive/CVE-2025-5915.patch)
+NOTE: Applying patch 'CVE-2025-5916.patch' (../poky/meta/recipes-extended/libarchive/libarchive/CVE-2025-5916.patch)
+NOTE: Applying patch 'CVE-2025-5917.patch' (../poky/meta/recipes-extended/libarchive/libarchive/CVE-2025-5917.patch)
+NOTE: Applying patch '0001-FILE-seeking-support-2539.patch' (../poky/meta/recipes-extended/libarchive/libarchive/0001-FILE-seeking-support-2539.patch)
+NOTE: Applying patch '0001-Improve-lseek-handling-2564.patch' (../poky/meta/recipes-extended/libarchive/libarchive/0001-Improve-lseek-handling-2564.patch)
+NOTE: Applying patch 'CVE-2025-5918.patch' (../poky/meta/recipes-extended/libarchive/libarchive/CVE-2025-5918.patch)
+DEBUG: Python function patch_do_patch finished
+DEBUG: Python function do_patch finished
+DEBUG: Executing python function do_qa_patch
+DEBUG: Python function do_qa_patch finished

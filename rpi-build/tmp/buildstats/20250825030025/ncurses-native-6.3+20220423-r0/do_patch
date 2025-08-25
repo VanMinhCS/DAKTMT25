@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090843.50 
+ncurses-native-6.3+20220423-r0: do_patch
+Elapsed time: 1.69 seconds
+utime: 25
+stime: 6
+cutime: 52
+cstime: 33
+IO rchar: 4685985
+IO wchar: 2407207
+IO syscr: 3793
+IO syscw: 966
+IO read_bytes: 0
+IO write_bytes: 2441216
+IO cancelled_write_bytes: 4096
+rusage ru_utime: 0.255866
+rusage ru_stime: 0.069043
+rusage ru_maxrss: 108872
+rusage ru_minflt: 4307
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 136
+rusage ru_nvcsw: 37
+rusage ru_nivcsw: 95
+Child rusage ru_utime: 0.527741
+Child rusage ru_stime: 0.331076
+Child rusage ru_maxrss: 108872
+Child rusage ru_minflt: 69532
+Child rusage ru_majflt: 1
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 4632
+Child rusage ru_nvcsw: 995
+Child rusage ru_nivcsw: 343
+Status: PASSED 
+Ended: 1756090845.19 

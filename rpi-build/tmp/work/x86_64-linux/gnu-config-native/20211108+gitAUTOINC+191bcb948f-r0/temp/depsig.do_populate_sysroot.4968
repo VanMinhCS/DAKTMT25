@@ -1,0 +1,16 @@
+OEOuthashBasic
+14
+quilt-native: 3057d956d8a64c8d0c95902855fb8674038582d1c445513dc0b3cc45351763ca
+SSTATE_PKGSPEC=sstate:gnu-config-native:x86_64-linux:20211108+gitAUTOINC+191bcb948f:r0:x86_64:10:
+task=populate_sysroot
+drwx                                                                                       .
+drwx                                                                                       ./recipe-sysroot-native
+drwx                                                                                       ./recipe-sysroot-native/sysroot-providers
+-rw-                   17 24f06c8f2c3eb4fcd6cc558d5430410351f63474e5b092fa19f599ba80fc989b ./recipe-sysroot-native/sysroot-providers/gnu-config-native
+drwx                                                                                       ./recipe-sysroot-native/usr
+drwx                                                                                       ./recipe-sysroot-native/usr/bin
+-rwx                 6978 9a9b3ff949927891b1a134915c0aabbc856cc26ceae04212e7f1a9459e3ab4fb ./recipe-sysroot-native/usr/bin/gnu-configize
+drwx                                                                                       ./recipe-sysroot-native/usr/share
+drwx                                                                                       ./recipe-sysroot-native/usr/share/gnu-config
+-rw-                49348 af8a1922c9b3c240bf2119d4ec0965a0b5ec36b1016017ba66db44b3b53e9cea ./recipe-sysroot-native/usr/share/gnu-config/config.guess
+-rw-                35276 d611751fba98e807c9684d253bb02aa73d6825fe0e0b9ae3cbf258a59171c9b0 ./recipe-sysroot-native/usr/share/gnu-config/config.sub

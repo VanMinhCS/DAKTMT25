@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756091072.99 
+popt-native-1.18-r0: do_populate_sysroot
+Elapsed time: 0.54 seconds
+utime: 48
+stime: 10
+cutime: 7
+cstime: 11
+IO rchar: 1298532
+IO wchar: 536348
+IO syscr: 1669
+IO syscw: 241
+IO read_bytes: 0
+IO write_bytes: 401408
+IO cancelled_write_bytes: 57344
+rusage ru_utime: 0.482488
+rusage ru_stime: 0.10894799999999999
+rusage ru_maxrss: 110692
+rusage ru_minflt: 12517
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 448
+rusage ru_nvcsw: 30
+rusage ru_nivcsw: 204
+Child rusage ru_utime: 0.07871399999999999
+Child rusage ru_stime: 0.110375
+Child rusage ru_maxrss: 110692
+Child rusage ru_minflt: 10788
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 336
+Child rusage ru_nvcsw: 188
+Child rusage ru_nivcsw: 88
+Status: PASSED 
+Ended: 1756091073.53 

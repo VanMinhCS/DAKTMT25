@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090848.69 
+readline-native-8.1.2-r0: do_patch
+Elapsed time: 0.74 seconds
+utime: 27
+stime: 4
+cutime: 19
+cstime: 4
+IO rchar: 848280
+IO wchar: 152617
+IO syscr: 1114
+IO syscw: 189
+IO read_bytes: 0
+IO write_bytes: 176128
+IO cancelled_write_bytes: 4096
+rusage ru_utime: 0.270525
+rusage ru_stime: 0.049186
+rusage ru_maxrss: 108688
+rusage ru_minflt: 4218
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 128
+rusage ru_nvcsw: 17
+rusage ru_nivcsw: 123
+Child rusage ru_utime: 0.192637
+Child rusage ru_stime: 0.045667
+Child rusage ru_maxrss: 108688
+Child rusage ru_minflt: 19129
+Child rusage ru_majflt: 3
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 216
+Child rusage ru_nvcsw: 267
+Child rusage ru_nivcsw: 102
+Status: PASSED 
+Ended: 1756090849.43 

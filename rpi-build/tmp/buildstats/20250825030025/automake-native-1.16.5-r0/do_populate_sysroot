@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090921.24 
+automake-native-1.16.5-r0: do_populate_sysroot
+Elapsed time: 0.56 seconds
+utime: 35
+stime: 10
+cutime: 17
+cstime: 25
+IO rchar: 8987848
+IO wchar: 2999014
+IO syscr: 2714
+IO syscw: 576
+IO read_bytes: 0
+IO write_bytes: 1191936
+IO cancelled_write_bytes: 4096
+rusage ru_utime: 0.359929
+rusage ru_stime: 0.107565
+rusage ru_maxrss: 109608
+rusage ru_minflt: 16862
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 392
+rusage ru_nvcsw: 25
+rusage ru_nivcsw: 26
+Child rusage ru_utime: 0.17953
+Child rusage ru_stime: 0.254065
+Child rusage ru_maxrss: 109608
+Child rusage ru_minflt: 25489
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 1936
+Child rusage ru_nvcsw: 286
+Child rusage ru_nivcsw: 39
+Status: PASSED 
+Ended: 1756090921.80 

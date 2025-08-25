@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:binutils-cross-arm:x86_64-poky-linux-gnueabi:2.38:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 8ca8b8472ebc1865a2420177374af7fd1b5cae4d8a049c244c75c456e1908547 ./deploy-source-date-epoch/__source_date_epoch.txt

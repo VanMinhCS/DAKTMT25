@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756091094.13 
+gperf-native-3.1-r0: do_compile
+Elapsed time: 1.89 seconds
+utime: 27
+stime: 2
+cutime: 394
+cstime: 55
+IO rchar: 10528815
+IO wchar: 777119
+IO syscr: 3165
+IO syscw: 633
+IO read_bytes: 507904
+IO write_bytes: 442368
+IO cancelled_write_bytes: 20480
+rusage ru_utime: 0.278924
+rusage ru_stime: 0.025356
+rusage ru_maxrss: 110380
+rusage ru_minflt: 4822
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 80
+rusage ru_nvcsw: 30
+rusage ru_nivcsw: 22
+Child rusage ru_utime: 3.9477789999999997
+Child rusage ru_stime: 0.55667
+Child rusage ru_maxrss: 106164
+Child rusage ru_minflt: 66292
+Child rusage ru_majflt: 5
+Child rusage ru_inblock: 992
+Child rusage ru_oublock: 784
+Child rusage ru_nvcsw: 282
+Child rusage ru_nivcsw: 1112
+Status: PASSED 
+Ended: 1756091096.02 

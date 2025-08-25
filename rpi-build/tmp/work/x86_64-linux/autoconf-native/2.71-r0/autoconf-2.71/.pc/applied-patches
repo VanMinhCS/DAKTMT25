@@ -1,0 +1,8 @@
+program_prefix.patch
+autoreconf-exclude.patch
+remove-usr-local-lib-from-m4.patch
+preferbash.patch
+autotest-automake-result-format.patch
+man-host-perl.patch
+0001-Port-to-compilers-that-moan-about-K-R-func-decls.patch
+no-man.patch

@@ -1,0 +1,281 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are ['/home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-native_0.67.bb:do_populate_sysroot', '/home/ubuntu/yocto/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-native.bb:do_populate_sysroot', 'virtual:native:/home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf_2.71.bb:do_populate_sysroot', 'virtual:native:/home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake_1.16.5.bb:do_populate_sysroot']
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: ['quilt-native', 'texinfo-dummy-native', 'autoconf-native', 'automake-native', 'm4-native', 'gnu-config-native', 'gettext-minimal-native']
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing shell function autotools_preconfigure
+DEBUG: Shell function autotools_preconfigure finished
+DEBUG: Executing python function autotools_aclocals
+DEBUG: SITE files ['endian-little', 'common-linux', 'common-glibc', 'bit-64', 'x86_64-linux', 'common']
+DEBUG: Python function autotools_aclocals finished
+DEBUG: Executing shell function do_configure
+automake (GNU automake) 1.16.5
+Copyright (C) 2021 Free Software Foundation, Inc.
+License GPLv2+: GNU GPL version 2 or later <https://gnu.org/licenses/gpl-2.0.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Tom Tromey <tromey@redhat.com>
+       and Alexandre Duret-Lutz <adl@gnu.org>.
+AUTOV is 1.16
+NOTE: Executing ACLOCAL="aclocal --system-acdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libtool-native/2.4.7-r0/recipe-sysroot-native/usr/share/aclocal/ --automake-acdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libtool-native/2.4.7-r0/recipe-sysroot-native/usr/share/aclocal-1.16" autoreconf -Wcross --verbose --install --force --exclude=libtoolize -I /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libtool-native/2.4.7-r0/libtool-2.4.7/m4/ -I /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libtool-native/2.4.7-r0/libtool-2.4.7/tests/
+autoreconf: export WARNINGS=cross,no-obsolete
+autoreconf: Entering directory '.'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: aclocal --system-acdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libtool-native/2.4.7-r0/recipe-sysroot-native/usr/share/aclocal/ --automake-acdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libtool-native/2.4.7-r0/recipe-sysroot-native/usr/share/aclocal-1.16 -I /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libtool-native/2.4.7-r0/libtool-2.4.7/m4/ -I /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libtool-native/2.4.7-r0/libtool-2.4.7/tests/ --force -I m4
+autoreconf: configure.ac: tracing
+autoreconf: configure.ac: not using Intltool
+autoreconf: configure.ac: not using Gtkdoc
+autoreconf: running: /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libtool-native/2.4.7-r0/recipe-sysroot-native/usr/bin/autoconf --include=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libtool-native/2.4.7-r0/libtool-2.4.7/m4/ --include=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libtool-native/2.4.7-r0/libtool-2.4.7/tests/ --force
+autoreconf: running: /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libtool-native/2.4.7-r0/recipe-sysroot-native/usr/bin/autoheader --include=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libtool-native/2.4.7-r0/libtool-2.4.7/m4/ --include=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libtool-native/2.4.7-r0/libtool-2.4.7/tests/ --force
+autoreconf: running: automake --add-missing --copy --force-missing
+autoreconf: Leaving directory '.'
+NOTE: Running ../libtool-2.4.7/configure  --build=x86_64-linux 		  --host=x86_64-linux 		  --target=x86_64-linux 		  --prefix=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libtool-native/2.4.7-r0/recipe-sysroot-native/usr 		  --exec_prefix=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libtool-native/2.4.7-r0/recipe-sysroot-native/usr 		  --bindir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libtool-native/2.4.7-r0/recipe-sysroot-native/usr/bin 		  --sbindir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libtool-native/2.4.7-r0/recipe-sysroot-native/usr/sbin 		  --libexecdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libtool-native/2.4.7-r0/recipe-sysroot-native/usr/libexec 		  --datadir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libtool-native/2.4.7-r0/recipe-sysroot-native/usr/share 		  --sysconfdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libtool-native/2.4.7-r0/recipe-sysroot-native/etc 		  --sharedstatedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libtool-native/2.4.7-r0/recipe-sysroot-native/com 		  --localstatedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libtool-native/2.4.7-r0/recipe-sysroot-native/var 		  --libdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libtool-native/2.4.7-r0/recipe-sysroot-native/usr/lib 		  --includedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libtool-native/2.4.7-r0/recipe-sysroot-native/usr/include 		  --oldincludedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libtool-native/2.4.7-r0/recipe-sysroot-native/usr/include 		  --infodir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libtool-native/2.4.7-r0/recipe-sysroot-native/usr/share/info 		  --mandir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libtool-native/2.4.7-r0/recipe-sysroot-native/usr/share/man 		  --disable-silent-rules 		  --disable-dependency-tracking 		    --with-libtool-sysroot=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libtool-native/2.4.7-r0/recipe-sysroot-native --disable-static  
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/endian-little
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/common-linux
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/common-glibc
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/x86_64-linux
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/common
+## ------------------------- ##
+## Configuring libtool 2.4.7 ##
+## ------------------------- ##
+
+checking for GNU M4 that supports accurate traces... /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libtool-native/2.4.7-r0/recipe-sysroot-native/usr/bin/m4
+checking whether /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libtool-native/2.4.7-r0/recipe-sysroot-native/usr/bin/m4 accepts --gnu... yes
+checking how m4 supports trace files... --debugfile
+checking for a BSD-compatible install... /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+configure: autobuild project... GNU Libtool
+configure: autobuild revision... 2.4.7
+configure: autobuild hostname... DESKTOP-CSPIOE3
+configure: autobuild mode... default
+configure: autobuild timestamp... 20250825T030208Z
+checking for x86_64-linux-gcc... gcc 
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc  accepts -g... yes
+checking for gcc  option to enable C11 features... none needed
+checking whether gcc  understands -c and -o together... yes
+checking whether the compiler is clang... no
+checking for compiler option needed when checking for declarations... none
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc ... none
+checking how to run the C preprocessor... gcc  -E
+checking for grep that handles long lines and -e... (cached) grep
+checking for egrep... grep -E
+checking for Minix Amsterdam compiler... no
+checking for x86_64-linux-ar... ar
+checking how to run the C preprocessor... gcc  -E
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) sed
+checking for fgrep... grep -F
+checking for ld used by gcc ... ld 
+checking if the linker (ld ) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... nm
+checking the name lister (nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for ld  option to reload object files... -r
+checking for x86_64-linux-file... no
+checking for file... file
+checking for x86_64-linux-objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for x86_64-linux-dlltool... no
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for x86_64-linux-ar... (cached) ar
+checking for archiver @FILE support... @
+checking for x86_64-linux-strip... strip
+checking for x86_64-linux-ranlib... ranlib -D
+checking command to parse nm output from gcc  object... ok
+checking for sysroot... /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libtool-native/2.4.7-r0/recipe-sysroot-native
+checking for a working dd... /home/ubuntu/yocto/rpi-build/tmp/hosttools/dd
+checking how to truncate binary pipes... /home/ubuntu/yocto/rpi-build/tmp/hosttools/dd bs=4096 count=1
+checking for x86_64-linux-mt... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc  supports -fno-rtti -fno-exceptions... no
+checking for gcc  option to produce PIC... -fPIC -DPIC
+checking if gcc  PIC flag -fPIC -DPIC works... yes
+checking if gcc  static flag -static works... yes
+checking if gcc  supports -c -o file.o... yes
+checking if gcc  supports -c -o file.o... (cached) yes
+checking whether the gcc  linker (ld  -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for shl_load... no
+checking for shl_load in -ldld... no
+checking for dlopen... yes
+checking whether a program can dlopen itself... yes
+checking whether a statically linked program can dlopen itself... no
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking what extension is used for runtime loadable modules... .so
+checking what variable specifies run-time module search path... LD_LIBRARY_PATH
+checking for the default library search path... /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libtool-native/2.4.7-r0/recipe-sysroot-native/usr/lib /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libtool-native/2.4.7-r0/recipe-sysroot-native/usr/lib /lib /lib64 /usr/lib /usr/lib64
+checking for gcc  options needed to detect all undeclared functions... none needed
+checking for library containing dlopen... none required
+checking for dlerror... yes
+checking for shl_load... (cached) no
+checking for shl_load in -ldld... (cached) no
+checking for dld_link in -ldld... no
+checking for _ prefix in compiled symbols... no
+checking whether deplibs are loaded by dlopen... yes
+checking for argz.h... yes
+checking for error_t... yes
+checking for argz_add... yes
+checking for argz_append... yes
+checking for argz_count... yes
+checking for argz_create_sep... yes
+checking for argz_insert... yes
+checking for argz_next... yes
+checking for argz_stringify... yes
+checking if argz actually works... yes
+checking whether libtool supports -dlopen/-dlpreopen... yes
+checking for unistd.h... (cached) yes
+checking for dl.h... no
+checking for sys/dl.h... no
+checking for dld.h... no
+checking for mach-o/dyld.h... no
+checking for dirent.h... yes
+checking for closedir... yes
+checking for opendir... yes
+checking for readdir... yes
+checking for strlcat... no
+checking for strlcpy... no
+checking whether the compiler supports GNU C++... yes
+checking whether g++  accepts -g... yes
+checking for g++  option to enable C++11 features... none needed
+checking dependency style of g++ ... none
+checking how to run the C++ preprocessor... g++  -E
+checking for ld used by g++ ... ld  -m elf_x86_64
+checking if the linker (ld  -m elf_x86_64) is GNU ld... yes
+checking whether the g++  linker (ld  -m elf_x86_64) supports shared libraries... yes
+checking for g++  option to produce PIC... -fPIC -DPIC
+checking if g++  PIC flag -fPIC -DPIC works... yes
+checking if g++  static flag -static works... yes
+checking if g++  supports -c -o file.o... yes
+checking if g++  supports -c -o file.o... (cached) yes
+checking whether the g++  linker (ld  -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for x86_64-linux-g77... no
+checking for x86_64-linux-xlf... no
+checking for x86_64-linux-f77... no
+checking for x86_64-linux-frt... no
+checking for x86_64-linux-pgf77... no
+checking for x86_64-linux-cf77... no
+checking for x86_64-linux-fort77... no
+checking for x86_64-linux-fl32... no
+checking for x86_64-linux-af77... no
+checking for x86_64-linux-xlf90... no
+checking for x86_64-linux-f90... no
+checking for x86_64-linux-pgf90... no
+checking for x86_64-linux-pghpf... no
+checking for x86_64-linux-epcf90... no
+checking for x86_64-linux-gfortran... no
+checking for x86_64-linux-g95... no
+checking for x86_64-linux-xlf95... no
+checking for x86_64-linux-f95... no
+checking for x86_64-linux-fort... no
+checking for x86_64-linux-ifort... no
+checking for x86_64-linux-ifc... no
+checking for x86_64-linux-efc... no
+checking for x86_64-linux-pgfortran... no
+checking for x86_64-linux-pgf95... no
+checking for x86_64-linux-lf95... no
+checking for x86_64-linux-ftn... no
+checking for x86_64-linux-nagfor... no
+checking for g77... no
+checking for xlf... no
+checking for f77... no
+checking for frt... no
+checking for pgf77... no
+checking for cf77... no
+checking for fort77... no
+checking for fl32... no
+checking for af77... no
+checking for xlf90... no
+checking for f90... no
+checking for pgf90... no
+checking for pghpf... no
+checking for epcf90... no
+checking for gfortran... no
+checking for g95... no
+checking for xlf95... no
+checking for f95... no
+checking for fort... no
+checking for ifort... no
+checking for ifc... no
+checking for efc... no
+checking for pgfortran... no
+checking for pgf95... no
+checking for lf95... no
+checking for ftn... no
+checking for nagfor... no
+checking whether the compiler supports GNU Fortran 77... no
+checking whether  accepts -g... no
+checking for x86_64-linux-gfortran... gfortran 
+checking whether the compiler supports GNU Fortran... no
+checking whether gfortran  accepts -g... no
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+libtool.m4: error: problem compiling FC test program
+checking for gfortran  option to produce PIC... 
+checking if gfortran  static flag  works... no
+checking if gfortran  supports -c -o file.o... no
+checking if gfortran  supports -c -o file.o... (cached) no
+checking whether the gfortran  linker (ld  -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for x86_64-linux-gccgo... no
+checking for gccgo... no
+checking for x86_64-linux-gcj... no
+checking for gcj... no
+checking for x86_64-linux-windres... no
+checking for windres... no
+checking for C compiler option to allow warnings... -Wno-error
+checking for C++ compiler option to allow warnings... -Wno-error
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating gnulib-tests/Makefile
+config.status: creating config.h
+config.status: linking ../libtool-2.4.7/GNUmakefile to GNUmakefile
+config.status: executing tests/atconfig commands
+config.status: executing depfiles commands
+config.status: executing libtool commands
+DEBUG: Shell function do_configure finished
+DEBUG: Executing python function do_qa_configure
+NOTE: Checking autotools environment for common misconfiguration
+NOTE: Checking configure output for unrecognised options
+DEBUG: Python function do_qa_configure finished
+DEBUG: Executing shell function autotools_postconfigure
+DEBUG: Shell function autotools_postconfigure finished

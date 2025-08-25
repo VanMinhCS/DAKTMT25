@@ -1,0 +1,99 @@
+DEBUG: Executing python function autotools_aclocals
+DEBUG: SITE files ['endian-little', 'common-linux', 'common-glibc', 'bit-64', 'x86_64-linux', 'common']
+DEBUG: Python function autotools_aclocals finished
+DEBUG: Executing shell function do_install
+NOTE: make -j 8 DESTDIR=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/image install
+make  install-am
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/build'
+if test 'no' != no; then \
+  am__dir=. am__subdir_includes=''; \
+  case lib/emacs/autoconf-mode.elc in */*) \
+    am__dir=`echo 'lib/emacs/autoconf-mode.elc' | sed 's,/[^/]*$,,'`; \
+    am__subdir_includes="-L $am__dir -L ../autoconf-2.71/$am__dir"; \
+  esac; \
+  test -d "$am__dir" || /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p "$am__dir" || exit 1; \
+  no --batch \
+      \
+    $am__subdir_includes -L . -L ../autoconf-2.71 \
+    --eval '(if (boundp (quote byte-compile-dest-file-function)) (setq byte-compile-dest-file-function (lambda (_) "lib/emacs/autoconf-mode.elc")) (defun byte-compile-dest-file (_) "lib/emacs/autoconf-mode.elc") )' \
+    -f batch-byte-compile '../autoconf-2.71/lib/emacs/autoconf-mode.el'; \
+else :; fi
+if test 'no' != no; then \
+  am__dir=. am__subdir_includes=''; \
+  case lib/emacs/autotest-mode.elc in */*) \
+    am__dir=`echo 'lib/emacs/autotest-mode.elc' | sed 's,/[^/]*$,,'`; \
+    am__subdir_includes="-L $am__dir -L ../autoconf-2.71/$am__dir"; \
+  esac; \
+  test -d "$am__dir" || /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p "$am__dir" || exit 1; \
+  no --batch \
+      \
+    $am__subdir_includes -L . -L ../autoconf-2.71 \
+    --eval '(if (boundp (quote byte-compile-dest-file-function)) (setq byte-compile-dest-file-function (lambda (_) "lib/emacs/autotest-mode.elc")) (defun byte-compile-dest-file (_) "lib/emacs/autotest-mode.elc") )' \
+    -f batch-byte-compile '../autoconf-2.71/lib/emacs/autotest-mode.el'; \
+else :; fi
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/build'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/bin'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/autoconf/autoconf'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/autoconf/autotest'
+if test 'no' != no; then \
+  am__dir=. am__subdir_includes=''; \
+  case lib/emacs/autoconf-mode.elc in */*) \
+    am__dir=`echo 'lib/emacs/autoconf-mode.elc' | sed 's,/[^/]*$,,'`; \
+    am__subdir_includes="-L $am__dir -L ../autoconf-2.71/$am__dir"; \
+  esac; \
+  test -d "$am__dir" || /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p "$am__dir" || exit 1; \
+  no --batch \
+      \
+    $am__subdir_includes -L . -L ../autoconf-2.71 \
+    --eval '(if (boundp (quote byte-compile-dest-file-function)) (setq byte-compile-dest-file-function (lambda (_) "lib/emacs/autoconf-mode.elc")) (defun byte-compile-dest-file (_) "lib/emacs/autoconf-mode.elc") )' \
+    -f batch-byte-compile '../autoconf-2.71/lib/emacs/autoconf-mode.el'; \
+else :; fi
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c bin/autoconf bin/autoheader bin/autom4te bin/autoreconf bin/autoscan bin/autoupdate bin/ifnames '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/bin'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/autoconf/build-aux'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../autoconf-2.71/lib/autotest/autotest.m4 ../autoconf-2.71/lib/autotest/general.m4 ../autoconf-2.71/lib/autotest/specific.m4 '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/autoconf/autotest'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../autoconf-2.71/lib/autoconf/autoconf.m4 ../autoconf-2.71/lib/autoconf/general.m4 ../autoconf-2.71/lib/autoconf/status.m4 ../autoconf-2.71/lib/autoconf/oldnames.m4 ../autoconf-2.71/lib/autoconf/specific.m4 ../autoconf-2.71/lib/autoconf/autoheader.m4 ../autoconf-2.71/lib/autoconf/autoupdate.m4 ../autoconf-2.71/lib/autoconf/autotest.m4 ../autoconf-2.71/lib/autoconf/autoscan.m4 ../autoconf-2.71/lib/autoconf/lang.m4 ../autoconf-2.71/lib/autoconf/c.m4 ../autoconf-2.71/lib/autoconf/erlang.m4 ../autoconf-2.71/lib/autoconf/fortran.m4 ../autoconf-2.71/lib/autoconf/functions.m4 ../autoconf-2.71/lib/autoconf/go.m4 ../autoconf-2.71/lib/autoconf/headers.m4 ../autoconf-2.71/lib/autoconf/types.m4 ../autoconf-2.71/lib/autoconf/libs.m4 ../autoconf-2.71/lib/autoconf/programs.m4 ../autoconf-2.71/lib/autoconf/trailer.m4 '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/autoconf/autoconf'
+if test 'no' != no; then \
+  am__dir=. am__subdir_includes=''; \
+  case lib/emacs/autotest-mode.elc in */*) \
+    am__dir=`echo 'lib/emacs/autotest-mode.elc' | sed 's,/[^/]*$,,'`; \
+    am__subdir_includes="-L $am__dir -L ../autoconf-2.71/$am__dir"; \
+  esac; \
+  test -d "$am__dir" || /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p "$am__dir" || exit 1; \
+  no --batch \
+      \
+    $am__subdir_includes -L . -L ../autoconf-2.71 \
+    --eval '(if (boundp (quote byte-compile-dest-file-function)) (setq byte-compile-dest-file-function (lambda (_) "lib/emacs/autotest-mode.elc")) (defun byte-compile-dest-file (_) "lib/emacs/autotest-mode.elc") )' \
+    -f batch-byte-compile '../autoconf-2.71/lib/emacs/autotest-mode.el'; \
+else :; fi
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../autoconf-2.71/build-aux/config.guess ../autoconf-2.71/build-aux/config.sub ../autoconf-2.71/build-aux/install-sh '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/autoconf/build-aux'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/autoconf/m4sugar'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/autoconf/Autom4te'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../autoconf-2.71/lib/m4sugar/m4sugar.m4 ../autoconf-2.71/lib/m4sugar/foreach.m4 ../autoconf-2.71/lib/m4sugar/m4sh.m4 '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/autoconf/m4sugar'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../autoconf-2.71/lib/Autom4te/C4che.pm ../autoconf-2.71/lib/Autom4te/ChannelDefs.pm ../autoconf-2.71/lib/Autom4te/Channels.pm ../autoconf-2.71/lib/Autom4te/Config.pm ../autoconf-2.71/lib/Autom4te/Configure_ac.pm ../autoconf-2.71/lib/Autom4te/FileUtils.pm ../autoconf-2.71/lib/Autom4te/General.pm ../autoconf-2.71/lib/Autom4te/Getopt.pm ../autoconf-2.71/lib/Autom4te/Request.pm ../autoconf-2.71/lib/Autom4te/XFile.pm '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/autoconf/Autom4te'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/info'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/autoconf/autoconf'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/autoconf/autoscan'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 lib/autoconf/autoconf.m4f '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/autoconf/autoconf'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/autoconf/autotest'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 lib/autoscan/autoscan.list '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/autoconf/autoscan'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/autoconf/m4sugar'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 lib/autotest/autotest.m4f '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/autoconf/autotest'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 lib/m4sugar/version.m4 lib/m4sugar/m4sugar.m4f lib/m4sugar/m4sh.m4f '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/autoconf/m4sugar'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/autoconf'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../autoconf-2.71/doc/autoconf.info ../autoconf-2.71/doc/standards.info '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/info'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/autoconf'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 lib/autom4te.cfg '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/autoconf'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../autoconf-2.71/INSTALL '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/autoconf'
+ install-info --info-dir='/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/info' '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/info/autoconf.info'
+ install-info --info-dir='/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/info' '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/info/standards.info'
+make  install-data-hook
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/build'
+for s in build-aux/config.guess build-aux/config.sub build-aux/install-sh; do \
+  chmod +x "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/autoconf/$s"; \
+done
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/build'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/build'
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/build'
+DEBUG: Shell function do_install finished
+DEBUG: Executing shell function remove_libtool_la
+DEBUG: Shell function remove_libtool_la finished

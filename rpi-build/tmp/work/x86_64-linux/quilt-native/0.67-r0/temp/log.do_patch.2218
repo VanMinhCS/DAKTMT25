@@ -1,0 +1,118 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are []
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_patch
+DEBUG: Executing python function patch_do_patch
+DEBUG: Searching for run-ptest in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-0.67/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-0.67/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-0.67/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-0.67/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/files/
+DEBUG: Searching for Makefile in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-0.67/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-0.67/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-0.67/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-0.67/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/files/
+DEBUG: Searching for test.sh in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-0.67/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-0.67/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-0.67/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-0.67/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/files/
+DEBUG: Searching for 0001-tests-Allow-different-output-from-mv.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-0.67/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-0.67/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-0.67/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-0.67/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/files/
+DEBUG: Searching for fix-grep-3.8.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-0.67/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-0.67/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-0.67/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-0.67/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/files/
+DEBUG: Searching for faildiff-order.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-0.67/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-0.67/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-0.67/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-0.67/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/files/
+DEBUG: Searching for 0001-test-Fix-a-race-condition-in-merge.test.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-0.67/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-0.67/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-0.67/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-0.67/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/files/
+NOTE: Applying patch '0001-tests-Allow-different-output-from-mv.patch' (../poky/meta/recipes-devtools/quilt/quilt/0001-tests-Allow-different-output-from-mv.patch)
+NOTE: self._current is None
+NOTE: patches is [{'file': '/home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/0001-tests-Allow-different-output-from-mv.patch', 'strippath': '1', 'filemd5': '6935b97a52117b7324bb77eba5176f7d'}]
+NOTE: applying patch {'file': '/home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/0001-tests-Allow-different-output-from-mv.patch', 'strippath': '1', 'filemd5': '6935b97a52117b7324bb77eba5176f7d'}
+NOTE: Applying patch 'fix-grep-3.8.patch' (../poky/meta/recipes-devtools/quilt/quilt/fix-grep-3.8.patch)
+NOTE: self._current is 0
+NOTE: patches is [{'file': '/home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/0001-tests-Allow-different-output-from-mv.patch', 'strippath': '1', 'filemd5': '6935b97a52117b7324bb77eba5176f7d'}, {'file': '/home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/fix-grep-3.8.patch', 'strippath': '1', 'filemd5': 'f563dc5da628a363cf2a82a0fade0d6f'}]
+NOTE: applying patch {'file': '/home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/fix-grep-3.8.patch', 'strippath': '1', 'filemd5': 'f563dc5da628a363cf2a82a0fade0d6f'}
+NOTE: Applying patch 'faildiff-order.patch' (../poky/meta/recipes-devtools/quilt/quilt/faildiff-order.patch)
+NOTE: self._current is 1
+NOTE: patches is [{'file': '/home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/0001-tests-Allow-different-output-from-mv.patch', 'strippath': '1', 'filemd5': '6935b97a52117b7324bb77eba5176f7d'}, {'file': '/home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/fix-grep-3.8.patch', 'strippath': '1', 'filemd5': 'f563dc5da628a363cf2a82a0fade0d6f'}, {'file': '/home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/faildiff-order.patch', 'strippath': '1', 'filemd5': '34a075b3124351a33377dfb80db5ba60'}]
+NOTE: applying patch {'file': '/home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/faildiff-order.patch', 'strippath': '1', 'filemd5': '34a075b3124351a33377dfb80db5ba60'}
+NOTE: Applying patch '0001-test-Fix-a-race-condition-in-merge.test.patch' (../poky/meta/recipes-devtools/quilt/quilt/0001-test-Fix-a-race-condition-in-merge.test.patch)
+NOTE: self._current is 2
+NOTE: patches is [{'file': '/home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/0001-tests-Allow-different-output-from-mv.patch', 'strippath': '1', 'filemd5': '6935b97a52117b7324bb77eba5176f7d'}, {'file': '/home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/fix-grep-3.8.patch', 'strippath': '1', 'filemd5': 'f563dc5da628a363cf2a82a0fade0d6f'}, {'file': '/home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/faildiff-order.patch', 'strippath': '1', 'filemd5': '34a075b3124351a33377dfb80db5ba60'}, {'file': '/home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/0001-test-Fix-a-race-condition-in-merge.test.patch', 'strippath': '1', 'filemd5': 'b2efeb073e8794dc58c45b81e41cdf18'}]
+NOTE: applying patch {'file': '/home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt/0001-test-Fix-a-race-condition-in-merge.test.patch', 'strippath': '1', 'filemd5': 'b2efeb073e8794dc58c45b81e41cdf18'}
+DEBUG: Python function patch_do_patch finished
+DEBUG: Python function do_patch finished
+DEBUG: Executing python function do_qa_patch
+DEBUG: Python function do_qa_patch finished

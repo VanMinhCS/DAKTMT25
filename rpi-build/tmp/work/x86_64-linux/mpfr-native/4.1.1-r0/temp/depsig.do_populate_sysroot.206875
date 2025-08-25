@@ -1,0 +1,30 @@
+OEOuthashBasic
+14
+autoconf-archive-native: 160674dc9d13c4f775d166fae35b3969aa4e47c3460f188265d66e71206535f5
+autoconf-native: a082d55df4b7dac9894c5feaf9f362ebbbf3242ae22430b84c4e8dd6f794fd94
+automake-native: 14963faa76d47d1639f6c0b28acf6361fc204ea39070d937e3951fc646a0a957
+gettext-minimal-native: 0d39582068b641490d184ea9f722f819aafcee1d652d8d8c5248ab8e4971ea09
+gmp-native: ee6b6c5be7d81e4209aaaa5bca0e30ce05ec90778d3e48558c932ba7b93c9c3b
+gnu-config-native: dcfcdd2de1b71130dc89903a2fc775551b0256cdcd7880cbdc731dcb33a59563
+libtool-native: edf42e87001d7a64879d4959f5b66885251d0230f2a9095a0fb57a5e3f9993fb
+m4-native: 2e220b13b48306f3a02a7bf65e00356873aed6cd266e2e6ce4daa34264a50398
+quilt-native: 3057d956d8a64c8d0c95902855fb8674038582d1c445513dc0b3cc45351763ca
+texinfo-dummy-native: c19dfc74595ada505d502217fe29d7dea1eb64a849a4eeb895b475baa979ac9e
+xz-native: 4b21ae5e7e20710403f0af40c4614b090bd491f321699fe166454b3e15e79a4f
+SSTATE_PKGSPEC=sstate:mpfr-native:x86_64-linux:4.1.1:r0:x86_64:10:
+task=populate_sysroot
+drwx                                                                                       .
+drwx                                                                                       ./recipe-sysroot-native
+drwx                                                                                       ./recipe-sysroot-native/sysroot-providers
+-rw-                   11 83b3511f9acc9f0191f0be09ba0e8f9c36de174e27a2454d1449be51dc3567ba ./recipe-sysroot-native/sysroot-providers/mpfr-native
+drwx                                                                                       ./recipe-sysroot-native/usr
+drwx                                                                                       ./recipe-sysroot-native/usr/include
+-rw-                 6645 d3ae6480e740ea120ac49ed22e7641ff2651e75d39cacbf64c77682161ef74ab ./recipe-sysroot-native/usr/include/mpf2mpfr.h
+-rw-                54465 2d859c9db07d75e04a0f68919e11c823ea7222287f482558b6b3b44ae41d5679 ./recipe-sysroot-native/usr/include/mpfr.h
+drwx                                                                                       ./recipe-sysroot-native/usr/lib
+lrwx                                                                                       ./recipe-sysroot-native/usr/lib/libmpfr.so -> libmpfr.so.6.1.1
+lrwx                                                                                       ./recipe-sysroot-native/usr/lib/libmpfr.so.6 -> libmpfr.so.6.1.1
+-rwx               725256 c0de7243f0a7cd7e3fb6b51b392e2b9369cc66c3db819137a86a188d9d204af0 ./recipe-sysroot-native/usr/lib/libmpfr.so.6.1.1
+drwx                                                                                       ./recipe-sysroot-native/usr/lib/pkgconfig
+-rw-                  336 4f8cd8e127b634feaedee7a94737563a6f1bbe5e28582ed10d735081f3db2997 ./recipe-sysroot-native/usr/lib/pkgconfig/mpfr.pc
+drwx                                                                                       ./recipe-sysroot-native/usr/share

@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090875.43 
+libmicrohttpd-native-0.9.76-r0: do_patch
+Elapsed time: 0.16 seconds
+utime: 27
+stime: 3
+cutime: 1
+cstime: 0
+IO rchar: 225297
+IO wchar: 118077
+IO syscr: 162
+IO syscw: 80
+IO read_bytes: 0
+IO write_bytes: 122880
+IO cancelled_write_bytes: 4096
+rusage ru_utime: 0.27044999999999997
+rusage ru_stime: 0.03606
+rusage ru_maxrss: 109072
+rusage ru_minflt: 4208
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 112
+rusage ru_nvcsw: 5
+rusage ru_nivcsw: 83
+Child rusage ru_utime: 0.01338
+Child rusage ru_stime: 0.003322
+Child rusage ru_maxrss: 108944
+Child rusage ru_minflt: 825
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 128
+Child rusage ru_nvcsw: 11
+Child rusage ru_nivcsw: 5
+Status: PASSED 
+Ended: 1756090875.60 

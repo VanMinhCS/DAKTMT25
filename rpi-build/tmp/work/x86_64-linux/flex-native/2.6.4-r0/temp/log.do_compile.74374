@@ -1,0 +1,263 @@
+DEBUG: Executing python function autotools_aclocals
+DEBUG: SITE files ['endian-little', 'common-linux', 'common-glibc', 'bit-64', 'x86_64-linux', 'common']
+DEBUG: Python function autotools_aclocals finished
+DEBUG: Executing shell function do_compile
+NOTE: make -j 8 m4=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/bin/m4
+Making all in src
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/build/src'
+make  all-am
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/build/src'
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o flex-buf.o `test -f 'buf.c' || echo '../../flex-2.6.4/src/'`buf.c
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o flex-ccl.o `test -f 'ccl.c' || echo '../../flex-2.6.4/src/'`ccl.c
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o flex-dfa.o `test -f 'dfa.c' || echo '../../flex-2.6.4/src/'`dfa.c
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o flex-ecs.o `test -f 'ecs.c' || echo '../../flex-2.6.4/src/'`ecs.c
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o flex-filter.o `test -f 'filter.c' || echo '../../flex-2.6.4/src/'`filter.c
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o flex-gen.o `test -f 'gen.c' || echo '../../flex-2.6.4/src/'`gen.c
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o flex-main.o `test -f 'main.c' || echo '../../flex-2.6.4/src/'`main.c
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o flex-misc.o `test -f 'misc.c' || echo '../../flex-2.6.4/src/'`misc.c
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o flex-nfa.o `test -f 'nfa.c' || echo '../../flex-2.6.4/src/'`nfa.c
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o flex-options.o `test -f 'options.c' || echo '../../flex-2.6.4/src/'`options.c
+../../flex-2.6.4/src/filter.c: In function ‘filter_fix_linedirs’:
+../../flex-2.6.4/src/filter.c:393:68: warning: ‘%s’ directive output may be truncated writing up to 2047 bytes into a region of size between 494 and 503 [-Wformat-truncation=]
+  393 |                                 snprintf (buf, readsz, "#line %d \"%s\"\n",
+      |                                                                    ^~
+  394 |                                           lineno, filename);
+      |                                                   ~~~~~~~~          
+In file included from /usr/include/stdio.h:894,
+                 from ../../flex-2.6.4/src/flexdef.h:42,
+                 from ../../flex-2.6.4/src/filter.c:24:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:71:10: note: ‘__builtin___snprintf_chk’ output between 12 and 2068 bytes into a destination of size 512
+   71 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   72 |                                    __glibc_objsize (__s), __fmt,
+      |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   73 |                                    __va_arg_pack ());
+      |                                    ~~~~~~~~~~~~~~~~~
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o flex-parse.o `test -f 'parse.c' || echo '../../flex-2.6.4/src/'`parse.c
+../../flex-2.6.4/src/misc.c: In function ‘line_directive_out’:
+../../flex-2.6.4/src/misc.c:369:57: warning: ‘%s’ directive output may be truncated writing up to 2047 bytes into a region of size 2039 [-Wformat-truncation=]
+  369 |                 snprintf (directive, sizeof(directive), line_fmt, 0, filename);
+      |                                                         ^~~~~~~~     ~~~~~~~~
+In file included from /usr/include/stdio.h:894,
+                 from ../../flex-2.6.4/src/flexdef.h:42,
+                 from ../../flex-2.6.4/src/misc.c:33:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:71:10: note: ‘__builtin___snprintf_chk’ output between 12 and 2059 bytes into a destination of size 2048
+   71 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   72 |                                    __glibc_objsize (__s), __fmt,
+      |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   73 |                                    __va_arg_pack ());
+      |                                    ~~~~~~~~~~~~~~~~~
+../../flex-2.6.4/src/misc.c:367:57: warning: ‘%s’ directive output may be truncated writing up to 2047 bytes into a region of size between 2029 and 2039 [-Wformat-truncation=]
+  367 |                 snprintf (directive, sizeof(directive), line_fmt, linenum, filename);
+      |                                                         ^~~~~~~~           ~~~~~~~~
+In file included from /usr/include/stdio.h:894,
+                 from ../../flex-2.6.4/src/flexdef.h:42,
+                 from ../../flex-2.6.4/src/misc.c:33:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:71:10: note: ‘__builtin___snprintf_chk’ output between 12 and 2069 bytes into a destination of size 2048
+   71 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   72 |                                    __glibc_objsize (__s), __fmt,
+      |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   73 |                                    __va_arg_pack ());
+      |                                    ~~~~~~~~~~~~~~~~~
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o flex-regex.o `test -f 'regex.c' || echo '../../flex-2.6.4/src/'`regex.c
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o flex-scanflags.o `test -f 'scanflags.c' || echo '../../flex-2.6.4/src/'`scanflags.c
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o flex-scanopt.o `test -f 'scanopt.c' || echo '../../flex-2.6.4/src/'`scanopt.c
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o flex-skel.o `test -f 'skel.c' || echo '../../flex-2.6.4/src/'`skel.c
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o flex-sym.o `test -f 'sym.c' || echo '../../flex-2.6.4/src/'`sym.c
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o flex-tables.o `test -f 'tables.c' || echo '../../flex-2.6.4/src/'`tables.c
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o flex-tables_shared.o `test -f 'tables_shared.c' || echo '../../flex-2.6.4/src/'`tables_shared.c
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o flex-tblcmp.o `test -f 'tblcmp.c' || echo '../../flex-2.6.4/src/'`tblcmp.c
+parse.y: In function ‘format_warn’:
+parse.y:1061:39: warning: ‘%s’ directive output may be truncated writing up to 2047 bytes into a region of size 2039 [-Wformat-truncation=]
+......
+In file included from /usr/include/stdio.h:894,
+                 from ../../flex-2.6.4/src/flexdef.h:42,
+                 from parse.y:66:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:71:10: note: ‘__builtin___snprintf_chk’ output between 10 and 2057 bytes into a destination of size 2048
+   71 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   72 |                                    __glibc_objsize (__s), __fmt,
+      |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   73 |                                    __va_arg_pack ());
+      |                                    ~~~~~~~~~~~~~~~~~
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o flex-yylex.o `test -f 'yylex.c' || echo '../../flex-2.6.4/src/'`yylex.c
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o stage1flex-scan.o `test -f 'scan.c' || echo '../../flex-2.6.4/src/'`scan.c
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o stage1flex-buf.o `test -f 'buf.c' || echo '../../flex-2.6.4/src/'`buf.c
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o stage1flex-ccl.o `test -f 'ccl.c' || echo '../../flex-2.6.4/src/'`ccl.c
+parse.c: In function ‘yyparse’:
+parse.y:1061:39: warning: ‘%s’ directive output may be truncated writing up to 2047 bytes into a region of size 2039 [-Wformat-truncation=]
+In file included from /usr/include/stdio.h:894,
+                 from ../../flex-2.6.4/src/flexdef.h:42,
+                 from parse.y:66:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:71:10: note: ‘__builtin___snprintf_chk’ output between 10 and 2057 bytes into a destination of size 2048
+   71 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   72 |                                    __glibc_objsize (__s), __fmt,
+      |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   73 |                                    __va_arg_pack ());
+      |                                    ~~~~~~~~~~~~~~~~~
+parse.y:360:6: warning: ‘%s’ directive output may be truncated writing up to 2047 bytes into a region of size 2021 [-Wformat-truncation=]
+In file included from /usr/include/stdio.h:894,
+                 from ../../flex-2.6.4/src/flexdef.h:42,
+                 from parse.y:66:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:71:10: note: ‘__builtin___snprintf_chk’ output between 28 and 2075 bytes into a destination of size 2048
+   71 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   72 |                                    __glibc_objsize (__s), __fmt,
+      |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   73 |                                    __va_arg_pack ());
+      |                                    ~~~~~~~~~~~~~~~~~
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o stage1flex-dfa.o `test -f 'dfa.c' || echo '../../flex-2.6.4/src/'`dfa.c
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o stage1flex-ecs.o `test -f 'ecs.c' || echo '../../flex-2.6.4/src/'`ecs.c
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o stage1flex-filter.o `test -f 'filter.c' || echo '../../flex-2.6.4/src/'`filter.c
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o stage1flex-gen.o `test -f 'gen.c' || echo '../../flex-2.6.4/src/'`gen.c
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o stage1flex-main.o `test -f 'main.c' || echo '../../flex-2.6.4/src/'`main.c
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o stage1flex-misc.o `test -f 'misc.c' || echo '../../flex-2.6.4/src/'`misc.c
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o stage1flex-nfa.o `test -f 'nfa.c' || echo '../../flex-2.6.4/src/'`nfa.c
+../../flex-2.6.4/src/filter.c: In function ‘filter_fix_linedirs’:
+../../flex-2.6.4/src/filter.c:393:68: warning: ‘%s’ directive output may be truncated writing up to 2047 bytes into a region of size between 494 and 503 [-Wformat-truncation=]
+  393 |                                 snprintf (buf, readsz, "#line %d \"%s\"\n",
+      |                                                                    ^~
+  394 |                                           lineno, filename);
+      |                                                   ~~~~~~~~          
+In file included from /usr/include/stdio.h:894,
+                 from ../../flex-2.6.4/src/flexdef.h:42,
+                 from ../../flex-2.6.4/src/filter.c:24:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:71:10: note: ‘__builtin___snprintf_chk’ output between 12 and 2068 bytes into a destination of size 512
+   71 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   72 |                                    __glibc_objsize (__s), __fmt,
+      |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   73 |                                    __va_arg_pack ());
+      |                                    ~~~~~~~~~~~~~~~~~
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o stage1flex-options.o `test -f 'options.c' || echo '../../flex-2.6.4/src/'`options.c
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o stage1flex-parse.o `test -f 'parse.c' || echo '../../flex-2.6.4/src/'`parse.c
+../../flex-2.6.4/src/misc.c: In function ‘line_directive_out’:
+../../flex-2.6.4/src/misc.c:369:57: warning: ‘%s’ directive output may be truncated writing up to 2047 bytes into a region of size 2039 [-Wformat-truncation=]
+  369 |                 snprintf (directive, sizeof(directive), line_fmt, 0, filename);
+      |                                                         ^~~~~~~~     ~~~~~~~~
+In file included from /usr/include/stdio.h:894,
+                 from ../../flex-2.6.4/src/flexdef.h:42,
+                 from ../../flex-2.6.4/src/misc.c:33:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:71:10: note: ‘__builtin___snprintf_chk’ output between 12 and 2059 bytes into a destination of size 2048
+   71 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   72 |                                    __glibc_objsize (__s), __fmt,
+      |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   73 |                                    __va_arg_pack ());
+      |                                    ~~~~~~~~~~~~~~~~~
+../../flex-2.6.4/src/misc.c:367:57: warning: ‘%s’ directive output may be truncated writing up to 2047 bytes into a region of size between 2029 and 2039 [-Wformat-truncation=]
+  367 |                 snprintf (directive, sizeof(directive), line_fmt, linenum, filename);
+      |                                                         ^~~~~~~~           ~~~~~~~~
+In file included from /usr/include/stdio.h:894,
+                 from ../../flex-2.6.4/src/flexdef.h:42,
+                 from ../../flex-2.6.4/src/misc.c:33:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:71:10: note: ‘__builtin___snprintf_chk’ output between 12 and 2069 bytes into a destination of size 2048
+   71 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   72 |                                    __glibc_objsize (__s), __fmt,
+      |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   73 |                                    __va_arg_pack ());
+      |                                    ~~~~~~~~~~~~~~~~~
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o stage1flex-regex.o `test -f 'regex.c' || echo '../../flex-2.6.4/src/'`regex.c
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o stage1flex-scanflags.o `test -f 'scanflags.c' || echo '../../flex-2.6.4/src/'`scanflags.c
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o stage1flex-scanopt.o `test -f 'scanopt.c' || echo '../../flex-2.6.4/src/'`scanopt.c
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o stage1flex-skel.o `test -f 'skel.c' || echo '../../flex-2.6.4/src/'`skel.c
+parse.y: In function ‘format_warn’:
+parse.y:1061:39: warning: ‘%s’ directive output may be truncated writing up to 2047 bytes into a region of size 2039 [-Wformat-truncation=]
+......
+In file included from /usr/include/stdio.h:894,
+                 from ../../flex-2.6.4/src/flexdef.h:42,
+                 from parse.y:66:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:71:10: note: ‘__builtin___snprintf_chk’ output between 10 and 2057 bytes into a destination of size 2048
+   71 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   72 |                                    __glibc_objsize (__s), __fmt,
+      |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   73 |                                    __va_arg_pack ());
+      |                                    ~~~~~~~~~~~~~~~~~
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o stage1flex-sym.o `test -f 'sym.c' || echo '../../flex-2.6.4/src/'`sym.c
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o stage1flex-tables.o `test -f 'tables.c' || echo '../../flex-2.6.4/src/'`tables.c
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o stage1flex-tables_shared.o `test -f 'tables_shared.c' || echo '../../flex-2.6.4/src/'`tables_shared.c
+parse.c: In function ‘yyparse’:
+parse.y:1061:39: warning: ‘%s’ directive output may be truncated writing up to 2047 bytes into a region of size 2039 [-Wformat-truncation=]
+In file included from /usr/include/stdio.h:894,
+                 from ../../flex-2.6.4/src/flexdef.h:42,
+                 from parse.y:66:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:71:10: note: ‘__builtin___snprintf_chk’ output between 10 and 2057 bytes into a destination of size 2048
+   71 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   72 |                                    __glibc_objsize (__s), __fmt,
+      |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   73 |                                    __va_arg_pack ());
+      |                                    ~~~~~~~~~~~~~~~~~
+parse.y:360:6: warning: ‘%s’ directive output may be truncated writing up to 2047 bytes into a region of size 2021 [-Wformat-truncation=]
+In file included from /usr/include/stdio.h:894,
+                 from ../../flex-2.6.4/src/flexdef.h:42,
+                 from parse.y:66:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:71:10: note: ‘__builtin___snprintf_chk’ output between 28 and 2075 bytes into a destination of size 2048
+   71 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   72 |                                    __glibc_objsize (__s), __fmt,
+      |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   73 |                                    __va_arg_pack ());
+      |                                    ~~~~~~~~~~~~~~~~~
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o stage1flex-tblcmp.o `test -f 'tblcmp.c' || echo '../../flex-2.6.4/src/'`tblcmp.c
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o stage1flex-yylex.o `test -f 'yylex.c' || echo '../../flex-2.6.4/src/'`yylex.c
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o libmain.lo ../../flex-2.6.4/src/libmain.c
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o libyywrap.lo ../../flex-2.6.4/src/libyywrap.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c ../../flex-2.6.4/src/libyywrap.c  -fPIC -DPIC -o .libs/libyywrap.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c ../../flex-2.6.4/src/libmain.c  -fPIC -DPIC -o .libs/libmain.o
+/bin/bash ../libtool  --tag=CC   --mode=link gcc   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -version-info 2:0:0 -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/lib                         -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/lib                         -Wl,--enable-new-dtags                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/lib                         -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2 -o libfl.la -rpath /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/lib libmain.lo libyywrap.lo  -lm 
+libtool: link: gcc  -shared  -fPIC -DPIC  .libs/libmain.o .libs/libyywrap.o   -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/lib -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/lib -lm  -O2 -Wl,--enable-new-dtags -Wl,-rpath-link -Wl,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/lib -Wl,-rpath-link -Wl,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/lib -Wl,-rpath -Wl,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/lib -Wl,-rpath -Wl,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/lib -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2   -Wl,-soname -Wl,libfl.so.2 -o .libs/libfl.so.2.0.0
+libtool: link: (cd ".libs" && rm -f "libfl.so.2" && ln -s "libfl.so.2.0.0" "libfl.so.2")
+libtool: link: (cd ".libs" && rm -f "libfl.so" && ln -s "libfl.so.2.0.0" "libfl.so")
+libtool: link: ( cd ".libs" && rm -f "libfl.la" && ln -s "../libfl.la" "libfl.la" )
+/bin/bash ../libtool  --tag=CC   --mode=link gcc   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe  -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/lib                         -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/lib                         -Wl,--enable-new-dtags                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/lib                         -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2 -o stage1flex stage1flex-scan.o stage1flex-buf.o stage1flex-ccl.o stage1flex-dfa.o stage1flex-ecs.o stage1flex-filter.o stage1flex-gen.o stage1flex-main.o stage1flex-misc.o stage1flex-nfa.o stage1flex-options.o stage1flex-parse.o stage1flex-regex.o stage1flex-scanflags.o stage1flex-scanopt.o stage1flex-skel.o stage1flex-sym.o stage1flex-tables.o stage1flex-tables_shared.o stage1flex-tblcmp.o stage1flex-yylex.o    -lm 
+libtool: link: gcc -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -Wl,--enable-new-dtags -Wl,-rpath-link -Wl,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/lib -Wl,-rpath-link -Wl,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/lib -Wl,-rpath -Wl,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/lib -Wl,-rpath -Wl,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/lib -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2 -o stage1flex stage1flex-scan.o stage1flex-buf.o stage1flex-ccl.o stage1flex-dfa.o stage1flex-ecs.o stage1flex-filter.o stage1flex-gen.o stage1flex-main.o stage1flex-misc.o stage1flex-nfa.o stage1flex-options.o stage1flex-parse.o stage1flex-regex.o stage1flex-scanflags.o stage1flex-scanopt.o stage1flex-skel.o stage1flex-sym.o stage1flex-tables.o stage1flex-tables_shared.o stage1flex-tblcmp.o stage1flex-yylex.o  -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/lib -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/lib -lm
+./stage1flex   -o stage1scan.c ../../flex-2.6.4/src/scan.l
+gcc  -DHAVE_CONFIG_H -I. -I../../flex-2.6.4/src  -DLOCALEDIR=\"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/share/locale\" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o flex-stage1scan.o `test -f 'stage1scan.c' || echo '../../flex-2.6.4/src/'`stage1scan.c
+/bin/bash ../libtool  --tag=CC   --mode=link gcc    -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe  -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/lib                         -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/lib                         -Wl,--enable-new-dtags                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/lib                         -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2 -o flex flex-buf.o flex-ccl.o flex-dfa.o flex-ecs.o flex-filter.o flex-gen.o flex-main.o flex-misc.o flex-nfa.o flex-options.o flex-parse.o flex-regex.o flex-scanflags.o flex-scanopt.o flex-skel.o flex-sym.o flex-tables.o flex-tables_shared.o flex-tblcmp.o flex-yylex.o flex-stage1scan.o   -lm 
+libtool: link: gcc -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/include -O2 -pipe -Wl,--enable-new-dtags -Wl,-rpath-link -Wl,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/lib -Wl,-rpath-link -Wl,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/lib -Wl,-rpath -Wl,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/lib -Wl,-rpath -Wl,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/lib -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2 -o flex flex-buf.o flex-ccl.o flex-dfa.o flex-ecs.o flex-filter.o flex-gen.o flex-main.o flex-misc.o flex-nfa.o flex-options.o flex-parse.o flex-regex.o flex-scanflags.o flex-scanopt.o flex-skel.o flex-sym.o flex-tables.o flex-tables_shared.o flex-tblcmp.o flex-yylex.o flex-stage1scan.o  -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/usr/lib -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/recipe-sysroot-native/lib -lm
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/build/src'
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/build/src'
+Making all in doc
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/build/doc'
+../../flex-2.6.4/build-aux/missing help2man --name='the fast lexical analyser generator' --section=1 \
+--source='The Flex Project' --manual='Programming' \
+--output=flex.1 ../src/flex \
+|| rm -f flex.1
+../../flex-2.6.4/build-aux/missing: 81: help2man: not found
+WARNING: 'help2man' is missing on your system.
+         You should only need it if you modified a dependency of a man page.
+         You may want to install the GNU Help2man package:
+         <https://www.gnu.org/software/help2man/>
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/build/doc'
+Making all in examples
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/build/examples'
+Making all in manual
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/build/examples/manual'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/build/examples/manual'
+Making all in fastwc
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/build/examples/fastwc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/build/examples/fastwc'
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/build/examples'
+make[2]: Nothing to be done for 'all-am'.
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/build/examples'
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/build/examples'
+Making all in po
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/build/po'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/build/po'
+Making all in tools
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/build/tools'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/build/tools'
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/build'
+make[1]: Nothing to be done for 'all-am'.
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/build'
+DEBUG: Shell function do_compile finished

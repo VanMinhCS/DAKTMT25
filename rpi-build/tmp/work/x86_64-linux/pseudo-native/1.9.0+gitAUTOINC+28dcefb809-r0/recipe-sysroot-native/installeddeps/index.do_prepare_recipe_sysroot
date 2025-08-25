@@ -1,0 +1,7 @@
+TaskDeps: do_fetch
+attr-native
+gettext-minimal-native
+libtool-native
+pkgconfig-native
+sqlite3-native
+texinfo-dummy-native

@@ -1,0 +1,61 @@
+OEOuthashBasic
+14
+autoconf-native: a082d55df4b7dac9894c5feaf9f362ebbbf3242ae22430b84c4e8dd6f794fd94
+automake-native: 14963faa76d47d1639f6c0b28acf6361fc204ea39070d937e3951fc646a0a957
+flex-native: 029fb23c4617cc7717e4377e8123bf736e3d7fab53cc8238dcf336a0e5e84c6b
+gettext-minimal-native: 0d39582068b641490d184ea9f722f819aafcee1d652d8d8c5248ab8e4971ea09
+gnu-config-native: dcfcdd2de1b71130dc89903a2fc775551b0256cdcd7880cbdc731dcb33a59563
+libtool-native: edf42e87001d7a64879d4959f5b66885251d0230f2a9095a0fb57a5e3f9993fb
+m4-native: 2e220b13b48306f3a02a7bf65e00356873aed6cd266e2e6ce4daa34264a50398
+quilt-native: 3057d956d8a64c8d0c95902855fb8674038582d1c445513dc0b3cc45351763ca
+texinfo-dummy-native: c19dfc74595ada505d502217fe29d7dea1eb64a849a4eeb895b475baa979ac9e
+xz-native: 4b21ae5e7e20710403f0af40c4614b090bd491f321699fe166454b3e15e79a4f
+SSTATE_PKGSPEC=sstate:bison-native:x86_64-linux:3.8.2:r0:x86_64:10:
+task=populate_sysroot
+drwx                                                                                       .
+drwx                                                                                       ./recipe-sysroot-native
+drwx                                                                                       ./recipe-sysroot-native/sysroot-providers
+-rw-                   12 fd421ae36a3bb99f3fe4f25b641ad807b4c023b7885d4f2ffbbfa5e9127bc282 ./recipe-sysroot-native/sysroot-providers/bison-native
+drwx                                                                                       ./recipe-sysroot-native/usr
+drwx                                                                                       ./recipe-sysroot-native/usr/bin
+-rwx                  160 405adddbe711d9b2a687a0e757387dfbd5a75f3d06bf6e6c17c2032fbd9a0608 ./recipe-sysroot-native/usr/bin/bison
+-rwx               537320 e4250d71e09c625e2f9111bba04b2354be2d21fa5e2924f4d0b238772bc801be ./recipe-sysroot-native/usr/bin/bison.real
+-rwx                 4298 98048a8ae1a87cf253f6f271040f97c8b78305384928fa01f49a2383358de77f ./recipe-sysroot-native/usr/bin/yacc
+drwx                                                                                       ./recipe-sysroot-native/usr/lib
+-rw-                 3374 35b145ae5531cd57de9136509c763e1c80f44889fb5b82402cde2fbd0cff1caa ./recipe-sysroot-native/usr/lib/liby.a
+drwx                                                                                       ./recipe-sysroot-native/usr/share
+drwx                                                                                       ./recipe-sysroot-native/usr/share/aclocal
+-rw-                 2221 3a586450bb3ec5ea04f7f8c4aaae0d6cad458efebcea91aa6f8e9e58d93e3feb ./recipe-sysroot-native/usr/share/aclocal/bison-i18n.m4
+drwx                                                                                       ./recipe-sysroot-native/usr/share/bison
+-rw-                 8234 cd063573f09ea45704d1519f90e86bd48a90f86b1192bf17fdc8f3498bb3a874 ./recipe-sysroot-native/usr/share/bison/README.md
+-rw-                 1862 c20d18c885554d8f1981fba66294b26149fe4688ffe149a818dde867c6fa300d ./recipe-sysroot-native/usr/share/bison/bison-default.css
+drwx                                                                                       ./recipe-sysroot-native/usr/share/bison/m4sugar
+-rw-                14761 f853cfbca513526863b0fbfb9388ac7c22d84305163d344e3daa68cc86560ee8 ./recipe-sysroot-native/usr/share/bison/m4sugar/foreach.m4
+-rw-               123136 8fdb20cf13d61b98037c710a9d962c067db115cd54868b6bfa1d6457536074bf ./recipe-sysroot-native/usr/share/bison/m4sugar/m4sugar.m4
+drwx                                                                                       ./recipe-sysroot-native/usr/share/bison/skeletons
+-rw-                43379 a3056074b9d6da3866e4dff3d8fba2b9d81d1ca2ca74920718586822d60df767 ./recipe-sysroot-native/usr/share/bison/skeletons/bison.m4
+-rw-                 1170 0eb87848bfed0bd60c2377bd6508a503ba6843f19caa1237c351ef2f662a80df ./recipe-sysroot-native/usr/share/bison/skeletons/c++-skel.m4
+-rw-                23066 ee0120e686161120207113183e77019abddd7f9e74de57428839a5cdf99dab8a ./recipe-sysroot-native/usr/share/bison/skeletons/c++.m4
+-rw-                 2565 a1b5c38e07851529110c5720a4fb86fe05ab7c49c2765919effd207c58108973 ./recipe-sysroot-native/usr/share/bison/skeletons/c-like.m4
+-rw-                 1164 ec60e7d29b61b0cf752f19a88eecda5e32f5cd5d9fe326901000370c0f06fbc8 ./recipe-sysroot-native/usr/share/bison/skeletons/c-skel.m4
+-rw-                34544 328d06afdea69ce9604790634abb406d55c0da0a4f39a103defba8084637a67f ./recipe-sysroot-native/usr/share/bison/skeletons/c.m4
+-rw-                 1136 648bc3362d2c8fed246fcdfc911c0bfa83fb37eb07be98ffd6ef6dc86da1feae ./recipe-sysroot-native/usr/share/bison/skeletons/d-skel.m4
+-rw-                19495 7b313e97927d4f3b0a4b57725ecc12c034f27813c386804c7822c4166ba688a6 ./recipe-sysroot-native/usr/share/bison/skeletons/d.m4
+-rw-                91333 0af615595a0e0ed252e893ec88b5eb44912f685e30e1cb57f132a811a84b346f ./recipe-sysroot-native/usr/share/bison/skeletons/glr.c
+-rw-                12669 2171d3d3bb670cbe3a6f09d999c8281b383f1c286657a3ea58eacf2cf5846536 ./recipe-sysroot-native/usr/share/bison/skeletons/glr.cc
+-rw-               115011 7c63a6ba9d9908b401e54ccad6bedbd1cd8d4f549010e5e98a41cec2c2414223 ./recipe-sysroot-native/usr/share/bison/skeletons/glr2.cc
+-rw-                 1167 8774449ff4864f61cf6355684146bb57d77292b789fb4f08be78f5571774504c ./recipe-sysroot-native/usr/share/bison/skeletons/java-skel.m4
+-rw-                14594 8952f572e346315183392421a4aee23ac211890f794774689dafcaad6afb9787 ./recipe-sysroot-native/usr/share/bison/skeletons/java.m4
+-rw-                51545 67142c22036d1eb995ebe0aa1a266b2cb749208c9970af2b24f2039174ab9a23 ./recipe-sysroot-native/usr/share/bison/skeletons/lalr1.cc
+-rw-                43502 442f2e5e05f842ea5e7176293877c019f611e60c6b110378105f6dbab438eb00 ./recipe-sysroot-native/usr/share/bison/skeletons/lalr1.d
+-rw-                45349 4edd5b536cba7e7574b4b1c0156d0d69574fe4902c8a132a9b9b3b98d55c7627 ./recipe-sysroot-native/usr/share/bison/skeletons/lalr1.java
+-rw-                10393 70ca8b2c5783d462cb662252177b969f1132cf7a6f1b15f1bc63b795b142d696 ./recipe-sysroot-native/usr/share/bison/skeletons/location.cc
+-rw-                 4000 d8bff95c9fbd9120102533dc8e35bcf62b5b10200ac7cb11cff1ac271078f6ae ./recipe-sysroot-native/usr/share/bison/skeletons/stack.hh
+-rw-                   87 8211489b86df152b93e9af60d838efc2f17481f2d4307ab815dfb67a4dcf1292 ./recipe-sysroot-native/usr/share/bison/skeletons/traceon.m4
+-rw-                15031 a21303c3c4a0401777204b3037b623de79d59c713e03b2b817f8417d28df5b5f ./recipe-sysroot-native/usr/share/bison/skeletons/variant.hh
+-rw-                74996 998d3a462761d5e6b9c408b6744b8741dc5b59eb7df47e9057055de45ee799df ./recipe-sysroot-native/usr/share/bison/skeletons/yacc.c
+drwx                                                                                       ./recipe-sysroot-native/usr/share/bison/xslt
+-rw-                 3366 d49605e30acdcb7d904988701c95eb4fd2af1df7bc586c918f15dd98b8b6cc31 ./recipe-sysroot-native/usr/share/bison/xslt/bison.xsl
+-rw-                12812 5f8ba954a77a15749d074f5ad0fb0d7293279d6da1d90ac6757653d6f823a06b ./recipe-sysroot-native/usr/share/bison/xslt/xml2dot.xsl
+-rw-                18867 20d5a491fb73dd6f9a96e3a1167c115a6f544c0c7a50245d6cc4f488ac5fe961 ./recipe-sysroot-native/usr/share/bison/xslt/xml2text.xsl
+-rw-                23252 e8da37276ae95942de9d260f3f90c7efc3cfc3e5677796f183edd534f66d05d7 ./recipe-sysroot-native/usr/share/bison/xslt/xml2xhtml.xsl

@@ -1,0 +1,18 @@
+     ../../gdbm-1.23/src/bucket.c \
+     ../../gdbm-1.23/src/falloc.c \
+     ../../gdbm-1.23/src/findkey.c \
+     ../../gdbm-1.23/src/gdbmerrno.c \
+     ../../gdbm-1.23/src/gdbmstore.c \
+     ../../gdbm-1.23/src/recover.c \
+     ../../gdbm-1.23/src/update.c \
+     ../../gdbm-1.23/tools/datconv.c \
+     ../../gdbm-1.23/tools/gdbm_dump.c \
+     ../../gdbm-1.23/tools/gdbm_load.c \
+     ../../gdbm-1.23/tools/gdbmshell.c \
+     ../../gdbm-1.23/tools/gdbmtool.c \
+     ../../gdbm-1.23/tools/gram.y \
+     ../../gdbm-1.23/tools/input-file.c \
+     ../../gdbm-1.23/tools/lex.l \
+     ../../gdbm-1.23/tools/parseopt.c \
+     ../../gdbm-1.23/tools/util.c \
+     ../../gdbm-1.23/tools/var.c

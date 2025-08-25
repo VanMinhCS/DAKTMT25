@@ -1,0 +1,18 @@
+[binaries]
+c = 'gcc'
+cpp = 'g++'
+cython = 'cython3'
+ar = 'ar'
+nm = 'nm'
+strip = 'strip'
+readelf = 'readelf'
+objcopy = 'objcopy'
+llvm-config = '/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/xorgproto/2021.5-r0/recipe-sysroot-native/usr/bin/llvm-config'
+pkgconfig = 'pkg-config-native'
+
+
+[built-in options]
+c_args = ['-isystem/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/xorgproto/2021.5-r0/recipe-sysroot-native/usr/include', '-O2', '-pipe']
+c_link_args = ['-L/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/xorgproto/2021.5-r0/recipe-sysroot-native/usr/lib', '-L/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/xorgproto/2021.5-r0/recipe-sysroot-native/lib', '-Wl,--enable-new-dtags', '-Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/xorgproto/2021.5-r0/recipe-sysroot-native/usr/lib', '-Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/xorgproto/2021.5-r0/recipe-sysroot-native/lib', '-Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/xorgproto/2021.5-r0/recipe-sysroot-native/usr/lib', '-Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/xorgproto/2021.5-r0/recipe-sysroot-native/lib', '-Wl,-O1', '-Wl,--allow-shlib-undefined', '-Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2']
+cpp_args = ['-isystem/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/xorgproto/2021.5-r0/recipe-sysroot-native/usr/include', '-O2', '-pipe']
+cpp_link_args = ['-L/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/xorgproto/2021.5-r0/recipe-sysroot-native/usr/lib', '-L/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/xorgproto/2021.5-r0/recipe-sysroot-native/lib', '-Wl,--enable-new-dtags', '-Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/xorgproto/2021.5-r0/recipe-sysroot-native/usr/lib', '-Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/xorgproto/2021.5-r0/recipe-sysroot-native/lib', '-Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/xorgproto/2021.5-r0/recipe-sysroot-native/usr/lib', '-Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/xorgproto/2021.5-r0/recipe-sysroot-native/lib', '-Wl,-O1', '-Wl,--allow-shlib-undefined', '-Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2']

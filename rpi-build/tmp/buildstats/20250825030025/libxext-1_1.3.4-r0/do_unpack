@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090933.94 
+libxext-1_1.3.4-r0: do_unpack
+Elapsed time: 0.15 seconds
+utime: 11
+stime: 2
+cutime: 13
+cstime: 2
+IO rchar: 2840891
+IO wchar: 4587976
+IO syscr: 745
+IO syscw: 967
+IO read_bytes: 0
+IO write_bytes: 2584576
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.11077999999999999
+rusage ru_stime: 0.029824999999999997
+rusage ru_maxrss: 109324
+rusage ru_minflt: 4905
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 56
+rusage ru_nvcsw: 6
+rusage ru_nivcsw: 2
+Child rusage ru_utime: 0.131804
+Child rusage ru_stime: 0.022326
+Child rusage ru_maxrss: 109324
+Child rusage ru_minflt: 1722
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 4992
+Child rusage ru_nvcsw: 406
+Child rusage ru_nivcsw: 1
+Status: PASSED 
+Ended: 1756090934.09 

@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090864.94 
+ncurses-6.3+20220423-r0: do_unpack
+Elapsed time: 2.10 seconds
+utime: 23
+stime: 7
+cutime: 52
+cstime: 41
+IO rchar: 4630540
+IO wchar: 18234458
+IO syscr: 2134
+IO syscw: 2092
+IO read_bytes: 86016
+IO write_bytes: 20754432
+IO cancelled_write_bytes: 12288
+rusage ru_utime: 0.23382
+rusage ru_stime: 0.07794
+rusage ru_maxrss: 108428
+rusage ru_minflt: 11721
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 88
+rusage ru_nvcsw: 45
+rusage ru_nivcsw: 91
+Child rusage ru_utime: 0.525923
+Child rusage ru_stime: 0.41539099999999995
+Child rusage ru_maxrss: 108300
+Child rusage ru_minflt: 38969
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 168
+Child rusage ru_oublock: 40448
+Child rusage ru_nvcsw: 78
+Child rusage ru_nivcsw: 308
+Status: PASSED 
+Ended: 1756090867.04 

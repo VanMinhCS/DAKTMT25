@@ -1,0 +1,67 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are ['/home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-native_0.67.bb:do_populate_sysroot']
+NOTE: Installed into sysroot: ['quilt-native']
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: sed -e 's:^[^/]*/:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/perlcross-native/1.5.2-r0/recipe-sysroot-native/:g' /home/ubuntu/yocto/rpi-build/tmp/sysroots-components/x86_64/quilt-native/fixmepath | xargs sed -i -e 's:FIXMESTAGINGDIRTARGET:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/perlcross-native/1.5.2-r0/recipe-sysroot:g; s:FIXMESTAGINGDIRHOST:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/perlcross-native/1.5.2-r0/recipe-sysroot-native:g' -e 's:FIXME_PSEUDO_SYSROOT:/home/ubuntu/yocto/rpi-build/tmp/sysroots-components/x86_64/pseudo-native:g' -e 's:FIXME_HOSTTOOLS_DIR:/home/ubuntu/yocto/rpi-build/tmp/hosttools:g' -e 's:FIXME_PKGDATA_DIR:/home/ubuntu/yocto/rpi-build/tmp/pkgdata/raspberrypi4:g' -e 's:FIXME_PSEUDO_LOCALSTATEDIR:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/perlcross-native/1.5.2-r0/pseudo/:g' -e 's:FIXME_LOGFIFO:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/perlcross-native/1.5.2-r0/temp/fifo.11479:g'
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_patch
+DEBUG: Executing python function patch_do_patch
+DEBUG: Searching for README.md in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/
+DEBUG: Searching for 0001-perl-cross-add-LDFLAGS-when-linking-libperl.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/
+DEBUG: Searching for determinism.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/
+DEBUG: Searching for 0001-Makefile-check-the-file-if-patched-or-not.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/
+NOTE: Applying patch '0001-perl-cross-add-LDFLAGS-when-linking-libperl.patch' (../poky/meta/recipes-devtools/perl-cross/files/0001-perl-cross-add-LDFLAGS-when-linking-libperl.patch)
+NOTE: Applying patch 'determinism.patch' (../poky/meta/recipes-devtools/perl-cross/files/determinism.patch)
+NOTE: Applying patch '0001-Makefile-check-the-file-if-patched-or-not.patch' (../poky/meta/recipes-devtools/perl-cross/files/0001-Makefile-check-the-file-if-patched-or-not.patch)
+DEBUG: Python function patch_do_patch finished
+DEBUG: Python function do_patch finished
+DEBUG: Executing python function do_qa_patch
+DEBUG: Python function do_qa_patch finished

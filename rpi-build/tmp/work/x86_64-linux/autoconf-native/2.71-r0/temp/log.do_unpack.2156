@@ -1,0 +1,123 @@
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+NOTE: Unpacking /home/ubuntu/yocto/rpi-build/downloads/autoconf-2.71.tar.gz to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/
+DEBUG: Searching for program_prefix.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf-2.71/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf-2.71/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf-2.71/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf-2.71/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/program_prefix.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/
+DEBUG: Searching for autoreconf-exclude.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf-2.71/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf-2.71/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf-2.71/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf-2.71/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/autoreconf-exclude.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/
+DEBUG: Searching for remove-usr-local-lib-from-m4.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf-2.71/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf-2.71/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf-2.71/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf-2.71/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/remove-usr-local-lib-from-m4.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/
+DEBUG: Searching for preferbash.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf-2.71/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf-2.71/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf-2.71/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf-2.71/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/preferbash.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/
+DEBUG: Searching for autotest-automake-result-format.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf-2.71/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf-2.71/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf-2.71/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf-2.71/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/autotest-automake-result-format.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/
+DEBUG: Searching for man-host-perl.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf-2.71/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf-2.71/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf-2.71/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf-2.71/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/man-host-perl.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/
+DEBUG: Searching for 0001-Port-to-compilers-that-moan-about-K-R-func-decls.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf-2.71/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf-2.71/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf-2.71/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf-2.71/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/0001-Port-to-compilers-that-moan-about-K-R-func-decls.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/
+DEBUG: Searching for no-man.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf-2.71/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf-2.71/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf-2.71/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf-2.71/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf/no-man.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function create_source_date_epoch_stamp
+DEBUG: Newest file found: /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/autoconf-2.71/ChangeLog
+DEBUG: SOURCE_DATE_EPOCH: 1611867976
+DEBUG: Python function create_source_date_epoch_stamp finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

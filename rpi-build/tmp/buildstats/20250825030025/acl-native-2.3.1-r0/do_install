@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756091073.55 
+acl-native-2.3.1-r0: do_install
+Elapsed time: 0.52 seconds
+utime: 32
+stime: 3
+cutime: 33
+cstime: 19
+IO rchar: 2429374
+IO wchar: 502780
+IO syscr: 8271
+IO syscw: 776
+IO read_bytes: 0
+IO write_bytes: 544768
+IO cancelled_write_bytes: 12288
+rusage ru_utime: 0.323715
+rusage ru_stime: 0.038845
+rusage ru_maxrss: 110180
+rusage ru_minflt: 6585
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 120
+rusage ru_nvcsw: 37
+rusage ru_nivcsw: 27
+Child rusage ru_utime: 0.33491699999999996
+Child rusage ru_stime: 0.192664
+Child rusage ru_maxrss: 110180
+Child rusage ru_minflt: 38343
+Child rusage ru_majflt: 3
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 944
+Child rusage ru_nvcsw: 564
+Child rusage ru_nivcsw: 227
+Status: PASSED 
+Ended: 1756091074.08 

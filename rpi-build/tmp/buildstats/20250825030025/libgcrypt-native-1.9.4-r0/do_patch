@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090871.78 
+libgcrypt-native-1.9.4-r0: do_patch
+Elapsed time: 1.21 seconds
+utime: 25
+stime: 5
+cutime: 45
+cstime: 12
+IO rchar: 1846985
+IO wchar: 230515
+IO syscr: 2853
+IO syscw: 344
+IO read_bytes: 0
+IO write_bytes: 245760
+IO cancelled_write_bytes: 4096
+rusage ru_utime: 0.252266
+rusage ru_stime: 0.057897
+rusage ru_maxrss: 108980
+rusage ru_minflt: 4246
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 128
+rusage ru_nvcsw: 27
+rusage ru_nivcsw: 78
+Child rusage ru_utime: 0.453839
+Child rusage ru_stime: 0.12653999999999999
+Child rusage ru_maxrss: 108980
+Child rusage ru_minflt: 48105
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 352
+Child rusage ru_nvcsw: 664
+Child rusage ru_nivcsw: 250
+Status: PASSED 
+Ended: 1756090872.99 

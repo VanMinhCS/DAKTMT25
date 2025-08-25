@@ -1,0 +1,87 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are []
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing shell function autotools_preconfigure
+DEBUG: Shell function autotools_preconfigure finished
+DEBUG: Executing python function autotools_aclocals
+DEBUG: SITE files ['endian-little', 'common-linux', 'common-glibc', 'bit-64', 'x86_64-linux', 'common']
+DEBUG: Python function autotools_aclocals finished
+DEBUG: Executing shell function do_configure
+NOTE: Running ./configure  --build=x86_64-linux 		  --host=x86_64-linux 		  --target=x86_64-linux 		  --prefix=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/recipe-sysroot-native/usr 		  --exec_prefix=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/recipe-sysroot-native/usr 		  --bindir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/recipe-sysroot-native/usr/bin 		  --sbindir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/recipe-sysroot-native/usr/sbin 		  --libexecdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/recipe-sysroot-native/usr/libexec 		  --datadir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/recipe-sysroot-native/usr/share 		  --sysconfdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/recipe-sysroot-native/etc 		  --sharedstatedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/recipe-sysroot-native/com 		  --localstatedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/recipe-sysroot-native/var 		  --libdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/recipe-sysroot-native/usr/lib 		  --includedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/recipe-sysroot-native/usr/include 		  --oldincludedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/recipe-sysroot-native/usr/include 		  --infodir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/recipe-sysroot-native/usr/share/info 		  --mandir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/recipe-sysroot-native/usr/share/man 		  --disable-silent-rules 		  --disable-dependency-tracking 		   --with-perl='/usr/bin/env perl' --with-patch=patch --without-sendmail --disable-static  --disable-nls 
+configure: WARNING: unrecognized options: --disable-silent-rules, --disable-dependency-tracking, --disable-static
+checking for a BSD-compatible install... /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c
+checking whether #! works in shell scripts... yes
+checking for bash... (cached) /bin/bash
+checking whether /bin/bash quoting works... yes
+checking for gcp... no
+checking for cp... /home/ubuntu/yocto/rpi-build/tmp/hosttools/cp
+checking for gdate... no
+checking for date... /home/ubuntu/yocto/rpi-build/tmp/hosttools/date
+checking whether /home/ubuntu/yocto/rpi-build/tmp/hosttools/date --rfc-822 works... yes
+checking for perl... /usr/bin/env perl
+checking for grep... /home/ubuntu/yocto/rpi-build/tmp/hosttools/grep
+checking whether /home/ubuntu/yocto/rpi-build/tmp/hosttools/grep -q works... configure: WARNING: /usr/bin/env perl does not exist
+yes
+checking whether /home/ubuntu/yocto/rpi-build/tmp/hosttools/grep understands (foo|bar)... yes
+checking for tail... /home/ubuntu/yocto/rpi-build/tmp/hosttools/tail
+checking whether /home/ubuntu/yocto/rpi-build/tmp/hosttools/tail -n works... yes
+checking for tr... /home/ubuntu/yocto/rpi-build/tmp/hosttools/tr
+checking whether /home/ubuntu/yocto/rpi-build/tmp/hosttools/tr understands a-z ... yes
+checking for stat... /home/ubuntu/yocto/rpi-build/tmp/hosttools/stat
+checking whether /home/ubuntu/yocto/rpi-build/tmp/hosttools/stat -c '%h' works... yes
+checking for sed... /home/ubuntu/yocto/rpi-build/tmp/hosttools/sed
+checking whether /home/ubuntu/yocto/rpi-build/tmp/hosttools/sed understands (foo|bar)... yes
+checking for gawk... /home/ubuntu/yocto/rpi-build/tmp/hosttools/gawk
+checking whether /home/ubuntu/yocto/rpi-build/tmp/hosttools/gawk supports sub... yes
+checking for pod2man... no
+checking for column... (cached) column
+checking for getopt... /home/ubuntu/yocto/rpi-build/tmp/hosttools/getopt
+checking for getopt --long syntax... yes
+checking for mktemp... /home/ubuntu/yocto/rpi-build/tmp/hosttools/mktemp
+checking whether /home/ubuntu/yocto/rpi-build/tmp/hosttools/mktemp -d works... yes
+checking for diff... /home/ubuntu/yocto/rpi-build/tmp/hosttools/diff
+checking for patch... patch
+checking the version of /home/ubuntu/yocto/rpi-build/tmp/hosttools/diff... configure: WARNING: patch does not exist
+3.8
+checking the version of patch... 2.7.6
+checking for find... /home/ubuntu/yocto/rpi-build/tmp/hosttools/find
+checking whether /home/ubuntu/yocto/rpi-build/tmp/hosttools/find -path works... yes
+checking whether /home/ubuntu/yocto/rpi-build/tmp/hosttools/find -print0 works... yes
+checking for xargs... /home/ubuntu/yocto/rpi-build/tmp/hosttools/xargs
+checking whether /home/ubuntu/yocto/rpi-build/tmp/hosttools/xargs -0 works... yes
+checking for diffstat... /home/ubuntu/yocto/rpi-build/tmp/hosttools/diffstat
+checking for diffstat version... 1.64
+configure: WARNING: Using internal sendmail mechanism.  Use option '--with-sendmail' to override
+checking for msgmerge... no
+checking for msgfmt... no
+checking for xgettext... no
+checking for msguniq... no
+checking for msgcat... no
+configure: Building without natural language support
+checking for rpmbuild... no
+checking for rpm... no
+configure: WARNING: rpmbuild not found, some optional functionalities will be missing
+checking for gmd5sum... no
+checking for md5sum... /home/ubuntu/yocto/rpi-build/tmp/hosttools/md5sum
+checking for 7zr... no
+checking for 7za... no
+checking for 7z... no
+configure: WARNING: 7z not found, some optional functionalities will be missing
+configure: creating ./config.status
+config.status: creating Makefile
+configure: WARNING: unrecognized options: --disable-silent-rules, --disable-dependency-tracking, --disable-static
+
+quilt version 0.67 configured.
+
+Using '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/recipe-sysroot-native/usr' for installation prefix.
+
+Report bugs to quilt-dev@nongnu.org
+DEBUG: Shell function do_configure finished
+DEBUG: Executing python function do_qa_configure
+NOTE: Checking autotools environment for common misconfiguration
+NOTE: Checking configure output for unrecognised options
+DEBUG: Python function do_qa_configure finished
+DEBUG: Executing shell function autotools_postconfigure
+DEBUG: Shell function autotools_postconfigure finished

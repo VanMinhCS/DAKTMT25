@@ -1,0 +1,53 @@
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+NOTE: Unpacking /home/ubuntu/yocto/rpi-build/downloads/libffi-3.4.4.tar.gz to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libffi-native/3.4.4-r0/
+DEBUG: Searching for not-win32.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/libffi/libffi-3.4.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/libffi/libffi/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/libffi/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/libffi/libffi-3.4.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/libffi/libffi/
+    /home/ubuntu/yocto/poky/meta/recipes-support/libffi/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/libffi/libffi-3.4.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/libffi/libffi/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/libffi/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/libffi/libffi-3.4.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/libffi/libffi/
+    /home/ubuntu/yocto/poky/meta/recipes-support/libffi/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-support/libffi/libffi/not-win32.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libffi-native/3.4.4-r0/
+DEBUG: Searching for 0001-arm-sysv-reverted-clang-VFP-mitigation.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/libffi/libffi-3.4.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/libffi/libffi/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/libffi/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/libffi/libffi-3.4.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/libffi/libffi/
+    /home/ubuntu/yocto/poky/meta/recipes-support/libffi/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/libffi/libffi-3.4.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/libffi/libffi/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/libffi/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/libffi/libffi-3.4.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/libffi/libffi/
+    /home/ubuntu/yocto/poky/meta/recipes-support/libffi/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-support/libffi/libffi/0001-arm-sysv-reverted-clang-VFP-mitigation.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libffi-native/3.4.4-r0/
+DEBUG: Searching for 0001-Forward-declare-open_temp_exec_file-764.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/libffi/libffi-3.4.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/libffi/libffi/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/libffi/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/libffi/libffi-3.4.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/libffi/libffi/
+    /home/ubuntu/yocto/poky/meta/recipes-support/libffi/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/libffi/libffi-3.4.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/libffi/libffi/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/libffi/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/libffi/libffi-3.4.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/libffi/libffi/
+    /home/ubuntu/yocto/poky/meta/recipes-support/libffi/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-support/libffi/libffi/0001-Forward-declare-open_temp_exec_file-764.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libffi-native/3.4.4-r0/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function create_source_date_epoch_stamp
+DEBUG: Newest file found: /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libffi-native/3.4.4-r0/libffi-3.4.4/README.md
+DEBUG: SOURCE_DATE_EPOCH: 1666571393
+DEBUG: Python function create_source_date_epoch_stamp finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

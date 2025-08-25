@@ -1,0 +1,331 @@
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+NOTE: Unpacking /home/ubuntu/yocto/rpi-build/downloads/libtool-2.4.7.tar.gz to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libtool-cross/2.4.7-r0/
+DEBUG: Searching for 0001-ltmain.in-Handle-trailing-slashes-on-install-command.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/0001-ltmain.in-Handle-trailing-slashes-on-install-command.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libtool-cross/2.4.7-r0/
+DEBUG: Searching for 0002-libtool.m4-Rename-the-with-sysroot-option-to-avoid-c.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/0002-libtool.m4-Rename-the-with-sysroot-option-to-avoid-c.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libtool-cross/2.4.7-r0/
+DEBUG: Searching for 0003-ltmain.in-Add-missing-sysroot-to-library-path.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/0003-ltmain.in-Add-missing-sysroot-to-library-path.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libtool-cross/2.4.7-r0/
+DEBUG: Searching for 0004-ltmain.sh-Fix-sysroot-paths-being-encoded-into-RPATH.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/0004-ltmain.sh-Fix-sysroot-paths-being-encoded-into-RPATH.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libtool-cross/2.4.7-r0/
+DEBUG: Searching for 0005-ltmain.in-Don-t-encode-RATHS-which-match-default-lin.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/0005-ltmain.in-Don-t-encode-RATHS-which-match-default-lin.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libtool-cross/2.4.7-r0/
+DEBUG: Searching for dont-depend-on-help2man.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/dont-depend-on-help2man.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libtool-cross/2.4.7-r0/
+DEBUG: Searching for 0006-libtool.m4-Handle-as-a-sysroot-correctly.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/0006-libtool.m4-Handle-as-a-sysroot-correctly.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libtool-cross/2.4.7-r0/
+DEBUG: Searching for nohardcodepaths.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/nohardcodepaths.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libtool-cross/2.4.7-r0/
+DEBUG: Searching for 0007-libtool-Fix-support-for-NIOS2-processor.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/0007-libtool-Fix-support-for-NIOS2-processor.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libtool-cross/2.4.7-r0/
+DEBUG: Searching for 0008-libtool-Check-for-static-libs-for-internal-compiler-.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/0008-libtool-Check-for-static-libs-for-internal-compiler-.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libtool-cross/2.4.7-r0/
+DEBUG: Searching for 0009-Makefile.am-make-sure-autoheader-run-before-autoconf.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/0009-Makefile.am-make-sure-autoheader-run-before-autoconf.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libtool-cross/2.4.7-r0/
+DEBUG: Searching for 0010-Makefile.am-make-sure-autoheader-run-before-automake.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/0010-Makefile.am-make-sure-autoheader-run-before-automake.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libtool-cross/2.4.7-r0/
+DEBUG: Searching for 0011-ltmain.in-Handle-prefix-map-compiler-options-correct.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/0011-ltmain.in-Handle-prefix-map-compiler-options-correct.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libtool-cross/2.4.7-r0/
+DEBUG: Searching for 0012-libtool.m4-For-reproducibility-stop-encoding-hostnam.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/0012-libtool.m4-For-reproducibility-stop-encoding-hostnam.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libtool-cross/2.4.7-r0/
+DEBUG: Searching for 0001-ltmain.in-Parse-additional-clang-options.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/0001-ltmain.in-Parse-additional-clang-options.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libtool-cross/2.4.7-r0/
+DEBUG: Searching for fixinstall.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-2.4.7/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool/fixinstall.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libtool-cross/2.4.7-r0/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function create_source_date_epoch_stamp
+DEBUG: Newest file found: /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libtool-cross/2.4.7-r0/libtool-2.4.7/THANKS
+DEBUG: SOURCE_DATE_EPOCH: 1647487386
+DEBUG: Python function create_source_date_epoch_stamp finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

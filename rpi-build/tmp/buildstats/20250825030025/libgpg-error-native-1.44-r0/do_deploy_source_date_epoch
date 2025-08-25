@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090877.98 
+libgpg-error-native-1.44-r0: do_deploy_source_date_epoch
+Elapsed time: 0.48 seconds
+utime: 37
+stime: 4
+cutime: 3
+cstime: 3
+IO rchar: 340684
+IO wchar: 145384
+IO syscr: 764
+IO syscw: 111
+IO read_bytes: 0
+IO write_bytes: 114688
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.379417
+rusage ru_stime: 0.049101
+rusage ru_maxrss: 109248
+rusage ru_minflt: 8862
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 184
+rusage ru_nvcsw: 12
+rusage ru_nivcsw: 154
+Child rusage ru_utime: 0.032996
+Child rusage ru_stime: 0.03594
+Child rusage ru_maxrss: 109248
+Child rusage ru_minflt: 4331
+Child rusage ru_majflt: 1
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 40
+Child rusage ru_nvcsw: 77
+Child rusage ru_nivcsw: 35
+Status: PASSED 
+Ended: 1756090878.47 

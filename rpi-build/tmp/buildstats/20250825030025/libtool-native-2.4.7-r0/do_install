@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090940.66 
+libtool-native-2.4.7-r0: do_install
+Elapsed time: 0.65 seconds
+utime: 12
+stime: 2
+cutime: 50
+cstime: 35
+IO rchar: 8911573
+IO wchar: 3132489
+IO syscr: 6773
+IO syscw: 669
+IO read_bytes: 0
+IO write_bytes: 3178496
+IO cancelled_write_bytes: 385024
+rusage ru_utime: 0.12388199999999999
+rusage ru_stime: 0.025596999999999998
+rusage ru_maxrss: 109668
+rusage ru_minflt: 6162
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 144
+rusage ru_nvcsw: 91
+rusage ru_nivcsw: 3
+Child rusage ru_utime: 0.50341
+Child rusage ru_stime: 0.352921
+Child rusage ru_maxrss: 109668
+Child rusage ru_minflt: 72093
+Child rusage ru_majflt: 2
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 6064
+Child rusage ru_nvcsw: 1157
+Child rusage ru_nivcsw: 33
+Status: PASSED 
+Ended: 1756090941.31 

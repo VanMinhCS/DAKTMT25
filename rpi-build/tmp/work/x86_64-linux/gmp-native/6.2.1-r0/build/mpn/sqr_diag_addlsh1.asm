@@ -1,0 +1,1 @@
+../../gmp-6.2.1/mpn/x86_64/sqr_diag_addlsh1.asm

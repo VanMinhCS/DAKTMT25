@@ -1,0 +1,77 @@
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+NOTE: Unpacking /home/ubuntu/yocto/rpi-build/downloads/bzip2-1.0.8.tar.gz to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/
+DEBUG: Running 'export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/recipe-sysroot/usr/bin/crossscripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat branch --contains f9061c030a25de5b6829e1abf373057309c734c0 --list master 2> /dev/null | wc -l' in /home/ubuntu/yocto/rpi-build/downloads/git2/sourceware.org.git.bzip2-tests.git
+DEBUG: Running export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/recipe-sysroot/usr/bin/crossscripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat clone -n -s /home/ubuntu/yocto/rpi-build/downloads/git2/sourceware.org.git.bzip2-tests.git/ /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/git/
+DEBUG: Running 'export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/recipe-sysroot/usr/bin/crossscripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat remote set-url origin git://sourceware.org/git/bzip2-tests.git' in /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/git/
+DEBUG: Running 'export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/recipe-sysroot/usr/bin/crossscripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat grep lfs origin/master:.gitattributes | wc -l' in /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/git/
+DEBUG: Running 'export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/recipe-sysroot/usr/bin/crossscripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat checkout -B master f9061c030a25de5b6829e1abf373057309c734c0' in /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/git/
+DEBUG: Running 'export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/recipe-sysroot/usr/bin/crossscripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat branch master --set-upstream-to origin/master' in /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/git/
+DEBUG: Searching for configure.ac in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2-1.0.8/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2-1.0.8/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2-1.0.8/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2-1.0.8/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2-1.0.8/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2-1.0.8/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2/configure.ac to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/bzip2-1.0.8/
+DEBUG: Searching for Makefile.am in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2-1.0.8/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2-1.0.8/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2-1.0.8/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2-1.0.8/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2-1.0.8/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2-1.0.8/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2/Makefile.am to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/bzip2-1.0.8/
+DEBUG: Searching for run-ptest in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2-1.0.8/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2-1.0.8/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2-1.0.8/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2-1.0.8/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2-1.0.8/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2-1.0.8/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-extended/bzip2/bzip2/run-ptest to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function create_source_date_epoch_stamp
+DEBUG: git repository: /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bzip2/1.0.8-r0/git/.git
+DEBUG: SOURCE_DATE_EPOCH: 1589726104
+DEBUG: Python function create_source_date_epoch_stamp finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

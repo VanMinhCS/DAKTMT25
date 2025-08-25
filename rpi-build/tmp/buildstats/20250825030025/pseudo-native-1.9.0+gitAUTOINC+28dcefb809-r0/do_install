@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756091124.81 
+pseudo-native-1.9.0+gitAUTOINC+28dcefb809-r0: do_install
+Elapsed time: 0.44 seconds
+utime: 34
+stime: 4
+cutime: 3
+cstime: 5
+IO rchar: 2518286
+IO wchar: 2304059
+IO syscr: 899
+IO syscw: 96
+IO read_bytes: 0
+IO write_bytes: 2310144
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.345991
+rusage ru_stime: 0.045128999999999996
+rusage ru_maxrss: 110352
+rusage ru_minflt: 6658
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 80
+rusage ru_nvcsw: 15
+rusage ru_nivcsw: 123
+Child rusage ru_utime: 0.038672
+Child rusage ru_stime: 0.050928
+Child rusage ru_maxrss: 110352
+Child rusage ru_minflt: 2596
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 4432
+Child rusage ru_nvcsw: 44
+Child rusage ru_nivcsw: 36
+Status: PASSED 
+Ended: 1756091125.25 

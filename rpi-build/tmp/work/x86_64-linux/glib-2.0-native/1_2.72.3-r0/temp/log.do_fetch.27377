@@ -1,0 +1,783 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are []
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_fetch
+DEBUG: Executing python function base_do_fetch
+WARNING: Checksum mismatch for local file /home/ubuntu/yocto/rpi-build/downloads/glib-2.72.3.tar.xz
+Cleaning and trying again.
+WARNING: Renaming /home/ubuntu/yocto/rpi-build/downloads/glib-2.72.3.tar.xz to /home/ubuntu/yocto/rpi-build/downloads/glib-2.72.3.tar.xz_bad-checksum_e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+DEBUG: Trying PREMIRRORS
+DEBUG: For url ['https', 'download.gnome.org', '/sources//glib/2.72/glib-2.72.3.tar.xz', '', '', OrderedDict()] comparing ['git', 'sourceware.org', '/git/glibc.git', '', '', OrderedDict()] to ['https', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['https', 'download.gnome.org', '/sources//glib/2.72/glib-2.72.3.tar.xz', '', '', OrderedDict()] comparing ['git', 'sourceware.org', '/git/binutils-gdb.git', '', '', OrderedDict()] to ['https', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: Trying Upstream
+DEBUG: Fetching https://download.gnome.org/sources//glib/2.72/glib-2.72.3.tar.xz using command '/usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/glib-2.72.3.tar.xz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://download.gnome.org/sources//glib/2.72/glib-2.72.3.tar.xz''
+DEBUG: Fetcher accessed the network with the command /usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/glib-2.72.3.tar.xz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://download.gnome.org/sources//glib/2.72/glib-2.72.3.tar.xz'
+DEBUG: Running export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/poky/scripts/native-intercept:/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/glib-2.0-native/1_2.72.3-r0/recipe-sysroot-native/usr/bin/python3-native:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/glib-2.0-native/1_2.72.3-r0/recipe-sysroot-native/usr/bin/x86_64-linux:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/glib-2.0-native/1_2.72.3-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/glib-2.0-native/1_2.72.3-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/glib-2.0-native/1_2.72.3-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/glib-2.0-native/1_2.72.3-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/glib-2.0-native/1_2.72.3-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; /usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/glib-2.72.3.tar.xz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://download.gnome.org/sources//glib/2.72/glib-2.72.3.tar.xz' --progress=dot -v
+--2025-08-25 03:01:16--  https://download.gnome.org/sources//glib/2.72/glib-2.72.3.tar.xz
+Resolving download.gnome.org (download.gnome.org)... 156.146.44.89, 84.17.57.27, 2a02:6ea0:d600::14, ...
+Connecting to download.gnome.org (download.gnome.org)|156.146.44.89|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4893484 (4.7M) [application/octet-stream]
+Saving to: ‘/home/ubuntu/yocto/rpi-build/downloads/glib-2.72.3.tar.xz.tmp’
+
+
+2025-08-25 03:01:17 (15.7 MB/s) - ‘/home/ubuntu/yocto/rpi-build/downloads/glib-2.72.3.tar.xz.tmp’ saved [4893484/4893484]
+
+DEBUG: Searching for run-ptest in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for 0001-Fix-DATADIRNAME-on-uclibc-Linux.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for Enable-more-tests-while-cross-compiling.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for 0001-Remove-the-warning-about-deprecated-paths-in-schemas.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for 0001-Install-gio-querymodules-as-libexec_PROGRAM.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for 0001-Do-not-ignore-return-value-of-write.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for 0010-Do-not-hardcode-python-path-into-various-tools.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for 0001-Set-host_machine-correctly-when-building-with-mingw3.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for 0001-Do-not-write-bindir-into-pkg-config-files.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for 0001-meson-Run-atomics-test-on-clang-as-well.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for 0001-gio-tests-resources.c-comment-out-a-build-host-only-.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for 0001-gio-tests-g-file-info-don-t-assume-million-in-one-ev.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2023-32665-0001.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2023-32665-0002.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2023-32665-0003.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2023-32665-0004.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2023-32665-0005.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2023-32665-0006.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2023-32665-0007.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2023-32665-0008.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2023-32665-0009.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2023-29499.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2023-32611-0001.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2023-32611-0002.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2023-32643.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2023-32636.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2024-34397_01.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2024-34397_02.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2024-34397_03.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2024-34397_04.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2024-34397_05.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2024-34397_06.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2024-34397_07.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2024-34397_08.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2024-34397_09.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2024-34397_10.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2024-34397_11.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2024-34397_12.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2024-34397_13.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2024-34397_14.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2024-34397_15.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2024-34397_16.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2024-34397_17.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2024-34397_18.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for 0001-gvariant-serialiser-Convert-endianness-of-offsets.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2024-52533.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for gdatetime-test-fail-0001.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for gdatetime-test-fail-0002.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for gdatetime-test-fail-0003.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2025-3360-01.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2025-3360-02.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2025-3360-03.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2025-3360-04.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2025-3360-05.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2025-3360-06.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2025-4373-01.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for CVE-2025-4373-02.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Searching for relocate-modules.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0-2.72.3/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/glib-2.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glib-2.0/files/
+DEBUG: Python function base_do_fetch finished
+DEBUG: Python function do_fetch finished

@@ -1,0 +1,32 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are ['/home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-native_0.67.bb:do_populate_sysroot', 'virtual:native:/home/ubuntu/yocto/poky/meta/recipes-devtools/patch/patch_2.7.6.bb:do_populate_sysroot']
+NOTE: Installed into sysroot: ['quilt-native', 'patch-native', 'attr-native', 'libtool-native', 'gettext-minimal-native', 'texinfo-dummy-native']
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: sed -e 's:^[^/]*/:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/opkg-utils/0.5.0-r0/recipe-sysroot-native/:g' /home/ubuntu/yocto/rpi-build/tmp/sysroots-components/x86_64/quilt-native/fixmepath /home/ubuntu/yocto/rpi-build/tmp/sysroots-components/x86_64/libtool-native/fixmepath | xargs sed -i -e 's:FIXMESTAGINGDIRTARGET:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/opkg-utils/0.5.0-r0/recipe-sysroot:g; s:FIXMESTAGINGDIRHOST:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/opkg-utils/0.5.0-r0/recipe-sysroot-native:g' -e 's:FIXME_PSEUDO_SYSROOT:/home/ubuntu/yocto/rpi-build/tmp/sysroots-components/x86_64/pseudo-native:g' -e 's:FIXME_HOSTTOOLS_DIR:/home/ubuntu/yocto/rpi-build/tmp/hosttools:g' -e 's:FIXME_PKGDATA_DIR:/home/ubuntu/yocto/rpi-build/tmp/pkgdata/raspberrypi4:g' -e 's:FIXME_PSEUDO_LOCALSTATEDIR:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/opkg-utils/0.5.0-r0/pseudo/:g' -e 's:FIXME_LOGFIFO:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/opkg-utils/0.5.0-r0/temp/fifo.214365:g'
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_patch
+DEBUG: Executing python function patch_do_patch
+DEBUG: Searching for 0001-update-alternatives-correctly-match-priority.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/opkg-utils/opkg-utils-0.5.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/opkg-utils/opkg-utils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/opkg-utils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/opkg-utils/opkg-utils-0.5.0/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/opkg-utils/opkg-utils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/opkg-utils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/opkg-utils/opkg-utils-0.5.0/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/opkg-utils/opkg-utils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/opkg-utils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/opkg-utils/opkg-utils-0.5.0/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/opkg-utils/opkg-utils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/opkg-utils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/opkg-utils/opkg-utils-0.5.0/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/opkg-utils/opkg-utils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/opkg-utils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/opkg-utils/opkg-utils-0.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/opkg-utils/opkg-utils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/opkg-utils/files/
+NOTE: Applying patch '0001-update-alternatives-correctly-match-priority.patch' (../poky/meta/recipes-devtools/opkg-utils/opkg-utils/0001-update-alternatives-correctly-match-priority.patch)
+DEBUG: Python function patch_do_patch finished
+DEBUG: Python function do_patch finished
+DEBUG: Executing python function do_qa_patch
+DEBUG: Python function do_qa_patch finished

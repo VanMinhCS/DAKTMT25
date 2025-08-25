@@ -1,0 +1,75 @@
+DEBUG: Executing python function autotools_aclocals
+DEBUG: SITE files ['endian-little', 'common-linux', 'common-glibc', 'bit-64', 'x86_64-linux', 'common']
+DEBUG: Python function autotools_aclocals finished
+DEBUG: Executing shell function do_install
+NOTE: make -j 8 DESTDIR=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/image install
+Making install in glib
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build/glib'
+make  install-recursive
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build/glib'
+Making install in .
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build/glib'
+make[4]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build/glib'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build/glib'
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build/glib'
+Making install in m4macros
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build/glib/m4macros'
+make  install-am
+make[4]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build/glib/m4macros'
+make[5]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build/glib/m4macros'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build/glib/m4macros'
+make[4]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build/glib/m4macros'
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build/glib/m4macros'
+Making install in glib
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build/glib/glib'
+make  install-recursive
+make[4]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build/glib/glib'
+Making install in libcharset
+make[5]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build/glib/glib/libcharset'
+make  install-am
+make[6]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build/glib/glib/libcharset'
+make[7]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build/glib/glib/libcharset'
+make[7]: Nothing to be done for 'install-exec-am'.
+make[7]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build/glib/glib/libcharset'
+make[6]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build/glib/glib/libcharset'
+make[5]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build/glib/glib/libcharset'
+Making install in .
+make[5]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build/glib/glib'
+make[6]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build/glib/glib'
+make[6]: Nothing to be done for 'install-exec-am'.
+make[6]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build/glib/glib'
+make[5]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build/glib/glib'
+make[4]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build/glib/glib'
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build/glib/glib'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build/glib'
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build/glib'
+Making install in .
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build'
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/bin'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/share/doc/pkg-config'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/share/aclocal'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/share/man/man1'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../git/pkg-config-guide.html '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/share/doc/pkg-config'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 pkg.m4 '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/share/aclocal'
+  /bin/bash ./libtool   --mode=install /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c pkg-config '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/bin'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../git/pkg-config.1 '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/share/man/man1'
+libtool: install: /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c pkg-config /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/bin/pkg-config
+make  install-exec-hook
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build'
+cd /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/recipe-sysroot-native/usr/bin && ln -f pkg-config x86_64-pc-linux-gnu-pkg-config
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build'
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build'
+Making install in check
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build/check'
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build/check'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build/check'
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pkgconfig-native/0.29.2+gitAUTOINC+d97db4fae4-r0/build/check'
+DEBUG: Shell function do_install finished
+DEBUG: Executing shell function remove_libtool_la
+DEBUG: Shell function remove_libtool_la finished

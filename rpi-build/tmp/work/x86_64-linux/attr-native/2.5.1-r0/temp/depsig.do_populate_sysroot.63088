@@ -1,0 +1,35 @@
+OEOuthashBasic
+14
+autoconf-native: a082d55df4b7dac9894c5feaf9f362ebbbf3242ae22430b84c4e8dd6f794fd94
+automake-native: 14963faa76d47d1639f6c0b28acf6361fc204ea39070d937e3951fc646a0a957
+gettext-minimal-native: 0d39582068b641490d184ea9f722f819aafcee1d652d8d8c5248ab8e4971ea09
+gnu-config-native: dcfcdd2de1b71130dc89903a2fc775551b0256cdcd7880cbdc731dcb33a59563
+libtool-native: edf42e87001d7a64879d4959f5b66885251d0230f2a9095a0fb57a5e3f9993fb
+m4-native: 2e220b13b48306f3a02a7bf65e00356873aed6cd266e2e6ce4daa34264a50398
+quilt-native: 3057d956d8a64c8d0c95902855fb8674038582d1c445513dc0b3cc45351763ca
+texinfo-dummy-native: c19dfc74595ada505d502217fe29d7dea1eb64a849a4eeb895b475baa979ac9e
+SSTATE_PKGSPEC=sstate:attr-native:x86_64-linux:2.5.1:r0:x86_64:10:
+task=populate_sysroot
+drwx                                                                                       .
+drwx                                                                                       ./recipe-sysroot-native
+drwx                                                                                       ./recipe-sysroot-native/etc
+-rw-                  681 0fc794a9826011c88b118c5ff4e30dfcbebd73518e64b0cda7aaec3ad7e578bd ./recipe-sysroot-native/etc/xattr.conf
+drwx                                                                                       ./recipe-sysroot-native/sysroot-providers
+-rw-                   11 c6efad6971a2a78fca0f8d310d327165a647cc304d8e497350400d10a4af05e1 ./recipe-sysroot-native/sysroot-providers/attr-native
+drwx                                                                                       ./recipe-sysroot-native/usr
+drwx                                                                                       ./recipe-sysroot-native/usr/bin
+-rwx                14360 d8605f5164403a02cc0029906536f09282e9d7ab558a45d90ef65afb07c7f1b2 ./recipe-sysroot-native/usr/bin/attr
+-rwx                23048 57d1ea6dd21872a0aa4d2736c1587d45999c4286efc7a2be85812cd12a973194 ./recipe-sysroot-native/usr/bin/getfattr
+-rwx                18760 e2a03ce82cd7fb0ed24bd1b940f3e1a0c171e28f2e4d240ad8f06812d89648eb ./recipe-sysroot-native/usr/bin/setfattr
+drwx                                                                                       ./recipe-sysroot-native/usr/include
+drwx                                                                                       ./recipe-sysroot-native/usr/include/attr
+-rw-                 8004 328ce9601d8669e0ae5299a82d3867a3115b18199976968ce3896000132822a4 ./recipe-sysroot-native/usr/include/attr/attributes.h
+-rw-                 1569 0e698be1f3635b6edb0eeb6206255dac43280d6c173dcd94cae53e4fb6407a59 ./recipe-sysroot-native/usr/include/attr/error_context.h
+-rw-                 1411 b5b1ae8d0ea51c85a51ab7da9d28f0e0078272f7d1d5ade1ee8400ca75c5cddc ./recipe-sysroot-native/usr/include/attr/libattr.h
+drwx                                                                                       ./recipe-sysroot-native/usr/lib
+lrwx                                                                                       ./recipe-sysroot-native/usr/lib/libattr.so -> libattr.so.1.1.2501
+lrwx                                                                                       ./recipe-sysroot-native/usr/lib/libattr.so.1 -> libattr.so.1.1.2501
+-rwx                26960 ed13f588b2f5b80ec0b5afdffd5d1957106402b5a6aee42f0e55902e028805fe ./recipe-sysroot-native/usr/lib/libattr.so.1.1.2501
+drwx                                                                                       ./recipe-sysroot-native/usr/lib/pkgconfig
+-rw-                  300 22fcaded57c8336e480feaf536de82e8bbe0d7d462529fee8d9dea97938c5fd0 ./recipe-sysroot-native/usr/lib/pkgconfig/libattr.pc
+drwx                                                                                       ./recipe-sysroot-native/usr/share

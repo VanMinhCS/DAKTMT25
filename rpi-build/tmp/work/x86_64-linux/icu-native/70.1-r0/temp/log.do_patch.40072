@@ -1,0 +1,67 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are ['/home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-native_0.67.bb:do_populate_sysroot', 'virtual:native:/home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip_6.0.bb:do_populate_sysroot']
+NOTE: Installed into sysroot: ['quilt-native']
+NOTE: Skipping as already exists in sysroot: ['unzip-native']
+DEBUG: sed -e 's:^[^/]*/:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/icu-native/70.1-r0/recipe-sysroot-native/:g' /home/ubuntu/yocto/rpi-build/tmp/sysroots-components/x86_64/quilt-native/fixmepath | xargs sed -i -e 's:FIXMESTAGINGDIRTARGET:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/icu-native/70.1-r0/recipe-sysroot:g; s:FIXMESTAGINGDIRHOST:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/icu-native/70.1-r0/recipe-sysroot-native:g' -e 's:FIXME_PSEUDO_SYSROOT:/home/ubuntu/yocto/rpi-build/tmp/sysroots-components/x86_64/pseudo-native:g' -e 's:FIXME_HOSTTOOLS_DIR:/home/ubuntu/yocto/rpi-build/tmp/hosttools:g' -e 's:FIXME_PKGDATA_DIR:/home/ubuntu/yocto/rpi-build/tmp/pkgdata/raspberrypi4:g' -e 's:FIXME_PSEUDO_LOCALSTATEDIR:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/icu-native/70.1-r0/pseudo/:g' -e 's:FIXME_LOGFIFO:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/icu-native/70.1-r0/temp/fifo.40072:g'
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_patch
+DEBUG: Executing python function patch_do_patch
+DEBUG: Searching for filter.json in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/
+DEBUG: Searching for fix-install-manx.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/
+DEBUG: Searching for 0001-icu-Added-armeb-support.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/
+DEBUG: Searching for CVE-2025-5222.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/
+NOTE: Applying patch 'fix-install-manx.patch' (../poky/meta/recipes-support/icu/icu/fix-install-manx.patch)
+NOTE: Applying patch '0001-icu-Added-armeb-support.patch' (../poky/meta/recipes-support/icu/icu/0001-icu-Added-armeb-support.patch)
+NOTE: Applying patch 'CVE-2025-5222.patch' (../poky/meta/recipes-support/icu/icu/CVE-2025-5222.patch)
+DEBUG: Python function patch_do_patch finished
+DEBUG: Python function do_patch finished
+DEBUG: Executing python function do_qa_patch
+DEBUG: Python function do_qa_patch finished

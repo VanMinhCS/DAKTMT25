@@ -1,0 +1,7 @@
+0001-change-shebang-to-python3.patch -p1
+0001-_distutils-sysconfig-append-STAGING_LIBDIR-python-sy.patch -p1
+0001-Limit-the-amount-of-whitespace-to-search-backtrack.-.patch -p1
+CVE-2024-6345.patch -p1
+CVE-2025-47273-pre1.patch -p1
+CVE-2025-47273.patch -p1
+0001-conditionally-do-not-fetch-code-by-easy_install.patch -p1

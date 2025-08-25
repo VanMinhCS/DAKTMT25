@@ -1,0 +1,15 @@
+makefile-no-rebuild.patch
+determism.patch
+0001-Add-missing-prototypes-to-function-declarations.patch
+CVE-2024-12084-0001.patch
+CVE-2024-12084-0002.patch
+CVE-2024-12085.patch
+CVE-2024-12086-0001.patch
+CVE-2024-12086-0002.patch
+CVE-2024-12086-0003.patch
+CVE-2024-12086-0004.patch
+CVE-2024-12087-0001.patch
+CVE-2024-12087-0002.patch
+CVE-2024-12087-0003.patch
+CVE-2024-12088.patch
+CVE-2024-12747.patch

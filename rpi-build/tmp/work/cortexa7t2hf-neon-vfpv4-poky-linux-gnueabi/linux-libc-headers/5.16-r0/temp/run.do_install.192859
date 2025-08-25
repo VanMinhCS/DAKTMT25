@@ -1,0 +1,257 @@
+#!/bin/sh
+
+__BITBAKE_LAST_LINE=0
+
+# Emit a useful diagnostic if something fails:
+bb_sh_exit_handler() {
+    ret=$?
+    if [ "$ret" != 0 ]; then
+        echo "WARNING: exit code $ret from a shell command."
+    fi
+    exit $ret
+}
+
+bb_bash_exit_handler() {
+    ret=$?
+    { set +x; } > /dev/null
+    trap "" DEBUG
+    if [ "$ret" != 0 ]; then
+        echo "WARNING: ${BASH_SOURCE[0]}:${__BITBAKE_LAST_LINE} exit $ret from '$1'"
+
+        echo "WARNING: Backtrace (BB generated script): "
+        for i in $(seq 1 $((${#FUNCNAME[@]} - 1))); do
+            if [ "$i" -eq 1 ]; then
+                echo -e "	#$((i)): ${FUNCNAME[$i]}, ${BASH_SOURCE[$((i-1))]}, line ${__BITBAKE_LAST_LINE}"
+            else
+                echo -e "	#$((i)): ${FUNCNAME[$i]}, ${BASH_SOURCE[$((i-1))]}, line ${BASH_LINENO[$((i-1))]}"
+            fi
+        done
+    fi
+    exit $ret
+}
+
+bb_bash_debug_handler() {
+    local line=${BASH_LINENO[0]}
+    # For some reason the DEBUG trap trips with lineno=1 when scripts exit; ignore it
+    if [ "$line" -eq 1 ]; then
+        return
+    fi
+
+    # Track the line number of commands as they execute. This is so we can have access to the failing line number
+    # in the EXIT trap. See http://gnu-bash.2382.n7.nabble.com/trap-echo-quot-trap-exit-on-LINENO-quot-EXIT-gt-wrong-linenumber-td3666.html
+    if [ "${FUNCNAME[1]}" != "bb_bash_exit_handler" ]; then
+        __BITBAKE_LAST_LINE=$line
+    fi
+}
+
+case $BASH_VERSION in
+"") trap 'bb_sh_exit_handler' 0
+    set -e
+    ;;
+*)  trap 'bb_bash_exit_handler "$BASH_COMMAND"' 0
+    trap '{ bb_bash_debug_handler; } 2>/dev/null' DEBUG
+    set -e
+    shopt -s extdebug
+    ;;
+esac
+export AR="arm-poky-linux-gnueabi-gcc-ar"
+export ARCH="arm"
+export AS="arm-poky-linux-gnueabi-as "
+export BUILD_AR="ar"
+export BUILD_AS="as "
+export BUILD_CC="gcc "
+export BUILD_CCLD="gcc "
+export BUILD_CFLAGS="-isystem/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/recipe-sysroot-native/usr/include -O2 -pipe"
+export BUILD_CPP="gcc  -E"
+export BUILD_CPPFLAGS="-isystem/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/recipe-sysroot-native/usr/include"
+export BUILD_CXX="g++ "
+export BUILD_CXXFLAGS="-isystem/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/recipe-sysroot-native/usr/include -O2 -pipe"
+export BUILD_FC="gfortran "
+export BUILD_LD="ld "
+export BUILD_LDFLAGS="-L/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/recipe-sysroot-native/usr/lib                         -L/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/recipe-sysroot-native/lib                         -Wl,--enable-new-dtags                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/recipe-sysroot-native/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/recipe-sysroot-native/lib                         -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2"
+export BUILD_NM="nm"
+export BUILD_RANLIB="ranlib -D"
+export BUILD_STRIP="strip"
+export CC="arm-poky-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/recipe-sysroot"
+export CCLD="arm-poky-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/recipe-sysroot"
+export CFLAGS=" -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0=/usr/src/debug/linux-libc-headers/5.16-r0                      -fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0=/usr/src/debug/linux-libc-headers/5.16-r0                      -fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/recipe-sysroot-native= "
+export CPP="arm-poky-linux-gnueabi-gcc -E --sysroot=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/recipe-sysroot  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security"
+export CPPFLAGS=""
+export CXX="arm-poky-linux-gnueabi-g++  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/recipe-sysroot"
+export CXXFLAGS=" -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0=/usr/src/debug/linux-libc-headers/5.16-r0                      -fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0=/usr/src/debug/linux-libc-headers/5.16-r0                      -fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/recipe-sysroot-native=  -fvisibility-inlines-hidden"
+export FC="arm-poky-linux-gnueabi-gfortran  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/recipe-sysroot"
+export GIT_CEILING_DIRECTORIES="/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0"
+export HOME="/home/ubuntu"
+export LC_ALL="en_US.UTF-8"
+export LD="arm-poky-linux-gnueabi-ld --sysroot=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/recipe-sysroot "
+export LDFLAGS="-Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -fmacro-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0=/usr/src/debug/linux-libc-headers/5.16-r0                      -fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0=/usr/src/debug/linux-libc-headers/5.16-r0                      -fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/recipe-sysroot-native=  -Wl,-z,relro,-z,now"
+export LOGNAME="ubuntu"
+export MAKE="make"
+export NM="arm-poky-linux-gnueabi-gcc-nm"
+export OBJCOPY="arm-poky-linux-gnueabi-objcopy"
+export OBJDUMP="arm-poky-linux-gnueabi-objdump"
+export OMP_NUM_THREADS="8"
+export PATH="/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/recipe-sysroot/usr/bin/crossscripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"
+export PERL_HASH_SEED="0"
+export PKG_CONFIG_DIR="/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/recipe-sysroot/usr/lib/pkgconfig"
+export PKG_CONFIG_DISABLE_UNINSTALLED="yes"
+export PKG_CONFIG_LIBDIR="/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/recipe-sysroot/usr/lib/pkgconfig"
+export PKG_CONFIG_PATH="/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/recipe-sysroot/usr/lib/pkgconfig:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/recipe-sysroot/usr/share/pkgconfig"
+export PKG_CONFIG_SYSROOT_DIR="/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/recipe-sysroot"
+export PKG_CONFIG_SYSTEM_INCLUDE_PATH="/usr/include"
+export PKG_CONFIG_SYSTEM_LIBRARY_PATH="/lib:/usr/lib"
+export PSEUDO_DISABLED="0"
+export PSEUDO_IGNORE_PATHS="/usr/,/etc/,/usr/lib,/dev/,/run/,/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/temp,/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/recipe-sysroot,/home/ubuntu/yocto/rpi-build/sstate-cache,/home/ubuntu/yocto/rpi-build/tmp/stamps,/home/ubuntu/yocto/rpi-build/tmp/sstate-control,/home/ubuntu/yocto/rpi-build/tmp/buildstats,/home/ubuntu/yocto/rpi-build/tmp/sysroots-components,/home/ubuntu/yocto/rpi-build/tmp/pkgdata,/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/deploy-,/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/sstate-build-package_,/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/sstate-install-package_,/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/pkgdata-sysroot,/home/ubuntu/yocto/rpi-build/tmp/deploy,/home/ubuntu/yocto/rpi-build/cache,/home/ubuntu/yocto/poky/scripts,/home/ubuntu/yocto/poky/meta/files/common-licenses,/home/ubuntu/yocto/meta-raspberrypi/files/custom-licenses,/home/ubuntu/yocto/meta-openembedded/meta-oe/licenses,/home/ubuntu/yocto/meta-openembedded/meta-webserver/licenses,/home/ubuntu/yocto/meta-openembedded/meta-networking/licenses,/home/ubuntu/yocto/meta-openembedded/meta-python/licenses,/home/ubuntu/yocto/poky/meta/COPYING,/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/linux-5.16,/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/linux-5.16"
+export PSEUDO_LOCALSTATEDIR="/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/pseudo/"
+export PSEUDO_NOSYMLINKEXP="1"
+export PSEUDO_PASSWD="/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/recipe-sysroot:/home/ubuntu/yocto/rpi-build/tmp/sysroots-components/x86_64/pseudo-native"
+export PSEUDO_PREFIX="/home/ubuntu/yocto/rpi-build/tmp/sysroots-components/x86_64/pseudo-native/usr"
+export PYTHONHASHSEED="0"
+export RANLIB="arm-poky-linux-gnueabi-gcc-ranlib"
+export READELF="arm-poky-linux-gnueabi-readelf"
+unset SHELL
+export SOURCE_DATE_EPOCH="1641768934"
+export STRINGS="arm-poky-linux-gnueabi-strings"
+export STRIP="arm-poky-linux-gnueabi-strip"
+export TZ="UTC"
+export UBOOT_ARCH="arm"
+export USER="ubuntu"
+export base_bindir="/bin"
+export base_libdir="/lib"
+export base_prefix=""
+export base_sbindir="/sbin"
+export bindir="/usr/bin"
+export datadir="/usr/share"
+export docdir="/usr/share/doc"
+export exec_prefix="/usr"
+export includedir="/usr/include"
+export infodir="/usr/share/info"
+export libdir="/usr/lib"
+export libexecdir="/usr/libexec"
+export localstatedir="/var"
+export mandir="/usr/share/man"
+export nonarch_base_libdir="/lib"
+export nonarch_libdir="/usr/lib"
+export oldincludedir="/usr/include"
+export prefix="/usr"
+export sbindir="/usr/sbin"
+export servicedir="/srv"
+export sharedstatedir="/com"
+export sysconfdir="/etc"
+export systemd_system_unitdir="/lib/systemd/system"
+export systemd_unitdir="/lib/systemd"
+export systemd_user_unitdir="/usr/lib/systemd/user"
+
+# line: 69, file: /home/ubuntu/yocto/poky/meta/recipes-kernel/linux-libc-headers/linux-libc-headers.inc
+do_install() {
+	oe_runmake headers_install INSTALL_HDR_PATH=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/image/usr
+	# Kernel should not be exporting this header
+	rm -f /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/image/usr/include/scsi/scsi.h
+
+	# The ..install.cmd conflicts between various configure runs
+	find /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/image/usr/include -name ..install.cmd | xargs rm -f
+	do_install_armmultilib
+}
+
+# line: 90, file: /home/ubuntu/yocto/poky/meta/recipes-kernel/linux-libc-headers/linux-libc-headers.inc
+do_install_armmultilib() {
+	if [ 5 -gt 5 ]; then
+		ARM_KVM_HEADER=""
+	else
+		if [ 5 -eq 5 ] && [ 16 -ge 8 ]; then
+			ARM_KVM_HEADER=""
+		else
+			ARM_KVM_HEADER="asm/kvm.h"
+		fi
+	fi
+	oe_multilib_header asm/auxvec.h asm/bitsperlong.h asm/byteorder.h asm/fcntl.h asm/hwcap.h asm/ioctls.h $ARM_KVM_HEADER asm/kvm_para.h asm/mman.h asm/param.h asm/perf_regs.h asm/bpf_perf_event.h
+	oe_multilib_header asm/posix_types.h asm/ptrace.h  asm/setup.h  asm/sigcontext.h asm/siginfo.h asm/signal.h asm/stat.h  asm/statfs.h asm/swab.h  asm/types.h asm/unistd.h
+}
+
+# line: 57, file: /home/ubuntu/yocto/poky/meta/classes/base.bbclass
+oe_runmake() {
+	oe_runmake_call "$@" || die "oe_runmake failed"
+}
+
+# line: 48, file: /home/ubuntu/yocto/poky/meta/classes/base.bbclass
+die() {
+	bbfatal_log "$*"
+}
+
+# line: 8, file: /home/ubuntu/yocto/poky/meta/classes/multilib_header.bbclass
+oe_multilib_header() {
+
+	case linux-gnueabi in
+	*-musl*)
+		return
+		;;
+	*)
+	esac
+        # For MIPS: "n32" is a special case, which needs to be
+        # distinct from both 64-bit and 32-bit.
+        case arm in
+        mips*)  case "${MIPSPKGSFX_ABI}" in
+                "-n32")
+                       ident=n32
+                       ;;
+                *)
+                       ident=32
+                       ;;
+                esac
+                ;;
+        *)      ident=32
+        esac
+	for each_header in "$@" ; do
+	   if [ ! -f "/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/image//usr/include/$each_header" ]; then
+	      bberror "oe_multilib_header: Unable to find header $each_header."
+	      continue
+	   fi
+	   stem=$(echo $each_header | sed 's#\.h$##')
+	   # if mips64/n32 set ident to n32
+	   mv /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/image//usr/include/$each_header /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/image//usr/include/${stem}-${ident}.h
+
+	   sed -e "s#ENTER_HEADER_FILENAME_HERE#${stem}#g" /home/ubuntu/yocto/poky/scripts/multilib_header_wrapper.h > /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/image//usr/include/$each_header
+	done
+}
+
+# line: 52, file: /home/ubuntu/yocto/poky/meta/classes/base.bbclass
+oe_runmake_call() {
+	bbnote make -j 8  HOSTCC="gcc " HOSTCPP="gcc  -E" "$@"
+	make -j 8  HOSTCC="gcc " HOSTCPP="gcc  -E" "$@"
+}
+
+# line: 43, file: /home/ubuntu/yocto/poky/meta/classes/logging.bbclass
+bberror() {
+	if [ -p /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/temp/fifo.192859 ] ; then
+		printf "%b\0" "bberror $*" > /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/temp/fifo.192859
+	else
+		echo "ERROR: $*"
+	fi
+}
+
+# line: 66, file: /home/ubuntu/yocto/poky/meta/classes/logging.bbclass
+bbfatal_log() {
+	if [ -p /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/temp/fifo.192859 ] ; then
+		printf "%b\0" "bbfatal_log $*" > /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/temp/fifo.192859
+	else
+		echo "ERROR: $*"
+	fi
+	exit 1
+}
+
+# line: 21, file: /home/ubuntu/yocto/poky/meta/classes/logging.bbclass
+bbnote() {
+	if [ -p /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/temp/fifo.192859 ] ; then
+		printf "%b\0" "bbnote $*" > /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/temp/fifo.192859
+	else
+		echo "NOTE: $*"
+	fi
+}
+
+cd '/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/linux-libc-headers/5.16-r0/linux-5.16'
+do_install
+
+# cleanup
+ret=$?
+trap '' 0
+exit $ret

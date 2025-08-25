@@ -1,0 +1,52 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are []
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_fetch
+DEBUG: Executing python function base_do_fetch
+DEBUG: Trying PREMIRRORS
+DEBUG: For url ['https', 'download.gnome.org', '/sources//gobject-introspection/1.72/gobject-introspection-1.72.0.tar.xz', '', '', OrderedDict()] comparing ['git', 'sourceware.org', '/git/glibc.git', '', '', OrderedDict()] to ['https', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['https', 'download.gnome.org', '/sources//gobject-introspection/1.72/gobject-introspection-1.72.0.tar.xz', '', '', OrderedDict()] comparing ['git', 'sourceware.org', '/git/binutils-gdb.git', '', '', OrderedDict()] to ['https', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: Trying Upstream
+DEBUG: Fetching https://download.gnome.org/sources//gobject-introspection/1.72/gobject-introspection-1.72.0.tar.xz using command '/usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/gobject-introspection-1.72.0.tar.xz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://download.gnome.org/sources//gobject-introspection/1.72/gobject-introspection-1.72.0.tar.xz''
+DEBUG: Fetcher accessed the network with the command /usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/gobject-introspection-1.72.0.tar.xz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://download.gnome.org/sources//gobject-introspection/1.72/gobject-introspection-1.72.0.tar.xz'
+DEBUG: Running export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/poky/scripts/native-intercept:/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gobject-introspection-native/1.72.0-r0/recipe-sysroot-native/usr/bin/python3-native:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gobject-introspection-native/1.72.0-r0/recipe-sysroot-native/usr/bin/x86_64-linux:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gobject-introspection-native/1.72.0-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gobject-introspection-native/1.72.0-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gobject-introspection-native/1.72.0-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gobject-introspection-native/1.72.0-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gobject-introspection-native/1.72.0-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; /usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/gobject-introspection-1.72.0.tar.xz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://download.gnome.org/sources//gobject-introspection/1.72/gobject-introspection-1.72.0.tar.xz' --progress=dot -v
+--2025-08-25 03:01:54--  https://download.gnome.org/sources//gobject-introspection/1.72/gobject-introspection-1.72.0.tar.xz
+Resolving download.gnome.org (download.gnome.org)... 156.146.44.89, 84.17.57.27, 2a02:6ea0:d600::14, ...
+Connecting to download.gnome.org (download.gnome.org)|156.146.44.89|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1040936 (1017K) [application/octet-stream]
+Saving to: ‘/home/ubuntu/yocto/rpi-build/downloads/gobject-introspection-1.72.0.tar.xz.tmp’
+
+
+2025-08-25 03:01:54 (5.54 MB/s) - ‘/home/ubuntu/yocto/rpi-build/downloads/gobject-introspection-1.72.0.tar.xz.tmp’ saved [1040936/1040936]
+
+DEBUG: Searching for 0001-g-ir-tool-template.in-fix-girdir-path.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gobject-introspection/gobject-introspection-1.72.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gobject-introspection/gobject-introspection/poky
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gobject-introspection/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gobject-introspection/gobject-introspection-1.72.0/
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gobject-introspection/gobject-introspection/
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gobject-introspection/files/
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gobject-introspection/gobject-introspection-1.72.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gobject-introspection/gobject-introspection/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gobject-introspection/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gobject-introspection/gobject-introspection-1.72.0/
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gobject-introspection/gobject-introspection/
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gobject-introspection/files/
+DEBUG: Searching for 0001-Relocate-the-repository-directory-for-native-builds.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gobject-introspection/gobject-introspection-1.72.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gobject-introspection/gobject-introspection/poky
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gobject-introspection/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gobject-introspection/gobject-introspection-1.72.0/
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gobject-introspection/gobject-introspection/
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gobject-introspection/files/
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gobject-introspection/gobject-introspection-1.72.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gobject-introspection/gobject-introspection/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gobject-introspection/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gobject-introspection/gobject-introspection-1.72.0/
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gobject-introspection/gobject-introspection/
+    /home/ubuntu/yocto/poky/meta/recipes-gnome/gobject-introspection/files/
+DEBUG: Python function base_do_fetch finished
+DEBUG: Python function do_fetch finished

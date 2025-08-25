@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:libtool-native:x86_64-linux:2.4.7:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 cb711086a32544e9f275cfc72a55f26f4040663db87f1d0781eb49baf6d7e713 ./deploy-source-date-epoch/__source_date_epoch.txt

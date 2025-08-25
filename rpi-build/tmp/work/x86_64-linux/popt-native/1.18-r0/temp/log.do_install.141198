@@ -1,0 +1,56 @@
+DEBUG: Executing python function autotools_aclocals
+DEBUG: SITE files ['endian-little', 'common-linux', 'common-glibc', 'bit-64', 'x86_64-linux', 'common']
+DEBUG: Python function autotools_aclocals finished
+DEBUG: Executing shell function do_install
+NOTE: make -j 8 DESTDIR=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/image install
+make  install-recursive
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/build'
+Making install in src
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/build/src'
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/build/src'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/recipe-sysroot-native/usr/lib'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/recipe-sysroot-native/usr/include'
+ /bin/bash ../libtool   --mode=install /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c   libpopt.la '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/recipe-sysroot-native/usr/lib'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../../popt-1.18/src/popt.h '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/recipe-sysroot-native/usr/include'
+libtool: install: /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c .libs/libpopt.so.0.0.1 /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/recipe-sysroot-native/usr/lib/libpopt.so.0.0.1
+libtool: install: (cd /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/recipe-sysroot-native/usr/lib && { ln -s -f libpopt.so.0.0.1 libpopt.so.0 || { rm -f libpopt.so.0 && ln -s libpopt.so.0.0.1 libpopt.so.0; }; })
+libtool: install: (cd /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/recipe-sysroot-native/usr/lib && { ln -s -f libpopt.so.0.0.1 libpopt.so || { rm -f libpopt.so && ln -s libpopt.so.0.0.1 libpopt.so; }; })
+libtool: install: /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c .libs/libpopt.lai /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/recipe-sysroot-native/usr/lib/libpopt.la
+libtool: warning: remember to run 'libtool --finish /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/recipe-sysroot-native/usr/lib'
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/build/src'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/build/src'
+Making install in po
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/build/po'
+if test "popt" = "gettext-tools"; then \
+  /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/recipe-sysroot-native/usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../../popt-1.18/po/$file \
+		    /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/recipe-sysroot-native/usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/recipe-sysroot-native/usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/build/po'
+Making install in tests
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/build/tests'
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/build/tests'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/build/tests'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/build/tests'
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/build'
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/build'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/recipe-sysroot-native/usr/lib/pkgconfig'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/recipe-sysroot-native/usr/share/man/man3'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 popt.pc '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/recipe-sysroot-native/usr/lib/pkgconfig'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../popt-1.18/popt.3 '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/recipe-sysroot-native/usr/share/man/man3'
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/build'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/build'
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/build'
+DEBUG: Shell function do_install finished
+DEBUG: Executing shell function remove_libtool_la
+DEBUG: Shell function remove_libtool_la finished

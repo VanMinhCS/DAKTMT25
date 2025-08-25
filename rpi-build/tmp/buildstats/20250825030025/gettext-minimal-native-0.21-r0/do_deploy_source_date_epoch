@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090837.68 
+gettext-minimal-native-0.21-r0: do_deploy_source_date_epoch
+Elapsed time: 0.27 seconds
+utime: 23
+stime: 5
+cutime: 3
+cstime: 3
+IO rchar: 287402
+IO wchar: 133482
+IO syscr: 375
+IO syscw: 96
+IO read_bytes: 0
+IO write_bytes: 114688
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.237918
+rusage ru_stime: 0.057428
+rusage ru_maxrss: 107320
+rusage ru_minflt: 7694
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 184
+rusage ru_nvcsw: 13
+rusage ru_nivcsw: 108
+Child rusage ru_utime: 0.031878
+Child rusage ru_stime: 0.0325
+Child rusage ru_maxrss: 107320
+Child rusage ru_minflt: 4330
+Child rusage ru_majflt: 1
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 40
+Child rusage ru_nvcsw: 86
+Child rusage ru_nivcsw: 27
+Status: PASSED 
+Ended: 1756090837.95 

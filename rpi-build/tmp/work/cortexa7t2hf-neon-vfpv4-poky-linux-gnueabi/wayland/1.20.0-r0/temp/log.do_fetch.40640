@@ -1,0 +1,85 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are []
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_fetch
+DEBUG: Executing python function base_do_fetch
+DEBUG: Searching for run-ptest in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/poky
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/arm
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/arm
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/
+DEBUG: Searching for 0002-Do-not-hardcode-the-path-to-wayland-scanner.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/poky
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/arm
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/arm
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/
+DEBUG: Searching for 0001-build-Fix-strndup-detection-on-MinGW.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/poky
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/arm
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/arm
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/
+DEBUG: Searching for CVE-2021-3782.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/poky
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/arm
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/arm
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/
+DEBUG: Python function base_do_fetch finished
+DEBUG: Python function do_fetch finished

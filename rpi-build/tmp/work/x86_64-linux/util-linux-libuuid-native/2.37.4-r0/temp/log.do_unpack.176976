@@ -1,0 +1,269 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are ['virtual:native:/home/ubuntu/yocto/poky/meta/recipes-extended/xz/xz_5.2.6.bb:do_populate_sysroot']
+NOTE: Installed into sysroot: ['xz-native', 'gettext-minimal-native', 'libtool-native', 'texinfo-dummy-native']
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: sed -e 's:^[^/]*/:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/util-linux-libuuid-native/2.37.4-r0/recipe-sysroot-native/:g' /home/ubuntu/yocto/rpi-build/tmp/sysroots-components/x86_64/libtool-native/fixmepath | xargs sed -i -e 's:FIXMESTAGINGDIRTARGET:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/util-linux-libuuid-native/2.37.4-r0/recipe-sysroot:g; s:FIXMESTAGINGDIRHOST:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/util-linux-libuuid-native/2.37.4-r0/recipe-sysroot-native:g' -e 's:FIXME_PSEUDO_SYSROOT:/home/ubuntu/yocto/rpi-build/tmp/sysroots-components/x86_64/pseudo-native:g' -e 's:FIXME_HOSTTOOLS_DIR:/home/ubuntu/yocto/rpi-build/tmp/hosttools:g' -e 's:FIXME_PKGDATA_DIR:/home/ubuntu/yocto/rpi-build/tmp/pkgdata/raspberrypi4:g' -e 's:FIXME_PSEUDO_LOCALSTATEDIR:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/util-linux-libuuid-native/2.37.4-r0/pseudo/:g' -e 's:FIXME_LOGFIFO:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/util-linux-libuuid-native/2.37.4-r0/temp/fifo.176976:g'
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+NOTE: Unpacking /home/ubuntu/yocto/rpi-build/downloads/util-linux-2.37.4.tar.xz to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/util-linux-libuuid-native/2.37.4-r0/
+DEBUG: Searching for configure-sbindir.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/configure-sbindir.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/util-linux-libuuid-native/2.37.4-r0/
+DEBUG: Searching for runuser.pamd in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/runuser.pamd to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/util-linux-libuuid-native/2.37.4-r0/
+DEBUG: Searching for runuser-l.pamd in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/runuser-l.pamd to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/util-linux-libuuid-native/2.37.4-r0/
+DEBUG: Searching for ptest.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/ptest.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/util-linux-libuuid-native/2.37.4-r0/
+DEBUG: Searching for run-ptest in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/run-ptest to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/util-linux-libuuid-native/2.37.4-r0/
+DEBUG: Searching for display_testname_for_subtest.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/display_testname_for_subtest.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/util-linux-libuuid-native/2.37.4-r0/
+DEBUG: Searching for avoid_parallel_tests.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/avoid_parallel_tests.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/util-linux-libuuid-native/2.37.4-r0/
+DEBUG: Searching for 0001-check-for-sys-pidfd.h.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/0001-check-for-sys-pidfd.h.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/util-linux-libuuid-native/2.37.4-r0/
+DEBUG: Searching for CVE-2024-28085-0001.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/CVE-2024-28085-0001.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/util-linux-libuuid-native/2.37.4-r0/
+DEBUG: Searching for CVE-2024-28085-0002.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/CVE-2024-28085-0002.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/util-linux-libuuid-native/2.37.4-r0/
+DEBUG: Searching for CVE-2024-28085-0003.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/CVE-2024-28085-0003.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/util-linux-libuuid-native/2.37.4-r0/
+DEBUG: Searching for CVE-2024-28085-0004.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/CVE-2024-28085-0004.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/util-linux-libuuid-native/2.37.4-r0/
+DEBUG: Searching for CVE-2024-28085-0005.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/CVE-2024-28085-0005.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/util-linux-libuuid-native/2.37.4-r0/
+DEBUG: Searching for fstab-isolation.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid-2.37.4/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux-libuuid/
+    /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/util-linux/util-linux/fstab-isolation.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/util-linux-libuuid-native/2.37.4-r0/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function create_source_date_epoch_stamp
+DEBUG: Newest file found: /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/util-linux-libuuid-native/2.37.4-r0/util-linux-2.37.4/ChangeLog
+DEBUG: SOURCE_DATE_EPOCH: 1644832380
+DEBUG: Python function create_source_date_epoch_stamp finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

@@ -1,0 +1,165 @@
+#!/bin/sh
+
+__BITBAKE_LAST_LINE=0
+
+# Emit a useful diagnostic if something fails:
+bb_sh_exit_handler() {
+    ret=$?
+    if [ "$ret" != 0 ]; then
+        echo "WARNING: exit code $ret from a shell command."
+    fi
+    exit $ret
+}
+
+bb_bash_exit_handler() {
+    ret=$?
+    { set +x; } > /dev/null
+    trap "" DEBUG
+    if [ "$ret" != 0 ]; then
+        echo "WARNING: ${BASH_SOURCE[0]}:${__BITBAKE_LAST_LINE} exit $ret from '$1'"
+
+        echo "WARNING: Backtrace (BB generated script): "
+        for i in $(seq 1 $((${#FUNCNAME[@]} - 1))); do
+            if [ "$i" -eq 1 ]; then
+                echo -e "	#$((i)): ${FUNCNAME[$i]}, ${BASH_SOURCE[$((i-1))]}, line ${__BITBAKE_LAST_LINE}"
+            else
+                echo -e "	#$((i)): ${FUNCNAME[$i]}, ${BASH_SOURCE[$((i-1))]}, line ${BASH_LINENO[$((i-1))]}"
+            fi
+        done
+    fi
+    exit $ret
+}
+
+bb_bash_debug_handler() {
+    local line=${BASH_LINENO[0]}
+    # For some reason the DEBUG trap trips with lineno=1 when scripts exit; ignore it
+    if [ "$line" -eq 1 ]; then
+        return
+    fi
+
+    # Track the line number of commands as they execute. This is so we can have access to the failing line number
+    # in the EXIT trap. See http://gnu-bash.2382.n7.nabble.com/trap-echo-quot-trap-exit-on-LINENO-quot-EXIT-gt-wrong-linenumber-td3666.html
+    if [ "${FUNCNAME[1]}" != "bb_bash_exit_handler" ]; then
+        __BITBAKE_LAST_LINE=$line
+    fi
+}
+
+case $BASH_VERSION in
+"") trap 'bb_sh_exit_handler' 0
+    set -e
+    ;;
+*)  trap 'bb_bash_exit_handler "$BASH_COMMAND"' 0
+    trap '{ bb_bash_debug_handler; } 2>/dev/null' DEBUG
+    set -e
+    shopt -s extdebug
+    ;;
+esac
+export AR="arm-poky-linux-gnueabi-gcc-ar"
+export AS="arm-poky-linux-gnueabi-as "
+export BUILD_AR="ar"
+export BUILD_AS="as "
+export BUILD_CC="gcc "
+export BUILD_CCLD="gcc "
+export BUILD_CFLAGS="-isystem/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot-native/usr/include -O2 -pipe"
+export BUILD_CPP="gcc  -E"
+export BUILD_CPPFLAGS="-isystem/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot-native/usr/include"
+export BUILD_CXX="g++ "
+export BUILD_CXXFLAGS="-isystem/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot-native/usr/include -O2 -pipe"
+export BUILD_FC="gfortran "
+export BUILD_LD="ld "
+export BUILD_LDFLAGS="-L/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot-native/usr/lib                         -L/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot-native/lib                         -Wl,--enable-new-dtags                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot-native/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot-native/lib                         -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2"
+export BUILD_NM="nm"
+export BUILD_RANLIB="ranlib -D"
+export BUILD_STRIP="strip"
+export CC="arm-poky-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7  --sysroot=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot"
+export CCLD="arm-poky-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7  --sysroot=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot"
+export CC_FOR_BUILD="gcc "
+export CFLAGS=" -O2 -pipe -g -feliminate-unused-debug-types     -fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot=    -fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot-native=    -fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work-shared/gcc-11.5.0-r0/gcc-11.5.0=/usr/src/debug/gcc-runtime/11.5.0-r0    -fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work-shared/gcc-11.5.0-r0/gcc-11.5.0/include=/usr/src/debug/gcc-runtime/11.5.0-r0/libstdc++-v3/../include    -fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work-shared/gcc-11.5.0-r0/gcc-11.5.0/libiberty=/usr/src/debug/gcc-runtime/11.5.0-r0/libstdc++-v3/../libiberty    -fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work-shared/gcc-11.5.0-r0/gcc-11.5.0/libgcc=/usr/src/debug/gcc-runtime/11.5.0-r0/libstdc++-v3/../libgcc    -fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/gcc-11.5.0/build.arm-poky-linux-gnueabi.arm-poky-linux-gnueabi=/usr/src/debug/gcc-runtime/11.5.0-r0    -ffile-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/gcc-11.5.0/build.arm-poky-linux-gnueabi.arm-poky-linux-gnueabi/arm-poky-linux-gnueabi/libstdc++-v3/include=/usr/include/c++/11.5.0    "
+export CFLAGS_FOR_BUILD="-isystem/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot-native/usr/include -O2 -pipe"
+export CPP="arm-poky-linux-gnueabi-gcc -E --sysroot=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 "
+export CPPFLAGS=""
+export CPPFLAGS_FOR_BUILD="-isystem/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot-native/usr/include"
+export CPP_FOR_BUILD="gcc  -E"
+export CXX="arm-poky-linux-gnueabi-g++  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7  --sysroot=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot"
+export CXXFLAGS=" -O2 -pipe -g -feliminate-unused-debug-types     -fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot=    -fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot-native=    -fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work-shared/gcc-11.5.0-r0/gcc-11.5.0=/usr/src/debug/gcc-runtime/11.5.0-r0    -fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work-shared/gcc-11.5.0-r0/gcc-11.5.0/include=/usr/src/debug/gcc-runtime/11.5.0-r0/libstdc++-v3/../include    -fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work-shared/gcc-11.5.0-r0/gcc-11.5.0/libiberty=/usr/src/debug/gcc-runtime/11.5.0-r0/libstdc++-v3/../libiberty    -fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work-shared/gcc-11.5.0-r0/gcc-11.5.0/libgcc=/usr/src/debug/gcc-runtime/11.5.0-r0/libstdc++-v3/../libgcc    -fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/gcc-11.5.0/build.arm-poky-linux-gnueabi.arm-poky-linux-gnueabi=/usr/src/debug/gcc-runtime/11.5.0-r0    -ffile-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/gcc-11.5.0/build.arm-poky-linux-gnueabi.arm-poky-linux-gnueabi/arm-poky-linux-gnueabi/libstdc++-v3/include=/usr/include/c++/11.5.0     "
+export CXXFLAGS_FOR_BUILD="-isystem/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot-native/usr/include -O2 -pipe"
+export CXX_FOR_BUILD="g++ "
+export FC="arm-poky-linux-gnueabi-gfortran  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7  --sysroot=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot"
+export GETTEXTDATADIRS=":/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot/usr/share/gettext"
+export GIT_CEILING_DIRECTORIES="/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0"
+export HOME="/home/ubuntu"
+export LC_ALL="en_US.UTF-8"
+export LD="arm-poky-linux-gnueabi-ld --sysroot=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot "
+export LDFLAGS="-Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed     -fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot=    -fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot-native=    -fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work-shared/gcc-11.5.0-r0/gcc-11.5.0=/usr/src/debug/gcc-runtime/11.5.0-r0    -fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work-shared/gcc-11.5.0-r0/gcc-11.5.0/include=/usr/src/debug/gcc-runtime/11.5.0-r0/libstdc++-v3/../include    -fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work-shared/gcc-11.5.0-r0/gcc-11.5.0/libiberty=/usr/src/debug/gcc-runtime/11.5.0-r0/libstdc++-v3/../libiberty    -fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work-shared/gcc-11.5.0-r0/gcc-11.5.0/libgcc=/usr/src/debug/gcc-runtime/11.5.0-r0/libstdc++-v3/../libgcc    -fdebug-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/gcc-11.5.0/build.arm-poky-linux-gnueabi.arm-poky-linux-gnueabi=/usr/src/debug/gcc-runtime/11.5.0-r0    -ffile-prefix-map=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/gcc-11.5.0/build.arm-poky-linux-gnueabi.arm-poky-linux-gnueabi/arm-poky-linux-gnueabi/libstdc++-v3/include=/usr/include/c++/11.5.0     -Wl,-z,relro,-z,now"
+export LDFLAGS_FOR_BUILD="-L/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot-native/usr/lib                         -L/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot-native/lib                         -Wl,--enable-new-dtags                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot-native/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot-native/lib                         -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2"
+export LD_FOR_BUILD="ld "
+export LOGNAME="ubuntu"
+export MAKE="make"
+export NM="arm-poky-linux-gnueabi-gcc-nm"
+export OBJCOPY="arm-poky-linux-gnueabi-objcopy"
+export OBJDUMP="arm-poky-linux-gnueabi-objdump"
+export OMP_NUM_THREADS="8"
+export PATH="/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot/usr/bin/crossscripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"
+export PERL_HASH_SEED="0"
+export PKG_CONFIG_DIR="/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot/usr/lib/pkgconfig"
+export PKG_CONFIG_DISABLE_UNINSTALLED="yes"
+export PKG_CONFIG_LIBDIR="/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot/usr/lib/pkgconfig"
+export PKG_CONFIG_PATH="/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot/usr/lib/pkgconfig:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot/usr/share/pkgconfig"
+export PKG_CONFIG_SYSROOT_DIR="/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/recipe-sysroot"
+export PKG_CONFIG_SYSTEM_INCLUDE_PATH="/usr/include"
+export PKG_CONFIG_SYSTEM_LIBRARY_PATH="/lib:/usr/lib"
+export PSEUDO_DISABLED="1"
+export PSEUDO_UNLOAD="1"
+export PYTHONHASHSEED="0"
+export RANLIB="arm-poky-linux-gnueabi-gcc-ranlib"
+export READELF="arm-poky-linux-gnueabi-readelf"
+unset SHELL
+export SOURCE_DATE_EPOCH="1302044400"
+export STRINGS="arm-poky-linux-gnueabi-strings"
+export STRIP="arm-poky-linux-gnueabi-strip"
+export TZ="UTC"
+export USER="ubuntu"
+export base_bindir="/bin"
+export base_libdir="/lib"
+export base_prefix=""
+export base_sbindir="/sbin"
+export bindir="/usr/bin"
+export datadir="/usr/share"
+export docdir="/usr/share/doc"
+export exec_prefix="/usr"
+export gcc_cv_collect2_libs="none required"
+export includedir="/usr/include"
+export infodir="/usr/share/info"
+export libdir="/usr/lib"
+export libexecdir="/usr/libexec"
+export localstatedir="/var"
+export lt_cv_sys_lib_dlsearch_path_spec="/usr/lib /lib"
+export mandir="/usr/share/man"
+export nonarch_base_libdir="/lib"
+export nonarch_libdir="/usr/lib"
+export oldincludedir="/usr/include"
+export prefix="/usr"
+export sbindir="/usr/sbin"
+export servicedir="/srv"
+export sharedstatedir="/com"
+export sysconfdir="/etc"
+export systemd_system_unitdir="/lib/systemd/system"
+export systemd_unitdir="/lib/systemd"
+export systemd_user_unitdir="/usr/lib/systemd/user"
+
+# line: 15, file: /home/ubuntu/yocto/poky/meta/recipes-devtools/gcc/gcc-shared-source.inc
+do_deploy_source_date_epoch() {
+	sde_file=/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/source-date-epoch/__source_date_epoch.txt
+	sde_file=${sde_file#/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/}
+	mkdir -p /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/deploy-source-date-epoch $(dirname /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/source-date-epoch/__source_date_epoch.txt)
+	cp -p $(dirname /home/ubuntu/yocto/rpi-build/tmp/work-shared/gcc-11.5.0-r0/gcc-11.5.0)/$sde_file /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/deploy-source-date-epoch
+	cp -p $(dirname /home/ubuntu/yocto/rpi-build/tmp/work-shared/gcc-11.5.0-r0/gcc-11.5.0)/$sde_file /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/source-date-epoch/__source_date_epoch.txt
+}
+
+cd '/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gcc-runtime/11.5.0-r0/deploy-source-date-epoch'
+do_deploy_source_date_epoch
+
+# cleanup
+ret=$?
+trap '' 0
+exit $ret

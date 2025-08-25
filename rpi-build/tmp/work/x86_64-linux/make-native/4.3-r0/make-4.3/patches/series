@@ -1,0 +1,6 @@
+0001-m4-getloadavg.m4-restrict-AIX-specific-test-on-AIX.patch -p1
+0002-modules-fcntl-allow-being-detected-by-importing-proj.patch -p1
+0001-src-dir.c-fix-buffer-overflow-warning.patch -p1
+0002-w32-compat-dirent.c-follow-header.patch -p1
+0003-posixfcn-fcntl-gnulib-make-emulated.patch -p1
+0001-makeinst-Do-not-undef-POSIX-on-clang-arm.patch -p1

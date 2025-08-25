@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090855.17 
+libnsl2-native-2.0.0-r0: do_deploy_source_date_epoch
+Elapsed time: 0.56 seconds
+utime: 39
+stime: 3
+cutime: 5
+cstime: 0
+IO rchar: 318241
+IO wchar: 141983
+IO syscr: 378
+IO syscw: 107
+IO read_bytes: 0
+IO write_bytes: 114688
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.398343
+rusage ru_stime: 0.033544
+rusage ru_maxrss: 108180
+rusage ru_minflt: 8467
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 184
+rusage ru_nvcsw: 12
+rusage ru_nivcsw: 159
+Child rusage ru_utime: 0.0554
+Child rusage ru_stime: 0.008922
+Child rusage ru_maxrss: 108180
+Child rusage ru_minflt: 4344
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 40
+Child rusage ru_nvcsw: 65
+Child rusage ru_nivcsw: 20
+Status: PASSED 
+Ended: 1756090855.73 

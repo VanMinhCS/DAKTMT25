@@ -1,0 +1,216 @@
+DEBUG: Executing python function autotools_aclocals
+DEBUG: SITE files ['endian-little', 'common-linux', 'common-glibc', 'bit-64', 'x86_64-linux', 'common']
+DEBUG: Python function autotools_aclocals finished
+DEBUG: Executing shell function do_install
+NOTE: make -j 8 DESTDIR=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/image install
+make  install-recursive
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build'
+Making install in tests
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests'
+Making install in .
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests'
+make[4]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests'
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests'
+Making install in devel
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests/devel'
+make[4]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests/devel'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests/devel'
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests/devel'
+Making install in mpn
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests/mpn'
+make[4]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests/mpn'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests/mpn'
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests/mpn'
+Making install in mpz
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests/mpz'
+make[4]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests/mpz'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests/mpz'
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests/mpz'
+Making install in mpq
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests/mpq'
+make[4]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests/mpq'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests/mpq'
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests/mpq'
+Making install in mpf
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests/mpf'
+make[4]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests/mpf'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests/mpf'
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests/mpf'
+Making install in rand
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests/rand'
+make[4]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests/rand'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests/rand'
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests/rand'
+Making install in misc
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests/misc'
+make[4]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests/misc'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests/misc'
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests/misc'
+Making install in cxx
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests/cxx'
+make[4]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests/cxx'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests/cxx'
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests/cxx'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tests'
+Making install in mpn
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/mpn'
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/mpn'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/mpn'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/mpn'
+Making install in mpz
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/mpz'
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/mpz'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/mpz'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/mpz'
+Making install in mpq
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/mpq'
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/mpq'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/mpq'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/mpq'
+Making install in mpf
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/mpf'
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/mpf'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/mpf'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/mpf'
+Making install in printf
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/printf'
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/printf'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/printf'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/printf'
+Making install in scanf
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/scanf'
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/scanf'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/scanf'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/scanf'
+Making install in rand
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/rand'
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/rand'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/rand'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/rand'
+Making install in cxx
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/cxx'
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/cxx'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/cxx'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/cxx'
+Making install in demos
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/demos'
+Making install in calc
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/demos/calc'
+make  install-am
+make[4]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/demos/calc'
+make[5]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/demos/calc'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/demos/calc'
+make[4]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/demos/calc'
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/demos/calc'
+Making install in expr
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/demos/expr'
+make[4]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/demos/expr'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/demos/expr'
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/demos/expr'
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/demos'
+make[4]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/demos'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/demos'
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/demos'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/demos'
+Making install in tune
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tune'
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tune'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tune'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/tune'
+Making install in doc
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/doc'
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/doc'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/share/info'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../../gmp-6.2.1/doc/gmp.info ../../gmp-6.2.1/doc/gmp.info-1 ../../gmp-6.2.1/doc/gmp.info-2 '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/share/info'
+ install-info --info-dir='/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/share/info' '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/share/info/gmp.info'
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/doc'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/doc'
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build'
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/lib'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/include'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/include'
+ /bin/bash ./libtool   --mode=install /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c   libgmp.la libgmpxx.la '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/lib'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/lib/pkgconfig'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../gmp-6.2.1/gmpxx.h '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/include'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 gmp.pc gmpxx.pc '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/lib/pkgconfig'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 gmp.h '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/include'
+make  install-data-hook
+make[4]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build'
+
++-------------------------------------------------------------+
+| CAUTION:                                                    |
+|                                                             |
+| If you have not already run "make check", then we strongly  |
+| recommend you do so.                                        |
+|                                                             |
+| GMP has been carefully tested by its authors, but compilers |
+| are all too often released with serious bugs.  GMP tends to |
+| explore interesting corners in compilers and has hit bugs   |
+| on quite a few occasions.                                   |
+|                                                             |
++-------------------------------------------------------------+
+
+make[4]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build'
+libtool: install: /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c .libs/libgmp.so.10.4.1 /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/lib/libgmp.so.10.4.1
+libtool: install: (cd /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/lib && { ln -s -f libgmp.so.10.4.1 libgmp.so.10 || { rm -f libgmp.so.10 && ln -s libgmp.so.10.4.1 libgmp.so.10; }; })
+libtool: install: (cd /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/lib && { ln -s -f libgmp.so.10.4.1 libgmp.so || { rm -f libgmp.so && ln -s libgmp.so.10.4.1 libgmp.so; }; })
+libtool: install: /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c .libs/libgmp.lai /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/lib/libgmp.la
+libtool: warning: relinking 'libgmpxx.la'
+libtool: install: (cd /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build; /bin/bash "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build/libtool"  --tag CXX --mode=relink g++ -O2 -pedantic -fomit-frame-pointer -m64 -mtune=k8 -march=k8 -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/include -O2 -pipe -version-info 10:1:6 -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/lib -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/lib -Wl,--enable-new-dtags -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/lib -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/lib -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/lib -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/lib -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2 -o libgmpxx.la -rpath /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/lib cxx/dummy.lo cxx/isfuns.lo cxx/ismpf.lo cxx/ismpq.lo cxx/ismpz.lo cxx/ismpznw.lo cxx/limits.lo cxx/osdoprnti.lo cxx/osfuns.lo cxx/osmpf.lo cxx/osmpq.lo cxx/osmpz.lo libgmp.la -inst-prefix-dir /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/image)
+libtool: relink: g++   -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o  cxx/.libs/dummy.o cxx/.libs/isfuns.o cxx/.libs/ismpf.o cxx/.libs/ismpq.o cxx/.libs/ismpz.o cxx/.libs/ismpznw.o cxx/.libs/limits.o cxx/.libs/osdoprnti.o cxx/.libs/osfuns.o cxx/.libs/osmpf.o cxx/.libs/osmpq.o cxx/.libs/osmpz.o   -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/lib -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/lib -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/lib -lgmp -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o  -O2 -m64 -mtune=k8 -march=k8 -O2 -Wl,--enable-new-dtags -Wl,-rpath-link -Wl,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/lib -Wl,-rpath-link -Wl,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/lib -Wl,-rpath -Wl,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/lib -Wl,-rpath -Wl,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/lib -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2   -Wl,-soname -Wl,libgmpxx.so.4 -o .libs/libgmpxx.so.4.6.1
+libtool: install: /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c .libs/libgmpxx.so.4.6.1T /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/lib/libgmpxx.so.4.6.1
+libtool: install: (cd /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/lib && { ln -s -f libgmpxx.so.4.6.1 libgmpxx.so.4 || { rm -f libgmpxx.so.4 && ln -s libgmpxx.so.4.6.1 libgmpxx.so.4; }; })
+libtool: install: (cd /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/lib && { ln -s -f libgmpxx.so.4.6.1 libgmpxx.so || { rm -f libgmpxx.so && ln -s libgmpxx.so.4.6.1 libgmpxx.so; }; })
+libtool: install: /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c .libs/libgmpxx.lai /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/lib/libgmpxx.la
+libtool: warning: remember to run 'libtool --finish /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/lib'
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build'
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/build'
+DEBUG: Shell function do_install finished
+DEBUG: Executing shell function remove_libtool_la
+DEBUG: Shell function remove_libtool_la finished

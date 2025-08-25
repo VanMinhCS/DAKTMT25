@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090950.47 
+pkgconfig-native-0.29.2+gitAUTOINC+d97db4fae4-r0: do_configure
+Elapsed time: 41.58 seconds
+utime: 36
+stime: 6
+cutime: 2418
+cstime: 962
+IO rchar: 321926461
+IO wchar: 41555199
+IO syscr: 166164
+IO syscw: 43593
+IO read_bytes: 262144
+IO write_bytes: 39718912
+IO cancelled_write_bytes: 21815296
+rusage ru_utime: 0.36977099999999996
+rusage ru_stime: 0.06644499999999999
+rusage ru_maxrss: 110344
+rusage ru_minflt: 9112
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 336
+rusage ru_nvcsw: 917
+rusage ru_nivcsw: 10
+Child rusage ru_utime: 24.181308
+Child rusage ru_stime: 9.626266
+Child rusage ru_maxrss: 110344
+Child rusage ru_minflt: 2301649
+Child rusage ru_majflt: 50
+Child rusage ru_inblock: 512
+Child rusage ru_oublock: 77240
+Child rusage ru_nvcsw: 16358
+Child rusage ru_nivcsw: 2776
+Status: PASSED 
+Ended: 1756090992.06 

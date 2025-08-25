@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090838.23 
+gnu-config-native-20211108+gitAUTOINC+191bcb948f-r0: do_configure
+Elapsed time: 0.13 seconds
+utime: 30
+stime: 4
+cutime: 0
+cstime: 0
+IO rchar: 96967
+IO wchar: 60101
+IO syscr: 67
+IO syscw: 50
+IO read_bytes: 0
+IO write_bytes: 69632
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.3003
+rusage ru_stime: 0.044044
+rusage ru_maxrss: 108500
+rusage ru_minflt: 5073
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 128
+rusage ru_nvcsw: 2
+rusage ru_nivcsw: 85
+Child rusage ru_utime: 0.009814999999999999
+Child rusage ru_stime: 0.003826
+Child rusage ru_maxrss: 104332
+Child rusage ru_minflt: 563
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 8
+Child rusage ru_nvcsw: 7
+Child rusage ru_nivcsw: 7
+Status: PASSED 
+Ended: 1756090838.36 

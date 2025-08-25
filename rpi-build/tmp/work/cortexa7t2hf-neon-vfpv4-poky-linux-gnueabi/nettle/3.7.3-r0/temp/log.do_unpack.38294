@@ -1,0 +1,91 @@
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+NOTE: Unpacking /home/ubuntu/yocto/rpi-build/downloads/nettle-3.7.3.tar.gz to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/nettle/3.7.3-r0/
+DEBUG: Searching for Add-target-to-only-build-tests-not-run-them.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle-3.7.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle-3.7.3/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle-3.7.3/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle-3.7.3/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle-3.7.3/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle-3.7.3/
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle/
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle/Add-target-to-only-build-tests-not-run-them.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/nettle/3.7.3-r0/
+DEBUG: Searching for run-ptest in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle-3.7.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle-3.7.3/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle-3.7.3/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle-3.7.3/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle-3.7.3/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle-3.7.3/
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle/
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle/run-ptest to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/nettle/3.7.3-r0/
+DEBUG: Searching for check-header-files-of-openssl-only-if-enable_.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle-3.7.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle-3.7.3/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle-3.7.3/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle-3.7.3/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle-3.7.3/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle-3.7.3/
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle/
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle/check-header-files-of-openssl-only-if-enable_.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/nettle/3.7.3-r0/
+DEBUG: Searching for dlopen-test.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle-3.7.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle-3.7.3/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle-3.7.3/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle-3.7.3/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle-3.7.3/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle-3.7.3/
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle/
+    /home/ubuntu/yocto/poky/meta/recipes-support/nettle/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-support/nettle/nettle/dlopen-test.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/nettle/3.7.3-r0/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function create_source_date_epoch_stamp
+DEBUG: Newest file found: /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/nettle/3.7.3-r0/nettle-3.7.3/arm/ecc-secp384r1-modp.asm
+DEBUG: SOURCE_DATE_EPOCH: 1623009990
+DEBUG: Python function create_source_date_epoch_stamp finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

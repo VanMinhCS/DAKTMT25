@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090935.74 
+libtool-native-2.4.7-r0: do_compile
+Elapsed time: 4.83 seconds
+utime: 9
+stime: 3
+cutime: 529
+cstime: 195
+IO rchar: 46672811
+IO wchar: 7909146
+IO syscr: 33529
+IO syscw: 5021
+IO read_bytes: 0
+IO write_bytes: 6787072
+IO cancelled_write_bytes: 2281472
+rusage ru_utime: 0.095825
+rusage ru_stime: 0.034497
+rusage ru_maxrss: 109756
+rusage ru_minflt: 4494
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 112
+rusage ru_nvcsw: 76
+rusage ru_nivcsw: 2
+Child rusage ru_utime: 5.297319
+Child rusage ru_stime: 1.958408
+Child rusage ru_maxrss: 105564
+Child rusage ru_minflt: 479489
+Child rusage ru_majflt: 4
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 13144
+Child rusage ru_nvcsw: 9099
+Child rusage ru_nivcsw: 401
+Status: PASSED 
+Ended: 1756090940.57 

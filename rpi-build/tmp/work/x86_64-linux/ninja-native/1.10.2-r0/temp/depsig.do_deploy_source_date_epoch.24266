@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:ninja-native:x86_64-linux:1.10.2:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 1bdfe5f72b47db79a70136542858188c191dad977a8e4757822d3bb0f555e7fd ./deploy-source-date-epoch/__source_date_epoch.txt

@@ -1,0 +1,22 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are []
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_fetch
+DEBUG: Executing python function base_do_fetch
+DEBUG: Searching for CVE-2021-46828.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libtirpc/libtirpc-1.3.2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libtirpc/libtirpc/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libtirpc/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libtirpc/libtirpc-1.3.2/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libtirpc/libtirpc/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libtirpc/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libtirpc/libtirpc-1.3.2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libtirpc/libtirpc/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libtirpc/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libtirpc/libtirpc-1.3.2/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libtirpc/libtirpc/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/libtirpc/files/
+DEBUG: Python function base_do_fetch finished
+DEBUG: Python function do_fetch finished

@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756091137.27 
+python3-native-3.10.18-r0: do_patch
+Elapsed time: 9.50 seconds
+utime: 51
+stime: 13
+cutime: 247
+cstime: 121
+IO rchar: 12507584
+IO wchar: 3102192
+IO syscr: 16082
+IO syscw: 2061
+IO read_bytes: 0
+IO write_bytes: 2969600
+IO cancelled_write_bytes: 4096
+rusage ru_utime: 0.511277
+rusage ru_stime: 0.134546
+rusage ru_maxrss: 114760
+rusage ru_minflt: 5561
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 192
+rusage ru_nvcsw: 119
+rusage ru_nivcsw: 208
+Child rusage ru_utime: 2.472934
+Child rusage ru_stime: 1.210679
+Child rusage ru_maxrss: 114760
+Child rusage ru_minflt: 284750
+Child rusage ru_majflt: 7
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 5608
+Child rusage ru_nvcsw: 4139
+Child rusage ru_nivcsw: 1817
+Status: PASSED 
+Ended: 1756091146.77 

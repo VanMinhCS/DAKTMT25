@@ -1,0 +1,1004 @@
+DEBUG: Executing python function autotools_aclocals
+DEBUG: SITE files ['endian-little', 'common-linux', 'common-glibc', 'bit-64', 'x86_64-linux', 'common']
+DEBUG: Python function autotools_aclocals finished
+DEBUG: Executing shell function do_compile
+NOTE: make -j 8
+make  all-recursive
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/build'
+Making all in lib
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/build/lib'
+rm -f alloca.h-t alloca.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  cat ../../patch-2.7.6/lib/alloca.in.h; \
+} > alloca.h-t && \
+mv -f alloca.h-t alloca.h
+rm -f configmake.h-t && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  echo '#define PREFIX "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr"'; \
+  echo '#define EXEC_PREFIX "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr"'; \
+  echo '#define BINDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/bin"'; \
+  echo '#define SBINDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/sbin"'; \
+  echo '#define LIBEXECDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/libexec"'; \
+  echo '#define DATAROOTDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/share"'; \
+  echo '#define DATADIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/share"'; \
+  echo '#define SYSCONFDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/etc"'; \
+  echo '#define SHAREDSTATEDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/com"'; \
+  echo '#define LOCALSTATEDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/var"'; \
+  echo '#define RUNSTATEDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/var/run"'; \
+  echo '#define INCLUDEDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include"'; \
+  echo '#define OLDINCLUDEDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include"'; \
+  echo '#define DOCDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/share/doc/patch"'; \
+  echo '#define INFODIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/share/info"'; \
+  echo '#define HTMLDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/share/doc/patch"'; \
+  echo '#define DVIDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/share/doc/patch"'; \
+  echo '#define PDFDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/share/doc/patch"'; \
+  echo '#define PSDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/share/doc/patch"'; \
+  echo '#define LIBDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/lib"'; \
+  echo '#define LISPDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/share/emacs/site-lisp"'; \
+  echo '#define LOCALEDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/share/locale"'; \
+  echo '#define MANDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/share/man"'; \
+  echo '#define MANEXT ""'; \
+  echo '#define PKGDATADIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/share/patch"'; \
+  echo '#define PKGINCLUDEDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include/patch"'; \
+  echo '#define PKGLIBDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/lib/patch"'; \
+  echo '#define PKGLIBEXECDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/libexec/patch"'; \
+} | sed '/""/d' > configmake.h-t && \
+mv -f configmake.h-t configmake.h
+rm -f dirent.h-t dirent.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''HAVE_DIRENT_H''@|1|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_DIRENT_H''@|<dirent.h>|g' \
+      -e 's/@''GNULIB_OPENDIR''@/1/g' \
+      -e 's/@''GNULIB_READDIR''@/1/g' \
+      -e 's/@''GNULIB_REWINDDIR''@/0/g' \
+      -e 's/@''GNULIB_CLOSEDIR''@/1/g' \
+      -e 's/@''GNULIB_DIRFD''@/1/g' \
+      -e 's/@''GNULIB_FDOPENDIR''@/0/g' \
+      -e 's/@''GNULIB_SCANDIR''@/0/g' \
+      -e 's/@''GNULIB_ALPHASORT''@/0/g' \
+      -e 's/@''HAVE_OPENDIR''@/1/g' \
+      -e 's/@''HAVE_READDIR''@/1/g' \
+      -e 's/@''HAVE_REWINDDIR''@/1/g' \
+      -e 's/@''HAVE_CLOSEDIR''@/1/g' \
+      -e 's|@''HAVE_DECL_DIRFD''@|1|g' \
+      -e 's|@''HAVE_DECL_FDOPENDIR''@|1|g' \
+      -e 's|@''HAVE_FDOPENDIR''@|1|g' \
+      -e 's|@''HAVE_SCANDIR''@|1|g' \
+      -e 's|@''HAVE_ALPHASORT''@|1|g' \
+      -e 's|@''REPLACE_OPENDIR''@|0|g' \
+      -e 's|@''REPLACE_CLOSEDIR''@|0|g' \
+      -e 's|@''REPLACE_DIRFD''@|0|g' \
+      -e 's|@''REPLACE_FDOPENDIR''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../patch-2.7.6/lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ../../patch-2.7.6/lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../patch-2.7.6/lib/warn-on-use.h' \
+      < ../../patch-2.7.6/lib/dirent.in.h; \
+} > dirent.h-t && \
+mv dirent.h-t dirent.h
+rm -f fcntl.h-t fcntl.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_FCNTL_H''@|<fcntl.h>|g' \
+      -e 's/@''GNULIB_FCNTL''@/1/g' \
+      -e 's/@''GNULIB_NONBLOCKING''@/0/g' \
+      -e 's/@''GNULIB_OPEN''@/1/g' \
+      -e 's/@''GNULIB_OPENAT''@/1/g' \
+      -e 's|@''HAVE_FCNTL''@|1|g' \
+      -e 's|@''HAVE_OPENAT''@|1|g' \
+      -e 's|@''REPLACE_FCNTL''@|1|g' \
+      -e 's|@''REPLACE_OPEN''@|0|g' \
+      -e 's|@''REPLACE_OPENAT''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../patch-2.7.6/lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ../../patch-2.7.6/lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../patch-2.7.6/lib/warn-on-use.h' \
+      < ../../patch-2.7.6/lib/fcntl.in.h; \
+} > fcntl.h-t && \
+mv fcntl.h-t fcntl.h
+rm -f inttypes.h-t inttypes.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's/@''HAVE_INTTYPES_H''@/1/g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_INTTYPES_H''@|<inttypes.h>|g' \
+      -e 's/@''PRI_MACROS_BROKEN''@/0/g' \
+      -e 's/@''APPLE_UNIVERSAL_BUILD''@/0/g' \
+      -e 's/@''HAVE_LONG_LONG_INT''@/1/g' \
+      -e 's/@''HAVE_UNSIGNED_LONG_LONG_INT''@/1/g' \
+      -e 's/@''PRIPTR_PREFIX''@/"l"/g' \
+      -e 's/@''GNULIB_IMAXABS''@/0/g' \
+      -e 's/@''GNULIB_IMAXDIV''@/0/g' \
+      -e 's/@''GNULIB_STRTOIMAX''@/0/g' \
+      -e 's/@''GNULIB_STRTOUMAX''@/0/g' \
+      -e 's/@''HAVE_DECL_IMAXABS''@/1/g' \
+      -e 's/@''HAVE_DECL_IMAXDIV''@/1/g' \
+      -e 's/@''HAVE_DECL_STRTOIMAX''@/1/g' \
+      -e 's/@''HAVE_DECL_STRTOUMAX''@/1/g' \
+      -e 's/@''REPLACE_STRTOIMAX''@/0/g' \
+      -e 's/@''REPLACE_STRTOUMAX''@/0/g' \
+      -e 's/@''INT32_MAX_LT_INTMAX_MAX''@/1/g' \
+      -e 's/@''INT64_MAX_EQ_LONG_MAX''@/1/g' \
+      -e 's/@''UINT32_MAX_LT_UINTMAX_MAX''@/1/g' \
+      -e 's/@''UINT64_MAX_EQ_ULONG_MAX''@/1/g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../patch-2.7.6/lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ../../patch-2.7.6/lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../patch-2.7.6/lib/warn-on-use.h' \
+      < ../../patch-2.7.6/lib/inttypes.in.h; \
+} > inttypes.h-t && \
+mv inttypes.h-t inttypes.h
+rm -f limits.h-t limits.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_LIMITS_H''@|<limits.h>|g' \
+      < ../../patch-2.7.6/lib/limits.in.h; \
+} > limits.h-t && \
+mv limits.h-t limits.h
+rm -f signal.h-t signal.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SIGNAL_H''@|<signal.h>|g' \
+      -e 's|@''GNULIB_PTHREAD_SIGMASK''@|0|g' \
+      -e 's|@''GNULIB_RAISE''@|1|g' \
+      -e 's/@''GNULIB_SIGNAL_H_SIGPIPE''@/0/g' \
+      -e 's/@''GNULIB_SIGPROCMASK''@/0/g' \
+      -e 's/@''GNULIB_SIGACTION''@/0/g' \
+      -e 's|@''HAVE_POSIX_SIGNALBLOCKING''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_SIGMASK''@|1|g' \
+      -e 's|@''HAVE_RAISE''@|1|g' \
+      -e 's|@''HAVE_SIGSET_T''@|1|g' \
+      -e 's|@''HAVE_SIGINFO_T''@|1|g' \
+      -e 's|@''HAVE_SIGACTION''@|1|g' \
+      -e 's|@''HAVE_STRUCT_SIGACTION_SA_SIGACTION''@|1|g' \
+      -e 's|@''HAVE_TYPE_VOLATILE_SIG_ATOMIC_T''@|1|g' \
+      -e 's|@''HAVE_SIGHANDLER_T''@|1|g' \
+      -e 's|@''REPLACE_PTHREAD_SIGMASK''@|0|g' \
+      -e 's|@''REPLACE_RAISE''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../patch-2.7.6/lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ../../patch-2.7.6/lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../patch-2.7.6/lib/warn-on-use.h' \
+      < ../../patch-2.7.6/lib/signal.in.h; \
+} > signal.h-t && \
+mv signal.h-t signal.h
+rm -f stdio.h-t stdio.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_STDIO_H''@|<stdio.h>|g' \
+      -e 's/@''GNULIB_DPRINTF''@/0/g' \
+      -e 's/@''GNULIB_FCLOSE''@/0/g' \
+      -e 's/@''GNULIB_FDOPEN''@/0/g' \
+      -e 's/@''GNULIB_FFLUSH''@/0/g' \
+      -e 's/@''GNULIB_FGETC''@/1/g' \
+      -e 's/@''GNULIB_FGETS''@/1/g' \
+      -e 's/@''GNULIB_FOPEN''@/0/g' \
+      -e 's/@''GNULIB_FPRINTF''@/1/g' \
+      -e 's/@''GNULIB_FPRINTF_POSIX''@/0/g' \
+      -e 's/@''GNULIB_FPURGE''@/0/g' \
+      -e 's/@''GNULIB_FPUTC''@/1/g' \
+      -e 's/@''GNULIB_FPUTS''@/1/g' \
+      -e 's/@''GNULIB_FREAD''@/1/g' \
+      -e 's/@''GNULIB_FREOPEN''@/0/g' \
+      -e 's/@''GNULIB_FSCANF''@/1/g' \
+      -e 's/@''GNULIB_FSEEK''@/0/g' \
+      -e 's/@''GNULIB_FSEEKO''@/0/g' \
+      -e 's/@''GNULIB_FTELL''@/0/g' \
+      -e 's/@''GNULIB_FTELLO''@/0/g' \
+      -e 's/@''GNULIB_FWRITE''@/1/g' \
+      -e 's/@''GNULIB_GETC''@/1/g' \
+      -e 's/@''GNULIB_GETCHAR''@/1/g' \
+      -e 's/@''GNULIB_GETDELIM''@/0/g' \
+      -e 's/@''GNULIB_GETLINE''@/0/g' \
+      -e 's/@''GNULIB_OBSTACK_PRINTF''@/0/g' \
+      -e 's/@''GNULIB_OBSTACK_PRINTF_POSIX''@/0/g' \
+      -e 's/@''GNULIB_PCLOSE''@/0/g' \
+      -e 's/@''GNULIB_PERROR''@/0/g' \
+      -e 's/@''GNULIB_POPEN''@/0/g' \
+      -e 's/@''GNULIB_PRINTF''@/1/g' \
+      -e 's/@''GNULIB_PRINTF_POSIX''@/0/g' \
+      -e 's/@''GNULIB_PUTC''@/1/g' \
+      -e 's/@''GNULIB_PUTCHAR''@/1/g' \
+      -e 's/@''GNULIB_PUTS''@/1/g' \
+      -e 's/@''GNULIB_REMOVE''@/0/g' \
+      -e 's/@''GNULIB_RENAME''@/1/g' \
+      -e 's/@''GNULIB_RENAMEAT''@/1/g' \
+      -e 's/@''GNULIB_SCANF''@/1/g' \
+      -e 's/@''GNULIB_SNPRINTF''@/0/g' \
+      -e 's/@''GNULIB_SPRINTF_POSIX''@/0/g' \
+      -e 's/@''GNULIB_STDIO_H_NONBLOCKING''@/0/g' \
+      -e 's/@''GNULIB_STDIO_H_SIGPIPE''@/0/g' \
+      -e 's/@''GNULIB_TMPFILE''@/0/g' \
+      -e 's/@''GNULIB_VASPRINTF''@/1/g' \
+      -e 's/@''GNULIB_VDPRINTF''@/0/g' \
+      -e 's/@''GNULIB_VFPRINTF''@/1/g' \
+      -e 's/@''GNULIB_VFPRINTF_POSIX''@/0/g' \
+      -e 's/@''GNULIB_VFSCANF''@/0/g' \
+      -e 's/@''GNULIB_VSCANF''@/0/g' \
+      -e 's/@''GNULIB_VPRINTF''@/1/g' \
+      -e 's/@''GNULIB_VPRINTF_POSIX''@/0/g' \
+      -e 's/@''GNULIB_VSNPRINTF''@/0/g' \
+      -e 's/@''GNULIB_VSPRINTF_POSIX''@/0/g' \
+      < ../../patch-2.7.6/lib/stdio.in.h | \
+  sed -e 's|@''HAVE_DECL_FPURGE''@|1|g' \
+      -e 's|@''HAVE_DECL_FSEEKO''@|1|g' \
+      -e 's|@''HAVE_DECL_FTELLO''@|1|g' \
+      -e 's|@''HAVE_DECL_GETDELIM''@|1|g' \
+      -e 's|@''HAVE_DECL_GETLINE''@|1|g' \
+      -e 's|@''HAVE_DECL_OBSTACK_PRINTF''@|1|g' \
+      -e 's|@''HAVE_DECL_SNPRINTF''@|1|g' \
+      -e 's|@''HAVE_DECL_VSNPRINTF''@|1|g' \
+      -e 's|@''HAVE_DPRINTF''@|1|g' \
+      -e 's|@''HAVE_FSEEKO''@|1|g' \
+      -e 's|@''HAVE_FTELLO''@|1|g' \
+      -e 's|@''HAVE_PCLOSE''@|1|g' \
+      -e 's|@''HAVE_POPEN''@|1|g' \
+      -e 's|@''HAVE_RENAMEAT''@|1|g' \
+      -e 's|@''HAVE_VASPRINTF''@|1|g' \
+      -e 's|@''HAVE_VDPRINTF''@|1|g' \
+      -e 's|@''REPLACE_DPRINTF''@|0|g' \
+      -e 's|@''REPLACE_FCLOSE''@|0|g' \
+      -e 's|@''REPLACE_FDOPEN''@|0|g' \
+      -e 's|@''REPLACE_FFLUSH''@|0|g' \
+      -e 's|@''REPLACE_FOPEN''@|0|g' \
+      -e 's|@''REPLACE_FPRINTF''@|0|g' \
+      -e 's|@''REPLACE_FPURGE''@|0|g' \
+      -e 's|@''REPLACE_FREOPEN''@|0|g' \
+      -e 's|@''REPLACE_FSEEK''@|0|g' \
+      -e 's|@''REPLACE_FSEEKO''@|0|g' \
+      -e 's|@''REPLACE_FTELL''@|0|g' \
+      -e 's|@''REPLACE_FTELLO''@|0|g' \
+      -e 's|@''REPLACE_GETDELIM''@|0|g' \
+      -e 's|@''REPLACE_GETLINE''@|0|g' \
+      -e 's|@''REPLACE_OBSTACK_PRINTF''@|0|g' \
+      -e 's|@''REPLACE_PERROR''@|0|g' \
+      -e 's|@''REPLACE_POPEN''@|0|g' \
+      -e 's|@''REPLACE_PRINTF''@|0|g' \
+      -e 's|@''REPLACE_REMOVE''@|0|g' \
+      -e 's|@''REPLACE_RENAME''@|0|g' \
+      -e 's|@''REPLACE_RENAMEAT''@|0|g' \
+      -e 's|@''REPLACE_SNPRINTF''@|0|g' \
+      -e 's|@''REPLACE_SPRINTF''@|0|g' \
+      -e 's|@''REPLACE_STDIO_READ_FUNCS''@|0|g' \
+      -e 's|@''REPLACE_STDIO_WRITE_FUNCS''@|0|g' \
+      -e 's|@''REPLACE_TMPFILE''@|0|g' \
+      -e 's|@''REPLACE_VASPRINTF''@|0|g' \
+      -e 's|@''REPLACE_VDPRINTF''@|0|g' \
+      -e 's|@''REPLACE_VFPRINTF''@|0|g' \
+      -e 's|@''REPLACE_VPRINTF''@|0|g' \
+      -e 's|@''REPLACE_VSNPRINTF''@|0|g' \
+      -e 's|@''REPLACE_VSPRINTF''@|0|g' \
+      -e 's|@''ASM_SYMBOL_PREFIX''@||g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../patch-2.7.6/lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ../../patch-2.7.6/lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../patch-2.7.6/lib/warn-on-use.h'; \
+} > stdio.h-t && \
+mv stdio.h-t stdio.h
+rm -f stdlib.h-t stdlib.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_STDLIB_H''@|<stdlib.h>|g' \
+      -e 's/@''GNULIB__EXIT''@/0/g' \
+      -e 's/@''GNULIB_ATOLL''@/0/g' \
+      -e 's/@''GNULIB_CALLOC_POSIX''@/0/g' \
+      -e 's/@''GNULIB_CANONICALIZE_FILE_NAME''@/1/g' \
+      -e 's/@''GNULIB_GETLOADAVG''@/0/g' \
+      -e 's/@''GNULIB_GETSUBOPT''@/0/g' \
+      -e 's/@''GNULIB_GRANTPT''@/0/g' \
+      -e 's/@''GNULIB_MALLOC_POSIX''@/1/g' \
+      -e 's/@''GNULIB_MBTOWC''@/0/g' \
+      -e 's/@''GNULIB_MKDTEMP''@/0/g' \
+      -e 's/@''GNULIB_MKOSTEMP''@/0/g' \
+      -e 's/@''GNULIB_MKOSTEMPS''@/0/g' \
+      -e 's/@''GNULIB_MKSTEMP''@/0/g' \
+      -e 's/@''GNULIB_MKSTEMPS''@/0/g' \
+      -e 's/@''GNULIB_POSIX_OPENPT''@/0/g' \
+      -e 's/@''GNULIB_PTSNAME''@/0/g' \
+      -e 's/@''GNULIB_PTSNAME_R''@/0/g' \
+      -e 's/@''GNULIB_PUTENV''@/0/g' \
+      -e 's/@''GNULIB_QSORT_R''@/0/g' \
+      -e 's/@''GNULIB_RANDOM''@/0/g' \
+      -e 's/@''GNULIB_RANDOM_R''@/0/g' \
+      -e 's/@''GNULIB_REALLOC_POSIX''@/1/g' \
+      -e 's/@''GNULIB_REALLOCARRAY''@/0/g' \
+      -e 's/@''GNULIB_REALPATH''@/1/g' \
+      -e 's/@''GNULIB_RPMATCH''@/0/g' \
+      -e 's/@''GNULIB_SECURE_GETENV''@/0/g' \
+      -e 's/@''GNULIB_SETENV''@/1/g' \
+      -e 's/@''GNULIB_STRTOD''@/0/g' \
+      -e 's/@''GNULIB_STRTOLL''@/0/g' \
+      -e 's/@''GNULIB_STRTOULL''@/0/g' \
+      -e 's/@''GNULIB_SYSTEM_POSIX''@/0/g' \
+      -e 's/@''GNULIB_UNLOCKPT''@/0/g' \
+      -e 's/@''GNULIB_UNSETENV''@/1/g' \
+      -e 's/@''GNULIB_WCTOMB''@/0/g' \
+      < ../../patch-2.7.6/lib/stdlib.in.h | \
+  sed -e 's|@''HAVE__EXIT''@|1|g' \
+      -e 's|@''HAVE_ATOLL''@|1|g' \
+      -e 's|@''HAVE_CANONICALIZE_FILE_NAME''@|1|g' \
+      -e 's|@''HAVE_DECL_GETLOADAVG''@|1|g' \
+      -e 's|@''HAVE_GETSUBOPT''@|1|g' \
+      -e 's|@''HAVE_GRANTPT''@|1|g' \
+      -e 's|@''HAVE_DECL_INITSTATE''@|1|g' \
+      -e 's|@''HAVE_MKDTEMP''@|1|g' \
+      -e 's|@''HAVE_MKOSTEMP''@|1|g' \
+      -e 's|@''HAVE_MKOSTEMPS''@|1|g' \
+      -e 's|@''HAVE_MKSTEMP''@|1|g' \
+      -e 's|@''HAVE_MKSTEMPS''@|1|g' \
+      -e 's|@''HAVE_POSIX_OPENPT''@|1|g' \
+      -e 's|@''HAVE_PTSNAME''@|1|g' \
+      -e 's|@''HAVE_PTSNAME_R''@|1|g' \
+      -e 's|@''HAVE_QSORT_R''@|1|g' \
+      -e 's|@''HAVE_RANDOM''@|1|g' \
+      -e 's|@''HAVE_RANDOM_H''@|1|g' \
+      -e 's|@''HAVE_RANDOM_R''@|1|g' \
+      -e 's|@''HAVE_REALLOCARRAY''@|1|g' \
+      -e 's|@''HAVE_REALPATH''@|1|g' \
+      -e 's|@''HAVE_RPMATCH''@|1|g' \
+      -e 's|@''HAVE_SECURE_GETENV''@|1|g' \
+      -e 's|@''HAVE_DECL_SETENV''@|1|g' \
+      -e 's|@''HAVE_DECL_SETSTATE''@|1|g' \
+      -e 's|@''HAVE_STRTOD''@|1|g' \
+      -e 's|@''HAVE_STRTOLL''@|1|g' \
+      -e 's|@''HAVE_STRTOULL''@|1|g' \
+      -e 's|@''HAVE_STRUCT_RANDOM_DATA''@|1|g' \
+      -e 's|@''HAVE_SYS_LOADAVG_H''@|0|g' \
+      -e 's|@''HAVE_UNLOCKPT''@|1|g' \
+      -e 's|@''HAVE_DECL_UNSETENV''@|1|g' \
+      -e 's|@''REPLACE_CALLOC''@|0|g' \
+      -e 's|@''REPLACE_CANONICALIZE_FILE_NAME''@|0|g' \
+      -e 's|@''REPLACE_MALLOC''@|0|g' \
+      -e 's|@''REPLACE_MBTOWC''@|0|g' \
+      -e 's|@''REPLACE_MKSTEMP''@|0|g' \
+      -e 's|@''REPLACE_PTSNAME''@|0|g' \
+      -e 's|@''REPLACE_PTSNAME_R''@|0|g' \
+      -e 's|@''REPLACE_PUTENV''@|0|g' \
+      -e 's|@''REPLACE_QSORT_R''@|0|g' \
+      -e 's|@''REPLACE_RANDOM_R''@|0|g' \
+      -e 's|@''REPLACE_REALLOC''@|0|g' \
+      -e 's|@''REPLACE_REALPATH''@|0|g' \
+      -e 's|@''REPLACE_SETENV''@|0|g' \
+      -e 's|@''REPLACE_STRTOD''@|0|g' \
+      -e 's|@''REPLACE_UNSETENV''@|0|g' \
+      -e 's|@''REPLACE_WCTOMB''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../patch-2.7.6/lib/c++defs.h' \
+      -e '/definition of _Noreturn/r ../../patch-2.7.6/lib/_Noreturn.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ../../patch-2.7.6/lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../patch-2.7.6/lib/warn-on-use.h'; \
+} > stdlib.h-t && \
+mv stdlib.h-t stdlib.h
+rm -f string.h-t string.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_STRING_H''@|<string.h>|g' \
+      -e 's/@''GNULIB_EXPLICIT_BZERO''@/0/g' \
+      -e 's/@''GNULIB_FFSL''@/0/g' \
+      -e 's/@''GNULIB_FFSLL''@/0/g' \
+      -e 's/@''GNULIB_MBSLEN''@/0/g' \
+      -e 's/@''GNULIB_MBSNLEN''@/0/g' \
+      -e 's/@''GNULIB_MBSCHR''@/0/g' \
+      -e 's/@''GNULIB_MBSRCHR''@/0/g' \
+      -e 's/@''GNULIB_MBSSTR''@/0/g' \
+      -e 's/@''GNULIB_MBSCASECMP''@/0/g' \
+      -e 's/@''GNULIB_MBSNCASECMP''@/0/g' \
+      -e 's/@''GNULIB_MBSPCASECMP''@/0/g' \
+      -e 's/@''GNULIB_MBSCASESTR''@/0/g' \
+      -e 's/@''GNULIB_MBSCSPN''@/0/g' \
+      -e 's/@''GNULIB_MBSPBRK''@/0/g' \
+      -e 's/@''GNULIB_MBSSPN''@/0/g' \
+      -e 's/@''GNULIB_MBSSEP''@/0/g' \
+      -e 's/@''GNULIB_MBSTOK_R''@/0/g' \
+      -e 's/@''GNULIB_MEMCHR''@/1/g' \
+      -e 's/@''GNULIB_MEMMEM''@/0/g' \
+      -e 's/@''GNULIB_MEMPCPY''@/1/g' \
+      -e 's/@''GNULIB_MEMRCHR''@/1/g' \
+      -e 's/@''GNULIB_RAWMEMCHR''@/0/g' \
+      -e 's/@''GNULIB_STPCPY''@/0/g' \
+      -e 's/@''GNULIB_STPNCPY''@/0/g' \
+      -e 's/@''GNULIB_STRCHRNUL''@/0/g' \
+      -e 's/@''GNULIB_STRDUP''@/1/g' \
+      -e 's/@''GNULIB_STRNCAT''@/0/g' \
+      -e 's/@''GNULIB_STRNDUP''@/1/g' \
+      -e 's/@''GNULIB_STRNLEN''@/1/g' \
+      -e 's/@''GNULIB_STRPBRK''@/0/g' \
+      -e 's/@''GNULIB_STRSEP''@/0/g' \
+      -e 's/@''GNULIB_STRSTR''@/0/g' \
+      -e 's/@''GNULIB_STRCASESTR''@/0/g' \
+      -e 's/@''GNULIB_STRTOK_R''@/0/g' \
+      -e 's/@''GNULIB_STRERROR''@/1/g' \
+      -e 's/@''GNULIB_STRERROR_R''@/0/g' \
+      -e 's/@''GNULIB_STRSIGNAL''@/0/g' \
+      -e 's/@''GNULIB_STRVERSCMP''@/0/g' \
+      < ../../patch-2.7.6/lib/string.in.h | \
+  sed -e 's|@''HAVE_EXPLICIT_BZERO''@|1|g' \
+      -e 's|@''HAVE_FFSL''@|1|g' \
+      -e 's|@''HAVE_FFSLL''@|1|g' \
+      -e 's|@''HAVE_MBSLEN''@|0|g' \
+      -e 's|@''HAVE_MEMCHR''@|1|g' \
+      -e 's|@''HAVE_DECL_MEMMEM''@|1|g' \
+      -e 's|@''HAVE_MEMPCPY''@|1|g' \
+      -e 's|@''HAVE_DECL_MEMRCHR''@|1|g' \
+      -e 's|@''HAVE_RAWMEMCHR''@|1|g' \
+      -e 's|@''HAVE_STPCPY''@|1|g' \
+      -e 's|@''HAVE_STPNCPY''@|1|g' \
+      -e 's|@''HAVE_STRCHRNUL''@|1|g' \
+      -e 's|@''HAVE_DECL_STRDUP''@|1|g' \
+      -e 's|@''HAVE_DECL_STRNDUP''@|1|g' \
+      -e 's|@''HAVE_DECL_STRNLEN''@|1|g' \
+      -e 's|@''HAVE_STRPBRK''@|1|g' \
+      -e 's|@''HAVE_STRSEP''@|1|g' \
+      -e 's|@''HAVE_STRCASESTR''@|1|g' \
+      -e 's|@''HAVE_DECL_STRTOK_R''@|1|g' \
+      -e 's|@''HAVE_DECL_STRERROR_R''@|1|g' \
+      -e 's|@''HAVE_DECL_STRSIGNAL''@|1|g' \
+      -e 's|@''HAVE_STRVERSCMP''@|1|g' \
+      -e 's|@''REPLACE_MEMCHR''@|0|g' \
+      -e 's|@''REPLACE_MEMMEM''@|0|g' \
+      -e 's|@''REPLACE_STPNCPY''@|0|g' \
+      -e 's|@''REPLACE_STRCHRNUL''@|0|g' \
+      -e 's|@''REPLACE_STRDUP''@|0|g' \
+      -e 's|@''REPLACE_STRNCAT''@|0|g' \
+      -e 's|@''REPLACE_STRNDUP''@|0|g' \
+      -e 's|@''REPLACE_STRNLEN''@|0|g' \
+      -e 's|@''REPLACE_STRSTR''@|0|g' \
+      -e 's|@''REPLACE_STRCASESTR''@|0|g' \
+      -e 's|@''REPLACE_STRTOK_R''@|0|g' \
+      -e 's|@''REPLACE_STRERROR''@|0|g' \
+      -e 's|@''REPLACE_STRERROR_R''@|0|g' \
+      -e 's|@''REPLACE_STRSIGNAL''@|0|g' \
+      -e 's|@''UNDEFINE_STRTOK_R''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../patch-2.7.6/lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ../../patch-2.7.6/lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../patch-2.7.6/lib/warn-on-use.h'; \
+      < ../../patch-2.7.6/lib/string.in.h; \
+} > string.h-t && \
+mv string.h-t string.h
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p sys
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p sys
+rm -f sys/stat.h-t sys/stat.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_STAT_H''@|<sys/stat.h>|g' \
+      -e 's|@''WINDOWS_64_BIT_ST_SIZE''@|0|g' \
+      -e 's|@''WINDOWS_STAT_TIMESPEC''@|0|g' \
+      -e 's/@''GNULIB_FCHMODAT''@/1/g' \
+      -e 's/@''GNULIB_FSTAT''@/1/g' \
+      -e 's/@''GNULIB_FSTATAT''@/1/g' \
+      -e 's/@''GNULIB_FUTIMENS''@/0/g' \
+      -e 's/@''GNULIB_LCHMOD''@/0/g' \
+      -e 's/@''GNULIB_LSTAT''@/1/g' \
+      -e 's/@''GNULIB_MKDIRAT''@/1/g' \
+      -e 's/@''GNULIB_MKFIFO''@/0/g' \
+      -e 's/@''GNULIB_MKFIFOAT''@/0/g' \
+      -e 's/@''GNULIB_MKNOD''@/0/g' \
+      -e 's/@''GNULIB_MKNODAT''@/0/g' \
+      -e 's/@''GNULIB_STAT''@/1/g' \
+      -e 's/@''GNULIB_UTIMENSAT''@/1/g' \
+      -e 's/@''GNULIB_OVERRIDES_STRUCT_STAT''@/0/g' \
+      -e 's|@''HAVE_FCHMODAT''@|1|g' \
+      -e 's|@''HAVE_FSTATAT''@|1|g' \
+      -e 's|@''HAVE_FUTIMENS''@|1|g' \
+      -e 's|@''HAVE_LCHMOD''@|1|g' \
+      -e 's|@''HAVE_LSTAT''@|1|g' \
+      -e 's|@''HAVE_MKDIRAT''@|1|g' \
+      -e 's|@''HAVE_MKFIFO''@|1|g' \
+      -e 's|@''HAVE_MKFIFOAT''@|1|g' \
+      -e 's|@''HAVE_MKNOD''@|1|g' \
+      -e 's|@''HAVE_MKNODAT''@|1|g' \
+      -e 's|@''HAVE_UTIMENSAT''@|1|g' \
+      -e 's|@''REPLACE_FSTAT''@|0|g' \
+      -e 's|@''REPLACE_FSTATAT''@|0|g' \
+      -e 's|@''REPLACE_FUTIMENS''@|0|g' \
+      -e 's|@''REPLACE_LSTAT''@|0|g' \
+      -e 's|@''REPLACE_MKDIR''@|0|g' \
+      -e 's|@''REPLACE_MKFIFO''@|0|g' \
+      -e 's|@''REPLACE_MKNOD''@|0|g' \
+      -e 's|@''REPLACE_STAT''@|0|g' \
+      -e 's|@''REPLACE_UTIMENSAT''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../patch-2.7.6/lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ../../patch-2.7.6/lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../patch-2.7.6/lib/warn-on-use.h' \
+      < ../../patch-2.7.6/lib/sys_stat.in.h; \
+} > sys/stat.h-t && \
+mv sys/stat.h-t sys/stat.h
+rm -f sys/time.h-t sys/time.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's/@''HAVE_SYS_TIME_H''@/1/g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_TIME_H''@|<sys/time.h>|g' \
+      -e 's/@''GNULIB_GETTIMEOFDAY''@/1/g' \
+      -e 's|@''HAVE_WINSOCK2_H''@|0|g' \
+      -e 's/@''HAVE_GETTIMEOFDAY''@/1/g' \
+      -e 's/@''HAVE_STRUCT_TIMEVAL''@/1/g' \
+      -e 's/@''REPLACE_GETTIMEOFDAY''@/0/g' \
+      -e 's/@''REPLACE_STRUCT_TIMEVAL''@/0/g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../patch-2.7.6/lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ../../patch-2.7.6/lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../patch-2.7.6/lib/warn-on-use.h' \
+      < ../../patch-2.7.6/lib/sys_time.in.h; \
+} > sys/time.h-t && \
+mv sys/time.h-t sys/time.h
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p sys
+rm -f sys/types.h-t sys/types.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_TYPES_H''@|<sys/types.h>|g' \
+      -e 's|@''WINDOWS_64_BIT_OFF_T''@|0|g' \
+      -e 's|@''WINDOWS_STAT_INODES''@|0|g' \
+      < ../../patch-2.7.6/lib/sys_types.in.h; \
+} > sys/types.h-t && \
+mv sys/types.h-t sys/types.h
+rm -f time.h-t time.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_TIME_H''@|<time.h>|g' \
+      -e 's/@''GNULIB_CTIME''@/0/g' \
+      -e 's/@''GNULIB_LOCALTIME''@/0/g' \
+      -e 's/@''GNULIB_MKTIME''@/1/g' \
+      -e 's/@''GNULIB_NANOSLEEP''@/0/g' \
+      -e 's/@''GNULIB_STRFTIME''@/0/g' \
+      -e 's/@''GNULIB_STRPTIME''@/0/g' \
+      -e 's/@''GNULIB_TIMEGM''@/1/g' \
+      -e 's/@''GNULIB_TIME_R''@/1/g' \
+      -e 's/@''GNULIB_TIME_RZ''@/1/g' \
+      -e 's/@''GNULIB_TZSET''@/1/g' \
+      -e 's|@''HAVE_DECL_LOCALTIME_R''@|1|g' \
+      -e 's|@''HAVE_NANOSLEEP''@|1|g' \
+      -e 's|@''HAVE_STRPTIME''@|1|g' \
+      -e 's|@''HAVE_TIMEGM''@|1|g' \
+      -e 's|@''HAVE_TIMEZONE_T''@|0|g' \
+      -e 's|@''HAVE_TZSET''@|1|g' \
+      -e 's|@''REPLACE_CTIME''@|GNULIB_PORTCHECK|g' \
+      -e 's|@''REPLACE_GMTIME''@|0|g' \
+      -e 's|@''REPLACE_LOCALTIME''@|0|g' \
+      -e 's|@''REPLACE_LOCALTIME_R''@|0|g' \
+      -e 's|@''REPLACE_MKTIME''@|0|g' \
+      -e 's|@''REPLACE_NANOSLEEP''@|GNULIB_PORTCHECK|g' \
+      -e 's|@''REPLACE_STRFTIME''@|GNULIB_PORTCHECK|g' \
+      -e 's|@''REPLACE_TIMEGM''@|0|g' \
+      -e 's|@''REPLACE_TZSET''@|0|g' \
+      -e 's|@''PTHREAD_H_DEFINES_STRUCT_TIMESPEC''@|0|g' \
+      -e 's|@''SYS_TIME_H_DEFINES_STRUCT_TIMESPEC''@|0|g' \
+      -e 's|@''TIME_H_DEFINES_STRUCT_TIMESPEC''@|1|g' \
+      -e 's|@''UNISTD_H_DEFINES_STRUCT_TIMESPEC''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../patch-2.7.6/lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ../../patch-2.7.6/lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../patch-2.7.6/lib/warn-on-use.h' \
+      < ../../patch-2.7.6/lib/time.in.h; \
+} > time.h-t && \
+mv time.h-t time.h
+rm -f unistd.h-t unistd.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''HAVE_UNISTD_H''@|1|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_UNISTD_H''@|<unistd.h>|g' \
+      -e 's|@''WINDOWS_64_BIT_OFF_T''@|0|g' \
+      -e 's/@''GNULIB_CHDIR''@/1/g' \
+      -e 's/@''GNULIB_CHOWN''@/1/g' \
+      -e 's/@''GNULIB_CLOSE''@/1/g' \
+      -e 's/@''GNULIB_DUP''@/0/g' \
+      -e 's/@''GNULIB_DUP2''@/1/g' \
+      -e 's/@''GNULIB_DUP3''@/0/g' \
+      -e 's/@''GNULIB_ENVIRON''@/1/g' \
+      -e 's/@''GNULIB_EUIDACCESS''@/1/g' \
+      -e 's/@''GNULIB_FACCESSAT''@/1/g' \
+      -e 's/@''GNULIB_FCHDIR''@/1/g' \
+      -e 's/@''GNULIB_FCHOWNAT''@/1/g' \
+      -e 's/@''GNULIB_FDATASYNC''@/0/g' \
+      -e 's/@''GNULIB_FSYNC''@/0/g' \
+      -e 's/@''GNULIB_FTRUNCATE''@/0/g' \
+      -e 's/@''GNULIB_GETCWD''@/1/g' \
+      -e 's/@''GNULIB_GETDOMAINNAME''@/0/g' \
+      -e 's/@''GNULIB_GETDTABLESIZE''@/1/g' \
+      -e 's/@''GNULIB_GETGROUPS''@/1/g' \
+      -e 's/@''GNULIB_GETHOSTNAME''@/0/g' \
+      -e 's/@''GNULIB_GETLOGIN''@/0/g' \
+      -e 's/@''GNULIB_GETLOGIN_R''@/0/g' \
+      -e 's/@''GNULIB_GETPAGESIZE''@/0/g' \
+      -e 's/@''GNULIB_GETUSERSHELL''@/0/g' \
+      -e 's/@''GNULIB_GROUP_MEMBER''@/1/g' \
+      -e 's/@''GNULIB_ISATTY''@/0/g' \
+      -e 's/@''GNULIB_LCHOWN''@/1/g' \
+      -e 's/@''GNULIB_LINK''@/0/g' \
+      -e 's/@''GNULIB_LINKAT''@/0/g' \
+      -e 's/@''GNULIB_LSEEK''@/0/g' \
+      -e 's/@''GNULIB_PIPE''@/0/g' \
+      -e 's/@''GNULIB_PIPE2''@/0/g' \
+      -e 's/@''GNULIB_PREAD''@/0/g' \
+      -e 's/@''GNULIB_PWRITE''@/0/g' \
+      -e 's/@''GNULIB_READ''@/0/g' \
+      -e 's/@''GNULIB_READLINK''@/1/g' \
+      -e 's/@''GNULIB_READLINKAT''@/1/g' \
+      -e 's/@''GNULIB_RMDIR''@/1/g' \
+      -e 's/@''GNULIB_SETHOSTNAME''@/0/g' \
+      -e 's/@''GNULIB_SLEEP''@/0/g' \
+      -e 's/@''GNULIB_SYMLINK''@/1/g' \
+      -e 's/@''GNULIB_SYMLINKAT''@/1/g' \
+      -e 's/@''GNULIB_TRUNCATE''@/0/g' \
+      -e 's/@''GNULIB_TTYNAME_R''@/0/g' \
+      -e 's/@''GNULIB_UNISTD_H_GETOPT''@/0/g' \
+      -e 's/@''GNULIB_UNISTD_H_NONBLOCKING''@/0/g' \
+      -e 's/@''GNULIB_UNISTD_H_SIGPIPE''@/0/g' \
+      -e 's/@''GNULIB_UNLINK''@/1/g' \
+      -e 's/@''GNULIB_UNLINKAT''@/1/g' \
+      -e 's/@''GNULIB_USLEEP''@/0/g' \
+      -e 's/@''GNULIB_WRITE''@/1/g' \
+      < ../../patch-2.7.6/lib/unistd.in.h | \
+  sed -e 's|@''HAVE_CHOWN''@|1|g' \
+      -e 's|@''HAVE_DUP2''@|1|g' \
+      -e 's|@''HAVE_DUP3''@|1|g' \
+      -e 's|@''HAVE_EUIDACCESS''@|1|g' \
+      -e 's|@''HAVE_FACCESSAT''@|1|g' \
+      -e 's|@''HAVE_FCHDIR''@|1|g' \
+      -e 's|@''HAVE_FCHOWNAT''@|1|g' \
+      -e 's|@''HAVE_FDATASYNC''@|1|g' \
+      -e 's|@''HAVE_FSYNC''@|1|g' \
+      -e 's|@''HAVE_FTRUNCATE''@|1|g' \
+      -e 's|@''HAVE_GETDTABLESIZE''@|1|g' \
+      -e 's|@''HAVE_GETGROUPS''@|1|g' \
+      -e 's|@''HAVE_GETHOSTNAME''@|1|g' \
+      -e 's|@''HAVE_GETPAGESIZE''@|1|g' \
+      -e 's|@''HAVE_GROUP_MEMBER''@|1|g' \
+      -e 's|@''HAVE_LCHOWN''@|1|g' \
+      -e 's|@''HAVE_LINK''@|1|g' \
+      -e 's|@''HAVE_LINKAT''@|1|g' \
+      -e 's|@''HAVE_PIPE''@|1|g' \
+      -e 's|@''HAVE_PIPE2''@|1|g' \
+      -e 's|@''HAVE_PREAD''@|1|g' \
+      -e 's|@''HAVE_PWRITE''@|1|g' \
+      -e 's|@''HAVE_READLINK''@|1|g' \
+      -e 's|@''HAVE_READLINKAT''@|1|g' \
+      -e 's|@''HAVE_SETHOSTNAME''@|1|g' \
+      -e 's|@''HAVE_SLEEP''@|1|g' \
+      -e 's|@''HAVE_SYMLINK''@|1|g' \
+      -e 's|@''HAVE_SYMLINKAT''@|1|g' \
+      -e 's|@''HAVE_TRUNCATE''@|1|g' \
+      -e 's|@''HAVE_UNLINKAT''@|1|g' \
+      -e 's|@''HAVE_USLEEP''@|1|g' \
+      -e 's|@''HAVE_DECL_ENVIRON''@|1|g' \
+      -e 's|@''HAVE_DECL_FCHDIR''@|1|g' \
+      -e 's|@''HAVE_DECL_FDATASYNC''@|1|g' \
+      -e 's|@''HAVE_DECL_GETDOMAINNAME''@|1|g' \
+      -e 's|@''HAVE_DECL_GETLOGIN''@|1|g' \
+      -e 's|@''HAVE_DECL_GETLOGIN_R''@|1|g' \
+      -e 's|@''HAVE_DECL_GETPAGESIZE''@|1|g' \
+      -e 's|@''HAVE_DECL_GETUSERSHELL''@|1|g' \
+      -e 's|@''HAVE_DECL_SETHOSTNAME''@|1|g' \
+      -e 's|@''HAVE_DECL_TTYNAME_R''@|1|g' \
+      -e 's|@''HAVE_OS_H''@|0|g' \
+      -e 's|@''HAVE_SYS_PARAM_H''@|0|g' \
+  | \
+  sed -e 's|@''REPLACE_CHOWN''@|0|g' \
+      -e 's|@''REPLACE_CLOSE''@|0|g' \
+      -e 's|@''REPLACE_DUP''@|0|g' \
+      -e 's|@''REPLACE_DUP2''@|0|g' \
+      -e 's|@''REPLACE_FACCESSAT''@|0|g' \
+      -e 's|@''REPLACE_FCHOWNAT''@|0|g' \
+      -e 's|@''REPLACE_FTRUNCATE''@|0|g' \
+      -e 's|@''REPLACE_GETCWD''@|0|g' \
+      -e 's|@''REPLACE_GETDOMAINNAME''@|0|g' \
+      -e 's|@''REPLACE_GETDTABLESIZE''@|0|g' \
+      -e 's|@''REPLACE_GETLOGIN_R''@|0|g' \
+      -e 's|@''REPLACE_GETGROUPS''@|0|g' \
+      -e 's|@''REPLACE_GETPAGESIZE''@|0|g' \
+      -e 's|@''REPLACE_ISATTY''@|0|g' \
+      -e 's|@''REPLACE_LCHOWN''@|0|g' \
+      -e 's|@''REPLACE_LINK''@|0|g' \
+      -e 's|@''REPLACE_LINKAT''@|0|g' \
+      -e 's|@''REPLACE_LSEEK''@|0|g' \
+      -e 's|@''REPLACE_PREAD''@|0|g' \
+      -e 's|@''REPLACE_PWRITE''@|0|g' \
+      -e 's|@''REPLACE_READ''@|0|g' \
+      -e 's|@''REPLACE_READLINK''@|0|g' \
+      -e 's|@''REPLACE_READLINKAT''@|0|g' \
+      -e 's|@''REPLACE_RMDIR''@|0|g' \
+      -e 's|@''REPLACE_SLEEP''@|0|g' \
+      -e 's|@''REPLACE_SYMLINK''@|0|g' \
+      -e 's|@''REPLACE_SYMLINKAT''@|0|g' \
+      -e 's|@''REPLACE_TRUNCATE''@|0|g' \
+      -e 's|@''REPLACE_TTYNAME_R''@|0|g' \
+      -e 's|@''REPLACE_UNLINK''@|0|g' \
+      -e 's|@''REPLACE_UNLINKAT''@|0|g' \
+      -e 's|@''REPLACE_USLEEP''@|0|g' \
+      -e 's|@''REPLACE_WRITE''@|0|g' \
+      -e 's|@''UNISTD_H_HAVE_WINSOCK2_H''@|0|g' \
+      -e 's|@''UNISTD_H_HAVE_WINSOCK2_H_AND_USE_SOCKETS''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../patch-2.7.6/lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ../../patch-2.7.6/lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../patch-2.7.6/lib/warn-on-use.h'; \
+} > unistd.h-t && \
+mv unistd.h-t unistd.h
+rm -f wchar.h-t wchar.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''HAVE_FEATURES_H''@|1|g' \
+      -e 's|@''NEXT_WCHAR_H''@|<wchar.h>|g' \
+      -e 's|@''HAVE_WCHAR_H''@|1|g' \
+      -e 's/@''HAVE_CRTDEFS_H''@/0/g' \
+      -e 's/@''GNULIB_OVERRIDES_WINT_T''@/0/g' \
+      -e 's/@''GNULIB_BTOWC''@/0/g' \
+      -e 's/@''GNULIB_WCTOB''@/0/g' \
+      -e 's/@''GNULIB_MBSINIT''@/1/g' \
+      -e 's/@''GNULIB_MBRTOWC''@/1/g' \
+      -e 's/@''GNULIB_MBRLEN''@/0/g' \
+      -e 's/@''GNULIB_MBSRTOWCS''@/0/g' \
+      -e 's/@''GNULIB_MBSNRTOWCS''@/0/g' \
+      -e 's/@''GNULIB_WCRTOMB''@/0/g' \
+      -e 's/@''GNULIB_WCSRTOMBS''@/0/g' \
+      -e 's/@''GNULIB_WCSNRTOMBS''@/0/g' \
+      -e 's/@''GNULIB_WCWIDTH''@/0/g' \
+      -e 's/@''GNULIB_WMEMCHR''@/0/g' \
+      -e 's/@''GNULIB_WMEMCMP''@/0/g' \
+      -e 's/@''GNULIB_WMEMCPY''@/0/g' \
+      -e 's/@''GNULIB_WMEMMOVE''@/0/g' \
+      -e 's/@''GNULIB_WMEMSET''@/0/g' \
+      -e 's/@''GNULIB_WCSLEN''@/0/g' \
+      -e 's/@''GNULIB_WCSNLEN''@/0/g' \
+      -e 's/@''GNULIB_WCSCPY''@/0/g' \
+      -e 's/@''GNULIB_WCPCPY''@/0/g' \
+      -e 's/@''GNULIB_WCSNCPY''@/0/g' \
+      -e 's/@''GNULIB_WCPNCPY''@/0/g' \
+      -e 's/@''GNULIB_WCSCAT''@/0/g' \
+      -e 's/@''GNULIB_WCSNCAT''@/0/g' \
+      -e 's/@''GNULIB_WCSCMP''@/0/g' \
+      -e 's/@''GNULIB_WCSNCMP''@/0/g' \
+      -e 's/@''GNULIB_WCSCASECMP''@/0/g' \
+      -e 's/@''GNULIB_WCSNCASECMP''@/0/g' \
+      -e 's/@''GNULIB_WCSCOLL''@/0/g' \
+      -e 's/@''GNULIB_WCSXFRM''@/0/g' \
+      -e 's/@''GNULIB_WCSDUP''@/0/g' \
+      -e 's/@''GNULIB_WCSCHR''@/0/g' \
+      -e 's/@''GNULIB_WCSRCHR''@/0/g' \
+      -e 's/@''GNULIB_WCSCSPN''@/0/g' \
+      -e 's/@''GNULIB_WCSSPN''@/0/g' \
+      -e 's/@''GNULIB_WCSPBRK''@/0/g' \
+      -e 's/@''GNULIB_WCSSTR''@/0/g' \
+      -e 's/@''GNULIB_WCSTOK''@/0/g' \
+      -e 's/@''GNULIB_WCSWIDTH''@/0/g' \
+      -e 's/@''GNULIB_WCSFTIME''@/0/g' \
+      < ../../patch-2.7.6/lib/wchar.in.h | \
+  sed -e 's|@''HAVE_WINT_T''@|1|g' \
+      -e 's|@''HAVE_BTOWC''@|1|g' \
+      -e 's|@''HAVE_MBSINIT''@|1|g' \
+      -e 's|@''HAVE_MBRTOWC''@|1|g' \
+      -e 's|@''HAVE_MBRLEN''@|1|g' \
+      -e 's|@''HAVE_MBSRTOWCS''@|1|g' \
+      -e 's|@''HAVE_MBSNRTOWCS''@|1|g' \
+      -e 's|@''HAVE_WCRTOMB''@|1|g' \
+      -e 's|@''HAVE_WCSRTOMBS''@|1|g' \
+      -e 's|@''HAVE_WCSNRTOMBS''@|1|g' \
+      -e 's|@''HAVE_WMEMCHR''@|1|g' \
+      -e 's|@''HAVE_WMEMCMP''@|1|g' \
+      -e 's|@''HAVE_WMEMCPY''@|1|g' \
+      -e 's|@''HAVE_WMEMMOVE''@|1|g' \
+      -e 's|@''HAVE_WMEMSET''@|1|g' \
+      -e 's|@''HAVE_WCSLEN''@|1|g' \
+      -e 's|@''HAVE_WCSNLEN''@|1|g' \
+      -e 's|@''HAVE_WCSCPY''@|1|g' \
+      -e 's|@''HAVE_WCPCPY''@|1|g' \
+      -e 's|@''HAVE_WCSNCPY''@|1|g' \
+      -e 's|@''HAVE_WCPNCPY''@|1|g' \
+      -e 's|@''HAVE_WCSCAT''@|1|g' \
+      -e 's|@''HAVE_WCSNCAT''@|1|g' \
+      -e 's|@''HAVE_WCSCMP''@|1|g' \
+      -e 's|@''HAVE_WCSNCMP''@|1|g' \
+      -e 's|@''HAVE_WCSCASECMP''@|1|g' \
+      -e 's|@''HAVE_WCSNCASECMP''@|1|g' \
+      -e 's|@''HAVE_WCSCOLL''@|1|g' \
+      -e 's|@''HAVE_WCSXFRM''@|1|g' \
+      -e 's|@''HAVE_WCSDUP''@|1|g' \
+      -e 's|@''HAVE_WCSCHR''@|1|g' \
+      -e 's|@''HAVE_WCSRCHR''@|1|g' \
+      -e 's|@''HAVE_WCSCSPN''@|1|g' \
+      -e 's|@''HAVE_WCSSPN''@|1|g' \
+      -e 's|@''HAVE_WCSPBRK''@|1|g' \
+      -e 's|@''HAVE_WCSSTR''@|1|g' \
+      -e 's|@''HAVE_WCSTOK''@|1|g' \
+      -e 's|@''HAVE_WCSWIDTH''@|1|g' \
+      -e 's|@''HAVE_WCSFTIME''@|1|g' \
+      -e 's|@''HAVE_DECL_WCTOB''@|1|g' \
+      -e 's|@''HAVE_DECL_WCWIDTH''@|1|g' \
+  | \
+  sed -e 's|@''REPLACE_MBSTATE_T''@|0|g' \
+      -e 's|@''REPLACE_BTOWC''@|0|g' \
+      -e 's|@''REPLACE_WCTOB''@|0|g' \
+      -e 's|@''REPLACE_MBSINIT''@|0|g' \
+      -e 's|@''REPLACE_MBRTOWC''@|1|g' \
+      -e 's|@''REPLACE_MBRLEN''@|0|g' \
+      -e 's|@''REPLACE_MBSRTOWCS''@|0|g' \
+      -e 's|@''REPLACE_MBSNRTOWCS''@|0|g' \
+      -e 's|@''REPLACE_WCRTOMB''@|0|g' \
+      -e 's|@''REPLACE_WCSRTOMBS''@|0|g' \
+      -e 's|@''REPLACE_WCSNRTOMBS''@|0|g' \
+      -e 's|@''REPLACE_WCWIDTH''@|0|g' \
+      -e 's|@''REPLACE_WCSWIDTH''@|0|g' \
+      -e 's|@''REPLACE_WCSFTIME''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../patch-2.7.6/lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ../../patch-2.7.6/lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../patch-2.7.6/lib/warn-on-use.h'; \
+} > wchar.h-t && \
+mv wchar.h-t wchar.h
+rm -f wctype.h-t wctype.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's/@''HAVE_WCTYPE_H''@/1/g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_WCTYPE_H''@|<wctype.h>|g' \
+      -e 's/@''HAVE_CRTDEFS_H''@/0/g' \
+      -e 's/@''GNULIB_OVERRIDES_WINT_T''@/0/g' \
+      -e 's/@''GNULIB_ISWBLANK''@/0/g' \
+      -e 's/@''GNULIB_WCTYPE''@/0/g' \
+      -e 's/@''GNULIB_ISWCTYPE''@/0/g' \
+      -e 's/@''GNULIB_WCTRANS''@/0/g' \
+      -e 's/@''GNULIB_TOWCTRANS''@/0/g' \
+      -e 's/@''HAVE_ISWBLANK''@/1/g' \
+      -e 's/@''HAVE_ISWCNTRL''@/1/g' \
+      -e 's/@''HAVE_WCTYPE_T''@/1/g' \
+      -e 's/@''HAVE_WCTRANS_T''@/1/g' \
+      -e 's/@''HAVE_WINT_T''@/1/g' \
+      -e 's/@''REPLACE_ISWBLANK''@/0/g' \
+      -e 's/@''REPLACE_ISWCNTRL''@/0/g' \
+      -e 's/@''REPLACE_TOWLOWER''@/0/g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../patch-2.7.6/lib/c++defs.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../patch-2.7.6/lib/warn-on-use.h' \
+      < ../../patch-2.7.6/lib/wctype.in.h; \
+} > wctype.h-t && \
+mv wctype.h-t wctype.h
+make  all-am
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/build/lib'
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o argmatch.o ../../patch-2.7.6/lib/argmatch.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o backupfile.o ../../patch-2.7.6/lib/backupfile.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o backup-find.o ../../patch-2.7.6/lib/backup-find.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o bitrotate.o ../../patch-2.7.6/lib/bitrotate.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o c-ctype.o ../../patch-2.7.6/lib/c-ctype.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o c-strcasecmp.o ../../patch-2.7.6/lib/c-strcasecmp.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o c-strncasecmp.o ../../patch-2.7.6/lib/c-strncasecmp.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o cloexec.o ../../patch-2.7.6/lib/cloexec.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o opendir-safer.o ../../patch-2.7.6/lib/opendir-safer.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o dirname.o ../../patch-2.7.6/lib/dirname.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o basename.o ../../patch-2.7.6/lib/basename.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o dirname-lgpl.o ../../patch-2.7.6/lib/dirname-lgpl.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o basename-lgpl.o ../../patch-2.7.6/lib/basename-lgpl.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o stripslash.o ../../patch-2.7.6/lib/stripslash.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o exitfail.o ../../patch-2.7.6/lib/exitfail.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o chmodat.o ../../patch-2.7.6/lib/chmodat.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o chownat.o ../../patch-2.7.6/lib/chownat.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o fd-hook.o ../../patch-2.7.6/lib/fd-hook.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o fd-safer-flag.o ../../patch-2.7.6/lib/fd-safer-flag.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o dup-safer-flag.o ../../patch-2.7.6/lib/dup-safer-flag.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o filenamecat-lgpl.o ../../patch-2.7.6/lib/filenamecat-lgpl.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o full-write.o ../../patch-2.7.6/lib/full-write.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o getprogname.o ../../patch-2.7.6/lib/getprogname.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o gettime.o ../../patch-2.7.6/lib/gettime.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o hard-locale.o ../../patch-2.7.6/lib/hard-locale.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o hash.o ../../patch-2.7.6/lib/hash.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o gl_linked_list.o ../../patch-2.7.6/lib/gl_linked_list.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o gl_list.o ../../patch-2.7.6/lib/gl_list.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o localcharset.o ../../patch-2.7.6/lib/localcharset.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o malloca.o ../../patch-2.7.6/lib/malloca.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o nstrftime.o ../../patch-2.7.6/lib/nstrftime.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o openat-die.o ../../patch-2.7.6/lib/openat-die.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o parse-datetime.o ../../patch-2.7.6/lib/parse-datetime.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o progname.o ../../patch-2.7.6/lib/progname.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o quotearg.o ../../patch-2.7.6/lib/quotearg.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o renameat2.o ../../patch-2.7.6/lib/renameat2.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o safe-write.o ../../patch-2.7.6/lib/safe-write.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o save-cwd.o ../../patch-2.7.6/lib/save-cwd.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o stat-time.o ../../patch-2.7.6/lib/stat-time.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o statat.o ../../patch-2.7.6/lib/statat.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o tempname.o ../../patch-2.7.6/lib/tempname.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o timespec.o ../../patch-2.7.6/lib/timespec.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o unistd.o ../../patch-2.7.6/lib/unistd.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o dup-safer.o ../../patch-2.7.6/lib/dup-safer.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o fd-safer.o ../../patch-2.7.6/lib/fd-safer.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o pipe-safer.o ../../patch-2.7.6/lib/pipe-safer.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o utimens.o ../../patch-2.7.6/lib/utimens.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o verror.o ../../patch-2.7.6/lib/verror.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o wctype-h.o ../../patch-2.7.6/lib/wctype-h.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o xmalloc.o ../../patch-2.7.6/lib/xmalloc.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o xalloc-die.o ../../patch-2.7.6/lib/xalloc-die.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o gl_xlist.o ../../patch-2.7.6/lib/gl_xlist.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o xsize.o ../../patch-2.7.6/lib/xsize.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o xstrndup.o ../../patch-2.7.6/lib/xstrndup.c
+../../patch-2.7.6/lib/utimens.c: In function 'fdutimens':
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o xvasprintf.o ../../patch-2.7.6/lib/xvasprintf.c
+../../patch-2.7.6/lib/utimens.c:383:17: warning: 'update_timespec' accessing 16 bytes in a region of size 8 [-Wstringop-overflow=]
+  383 |       if (ts && update_timespec (&st, &ts))
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../patch-2.7.6/lib/utimens.c:383:17: note: referencing argument 2 of type 'struct timespec **'
+../../patch-2.7.6/lib/utimens.c:134:1: note: in a call to function 'update_timespec'
+  134 | update_timespec (struct stat const *statbuf, struct timespec *ts[2])
+      | ^~~~~~~~~~~~~~~
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o xasprintf.o ../../patch-2.7.6/lib/xasprintf.c
+../../patch-2.7.6/lib/utimens.c: In function 'lutimens':
+../../patch-2.7.6/lib/utimens.c:596:17: warning: 'update_timespec' accessing 16 bytes in a region of size 8 [-Wstringop-overflow=]
+  596 |       if (ts && update_timespec (&st, &ts))
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../patch-2.7.6/lib/utimens.c:596:17: note: referencing argument 2 of type 'struct timespec **'
+../../patch-2.7.6/lib/utimens.c:134:1: note: in a call to function 'update_timespec'
+  134 | update_timespec (struct stat const *statbuf, struct timespec *ts[2])
+      | ^~~~~~~~~~~~~~~
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o asnprintf.o ../../patch-2.7.6/lib/asnprintf.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o chdir-long.o ../../patch-2.7.6/lib/chdir-long.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o fcntl.o ../../patch-2.7.6/lib/fcntl.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o localtime-buffer.o ../../patch-2.7.6/lib/localtime-buffer.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o mbrtowc.o ../../patch-2.7.6/lib/mbrtowc.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o mktime.o ../../patch-2.7.6/lib/mktime.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o openat-proc.o ../../patch-2.7.6/lib/openat-proc.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o printf-args.o ../../patch-2.7.6/lib/printf-args.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o printf-parse.o ../../patch-2.7.6/lib/printf-parse.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o time_rz.o ../../patch-2.7.6/lib/time_rz.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o vasnprintf.o ../../patch-2.7.6/lib/vasnprintf.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/lib -I..   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o xmemdup0.o ../../patch-2.7.6/lib/xmemdup0.c
+rm -f t-charset.alias charset.alias && \
+/bin/bash ../../patch-2.7.6/lib/config.charset 'x86_64-pc-linux-gnu' > t-charset.alias && \
+mv t-charset.alias charset.alias
+rm -f t-ref-add.sed ref-add.sed && \
+sed -e '/^#/d' -e 's/@''PACKAGE''@/patch/g' ../../patch-2.7.6/lib/ref-add.sin > t-ref-add.sed && \
+mv t-ref-add.sed ref-add.sed
+rm -f t-ref-del.sed ref-del.sed && \
+sed -e '/^#/d' -e 's/@''PACKAGE''@/patch/g' ../../patch-2.7.6/lib/ref-del.sin > t-ref-del.sed && \
+mv t-ref-del.sed ref-del.sed
+rm -f libpatch.a
+ar cr libpatch.a argmatch.o backupfile.o backup-find.o bitrotate.o c-ctype.o c-strcasecmp.o c-strncasecmp.o cloexec.o opendir-safer.o dirname.o basename.o dirname-lgpl.o basename-lgpl.o stripslash.o exitfail.o chmodat.o chownat.o fd-hook.o fd-safer-flag.o dup-safer-flag.o filenamecat-lgpl.o full-write.o getprogname.o gettime.o hard-locale.o hash.o gl_linked_list.o gl_list.o localcharset.o malloca.o nstrftime.o openat-die.o parse-datetime.o progname.o quotearg.o renameat2.o safe-write.o save-cwd.o stat-time.o statat.o tempname.o timespec.o unistd.o dup-safer.o fd-safer.o pipe-safer.o utimens.o verror.o wctype-h.o xmalloc.o xalloc-die.o gl_xlist.o xsize.o xstrndup.o xvasprintf.o xasprintf.o asnprintf.o chdir-long.o fcntl.o localtime-buffer.o mbrtowc.o mktime.o openat-proc.o printf-args.o printf-parse.o time_rz.o vasnprintf.o xmemdup0.o
+ranlib -D libpatch.a
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/build/lib'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/build/lib'
+Making all in src
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/build/src'
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/src -I..  -I../lib -I../../patch-2.7.6/lib -DENABLE_MERGE -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o inp.o ../../patch-2.7.6/src/inp.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/src -I..  -I../lib -I../../patch-2.7.6/lib -DENABLE_MERGE -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o patch.o ../../patch-2.7.6/src/patch.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/src -I..  -I../lib -I../../patch-2.7.6/lib -DENABLE_MERGE -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o pch.o ../../patch-2.7.6/src/pch.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/src -I..  -I../lib -I../../patch-2.7.6/lib -DENABLE_MERGE -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o safe.o ../../patch-2.7.6/src/safe.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/src -I..  -I../lib -I../../patch-2.7.6/lib -DENABLE_MERGE -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o util.o ../../patch-2.7.6/src/util.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/src -I..  -I../lib -I../../patch-2.7.6/lib -DENABLE_MERGE -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o version.o ../../patch-2.7.6/src/version.c
+gcc  -DHAVE_CONFIG_H -I. -I../../patch-2.7.6/src -I..  -I../lib -I../../patch-2.7.6/lib -DENABLE_MERGE -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o merge.o ../../patch-2.7.6/src/merge.c
+gcc    -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/include -O2 -pipe  -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/lib                         -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/lib                         -Wl,--enable-new-dtags                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/lib                         -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2 -o patch inp.o patch.o pch.o safe.o util.o version.o merge.o  ../lib/libpatch.a  -lattr  
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/build/src'
+Making all in tests
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/build/tests'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/build/tests'
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/build'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/build'
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/build'
+DEBUG: Shell function do_compile finished

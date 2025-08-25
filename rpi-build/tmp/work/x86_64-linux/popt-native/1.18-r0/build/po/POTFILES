@@ -1,0 +1,6 @@
+     ../../popt-1.18/src/popt.c \
+     ../../popt-1.18/src/popt.h \
+     ../../popt-1.18/src/poptconfig.c \
+     ../../popt-1.18/src/popthelp.c \
+     ../../popt-1.18/src/poptint.c \
+     ../../popt-1.18/src/poptparse.c

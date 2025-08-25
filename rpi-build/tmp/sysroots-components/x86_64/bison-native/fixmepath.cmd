@@ -1,0 +1,1 @@
+sed -e 's:^:FIXMEFINALSSTATEINST:g' /home/ubuntu/yocto/rpi-build/tmp/sysroots-components/x86_64/bison-native/fixmepath | xargs sed -i -e 's:FIXMESTAGINGDIRHOST:FIXMEFINALSSTATEHOST:g' -e 's:FIXME_HOSTTOOLS_DIR:/home/ubuntu/yocto/rpi-build/tmp/hosttools:g'

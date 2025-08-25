@@ -1,0 +1,191 @@
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+NOTE: Unpacking /home/ubuntu/yocto/rpi-build/downloads/eudev-3.2.10.tar.gz to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/eudev/3.2.10-r0/
+DEBUG: Searching for 0014-Revert-rules-remove-firmware-loading-rules.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/0014-Revert-rules-remove-firmware-loading-rules.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/eudev/3.2.10-r0/
+DEBUG: Searching for Revert-udev-remove-userspace-firmware-loading-suppor.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/Revert-udev-remove-userspace-firmware-loading-suppor.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/eudev/3.2.10-r0/
+DEBUG: Searching for devfs-udev.rules in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/devfs-udev.rules to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/eudev/3.2.10-r0/
+DEBUG: Searching for init in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/init to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/eudev/3.2.10-r0/
+DEBUG: Searching for links.conf in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/links.conf to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/eudev/3.2.10-r0/
+DEBUG: Searching for local.rules in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/local.rules to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/eudev/3.2.10-r0/
+DEBUG: Searching for permissions.rules in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/permissions.rules to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/eudev/3.2.10-r0/
+DEBUG: Searching for run.rules in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/run.rules to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/eudev/3.2.10-r0/
+DEBUG: Searching for udev.rules in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev-3.2.10/
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/
+    /home/ubuntu/yocto/poky/meta/recipes-core/udev/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/udev/eudev/udev.rules to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/eudev/3.2.10-r0/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function create_source_date_epoch_stamp
+DEBUG: Newest file found: /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/eudev/3.2.10-r0/eudev-3.2.10/rules/64-btrfs.rules
+DEBUG: SOURCE_DATE_EPOCH: 1612899084
+DEBUG: Python function create_source_date_epoch_stamp finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

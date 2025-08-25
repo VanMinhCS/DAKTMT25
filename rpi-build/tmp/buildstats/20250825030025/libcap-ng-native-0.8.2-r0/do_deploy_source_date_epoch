@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090876.99 
+libcap-ng-native-0.8.2-r0: do_deploy_source_date_epoch
+Elapsed time: 0.55 seconds
+utime: 37
+stime: 5
+cutime: 4
+cstime: 1
+IO rchar: 321035
+IO wchar: 142310
+IO syscr: 380
+IO syscw: 107
+IO read_bytes: 0
+IO write_bytes: 114688
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.37429399999999996
+rusage ru_stime: 0.05347
+rusage ru_maxrss: 109100
+rusage ru_minflt: 8624
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 184
+rusage ru_nvcsw: 13
+rusage ru_nivcsw: 133
+Child rusage ru_utime: 0.040166
+Child rusage ru_stime: 0.019001
+Child rusage ru_maxrss: 109100
+Child rusage ru_minflt: 4351
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 40
+Child rusage ru_nvcsw: 74
+Child rusage ru_nivcsw: 29
+Status: PASSED 
+Ended: 1756090877.53 

@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090832.88 
+xz-native-5.2.6-r0: do_unpack
+Elapsed time: 0.20 seconds
+utime: 20
+stime: 6
+cutime: 6
+cstime: 9
+IO rchar: 9869105
+IO wchar: 14915255
+IO syscr: 957
+IO syscw: 1507
+IO read_bytes: 2080768
+IO write_bytes: 8609792
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.203451
+rusage ru_stime: 0.063578
+rusage ru_maxrss: 107704
+rusage ru_minflt: 4943
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 56
+rusage ru_nvcsw: 6
+rusage ru_nivcsw: 36
+Child rusage ru_utime: 0.06787699999999999
+Child rusage ru_stime: 0.09268799999999999
+Child rusage ru_maxrss: 107704
+Child rusage ru_minflt: 906
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 4064
+Child rusage ru_oublock: 16760
+Child rusage ru_nvcsw: 335
+Child rusage ru_nivcsw: 195
+Status: PASSED 
+Ended: 1756090833.08 

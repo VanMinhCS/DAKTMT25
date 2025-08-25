@@ -1,0 +1,5 @@
+0001-CMakeDetermineCompilerABI-Strip-pipe-from-compile-fl.patch -p1
+0003-cmake-support-OpenEmbedded-Qt4-tool-binary-names.patch -p1
+0004-Fail-silently-if-system-Qt-installation-is-broken.patch -p1
+0001-CMakeDetermineSystem-use-oe-environment-vars-to-load.patch -p1
+0005-Disable-use-of-ext2fs-ext2_fs.h-by-cmake-s-internal-.patch -p1

@@ -1,0 +1,13 @@
+DEBUG: Executing python function autotools_aclocals
+DEBUG: SITE files ['endian-little', 'common-linux', 'common-glibc', 'bit-64', 'x86_64-linux', 'common']
+DEBUG: Python function autotools_aclocals finished
+DEBUG: Executing shell function do_compile
+NOTE: make -j 8
+Making all in doc
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-archive-native/2022.02.11-r0/build/doc'
+Updating ../../autoconf-archive-2022.02.11/doc/version.texi
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-archive-native/2022.02.11-r0/build/doc'
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-archive-native/2022.02.11-r0/build'
+make[1]: Nothing to be done for 'all-am'.
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-archive-native/2022.02.11-r0/build'
+DEBUG: Shell function do_compile finished

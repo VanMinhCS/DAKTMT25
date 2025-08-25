@@ -1,0 +1,11 @@
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+NOTE: Unpacking /home/ubuntu/yocto/rpi-build/downloads/libidn2-2.3.2.tar.gz to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libidn2-native/2.3.2-r0/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function create_source_date_epoch_stamp
+DEBUG: Newest file found: /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libidn2-native/2.3.2-r0/libidn2-2.3.2/ChangeLog
+DEBUG: SOURCE_DATE_EPOCH: 1626718580
+DEBUG: Python function create_source_date_epoch_stamp finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

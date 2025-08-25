@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:xorgproto-native:x86_64-linux:2021.5:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 c7449f0e19d12ef9be22428396cda8e5782dca1f5c70fd52f991e5f4f85653d3 ./deploy-source-date-epoch/__source_date_epoch.txt

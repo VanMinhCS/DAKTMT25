@@ -1,0 +1,383 @@
+# $Id: Makefile.in,v 1.182 2021/08/19 23:43:40 tom Exp $
+##############################################################################
+# Copyright 2018-2020,2021 Thomas E. Dickey                                  #
+# Copyright 1998-2017,2018 Free Software Foundation, Inc.                    #
+#                                                                            #
+# Permission is hereby granted, free of charge, to any person obtaining a    #
+# copy of this software and associated documentation files (the "Software"), #
+# to deal in the Software without restriction, including without limitation  #
+# the rights to use, copy, modify, merge, publish, distribute, distribute    #
+# with modifications, sublicense, and/or sell copies of the Software, and to #
+# permit persons to whom the Software is furnished to do so, subject to the  #
+# following conditions:                                                      #
+#                                                                            #
+# The above copyright notice and this permission notice shall be included in #
+# all copies or substantial portions of the Software.                        #
+#                                                                            #
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR #
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,   #
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL    #
+# THE ABOVE COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER      #
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING    #
+# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER        #
+# DEALINGS IN THE SOFTWARE.                                                  #
+#                                                                            #
+# Except as contained in this notice, the name(s) of the above copyright     #
+# holders shall not be used in advertising or otherwise to promote the sale, #
+# use or other dealings in this Software without prior written               #
+# authorization.                                                             #
+##############################################################################
+#
+# Author: Thomas E. Dickey 1996-on
+#
+# Makefile for ncurses source code.
+#
+# This makes the following:
+#	programs
+#	includes
+#	libraries (normal/debug/profile/shared)
+#
+# The variable 'srcdir' refers to the source-distribution, and can be set with
+# the configure script by "--srcdir=DIR".
+#
+# The rules are organized to produce the libraries for the configured models,
+# and the programs with the configured default model.
+
+# turn off _all_ suffix rules; we'll generate our own
+.SUFFIXES:
+
+SHELL		= /bin/bash
+VPATH		= ../../../git/ncurses
+THIS		= Makefile
+
+TOP_MFLAGS	=  DESTDIR="$(DESTDIR)" RPATH_LIST="$(RPATH_LIST)"
+
+
+x		= 
+o		= .o
+
+MODEL		= shared
+DESTDIR		= 
+top_srcdir	= ../../../git
+srcdir		= ../../../git/ncurses
+prefix		= /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/ncurses-native/6.3+20220423-r0/recipe-sysroot-native/usr
+exec_prefix	= /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/ncurses-native/6.3+20220423-r0/recipe-sysroot-native/usr
+bindir		= /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/ncurses-native/6.3+20220423-r0/recipe-sysroot-native/usr/bin
+libdir		= /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/ncurses-native/6.3+20220423-r0/recipe-sysroot-native/usr/lib
+includedir	= /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/ncurses-native/6.3+20220423-r0/recipe-sysroot-native/usr/include
+datarootdir	= ${prefix}/share
+datadir		= /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/ncurses-native/6.3+20220423-r0/recipe-sysroot-native/usr/share
+includesubdir	= /ncursesw
+
+INCLUDEDIR	= $(DESTDIR)$(includedir)$(includesubdir)
+
+PACKAGE		= ncursesw
+
+LIBTOOL		= 
+LIBTOOL_OPTS	=  
+LIBTOOL_CLEAN	= 
+LIBTOOL_COMPILE	= 
+LIBTOOL_LINK	= ${CC}
+LIBTOOL_INSTALL	= 
+LIBTOOL_UNINSTALL = 
+LT_UNDEF	= 
+
+INSTALL		= /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c
+INSTALL_LIB	= /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644
+INSTALL_PROG	= ${INSTALL} 
+INSTALL_DATA	= ${INSTALL} -m 644
+
+AR		= ar
+ARFLAGS		= -curv
+AWK		= gawk
+LD		= ld 
+LN_S		= ln -s -f
+NM		= nm
+
+CTAGS		= 
+ETAGS		= 
+
+CC		= gcc 
+CPP		= gcc  -E
+CFLAGS		= -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/ncurses-native/6.3+20220423-r0/recipe-sysroot-native/usr/include -O2 -pipe --param max-inline-insns-single=1200 
+LIBS		= 
+
+INCDIR		= $(srcdir)/../include
+CPPFLAGS	= -DHAVE_CONFIG_H -DBUILDING_NCURSES -I../ncurses -I. -I${srcdir} -I../include -I${srcdir}/../include -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/ncurses-native/6.3+20220423-r0/recipe-sysroot-native/usr/include -D_GNU_SOURCE -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -DNDEBUG
+
+CCFLAGS		= $(CPPFLAGS) $(CFLAGS)
+
+BUILD_CPPFLAGS	= -DHAVE_CONFIG_H -DUSE_BUILD_CC -I../ncurses -I$(srcdir) -I../include -I$(INCDIR) -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/ncurses-native/6.3+20220423-r0/recipe-sysroot-native/usr/include -D_GNU_SOURCE
+BUILD_CC	= gcc 
+BUILD_CCFLAGS	= -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/ncurses-native/6.3+20220423-r0/recipe-sysroot-native/usr/include -D_GNU_SOURCE -O2 -pipe
+BUILD_LDFLAGS	= -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/ncurses-native/6.3+20220423-r0/recipe-sysroot-native/usr/lib                         -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/ncurses-native/6.3+20220423-r0/recipe-sysroot-native/lib                         -Wl,--enable-new-dtags                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/ncurses-native/6.3+20220423-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/ncurses-native/6.3+20220423-r0/recipe-sysroot-native/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/ncurses-native/6.3+20220423-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/ncurses-native/6.3+20220423-r0/recipe-sysroot-native/lib                         -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2
+BUILD_LIBS	= ${LIBS}
+
+# The executables built in this directory are used for generating source that
+# is compiled into the build, or are test-programs that are not installed.
+
+BUILD_EXEEXT	= $x
+x		= 
+
+CFLAGS_LIBTOOL	= $(CCFLAGS)
+CFLAGS_NORMAL	= $(CCFLAGS) -DNCURSES_STATIC
+CFLAGS_DEBUG	= $(CCFLAGS) -DNCURSES_STATIC -g -DTRACE
+CFLAGS_PROFILE	= $(CCFLAGS) -DNCURSES_STATIC -pg
+CFLAGS_SHARED	= $(CCFLAGS) -fPIC
+
+CFLAGS_DEFAULT	= $(CFLAGS_SHARED)
+
+LINK		= $(LIBTOOL)
+LDFLAGS		= -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/ncurses-native/6.3+20220423-r0/recipe-sysroot-native/usr/lib                         -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/ncurses-native/6.3+20220423-r0/recipe-sysroot-native/lib                         -Wl,--enable-new-dtags                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/ncurses-native/6.3+20220423-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/ncurses-native/6.3+20220423-r0/recipe-sysroot-native/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/ncurses-native/6.3+20220423-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/ncurses-native/6.3+20220423-r0/recipe-sysroot-native/lib                         -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2 
+
+SHLIB_DIRS	= -L../lib
+SHLIB_LIST	= $(SHLIB_DIRS)  -ltinfo 
+TINFO_LIST	= $(SHLIB_DIRS)  
+TICS_LIST	= $(SHLIB_DIRS)  -ltinfo 
+
+RPATH_LIST	= ${libdir}
+RESULTING_SYMS	= 
+VERSIONED_SYMS	= 
+MK_SHARED_LIB	= ${CC} ${LDFLAGS} ${CFLAGS} -shared -Wl,-soname,`basename $@ .${REL_VERSION}`.${ABI_VERSION},-stats,-lc -o $@
+
+NCURSES_MAJOR	= 6
+NCURSES_MINOR	= 3
+REL_VERSION	= 5.9
+ABI_VERSION	= 5
+
+RANLIB		= ranlib -D
+
+LIBRARIES	=  ../lib/libtinfo.so.${REL_VERSION}  ../lib/libticw.so.${REL_VERSION}  ../lib/libncursesw.so.${REL_VERSION}
+
+LINT		= 
+LINT_OPTS	= 
+LINT_LIBS	= -lncurses 
+
+FALLBACK_LIST	= 
+
+USE_BIG_STRINGS	= 1
+TERMINFO_CAPS	= $(top_srcdir)/include/Caps
+CAPLIST		= $(TERMINFO_CAPS) $(top_srcdir)/include/Caps-ncurses
+
+TERMINFO	= /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/ncurses-native/6.3+20220423-r0/recipe-sysroot-native/usr/share/terminfo
+TERMINFO_SRC	= ${top_srcdir}/misc/terminfo.src
+TIC_PATH	= 
+INFOCMP_PATH	= 
+
+AUTO_SRC = \
+	./codes.c \
+	./comp_captab.c \
+	./comp_userdefs.c \
+	./expanded.c \
+	./fallback.c \
+	./lib_gen.c \
+	./lib_keyname.c \
+	./link_test.c \
+	./names.c \
+	./unctrl.c \
+	init_keytry.h \
+	keys.list
+
+HEADER_DEPS	=  \
+	../include/ncurses_cfg.h \
+	../include/ncurses_def.h \
+	../include/ncurses_dll.h \
+	../include/curses.h \
+	../include/term.h \
+	../include/unctrl.h \
+	$(INCDIR)/nc_alloc.h \
+	$(INCDIR)/nc_panel.h \
+	$(INCDIR)/nc_string.h \
+	$(INCDIR)/nc_termios.h \
+	$(INCDIR)/nc_tparm.h \
+	$(INCDIR)/nc_win32.h \
+	$(INCDIR)/term_entry.h \
+	$(srcdir)/curses.priv.h \
+	$(srcdir)/new_pair.h \
+	$(srcdir)/term.priv.h
+
+TEST_DEPS	= ../lib/libncursesw.so
+TEST_ARGS	=  -L../lib -lformw -lmenuw -lpanelw -lncursesw -ltinfo 
+TEST_LDFLAGS	=  $(TEST_ARGS)   -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/ncurses-native/6.3+20220423-r0/recipe-sysroot-native/usr/lib                         -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/ncurses-native/6.3+20220423-r0/recipe-sysroot-native/lib                         -Wl,--enable-new-dtags                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/ncurses-native/6.3+20220423-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/ncurses-native/6.3+20220423-r0/recipe-sysroot-native/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/ncurses-native/6.3+20220423-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/ncurses-native/6.3+20220423-r0/recipe-sysroot-native/lib                         -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2
+
+TEST_PROGS = \
+	captoinfo$x \
+	hardscroll$x \
+	hashmap$x \
+	lib_mvcur$x \
+	link_test$x \
+	report_hashing$x
+
+LOCAL_LIBDIR	= /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/ncurses-native/6.3+20220423-r0/build/widec/lib
+
+base	 = $(srcdir)/base
+serial	 = $(srcdir)/tty
+tinfo	 = $(srcdir)/tinfo
+trace	 = $(srcdir)/trace
+wide	 = $(srcdir)/widechar
+win32con = $(srcdir)/win32con
+
+################################################################################
+
+.PHONY :	all
+.PHONY :	check
+.PHONY :	clean
+.PHONY :	distclean
+.PHONY :	libs
+.PHONY :	mostlyclean
+.PHONY :	realclean
+.PHONY :	sources
+.PHONY :	test_progs
+
+all libs ::	$(AUTO_SRC) ../lib $(LIBRARIES)
+
+all libs ::	report_offsets$(BUILD_EXEEXT)
+
+sources:	$(AUTO_SRC)
+
+$(DESTDIR)$(bindir) \
+$(DESTDIR)$(libdir) :
+	mkdir -p $@
+
+../lib : ; mkdir $@
+
+./fallback.c : $(tinfo)/MKfallback.sh
+	$(SHELL) -e $(tinfo)/MKfallback.sh $(TERMINFO) $(TERMINFO_SRC) "$(TIC_PATH)" "$(INFOCMP_PATH)" $(FALLBACK_LIST) >$@
+
+./lib_gen.c : $(base)/MKlib_gen.sh ../include/curses.h
+	$(SHELL) -e $(base)/MKlib_gen.sh "$(CPP) $(CPPFLAGS)" "$(AWK)" generated <../include/curses.h >$@
+
+init_keytry.h : make_keys$(BUILD_EXEEXT) keys.list
+	./make_keys$(BUILD_EXEEXT) keys.list > $@
+
+keys.list :	$(tinfo)/MKkeys_list.sh
+	AWK=$(AWK) $(SHELL) $(tinfo)/MKkeys_list.sh $(CAPLIST) | LC_ALL=C sort >$@
+
+make_keys$(BUILD_EXEEXT) : \
+		build.priv.h \
+		$(tinfo)/make_keys.c \
+		./names.c
+	$(BUILD_CC) -o $@ $(BUILD_CPPFLAGS) $(BUILD_CCFLAGS) $(tinfo)/make_keys.c $(BUILD_LDFLAGS) $(BUILD_LIBS)
+
+make_hash$(BUILD_EXEEXT) : \
+		build.priv.h \
+		$(tinfo)/make_hash.c \
+		../include/hashsize.h
+	$(BUILD_CC) -o $@ $(BUILD_CPPFLAGS) $(BUILD_CCFLAGS) $(tinfo)/make_hash.c $(BUILD_LDFLAGS) $(BUILD_LIBS)
+
+report_offsets$(BUILD_EXEEXT) : \
+		$(srcdir)/curses.priv.h \
+		$(srcdir)/report_offsets.c
+	$(BUILD_CC) -o $@ $(BUILD_CPPFLAGS) $(BUILD_CCFLAGS) $(srcdir)/report_offsets.c $(BUILD_LDFLAGS) $(BUILD_LIBS)
+	./report_offsets$(BUILD_EXEEXT)
+
+./expanded.c : $(srcdir)/curses.priv.h $(serial)/MKexpanded.sh
+	$(SHELL) -e $(serial)/MKexpanded.sh "$(CPP)" $(CPPFLAGS) > $@
+
+./comp_captab.c: \
+		make_hash$(BUILD_EXEEXT) \
+		../include/hashsize.h \
+		$(tinfo)/MKcaptab.sh \
+		$(tinfo)/MKcaptab.awk
+	$(SHELL) -e $(tinfo)/MKcaptab.sh $(AWK) $(USE_BIG_STRINGS) $(tinfo)/MKcaptab.awk $(CAPLIST) > $@
+
+./comp_userdefs.c: \
+		make_hash$(BUILD_EXEEXT) \
+		../include/hashsize.h \
+		$(tinfo)/MKuserdefs.sh
+	$(SHELL) -e $(tinfo)/MKuserdefs.sh $(AWK) $(USE_BIG_STRINGS) $(CAPLIST) > $@
+
+./lib_keyname.c: keys.list $(base)/MKkeyname.awk
+	$(AWK) -f $(base)/MKkeyname.awk bigstrings=$(USE_BIG_STRINGS) keys.list > $@
+
+./codes.c: $(tinfo)/MKcodes.awk
+	$(AWK) -f $(tinfo)/MKcodes.awk bigstrings=$(USE_BIG_STRINGS) $(CAPLIST) >$@
+
+./names.c: $(tinfo)/MKnames.awk
+	$(AWK) -f $(tinfo)/MKnames.awk bigstrings=$(USE_BIG_STRINGS) $(CAPLIST) >$@
+
+./unctrl.c: $(base)/MKunctrl.awk
+	echo | $(AWK) -f $(base)/MKunctrl.awk bigstrings=$(USE_BIG_STRINGS) >$@
+
+tags:
+	$(CTAGS) *.[ch] */*.[ch]
+
+#TAGS:
+#	$(ETAGS) *.[ch] */*.[ch]
+
+mostlyclean ::
+	-rm -f core tags TAGS *~ *.bak *.i *.ln *.atac
+	-test -d trace || rm -f trace
+	-rm -f $(TEST_PROGS)
+
+clean :: mostlyclean
+	-rm -f $(AUTO_SRC)
+	-rm -f make_keys$(BUILD_EXEEXT)
+	-rm -f make_hash$(BUILD_EXEEXT)
+	-rm -f report_offsets$(BUILD_EXEEXT)
+	-rm -rf .libs *.dSYM *.map
+
+distclean :: clean
+	-rm -f Makefile
+
+realclean :: distclean
+
+# These rules are used to allow "make -n" to work on a clean directory-tree
+../include/hashsize.h \
+../include/parametrized.h \
+../include/term.h :
+	( cd ../include && $(MAKE) $(TOP_MFLAGS) )
+
+# These rules build test-programs for the modules that have test-drivers
+.PHONY :	test_progs
+test_progs : $(TEST_PROGS)
+
+./link_test.c : $(base)/MKlib_gen.sh ../include/curses.h
+	$(SHELL) -e $(base)/MKlib_gen.sh "$(CPP) $(CPPFLAGS)" "$(AWK)" implemented <../include/curses.h >$@
+
+captoinfo$x : $(tinfo)/captoinfo.c $(TEST_DEPS)
+	 $(LIBTOOL_LINK) -o $@ $(CFLAGS_DEFAULT) -DMAIN $(tinfo)/captoinfo.c $(TEST_LDFLAGS)
+
+hardscroll$x : $(serial)/hardscroll.c $(TEST_DEPS)
+	 $(LIBTOOL_LINK) -o $@ $(CFLAGS_DEFAULT) -DSCROLLDEBUG $(serial)/hardscroll.c $(TEST_LDFLAGS)
+
+hashmap$x : $(serial)/hashmap.c $(serial)/hardscroll.c $(TEST_DEPS)
+	 $(LIBTOOL_LINK) -o $@ $(CFLAGS_DEFAULT) -DHASHDEBUG $(serial)/hashmap.c $(serial)/hardscroll.c $(TEST_LDFLAGS)
+
+lib_mvcur$x : $(serial)/lib_mvcur.c $(TEST_DEPS) \
+		../obj_s/dump_entry$o
+	 $(LIBTOOL_LINK) -o $@ $(CFLAGS_DEFAULT) -DNCURSES_TEST -I$(serial)/../../progs $(serial)/lib_mvcur.c ../obj_s/dump_entry$o $(TEST_LDFLAGS)
+
+link_test$x : ./link_test.c $(TEST_DEPS) \
+		../obj_s/link_test$o
+	 $(CC) -o $@ $(CFLAGS_DEFAULT) ../obj_s/link_test$o $(TEST_LDFLAGS)
+
+../obj_s/dump_entry$o:
+	( cd ../progs && $(MAKE) ../obj_s/dump_entry$o )
+
+report_hashing$x : \
+		$(srcdir)/curses.priv.h \
+		$(srcdir)/report_hashing.c $(TEST_DEPS)
+	 $(CC) -o $@ $(CFLAGS_DEFAULT) report_hashing.c $(TEST_LDFLAGS)
+
+# Verify that each header-file can be compiled without including another.
+.PHONY :	check_headers
+check_headers:
+	@$(SHELL) -c "for header in *.h;\
+		do \
+			echo \"** testing \$${header}\" ; \
+			echo \"#include <\$${header}>\" >headers.c; \
+			echo \"int main(void) { return 0; }\" >>headers.c; \
+			$(CC) -c $(CFLAGS) $(CPPFLAGS) headers.c; \
+		done"
+	-@rm -f headers.*
+
+.PHONY :	check_objects
+check_objects: test_progs
+
+check :: check_headers check_objects
+
+###############################################################################
+# The remainder of this file is automatically generated during configuration
+###############################################################################
+                                                                                                                                                                                  

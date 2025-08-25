@@ -1,0 +1,50 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are []
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_fetch
+DEBUG: Executing python function base_do_fetch
+DEBUG: Running 'export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/zstd/1.5.2-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/zstd/1.5.2-r0/recipe-sysroot/usr/bin/crossscripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/zstd/1.5.2-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/zstd/1.5.2-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/zstd/1.5.2-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/zstd/1.5.2-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat branch --contains e47e674cd09583ff0503f0f6defd6d23d8b718d3 --list release 2> /dev/null | wc -l' in /home/ubuntu/yocto/rpi-build/downloads/git2/github.com.facebook.zstd.git
+DEBUG: Running 'export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/zstd/1.5.2-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/zstd/1.5.2-r0/recipe-sysroot/usr/bin/crossscripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/zstd/1.5.2-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/zstd/1.5.2-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/zstd/1.5.2-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/zstd/1.5.2-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat branch --contains e47e674cd09583ff0503f0f6defd6d23d8b718d3 --list release 2> /dev/null | wc -l' in /home/ubuntu/yocto/rpi-build/downloads/git2/github.com.facebook.zstd.git
+DEBUG: Running 'export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/zstd/1.5.2-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/zstd/1.5.2-r0/recipe-sysroot/usr/bin/crossscripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/zstd/1.5.2-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/zstd/1.5.2-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/zstd/1.5.2-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/zstd/1.5.2-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat grep lfs release:.gitattributes | wc -l' in /home/ubuntu/yocto/rpi-build/downloads/git2/github.com.facebook.zstd.git
+DEBUG: Searching for CVE-2022-4899-1.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/zstd/zstd-1.5.2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/zstd/zstd/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/zstd/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/zstd/zstd-1.5.2/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/zstd/zstd/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/zstd/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/zstd/zstd-1.5.2/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/zstd/zstd/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/zstd/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/zstd/zstd-1.5.2/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/zstd/zstd/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/zstd/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/zstd/zstd-1.5.2/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/zstd/zstd/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/zstd/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/zstd/zstd-1.5.2/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/zstd/zstd/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/zstd/files/
+DEBUG: Searching for CVE-2022-4899-2.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/zstd/zstd-1.5.2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/zstd/zstd/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/zstd/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/zstd/zstd-1.5.2/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/zstd/zstd/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/zstd/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/zstd/zstd-1.5.2/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/zstd/zstd/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/zstd/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/zstd/zstd-1.5.2/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/zstd/zstd/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/zstd/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/zstd/zstd-1.5.2/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/zstd/zstd/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/zstd/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/zstd/zstd-1.5.2/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/zstd/zstd/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/zstd/files/
+DEBUG: Python function base_do_fetch finished
+DEBUG: Python function do_fetch finished

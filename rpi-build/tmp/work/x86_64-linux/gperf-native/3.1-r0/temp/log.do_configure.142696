@@ -1,0 +1,187 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are ['/home/ubuntu/yocto/poky/meta/recipes-devtools/libtool/libtool-native_2.4.7.bb:do_populate_sysroot', '/home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-native_0.67.bb:do_populate_sysroot', 'virtual:native:/home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf_2.71.bb:do_populate_sysroot', 'virtual:native:/home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake_1.16.5.bb:do_populate_sysroot']
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: ['libtool-native', 'quilt-native', 'autoconf-native', 'automake-native', 'texinfo-dummy-native', 'm4-native', 'gnu-config-native', 'gettext-minimal-native']
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing shell function autotools_preconfigure
+DEBUG: Shell function autotools_preconfigure finished
+DEBUG: Executing python function autotools_aclocals
+DEBUG: SITE files ['endian-little', 'common-linux', 'common-glibc', 'bit-64', 'x86_64-linux', 'common']
+DEBUG: Python function autotools_aclocals finished
+DEBUG: Executing shell function do_configure
+automake (GNU automake) 1.16.5
+Copyright (C) 2021 Free Software Foundation, Inc.
+License GPLv2+: GNU GPL version 2 or later <https://gnu.org/licenses/gpl-2.0.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Tom Tromey <tromey@redhat.com>
+       and Alexandre Duret-Lutz <adl@gnu.org>.
+AUTOV is 1.16
+NOTE: Executing ACLOCAL="aclocal --system-acdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/share/aclocal/ --automake-acdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/share/aclocal-1.16" autoreconf -Wcross --verbose --install --force --exclude=autopoint --exclude=gtkdocize -I /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/gperf-3.1 --exclude=aclocal
+autoreconf: export WARNINGS=cross,no-obsolete
+autoreconf: Entering directory '.'
+autoreconf: configure.ac: not using Gettext
+autoreconf: configure.ac: not using aclocal
+autoreconf: configure.ac: tracing
+autoreconf: configure.ac: adding subdirectory lib to autoreconf
+autoreconf: Entering directory 'lib'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: aclocal --system-acdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/share/aclocal/ --automake-acdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/share/aclocal-1.16 -I /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/gperf-3.1 --force 
+autoreconf: configure.ac: tracing
+autoreconf: configure.ac: not using Libtool
+autoreconf: configure.ac: not using Intltool
+autoreconf: configure.ac: not using Gtkdoc
+autoreconf: running: /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/bin/autoconf --include=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/gperf-3.1 --force
+autoreconf: configure.ac: not using Autoheader
+autoreconf: configure.ac: not using Automake
+autoreconf: Leaving directory 'lib'
+autoreconf: configure.ac: adding subdirectory src to autoreconf
+autoreconf: Entering directory 'src'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: aclocal --system-acdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/share/aclocal/ --automake-acdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/share/aclocal-1.16 -I /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/gperf-3.1 --force 
+autoreconf: configure.ac: tracing
+autoreconf: configure.ac: not using Libtool
+autoreconf: configure.ac: not using Intltool
+autoreconf: configure.ac: not using Gtkdoc
+autoreconf: running: /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/bin/autoconf --include=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/gperf-3.1 --force
+autoreconf: running: /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/bin/autoheader --include=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/gperf-3.1 --force
+autoreconf: configure.ac: not using Automake
+autoreconf: Leaving directory 'src'
+autoreconf: configure.ac: adding subdirectory tests to autoreconf
+autoreconf: Entering directory 'tests'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: aclocal --system-acdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/share/aclocal/ --automake-acdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/share/aclocal-1.16 -I /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/gperf-3.1 --force 
+autoreconf: configure.ac: tracing
+autoreconf: configure.ac: not using Libtool
+autoreconf: configure.ac: not using Intltool
+autoreconf: configure.ac: not using Gtkdoc
+autoreconf: running: /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/bin/autoconf --include=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/gperf-3.1 --force
+autoreconf: configure.ac: not using Autoheader
+autoreconf: configure.ac: not using Automake
+autoreconf: Leaving directory 'tests'
+autoreconf: configure.ac: adding subdirectory doc to autoreconf
+autoreconf: Entering directory 'doc'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: aclocal --system-acdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/share/aclocal/ --automake-acdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/share/aclocal-1.16 -I /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/gperf-3.1 --force 
+autoreconf: configure.ac: tracing
+autoreconf: configure.ac: not using Libtool
+autoreconf: configure.ac: not using Intltool
+autoreconf: configure.ac: not using Gtkdoc
+autoreconf: running: /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/bin/autoconf --include=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/gperf-3.1 --force
+autoreconf: configure.ac: not using Autoheader
+autoreconf: configure.ac: not using Automake
+autoreconf: Leaving directory 'doc'
+autoreconf: configure.ac: not using Libtool
+autoreconf: configure.ac: not using Intltool
+autoreconf: configure.ac: not using Gtkdoc
+autoreconf: running: /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/bin/autoconf --include=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/gperf-3.1 --force
+autoreconf: configure.ac: not using Autoheader
+autoreconf: configure.ac: not using Automake
+autoreconf: Leaving directory '.'
+NOTE: Running ../gperf-3.1/configure  --build=x86_64-linux 		  --host=x86_64-linux 		  --target=x86_64-linux 		  --prefix=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr 		  --exec_prefix=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr 		  --bindir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/bin 		  --sbindir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/sbin 		  --libexecdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/libexec 		  --datadir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/share 		  --sysconfdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/etc 		  --sharedstatedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/com 		  --localstatedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/var 		  --libdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/lib 		  --includedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include 		  --oldincludedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include 		  --infodir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/share/info 		  --mandir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/share/man 		  --disable-silent-rules 		  --disable-dependency-tracking 		    --disable-static  
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/endian-little
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/common-linux
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/common-glibc
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/x86_64-linux
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/common
+checking whether make sets $(MAKE)... yes
+configure: creating ./config.status
+config.status: creating Makefile
+=== configuring in lib (/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/build/lib)
+configure: running /bin/bash ../../gperf-3.1/lib/configure --disable-option-checking '--prefix=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr'  '--build=x86_64-linux' '--host=x86_64-linux' '--target=x86_64-linux' '--exec_prefix=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr' '--bindir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/bin' '--sbindir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/sbin' '--libexecdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/libexec' '--datadir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/share' '--sysconfdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/etc' '--sharedstatedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/com' '--localstatedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/var' '--libdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/lib' '--includedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include' '--oldincludedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include' '--infodir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/share/info' '--mandir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/share/man' '--disable-silent-rules' '--disable-dependency-tracking' '--disable-static' 'build_alias=x86_64-linux' 'host_alias=x86_64-linux' 'target_alias=x86_64-linux' --cache-file=/dev/null --srcdir=../../gperf-3.1/lib
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/endian-little
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/common-linux
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/common-glibc
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/x86_64-linux
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/common
+checking whether make sets $(MAKE)... yes
+checking for x86_64-linux-gcc... gcc 
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc  accepts -g... yes
+checking for gcc  option to enable C11 features... none needed
+checking how to run the C preprocessor... gcc  -E
+checking whether the compiler supports GNU C++... yes
+checking whether g++  accepts -g... yes
+checking for g++  option to enable C++11 features... none needed
+checking how to run the C++ preprocessor... g++  -E
+checking for x86_64-linux-ar... ar
+checking for x86_64-linux-ranlib... ranlib -D
+checking for a BSD compatible install... /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c
+configure: creating ./config.status
+config.status: creating Makefile
+=== configuring in src (/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/build/src)
+configure: running /bin/bash ../../gperf-3.1/src/configure --disable-option-checking '--prefix=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr'  '--build=x86_64-linux' '--host=x86_64-linux' '--target=x86_64-linux' '--exec_prefix=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr' '--bindir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/bin' '--sbindir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/sbin' '--libexecdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/libexec' '--datadir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/share' '--sysconfdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/etc' '--sharedstatedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/com' '--localstatedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/var' '--libdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/lib' '--includedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include' '--oldincludedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include' '--infodir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/share/info' '--mandir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/share/man' '--disable-silent-rules' '--disable-dependency-tracking' '--disable-static' 'build_alias=x86_64-linux' 'host_alias=x86_64-linux' 'target_alias=x86_64-linux' --cache-file=/dev/null --srcdir=../../gperf-3.1/src
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/endian-little
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/common-linux
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/common-glibc
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/x86_64-linux
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/common
+checking whether make sets $(MAKE)... yes
+checking for x86_64-linux-gcc... gcc 
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc  accepts -g... yes
+checking for gcc  option to enable C11 features... none needed
+checking how to run the C preprocessor... gcc  -E
+checking whether the compiler supports GNU C++... yes
+checking whether g++  accepts -g... yes
+checking for g++  option to enable C++11 features... none needed
+checking how to run the C++ preprocessor... g++  -E
+checking for a BSD compatible install... /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c
+checking for stack-allocated variable-size arrays... yes
+checking for rand in -lm... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating config.h
+=== configuring in tests (/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/build/tests)
+configure: running /bin/bash ../../gperf-3.1/tests/configure --disable-option-checking '--prefix=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr'  '--build=x86_64-linux' '--host=x86_64-linux' '--target=x86_64-linux' '--exec_prefix=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr' '--bindir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/bin' '--sbindir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/sbin' '--libexecdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/libexec' '--datadir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/share' '--sysconfdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/etc' '--sharedstatedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/com' '--localstatedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/var' '--libdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/lib' '--includedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include' '--oldincludedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include' '--infodir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/share/info' '--mandir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/share/man' '--disable-silent-rules' '--disable-dependency-tracking' '--disable-static' 'build_alias=x86_64-linux' 'host_alias=x86_64-linux' 'target_alias=x86_64-linux' --cache-file=/dev/null --srcdir=../../gperf-3.1/tests
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/endian-little
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/common-linux
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/common-glibc
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/x86_64-linux
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/common
+checking whether make sets $(MAKE)... yes
+checking for x86_64-linux-gcc... gcc 
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc  accepts -g... yes
+checking for gcc  option to enable C11 features... none needed
+checking how to run the C preprocessor... gcc  -E
+checking whether the compiler supports GNU C++... yes
+checking whether g++  accepts -g... yes
+checking for g++  option to enable C++11 features... none needed
+checking how to run the C++ preprocessor... g++  -E
+configure: creating ./config.status
+config.status: creating Makefile
+=== configuring in doc (/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/build/doc)
+configure: running /bin/bash ../../gperf-3.1/doc/configure --disable-option-checking '--prefix=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr'  '--build=x86_64-linux' '--host=x86_64-linux' '--target=x86_64-linux' '--exec_prefix=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr' '--bindir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/bin' '--sbindir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/sbin' '--libexecdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/libexec' '--datadir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/share' '--sysconfdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/etc' '--sharedstatedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/com' '--localstatedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/var' '--libdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/lib' '--includedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include' '--oldincludedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/include' '--infodir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/share/info' '--mandir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/share/man' '--disable-silent-rules' '--disable-dependency-tracking' '--disable-static' 'build_alias=x86_64-linux' 'host_alias=x86_64-linux' 'target_alias=x86_64-linux' --cache-file=/dev/null --srcdir=../../gperf-3.1/doc
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/endian-little
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/common-linux
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/common-glibc
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/x86_64-linux
+configure: loading site script /home/ubuntu/yocto/poky/meta/site/common
+checking whether make sets $(MAKE)... yes
+checking for a BSD compatible install... /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c
+configure: creating ./config.status
+config.status: creating Makefile
+DEBUG: Shell function do_configure finished
+DEBUG: Executing python function do_qa_configure
+NOTE: Checking autotools environment for common misconfiguration
+NOTE: Checking configure output for unrecognised options
+DEBUG: Python function do_qa_configure finished
+DEBUG: Executing shell function autotools_postconfigure
+DEBUG: Shell function autotools_postconfigure finished

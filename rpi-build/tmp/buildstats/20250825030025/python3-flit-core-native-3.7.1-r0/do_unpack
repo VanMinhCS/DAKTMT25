@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090856.37 
+python3-flit-core-native-3.7.1-r0: do_unpack
+Elapsed time: 0.34 seconds
+utime: 21
+stime: 4
+cutime: 1
+cstime: 8
+IO rchar: 1106070
+IO wchar: 1323669
+IO syscr: 187
+IO syscw: 336
+IO read_bytes: 139264
+IO write_bytes: 1208320
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.21948399999999998
+rusage ru_stime: 0.041412
+rusage ru_maxrss: 108088
+rusage ru_minflt: 4919
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 56
+rusage ru_nvcsw: 4
+rusage ru_nivcsw: 109
+Child rusage ru_utime: 0.01704
+Child rusage ru_stime: 0.084682
+Child rusage ru_maxrss: 107960
+Child rusage ru_minflt: 885
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 272
+Child rusage ru_oublock: 2304
+Child rusage ru_nvcsw: 64
+Child rusage ru_nivcsw: 67
+Status: PASSED 
+Ended: 1756090856.71 

@@ -1,0 +1,78 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are []
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_fetch
+DEBUG: Executing python function base_do_fetch
+DEBUG: Trying PREMIRRORS
+DEBUG: For url ['https', 'wayland.freedesktop.org', '/releases/wayland-1.20.0.tar.xz', '', '', OrderedDict()] comparing ['git', 'sourceware.org', '/git/glibc.git', '', '', OrderedDict()] to ['https', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['https', 'wayland.freedesktop.org', '/releases/wayland-1.20.0.tar.xz', '', '', OrderedDict()] comparing ['git', 'sourceware.org', '/git/binutils-gdb.git', '', '', OrderedDict()] to ['https', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: Trying Upstream
+DEBUG: Fetching https://wayland.freedesktop.org/releases/wayland-1.20.0.tar.xz using command '/usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/wayland-1.20.0.tar.xz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://wayland.freedesktop.org/releases/wayland-1.20.0.tar.xz''
+DEBUG: Fetcher accessed the network with the command /usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/wayland-1.20.0.tar.xz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://wayland.freedesktop.org/releases/wayland-1.20.0.tar.xz'
+DEBUG: Running export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/poky/scripts/native-intercept:/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/wayland-native/1.20.0-r0/recipe-sysroot-native/usr/bin/python3-native:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/wayland-native/1.20.0-r0/recipe-sysroot-native/usr/bin/x86_64-linux:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/wayland-native/1.20.0-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/wayland-native/1.20.0-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/wayland-native/1.20.0-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/wayland-native/1.20.0-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/wayland-native/1.20.0-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; /usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/wayland-1.20.0.tar.xz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://wayland.freedesktop.org/releases/wayland-1.20.0.tar.xz' --progress=dot -v
+--2025-08-25 03:02:03--  https://wayland.freedesktop.org/releases/wayland-1.20.0.tar.xz
+Resolving wayland.freedesktop.org (wayland.freedesktop.org)... 151.101.79.52, 2a04:4e42:12::820
+Connecting to wayland.freedesktop.org (wayland.freedesktop.org)|151.101.79.52|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 225188 (220K) [application/x-xz]
+Saving to: ‘/home/ubuntu/yocto/rpi-build/downloads/wayland-1.20.0.tar.xz.tmp’
+
+
+2025-08-25 03:02:04 (1.83 MB/s) - ‘/home/ubuntu/yocto/rpi-build/downloads/wayland-1.20.0.tar.xz.tmp’ saved [225188/225188]
+
+DEBUG: Searching for run-ptest in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/poky
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/
+DEBUG: Searching for 0002-Do-not-hardcode-the-path-to-wayland-scanner.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/poky
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/
+DEBUG: Searching for 0001-build-Fix-strndup-detection-on-MinGW.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/poky
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/
+DEBUG: Searching for CVE-2021-3782.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/poky
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland-1.20.0/
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/wayland/
+    /home/ubuntu/yocto/poky/meta/recipes-graphics/wayland/files/
+DEBUG: Python function base_do_fetch finished
+DEBUG: Python function do_fetch finished

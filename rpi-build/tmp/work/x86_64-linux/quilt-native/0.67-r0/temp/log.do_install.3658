@@ -1,0 +1,35 @@
+DEBUG: Executing python function autotools_aclocals
+DEBUG: SITE files ['endian-little', 'common-linux', 'common-glibc', 'bit-64', 'x86_64-linux', 'common']
+DEBUG: Python function autotools_aclocals finished
+DEBUG: Executing shell function do_install
+NOTE: make -j 8 BUILD_ROOT=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/image install
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -d /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/recipe-sysroot-native/usr/bin
+rm -rf /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/recipe-sysroot-native/usr/share/quilt/compat
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -d /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/recipe-sysroot-native/usr/share/quilt/compat
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 755 bin/quilt bin/guards /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/recipe-sysroot-native/usr/bin/
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -d /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/recipe-sysroot-native/usr/share/quilt
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 755 compat/sendmail			\
+	   /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/recipe-sysroot-native/usr/share/quilt/compat
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 755 quilt/add quilt/annotate quilt/applied quilt/delete quilt/diff quilt/edit quilt/files quilt/fold quilt/fork quilt/graph quilt/grep quilt/header quilt/import quilt/mail quilt/new quilt/next quilt/patches quilt/pop quilt/previous quilt/push quilt/refresh quilt/remove quilt/rename quilt/revert quilt/series quilt/setup quilt/snapshot quilt/top quilt/unapplied quilt/upgrade /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/recipe-sysroot-native/usr/share/quilt/
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -d /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/recipe-sysroot-native/usr/share/quilt/scripts
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 755 quilt/scripts/inspect-wrapper quilt/scripts/dependency-graph quilt/scripts/edmail quilt/scripts/remove-trailing-ws quilt/scripts/backup-files		\
+	   /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/recipe-sysroot-native/usr/share/quilt/scripts
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 quilt/scripts/patchfns quilt/scripts/utilfns	\
+	   /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/recipe-sysroot-native/usr/share/quilt/scripts
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -d /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/recipe-sysroot-native/usr/share/doc/quilt/
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 doc/README					\
+	   /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/recipe-sysroot-native/usr/share/doc/quilt/
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 doc/quilt.pdf doc/README.MAIL			\
+	   /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/recipe-sysroot-native/usr/share/doc/quilt/
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -d /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/recipe-sysroot-native/usr/share/man/man1
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 doc/quilt.1 /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/recipe-sysroot-native/usr/share/man/man1/
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -d /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/recipe-sysroot-native/etc
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -d /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/recipe-sysroot-native/etc/bash_completion.d
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 bash_completion				\
+	   /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/recipe-sysroot-native/etc/bash_completion.d/quilt
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 quilt.quiltrc /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/recipe-sysroot-native/etc/
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -d /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/recipe-sysroot-native/usr/share/emacs/site-lisp/
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 lib/quilt.el /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/quilt-native/0.67-r0/recipe-sysroot-native/usr/share/emacs/site-lisp/
+DEBUG: Shell function do_install finished
+DEBUG: Executing shell function remove_libtool_la
+DEBUG: Shell function remove_libtool_la finished

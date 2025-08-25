@@ -1,0 +1,16 @@
+0001-ltmain.in-Handle-trailing-slashes-on-install-command.patch
+0002-libtool.m4-Rename-the-with-sysroot-option-to-avoid-c.patch
+0003-ltmain.in-Add-missing-sysroot-to-library-path.patch
+0004-ltmain.sh-Fix-sysroot-paths-being-encoded-into-RPATH.patch
+0005-ltmain.in-Don-t-encode-RATHS-which-match-default-lin.patch
+dont-depend-on-help2man.patch
+0006-libtool.m4-Handle-as-a-sysroot-correctly.patch
+nohardcodepaths.patch
+0007-libtool-Fix-support-for-NIOS2-processor.patch
+0008-libtool-Check-for-static-libs-for-internal-compiler-.patch
+0009-Makefile.am-make-sure-autoheader-run-before-autoconf.patch
+0010-Makefile.am-make-sure-autoheader-run-before-automake.patch
+0011-ltmain.in-Handle-prefix-map-compiler-options-correct.patch
+0012-libtool.m4-For-reproducibility-stop-encoding-hostnam.patch
+0001-ltmain.in-Parse-additional-clang-options.patch
+fixinstall.patch

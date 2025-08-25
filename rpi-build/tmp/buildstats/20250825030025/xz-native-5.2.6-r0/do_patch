@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090839.87 
+xz-native-5.2.6-r0: do_patch
+Elapsed time: 0.09 seconds
+utime: 29
+stime: 3
+cutime: 1
+cstime: 1
+IO rchar: 240213
+IO wchar: 116772
+IO syscr: 161
+IO syscw: 79
+IO read_bytes: 65536
+IO write_bytes: 122880
+IO cancelled_write_bytes: 4096
+rusage ru_utime: 0.29562
+rusage ru_stime: 0.033309
+rusage ru_maxrss: 108324
+rusage ru_minflt: 4161
+rusage ru_majflt: 0
+rusage ru_inblock: 128
+rusage ru_oublock: 112
+rusage ru_nvcsw: 6
+rusage ru_nivcsw: 74
+Child rusage ru_utime: 0.010891999999999999
+Child rusage ru_stime: 0.01337
+Child rusage ru_maxrss: 108324
+Child rusage ru_minflt: 826
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 128
+Child rusage ru_nvcsw: 14
+Child rusage ru_nivcsw: 5
+Status: PASSED 
+Ended: 1756090839.95 

@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090843.20 
+gperf-native-3.1-r0: do_patch
+Elapsed time: 0.21 seconds
+utime: 22
+stime: 5
+cutime: 8
+cstime: 3
+IO rchar: 724437
+IO wchar: 339544
+IO syscr: 624
+IO syscw: 184
+IO read_bytes: 0
+IO write_bytes: 368640
+IO cancelled_write_bytes: 4096
+rusage ru_utime: 0.225635
+rusage ru_stime: 0.050141
+rusage ru_maxrss: 108412
+rusage ru_minflt: 4114
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 120
+rusage ru_nvcsw: 12
+rusage ru_nivcsw: 69
+Child rusage ru_utime: 0.084323
+Child rusage ru_stime: 0.035821
+Child rusage ru_maxrss: 108412
+Child rusage ru_minflt: 9284
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 600
+Child rusage ru_nvcsw: 141
+Child rusage ru_nivcsw: 52
+Status: PASSED 
+Ended: 1756090843.41 

@@ -1,0 +1,160 @@
+DEBUG: Executing shell function do_compile
+NOTE: Building/installing only 64-bit libpseudo.so for pseudo-native.
+NOTE: If you need to run 32-bit executables, ensure that NO32LIBS is set to 0.
+SQLite header for version 3038005 found in /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr.
+Enabling in-memory database by default.
+NOTE: make -j 8 RPATH=-Wl,--rpath=XORIGIN/../../../sqlite3-native/usr/lib/
+CC="gcc  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -O2 -pipe -pipe -std=gnu99 -Wall -W -Wextra -Wno-deprecated-declarations -fPIC -D_LARGEFILE64_SOURCE -D_ATFILE_SOURCE -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -O2 -pipe -DPSEUDO_PREFIX='"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr"' -DPSEUDO_SUFFIX='""' -DPSEUDO_BINDIR='"bin"' -DPSEUDO_LIBDIR='"lib/pseudo/lib64"' -DPSEUDO_LOCALSTATEDIR='"var/pseudo"' -DPSEUDO_VERSION='"1.9.0"' -DUSE_MEMORY_DB -DPSEUDO_FORCE_ASYNC -DPSEUDO_PASSWD_FALLBACK='NULL'   -DPSEUDO_XATTR_SUPPORT       -DPSEUDO_EPOLL -O2 -g -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/lib -I/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -Wl,--rpath=XORIGIN/../../../sqlite3-native/usr/lib/" ./makewrappers "xattr=true"
+./maketables enums/*.in
+mkdir -p lib/pseudo/lib64
+mkdir -p bin
+enums/debug_type.in: Flags: set for debug_type
+type: debug_type_t (prefix 'PDBG_ENUM')
+  extra column: unsigned char symbolic (default '\0')
+  extra column: const char * description (default NULL)
+   consistency        file               op                 pid                
+   client             server             db                 xattrdb            
+   profile            syscall            env                chroot             
+   path               sql                wrapper            ipc                
+   invoke             benchmark          verbose            xattr              
+
+enums/exit_status.in: type: exit_status_t (prefix 'PSEUDO_EXIT_ENUM')
+  extra column: char * message (default "exit status unknown")
+   general            fork_failed        lock_path          lock_held          
+   lock_failed        timeout            waitpid            socket_create      
+   socket_fd          socket_path        socket_unlink      socket_bind        
+   socket_listen      listen_fd          pseudo_loaded      pseudo_prefix      
+   pseudo_invocation  epoll_create       epoll_ctl                             
+
+enums/msg_type.in: type: msg_type_t (prefix 'PSEUDO_MSG_ENUM')
+   ping               shutdown           op                 ack                
+   nak                fastop             
+
+enums/op.in: type: op_t (prefix 'OP_ENUM')
+  extra column: int wait (default 0)
+   chdir              chmod              chown              chroot             
+   close              creat              dup                fchmod             
+   fchown             fstat              link               mkdir              
+   mknod              open               rename             stat               
+   unlink             symlink            exec               may-unlink         
+   did-unlink         cancel-unlink      get-xattr          list-xattr         
+   remove-xattr       set-xattr          create-xattr       replace-xattr      
+   closefrom          
+
+enums/query_field.in: type: query_field_t (prefix 'PSQF_ENUM')
+   access             client             dev                fd                 
+   ftype              gid                id                 inode              
+   mode               op                 order              path               
+   perm               program            result             severity           
+   stamp              tag                text               type               
+   uid                
+
+enums/query_type.in: type: query_type_t (prefix 'PSQT_ENUM')
+  extra column: const char * sql (default "LITTLE BOBBY TABLES")
+   exact              less               greater            bitand             
+   notequal           like               notlike            sqlpat             
+
+enums/res.in: type: res_t (prefix 'RESULT_ENUM')
+   succeed            fail               error              abort              
+
+enums/sev.in: type: sev_t (prefix 'SEVERITY_ENUM')
+   debug              info               warn               error              
+   critical           
+
+Writing datatypes...
+done.  Cleaning up.
+gcc  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -O2 -pipe -pipe -std=gnu99 -Wall -W -Wextra -Wno-deprecated-declarations -fPIC -D_LARGEFILE64_SOURCE -D_ATFILE_SOURCE -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -O2 -pipe -DPSEUDO_PREFIX='"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr"' -DPSEUDO_SUFFIX='""' -DPSEUDO_BINDIR='"bin"' -DPSEUDO_LIBDIR='"lib/pseudo/lib64"' -DPSEUDO_LOCALSTATEDIR='"var/pseudo"' -DPSEUDO_VERSION='"1.9.0"' -DUSE_MEMORY_DB -DPSEUDO_FORCE_ASYNC -DPSEUDO_PASSWD_FALLBACK='NULL'   -DPSEUDO_XATTR_SUPPORT       -DPSEUDO_EPOLL -O2 -g -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/lib -I/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -Wl,--rpath=XORIGIN/../../../sqlite3-native/usr/lib/ -c -o pseudo_tables.o pseudo_tables.c
+Checking for old/new clone mechanics... New clone.
+Considering template: templates/guts
+Considering template: templates/wrapper_table
+Considering template: templates/port_wrappers
+Considering template: templates/port_deps
+Considering template: templates/func_deps
+Considering template: templates/wrapfuncs.c
+Considering template: templates/wrapfuncs.h
+Considering template: templates/pseudo_ports
+common
+ports/common/wrapfuncs.in: .........
+linux
+ports/linux/wrapfuncs.in: .................................................................
+unix
+ports/unix/wrapfuncs.in: ......................................................................
+unix/syncfs
+ports/unix/syncfs/wrapfuncs.in: .
+uids_generic
+ports/uids_generic/wrapfuncs.in: ........................
+linux/newclone
+ports/linux/newclone/wrapfuncs.in: .
+linux/xattr
+ports/linux/xattr/wrapfuncs.in: ............
+linux/statvfs
+ports/linux/statvfs/wrapfuncs.in: ..
+linux/statx
+ports/linux/statx/wrapfuncs.in: .
+Writing functions...
+Warning: lchown from linux overriding unix
+Warning: mknod from linux overriding unix
+Warning: mknodat from linux overriding unix
+done.  Cleaning up.
+gcc  -fno-strict-aliasing -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -O2 -pipe -pipe -std=gnu99 -Wall -W -Wextra -Wno-deprecated-declarations -fPIC -D_LARGEFILE64_SOURCE -D_ATFILE_SOURCE -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -O2 -pipe -DPSEUDO_PREFIX='"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr"' -DPSEUDO_SUFFIX='""' -DPSEUDO_BINDIR='"bin"' -DPSEUDO_LIBDIR='"lib/pseudo/lib64"' -DPSEUDO_LOCALSTATEDIR='"var/pseudo"' -DPSEUDO_VERSION='"1.9.0"' -DUSE_MEMORY_DB -DPSEUDO_FORCE_ASYNC -DPSEUDO_PASSWD_FALLBACK='NULL'   -DPSEUDO_XATTR_SUPPORT       -DPSEUDO_EPOLL -O2 -g -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/lib -I/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -Wl,--rpath=XORIGIN/../../../sqlite3-native/usr/lib/ -D_GNU_SOURCE -c -o pseudo_wrappers.o pseudo_wrappers.c
+gcc  -c -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -O2 -pipe -pipe -std=gnu99 -Wall -W -Wextra -Wno-deprecated-declarations -fPIC -D_LARGEFILE64_SOURCE -D_ATFILE_SOURCE -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -O2 -pipe -DPSEUDO_PREFIX='"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr"' -DPSEUDO_SUFFIX='""' -DPSEUDO_BINDIR='"bin"' -DPSEUDO_LIBDIR='"lib/pseudo/lib64"' -DPSEUDO_LOCALSTATEDIR='"var/pseudo"' -DPSEUDO_VERSION='"1.9.0"' -DUSE_MEMORY_DB -DPSEUDO_FORCE_ASYNC -DPSEUDO_PASSWD_FALLBACK='NULL'   -DPSEUDO_XATTR_SUPPORT       -DPSEUDO_EPOLL -O2 -g -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/lib -I/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -Wl,--rpath=XORIGIN/../../../sqlite3-native/usr/lib/ pseudo_client.c
+gcc  -c -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -O2 -pipe -pipe -std=gnu99 -Wall -W -Wextra -Wno-deprecated-declarations -fPIC -D_LARGEFILE64_SOURCE -D_ATFILE_SOURCE -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -O2 -pipe -DPSEUDO_PREFIX='"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr"' -DPSEUDO_SUFFIX='""' -DPSEUDO_BINDIR='"bin"' -DPSEUDO_LIBDIR='"lib/pseudo/lib64"' -DPSEUDO_LOCALSTATEDIR='"var/pseudo"' -DPSEUDO_VERSION='"1.9.0"' -DUSE_MEMORY_DB -DPSEUDO_FORCE_ASYNC -DPSEUDO_PASSWD_FALLBACK='NULL'   -DPSEUDO_XATTR_SUPPORT       -DPSEUDO_EPOLL -O2 -g -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/lib -I/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -Wl,--rpath=XORIGIN/../../../sqlite3-native/usr/lib/ pseudo_ipc.c
+gcc  -c -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -O2 -pipe -pipe -std=gnu99 -Wall -W -Wextra -Wno-deprecated-declarations -fPIC -D_LARGEFILE64_SOURCE -D_ATFILE_SOURCE -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -O2 -pipe -DPSEUDO_PREFIX='"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr"' -DPSEUDO_SUFFIX='""' -DPSEUDO_BINDIR='"bin"' -DPSEUDO_LIBDIR='"lib/pseudo/lib64"' -DPSEUDO_LOCALSTATEDIR='"var/pseudo"' -DPSEUDO_VERSION='"1.9.0"' -DUSE_MEMORY_DB -DPSEUDO_FORCE_ASYNC -DPSEUDO_PASSWD_FALLBACK='NULL'   -DPSEUDO_XATTR_SUPPORT       -DPSEUDO_EPOLL -O2 -g -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/lib -I/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -Wl,--rpath=XORIGIN/../../../sqlite3-native/usr/lib/ pseudo_util.c
+gcc  -c -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -O2 -pipe -pipe -std=gnu99 -Wall -W -Wextra -Wno-deprecated-declarations -fPIC -D_LARGEFILE64_SOURCE -D_ATFILE_SOURCE -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -O2 -pipe -DPSEUDO_PREFIX='"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr"' -DPSEUDO_SUFFIX='""' -DPSEUDO_BINDIR='"bin"' -DPSEUDO_LIBDIR='"lib/pseudo/lib64"' -DPSEUDO_LOCALSTATEDIR='"var/pseudo"' -DPSEUDO_VERSION='"1.9.0"' -DUSE_MEMORY_DB -DPSEUDO_FORCE_ASYNC -DPSEUDO_PASSWD_FALLBACK='NULL'   -DPSEUDO_XATTR_SUPPORT       -DPSEUDO_EPOLL -O2 -g -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/lib -I/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -Wl,--rpath=XORIGIN/../../../sqlite3-native/usr/lib/ pseudo.c
+gcc  -c -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -O2 -pipe -pipe -std=gnu99 -Wall -W -Wextra -Wno-deprecated-declarations -fPIC -D_LARGEFILE64_SOURCE -D_ATFILE_SOURCE -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -O2 -pipe -DPSEUDO_PREFIX='"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr"' -DPSEUDO_SUFFIX='""' -DPSEUDO_BINDIR='"bin"' -DPSEUDO_LIBDIR='"lib/pseudo/lib64"' -DPSEUDO_LOCALSTATEDIR='"var/pseudo"' -DPSEUDO_VERSION='"1.9.0"' -DUSE_MEMORY_DB -DPSEUDO_FORCE_ASYNC -DPSEUDO_PASSWD_FALLBACK='NULL'   -DPSEUDO_XATTR_SUPPORT       -DPSEUDO_EPOLL -O2 -g -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/lib -I/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -Wl,--rpath=XORIGIN/../../../sqlite3-native/usr/lib/ pseudo_db.c
+gcc  -c -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -O2 -pipe -pipe -std=gnu99 -Wall -W -Wextra -Wno-deprecated-declarations -fPIC -D_LARGEFILE64_SOURCE -D_ATFILE_SOURCE -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -O2 -pipe -DPSEUDO_PREFIX='"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr"' -DPSEUDO_SUFFIX='""' -DPSEUDO_BINDIR='"bin"' -DPSEUDO_LIBDIR='"lib/pseudo/lib64"' -DPSEUDO_LOCALSTATEDIR='"var/pseudo"' -DPSEUDO_VERSION='"1.9.0"' -DUSE_MEMORY_DB -DPSEUDO_FORCE_ASYNC -DPSEUDO_PASSWD_FALLBACK='NULL'   -DPSEUDO_XATTR_SUPPORT       -DPSEUDO_EPOLL -O2 -g -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/lib -I/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -Wl,--rpath=XORIGIN/../../../sqlite3-native/usr/lib/ pseudo_server.c
+gcc  -c -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -O2 -pipe -pipe -std=gnu99 -Wall -W -Wextra -Wno-deprecated-declarations -fPIC -D_LARGEFILE64_SOURCE -D_ATFILE_SOURCE -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -O2 -pipe -DPSEUDO_PREFIX='"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr"' -DPSEUDO_SUFFIX='""' -DPSEUDO_BINDIR='"bin"' -DPSEUDO_LIBDIR='"lib/pseudo/lib64"' -DPSEUDO_LOCALSTATEDIR='"var/pseudo"' -DPSEUDO_VERSION='"1.9.0"' -DUSE_MEMORY_DB -DPSEUDO_FORCE_ASYNC -DPSEUDO_PASSWD_FALLBACK='NULL'   -DPSEUDO_XATTR_SUPPORT       -DPSEUDO_EPOLL -O2 -g -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/lib -I/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -Wl,--rpath=XORIGIN/../../../sqlite3-native/usr/lib/ pseudodb.c
+pseudo_wrappers.c: In function ‘_libpseudo_init’:
+pseudo_wrappers.c:121:86: warning: the comparison will always evaluate as ‘false’ for the address of ‘__dso_handle’ will never be NULL [-Waddress]
+  121 |                 __register_atfork (NULL, NULL, libpseudo_atfork_child, &__dso_handle == NULL ? NULL : __dso_handle);
+      |                                                                                      ^~
+pseudo_client.c: In function ‘pseudo_client_request’:
+pseudo_client.c:1356:22: warning: unused variable ‘program_invocation_short_name’ [-Wunused-variable]
+ 1356 |         extern char *program_invocation_short_name;
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+pseudo_util.c: In function ‘pseudo_fix_path’:
+pseudo_util.c:836:24: warning: return discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  836 |                 return path;
+      |                        ^~~~
+gcc  -c -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -O2 -pipe -pipe -std=gnu99 -Wall -W -Wextra -Wno-deprecated-declarations -fPIC -D_LARGEFILE64_SOURCE -D_ATFILE_SOURCE -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -O2 -pipe -DPSEUDO_PREFIX='"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr"' -DPSEUDO_SUFFIX='""' -DPSEUDO_BINDIR='"bin"' -DPSEUDO_LIBDIR='"lib/pseudo/lib64"' -DPSEUDO_LOCALSTATEDIR='"var/pseudo"' -DPSEUDO_VERSION='"1.9.0"' -DUSE_MEMORY_DB -DPSEUDO_FORCE_ASYNC -DPSEUDO_PASSWD_FALLBACK='NULL'   -DPSEUDO_XATTR_SUPPORT       -DPSEUDO_EPOLL -O2 -g -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/lib -I/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -Wl,--rpath=XORIGIN/../../../sqlite3-native/usr/lib/ pseudolog.c
+In file included from pseudo_wrappers.c:312:
+pseudo_wrapfuncs.c: At top level:
+pseudo_wrapfuncs.c:9417:49: warning: argument 2 of type ‘const struct timeval *’ declared as a pointer [-Warray-parameter=]
+ 9417 | lutimes(const char *path, const struct timeval *tv) {
+      |                           ~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from pseudo_wrappers.c:37:
+/usr/include/x86_64-linux-gnu/sys/time.h:189:62: note: previously declared as an array ‘const struct timeval[2]’
+  189 | extern int lutimes (const char *__file, const struct timeval __tvp[2])
+      |                                         ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+In file included from pseudo_wrappers.c:312:
+pseudo_wrapfuncs.c:15249:14: warning: argument 1 of type ‘char *’ declared as a pointer [-Warray-parameter=]
+15249 | tmpnam(char *s) {
+      |        ~~~~~~^
+In file included from pseudo_wrappers.c:25:
+/usr/include/stdio.h:205:22: note: previously declared as an array ‘char[20]’
+  205 | extern char *tmpnam (char[L_tmpnam]) __THROW __wur;
+      |                      ^~~~~~~~~~~~~~
+In file included from pseudo_wrappers.c:312:
+pseudo_wrapfuncs.c:15945:48: warning: argument 2 of type ‘const struct timeval *’ declared as a pointer [-Warray-parameter=]
+15945 | utimes(const char *path, const struct timeval *times) {
+      |                          ~~~~~~~~~~~~~~~~~~~~~~^~~~~
+In file included from pseudo_wrappers.c:37:
+/usr/include/x86_64-linux-gnu/sys/time.h:162:61: note: previously declared as an array ‘const struct timeval[2]’
+  162 | extern int utimes (const char *__file, const struct timeval __tvp[2])
+      |                                        ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+gcc  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -O2 -pipe -pipe -std=gnu99 -Wall -W -Wextra -Wno-deprecated-declarations -fPIC -D_LARGEFILE64_SOURCE -D_ATFILE_SOURCE -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -O2 -pipe -DPSEUDO_PREFIX='"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr"' -DPSEUDO_SUFFIX='""' -DPSEUDO_BINDIR='"bin"' -DPSEUDO_LIBDIR='"lib/pseudo/lib64"' -DPSEUDO_LOCALSTATEDIR='"var/pseudo"' -DPSEUDO_VERSION='"1.9.0"' -DUSE_MEMORY_DB -DPSEUDO_FORCE_ASYNC -DPSEUDO_PASSWD_FALLBACK='NULL'   -DPSEUDO_XATTR_SUPPORT       -DPSEUDO_EPOLL -O2 -g -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/lib -I/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -Wl,--rpath=XORIGIN/../../../sqlite3-native/usr/lib/ -o bin/pseudo \
+	pseudo.o pseudo_server.o pseudo_client.o pseudo_ipc.o \
+	pseudo_db.o pseudo_tables.o pseudo_util.o -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/lib                         -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/lib                         -Wl,--enable-new-dtags                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/lib                         -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2 -lsqlite3 -lpthread -ldl -lpthread
+gcc  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -O2 -pipe -pipe -std=gnu99 -Wall -W -Wextra -Wno-deprecated-declarations -fPIC -D_LARGEFILE64_SOURCE -D_ATFILE_SOURCE -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -O2 -pipe -DPSEUDO_PREFIX='"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr"' -DPSEUDO_SUFFIX='""' -DPSEUDO_BINDIR='"bin"' -DPSEUDO_LIBDIR='"lib/pseudo/lib64"' -DPSEUDO_LOCALSTATEDIR='"var/pseudo"' -DPSEUDO_VERSION='"1.9.0"' -DUSE_MEMORY_DB -DPSEUDO_FORCE_ASYNC -DPSEUDO_PASSWD_FALLBACK='NULL'   -DPSEUDO_XATTR_SUPPORT       -DPSEUDO_EPOLL -O2 -g -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/lib -I/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -Wl,--rpath=XORIGIN/../../../sqlite3-native/usr/lib/ -o bin/pseudodb pseudodb.o \
+	pseudo_db.o pseudo_tables.o pseudo_util.o pseudo_ipc.o -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/lib                         -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/lib                         -Wl,--enable-new-dtags                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/lib                         -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2 -lsqlite3 -lpthread -ldl -lpthread
+gcc  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -O2 -pipe -pipe -std=gnu99 -Wall -W -Wextra -Wno-deprecated-declarations -fPIC -D_LARGEFILE64_SOURCE -D_ATFILE_SOURCE -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -O2 -pipe -DPSEUDO_PREFIX='"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr"' -DPSEUDO_SUFFIX='""' -DPSEUDO_BINDIR='"bin"' -DPSEUDO_LIBDIR='"lib/pseudo/lib64"' -DPSEUDO_LOCALSTATEDIR='"var/pseudo"' -DPSEUDO_VERSION='"1.9.0"' -DUSE_MEMORY_DB -DPSEUDO_FORCE_ASYNC -DPSEUDO_PASSWD_FALLBACK='NULL'   -DPSEUDO_XATTR_SUPPORT       -DPSEUDO_EPOLL -O2 -g -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/lib -I/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -Wl,--rpath=XORIGIN/../../../sqlite3-native/usr/lib/ -o bin/pseudolog pseudolog.o pseudo_client.o pseudo_ipc.o \
+	pseudo_db.o pseudo_tables.o pseudo_util.o -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/lib                         -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/lib                         -Wl,--enable-new-dtags                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/lib                         -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2 -lsqlite3 -lpthread -ldl -lpthread
+gcc  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -O2 -pipe  -Lprebuilt/x86_64-linux/lib/ -pipe -std=gnu99 -Wall -W -Wextra -Wno-deprecated-declarations -fPIC -D_LARGEFILE64_SOURCE -D_ATFILE_SOURCE -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -O2 -pipe -DPSEUDO_PREFIX='"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr"' -DPSEUDO_SUFFIX='""' -DPSEUDO_BINDIR='"bin"' -DPSEUDO_LIBDIR='"lib/pseudo/lib64"' -DPSEUDO_LOCALSTATEDIR='"var/pseudo"' -DPSEUDO_VERSION='"1.9.0"' -DUSE_MEMORY_DB -DPSEUDO_FORCE_ASYNC -DPSEUDO_PASSWD_FALLBACK='NULL'   -DPSEUDO_XATTR_SUPPORT       -DPSEUDO_EPOLL -O2 -g -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/lib -I/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/include -Wl,--rpath=XORIGIN/../../../sqlite3-native/usr/lib/ -shared -o lib/pseudo/lib64/libpseudo.so \
+	pseudo_client.o pseudo_ipc.o \
+	pseudo_wrappers.o pseudo_tables.o pseudo_util.o -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/lib                         -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/lib                         -Wl,--enable-new-dtags                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/lib                         -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2 -ldl -lpthread
+#define PSEUDO_PORT_UNIX_SYNCFS 1
+#define PSEUDO_PORT_UIDS_GENERIC 1
+#define PSEUDO_PORT_LINUX_NEWCLONE 1
+#define PSEUDO_PORT_LINUX_XATTR 1
+#define PSEUDO_PORT_LINUX_STATVFS 1
+DEBUG: Shell function do_compile finished

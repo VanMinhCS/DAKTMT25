@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090873.28 
+libidn2-native-2.3.2-r0: do_unpack
+Elapsed time: 0.27 seconds
+utime: 22
+stime: 6
+cutime: 11
+cstime: 12
+IO rchar: 14069281
+IO wchar: 22077304
+IO syscr: 1431
+IO syscw: 3025
+IO read_bytes: 2256896
+IO write_bytes: 15917056
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.225549
+rusage ru_stime: 0.062652
+rusage ru_maxrss: 108624
+rusage ru_minflt: 5111
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 56
+rusage ru_nvcsw: 5
+rusage ru_nivcsw: 64
+Child rusage ru_utime: 0.11186
+Child rusage ru_stime: 0.12135599999999999
+Child rusage ru_maxrss: 108496
+Child rusage ru_minflt: 914
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 4408
+Child rusage ru_oublock: 31032
+Child rusage ru_nvcsw: 467
+Child rusage ru_nivcsw: 265
+Status: PASSED 
+Ended: 1756090873.55 

@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090874.40 
+libmicrohttpd-native-0.9.76-r0: do_unpack
+Elapsed time: 0.39 seconds
+utime: 25
+stime: 3
+cutime: 7
+cstime: 9
+IO rchar: 13660472
+IO wchar: 22335473
+IO syscr: 1388
+IO syscw: 1928
+IO read_bytes: 2203648
+IO write_bytes: 11927552
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.256455
+rusage ru_stime: 0.031563
+rusage ru_maxrss: 108292
+rusage ru_minflt: 5043
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 56
+rusage ru_nvcsw: 5
+rusage ru_nivcsw: 109
+Child rusage ru_utime: 0.075946
+Child rusage ru_stime: 0.092958
+Child rusage ru_maxrss: 108292
+Child rusage ru_minflt: 906
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 4304
+Child rusage ru_oublock: 23240
+Child rusage ru_nvcsw: 411
+Child rusage ru_nivcsw: 209
+Status: PASSED 
+Ended: 1756090874.80 

@@ -1,0 +1,81 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are ['/home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-native_0.67.bb:do_populate_sysroot']
+NOTE: Installed into sysroot: ['quilt-native']
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: sed -e 's:^[^/]*/:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/openssl-native/3.0.17-r0/recipe-sysroot-native/:g' /home/ubuntu/yocto/rpi-build/tmp/sysroots-components/x86_64/quilt-native/fixmepath | xargs sed -i -e 's:FIXMESTAGINGDIRTARGET:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/openssl-native/3.0.17-r0/recipe-sysroot:g; s:FIXMESTAGINGDIRHOST:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/openssl-native/3.0.17-r0/recipe-sysroot-native:g' -e 's:FIXME_PSEUDO_SYSROOT:/home/ubuntu/yocto/rpi-build/tmp/sysroots-components/x86_64/pseudo-native:g' -e 's:FIXME_HOSTTOOLS_DIR:/home/ubuntu/yocto/rpi-build/tmp/hosttools:g' -e 's:FIXME_PKGDATA_DIR:/home/ubuntu/yocto/rpi-build/tmp/pkgdata/raspberrypi4:g' -e 's:FIXME_PSEUDO_LOCALSTATEDIR:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/openssl-native/3.0.17-r0/pseudo/:g' -e 's:FIXME_LOGFIFO:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/openssl-native/3.0.17-r0/temp/fifo.16097:g'
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_patch
+DEBUG: Executing python function patch_do_patch
+DEBUG: Searching for run-ptest in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl-3.0.17/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl-3.0.17/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/files/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl-3.0.17/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl-3.0.17/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/files/
+DEBUG: Searching for 0001-buildinfo-strip-sysroot-and-debug-prefix-map-from-co.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl-3.0.17/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl-3.0.17/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/files/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl-3.0.17/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl-3.0.17/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/files/
+DEBUG: Searching for afalg.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl-3.0.17/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl-3.0.17/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/files/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl-3.0.17/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl-3.0.17/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/files/
+DEBUG: Searching for 0001-Configure-do-not-tweak-mips-cflags.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl-3.0.17/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl-3.0.17/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/files/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl-3.0.17/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl-3.0.17/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/files/
+DEBUG: Searching for CVE-2024-41996.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl-3.0.17/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl-3.0.17/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/files/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl-3.0.17/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl-3.0.17/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/openssl/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/openssl/files/
+NOTE: Applying patch '0001-buildinfo-strip-sysroot-and-debug-prefix-map-from-co.patch' (../poky/meta/recipes-connectivity/openssl/openssl/0001-buildinfo-strip-sysroot-and-debug-prefix-map-from-co.patch)
+NOTE: Applying patch 'afalg.patch' (../poky/meta/recipes-connectivity/openssl/openssl/afalg.patch)
+NOTE: Applying patch '0001-Configure-do-not-tweak-mips-cflags.patch' (../poky/meta/recipes-connectivity/openssl/openssl/0001-Configure-do-not-tweak-mips-cflags.patch)
+NOTE: Applying patch 'CVE-2024-41996.patch' (../poky/meta/recipes-connectivity/openssl/openssl/CVE-2024-41996.patch)
+DEBUG: Python function patch_do_patch finished
+DEBUG: Python function do_patch finished
+DEBUG: Executing python function do_qa_patch
+DEBUG: Python function do_qa_patch finished

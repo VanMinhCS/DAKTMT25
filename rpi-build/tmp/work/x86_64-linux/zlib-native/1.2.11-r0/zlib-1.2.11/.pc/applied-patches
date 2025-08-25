@@ -1,0 +1,6 @@
+ldflags-tests.patch
+0001-configure-Pass-LDFLAGS-to-link-tests.patch
+CVE-2018-25032.patch
+CVE-2022-37434.patch
+CVE-2023-45853.patch
+CVE-2014-9485.patch

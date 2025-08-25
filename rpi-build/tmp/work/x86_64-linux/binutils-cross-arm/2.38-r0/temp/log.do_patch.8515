@@ -1,0 +1,1192 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are ['/home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-native_0.67.bb:do_populate_sysroot']
+NOTE: Installed into sysroot: ['quilt-native']
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: sed -e 's:^[^/]*/:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/binutils-cross-arm/2.38-r0/recipe-sysroot-native/:g' /home/ubuntu/yocto/rpi-build/tmp/sysroots-components/x86_64/quilt-native/fixmepath | xargs sed -i -e 's:FIXMESTAGINGDIRTARGET:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/binutils-cross-arm/2.38-r0/recipe-sysroot:g; s:FIXMESTAGINGDIRHOST:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/binutils-cross-arm/2.38-r0/recipe-sysroot-native:g' -e 's:FIXME_PSEUDO_SYSROOT:/home/ubuntu/yocto/rpi-build/tmp/sysroots-components/x86_64/pseudo-native:g' -e 's:FIXME_HOSTTOOLS_DIR:/home/ubuntu/yocto/rpi-build/tmp/hosttools:g' -e 's:FIXME_PKGDATA_DIR:/home/ubuntu/yocto/rpi-build/tmp/pkgdata/raspberrypi4:g' -e 's:FIXME_PSEUDO_LOCALSTATEDIR:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/binutils-cross-arm/2.38-r0/pseudo/:g' -e 's:FIXME_LOGFIFO:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/binutils-cross-arm/2.38-r0/temp/fifo.8515:g'
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_patch
+DEBUG: Executing python function patch_do_patch
+DEBUG: Searching for 0004-Point-scripts-location-to-libdir.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0005-Only-generate-an-RPATH-entry-if-LD_RUN_PATH-is-not-e.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0006-don-t-let-the-distro-compiler-point-to-the-wrong-ins.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0007-warn-for-uses-of-system-directories-when-cross-linki.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0008-fix-the-incorrect-assembling-for-ppc-wait-mnemonic.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0009-Use-libtool-2.4.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0010-Fix-rpath-in-libtool-when-sysroot-is-enabled.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0011-sync-with-OE-libtool-changes.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0012-Check-for-clang-before-checking-gcc-version.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0013-Avoid-as-info-race-condition.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0014-CVE-2019-1010204.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0015-CVE-2022-38533.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0016-CVE-2022-35205.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0017-CVE-2022-38127-1.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0017-CVE-2022-38127-2.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0017-CVE-2022-38127-3.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0017-CVE-2022-38127-4.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0018-CVE-2022-38128-1.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0018-CVE-2022-38128-2.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0018-CVE-2022-38128-3.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0019-CVE-2022-4285.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0020-CVE-2023-22608-1.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0020-CVE-2023-22608-2.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0020-CVE-2023-22608-3.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0021-CVE-2023-1579-1.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0021-CVE-2023-1579-2.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0021-CVE-2023-1579-3.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0021-CVE-2023-1579-4.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0022-CVE-2023-25584-1.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0022-CVE-2023-25584-2.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0022-CVE-2023-25584-3.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0023-CVE-2023-25585.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0026-CVE-2023-1972.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0025-CVE-2023-25588.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0027-CVE-2022-47008.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0028-CVE-2022-47011.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0029-CVE-2022-48065-1.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0029-CVE-2022-48065-2.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0029-CVE-2022-48065-3.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0030-CVE-2022-44840.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0031-CVE-2022-45703-1.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0031-CVE-2022-45703-2.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0031-CVE-2022-47695.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for CVE-2022-48063.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0032-CVE-2022-47010.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0033-CVE-2022-47007.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0034-CVE-2022-48064.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0035-CVE-2023-39129.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0036-CVE-2023-39130.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0037-CVE-2024-53589.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0038-CVE-2025-0840.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0039-CVE-2025-1178.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0040-CVE-2025-1180.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0040-CVE-2025-1182.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0041-CVE-2025-5244.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0042-CVE-2025-5245.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0043-CVE-2025-7546.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0043-CVE-2025-7545.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+DEBUG: Searching for 0002-binutils-cross-Do-not-generate-linker-script-directo.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils-2.38/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/binutils/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/binutils/files/
+NOTE: Applying patch '0004-Point-scripts-location-to-libdir.patch' (../poky/meta/recipes-devtools/binutils/binutils/0004-Point-scripts-location-to-libdir.patch)
+NOTE: Applying patch '0005-Only-generate-an-RPATH-entry-if-LD_RUN_PATH-is-not-e.patch' (../poky/meta/recipes-devtools/binutils/binutils/0005-Only-generate-an-RPATH-entry-if-LD_RUN_PATH-is-not-e.patch)
+NOTE: Applying patch '0006-don-t-let-the-distro-compiler-point-to-the-wrong-ins.patch' (../poky/meta/recipes-devtools/binutils/binutils/0006-don-t-let-the-distro-compiler-point-to-the-wrong-ins.patch)
+NOTE: Applying patch '0007-warn-for-uses-of-system-directories-when-cross-linki.patch' (../poky/meta/recipes-devtools/binutils/binutils/0007-warn-for-uses-of-system-directories-when-cross-linki.patch)
+NOTE: Applying patch '0008-fix-the-incorrect-assembling-for-ppc-wait-mnemonic.patch' (../poky/meta/recipes-devtools/binutils/binutils/0008-fix-the-incorrect-assembling-for-ppc-wait-mnemonic.patch)
+NOTE: Applying patch '0009-Use-libtool-2.4.patch' (../poky/meta/recipes-devtools/binutils/binutils/0009-Use-libtool-2.4.patch)
+NOTE: Applying patch '0010-Fix-rpath-in-libtool-when-sysroot-is-enabled.patch' (../poky/meta/recipes-devtools/binutils/binutils/0010-Fix-rpath-in-libtool-when-sysroot-is-enabled.patch)
+NOTE: Applying patch '0011-sync-with-OE-libtool-changes.patch' (../poky/meta/recipes-devtools/binutils/binutils/0011-sync-with-OE-libtool-changes.patch)
+NOTE: Applying patch '0012-Check-for-clang-before-checking-gcc-version.patch' (../poky/meta/recipes-devtools/binutils/binutils/0012-Check-for-clang-before-checking-gcc-version.patch)
+NOTE: Applying patch '0013-Avoid-as-info-race-condition.patch' (../poky/meta/recipes-devtools/binutils/binutils/0013-Avoid-as-info-race-condition.patch)
+NOTE: Applying patch '0014-CVE-2019-1010204.patch' (../poky/meta/recipes-devtools/binutils/binutils/0014-CVE-2019-1010204.patch)
+NOTE: Applying patch '0015-CVE-2022-38533.patch' (../poky/meta/recipes-devtools/binutils/binutils/0015-CVE-2022-38533.patch)
+NOTE: Applying patch '0016-CVE-2022-35205.patch' (../poky/meta/recipes-devtools/binutils/binutils/0016-CVE-2022-35205.patch)
+NOTE: Applying patch '0017-CVE-2022-38127-1.patch' (../poky/meta/recipes-devtools/binutils/binutils/0017-CVE-2022-38127-1.patch)
+NOTE: Applying patch '0017-CVE-2022-38127-2.patch' (../poky/meta/recipes-devtools/binutils/binutils/0017-CVE-2022-38127-2.patch)
+NOTE: Applying patch '0017-CVE-2022-38127-3.patch' (../poky/meta/recipes-devtools/binutils/binutils/0017-CVE-2022-38127-3.patch)
+NOTE: Applying patch '0017-CVE-2022-38127-4.patch' (../poky/meta/recipes-devtools/binutils/binutils/0017-CVE-2022-38127-4.patch)
+NOTE: Applying patch '0018-CVE-2022-38128-1.patch' (../poky/meta/recipes-devtools/binutils/binutils/0018-CVE-2022-38128-1.patch)
+NOTE: Applying patch '0018-CVE-2022-38128-2.patch' (../poky/meta/recipes-devtools/binutils/binutils/0018-CVE-2022-38128-2.patch)
+NOTE: Applying patch '0018-CVE-2022-38128-3.patch' (../poky/meta/recipes-devtools/binutils/binutils/0018-CVE-2022-38128-3.patch)
+NOTE: Applying patch '0019-CVE-2022-4285.patch' (../poky/meta/recipes-devtools/binutils/binutils/0019-CVE-2022-4285.patch)
+NOTE: Applying patch '0020-CVE-2023-22608-1.patch' (../poky/meta/recipes-devtools/binutils/binutils/0020-CVE-2023-22608-1.patch)
+NOTE: Applying patch '0020-CVE-2023-22608-2.patch' (../poky/meta/recipes-devtools/binutils/binutils/0020-CVE-2023-22608-2.patch)
+NOTE: Applying patch '0020-CVE-2023-22608-3.patch' (../poky/meta/recipes-devtools/binutils/binutils/0020-CVE-2023-22608-3.patch)
+NOTE: Applying patch '0021-CVE-2023-1579-1.patch' (../poky/meta/recipes-devtools/binutils/binutils/0021-CVE-2023-1579-1.patch)
+NOTE: Applying patch '0021-CVE-2023-1579-2.patch' (../poky/meta/recipes-devtools/binutils/binutils/0021-CVE-2023-1579-2.patch)
+NOTE: Applying patch '0021-CVE-2023-1579-3.patch' (../poky/meta/recipes-devtools/binutils/binutils/0021-CVE-2023-1579-3.patch)
+NOTE: Applying patch '0021-CVE-2023-1579-4.patch' (../poky/meta/recipes-devtools/binutils/binutils/0021-CVE-2023-1579-4.patch)
+NOTE: Applying patch '0022-CVE-2023-25584-1.patch' (../poky/meta/recipes-devtools/binutils/binutils/0022-CVE-2023-25584-1.patch)
+NOTE: Applying patch '0022-CVE-2023-25584-2.patch' (../poky/meta/recipes-devtools/binutils/binutils/0022-CVE-2023-25584-2.patch)
+NOTE: Applying patch '0022-CVE-2023-25584-3.patch' (../poky/meta/recipes-devtools/binutils/binutils/0022-CVE-2023-25584-3.patch)
+NOTE: Applying patch '0023-CVE-2023-25585.patch' (../poky/meta/recipes-devtools/binutils/binutils/0023-CVE-2023-25585.patch)
+NOTE: Applying patch '0026-CVE-2023-1972.patch' (../poky/meta/recipes-devtools/binutils/binutils/0026-CVE-2023-1972.patch)
+NOTE: Applying patch '0025-CVE-2023-25588.patch' (../poky/meta/recipes-devtools/binutils/binutils/0025-CVE-2023-25588.patch)
+NOTE: Applying patch '0027-CVE-2022-47008.patch' (../poky/meta/recipes-devtools/binutils/binutils/0027-CVE-2022-47008.patch)
+NOTE: Applying patch '0028-CVE-2022-47011.patch' (../poky/meta/recipes-devtools/binutils/binutils/0028-CVE-2022-47011.patch)
+NOTE: Applying patch '0029-CVE-2022-48065-1.patch' (../poky/meta/recipes-devtools/binutils/binutils/0029-CVE-2022-48065-1.patch)
+NOTE: Applying patch '0029-CVE-2022-48065-2.patch' (../poky/meta/recipes-devtools/binutils/binutils/0029-CVE-2022-48065-2.patch)
+NOTE: Applying patch '0029-CVE-2022-48065-3.patch' (../poky/meta/recipes-devtools/binutils/binutils/0029-CVE-2022-48065-3.patch)
+NOTE: Applying patch '0030-CVE-2022-44840.patch' (../poky/meta/recipes-devtools/binutils/binutils/0030-CVE-2022-44840.patch)
+NOTE: Applying patch '0031-CVE-2022-45703-1.patch' (../poky/meta/recipes-devtools/binutils/binutils/0031-CVE-2022-45703-1.patch)
+NOTE: Applying patch '0031-CVE-2022-45703-2.patch' (../poky/meta/recipes-devtools/binutils/binutils/0031-CVE-2022-45703-2.patch)
+NOTE: Applying patch '0031-CVE-2022-47695.patch' (../poky/meta/recipes-devtools/binutils/binutils/0031-CVE-2022-47695.patch)
+NOTE: Applying patch 'CVE-2022-48063.patch' (../poky/meta/recipes-devtools/binutils/binutils/CVE-2022-48063.patch)
+NOTE: Applying patch '0032-CVE-2022-47010.patch' (../poky/meta/recipes-devtools/binutils/binutils/0032-CVE-2022-47010.patch)
+NOTE: Applying patch '0033-CVE-2022-47007.patch' (../poky/meta/recipes-devtools/binutils/binutils/0033-CVE-2022-47007.patch)
+NOTE: Applying patch '0034-CVE-2022-48064.patch' (../poky/meta/recipes-devtools/binutils/binutils/0034-CVE-2022-48064.patch)
+NOTE: Applying patch '0035-CVE-2023-39129.patch' (../poky/meta/recipes-devtools/binutils/binutils/0035-CVE-2023-39129.patch)
+NOTE: Applying patch '0036-CVE-2023-39130.patch' (../poky/meta/recipes-devtools/binutils/binutils/0036-CVE-2023-39130.patch)
+NOTE: Applying patch '0037-CVE-2024-53589.patch' (../poky/meta/recipes-devtools/binutils/binutils/0037-CVE-2024-53589.patch)
+NOTE: Applying patch '0038-CVE-2025-0840.patch' (../poky/meta/recipes-devtools/binutils/binutils/0038-CVE-2025-0840.patch)
+NOTE: Applying patch '0039-CVE-2025-1178.patch' (../poky/meta/recipes-devtools/binutils/binutils/0039-CVE-2025-1178.patch)
+NOTE: Applying patch '0040-CVE-2025-1180.patch' (../poky/meta/recipes-devtools/binutils/binutils/0040-CVE-2025-1180.patch)
+NOTE: Applying patch '0040-CVE-2025-1182.patch' (../poky/meta/recipes-devtools/binutils/binutils/0040-CVE-2025-1182.patch)
+NOTE: Applying patch '0041-CVE-2025-5244.patch' (../poky/meta/recipes-devtools/binutils/binutils/0041-CVE-2025-5244.patch)
+NOTE: Applying patch '0042-CVE-2025-5245.patch' (../poky/meta/recipes-devtools/binutils/binutils/0042-CVE-2025-5245.patch)
+NOTE: Applying patch '0043-CVE-2025-7546.patch' (../poky/meta/recipes-devtools/binutils/binutils/0043-CVE-2025-7546.patch)
+NOTE: Applying patch '0043-CVE-2025-7545.patch' (../poky/meta/recipes-devtools/binutils/binutils/0043-CVE-2025-7545.patch)
+NOTE: Applying patch '0002-binutils-cross-Do-not-generate-linker-script-directo.patch' (../poky/meta/recipes-devtools/binutils/binutils/0002-binutils-cross-Do-not-generate-linker-script-directo.patch)
+DEBUG: Python function patch_do_patch finished
+DEBUG: Python function do_patch finished
+DEBUG: Executing python function do_qa_patch
+DEBUG: Python function do_qa_patch finished

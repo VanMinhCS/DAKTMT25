@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090842.86 
+zstd-native-1.5.2-r0: do_deploy_source_date_epoch
+Elapsed time: 0.24 seconds
+utime: 34
+stime: 7
+cutime: 2
+cstime: 3
+IO rchar: 289839
+IO wchar: 133007
+IO syscr: 367
+IO syscw: 100
+IO read_bytes: 0
+IO write_bytes: 110592
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.344317
+rusage ru_stime: 0.070522
+rusage ru_maxrss: 108012
+rusage ru_minflt: 8188
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 176
+rusage ru_nvcsw: 14
+rusage ru_nivcsw: 65
+Child rusage ru_utime: 0.028086
+Child rusage ru_stime: 0.031887
+Child rusage ru_maxrss: 108012
+Child rusage ru_minflt: 4329
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 40
+Child rusage ru_nvcsw: 77
+Child rusage ru_nivcsw: 20
+Status: PASSED 
+Ended: 1756090843.10 

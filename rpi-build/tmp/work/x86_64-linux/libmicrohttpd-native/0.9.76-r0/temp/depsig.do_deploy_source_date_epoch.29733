@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:libmicrohttpd-native:x86_64-linux:0.9.76:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 d516f8e7f7515117ade4005be248bc1ad036b493921d6b218aea3ebe8763b120 ./deploy-source-date-epoch/__source_date_epoch.txt

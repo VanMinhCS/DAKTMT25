@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756091046.10 
+popt-native-1.18-r0: do_configure
+Elapsed time: 22.11 seconds
+utime: 59
+stime: 8
+cutime: 1263
+cstime: 383
+IO rchar: 98937478
+IO wchar: 18537908
+IO syscr: 48602
+IO syscw: 15191
+IO read_bytes: 12288
+IO write_bytes: 16879616
+IO cancelled_write_bytes: 8622080
+rusage ru_utime: 0.596773
+rusage ru_stime: 0.08752599999999999
+rusage ru_maxrss: 110512
+rusage ru_minflt: 8880
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 256
+rusage ru_nvcsw: 256
+rusage ru_nivcsw: 210
+Child rusage ru_utime: 12.630433
+Child rusage ru_stime: 3.835194
+Child rusage ru_maxrss: 110512
+Child rusage ru_minflt: 591167
+Child rusage ru_majflt: 30
+Child rusage ru_inblock: 24
+Child rusage ru_oublock: 32712
+Child rusage ru_nvcsw: 5993
+Child rusage ru_nivcsw: 5256
+Status: PASSED 
+Ended: 1756091068.21 

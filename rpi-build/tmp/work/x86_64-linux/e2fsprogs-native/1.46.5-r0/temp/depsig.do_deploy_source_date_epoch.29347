@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:e2fsprogs-native:x86_64-linux:1.46.5:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 11d6a6897ea9238985cb23ac317f667cce0a807f3b9dffe91849575e014057f0 ./deploy-source-date-epoch/__source_date_epoch.txt

@@ -1,0 +1,59 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:quilt-native:x86_64-linux:0.67:r0:x86_64:10:
+task=populate_sysroot
+drwx                                                                                       .
+drwx                                                                                       ./recipe-sysroot-native
+drwx                                                                                       ./recipe-sysroot-native/etc
+-rw-                 1236 a447a204861453f6ca1930e631ebf242955bc7267eb6a914120f493ae71cf1a6 ./recipe-sysroot-native/etc/quilt.quiltrc
+-rw-                    0 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ./recipe-sysroot-native/etc/quiltrc
+drwx                                                                                       ./recipe-sysroot-native/etc/bash_completion.d
+-rw-                 7117 e50398bde8eba7c63e372e066c65a373fb2346dfb5c65d1320ff58e74433b07e ./recipe-sysroot-native/etc/bash_completion.d/quilt
+drwx                                                                                       ./recipe-sysroot-native/sysroot-providers
+-rw-                   12 ba638d854d9d18a3369d9986698f61c935b9d5b43f06c2b41c5f02e8fa33d426 ./recipe-sysroot-native/sysroot-providers/quilt-native
+drwx                                                                                       ./recipe-sysroot-native/usr
+drwx                                                                                       ./recipe-sysroot-native/usr/bin
+-rwx                 7282 fc160859f2ac3adb7357cf96d23de82c3cff07ccab40abfabc6e2a4ddf13a80a ./recipe-sysroot-native/usr/bin/guards
+-rwx                 3240 91793457c69f679388090dc0e71e1df0bd8f85091f57838bfeab68bad22fb723 ./recipe-sysroot-native/usr/bin/quilt
+drwx                                                                                       ./recipe-sysroot-native/usr/share
+drwx                                                                                       ./recipe-sysroot-native/usr/share/quilt
+-rwx                 2494 fc08f221e5625c872d391bcb7b40c5d16d3e4f7b6d901ad876b5d9e3ae6cc09a ./recipe-sysroot-native/usr/share/quilt/add
+-rwx                 3389 c9c9b51ea7d3510fb8d6c099d45ca421067fe33855e1e6573360dcfeec51762a ./recipe-sysroot-native/usr/share/quilt/annotate
+-rwx                  985 82e1b1d1eb209dc0ea73a0275786bd69ccc2559c7d6ce59821f6382d6ae262ec ./recipe-sysroot-native/usr/share/quilt/applied
+-rwx                 2465 93abc502637361c41083963a3b68a072f709f2d3680ebfbfbe856981a9a44fca ./recipe-sysroot-native/usr/share/quilt/delete
+-rwx                 7871 aeb585c46698ca295d86127829a7d7868476fbf7ee0b134437b7ed7a8ffc3f8c ./recipe-sysroot-native/usr/share/quilt/diff
+-rwx                 1190 eb86d4c7fb13c9ecb6790f3f5775b8cd2d7cf3b3a619d9f818f1a14f383ccd91 ./recipe-sysroot-native/usr/share/quilt/edit
+-rwx                 2938 63472598d1ef0d31fd591fced8089ced66f436c1ec1eba7f260a582e4f26f310 ./recipe-sysroot-native/usr/share/quilt/files
+-rwx                 2716 5e846949f8300c1f341397cf7fd5c564b7d61f1fe7f4e483217d3f38fb67219a ./recipe-sysroot-native/usr/share/quilt/fold
+-rwx                 2358 321c9c21bf942cc255a42d36b70dc562cd5fa2110cc3e5934556ec740f5bafc6 ./recipe-sysroot-native/usr/share/quilt/fork
+-rwx                 2768 e9a264c6a2bf63441abc4c8bf16efa456644cfc015114bf4f2c8e7b6058da59f ./recipe-sysroot-native/usr/share/quilt/graph
+-rwx                 3096 2b34e75b3fbfc32f840025186302e18993082acb805bb8a3a64d7f4e836ef0ee ./recipe-sysroot-native/usr/share/quilt/grep
+-rwx                 3181 62b479ee3bf57bd6dc73b96f6e733e571a335e1bb3eda020c87c151287c0ac5f ./recipe-sysroot-native/usr/share/quilt/header
+-rwx                 5187 8accf19e6027c8af6ac5982d9dc84c0a70d0f313371cf0f1ebddd80010711f0b ./recipe-sysroot-native/usr/share/quilt/import
+-rwx                15767 e73a9af8ba82111916d8e7b47d37fd06ce82c36fdf82cc6494a34dcdb1aa3680 ./recipe-sysroot-native/usr/share/quilt/mail
+-rwx                 2416 81cf1751a2fdbb5859d6b46685221a490494061fac159c27195a69c465291567 ./recipe-sysroot-native/usr/share/quilt/new
+-rwx                  944 96930c373f700921d78f84b9a1f81f57e077fd6bae4f64572a8e128198514061 ./recipe-sysroot-native/usr/share/quilt/next
+-rwx                 2695 5d41af9776c4f85995bb93fabfd9042e9a455fd662fbc26d8dfad5e06e5ba3e6 ./recipe-sysroot-native/usr/share/quilt/patches
+-rwx                 5911 8089ec460d9606c6f5b1bbde516e5bc11d2121f613231735819a9b7392fb9743 ./recipe-sysroot-native/usr/share/quilt/pop
+-rwx                 1012 b491689e719efe6052aa16194c6abd7bdcbc78cf53279b4f8efb42ce64b12434 ./recipe-sysroot-native/usr/share/quilt/previous
+-rwx                 8666 9e8060247c16bd322bc75ede2779656e4a4d3050c775d649320e68e6bc0ac900 ./recipe-sysroot-native/usr/share/quilt/push
+-rwx                 8066 639e79566217d0969b397e99f1e6a8d72526053523746ec41aae5ad799d0fc82 ./recipe-sysroot-native/usr/share/quilt/refresh
+-rwx                 2059 c1a8c827804ee480d378e7db92d8f37bccc9f56f979be2c809e2245cf73dab1b ./recipe-sysroot-native/usr/share/quilt/remove
+-rwx                 1991 e8cf60beb0b119c3839967ad4897418aea0317dc52dfef1723aa33fa71c54a25 ./recipe-sysroot-native/usr/share/quilt/rename
+-rwx                 2384 316a28f94bba2c8b1f790cd9d2a62cb3f13b875a7f92b4805e83f6fa4aec4a7d ./recipe-sysroot-native/usr/share/quilt/revert
+-rwx                 1746 db88912be2cda349c61930d4cb80787dc9252df162dde5fc254a76b9f9e36729 ./recipe-sysroot-native/usr/share/quilt/series
+-rwx                11676 422b7b294926400e8a07a8068ccfa652b6789e3f4b7031fb7d5b72b40ac288d5 ./recipe-sysroot-native/usr/share/quilt/setup
+-rwx                 1510 86b5c1b581219622d6386dd7aadd73f7a4c8694998b1a79c6038b6c00cb6e767 ./recipe-sysroot-native/usr/share/quilt/snapshot
+-rwx                  870 51ff0f907cefc71112b4b6ccc4995c00d0e529d1235d46fa9c15dcff4e239670 ./recipe-sysroot-native/usr/share/quilt/top
+-rwx                 1135 2d6a72b859e6e14775851d04f7f8ee6ef3c7306b1ca1ecab9a150817de53be47 ./recipe-sysroot-native/usr/share/quilt/unapplied
+-rwx                 2410 253446da8b9a3861433362ee9909a67172231fa6dcf3766a26d8516af66698fa ./recipe-sysroot-native/usr/share/quilt/upgrade
+drwx                                                                                       ./recipe-sysroot-native/usr/share/quilt/compat
+-rwx                   84 cf8ab7212d57e5b247aff9680274a40e16aca324a0fa467c9c45157a06797a71 ./recipe-sysroot-native/usr/share/quilt/compat/sendmail
+drwx                                                                                       ./recipe-sysroot-native/usr/share/quilt/scripts
+-rwx                 7940 22397de4054aed39b92a8f57af16ed9bc90d2b876fccf5080eb0a1849c98d2cc ./recipe-sysroot-native/usr/share/quilt/scripts/backup-files
+-rwx                13126 589c3311ade17d4014efd256acef4f50628e7634fb286c5684d1feb2ad35b7ca ./recipe-sysroot-native/usr/share/quilt/scripts/dependency-graph
+-rwx                 6382 215727ebda9fdb5429ab10c36489c4899339eefc13078272d946a0bfd5819452 ./recipe-sysroot-native/usr/share/quilt/scripts/edmail
+-rwx                 5385 f8787b66dd9b0dbf795772795bfa87afbc440b8c84dec2e4b9b2218ea1b68647 ./recipe-sysroot-native/usr/share/quilt/scripts/inspect-wrapper
+-rw-                22728 a589bf81bd8f4178d2a4ec615c2984a7b3500b14c7b1f50d0c63b7ddc6ddb255 ./recipe-sysroot-native/usr/share/quilt/scripts/patchfns
+-rwx                 3506 bf72ea90d42b93546b392bb543c13c7b2931259670c740c5f7fccd1f7c6b7c01 ./recipe-sysroot-native/usr/share/quilt/scripts/remove-trailing-ws
+-rw-                  960 686781c69aa053e136a11c3f1c8a6bf1732a4c8951817cf99b5747bcd64985cb ./recipe-sysroot-native/usr/share/quilt/scripts/utilfns

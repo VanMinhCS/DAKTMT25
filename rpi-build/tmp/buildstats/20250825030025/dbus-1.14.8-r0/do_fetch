@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090907.95 
+dbus-1.14.8-r0: do_fetch
+Elapsed time: 3.73 seconds
+utime: 27
+stime: 5
+cutime: 1
+cstime: 2
+IO rchar: 1536594
+IO wchar: 1440283
+IO syscr: 829
+IO syscw: 2060
+IO read_bytes: 0
+IO write_bytes: 1433600
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.27966199999999997
+rusage ru_stime: 0.057576999999999996
+rusage ru_maxrss: 110984
+rusage ru_minflt: 5840
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 120
+rusage ru_nvcsw: 49
+rusage ru_nivcsw: 14
+Child rusage ru_utime: 0.012149
+Child rusage ru_stime: 0.024222
+Child rusage ru_maxrss: 105456
+Child rusage ru_minflt: 1080
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 2680
+Child rusage ru_nvcsw: 36
+Child rusage ru_nivcsw: 3
+Status: PASSED 
+Ended: 1756090911.68 

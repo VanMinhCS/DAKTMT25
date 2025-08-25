@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756091072.44 
+gcc-cross-arm-11.5.0-r0: do_deploy_source_date_epoch
+Elapsed time: 0.26 seconds
+utime: 30
+stime: 6
+cutime: 2
+cstime: 3
+IO rchar: 379147
+IO wchar: 143232
+IO syscr: 447
+IO syscw: 105
+IO read_bytes: 0
+IO write_bytes: 118784
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.304127
+rusage ru_stime: 0.06488
+rusage ru_maxrss: 110180
+rusage ru_minflt: 8440
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 184
+rusage ru_nvcsw: 13
+rusage ru_nivcsw: 61
+Child rusage ru_utime: 0.025796
+Child rusage ru_stime: 0.039123
+Child rusage ru_maxrss: 110180
+Child rusage ru_minflt: 4777
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 48
+Child rusage ru_nvcsw: 81
+Child rusage ru_nivcsw: 12
+Status: PASSED 
+Ended: 1756091072.71 

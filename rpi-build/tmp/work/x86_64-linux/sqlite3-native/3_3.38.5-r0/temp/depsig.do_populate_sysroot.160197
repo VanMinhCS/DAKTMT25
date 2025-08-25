@@ -1,0 +1,30 @@
+OEOuthashBasic
+14
+autoconf-native: a082d55df4b7dac9894c5feaf9f362ebbbf3242ae22430b84c4e8dd6f794fd94
+automake-native: 14963faa76d47d1639f6c0b28acf6361fc204ea39070d937e3951fc646a0a957
+gettext-minimal-native: 0d39582068b641490d184ea9f722f819aafcee1d652d8d8c5248ab8e4971ea09
+gnu-config-native: dcfcdd2de1b71130dc89903a2fc775551b0256cdcd7880cbdc731dcb33a59563
+libtool-native: edf42e87001d7a64879d4959f5b66885251d0230f2a9095a0fb57a5e3f9993fb
+m4-native: 2e220b13b48306f3a02a7bf65e00356873aed6cd266e2e6ce4daa34264a50398
+pkgconfig-native: b24e3bd36e10bb552e7ac6c4c19946e8866a8f39003611687c8377e4ff387b06
+quilt-native: 3057d956d8a64c8d0c95902855fb8674038582d1c445513dc0b3cc45351763ca
+texinfo-dummy-native: c19dfc74595ada505d502217fe29d7dea1eb64a849a4eeb895b475baa979ac9e
+SSTATE_PKGSPEC=sstate:sqlite3-native:x86_64-linux:3.38.5:r0:x86_64:10:
+task=populate_sysroot
+drwx                                                                                       .
+drwx                                                                                       ./recipe-sysroot-native
+drwx                                                                                       ./recipe-sysroot-native/sysroot-providers
+-rw-                   14 0e7532abd543f9e7d1149f425f1ea716f872f524f4517428e45039dd6954879f ./recipe-sysroot-native/sysroot-providers/sqlite3-native
+drwx                                                                                       ./recipe-sysroot-native/usr
+drwx                                                                                       ./recipe-sysroot-native/usr/bin
+-rwx               261424 989f1ca6debd2df3d09f82e98ad0f5cc535c2d2c6d691991637367b326bc5a41 ./recipe-sysroot-native/usr/bin/sqlite3
+drwx                                                                                       ./recipe-sysroot-native/usr/include
+-rw-               612702 f614a412a20e82ae30ac22c5c70b6a136792c5a1a611f98d54b537bc3d57dd0d ./recipe-sysroot-native/usr/include/sqlite3.h
+-rw-                36750 03420f3be605407d2e1b0bde81aa4822597f3394f0fdeb8225e57526b0eece22 ./recipe-sysroot-native/usr/include/sqlite3ext.h
+drwx                                                                                       ./recipe-sysroot-native/usr/lib
+lrwx                                                                                       ./recipe-sysroot-native/usr/lib/libsqlite3.so -> libsqlite3.so.0.8.6
+lrwx                                                                                       ./recipe-sysroot-native/usr/lib/libsqlite3.so.0 -> libsqlite3.so.0.8.6
+-rwx              1336864 24717a2db4dae86d6558e4b31fe39c5410f4cc7acf9f61f46bff40026add047b ./recipe-sysroot-native/usr/lib/libsqlite3.so.0.8.6
+drwx                                                                                       ./recipe-sysroot-native/usr/lib/pkgconfig
+-rw-                  325 b79fcb40ed307c3a6259bc5444e01412f49cccd8d36e00432fe6019ec30af96d ./recipe-sysroot-native/usr/lib/pkgconfig/sqlite3.pc
+drwx                                                                                       ./recipe-sysroot-native/usr/share

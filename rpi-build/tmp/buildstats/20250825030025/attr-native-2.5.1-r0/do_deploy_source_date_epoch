@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090840.59 
+attr-native-2.5.1-r0: do_deploy_source_date_epoch
+Elapsed time: 0.25 seconds
+utime: 44
+stime: 6
+cutime: 2
+cstime: 3
+IO rchar: 337104
+IO wchar: 143227
+IO syscr: 385
+IO syscw: 110
+IO read_bytes: 0
+IO write_bytes: 114688
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.44583799999999996
+rusage ru_stime: 0.0625
+rusage ru_maxrss: 108136
+rusage ru_minflt: 8548
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 184
+rusage ru_nvcsw: 12
+rusage ru_nivcsw: 80
+Child rusage ru_utime: 0.024827
+Child rusage ru_stime: 0.035696
+Child rusage ru_maxrss: 108136
+Child rusage ru_minflt: 4339
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 40
+Child rusage ru_nvcsw: 70
+Child rusage ru_nivcsw: 18
+Status: PASSED 
+Ended: 1756090840.84 

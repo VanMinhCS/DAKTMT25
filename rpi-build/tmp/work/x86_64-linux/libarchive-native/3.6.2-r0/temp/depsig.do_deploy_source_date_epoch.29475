@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:libarchive-native:x86_64-linux:3.6.2:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 347f5873cd2cb15ffd1e49b8c11e51caea2446fd5bdb137f49e22bc78958dc8e ./deploy-source-date-epoch/__source_date_epoch.txt

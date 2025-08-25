@@ -1,0 +1,8 @@
+CVE-2022-35737.patch -p1
+CVE-2022-46908.patch -p1
+CVE-2023-36191.patch -p1
+CVE-2023-7104.patch -p1
+CVE-2025-29088.patch -p1
+CVE-2025-6965.patch -p1
+0001-This-branch-attempts-to-improve-the-detection-of-cov.patch -p1
+CVE-2025-7458.patch -p1

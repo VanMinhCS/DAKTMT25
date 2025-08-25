@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090895.96 
+libxml2-2.9.14-r0: do_fetch
+Elapsed time: 1.27 seconds
+utime: 35
+stime: 7
+cutime: 5
+cstime: 6
+IO rchar: 9300924
+IO wchar: 9211613
+IO syscr: 3501
+IO syscw: 13140
+IO read_bytes: 57344
+IO write_bytes: 9138176
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.354454
+rusage ru_stime: 0.07089
+rusage ru_maxrss: 115352
+rusage ru_minflt: 7777
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 200
+rusage ru_nvcsw: 240
+rusage ru_nivcsw: 7
+Child rusage ru_utime: 0.051703
+Child rusage ru_stime: 0.06379
+Child rusage ru_maxrss: 105236
+Child rusage ru_minflt: 2196
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 112
+Child rusage ru_oublock: 17648
+Child rusage ru_nvcsw: 165
+Child rusage ru_nivcsw: 2
+Status: PASSED 
+Ended: 1756090897.23 

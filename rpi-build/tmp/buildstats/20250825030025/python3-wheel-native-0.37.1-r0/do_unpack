@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090859.50 
+python3-wheel-native-0.37.1-r0: do_unpack
+Elapsed time: 0.24 seconds
+utime: 26
+stime: 3
+cutime: 2
+cstime: 3
+IO rchar: 591629
+IO wchar: 625313
+IO syscr: 210
+IO syscw: 163
+IO read_bytes: 77824
+IO write_bytes: 430080
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.26997299999999996
+rusage ru_stime: 0.037964
+rusage ru_maxrss: 108160
+rusage ru_minflt: 6156
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 56
+rusage ru_nvcsw: 10
+rusage ru_nivcsw: 77
+Child rusage ru_utime: 0.02218
+Child rusage ru_stime: 0.038751
+Child rusage ru_maxrss: 108032
+Child rusage ru_minflt: 1814
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 152
+Child rusage ru_oublock: 784
+Child rusage ru_nvcsw: 38
+Child rusage ru_nivcsw: 27
+Status: PASSED 
+Ended: 1756090859.74 

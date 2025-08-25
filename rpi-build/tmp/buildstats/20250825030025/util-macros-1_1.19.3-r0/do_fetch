@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090888.30 
+util-macros-1_1.19.3-r0: do_fetch
+Elapsed time: 6.25 seconds
+utime: 15
+stime: 2
+cutime: 0
+cstime: 1
+IO rchar: 226183
+IO wchar: 155867
+IO syscr: 303
+IO syscw: 288
+IO read_bytes: 0
+IO write_bytes: 163840
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.159378
+rusage ru_stime: 0.025845
+rusage ru_maxrss: 109468
+rusage ru_minflt: 5165
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 112
+rusage ru_nvcsw: 68
+rusage ru_nivcsw: 3
+Child rusage ru_utime: 0.009595
+Child rusage ru_stime: 0.015567
+Child rusage ru_maxrss: 104992
+Child rusage ru_minflt: 1082
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 208
+Child rusage ru_nvcsw: 31
+Child rusage ru_nivcsw: 50
+Status: PASSED 
+Ended: 1756090894.55 

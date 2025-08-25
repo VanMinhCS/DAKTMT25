@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090928.16 
+libxfixes-1_6.0.0-r0: do_fetch
+Elapsed time: 12.88 seconds
+utime: 17
+stime: 1
+cutime: 0
+cstime: 2
+IO rchar: 423648
+IO wchar: 350489
+IO syscr: 433
+IO syscw: 518
+IO read_bytes: 0
+IO write_bytes: 356352
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.174338
+rusage ru_stime: 0.013075
+rusage ru_maxrss: 110320
+rusage ru_minflt: 5207
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 112
+rusage ru_nvcsw: 50
+rusage ru_nivcsw: 4
+Child rusage ru_utime: 0.004347
+Child rusage ru_stime: 0.021789
+Child rusage ru_maxrss: 105812
+Child rusage ru_minflt: 1080
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 584
+Child rusage ru_nvcsw: 90
+Child rusage ru_nivcsw: 0
+Status: PASSED 
+Ended: 1756090941.03 

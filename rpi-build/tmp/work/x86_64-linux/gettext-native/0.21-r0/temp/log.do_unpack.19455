@@ -1,0 +1,137 @@
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+NOTE: Unpacking /home/ubuntu/yocto/rpi-build/downloads/gettext-0.21.tar.gz to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gettext-native/0.21-r0/
+DEBUG: Searching for parallel.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/parallel.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gettext-native/0.21-r0/
+DEBUG: Searching for use-pkgconfig.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/use-pkgconfig.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gettext-native/0.21-r0/
+DEBUG: Searching for run-ptest in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/run-ptest to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gettext-native/0.21-r0/
+DEBUG: Searching for serial-tests-config.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/serial-tests-config.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gettext-native/0.21-r0/
+DEBUG: Searching for 0001-tests-autopoint-3-unset-MAKEFLAGS.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/0001-tests-autopoint-3-unset-MAKEFLAGS.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gettext-native/0.21-r0/
+DEBUG: Searching for 0001-init-env.in-do-not-add-C-CXX-parameters.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/0001-init-env.in-do-not-add-C-CXX-parameters.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gettext-native/0.21-r0/
+DEBUG: Searching for mingw.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/mingw.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gettext-native/0.21-r0/
+DEBUG: Searching for 0001-msgmerge-29-Add-executable-file-mode-bits.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/0001-msgmerge-29-Add-executable-file-mode-bits.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gettext-native/0.21-r0/
+DEBUG: Searching for 0001-libtextstyle-fix-builds-with-automake-1.16.4-and-new.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/0001-libtextstyle-fix-builds-with-automake-1.16.4-and-new.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gettext-native/0.21-r0/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function create_source_date_epoch_stamp
+DEBUG: Newest file found: /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gettext-native/0.21-r0/gettext-0.21/ChangeLog
+DEBUG: SOURCE_DATE_EPOCH: 1595806374
+DEBUG: Python function create_source_date_epoch_stamp finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

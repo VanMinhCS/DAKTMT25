@@ -1,0 +1,37 @@
+[binaries]
+c = 'gcc'
+cpp = 'g++'
+cython = 'cython3'
+ar = 'ar'
+nm = 'nm'
+strip = 'strip'
+readelf = 'readelf'
+objcopy = 'objcopy'
+pkgconfig = 'pkg-config'
+llvm-config = 'llvm-config13.0.1'
+cups-config = 'cups-config'
+g-ir-scanner = '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/glib-2.0-native/1_2.72.3-r0/recipe-sysroot-native/usr/bin/g-ir-scanner-wrapper'
+g-ir-compiler = '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/glib-2.0-native/1_2.72.3-r0/recipe-sysroot-native/usr/bin/g-ir-compiler-wrapper'
+
+
+
+[built-in options]
+c_args = ['-isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/glib-2.0-native/1_2.72.3-r0/recipe-sysroot-native/usr/include', '-O2', '-pipe']
+c_link_args = ['-L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/glib-2.0-native/1_2.72.3-r0/recipe-sysroot-native/usr/lib', '-L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/glib-2.0-native/1_2.72.3-r0/recipe-sysroot-native/lib', '-Wl,--enable-new-dtags', '-Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/glib-2.0-native/1_2.72.3-r0/recipe-sysroot-native/usr/lib', '-Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/glib-2.0-native/1_2.72.3-r0/recipe-sysroot-native/lib', '-Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/glib-2.0-native/1_2.72.3-r0/recipe-sysroot-native/usr/lib', '-Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/glib-2.0-native/1_2.72.3-r0/recipe-sysroot-native/lib', '-Wl,-O1', '-Wl,--allow-shlib-undefined', '-Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2']
+cpp_args = ['-isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/glib-2.0-native/1_2.72.3-r0/recipe-sysroot-native/usr/include', '-O2', '-pipe']
+cpp_link_args = ['-L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/glib-2.0-native/1_2.72.3-r0/recipe-sysroot-native/usr/lib', '-L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/glib-2.0-native/1_2.72.3-r0/recipe-sysroot-native/lib', '-Wl,--enable-new-dtags', '-Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/glib-2.0-native/1_2.72.3-r0/recipe-sysroot-native/usr/lib', '-Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/glib-2.0-native/1_2.72.3-r0/recipe-sysroot-native/lib', '-Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/glib-2.0-native/1_2.72.3-r0/recipe-sysroot-native/usr/lib', '-Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/glib-2.0-native/1_2.72.3-r0/recipe-sysroot-native/lib', '-Wl,-O1', '-Wl,--allow-shlib-undefined', '-Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2']
+
+[properties]
+needs_exe_wrapper = true
+
+[host_machine]
+system = 'linux'
+cpu_family = 'x86_64'
+cpu = 'x86_64'
+endian = 'little'
+
+[target_machine]
+system = 'linux'
+cpu_family = 'x86_64'
+cpu = 'x86_64'
+endian = 'little'

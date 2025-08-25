@@ -1,0 +1,16 @@
+OEOuthashBasic
+14
+gettext-minimal-native: 0d39582068b641490d184ea9f722f819aafcee1d652d8d8c5248ab8e4971ea09
+gnu-config-native: dcfcdd2de1b71130dc89903a2fc775551b0256cdcd7880cbdc731dcb33a59563
+quilt-native: 3057d956d8a64c8d0c95902855fb8674038582d1c445513dc0b3cc45351763ca
+texinfo-dummy-native: c19dfc74595ada505d502217fe29d7dea1eb64a849a4eeb895b475baa979ac9e
+SSTATE_PKGSPEC=sstate:m4-native:x86_64-linux:1.4.19:r0:x86_64:10:
+task=populate_sysroot
+drwx                                                                                       .
+drwx                                                                                       ./recipe-sysroot-native
+drwx                                                                                       ./recipe-sysroot-native/sysroot-providers
+-rw-                    9 10d97a8fb6d7f4cee99877eb15494726c201f6e38941a37ed08a6f27ae5a58d3 ./recipe-sysroot-native/sysroot-providers/m4-native
+drwx                                                                                       ./recipe-sysroot-native/usr
+drwx                                                                                       ./recipe-sysroot-native/usr/bin
+-rwx               264528 92e2b580757fc4bf5b5027031f902bf68c19380b748e7f8244c543d480d26c80 ./recipe-sysroot-native/usr/bin/m4
+drwx                                                                                       ./recipe-sysroot-native/usr/share

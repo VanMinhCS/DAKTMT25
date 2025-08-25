@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756091078.72 
+gdbm-native-1.23-r0: do_configure
+Elapsed time: 23.96 seconds
+utime: 42
+stime: 8
+cutime: 1198
+cstime: 366
+IO rchar: 96585045
+IO wchar: 19018893
+IO syscr: 48989
+IO syscw: 15377
+IO read_bytes: 4096
+IO write_bytes: 17174528
+IO cancelled_write_bytes: 8376320
+rusage ru_utime: 0.42850699999999997
+rusage ru_stime: 0.081416
+rusage ru_maxrss: 110608
+rusage ru_minflt: 8958
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 256
+rusage ru_nvcsw: 271
+rusage ru_nivcsw: 62
+Child rusage ru_utime: 11.987777
+Child rusage ru_stime: 3.663613
+Child rusage ru_maxrss: 110608
+Child rusage ru_minflt: 611347
+Child rusage ru_majflt: 14
+Child rusage ru_inblock: 8
+Child rusage ru_oublock: 33288
+Child rusage ru_nvcsw: 6613
+Child rusage ru_nivcsw: 4332
+Status: PASSED 
+Ended: 1756091102.68 

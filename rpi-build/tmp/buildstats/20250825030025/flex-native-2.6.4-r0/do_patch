@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090840.31 
+flex-native-2.6.4-r0: do_patch
+Elapsed time: 0.76 seconds
+utime: 26
+stime: 5
+cutime: 40
+cstime: 26
+IO rchar: 1782696
+IO wchar: 183769
+IO syscr: 2784
+IO syscw: 327
+IO read_bytes: 0
+IO write_bytes: 192512
+IO cancelled_write_bytes: 4096
+rusage ru_utime: 0.26059
+rusage ru_stime: 0.058843
+rusage ru_maxrss: 108624
+rusage ru_minflt: 4206
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 128
+rusage ru_nvcsw: 30
+rusage ru_nivcsw: 73
+Child rusage ru_utime: 0.408168
+Child rusage ru_stime: 0.26192499999999996
+Child rusage ru_maxrss: 108624
+Child rusage ru_minflt: 48086
+Child rusage ru_majflt: 4
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 248
+Child rusage ru_nvcsw: 717
+Child rusage ru_nivcsw: 223
+Status: PASSED 
+Ended: 1756090841.08 

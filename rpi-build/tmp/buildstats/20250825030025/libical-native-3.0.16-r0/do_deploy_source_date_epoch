@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090926.96 
+libical-native-3.0.16-r0: do_deploy_source_date_epoch
+Elapsed time: 0.15 seconds
+utime: 24
+stime: 3
+cutime: 1
+cstime: 1
+IO rchar: 320972
+IO wchar: 142105
+IO syscr: 390
+IO syscw: 107
+IO read_bytes: 0
+IO write_bytes: 114688
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.243418
+rusage ru_stime: 0.035334
+rusage ru_maxrss: 110112
+rusage ru_minflt: 8758
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 184
+rusage ru_nvcsw: 14
+rusage ru_nivcsw: 7
+Child rusage ru_utime: 0.018358
+Child rusage ru_stime: 0.011236
+Child rusage ru_maxrss: 110112
+Child rusage ru_minflt: 4353
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 40
+Child rusage ru_nvcsw: 65
+Child rusage ru_nivcsw: 0
+Status: PASSED 
+Ended: 1756090927.11 

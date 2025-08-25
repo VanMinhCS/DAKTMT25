@@ -1,0 +1,7 @@
+recipe-sysroot-native/usr/bin/unifdefall
+recipe-sysroot-native/usr/bin/unifdef
+recipe-sysroot-native/sysroot-providers/unifdef-native
+recipe-sysroot-native/sysroot-providers/
+recipe-sysroot-native/usr/share/
+recipe-sysroot-native/usr/bin/
+recipe-sysroot-native/usr/

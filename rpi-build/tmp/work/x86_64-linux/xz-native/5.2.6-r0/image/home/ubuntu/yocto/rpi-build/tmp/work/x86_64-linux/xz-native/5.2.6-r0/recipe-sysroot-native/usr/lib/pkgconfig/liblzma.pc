@@ -1,0 +1,19 @@
+#
+# Author: Lasse Collin
+#
+# This file has been put into the public domain.
+# You can do whatever you want with this file.
+#
+
+prefix=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr
+exec_prefix=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr
+libdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/lib
+includedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/include
+
+Name: liblzma
+Description: General purpose data compression library
+URL: https://tukaani.org/xz/
+Version: 5.2.6
+Cflags: -I${includedir}
+Libs: -L${libdir} -llzma
+Libs.private: -pthread -lpthread

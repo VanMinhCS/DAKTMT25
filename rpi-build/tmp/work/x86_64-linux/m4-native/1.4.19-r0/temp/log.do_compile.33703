@@ -1,0 +1,1960 @@
+DEBUG: Executing python function autotools_aclocals
+DEBUG: SITE files ['endian-little', 'common-linux', 'common-glibc', 'bit-64', 'x86_64-linux', 'common']
+DEBUG: Python function autotools_aclocals finished
+DEBUG: Executing shell function do_compile
+NOTE: make -j 8 infodir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/share/info
+make  all-recursive
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/build'
+Making all in .
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/build'
+make[2]: Nothing to be done for 'all-am'.
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/build'
+Making all in examples
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/build/examples'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/build/examples'
+Making all in lib
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/build/lib'
+rm -f alloca.h-t alloca.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''HAVE_ALLOCA_H''@|1|g' < ../../m4-1.4.19/lib/alloca.in.h; \
+} > alloca.h-t && \
+mv -f alloca.h-t alloca.h
+rm -f configmake.h-t && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  echo '#if HAVE_WINSOCK2_H'; \
+  echo '# include <winsock2.h> /* avoid mingw pollution on DATADIR */'; \
+  echo '#endif'; \
+  echo '#define PREFIX "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr"'; \
+  echo '#define EXEC_PREFIX "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr"'; \
+  echo '#define BINDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/bin"'; \
+  echo '#define SBINDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/sbin"'; \
+  echo '#define LIBEXECDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/libexec"'; \
+  echo '#define DATAROOTDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/share"'; \
+  echo '#define DATADIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/share"'; \
+  echo '#define SYSCONFDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/etc"'; \
+  echo '#define SHAREDSTATEDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/com"'; \
+  echo '#define LOCALSTATEDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/var"'; \
+  echo '#define RUNSTATEDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/var/run"'; \
+  echo '#define INCLUDEDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include"'; \
+  echo '#define OLDINCLUDEDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include"'; \
+  echo '#define DOCDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/share/doc/m4"'; \
+  echo '#define INFODIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/share/info"'; \
+  echo '#define HTMLDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/share/doc/m4"'; \
+  echo '#define DVIDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/share/doc/m4"'; \
+  echo '#define PDFDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/share/doc/m4"'; \
+  echo '#define PSDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/share/doc/m4"'; \
+  echo '#define LIBDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/lib"'; \
+  echo '#define LISPDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/share/emacs/site-lisp"'; \
+  echo '#define LOCALEDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/share/locale"'; \
+  echo '#define MANDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/share/man"'; \
+  echo '#define MANEXT ""'; \
+  echo '#define PKGDATADIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/share/m4"'; \
+  echo '#define PKGINCLUDEDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include/m4"'; \
+  echo '#define PKGLIBDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/lib/m4"'; \
+  echo '#define PKGLIBEXECDIR "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/libexec/m4"'; \
+} | sed '/""/d' > configmake.h-t && \
+mv -f configmake.h-t configmake.h
+rm -f dirent.h-t dirent.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL_M4|g' \
+      -e 's|@''HAVE_DIRENT_H''@|1|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_DIRENT_H''@|<dirent.h>|g' \
+      -e 's/@''GNULIB_OPENDIR''@/1/g' \
+      -e 's/@''GNULIB_READDIR''@/1/g' \
+      -e 's/@''GNULIB_REWINDDIR''@/1/g' \
+      -e 's/@''GNULIB_CLOSEDIR''@/1/g' \
+      -e 's/@''GNULIB_DIRFD''@/1/g' \
+      -e 's/@''GNULIB_FDOPENDIR''@/1/g' \
+      -e 's/@''GNULIB_SCANDIR''@/0/g' \
+      -e 's/@''GNULIB_ALPHASORT''@/0/g' \
+      -e 's/@''HAVE_OPENDIR''@/1/g' \
+      -e 's/@''HAVE_READDIR''@/1/g' \
+      -e 's/@''HAVE_REWINDDIR''@/1/g' \
+      -e 's/@''HAVE_CLOSEDIR''@/1/g' \
+      -e 's|@''HAVE_DECL_DIRFD''@|1|g' \
+      -e 's|@''HAVE_DECL_FDOPENDIR''@|1|g' \
+      -e 's|@''HAVE_FDOPENDIR''@|1|g' \
+      -e 's|@''HAVE_SCANDIR''@|1|g' \
+      -e 's|@''HAVE_ALPHASORT''@|1|g' \
+      -e 's|@''REPLACE_OPENDIR''@|0|g' \
+      -e 's|@''REPLACE_CLOSEDIR''@|0|g' \
+      -e 's|@''REPLACE_DIRFD''@|0|g' \
+      -e 's|@''REPLACE_FDOPENDIR''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../m4-1.4.19/lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ../../m4-1.4.19/lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../m4-1.4.19/lib/warn-on-use.h' \
+      < ../../m4-1.4.19/lib/dirent.in.h; \
+} > dirent.h-t && \
+mv dirent.h-t dirent.h
+rm -f fcntl.h-t fcntl.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL_M4|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_FCNTL_H''@|<fcntl.h>|g' \
+      -e 's/@''GNULIB_CREAT''@/IN_M4_GNULIB_TESTS/g' \
+      -e 's/@''GNULIB_FCNTL''@/1/g' \
+      -e 's/@''GNULIB_NONBLOCKING''@/0/g' \
+      -e 's/@''GNULIB_OPEN''@/1/g' \
+      -e 's/@''GNULIB_OPENAT''@/1/g' \
+      -e 's/@''GNULIB_MDA_CREAT''@/1/g' \
+      -e 's/@''GNULIB_MDA_OPEN''@/1/g' \
+      -e 's|@''HAVE_FCNTL''@|1|g' \
+      -e 's|@''HAVE_OPENAT''@|1|g' \
+      -e 's|@''REPLACE_CREAT''@|0|g' \
+      -e 's|@''REPLACE_FCNTL''@|1|g' \
+      -e 's|@''REPLACE_OPEN''@|0|g' \
+      -e 's|@''REPLACE_OPENAT''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../m4-1.4.19/lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ../../m4-1.4.19/lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../m4-1.4.19/lib/warn-on-use.h' \
+      < ../../m4-1.4.19/lib/fcntl.in.h; \
+} > fcntl.h-t && \
+mv fcntl.h-t fcntl.h
+rm -f iconv.h-t iconv.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL_M4|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_ICONV_H''@|<iconv.h>|g' \
+      -e 's/@''GNULIB_ICONV''@/1/g' \
+      -e 's|@''ICONV_CONST''@||g' \
+      -e 's|@''REPLACE_ICONV''@|0|g' \
+      -e 's|@''REPLACE_ICONV_OPEN''@|0|g' \
+      -e 's|@''REPLACE_ICONV_UTF''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../m4-1.4.19/lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ../../m4-1.4.19/lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../m4-1.4.19/lib/warn-on-use.h' \
+      < ../../m4-1.4.19/lib/iconv.in.h; \
+} > iconv.h-t && \
+mv iconv.h-t iconv.h
+rm -f inttypes.h-t inttypes.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's/@''HAVE_INTTYPES_H''@/1/g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_INTTYPES_H''@|<inttypes.h>|g' \
+      -e 's/@''APPLE_UNIVERSAL_BUILD''@/0/g' \
+      -e 's/@''PRIPTR_PREFIX''@/"l"/g' \
+      -e 's/@''GNULIB_IMAXABS''@/0/g' \
+      -e 's/@''GNULIB_IMAXDIV''@/0/g' \
+      -e 's/@''GNULIB_STRTOIMAX''@/0/g' \
+      -e 's/@''GNULIB_STRTOUMAX''@/0/g' \
+      -e 's/@''HAVE_DECL_IMAXABS''@/1/g' \
+      -e 's/@''HAVE_DECL_IMAXDIV''@/1/g' \
+      -e 's/@''HAVE_DECL_STRTOIMAX''@/1/g' \
+      -e 's/@''HAVE_DECL_STRTOUMAX''@/1/g' \
+      -e 's/@''HAVE_IMAXDIV_T''@/1/g' \
+      -e 's/@''REPLACE_STRTOIMAX''@/0/g' \
+      -e 's/@''REPLACE_STRTOUMAX''@/0/g' \
+      -e 's/@''INT32_MAX_LT_INTMAX_MAX''@/1/g' \
+      -e 's/@''INT64_MAX_EQ_LONG_MAX''@/1/g' \
+      -e 's/@''UINT32_MAX_LT_UINTMAX_MAX''@/1/g' \
+      -e 's/@''UINT64_MAX_EQ_ULONG_MAX''@/1/g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../m4-1.4.19/lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ../../m4-1.4.19/lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../m4-1.4.19/lib/warn-on-use.h' \
+      < ../../m4-1.4.19/lib/inttypes.in.h; \
+} > inttypes.h-t && \
+mv inttypes.h-t inttypes.h
+rm -f langinfo.h-t langinfo.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL_M4|g' \
+      -e 's|@''HAVE_LANGINFO_H''@|1|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_LANGINFO_H''@|<langinfo.h>|g' \
+      -e 's/@''GNULIB_NL_LANGINFO''@/1/g' \
+      -e 's|@''HAVE_LANGINFO_CODESET''@|1|g' \
+      -e 's|@''HAVE_LANGINFO_T_FMT_AMPM''@|1|g' \
+      -e 's|@''HAVE_LANGINFO_ALTMON''@|1|g' \
+      -e 's|@''HAVE_LANGINFO_ERA''@|1|g' \
+      -e 's|@''HAVE_LANGINFO_YESEXPR''@|1|g' \
+      -e 's|@''HAVE_NL_LANGINFO''@|1|g' \
+      -e 's|@''REPLACE_NL_LANGINFO''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../m4-1.4.19/lib/c++defs.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../m4-1.4.19/lib/warn-on-use.h' \
+      < ../../m4-1.4.19/lib/langinfo.in.h; \
+} > langinfo.h-t && \
+mv langinfo.h-t langinfo.h
+rm -f limits.h-t limits.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL_M4|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_LIMITS_H''@|<limits.h>|g' \
+      < ../../m4-1.4.19/lib/limits.in.h; \
+} > limits.h-t && \
+mv limits.h-t limits.h
+rm -f locale.h-t locale.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL_M4|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_LOCALE_H''@|<locale.h>|g' \
+      -e 's/@''GNULIB_LOCALECONV''@/1/g' \
+      -e 's/@''GNULIB_SETLOCALE''@/1/g' \
+      -e 's/@''GNULIB_SETLOCALE_NULL''@/1/g' \
+      -e 's/@''GNULIB_DUPLOCALE''@/0/g' \
+      -e 's/@''GNULIB_LOCALENAME''@/1/g' \
+      -e 's|@''HAVE_NEWLOCALE''@|1|g' \
+      -e 's|@''HAVE_DUPLOCALE''@|1|g' \
+      -e 's|@''HAVE_FREELOCALE''@|1|g' \
+      -e 's|@''HAVE_XLOCALE_H''@|0|g' \
+      -e 's|@''REPLACE_LOCALECONV''@|0|g' \
+      -e 's|@''REPLACE_SETLOCALE''@|0|g' \
+      -e 's|@''REPLACE_NEWLOCALE''@|0|g' \
+      -e 's|@''REPLACE_DUPLOCALE''@|0|g' \
+      -e 's|@''REPLACE_FREELOCALE''@|0|g' \
+      -e 's|@''REPLACE_STRUCT_LCONV''@|0|g' \
+      -e 's|@''LOCALENAME_ENHANCE_LOCALE_FUNCS''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../m4-1.4.19/lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ../../m4-1.4.19/lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../m4-1.4.19/lib/warn-on-use.h' \
+      < ../../m4-1.4.19/lib/locale.in.h; \
+} > locale.h-t && \
+mv locale.h-t locale.h
+rm -f math.h-t math.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL_M4|g' \
+      -e 's|@''INCLUDE_NEXT_AS_FIRST_DIRECTIVE''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_AS_FIRST_DIRECTIVE_MATH_H''@|<math.h>|g' \
+      -e 's/@''GNULIB_ACOSF''@/0/g' \
+      -e 's/@''GNULIB_ACOSL''@/0/g' \
+      -e 's/@''GNULIB_ASINF''@/0/g' \
+      -e 's/@''GNULIB_ASINL''@/0/g' \
+      -e 's/@''GNULIB_ATANF''@/0/g' \
+      -e 's/@''GNULIB_ATANL''@/0/g' \
+      -e 's/@''GNULIB_ATAN2F''@/0/g' \
+      -e 's/@''GNULIB_CBRT''@/0/g' \
+      -e 's/@''GNULIB_CBRTF''@/0/g' \
+      -e 's/@''GNULIB_CBRTL''@/0/g' \
+      -e 's/@''GNULIB_CEIL''@/0/g' \
+      -e 's/@''GNULIB_CEILF''@/0/g' \
+      -e 's/@''GNULIB_CEILL''@/0/g' \
+      -e 's/@''GNULIB_COPYSIGN''@/0/g' \
+      -e 's/@''GNULIB_COPYSIGNF''@/0/g' \
+      -e 's/@''GNULIB_COPYSIGNL''@/0/g' \
+      -e 's/@''GNULIB_COSF''@/0/g' \
+      -e 's/@''GNULIB_COSL''@/0/g' \
+      -e 's/@''GNULIB_COSHF''@/0/g' \
+      -e 's/@''GNULIB_EXPF''@/0/g' \
+      -e 's/@''GNULIB_EXPL''@/0/g' \
+      -e 's/@''GNULIB_EXP2''@/0/g' \
+      -e 's/@''GNULIB_EXP2F''@/0/g' \
+      -e 's/@''GNULIB_EXP2L''@/0/g' \
+      -e 's/@''GNULIB_EXPM1''@/0/g' \
+      -e 's/@''GNULIB_EXPM1F''@/0/g' \
+      -e 's/@''GNULIB_EXPM1L''@/0/g' \
+      -e 's/@''GNULIB_FABSF''@/0/g' \
+      -e 's/@''GNULIB_FABSL''@/0/g' \
+      -e 's/@''GNULIB_FLOOR''@/0/g' \
+      -e 's/@''GNULIB_FLOORF''@/0/g' \
+      -e 's/@''GNULIB_FLOORL''@/0/g' \
+      -e 's/@''GNULIB_FMA''@/0/g' \
+      -e 's/@''GNULIB_FMAF''@/0/g' \
+      -e 's/@''GNULIB_FMAL''@/0/g' \
+      -e 's/@''GNULIB_FMOD''@/0/g' \
+      -e 's/@''GNULIB_FMODF''@/0/g' \
+      -e 's/@''GNULIB_FMODL''@/0/g' \
+      -e 's/@''GNULIB_FREXPF''@/0/g' \
+      -e 's/@''GNULIB_FREXP''@/1/g' \
+      -e 's/@''GNULIB_FREXPL''@/1/g' \
+      -e 's/@''GNULIB_HYPOT''@/0/g' \
+      -e 's/@''GNULIB_HYPOTF''@/0/g' \
+      -e 's/@''GNULIB_HYPOTL''@/0/g' \
+      < ../../m4-1.4.19/lib/math.in.h | \
+  sed -e 's/@''GNULIB_ILOGB''@/0/g' \
+      -e 's/@''GNULIB_ILOGBF''@/0/g' \
+      -e 's/@''GNULIB_ILOGBL''@/0/g' \
+      -e 's/@''GNULIB_ISFINITE''@/0/g' \
+      -e 's/@''GNULIB_ISINF''@/0/g' \
+      -e 's/@''GNULIB_ISNAN''@/0/g' \
+      -e 's/@''GNULIB_ISNANF''@/0/g' \
+      -e 's/@''GNULIB_ISNAND''@/0/g' \
+      -e 's/@''GNULIB_ISNANL''@/0/g' \
+      -e 's/@''GNULIB_LDEXPF''@/0/g' \
+      -e 's/@''GNULIB_LDEXPL''@/0/g' \
+      -e 's/@''GNULIB_LOG''@/0/g' \
+      -e 's/@''GNULIB_LOGF''@/0/g' \
+      -e 's/@''GNULIB_LOGL''@/0/g' \
+      -e 's/@''GNULIB_LOG10''@/0/g' \
+      -e 's/@''GNULIB_LOG10F''@/0/g' \
+      -e 's/@''GNULIB_LOG10L''@/0/g' \
+      -e 's/@''GNULIB_LOG1P''@/0/g' \
+      -e 's/@''GNULIB_LOG1PF''@/0/g' \
+      -e 's/@''GNULIB_LOG1PL''@/0/g' \
+      -e 's/@''GNULIB_LOG2''@/0/g' \
+      -e 's/@''GNULIB_LOG2F''@/0/g' \
+      -e 's/@''GNULIB_LOG2L''@/0/g' \
+      -e 's/@''GNULIB_LOGB''@/0/g' \
+      -e 's/@''GNULIB_LOGBF''@/0/g' \
+      -e 's/@''GNULIB_LOGBL''@/0/g' \
+      -e 's/@''GNULIB_MODF''@/0/g' \
+      -e 's/@''GNULIB_MODFF''@/0/g' \
+      -e 's/@''GNULIB_MODFL''@/0/g' \
+      -e 's/@''GNULIB_POWF''@/0/g' \
+      -e 's/@''GNULIB_REMAINDER''@/0/g' \
+      -e 's/@''GNULIB_REMAINDERF''@/0/g' \
+      -e 's/@''GNULIB_REMAINDERL''@/0/g' \
+      -e 's/@''GNULIB_RINT''@/0/g' \
+      -e 's/@''GNULIB_RINTF''@/0/g' \
+      -e 's/@''GNULIB_RINTL''@/0/g' \
+      -e 's/@''GNULIB_ROUND''@/0/g' \
+      -e 's/@''GNULIB_ROUNDF''@/0/g' \
+      -e 's/@''GNULIB_ROUNDL''@/0/g' \
+      -e 's/@''GNULIB_SIGNBIT''@/1/g' \
+      -e 's/@''GNULIB_SINF''@/0/g' \
+      -e 's/@''GNULIB_SINL''@/0/g' \
+      -e 's/@''GNULIB_SINHF''@/0/g' \
+      -e 's/@''GNULIB_SQRTF''@/0/g' \
+      -e 's/@''GNULIB_SQRTL''@/0/g' \
+      -e 's/@''GNULIB_TANF''@/0/g' \
+      -e 's/@''GNULIB_TANL''@/0/g' \
+      -e 's/@''GNULIB_TANHF''@/0/g' \
+      -e 's/@''GNULIB_TRUNC''@/0/g' \
+      -e 's/@''GNULIB_TRUNCF''@/0/g' \
+      -e 's/@''GNULIB_TRUNCL''@/0/g' \
+      -e 's/@''GNULIB_MDA_J0''@/1/g' \
+      -e 's/@''GNULIB_MDA_J1''@/1/g' \
+      -e 's/@''GNULIB_MDA_JN''@/1/g' \
+      -e 's/@''GNULIB_MDA_Y0''@/1/g' \
+      -e 's/@''GNULIB_MDA_Y1''@/1/g' \
+      -e 's/@''GNULIB_MDA_YN''@/1/g' \
+  | \
+  sed -e 's|@''HAVE_ACOSF''@|1|g' \
+      -e 's|@''HAVE_ACOSL''@|1|g' \
+      -e 's|@''HAVE_ASINF''@|1|g' \
+      -e 's|@''HAVE_ASINL''@|1|g' \
+      -e 's|@''HAVE_ATANF''@|1|g' \
+      -e 's|@''HAVE_ATANL''@|1|g' \
+      -e 's|@''HAVE_ATAN2F''@|1|g' \
+      -e 's|@''HAVE_CBRT''@|1|g' \
+      -e 's|@''HAVE_CBRTF''@|1|g' \
+      -e 's|@''HAVE_CBRTL''@|1|g' \
+      -e 's|@''HAVE_COPYSIGN''@|1|g' \
+      -e 's|@''HAVE_COPYSIGNL''@|1|g' \
+      -e 's|@''HAVE_COSF''@|1|g' \
+      -e 's|@''HAVE_COSL''@|1|g' \
+      -e 's|@''HAVE_COSHF''@|1|g' \
+      -e 's|@''HAVE_EXPF''@|1|g' \
+      -e 's|@''HAVE_EXPL''@|1|g' \
+      -e 's|@''HAVE_EXPM1''@|1|g' \
+      -e 's|@''HAVE_EXPM1F''@|1|g' \
+      -e 's|@''HAVE_FABSF''@|1|g' \
+      -e 's|@''HAVE_FABSL''@|1|g' \
+      -e 's|@''HAVE_FMA''@|1|g' \
+      -e 's|@''HAVE_FMAF''@|1|g' \
+      -e 's|@''HAVE_FMAL''@|1|g' \
+      -e 's|@''HAVE_FMODF''@|1|g' \
+      -e 's|@''HAVE_FMODL''@|1|g' \
+      -e 's|@''HAVE_FREXPF''@|1|g' \
+      -e 's|@''HAVE_HYPOTF''@|1|g' \
+      -e 's|@''HAVE_HYPOTL''@|1|g' \
+      -e 's|@''HAVE_ILOGB''@|1|g' \
+      -e 's|@''HAVE_ILOGBF''@|1|g' \
+      -e 's|@''HAVE_ILOGBL''@|1|g' \
+      -e 's|@''HAVE_ISNANF''@|1|g' \
+      -e 's|@''HAVE_ISNAND''@|1|g' \
+      -e 's|@''HAVE_ISNANL''@|1|g' \
+      -e 's|@''HAVE_LDEXPF''@|1|g' \
+      -e 's|@''HAVE_LOGF''@|1|g' \
+      -e 's|@''HAVE_LOGL''@|1|g' \
+      -e 's|@''HAVE_LOG10F''@|1|g' \
+      -e 's|@''HAVE_LOG10L''@|1|g' \
+      -e 's|@''HAVE_LOG1P''@|1|g' \
+      -e 's|@''HAVE_LOG1PF''@|1|g' \
+      -e 's|@''HAVE_LOG1PL''@|1|g' \
+      -e 's|@''HAVE_LOGBF''@|1|g' \
+      -e 's|@''HAVE_LOGBL''@|1|g' \
+      -e 's|@''HAVE_MODFF''@|1|g' \
+      -e 's|@''HAVE_MODFL''@|1|g' \
+      -e 's|@''HAVE_POWF''@|1|g' \
+      -e 's|@''HAVE_REMAINDER''@|1|g' \
+      -e 's|@''HAVE_REMAINDERF''@|1|g' \
+      -e 's|@''HAVE_RINT''@|1|g' \
+      -e 's|@''HAVE_RINTL''@|1|g' \
+      -e 's|@''HAVE_SINF''@|1|g' \
+      -e 's|@''HAVE_SINL''@|1|g' \
+      -e 's|@''HAVE_SINHF''@|1|g' \
+      -e 's|@''HAVE_SQRTF''@|1|g' \
+      -e 's|@''HAVE_SQRTL''@|1|g' \
+      -e 's|@''HAVE_TANF''@|1|g' \
+      -e 's|@''HAVE_TANL''@|1|g' \
+      -e 's|@''HAVE_TANHF''@|1|g' \
+      -e 's|@''HAVE_DECL_ACOSL''@|1|g' \
+      -e 's|@''HAVE_DECL_ASINL''@|1|g' \
+      -e 's|@''HAVE_DECL_ATANL''@|1|g' \
+      -e 's|@''HAVE_DECL_CBRTF''@|1|g' \
+      -e 's|@''HAVE_DECL_CBRTL''@|1|g' \
+      -e 's|@''HAVE_DECL_CEILF''@|1|g' \
+      -e 's|@''HAVE_DECL_CEILL''@|1|g' \
+      -e 's|@''HAVE_DECL_COPYSIGNF''@|1|g' \
+      -e 's|@''HAVE_DECL_COSL''@|1|g' \
+      -e 's|@''HAVE_DECL_EXPL''@|1|g' \
+      -e 's|@''HAVE_DECL_EXP2''@|1|g' \
+      -e 's|@''HAVE_DECL_EXP2F''@|1|g' \
+      -e 's|@''HAVE_DECL_EXP2L''@|1|g' \
+      -e 's|@''HAVE_DECL_EXPM1L''@|1|g' \
+      -e 's|@''HAVE_DECL_FLOORF''@|1|g' \
+      -e 's|@''HAVE_DECL_FLOORL''@|1|g' \
+      -e 's|@''HAVE_DECL_FREXPL''@|1|g' \
+      -e 's|@''HAVE_DECL_LDEXPL''@|1|g' \
+      -e 's|@''HAVE_DECL_LOGL''@|1|g' \
+      -e 's|@''HAVE_DECL_LOG10L''@|1|g' \
+      -e 's|@''HAVE_DECL_LOG2''@|1|g' \
+      -e 's|@''HAVE_DECL_LOG2F''@|1|g' \
+      -e 's|@''HAVE_DECL_LOG2L''@|1|g' \
+      -e 's|@''HAVE_DECL_LOGB''@|1|g' \
+      -e 's|@''HAVE_DECL_REMAINDER''@|1|g' \
+      -e 's|@''HAVE_DECL_REMAINDERL''@|1|g' \
+      -e 's|@''HAVE_DECL_RINTF''@|1|g' \
+      -e 's|@''HAVE_DECL_ROUND''@|1|g' \
+      -e 's|@''HAVE_DECL_ROUNDF''@|1|g' \
+      -e 's|@''HAVE_DECL_ROUNDL''@|1|g' \
+      -e 's|@''HAVE_DECL_SINL''@|1|g' \
+      -e 's|@''HAVE_DECL_SQRTL''@|1|g' \
+      -e 's|@''HAVE_DECL_TANL''@|1|g' \
+      -e 's|@''HAVE_DECL_TRUNC''@|1|g' \
+      -e 's|@''HAVE_DECL_TRUNCF''@|1|g' \
+      -e 's|@''HAVE_DECL_TRUNCL''@|1|g' \
+  | \
+  sed -e 's|@''REPLACE_ACOSF''@|0|g' \
+      -e 's|@''REPLACE_ASINF''@|0|g' \
+      -e 's|@''REPLACE_ATANF''@|0|g' \
+      -e 's|@''REPLACE_ATAN2F''@|0|g' \
+      -e 's|@''REPLACE_CBRTF''@|0|g' \
+      -e 's|@''REPLACE_CBRTL''@|0|g' \
+      -e 's|@''REPLACE_CEIL''@|0|g' \
+      -e 's|@''REPLACE_CEILF''@|0|g' \
+      -e 's|@''REPLACE_CEILL''@|0|g' \
+      -e 's|@''REPLACE_COSF''@|0|g' \
+      -e 's|@''REPLACE_COSHF''@|0|g' \
+      -e 's|@''REPLACE_EXPF''@|0|g' \
+      -e 's|@''REPLACE_EXPL''@|0|g' \
+      -e 's|@''REPLACE_EXPM1''@|0|g' \
+      -e 's|@''REPLACE_EXPM1F''@|0|g' \
+      -e 's|@''REPLACE_EXPM1L''@|0|g' \
+      -e 's|@''REPLACE_EXP2''@|0|g' \
+      -e 's|@''REPLACE_EXP2L''@|0|g' \
+      -e 's|@''REPLACE_FABSL''@|0|g' \
+      -e 's|@''REPLACE_FLOOR''@|0|g' \
+      -e 's|@''REPLACE_FLOORF''@|0|g' \
+      -e 's|@''REPLACE_FLOORL''@|0|g' \
+      -e 's|@''REPLACE_FMA''@|0|g' \
+      -e 's|@''REPLACE_FMAF''@|0|g' \
+      -e 's|@''REPLACE_FMAL''@|0|g' \
+      -e 's|@''REPLACE_FMOD''@|0|g' \
+      -e 's|@''REPLACE_FMODF''@|0|g' \
+      -e 's|@''REPLACE_FMODL''@|0|g' \
+      -e 's|@''REPLACE_FREXPF''@|0|g' \
+      -e 's|@''REPLACE_FREXP''@|0|g' \
+      -e 's|@''REPLACE_FREXPL''@|0|g' \
+      -e 's|@''REPLACE_HUGE_VAL''@|0|g' \
+      -e 's|@''REPLACE_HYPOT''@|0|g' \
+      -e 's|@''REPLACE_HYPOTF''@|0|g' \
+      -e 's|@''REPLACE_HYPOTL''@|0|g' \
+      -e 's|@''REPLACE_ILOGB''@|0|g' \
+      -e 's|@''REPLACE_ILOGBF''@|0|g' \
+      -e 's|@''REPLACE_ILOGBL''@|0|g' \
+      -e 's|@''REPLACE_ISFINITE''@|0|g' \
+      -e 's|@''REPLACE_ISINF''@|0|g' \
+      -e 's|@''REPLACE_ISNAN''@|0|g' \
+      -e 's|@''REPLACE_ITOLD''@|0|g' \
+      -e 's|@''REPLACE_LDEXPL''@|0|g' \
+      -e 's|@''REPLACE_LOG''@|0|g' \
+      -e 's|@''REPLACE_LOGF''@|0|g' \
+      -e 's|@''REPLACE_LOGL''@|0|g' \
+      -e 's|@''REPLACE_LOG10''@|0|g' \
+      -e 's|@''REPLACE_LOG10F''@|0|g' \
+      -e 's|@''REPLACE_LOG10L''@|0|g' \
+      -e 's|@''REPLACE_LOG1P''@|0|g' \
+      -e 's|@''REPLACE_LOG1PF''@|0|g' \
+      -e 's|@''REPLACE_LOG1PL''@|0|g' \
+      -e 's|@''REPLACE_LOG2''@|0|g' \
+      -e 's|@''REPLACE_LOG2F''@|0|g' \
+      -e 's|@''REPLACE_LOG2L''@|0|g' \
+      -e 's|@''REPLACE_LOGB''@|0|g' \
+      -e 's|@''REPLACE_LOGBF''@|0|g' \
+      -e 's|@''REPLACE_LOGBL''@|0|g' \
+      -e 's|@''REPLACE_MODF''@|0|g' \
+      -e 's|@''REPLACE_MODFF''@|0|g' \
+      -e 's|@''REPLACE_MODFL''@|0|g' \
+      -e 's|@''REPLACE_NAN''@|0|g' \
+      -e 's|@''REPLACE_REMAINDER''@|0|g' \
+      -e 's|@''REPLACE_REMAINDERF''@|0|g' \
+      -e 's|@''REPLACE_REMAINDERL''@|0|g' \
+      -e 's|@''REPLACE_RINTL''@|0|g' \
+      -e 's|@''REPLACE_ROUND''@|0|g' \
+      -e 's|@''REPLACE_ROUNDF''@|0|g' \
+      -e 's|@''REPLACE_ROUNDL''@|0|g' \
+      -e 's|@''REPLACE_SIGNBIT''@|0|g' \
+      -e 's|@''REPLACE_SIGNBIT_USING_BUILTINS''@|1|g' \
+      -e 's|@''REPLACE_SINF''@|0|g' \
+      -e 's|@''REPLACE_SINHF''@|0|g' \
+      -e 's|@''REPLACE_SQRTF''@|0|g' \
+      -e 's|@''REPLACE_SQRTL''@|0|g' \
+      -e 's|@''REPLACE_TANF''@|0|g' \
+      -e 's|@''REPLACE_TANHF''@|0|g' \
+      -e 's|@''REPLACE_TRUNC''@|0|g' \
+      -e 's|@''REPLACE_TRUNCF''@|0|g' \
+      -e 's|@''REPLACE_TRUNCL''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../m4-1.4.19/lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ../../m4-1.4.19/lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../m4-1.4.19/lib/warn-on-use.h'; \
+} > math.h-t && \
+mv math.h-t math.h
+rm -f sched.h-t sched.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL_M4|g' \
+      -e 's|@''HAVE_SCHED_H''@|1|g' \
+      -e 's|@''HAVE_SYS_CDEFS_H''@|1|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SCHED_H''@|<sched.h>|g' \
+      -e 's|@''HAVE_STRUCT_SCHED_PARAM''@|1|g' \
+      -e 's/@''GNULIB_SCHED_YIELD''@/IN_M4_GNULIB_TESTS/g' \
+      -e 's|@''HAVE_SCHED_YIELD''@|1|g' \
+      -e 's|@''REPLACE_SCHED_YIELD''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../m4-1.4.19/lib/c++defs.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../m4-1.4.19/lib/warn-on-use.h' \
+      < ../../m4-1.4.19/lib/sched.in.h; \
+} > sched.h-t && \
+mv sched.h-t sched.h
+rm -f signal.h-t signal.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL_M4|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SIGNAL_H''@|<signal.h>|g' \
+      -e 's/@''GNULIB_PTHREAD_SIGMASK''@/IN_M4_GNULIB_TESTS/g' \
+      -e 's/@''GNULIB_RAISE''@/1/g' \
+      -e 's/@''GNULIB_SIGNAL_H_SIGPIPE''@/1/g' \
+      -e 's/@''GNULIB_SIGPROCMASK''@/1/g' \
+      -e 's/@''GNULIB_SIGACTION''@/1/g' \
+      -e 's|@''HAVE_POSIX_SIGNALBLOCKING''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_SIGMASK''@|1|g' \
+      -e 's|@''HAVE_RAISE''@|1|g' \
+      -e 's|@''HAVE_SIGSET_T''@|1|g' \
+      -e 's|@''HAVE_SIGINFO_T''@|1|g' \
+      -e 's|@''HAVE_SIGACTION''@|1|g' \
+      -e 's|@''HAVE_STRUCT_SIGACTION_SA_SIGACTION''@|1|g' \
+      -e 's|@''HAVE_TYPE_VOLATILE_SIG_ATOMIC_T''@|1|g' \
+      -e 's|@''HAVE_SIGHANDLER_T''@|1|g' \
+      -e 's|@''REPLACE_PTHREAD_SIGMASK''@|1|g' \
+      -e 's|@''REPLACE_RAISE''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../m4-1.4.19/lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ../../m4-1.4.19/lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../m4-1.4.19/lib/warn-on-use.h' \
+      < ../../m4-1.4.19/lib/signal.in.h; \
+} > signal.h-t && \
+mv signal.h-t signal.h
+rm -f sigsegv.h-t sigsegv.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  cat ../../m4-1.4.19/lib/sigsegv.in.h; \
+} > sigsegv.h-t && \
+mv sigsegv.h-t sigsegv.h
+rm -f spawn.h-t spawn.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL_M4|g' \
+      -e 's|@''HAVE_SPAWN_H''@|1|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SPAWN_H''@|<spawn.h>|g' \
+      -e 's/@''GNULIB_POSIX_SPAWN''@/1/g' \
+      -e 's/@''GNULIB_POSIX_SPAWNP''@/1/g' \
+      -e 's/@''GNULIB_POSIX_SPAWN_FILE_ACTIONS_INIT''@/1/g' \
+      -e 's/@''GNULIB_POSIX_SPAWN_FILE_ACTIONS_ADDCHDIR''@/1/g' \
+      -e 's/@''GNULIB_POSIX_SPAWN_FILE_ACTIONS_ADDCLOSE''@/1/g' \
+      -e 's/@''GNULIB_POSIX_SPAWN_FILE_ACTIONS_ADDDUP2''@/1/g' \
+      -e 's/@''GNULIB_POSIX_SPAWN_FILE_ACTIONS_ADDFCHDIR''@/0/g' \
+      -e 's/@''GNULIB_POSIX_SPAWN_FILE_ACTIONS_ADDOPEN''@/1/g' \
+      -e 's/@''GNULIB_POSIX_SPAWN_FILE_ACTIONS_DESTROY''@/1/g' \
+      -e 's/@''GNULIB_POSIX_SPAWNATTR_INIT''@/1/g' \
+      -e 's/@''GNULIB_POSIX_SPAWNATTR_GETFLAGS''@/0/g' \
+      -e 's/@''GNULIB_POSIX_SPAWNATTR_SETFLAGS''@/1/g' \
+      -e 's/@''GNULIB_POSIX_SPAWNATTR_GETPGROUP''@/0/g' \
+      -e 's/@''GNULIB_POSIX_SPAWNATTR_SETPGROUP''@/1/g' \
+      -e 's/@''GNULIB_POSIX_SPAWNATTR_GETSCHEDPARAM''@/0/g' \
+      -e 's/@''GNULIB_POSIX_SPAWNATTR_SETSCHEDPARAM''@/0/g' \
+      -e 's/@''GNULIB_POSIX_SPAWNATTR_GETSCHEDPOLICY''@/0/g' \
+      -e 's/@''GNULIB_POSIX_SPAWNATTR_SETSCHEDPOLICY''@/0/g' \
+      -e 's/@''GNULIB_POSIX_SPAWNATTR_GETSIGDEFAULT''@/0/g' \
+      -e 's/@''GNULIB_POSIX_SPAWNATTR_SETSIGDEFAULT''@/0/g' \
+      -e 's/@''GNULIB_POSIX_SPAWNATTR_GETSIGMASK''@/0/g' \
+      -e 's/@''GNULIB_POSIX_SPAWNATTR_SETSIGMASK''@/1/g' \
+      -e 's/@''GNULIB_POSIX_SPAWNATTR_DESTROY''@/1/g' \
+      -e 's|@''HAVE_POSIX_SPAWN''@|1|g' \
+      -e 's|@''HAVE_POSIX_SPAWNATTR_T''@|1|g' \
+      -e 's|@''HAVE_POSIX_SPAWN_FILE_ACTIONS_T''@|1|g' \
+      -e 's|@''HAVE_POSIX_SPAWN_FILE_ACTIONS_ADDCHDIR''@|0|g' \
+      -e 's|@''HAVE_POSIX_SPAWN_FILE_ACTIONS_ADDFCHDIR''@|1|g' \
+      -e 's|@''REPLACE_POSIX_SPAWN''@|0|g' \
+      -e 's|@''REPLACE_POSIX_SPAWN_FILE_ACTIONS_ADDCHDIR''@|0|g' \
+      -e 's|@''REPLACE_POSIX_SPAWN_FILE_ACTIONS_ADDCLOSE''@|0|g' \
+      -e 's|@''REPLACE_POSIX_SPAWN_FILE_ACTIONS_ADDDUP2''@|0|g' \
+      -e 's|@''REPLACE_POSIX_SPAWN_FILE_ACTIONS_ADDFCHDIR''@|0|g' \
+      -e 's|@''REPLACE_POSIX_SPAWN_FILE_ACTIONS_ADDOPEN''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../m4-1.4.19/lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ../../m4-1.4.19/lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../m4-1.4.19/lib/warn-on-use.h' \
+      < ../../m4-1.4.19/lib/spawn.in.h; \
+} > spawn.h-t && \
+mv spawn.h-t spawn.h
+rm -f stdio.h-t stdio.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL_M4|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_STDIO_H''@|<stdio.h>|g' \
+      -e 's/@''GNULIB_DPRINTF''@/0/g' \
+      -e 's/@''GNULIB_FCLOSE''@/1/g' \
+      -e 's/@''GNULIB_FDOPEN''@/IN_M4_GNULIB_TESTS/g' \
+      -e 's/@''GNULIB_FFLUSH''@/1/g' \
+      -e 's/@''GNULIB_FGETC''@/1/g' \
+      -e 's/@''GNULIB_FGETS''@/1/g' \
+      -e 's/@''GNULIB_FOPEN''@/1/g' \
+      -e 's/@''GNULIB_FPRINTF''@/1/g' \
+      -e 's/@''GNULIB_FPRINTF_POSIX''@/0/g' \
+      -e 's/@''GNULIB_FPURGE''@/1/g' \
+      -e 's/@''GNULIB_FPUTC''@/1/g' \
+      -e 's/@''GNULIB_FPUTS''@/1/g' \
+      -e 's/@''GNULIB_FREAD''@/1/g' \
+      -e 's/@''GNULIB_FREOPEN''@/IN_M4_GNULIB_TESTS/g' \
+      -e 's/@''GNULIB_FSCANF''@/1/g' \
+      -e 's/@''GNULIB_FSEEK''@/1/g' \
+      -e 's/@''GNULIB_FSEEKO''@/1/g' \
+      -e 's/@''GNULIB_FTELL''@/1/g' \
+      -e 's/@''GNULIB_FTELLO''@/1/g' \
+      -e 's/@''GNULIB_FWRITE''@/1/g' \
+      -e 's/@''GNULIB_GETC''@/1/g' \
+      -e 's/@''GNULIB_GETCHAR''@/1/g' \
+      -e 's/@''GNULIB_GETDELIM''@/0/g' \
+      -e 's/@''GNULIB_GETLINE''@/0/g' \
+      -e 's/@''GNULIB_OBSTACK_PRINTF''@/0/g' \
+      -e 's/@''GNULIB_OBSTACK_PRINTF_POSIX''@/0/g' \
+      -e 's/@''GNULIB_PCLOSE''@/0/g' \
+      -e 's/@''GNULIB_PERROR''@/IN_M4_GNULIB_TESTS/g' \
+      -e 's/@''GNULIB_POPEN''@/0/g' \
+      -e 's/@''GNULIB_PRINTF''@/1/g' \
+      -e 's/@''GNULIB_PRINTF_POSIX''@/0/g' \
+      -e 's/@''GNULIB_PUTC''@/1/g' \
+      -e 's/@''GNULIB_PUTCHAR''@/1/g' \
+      -e 's/@''GNULIB_PUTS''@/1/g' \
+      -e 's/@''GNULIB_REMOVE''@/0/g' \
+      -e 's/@''GNULIB_RENAME''@/1/g' \
+      -e 's/@''GNULIB_RENAMEAT''@/0/g' \
+      -e 's/@''GNULIB_SCANF''@/1/g' \
+      -e 's/@''GNULIB_SNPRINTF''@/1/g' \
+      -e 's/@''GNULIB_SPRINTF_POSIX''@/0/g' \
+      -e 's/@''GNULIB_STDIO_H_NONBLOCKING''@/0/g' \
+      -e 's/@''GNULIB_STDIO_H_SIGPIPE''@/1/g' \
+      -e 's/@''GNULIB_TMPFILE''@/0/g' \
+      -e 's/@''GNULIB_VASPRINTF''@/1/g' \
+      -e 's/@''GNULIB_VDPRINTF''@/0/g' \
+      -e 's/@''GNULIB_VFPRINTF''@/1/g' \
+      -e 's/@''GNULIB_VFPRINTF_POSIX''@/0/g' \
+      -e 's/@''GNULIB_VFSCANF''@/0/g' \
+      -e 's/@''GNULIB_VSCANF''@/0/g' \
+      -e 's/@''GNULIB_VPRINTF''@/1/g' \
+      -e 's/@''GNULIB_VPRINTF_POSIX''@/0/g' \
+      -e 's/@''GNULIB_VSNPRINTF''@/0/g' \
+      -e 's/@''GNULIB_VSPRINTF_POSIX''@/0/g' \
+      -e 's/@''GNULIB_MDA_FCLOSEALL''@/1/g' \
+      -e 's/@''GNULIB_MDA_FDOPEN''@/1/g' \
+      -e 's/@''GNULIB_MDA_FILENO''@/1/g' \
+      -e 's/@''GNULIB_MDA_GETW''@/1/g' \
+      -e 's/@''GNULIB_MDA_PUTW''@/1/g' \
+      -e 's/@''GNULIB_MDA_TEMPNAM''@/1/g' \
+      < ../../m4-1.4.19/lib/stdio.in.h | \
+  sed -e 's|@''HAVE_DECL_FCLOSEALL''@|1|g' \
+      -e 's|@''HAVE_DECL_FPURGE''@|0|g' \
+      -e 's|@''HAVE_DECL_FSEEKO''@|1|g' \
+      -e 's|@''HAVE_DECL_FTELLO''@|1|g' \
+      -e 's|@''HAVE_DECL_GETDELIM''@|1|g' \
+      -e 's|@''HAVE_DECL_GETLINE''@|1|g' \
+      -e 's|@''HAVE_DECL_OBSTACK_PRINTF''@|1|g' \
+      -e 's|@''HAVE_DECL_SNPRINTF''@|1|g' \
+      -e 's|@''HAVE_DECL_VSNPRINTF''@|1|g' \
+      -e 's|@''HAVE_DPRINTF''@|1|g' \
+      -e 's|@''HAVE_FSEEKO''@|1|g' \
+      -e 's|@''HAVE_FTELLO''@|1|g' \
+      -e 's|@''HAVE_PCLOSE''@|1|g' \
+      -e 's|@''HAVE_POPEN''@|1|g' \
+      -e 's|@''HAVE_RENAMEAT''@|1|g' \
+      -e 's|@''HAVE_VASPRINTF''@|1|g' \
+      -e 's|@''HAVE_VDPRINTF''@|1|g' \
+      -e 's|@''REPLACE_DPRINTF''@|0|g' \
+      -e 's|@''REPLACE_FCLOSE''@|1|g' \
+      -e 's|@''REPLACE_FDOPEN''@|0|g' \
+      -e 's|@''REPLACE_FFLUSH''@|1|g' \
+      -e 's|@''REPLACE_FOPEN''@|0|g' \
+      -e 's|@''REPLACE_FPRINTF''@|0|g' \
+      -e 's|@''REPLACE_FPURGE''@|0|g' \
+      -e 's|@''REPLACE_FREOPEN''@|0|g' \
+      -e 's|@''REPLACE_FSEEK''@|1|g' \
+      -e 's|@''REPLACE_FSEEKO''@|1|g' \
+      -e 's|@''REPLACE_FTELL''@|0|g' \
+      -e 's|@''REPLACE_FTELLO''@|0|g' \
+      -e 's|@''REPLACE_GETDELIM''@|0|g' \
+      -e 's|@''REPLACE_GETLINE''@|0|g' \
+      -e 's|@''REPLACE_OBSTACK_PRINTF''@|0|g' \
+      -e 's|@''REPLACE_PERROR''@|0|g' \
+      -e 's|@''REPLACE_POPEN''@|0|g' \
+      -e 's|@''REPLACE_PRINTF''@|0|g' \
+      -e 's|@''REPLACE_REMOVE''@|0|g' \
+      -e 's|@''REPLACE_RENAME''@|0|g' \
+      -e 's|@''REPLACE_RENAMEAT''@|0|g' \
+      -e 's|@''REPLACE_SNPRINTF''@|0|g' \
+      -e 's|@''REPLACE_SPRINTF''@|0|g' \
+      -e 's|@''REPLACE_STDIO_READ_FUNCS''@|0|g' \
+      -e 's|@''REPLACE_STDIO_WRITE_FUNCS''@|0|g' \
+      -e 's|@''REPLACE_TMPFILE''@|0|g' \
+      -e 's|@''REPLACE_VASPRINTF''@|1|g' \
+      -e 's|@''REPLACE_VDPRINTF''@|0|g' \
+      -e 's|@''REPLACE_VFPRINTF''@|0|g' \
+      -e 's|@''REPLACE_VPRINTF''@|0|g' \
+      -e 's|@''REPLACE_VSNPRINTF''@|0|g' \
+      -e 's|@''REPLACE_VSPRINTF''@|0|g' \
+      -e 's|@''ASM_SYMBOL_PREFIX''@|""|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../m4-1.4.19/lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ../../m4-1.4.19/lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../m4-1.4.19/lib/warn-on-use.h'; \
+} > stdio.h-t && \
+mv stdio.h-t stdio.h
+rm -f stdlib.h-t stdlib.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL_M4|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_STDLIB_H''@|<stdlib.h>|g' \
+      -e 's/@''GNULIB__EXIT''@/0/g' \
+      -e 's/@''GNULIB_ALIGNED_ALLOC''@/0/g' \
+      -e 's/@''GNULIB_ATOLL''@/0/g' \
+      -e 's/@''GNULIB_CALLOC_POSIX''@/1/g' \
+      -e 's/@''GNULIB_CANONICALIZE_FILE_NAME''@/1/g' \
+      -e 's/@''GNULIB_FREE_POSIX''@/1/g' \
+      -e 's/@''GNULIB_GETLOADAVG''@/0/g' \
+      -e 's/@''GNULIB_GETSUBOPT''@/0/g' \
+      -e 's/@''GNULIB_GRANTPT''@/0/g' \
+      -e 's/@''GNULIB_MALLOC_POSIX''@/1/g' \
+      -e 's/@''GNULIB_MBTOWC''@/1/g' \
+      -e 's/@''GNULIB_MKDTEMP''@/1/g' \
+      -e 's/@''GNULIB_MKOSTEMP''@/0/g' \
+      -e 's/@''GNULIB_MKOSTEMPS''@/0/g' \
+      -e 's/@''GNULIB_MKSTEMP''@/1/g' \
+      -e 's/@''GNULIB_MKSTEMPS''@/0/g' \
+      -e 's/@''GNULIB_POSIX_MEMALIGN''@/0/g' \
+      -e 's/@''GNULIB_POSIX_OPENPT''@/0/g' \
+      -e 's/@''GNULIB_PTSNAME''@/0/g' \
+      -e 's/@''GNULIB_PTSNAME_R''@/0/g' \
+      -e 's/@''GNULIB_PUTENV''@/IN_M4_GNULIB_TESTS/g' \
+      -e 's/@''GNULIB_QSORT_R''@/0/g' \
+      -e 's/@''GNULIB_RANDOM''@/0/g' \
+      -e 's/@''GNULIB_RANDOM_R''@/0/g' \
+      -e 's/@''GNULIB_REALLOC_POSIX''@/1/g' \
+      -e 's/@''GNULIB_REALLOCARRAY''@/1/g' \
+      -e 's/@''GNULIB_REALPATH''@/1/g' \
+      -e 's/@''GNULIB_RPMATCH''@/0/g' \
+      -e 's/@''GNULIB_SECURE_GETENV''@/1/g' \
+      -e 's/@''GNULIB_SETENV''@/IN_M4_GNULIB_TESTS/g' \
+      -e 's/@''GNULIB_STRTOD''@/1/g' \
+      -e 's/@''GNULIB_STRTOL''@/0/g' \
+      -e 's/@''GNULIB_STRTOLD''@/0/g' \
+      -e 's/@''GNULIB_STRTOLL''@/0/g' \
+      -e 's/@''GNULIB_STRTOUL''@/0/g' \
+      -e 's/@''GNULIB_STRTOULL''@/0/g' \
+      -e 's/@''GNULIB_SYSTEM_POSIX''@/0/g' \
+      -e 's/@''GNULIB_UNLOCKPT''@/0/g' \
+      -e 's/@''GNULIB_UNSETENV''@/IN_M4_GNULIB_TESTS/g' \
+      -e 's/@''GNULIB_WCTOMB''@/IN_M4_GNULIB_TESTS/g' \
+      -e 's/@''GNULIB_MDA_ECVT''@/1/g' \
+      -e 's/@''GNULIB_MDA_FCVT''@/1/g' \
+      -e 's/@''GNULIB_MDA_GCVT''@/1/g' \
+      -e 's/@''GNULIB_MDA_MKTEMP''@/1/g' \
+      -e 's/@''GNULIB_MDA_PUTENV''@/1/g' \
+      < ../../m4-1.4.19/lib/stdlib.in.h | \
+  sed -e 's|@''HAVE__EXIT''@|1|g' \
+      -e 's|@''HAVE_ALIGNED_ALLOC''@|1|g' \
+      -e 's|@''HAVE_ATOLL''@|1|g' \
+      -e 's|@''HAVE_CANONICALIZE_FILE_NAME''@|1|g' \
+      -e 's|@''HAVE_DECL_ECVT''@|1|g' \
+      -e 's|@''HAVE_DECL_FCVT''@|1|g' \
+      -e 's|@''HAVE_DECL_GCVT''@|1|g' \
+      -e 's|@''HAVE_DECL_GETLOADAVG''@|1|g' \
+      -e 's|@''HAVE_GETSUBOPT''@|1|g' \
+      -e 's|@''HAVE_GRANTPT''@|1|g' \
+      -e 's|@''HAVE_INITSTATE''@|1|g' \
+      -e 's|@''HAVE_DECL_INITSTATE''@|1|g' \
+      -e 's|@''HAVE_MBTOWC''@|1|g' \
+      -e 's|@''HAVE_MKDTEMP''@|1|g' \
+      -e 's|@''HAVE_MKOSTEMP''@|1|g' \
+      -e 's|@''HAVE_MKOSTEMPS''@|1|g' \
+      -e 's|@''HAVE_MKSTEMP''@|1|g' \
+      -e 's|@''HAVE_MKSTEMPS''@|1|g' \
+      -e 's|@''HAVE_POSIX_MEMALIGN''@|1|g' \
+      -e 's|@''HAVE_POSIX_OPENPT''@|1|g' \
+      -e 's|@''HAVE_PTSNAME''@|1|g' \
+      -e 's|@''HAVE_PTSNAME_R''@|1|g' \
+      -e 's|@''HAVE_QSORT_R''@|1|g' \
+      -e 's|@''HAVE_RANDOM''@|1|g' \
+      -e 's|@''HAVE_RANDOM_H''@|1|g' \
+      -e 's|@''HAVE_RANDOM_R''@|1|g' \
+      -e 's|@''HAVE_REALLOCARRAY''@|1|g' \
+      -e 's|@''HAVE_REALPATH''@|1|g' \
+      -e 's|@''HAVE_RPMATCH''@|1|g' \
+      -e 's|@''HAVE_SECURE_GETENV''@|1|g' \
+      -e 's|@''HAVE_DECL_SETENV''@|1|g' \
+      -e 's|@''HAVE_SETSTATE''@|1|g' \
+      -e 's|@''HAVE_DECL_SETSTATE''@|1|g' \
+      -e 's|@''HAVE_STRTOD''@|1|g' \
+      -e 's|@''HAVE_STRTOL''@|1|g' \
+      -e 's|@''HAVE_STRTOLD''@|1|g' \
+      -e 's|@''HAVE_STRTOLL''@|1|g' \
+      -e 's|@''HAVE_STRTOUL''@|1|g' \
+      -e 's|@''HAVE_STRTOULL''@|1|g' \
+      -e 's|@''HAVE_STRUCT_RANDOM_DATA''@|1|g' \
+      -e 's|@''HAVE_SYS_LOADAVG_H''@|0|g' \
+      -e 's|@''HAVE_UNLOCKPT''@|1|g' \
+      -e 's|@''HAVE_DECL_UNSETENV''@|1|g' \
+      -e 's|@''REPLACE_ALIGNED_ALLOC''@|0|g' \
+      -e 's|@''REPLACE_CALLOC''@|0|g' \
+      -e 's|@''REPLACE_CANONICALIZE_FILE_NAME''@|0|g' \
+      -e 's|@''REPLACE_FREE''@|0|g' \
+      -e 's|@''REPLACE_INITSTATE''@|0|g' \
+      -e 's|@''REPLACE_MALLOC''@|0|g' \
+      -e 's|@''REPLACE_MBTOWC''@|0|g' \
+      -e 's|@''REPLACE_MKSTEMP''@|0|g' \
+      -e 's|@''REPLACE_POSIX_MEMALIGN''@|0|g' \
+      -e 's|@''REPLACE_PTSNAME''@|0|g' \
+      -e 's|@''REPLACE_PTSNAME_R''@|0|g' \
+      -e 's|@''REPLACE_PUTENV''@|0|g' \
+      -e 's|@''REPLACE_QSORT_R''@|0|g' \
+      -e 's|@''REPLACE_RANDOM''@|0|g' \
+      -e 's|@''REPLACE_RANDOM_R''@|0|g' \
+      -e 's|@''REPLACE_REALLOC''@|0|g' \
+      -e 's|@''REPLACE_REALLOCARRAY''@|0|g' \
+      -e 's|@''REPLACE_REALPATH''@|0|g' \
+      -e 's|@''REPLACE_SETENV''@|0|g' \
+      -e 's|@''REPLACE_SETSTATE''@|0|g' \
+      -e 's|@''REPLACE_STRTOD''@|0|g' \
+      -e 's|@''REPLACE_STRTOL''@|0|g' \
+      -e 's|@''REPLACE_STRTOLD''@|0|g' \
+      -e 's|@''REPLACE_STRTOLL''@|0|g' \
+      -e 's|@''REPLACE_STRTOUL''@|0|g' \
+      -e 's|@''REPLACE_STRTOULL''@|0|g' \
+      -e 's|@''REPLACE_UNSETENV''@|0|g' \
+      -e 's|@''REPLACE_WCTOMB''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../m4-1.4.19/lib/c++defs.h' \
+      -e '/definition of _Noreturn/r ../../m4-1.4.19/lib/_Noreturn.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ../../m4-1.4.19/lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../m4-1.4.19/lib/warn-on-use.h'; \
+} > stdlib.h-t && \
+mv stdlib.h-t stdlib.h
+rm -f string.h-t string.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL_M4|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_STRING_H''@|<string.h>|g' \
+      -e 's/@''GNULIB_EXPLICIT_BZERO''@/IN_M4_GNULIB_TESTS/g' \
+      -e 's/@''GNULIB_FFSL''@/0/g' \
+      -e 's/@''GNULIB_FFSLL''@/0/g' \
+      -e 's/@''GNULIB_MBSLEN''@/1/g' \
+      -e 's/@''GNULIB_MBSNLEN''@/0/g' \
+      -e 's/@''GNULIB_MBSCHR''@/0/g' \
+      -e 's/@''GNULIB_MBSRCHR''@/0/g' \
+      -e 's/@''GNULIB_MBSSTR''@/1/g' \
+      -e 's/@''GNULIB_MBSCASECMP''@/0/g' \
+      -e 's/@''GNULIB_MBSNCASECMP''@/0/g' \
+      -e 's/@''GNULIB_MBSPCASECMP''@/0/g' \
+      -e 's/@''GNULIB_MBSCASESTR''@/0/g' \
+      -e 's/@''GNULIB_MBSCSPN''@/0/g' \
+      -e 's/@''GNULIB_MBSPBRK''@/0/g' \
+      -e 's/@''GNULIB_MBSSPN''@/0/g' \
+      -e 's/@''GNULIB_MBSSEP''@/0/g' \
+      -e 's/@''GNULIB_MBSTOK_R''@/0/g' \
+      -e 's/@''GNULIB_MEMCHR''@/1/g' \
+      -e 's/@''GNULIB_MEMMEM''@/0/g' \
+      -e 's/@''GNULIB_MEMPCPY''@/1/g' \
+      -e 's/@''GNULIB_MEMRCHR''@/1/g' \
+      -e 's/@''GNULIB_RAWMEMCHR''@/1/g' \
+      -e 's/@''GNULIB_STPCPY''@/1/g' \
+      -e 's/@''GNULIB_STPNCPY''@/0/g' \
+      -e 's/@''GNULIB_STRCHRNUL''@/1/g' \
+      -e 's/@''GNULIB_STRDUP''@/1/g' \
+      -e 's/@''GNULIB_STRNCAT''@/0/g' \
+      -e 's/@''GNULIB_STRNDUP''@/1/g' \
+      -e 's/@''GNULIB_STRNLEN''@/1/g' \
+      -e 's/@''GNULIB_STRPBRK''@/0/g' \
+      -e 's/@''GNULIB_STRSEP''@/0/g' \
+      -e 's/@''GNULIB_STRSTR''@/1/g' \
+      -e 's/@''GNULIB_STRCASESTR''@/0/g' \
+      -e 's/@''GNULIB_STRTOK_R''@/0/g' \
+      -e 's/@''GNULIB_STRERROR''@/1/g' \
+      -e 's/@''GNULIB_STRERROR_R''@/IN_M4_GNULIB_TESTS/g' \
+      -e 's/@''GNULIB_STRERRORNAME_NP''@/0/g' \
+      -e 's/@''GNULIB_SIGABBREV_NP''@/0/g' \
+      -e 's/@''GNULIB_SIGDESCR_NP''@/0/g' \
+      -e 's/@''GNULIB_STRSIGNAL''@/1/g' \
+      -e 's/@''GNULIB_STRVERSCMP''@/0/g' \
+      -e 's/@''GNULIB_MDA_MEMCCPY''@/1/g' \
+      -e 's/@''GNULIB_MDA_STRDUP''@/1/g' \
+      < ../../m4-1.4.19/lib/string.in.h | \
+  sed -e 's|@''HAVE_EXPLICIT_BZERO''@|1|g' \
+      -e 's|@''HAVE_FFSL''@|1|g' \
+      -e 's|@''HAVE_FFSLL''@|1|g' \
+      -e 's|@''HAVE_MBSLEN''@|0|g' \
+      -e 's|@''HAVE_DECL_MEMMEM''@|1|g' \
+      -e 's|@''HAVE_MEMPCPY''@|1|g' \
+      -e 's|@''HAVE_DECL_MEMRCHR''@|1|g' \
+      -e 's|@''HAVE_RAWMEMCHR''@|1|g' \
+      -e 's|@''HAVE_STPCPY''@|1|g' \
+      -e 's|@''HAVE_STPNCPY''@|1|g' \
+      -e 's|@''HAVE_STRCHRNUL''@|1|g' \
+      -e 's|@''HAVE_DECL_STRDUP''@|1|g' \
+      -e 's|@''HAVE_DECL_STRNDUP''@|1|g' \
+      -e 's|@''HAVE_DECL_STRNLEN''@|1|g' \
+      -e 's|@''HAVE_STRPBRK''@|1|g' \
+      -e 's|@''HAVE_STRSEP''@|1|g' \
+      -e 's|@''HAVE_STRCASESTR''@|1|g' \
+      -e 's|@''HAVE_DECL_STRTOK_R''@|1|g' \
+      -e 's|@''HAVE_DECL_STRERROR_R''@|1|g' \
+      -e 's|@''HAVE_STRERRORNAME_NP''@|1|g' \
+      -e 's|@''HAVE_SIGABBREV_NP''@|1|g' \
+      -e 's|@''HAVE_SIGDESCR_NP''@|1|g' \
+      -e 's|@''HAVE_DECL_STRSIGNAL''@|1|g' \
+      -e 's|@''HAVE_STRVERSCMP''@|1|g' \
+      -e 's|@''REPLACE_FFSLL''@|0|g' \
+      -e 's|@''REPLACE_MEMCHR''@|0|g' \
+      -e 's|@''REPLACE_MEMMEM''@|0|g' \
+      -e 's|@''REPLACE_STPNCPY''@|0|g' \
+      -e 's|@''REPLACE_STRCHRNUL''@|0|g' \
+      -e 's|@''REPLACE_STRDUP''@|0|g' \
+      -e 's|@''REPLACE_STRNCAT''@|0|g' \
+      -e 's|@''REPLACE_STRNDUP''@|0|g' \
+      -e 's|@''REPLACE_STRNLEN''@|0|g' \
+      -e 's|@''REPLACE_STRSTR''@|0|g' \
+      -e 's|@''REPLACE_STRCASESTR''@|0|g' \
+      -e 's|@''REPLACE_STRTOK_R''@|0|g' \
+      -e 's|@''REPLACE_STRERROR''@|0|g' \
+      -e 's|@''REPLACE_STRERROR_R''@|1|g' \
+      -e 's|@''REPLACE_STRERRORNAME_NP''@|0|g' \
+      -e 's|@''REPLACE_STRSIGNAL''@|0|g' \
+      -e 's|@''UNDEFINE_STRTOK_R''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../m4-1.4.19/lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ../../m4-1.4.19/lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../m4-1.4.19/lib/warn-on-use.h'; \
+      < ../../m4-1.4.19/lib/string.in.h; \
+} > string.h-t && \
+mv string.h-t string.h
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p sys
+rm -f sys/random.h-t sys/random.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL_M4|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_RANDOM_H''@|<sys/random.h>|g' \
+      -e 's|@''HAVE_SYS_RANDOM_H''@|1|g' \
+      -e 's/@''GNULIB_GETRANDOM''@/1/g' \
+      -e 's/@''HAVE_GETRANDOM''@/1/g' \
+      -e 's/@''REPLACE_GETRANDOM''@/0/g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../m4-1.4.19/lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ../../m4-1.4.19/lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../m4-1.4.19/lib/warn-on-use.h' \
+      < ../../m4-1.4.19/lib/sys_random.in.h; \
+} > sys/random.h-t && \
+mv -f sys/random.h-t sys/random.h
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p sys
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p sys
+rm -f sys/stat.h-t sys/stat.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL_M4|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_STAT_H''@|<sys/stat.h>|g' \
+      -e 's|@''WINDOWS_64_BIT_ST_SIZE''@|0|g' \
+      -e 's|@''WINDOWS_STAT_TIMESPEC''@|0|g' \
+      -e 's/@''GNULIB_FCHMODAT''@/0/g' \
+      -e 's/@''GNULIB_FSTAT''@/1/g' \
+      -e 's/@''GNULIB_FSTATAT''@/1/g' \
+      -e 's/@''GNULIB_FUTIMENS''@/0/g' \
+      -e 's/@''GNULIB_GETUMASK''@/0/g' \
+      -e 's/@''GNULIB_LCHMOD''@/0/g' \
+      -e 's/@''GNULIB_LSTAT''@/1/g' \
+      -e 's/@''GNULIB_MKDIR''@/1/g' \
+      -e 's/@''GNULIB_MKDIRAT''@/0/g' \
+      -e 's/@''GNULIB_MKFIFO''@/0/g' \
+      -e 's/@''GNULIB_MKFIFOAT''@/0/g' \
+      -e 's/@''GNULIB_MKNOD''@/0/g' \
+      -e 's/@''GNULIB_MKNODAT''@/0/g' \
+      -e 's/@''GNULIB_STAT''@/1/g' \
+      -e 's/@''GNULIB_UTIMENSAT''@/0/g' \
+      -e 's/@''GNULIB_OVERRIDES_STRUCT_STAT''@/0/g' \
+      -e 's/@''GNULIB_MDA_CHMOD''@/1/g' \
+      -e 's/@''GNULIB_MDA_MKDIR''@/1/g' \
+      -e 's/@''GNULIB_MDA_UMASK''@/1/g' \
+      -e 's|@''HAVE_FCHMODAT''@|1|g' \
+      -e 's|@''HAVE_FSTATAT''@|1|g' \
+      -e 's|@''HAVE_FUTIMENS''@|1|g' \
+      -e 's|@''HAVE_GETUMASK''@|1|g' \
+      -e 's|@''HAVE_LCHMOD''@|1|g' \
+      -e 's|@''HAVE_LSTAT''@|1|g' \
+      -e 's|@''HAVE_MKDIRAT''@|1|g' \
+      -e 's|@''HAVE_MKFIFO''@|1|g' \
+      -e 's|@''HAVE_MKFIFOAT''@|1|g' \
+      -e 's|@''HAVE_MKNOD''@|1|g' \
+      -e 's|@''HAVE_MKNODAT''@|1|g' \
+      -e 's|@''HAVE_UTIMENSAT''@|1|g' \
+      -e 's|@''REPLACE_FCHMODAT''@|0|g' \
+      -e 's|@''REPLACE_FSTAT''@|0|g' \
+      -e 's|@''REPLACE_FSTATAT''@|0|g' \
+      -e 's|@''REPLACE_FUTIMENS''@|0|g' \
+      -e 's|@''REPLACE_LSTAT''@|0|g' \
+      -e 's|@''REPLACE_MKDIR''@|0|g' \
+      -e 's|@''REPLACE_MKFIFO''@|0|g' \
+      -e 's|@''REPLACE_MKFIFOAT''@|0|g' \
+      -e 's|@''REPLACE_MKNOD''@|0|g' \
+      -e 's|@''REPLACE_MKNODAT''@|0|g' \
+      -e 's|@''REPLACE_STAT''@|0|g' \
+      -e 's|@''REPLACE_UTIMENSAT''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../m4-1.4.19/lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ../../m4-1.4.19/lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../m4-1.4.19/lib/warn-on-use.h' \
+      < ../../m4-1.4.19/lib/sys_stat.in.h; \
+} > sys/stat.h-t && \
+mv sys/stat.h-t sys/stat.h
+rm -f sys/types.h-t sys/types.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL_M4|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_TYPES_H''@|<sys/types.h>|g' \
+      -e 's|@''WINDOWS_64_BIT_OFF_T''@|0|g' \
+      -e 's|@''WINDOWS_STAT_INODES''@|0|g' \
+      < ../../m4-1.4.19/lib/sys_types.in.h; \
+} > sys/types.h-t && \
+mv sys/types.h-t sys/types.h
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p sys
+rm -f time.h-t time.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL_M4|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_TIME_H''@|<time.h>|g' \
+      -e 's/@''GNULIB_CTIME''@/0/g' \
+      -e 's/@''GNULIB_LOCALTIME''@/0/g' \
+      -e 's/@''GNULIB_MKTIME''@/0/g' \
+      -e 's/@''GNULIB_NANOSLEEP''@/IN_M4_GNULIB_TESTS/g' \
+      -e 's/@''GNULIB_STRFTIME''@/0/g' \
+      -e 's/@''GNULIB_STRPTIME''@/0/g' \
+      -e 's/@''GNULIB_TIMEGM''@/0/g' \
+      -e 's/@''GNULIB_TIMESPEC_GET''@/0/g' \
+      -e 's/@''GNULIB_TIME_R''@/0/g' \
+      -e 's/@''GNULIB_TIME_RZ''@/0/g' \
+      -e 's/@''GNULIB_TZSET''@/0/g' \
+      -e 's/@''GNULIB_MDA_TZSET''@/1/g' \
+      -e 's|@''HAVE_DECL_LOCALTIME_R''@|1|g' \
+      -e 's|@''HAVE_NANOSLEEP''@|1|g' \
+      -e 's|@''HAVE_STRPTIME''@|1|g' \
+      -e 's|@''HAVE_TIMEGM''@|1|g' \
+      -e 's|@''HAVE_TIMESPEC_GET''@|1|g' \
+      -e 's|@''HAVE_TIMEZONE_T''@|0|g' \
+      -e 's|@''REPLACE_CTIME''@|GNULIB_PORTCHECK|g' \
+      -e 's|@''REPLACE_GMTIME''@|0|g' \
+      -e 's|@''REPLACE_LOCALTIME''@|0|g' \
+      -e 's|@''REPLACE_LOCALTIME_R''@|GNULIB_PORTCHECK|g' \
+      -e 's|@''REPLACE_MKTIME''@|GNULIB_PORTCHECK|g' \
+      -e 's|@''REPLACE_NANOSLEEP''@|1|g' \
+      -e 's|@''REPLACE_STRFTIME''@|GNULIB_PORTCHECK|g' \
+      -e 's|@''REPLACE_TIMEGM''@|GNULIB_PORTCHECK|g' \
+      -e 's|@''REPLACE_TZSET''@|GNULIB_PORTCHECK|g' \
+      -e 's|@''PTHREAD_H_DEFINES_STRUCT_TIMESPEC''@|0|g' \
+      -e 's|@''SYS_TIME_H_DEFINES_STRUCT_TIMESPEC''@|0|g' \
+      -e 's|@''TIME_H_DEFINES_STRUCT_TIMESPEC''@|1|g' \
+      -e 's|@''UNISTD_H_DEFINES_STRUCT_TIMESPEC''@|0|g' \
+      -e 's|@''TIME_H_DEFINES_TIME_UTC''@|1|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../m4-1.4.19/lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ../../m4-1.4.19/lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../m4-1.4.19/lib/warn-on-use.h' \
+      < ../../m4-1.4.19/lib/time.in.h; \
+} > time.h-t && \
+mv time.h-t time.h
+rm -f sys/wait.h-t sys/wait.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL_M4|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_WAIT_H''@|<sys/wait.h>|g' \
+      -e 's/@''GNULIB_WAITPID''@/1/g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../m4-1.4.19/lib/c++defs.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../m4-1.4.19/lib/warn-on-use.h' \
+      < ../../m4-1.4.19/lib/sys_wait.in.h; \
+} > sys/wait.h-t && \
+mv sys/wait.h-t sys/wait.h
+rm -f unistd.h-t unistd.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL_M4|g' \
+      -e 's|@''HAVE_UNISTD_H''@|1|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_UNISTD_H''@|<unistd.h>|g' \
+      -e 's|@''WINDOWS_64_BIT_OFF_T''@|0|g' \
+      -e 's/@''GNULIB_ACCESS''@/1/g' \
+      -e 's/@''GNULIB_CHDIR''@/1/g' \
+      -e 's/@''GNULIB_CHOWN''@/0/g' \
+      -e 's/@''GNULIB_CLOSE''@/1/g' \
+      -e 's/@''GNULIB_COPY_FILE_RANGE''@/0/g' \
+      -e 's/@''GNULIB_DUP''@/1/g' \
+      -e 's/@''GNULIB_DUP2''@/1/g' \
+      -e 's/@''GNULIB_DUP3''@/0/g' \
+      -e 's/@''GNULIB_ENVIRON''@/1/g' \
+      -e 's/@''GNULIB_EUIDACCESS''@/0/g' \
+      -e 's/@''GNULIB_EXECL''@/0/g' \
+      -e 's/@''GNULIB_EXECLE''@/0/g' \
+      -e 's/@''GNULIB_EXECLP''@/0/g' \
+      -e 's/@''GNULIB_EXECV''@/0/g' \
+      -e 's/@''GNULIB_EXECVE''@/0/g' \
+      -e 's/@''GNULIB_EXECVP''@/0/g' \
+      -e 's/@''GNULIB_EXECVPE''@/0/g' \
+      -e 's/@''GNULIB_FACCESSAT''@/0/g' \
+      -e 's/@''GNULIB_FCHDIR''@/1/g' \
+      -e 's/@''GNULIB_FCHOWNAT''@/0/g' \
+      -e 's/@''GNULIB_FDATASYNC''@/0/g' \
+      -e 's/@''GNULIB_FSYNC''@/0/g' \
+      -e 's/@''GNULIB_FTRUNCATE''@/IN_M4_GNULIB_TESTS/g' \
+      -e 's/@''GNULIB_GETCWD''@/1/g' \
+      -e 's/@''GNULIB_GETDOMAINNAME''@/0/g' \
+      -e 's/@''GNULIB_GETDTABLESIZE''@/1/g' \
+      -e 's/@''GNULIB_GETENTROPY''@/0/g' \
+      -e 's/@''GNULIB_GETGROUPS''@/0/g' \
+      -e 's/@''GNULIB_GETHOSTNAME''@/0/g' \
+      -e 's/@''GNULIB_GETLOGIN''@/0/g' \
+      -e 's/@''GNULIB_GETLOGIN_R''@/0/g' \
+      -e 's/@''GNULIB_GETOPT_POSIX''@/1/g' \
+      -e 's/@''GNULIB_GETPAGESIZE''@/1/g' \
+      -e 's/@''GNULIB_GETPASS''@/0/g' \
+      -e 's/@''GNULIB_GETUSERSHELL''@/0/g' \
+      -e 's/@''GNULIB_GROUP_MEMBER''@/0/g' \
+      -e 's/@''GNULIB_ISATTY''@/0/g' \
+      -e 's/@''GNULIB_LCHOWN''@/0/g' \
+      -e 's/@''GNULIB_LINK''@/IN_M4_GNULIB_TESTS/g' \
+      -e 's/@''GNULIB_LINKAT''@/0/g' \
+      -e 's/@''GNULIB_LSEEK''@/1/g' \
+      -e 's/@''GNULIB_PIPE''@/1/g' \
+      -e 's/@''GNULIB_PIPE2''@/1/g' \
+      -e 's/@''GNULIB_PREAD''@/0/g' \
+      -e 's/@''GNULIB_PWRITE''@/0/g' \
+      -e 's/@''GNULIB_READ''@/0/g' \
+      -e 's/@''GNULIB_READLINK''@/1/g' \
+      -e 's/@''GNULIB_READLINKAT''@/0/g' \
+      -e 's/@''GNULIB_RMDIR''@/1/g' \
+      -e 's/@''GNULIB_SETHOSTNAME''@/0/g' \
+      -e 's/@''GNULIB_SLEEP''@/IN_M4_GNULIB_TESTS/g' \
+      -e 's/@''GNULIB_SYMLINK''@/IN_M4_GNULIB_TESTS/g' \
+      -e 's/@''GNULIB_SYMLINKAT''@/0/g' \
+      -e 's/@''GNULIB_TRUNCATE''@/0/g' \
+      -e 's/@''GNULIB_TTYNAME_R''@/0/g' \
+      -e 's/@''GNULIB_UNISTD_H_GETOPT''@/0/g' \
+      -e 's/@''GNULIB_UNISTD_H_NONBLOCKING''@/0/g' \
+      -e 's/@''GNULIB_UNISTD_H_SIGPIPE''@/1/g' \
+      -e 's/@''GNULIB_UNLINK''@/0/g' \
+      -e 's/@''GNULIB_UNLINKAT''@/0/g' \
+      -e 's/@''GNULIB_USLEEP''@/0/g' \
+      -e 's/@''GNULIB_WRITE''@/IN_M4_GNULIB_TESTS/g' \
+      -e 's/@''GNULIB_MDA_ACCESS''@/1/g' \
+      -e 's/@''GNULIB_MDA_CHDIR''@/1/g' \
+      -e 's/@''GNULIB_MDA_CLOSE''@/1/g' \
+      -e 's/@''GNULIB_MDA_DUP''@/1/g' \
+      -e 's/@''GNULIB_MDA_DUP2''@/1/g' \
+      -e 's/@''GNULIB_MDA_EXECL''@/1/g' \
+      -e 's/@''GNULIB_MDA_EXECLE''@/1/g' \
+      -e 's/@''GNULIB_MDA_EXECLP''@/1/g' \
+      -e 's/@''GNULIB_MDA_EXECV''@/1/g' \
+      -e 's/@''GNULIB_MDA_EXECVE''@/1/g' \
+      -e 's/@''GNULIB_MDA_EXECVP''@/1/g' \
+      -e 's/@''GNULIB_MDA_EXECVPE''@/1/g' \
+      -e 's/@''GNULIB_MDA_GETCWD''@/1/g' \
+      -e 's/@''GNULIB_MDA_GETPID''@/1/g' \
+      -e 's/@''GNULIB_MDA_ISATTY''@/1/g' \
+      -e 's/@''GNULIB_MDA_LSEEK''@/1/g' \
+      -e 's/@''GNULIB_MDA_READ''@/1/g' \
+      -e 's/@''GNULIB_MDA_RMDIR''@/1/g' \
+      -e 's/@''GNULIB_MDA_SWAB''@/1/g' \
+      -e 's/@''GNULIB_MDA_UNLINK''@/1/g' \
+      -e 's/@''GNULIB_MDA_WRITE''@/1/g' \
+      < ../../m4-1.4.19/lib/unistd.in.h | \
+  sed -e 's|@''HAVE_CHOWN''@|1|g' \
+      -e 's|@''HAVE_COPY_FILE_RANGE''@|1|g' \
+      -e 's|@''HAVE_DUP3''@|1|g' \
+      -e 's|@''HAVE_EUIDACCESS''@|1|g' \
+      -e 's|@''HAVE_EXECVPE''@|1|g' \
+      -e 's|@''HAVE_FACCESSAT''@|1|g' \
+      -e 's|@''HAVE_FCHDIR''@|1|g' \
+      -e 's|@''HAVE_FCHOWNAT''@|1|g' \
+      -e 's|@''HAVE_FDATASYNC''@|1|g' \
+      -e 's|@''HAVE_FSYNC''@|1|g' \
+      -e 's|@''HAVE_FTRUNCATE''@|1|g' \
+      -e 's|@''HAVE_GETDTABLESIZE''@|1|g' \
+      -e 's|@''HAVE_GETENTROPY''@|1|g' \
+      -e 's|@''HAVE_GETGROUPS''@|1|g' \
+      -e 's|@''HAVE_GETHOSTNAME''@|1|g' \
+      -e 's|@''HAVE_GETPAGESIZE''@|1|g' \
+      -e 's|@''HAVE_GETPASS''@|1|g' \
+      -e 's|@''HAVE_GROUP_MEMBER''@|1|g' \
+      -e 's|@''HAVE_LCHOWN''@|1|g' \
+      -e 's|@''HAVE_LINK''@|1|g' \
+      -e 's|@''HAVE_LINKAT''@|1|g' \
+      -e 's|@''HAVE_PIPE''@|1|g' \
+      -e 's|@''HAVE_PIPE2''@|1|g' \
+      -e 's|@''HAVE_PREAD''@|1|g' \
+      -e 's|@''HAVE_PWRITE''@|1|g' \
+      -e 's|@''HAVE_READLINK''@|1|g' \
+      -e 's|@''HAVE_READLINKAT''@|1|g' \
+      -e 's|@''HAVE_SETHOSTNAME''@|1|g' \
+      -e 's|@''HAVE_SLEEP''@|1|g' \
+      -e 's|@''HAVE_SYMLINK''@|1|g' \
+      -e 's|@''HAVE_SYMLINKAT''@|1|g' \
+      -e 's|@''HAVE_UNLINKAT''@|1|g' \
+      -e 's|@''HAVE_USLEEP''@|1|g' \
+      -e 's|@''HAVE_DECL_ENVIRON''@|1|g' \
+      -e 's|@''HAVE_DECL_EXECVPE''@|1|g' \
+      -e 's|@''HAVE_DECL_FCHDIR''@|1|g' \
+      -e 's|@''HAVE_DECL_FDATASYNC''@|1|g' \
+      -e 's|@''HAVE_DECL_GETDOMAINNAME''@|1|g' \
+      -e 's|@''HAVE_DECL_GETLOGIN''@|1|g' \
+      -e 's|@''HAVE_DECL_GETLOGIN_R''@|1|g' \
+      -e 's|@''HAVE_DECL_GETPAGESIZE''@|1|g' \
+      -e 's|@''HAVE_DECL_GETUSERSHELL''@|1|g' \
+      -e 's|@''HAVE_DECL_SETHOSTNAME''@|1|g' \
+      -e 's|@''HAVE_DECL_TRUNCATE''@|1|g' \
+      -e 's|@''HAVE_DECL_TTYNAME_R''@|1|g' \
+      -e 's|@''HAVE_OS_H''@|0|g' \
+      -e 's|@''HAVE_SYS_PARAM_H''@|0|g' \
+  | \
+  sed -e 's|@''REPLACE_ACCESS''@|0|g' \
+      -e 's|@''REPLACE_CHOWN''@|0|g' \
+      -e 's|@''REPLACE_CLOSE''@|0|g' \
+      -e 's|@''REPLACE_DUP''@|0|g' \
+      -e 's|@''REPLACE_DUP2''@|0|g' \
+      -e 's|@''REPLACE_EXECL''@|0|g' \
+      -e 's|@''REPLACE_EXECLE''@|0|g' \
+      -e 's|@''REPLACE_EXECLP''@|0|g' \
+      -e 's|@''REPLACE_EXECV''@|0|g' \
+      -e 's|@''REPLACE_EXECVE''@|0|g' \
+      -e 's|@''REPLACE_EXECVP''@|0|g' \
+      -e 's|@''REPLACE_EXECVPE''@|0|g' \
+      -e 's|@''REPLACE_FACCESSAT''@|0|g' \
+      -e 's|@''REPLACE_FCHOWNAT''@|0|g' \
+      -e 's|@''REPLACE_FTRUNCATE''@|0|g' \
+      -e 's|@''REPLACE_GETCWD''@|0|g' \
+      -e 's|@''REPLACE_GETDOMAINNAME''@|0|g' \
+      -e 's|@''REPLACE_GETDTABLESIZE''@|0|g' \
+      -e 's|@''REPLACE_GETLOGIN_R''@|0|g' \
+      -e 's|@''REPLACE_GETGROUPS''@|0|g' \
+      -e 's|@''REPLACE_GETPAGESIZE''@|0|g' \
+      -e 's|@''REPLACE_GETPASS''@|0|g' \
+      -e 's|@''REPLACE_ISATTY''@|0|g' \
+      -e 's|@''REPLACE_LCHOWN''@|0|g' \
+      -e 's|@''REPLACE_LINK''@|0|g' \
+      -e 's|@''REPLACE_LINKAT''@|0|g' \
+      -e 's|@''REPLACE_LSEEK''@|0|g' \
+      -e 's|@''REPLACE_PREAD''@|0|g' \
+      -e 's|@''REPLACE_PWRITE''@|0|g' \
+      -e 's|@''REPLACE_READ''@|0|g' \
+      -e 's|@''REPLACE_READLINK''@|0|g' \
+      -e 's|@''REPLACE_READLINKAT''@|0|g' \
+      -e 's|@''REPLACE_RMDIR''@|0|g' \
+      -e 's|@''REPLACE_SLEEP''@|0|g' \
+      -e 's|@''REPLACE_SYMLINK''@|0|g' \
+      -e 's|@''REPLACE_SYMLINKAT''@|0|g' \
+      -e 's|@''REPLACE_TRUNCATE''@|0|g' \
+      -e 's|@''REPLACE_TTYNAME_R''@|0|g' \
+      -e 's|@''REPLACE_UNLINK''@|0|g' \
+      -e 's|@''REPLACE_UNLINKAT''@|0|g' \
+      -e 's|@''REPLACE_USLEEP''@|0|g' \
+      -e 's|@''REPLACE_WRITE''@|0|g' \
+      -e 's|@''UNISTD_H_HAVE_SYS_RANDOM_H''@|1|g' \
+      -e 's|@''UNISTD_H_HAVE_WINSOCK2_H''@|0|g' \
+      -e 's|@''UNISTD_H_HAVE_WINSOCK2_H_AND_USE_SOCKETS''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../m4-1.4.19/lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ../../m4-1.4.19/lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../m4-1.4.19/lib/warn-on-use.h'; \
+} > unistd.h-t && \
+mv unistd.h-t unistd.h
+rm -f unistr.h-t unistr.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  cat ../../m4-1.4.19/lib/unistr.in.h; \
+} > unistr.h-t && \
+mv -f unistr.h-t unistr.h
+rm -f unitypes.h-t unitypes.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  cat ../../m4-1.4.19/lib/unitypes.in.h; \
+} > unitypes.h-t && \
+mv -f unitypes.h-t unitypes.h
+rm -f uniwidth.h-t uniwidth.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  cat ../../m4-1.4.19/lib/uniwidth.in.h; \
+} > uniwidth.h-t && \
+mv -f uniwidth.h-t uniwidth.h
+rm -f wchar.h-t wchar.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL_M4|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''HAVE_FEATURES_H''@|1|g' \
+      -e 's|@''NEXT_WCHAR_H''@|<wchar.h>|g' \
+      -e 's|@''HAVE_WCHAR_H''@|1|g' \
+      -e 's/@''HAVE_CRTDEFS_H''@/0/g' \
+      -e 's/@''GNULIBHEADERS_OVERRIDE_WINT_T''@/0/g' \
+      -e 's/@''GNULIB_BTOWC''@/1/g' \
+      -e 's/@''GNULIB_WCTOB''@/IN_M4_GNULIB_TESTS/g' \
+      -e 's/@''GNULIB_MBSINIT''@/1/g' \
+      -e 's/@''GNULIB_MBRTOWC''@/1/g' \
+      -e 's/@''GNULIB_MBRLEN''@/0/g' \
+      -e 's/@''GNULIB_MBSRTOWCS''@/0/g' \
+      -e 's/@''GNULIB_MBSNRTOWCS''@/0/g' \
+      -e 's/@''GNULIB_WCRTOMB''@/1/g' \
+      -e 's/@''GNULIB_WCSRTOMBS''@/0/g' \
+      -e 's/@''GNULIB_WCSNRTOMBS''@/0/g' \
+      -e 's/@''GNULIB_WCWIDTH''@/1/g' \
+      -e 's/@''GNULIB_WMEMCHR''@/0/g' \
+      -e 's/@''GNULIB_WMEMCMP''@/0/g' \
+      -e 's/@''GNULIB_WMEMCPY''@/0/g' \
+      -e 's/@''GNULIB_WMEMMOVE''@/0/g' \
+      -e 's/@''GNULIB_WMEMPCPY''@/0/g' \
+      -e 's/@''GNULIB_WMEMSET''@/0/g' \
+      -e 's/@''GNULIB_WCSLEN''@/0/g' \
+      -e 's/@''GNULIB_WCSNLEN''@/0/g' \
+      -e 's/@''GNULIB_WCSCPY''@/0/g' \
+      -e 's/@''GNULIB_WCPCPY''@/0/g' \
+      -e 's/@''GNULIB_WCSNCPY''@/0/g' \
+      -e 's/@''GNULIB_WCPNCPY''@/0/g' \
+      -e 's/@''GNULIB_WCSCAT''@/0/g' \
+      -e 's/@''GNULIB_WCSNCAT''@/0/g' \
+      -e 's/@''GNULIB_WCSCMP''@/0/g' \
+      -e 's/@''GNULIB_WCSNCMP''@/0/g' \
+      -e 's/@''GNULIB_WCSCASECMP''@/0/g' \
+      -e 's/@''GNULIB_WCSNCASECMP''@/0/g' \
+      -e 's/@''GNULIB_WCSCOLL''@/0/g' \
+      -e 's/@''GNULIB_WCSXFRM''@/0/g' \
+      -e 's/@''GNULIB_WCSDUP''@/0/g' \
+      -e 's/@''GNULIB_WCSCHR''@/0/g' \
+      -e 's/@''GNULIB_WCSRCHR''@/0/g' \
+      -e 's/@''GNULIB_WCSCSPN''@/0/g' \
+      -e 's/@''GNULIB_WCSSPN''@/0/g' \
+      -e 's/@''GNULIB_WCSPBRK''@/0/g' \
+      -e 's/@''GNULIB_WCSSTR''@/0/g' \
+      -e 's/@''GNULIB_WCSTOK''@/0/g' \
+      -e 's/@''GNULIB_WCSWIDTH''@/0/g' \
+      -e 's/@''GNULIB_WCSFTIME''@/0/g' \
+      -e 's/@''GNULIB_MDA_WCSDUP''@/1/g' \
+      < ../../m4-1.4.19/lib/wchar.in.h | \
+  sed -e 's|@''HAVE_WINT_T''@|1|g' \
+      -e 's|@''HAVE_BTOWC''@|1|g' \
+      -e 's|@''HAVE_MBSINIT''@|1|g' \
+      -e 's|@''HAVE_MBRTOWC''@|1|g' \
+      -e 's|@''HAVE_MBRLEN''@|1|g' \
+      -e 's|@''HAVE_MBSRTOWCS''@|1|g' \
+      -e 's|@''HAVE_MBSNRTOWCS''@|1|g' \
+      -e 's|@''HAVE_WCRTOMB''@|1|g' \
+      -e 's|@''HAVE_WCSRTOMBS''@|1|g' \
+      -e 's|@''HAVE_WCSNRTOMBS''@|1|g' \
+      -e 's|@''HAVE_WMEMCHR''@|1|g' \
+      -e 's|@''HAVE_WMEMCMP''@|1|g' \
+      -e 's|@''HAVE_WMEMCPY''@|1|g' \
+      -e 's|@''HAVE_WMEMMOVE''@|1|g' \
+      -e 's|@''HAVE_WMEMPCPY''@|1|g' \
+      -e 's|@''HAVE_WMEMSET''@|1|g' \
+      -e 's|@''HAVE_WCSLEN''@|1|g' \
+      -e 's|@''HAVE_WCSNLEN''@|1|g' \
+      -e 's|@''HAVE_WCSCPY''@|1|g' \
+      -e 's|@''HAVE_WCPCPY''@|1|g' \
+      -e 's|@''HAVE_WCSNCPY''@|1|g' \
+      -e 's|@''HAVE_WCPNCPY''@|1|g' \
+      -e 's|@''HAVE_WCSCAT''@|1|g' \
+      -e 's|@''HAVE_WCSNCAT''@|1|g' \
+      -e 's|@''HAVE_WCSCMP''@|1|g' \
+      -e 's|@''HAVE_WCSNCMP''@|1|g' \
+      -e 's|@''HAVE_WCSCASECMP''@|1|g' \
+      -e 's|@''HAVE_WCSNCASECMP''@|1|g' \
+      -e 's|@''HAVE_WCSCOLL''@|1|g' \
+      -e 's|@''HAVE_WCSXFRM''@|1|g' \
+      -e 's|@''HAVE_WCSDUP''@|1|g' \
+      -e 's|@''HAVE_WCSCHR''@|1|g' \
+      -e 's|@''HAVE_WCSRCHR''@|1|g' \
+      -e 's|@''HAVE_WCSCSPN''@|1|g' \
+      -e 's|@''HAVE_WCSSPN''@|1|g' \
+      -e 's|@''HAVE_WCSPBRK''@|1|g' \
+      -e 's|@''HAVE_WCSSTR''@|1|g' \
+      -e 's|@''HAVE_WCSTOK''@|1|g' \
+      -e 's|@''HAVE_WCSWIDTH''@|1|g' \
+      -e 's|@''HAVE_WCSFTIME''@|1|g' \
+      -e 's|@''HAVE_DECL_WCTOB''@|1|g' \
+      -e 's|@''HAVE_DECL_WCSDUP''@|1|g' \
+      -e 's|@''HAVE_DECL_WCWIDTH''@|1|g' \
+  | \
+  sed -e 's|@''REPLACE_MBSTATE_T''@|0|g' \
+      -e 's|@''REPLACE_BTOWC''@|0|g' \
+      -e 's|@''REPLACE_WCTOB''@|0|g' \
+      -e 's|@''REPLACE_MBSINIT''@|0|g' \
+      -e 's|@''REPLACE_MBRTOWC''@|1|g' \
+      -e 's|@''REPLACE_MBRLEN''@|0|g' \
+      -e 's|@''REPLACE_MBSRTOWCS''@|0|g' \
+      -e 's|@''REPLACE_MBSNRTOWCS''@|0|g' \
+      -e 's|@''REPLACE_WCRTOMB''@|0|g' \
+      -e 's|@''REPLACE_WCSRTOMBS''@|0|g' \
+      -e 's|@''REPLACE_WCSNRTOMBS''@|0|g' \
+      -e 's|@''REPLACE_WCWIDTH''@|0|g' \
+      -e 's|@''REPLACE_WCSWIDTH''@|0|g' \
+      -e 's|@''REPLACE_WCSFTIME''@|0|g' \
+      -e 's|@''REPLACE_WCSTOK''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../m4-1.4.19/lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ../../m4-1.4.19/lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../m4-1.4.19/lib/warn-on-use.h'; \
+} > wchar.h-t && \
+mv wchar.h-t wchar.h
+rm -f wctype.h-t wctype.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL_M4|g' \
+      -e 's/@''HAVE_WCTYPE_H''@/1/g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_WCTYPE_H''@|<wctype.h>|g' \
+      -e 's/@''HAVE_CRTDEFS_H''@/0/g' \
+      -e 's/@''GNULIBHEADERS_OVERRIDE_WINT_T''@/0/g' \
+      -e 's/@''GNULIB_ISWBLANK''@/1/g' \
+      -e 's/@''GNULIB_ISWDIGIT''@/1/g' \
+      -e 's/@''GNULIB_ISWXDIGIT''@/1/g' \
+      -e 's/@''GNULIB_WCTYPE''@/0/g' \
+      -e 's/@''GNULIB_ISWCTYPE''@/0/g' \
+      -e 's/@''GNULIB_WCTRANS''@/0/g' \
+      -e 's/@''GNULIB_TOWCTRANS''@/0/g' \
+      -e 's/@''HAVE_ISWBLANK''@/1/g' \
+      -e 's/@''HAVE_ISWCNTRL''@/1/g' \
+      -e 's/@''HAVE_WCTYPE_T''@/1/g' \
+      -e 's/@''HAVE_WCTRANS_T''@/1/g' \
+      -e 's/@''HAVE_WINT_T''@/1/g' \
+      -e 's/@''REPLACE_ISWBLANK''@/0/g' \
+      -e 's/@''REPLACE_ISWDIGIT''@/0/g' \
+      -e 's/@''REPLACE_ISWXDIGIT''@/0/g' \
+      -e 's/@''REPLACE_ISWCNTRL''@/0/g' \
+      -e 's/@''REPLACE_TOWLOWER''@/0/g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../m4-1.4.19/lib/c++defs.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../m4-1.4.19/lib/warn-on-use.h' \
+      < ../../m4-1.4.19/lib/wctype.in.h; \
+} > wctype.h-t && \
+mv wctype.h-t wctype.h
+make  all-am
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/build/lib'
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o asyncsafe-spin.o ../../m4-1.4.19/lib/asyncsafe-spin.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o openat-proc.o ../../m4-1.4.19/lib/openat-proc.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o gl_avltree_oset.o ../../m4-1.4.19/lib/gl_avltree_oset.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o basename-lgpl.o ../../m4-1.4.19/lib/basename-lgpl.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o binary-io.o ../../m4-1.4.19/lib/binary-io.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o bitrotate.o ../../m4-1.4.19/lib/bitrotate.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o c-ctype.o ../../m4-1.4.19/lib/c-ctype.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o c-stack.o ../../m4-1.4.19/lib/c-stack.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o c-strcasecmp.o ../../m4-1.4.19/lib/c-strcasecmp.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o c-strncasecmp.o ../../m4-1.4.19/lib/c-strncasecmp.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o canonicalize.o ../../m4-1.4.19/lib/canonicalize.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o clean-temp.o ../../m4-1.4.19/lib/clean-temp.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o clean-temp-simple.o ../../m4-1.4.19/lib/clean-temp-simple.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o cloexec.o ../../m4-1.4.19/lib/cloexec.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o close-stream.o ../../m4-1.4.19/lib/close-stream.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o closein.o ../../m4-1.4.19/lib/closein.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o closeout.o ../../m4-1.4.19/lib/closeout.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o concat-filename.o ../../m4-1.4.19/lib/concat-filename.c
+../../m4-1.4.19/lib/canonicalize.c: In function ‘canonicalize_filename_mode’:
+../../m4-1.4.19/lib/canonicalize.c:484:5: warning: #warning "GCC might issue a bogus -Wreturn-local-addr warning here." [-Wcpp]
+  484 |    #warning "GCC might issue a bogus -Wreturn-local-addr warning here."
+      |     ^~~~~~~
+../../m4-1.4.19/lib/canonicalize.c:485:5: warning: #warning "See <https://gcc.gnu.org/bugzilla/show_bug.cgi?id=93644>." [-Wcpp]
+  485 |    #warning "See <https://gcc.gnu.org/bugzilla/show_bug.cgi?id=93644>."
+      |     ^~~~~~~
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o dirname.o ../../m4-1.4.19/lib/dirname.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o basename.o ../../m4-1.4.19/lib/basename.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o dirname-lgpl.o ../../m4-1.4.19/lib/dirname-lgpl.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o stripslash.o ../../m4-1.4.19/lib/stripslash.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o execute.o ../../m4-1.4.19/lib/execute.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o exitfail.o ../../m4-1.4.19/lib/exitfail.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o fatal-signal.o ../../m4-1.4.19/lib/fatal-signal.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o fd-hook.o ../../m4-1.4.19/lib/fd-hook.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o fd-safer-flag.o ../../m4-1.4.19/lib/fd-safer-flag.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o dup-safer-flag.o ../../m4-1.4.19/lib/dup-safer-flag.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o file-set.o ../../m4-1.4.19/lib/file-set.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o filenamecat.o ../../m4-1.4.19/lib/filenamecat.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o filenamecat-lgpl.o ../../m4-1.4.19/lib/filenamecat-lgpl.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o findprog-in.o ../../m4-1.4.19/lib/findprog-in.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o fopen-safer.o ../../m4-1.4.19/lib/fopen-safer.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o freading.o ../../m4-1.4.19/lib/freading.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o getprogname.o ../../m4-1.4.19/lib/getprogname.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o hard-locale.o ../../m4-1.4.19/lib/hard-locale.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o hash.o ../../m4-1.4.19/lib/hash.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o hash-pjw.o ../../m4-1.4.19/lib/hash-pjw.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o hash-triple-simple.o ../../m4-1.4.19/lib/hash-triple-simple.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o gl_linked_list.o ../../m4-1.4.19/lib/gl_linked_list.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o gl_linkedhash_list.o ../../m4-1.4.19/lib/gl_linkedhash_list.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o gl_list.o ../../m4-1.4.19/lib/gl_list.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o localcharset.o ../../m4-1.4.19/lib/localcharset.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o localename.o ../../m4-1.4.19/lib/localename.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o localename-table.o ../../m4-1.4.19/lib/localename-table.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o malloca.o ../../m4-1.4.19/lib/malloca.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o math.o ../../m4-1.4.19/lib/math.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o mbchar.o ../../m4-1.4.19/lib/mbchar.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o mbiter.o ../../m4-1.4.19/lib/mbiter.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o mbslen.o ../../m4-1.4.19/lib/mbslen.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o mbsstr.o ../../m4-1.4.19/lib/mbsstr.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o mbuiter.o ../../m4-1.4.19/lib/mbuiter.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o memchr2.o ../../m4-1.4.19/lib/memchr2.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o openat-die.o ../../m4-1.4.19/lib/openat-die.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o gl_oset.o ../../m4-1.4.19/lib/gl_oset.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o pipe2.o ../../m4-1.4.19/lib/pipe2.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o pipe2-safer.o ../../m4-1.4.19/lib/pipe2-safer.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o printf-frexp.o ../../m4-1.4.19/lib/printf-frexp.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o printf-frexpl.o ../../m4-1.4.19/lib/printf-frexpl.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o progname.o ../../m4-1.4.19/lib/progname.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o propername.o ../../m4-1.4.19/lib/propername.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o quotearg.o ../../m4-1.4.19/lib/quotearg.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o save-cwd.o ../../m4-1.4.19/lib/save-cwd.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o malloc/scratch_buffer_dupfree.o ../../m4-1.4.19/lib/malloc/scratch_buffer_dupfree.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o malloc/scratch_buffer_grow.o ../../m4-1.4.19/lib/malloc/scratch_buffer_grow.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o malloc/scratch_buffer_grow_preserve.o ../../m4-1.4.19/lib/malloc/scratch_buffer_grow_preserve.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o malloc/scratch_buffer_set_array_size.o ../../m4-1.4.19/lib/malloc/scratch_buffer_set_array_size.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o setlocale_null.o ../../m4-1.4.19/lib/setlocale_null.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o sig-handler.o ../../m4-1.4.19/lib/sig-handler.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o sigsegv.o ../../m4-1.4.19/lib/sigsegv.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o stackvma.o ../../m4-1.4.19/lib/stackvma.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o spawn-pipe.o ../../m4-1.4.19/lib/spawn-pipe.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o stat-time.o ../../m4-1.4.19/lib/stat-time.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o mkstemp-safer.o ../../m4-1.4.19/lib/mkstemp-safer.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o striconv.o ../../m4-1.4.19/lib/striconv.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o strnlen1.o ../../m4-1.4.19/lib/strnlen1.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o tempname.o ../../m4-1.4.19/lib/tempname.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o glthread/threadlib.o ../../m4-1.4.19/lib/glthread/threadlib.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o glthread/tls.o ../../m4-1.4.19/lib/glthread/tls.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o tmpdir.o ../../m4-1.4.19/lib/tmpdir.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o trim.o ../../m4-1.4.19/lib/trim.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o unistd.o ../../m4-1.4.19/lib/unistd.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o dup-safer.o ../../m4-1.4.19/lib/dup-safer.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o fd-safer.o ../../m4-1.4.19/lib/fd-safer.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o pipe-safer.o ../../m4-1.4.19/lib/pipe-safer.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o verror.o ../../m4-1.4.19/lib/verror.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o version-etc.o ../../m4-1.4.19/lib/version-etc.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o version-etc-fsf.o ../../m4-1.4.19/lib/version-etc-fsf.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o wait-process.o ../../m4-1.4.19/lib/wait-process.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o wctype-h.o ../../m4-1.4.19/lib/wctype-h.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o xmalloc.o ../../m4-1.4.19/lib/xmalloc.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o xalloc-die.o ../../m4-1.4.19/lib/xalloc-die.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o gl_xlist.o ../../m4-1.4.19/lib/gl_xlist.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o xmalloca.o ../../m4-1.4.19/lib/xmalloca.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o gl_xoset.o ../../m4-1.4.19/lib/gl_xoset.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o xprintf.o ../../m4-1.4.19/lib/xprintf.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o xsize.o ../../m4-1.4.19/lib/xsize.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o xstriconv.o ../../m4-1.4.19/lib/xstriconv.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o xstrndup.o ../../m4-1.4.19/lib/xstrndup.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o xvasprintf.o ../../m4-1.4.19/lib/xvasprintf.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o xasprintf.o ../../m4-1.4.19/lib/xasprintf.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o asnprintf.o ../../m4-1.4.19/lib/asnprintf.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o asprintf.o ../../m4-1.4.19/lib/asprintf.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o chdir-long.o ../../m4-1.4.19/lib/chdir-long.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o fclose.o ../../m4-1.4.19/lib/fclose.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o fcntl.o ../../m4-1.4.19/lib/fcntl.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o fflush.o ../../m4-1.4.19/lib/fflush.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o fpurge.o ../../m4-1.4.19/lib/fpurge.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o freadahead.o ../../m4-1.4.19/lib/freadahead.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o fseek.o ../../m4-1.4.19/lib/fseek.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o fseeko.o ../../m4-1.4.19/lib/fseeko.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o mbrtowc.o ../../m4-1.4.19/lib/mbrtowc.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o obstack.o ../../m4-1.4.19/lib/obstack.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o printf-args.o ../../m4-1.4.19/lib/printf-args.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o printf-parse.o ../../m4-1.4.19/lib/printf-parse.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o regex.o ../../m4-1.4.19/lib/regex.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o spawn_faction_addchdir.o ../../m4-1.4.19/lib/spawn_faction_addchdir.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o vasnprintf.o ../../m4-1.4.19/lib/vasnprintf.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o vasprintf.o ../../m4-1.4.19/lib/vasprintf.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o malloc/dynarray_at_failure.o ../../m4-1.4.19/lib/malloc/dynarray_at_failure.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o malloc/dynarray_emplace_enlarge.o ../../m4-1.4.19/lib/malloc/dynarray_emplace_enlarge.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o malloc/dynarray_finalize.o ../../m4-1.4.19/lib/malloc/dynarray_finalize.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o malloc/dynarray_resize.o ../../m4-1.4.19/lib/malloc/dynarray_resize.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o malloc/dynarray_resize_clear.o ../../m4-1.4.19/lib/malloc/dynarray_resize_clear.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o glthread/lock.o ../../m4-1.4.19/lib/glthread/lock.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o unistr/u8-mbtoucr.o ../../m4-1.4.19/lib/unistr/u8-mbtoucr.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o unistr/u8-uctomb.o ../../m4-1.4.19/lib/unistr/u8-uctomb.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o unistr/u8-uctomb-aux.o ../../m4-1.4.19/lib/unistr/u8-uctomb-aux.c
+gcc   -I. -I../../m4-1.4.19/lib   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o uniwidth/width.o ../../m4-1.4.19/lib/uniwidth/width.c
+rm -f libm4.a
+ar cr libm4.a asyncsafe-spin.o openat-proc.o gl_avltree_oset.o basename-lgpl.o binary-io.o bitrotate.o c-ctype.o c-stack.o c-strcasecmp.o c-strncasecmp.o canonicalize.o clean-temp.o clean-temp-simple.o cloexec.o close-stream.o closein.o closeout.o concat-filename.o dirname.o basename.o dirname-lgpl.o stripslash.o malloc/dynarray_at_failure.o malloc/dynarray_emplace_enlarge.o malloc/dynarray_finalize.o malloc/dynarray_resize.o malloc/dynarray_resize_clear.o execute.o exitfail.o fatal-signal.o fd-hook.o fd-safer-flag.o dup-safer-flag.o file-set.o filenamecat.o filenamecat-lgpl.o findprog-in.o fopen-safer.o freading.o getprogname.o hard-locale.o hash.o hash-pjw.o hash-triple-simple.o gl_linked_list.o gl_linkedhash_list.o gl_list.o localcharset.o localename.o localename-table.o glthread/lock.o malloca.o math.o mbchar.o mbiter.o mbslen.o mbsstr.o mbuiter.o memchr2.o openat-die.o gl_oset.o pipe2.o pipe2-safer.o printf-frexp.o printf-frexpl.o progname.o propername.o quotearg.o save-cwd.o malloc/scratch_buffer_dupfree.o malloc/scratch_buffer_grow.o malloc/scratch_buffer_grow_preserve.o malloc/scratch_buffer_set_array_size.o setlocale_null.o sig-handler.o sigsegv.o stackvma.o spawn-pipe.o stat-time.o mkstemp-safer.o striconv.o strnlen1.o tempname.o glthread/threadlib.o glthread/tls.o tmpdir.o trim.o unistd.o dup-safer.o fd-safer.o pipe-safer.o unistr/u8-mbtoucr.o unistr/u8-uctomb.o unistr/u8-uctomb-aux.o uniwidth/width.o verror.o version-etc.o version-etc-fsf.o wait-process.o wctype-h.o xmalloc.o xalloc-die.o gl_xlist.o xmalloca.o gl_xoset.o xprintf.o xsize.o xstriconv.o xstrndup.o xvasprintf.o xasprintf.o asnprintf.o asprintf.o chdir-long.o fclose.o fcntl.o fflush.o fpurge.o freadahead.o fseek.o fseeko.o mbrtowc.o obstack.o printf-args.o printf-parse.o regex.o spawn_faction_addchdir.o vasnprintf.o vasprintf.o
+ranlib -D libm4.a
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/build/lib'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/build/lib'
+Making all in src
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/build/src'
+gcc     -I../../m4-1.4.19/lib -I../lib -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o m4.o ../../m4-1.4.19/src/m4.c
+gcc     -I../../m4-1.4.19/lib -I../lib -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o builtin.o ../../m4-1.4.19/src/builtin.c
+gcc     -I../../m4-1.4.19/lib -I../lib -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o debug.o ../../m4-1.4.19/src/debug.c
+gcc     -I../../m4-1.4.19/lib -I../lib -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o eval.o ../../m4-1.4.19/src/eval.c
+gcc     -I../../m4-1.4.19/lib -I../lib -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o format.o ../../m4-1.4.19/src/format.c
+gcc     -I../../m4-1.4.19/lib -I../lib -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o freeze.o ../../m4-1.4.19/src/freeze.c
+gcc     -I../../m4-1.4.19/lib -I../lib -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o input.o ../../m4-1.4.19/src/input.c
+gcc     -I../../m4-1.4.19/lib -I../lib -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o macro.o ../../m4-1.4.19/src/macro.c
+gcc     -I../../m4-1.4.19/lib -I../lib -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o output.o ../../m4-1.4.19/src/output.c
+gcc     -I../../m4-1.4.19/lib -I../lib -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o path.o ../../m4-1.4.19/src/path.c
+gcc     -I../../m4-1.4.19/lib -I../lib -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o symtab.o ../../m4-1.4.19/src/symtab.c
+gcc    -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe  -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/lib                         -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/lib                         -Wl,--enable-new-dtags                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/lib                         -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2 -o m4 m4.o builtin.o debug.o eval.o format.o freeze.o input.o macro.o output.o path.o symtab.o ../lib/libm4.a               
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/build/src'
+Making all in doc
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/build/doc'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/build/doc'
+Making all in checks
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/build/checks'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/build/checks'
+Making all in po
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/build/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/build/po'
+Making all in tests
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/build/tests'
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p arpa
+rm -f ctype.h-t ctype.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL_M4|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_CTYPE_H''@|<ctype.h>|g' \
+      -e 's/@''GNULIB_ISBLANK''@/IN_M4_GNULIB_TESTS/g' \
+      -e 's/@''HAVE_ISBLANK''@/1/g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../m4-1.4.19/tests/c++defs.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../m4-1.4.19/tests/warn-on-use.h' \
+      < ../../m4-1.4.19/tests/ctype.in.h; \
+} > ctype.h-t && \
+mv ctype.h-t ctype.h
+rm -f test-posix_spawn-dup2-stdout.sh-t test-posix_spawn-dup2-stdout.sh && \
+cp ../../m4-1.4.19/tests/test-posix_spawn-dup2-stdout.in.sh test-posix_spawn-dup2-stdout.sh-t && \
+mv test-posix_spawn-dup2-stdout.sh-t test-posix_spawn-dup2-stdout.sh
+rm -f test-posix_spawn-dup2-stdin.sh-t test-posix_spawn-dup2-stdin.sh && \
+cp ../../m4-1.4.19/tests/test-posix_spawn-dup2-stdin.in.sh test-posix_spawn-dup2-stdin.sh-t && \
+mv test-posix_spawn-dup2-stdin.sh-t test-posix_spawn-dup2-stdin.sh
+rm -f arpa/inet.h-t arpa/inet.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL_M4|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''HAVE_FEATURES_H''@|1|g' \
+      -e 's|@''NEXT_ARPA_INET_H''@|<arpa/inet.h>|g' \
+      -e 's|@''HAVE_ARPA_INET_H''@|1|g' \
+      -e 's/@''GNULIB_INET_NTOP''@/0/g' \
+      -e 's/@''GNULIB_INET_PTON''@/IN_M4_GNULIB_TESTS/g' \
+      -e 's|@''HAVE_WS2TCPIP_H''@|0|g' \
+      -e 's|@''HAVE_DECL_INET_NTOP''@|1|g' \
+      -e 's|@''HAVE_DECL_INET_PTON''@|1|g' \
+      -e 's|@''REPLACE_INET_NTOP''@|0|g' \
+      -e 's|@''REPLACE_INET_PTON''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../m4-1.4.19/tests/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ../../m4-1.4.19/tests/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../m4-1.4.19/tests/warn-on-use.h' \
+      < ../../m4-1.4.19/tests/arpa_inet.in.h; \
+} > arpa/inet.h-t && \
+mv arpa/inet.h-t arpa/inet.h
+rm -f pthread.h-t pthread.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL_M4|g' \
+      -e 's|@''HAVE_PTHREAD_H''@|1|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_PTHREAD_H''@|<pthread.h>|g' \
+      -e 's/@''GNULIB_PTHREAD_THREAD''@/IN_M4_GNULIB_TESTS/g' \
+      -e 's/@''GNULIB_PTHREAD_ONCE''@/0/g' \
+      -e 's/@''GNULIB_PTHREAD_MUTEX''@/0/g' \
+      -e 's/@''GNULIB_PTHREAD_RWLOCK''@/0/g' \
+      -e 's/@''GNULIB_PTHREAD_COND''@/0/g' \
+      -e 's/@''GNULIB_PTHREAD_TSS''@/0/g' \
+      -e 's/@''GNULIB_PTHREAD_SPIN''@/0/g' \
+      -e 's/@''GNULIB_PTHREAD_MUTEX_TIMEDLOCK''@/0/g' \
+      -e 's|@''HAVE_PTHREAD_T''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_SPINLOCK_T''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_CREATE_DETACHED''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_MUTEX_RECURSIVE''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_MUTEX_ROBUST''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_PROCESS_SHARED''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_CREATE''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_ATTR_INIT''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_ATTR_GETDETACHSTATE''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_ATTR_SETDETACHSTATE''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_ATTR_DESTROY''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_SELF''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_EQUAL''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_DETACH''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_JOIN''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_EXIT''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_ONCE''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_MUTEX_INIT''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_MUTEXATTR_INIT''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_MUTEXATTR_GETTYPE''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_MUTEXATTR_SETTYPE''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_MUTEXATTR_GETROBUST''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_MUTEXATTR_SETROBUST''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_MUTEXATTR_DESTROY''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_MUTEX_LOCK''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_MUTEX_TRYLOCK''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_MUTEX_TIMEDLOCK''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_MUTEX_UNLOCK''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_MUTEX_DESTROY''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_RWLOCK_INIT''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_RWLOCKATTR_INIT''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_RWLOCKATTR_DESTROY''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_RWLOCK_RDLOCK''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_RWLOCK_WRLOCK''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_RWLOCK_TRYRDLOCK''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_RWLOCK_TRYWRLOCK''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_RWLOCK_TIMEDRDLOCK''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_RWLOCK_TIMEDWRLOCK''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_RWLOCK_UNLOCK''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_RWLOCK_DESTROY''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_COND_INIT''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_CONDATTR_INIT''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_CONDATTR_DESTROY''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_COND_WAIT''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_COND_TIMEDWAIT''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_COND_SIGNAL''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_COND_BROADCAST''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_COND_DESTROY''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_KEY_CREATE''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_SETSPECIFIC''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_GETSPECIFIC''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_KEY_DELETE''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_SPIN_INIT''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_SPIN_LOCK''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_SPIN_TRYLOCK''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_SPIN_UNLOCK''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_SPIN_DESTROY''@|1|g' \
+      < ../../m4-1.4.19/tests/pthread.in.h | \
+  sed -e 's|@''REPLACE_PTHREAD_CREATE''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_ATTR_INIT''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_ATTR_GETDETACHSTATE''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_ATTR_SETDETACHSTATE''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_ATTR_DESTROY''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_SELF''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_EQUAL''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_DETACH''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_JOIN''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_EXIT''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_ONCE''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_MUTEX_INIT''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_MUTEXATTR_INIT''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_MUTEXATTR_GETTYPE''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_MUTEXATTR_SETTYPE''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_MUTEXATTR_GETROBUST''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_MUTEXATTR_SETROBUST''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_MUTEXATTR_DESTROY''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_MUTEX_LOCK''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_MUTEX_TRYLOCK''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_MUTEX_TIMEDLOCK''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_MUTEX_UNLOCK''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_MUTEX_DESTROY''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_RWLOCK_INIT''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_RWLOCKATTR_INIT''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_RWLOCKATTR_DESTROY''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_RWLOCK_RDLOCK''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_RWLOCK_WRLOCK''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_RWLOCK_TRYRDLOCK''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_RWLOCK_TRYWRLOCK''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_RWLOCK_TIMEDRDLOCK''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_RWLOCK_TIMEDWRLOCK''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_RWLOCK_UNLOCK''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_RWLOCK_DESTROY''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_COND_INIT''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_CONDATTR_INIT''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_CONDATTR_DESTROY''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_COND_WAIT''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_COND_TIMEDWAIT''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_COND_SIGNAL''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_COND_BROADCAST''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_COND_DESTROY''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_KEY_CREATE''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_SETSPECIFIC''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_GETSPECIFIC''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_KEY_DELETE''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_SPIN_INIT''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_SPIN_LOCK''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_SPIN_TRYLOCK''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_SPIN_UNLOCK''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_SPIN_DESTROY''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../m4-1.4.19/tests/c++defs.h' \
+      -e '/definition of _Noreturn/r ../../m4-1.4.19/tests/_Noreturn.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ../../m4-1.4.19/tests/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../m4-1.4.19/tests/warn-on-use.h'; \
+} > pthread.h-t && \
+mv pthread.h-t pthread.h
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p sys
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p sys
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p sys
+rm -f sys/select.h-t sys/select.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL_M4|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_SELECT_H''@|<sys/select.h>|g' \
+      -e 's|@''HAVE_SYS_SELECT_H''@|1|g' \
+      -e 's/@''GNULIB_PSELECT''@/0/g' \
+      -e 's/@''GNULIB_SELECT''@/IN_M4_GNULIB_TESTS/g' \
+      -e 's|@''HAVE_WINSOCK2_H''@|0|g' \
+      -e 's|@''HAVE_PSELECT''@|1|g' \
+      -e 's|@''REPLACE_PSELECT''@|0|g' \
+      -e 's|@''REPLACE_SELECT''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../m4-1.4.19/tests/c++defs.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../m4-1.4.19/tests/warn-on-use.h' \
+      < ../../m4-1.4.19/tests/sys_select.in.h; \
+} > sys/select.h-t && \
+mv sys/select.h-t sys/select.h
+rm -f sys/ioctl.h-t sys/ioctl.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL_M4|g' \
+      -e 's|@''HAVE_SYS_IOCTL_H''@|1|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_IOCTL_H''@|<sys/ioctl.h>|g' \
+      -e 's/@''GNULIB_IOCTL''@/IN_M4_GNULIB_TESTS/g' \
+      -e 's|@''SYS_IOCTL_H_HAVE_WINSOCK2_H''@|0|g' \
+      -e 's|@''SYS_IOCTL_H_HAVE_WINSOCK2_H_AND_USE_SOCKETS''@|0|g' \
+      -e 's|@''REPLACE_IOCTL''@|1|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../m4-1.4.19/tests/c++defs.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../m4-1.4.19/tests/warn-on-use.h' \
+      < ../../m4-1.4.19/tests/sys_ioctl.in.h; \
+} > sys/ioctl.h-t && \
+mv sys/ioctl.h-t sys/ioctl.h
+rm -f sys/socket.h-t sys/socket.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL_M4|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_SOCKET_H''@|<sys/socket.h>|g' \
+      -e 's|@''HAVE_SYS_SOCKET_H''@|1|g' \
+      -e 's/@''GNULIB_CLOSE''@/1/g' \
+      -e 's/@''GNULIB_SOCKET''@/IN_M4_GNULIB_TESTS/g' \
+      -e 's/@''GNULIB_CONNECT''@/IN_M4_GNULIB_TESTS/g' \
+      -e 's/@''GNULIB_ACCEPT''@/IN_M4_GNULIB_TESTS/g' \
+      -e 's/@''GNULIB_BIND''@/IN_M4_GNULIB_TESTS/g' \
+      -e 's/@''GNULIB_GETPEERNAME''@/0/g' \
+      -e 's/@''GNULIB_GETSOCKNAME''@/0/g' \
+      -e 's/@''GNULIB_GETSOCKOPT''@/0/g' \
+      -e 's/@''GNULIB_LISTEN''@/IN_M4_GNULIB_TESTS/g' \
+      -e 's/@''GNULIB_RECV''@/0/g' \
+      -e 's/@''GNULIB_SEND''@/0/g' \
+      -e 's/@''GNULIB_RECVFROM''@/0/g' \
+      -e 's/@''GNULIB_SENDTO''@/0/g' \
+      -e 's/@''GNULIB_SETSOCKOPT''@/IN_M4_GNULIB_TESTS/g' \
+      -e 's/@''GNULIB_SHUTDOWN''@/0/g' \
+      -e 's/@''GNULIB_ACCEPT4''@/0/g' \
+      -e 's|@''HAVE_WINSOCK2_H''@|0|g' \
+      -e 's|@''HAVE_WS2TCPIP_H''@|0|g' \
+      -e 's|@''HAVE_STRUCT_SOCKADDR_STORAGE''@|1|g' \
+      -e 's|@''HAVE_STRUCT_SOCKADDR_STORAGE_SS_FAMILY''@|1|g' \
+      -e 's|@''HAVE_SA_FAMILY_T''@|1|g' \
+      -e 's|@''HAVE_ACCEPT4''@|1|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../m4-1.4.19/tests/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ../../m4-1.4.19/tests/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../m4-1.4.19/tests/warn-on-use.h' \
+      < ../../m4-1.4.19/tests/sys_socket.in.h; \
+} > sys/socket.h-t && \
+mv -f sys/socket.h-t sys/socket.h
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p sys
+rm -f sys/time.h-t sys/time.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL_M4|g' \
+      -e 's/@''HAVE_SYS_TIME_H''@/1/g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_TIME_H''@|<sys/time.h>|g' \
+      -e 's/@''GNULIB_GETTIMEOFDAY''@/IN_M4_GNULIB_TESTS/g' \
+      -e 's|@''HAVE_WINSOCK2_H''@|0|g' \
+      -e 's/@''HAVE_GETTIMEOFDAY''@/1/g' \
+      -e 's/@''HAVE_STRUCT_TIMEVAL''@/1/g' \
+      -e 's/@''REPLACE_GETTIMEOFDAY''@/0/g' \
+      -e 's/@''REPLACE_STRUCT_TIMEVAL''@/0/g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ../../m4-1.4.19/tests/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ../../m4-1.4.19/tests/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ../../m4-1.4.19/tests/warn-on-use.h' \
+      < ../../m4-1.4.19/tests/sys_time.in.h; \
+} > sys/time.h-t && \
+mv sys/time.h-t sys/time.h
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p sys
+rm -f sys/uio.h-t sys/uio.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL_M4|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_UIO_H''@|<sys/uio.h>|g' \
+      -e 's|@''HAVE_SYS_UIO_H''@|1|g' \
+      < ../../m4-1.4.19/tests/sys_uio.in.h; \
+} > sys/uio.h-t && \
+mv -f sys/uio.h-t sys/uio.h
+make  all-recursive
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/build/tests'
+Making all in .
+make[4]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/build/tests'
+gcc  -DEXEEXT=\"\" -I. -I../../m4-1.4.19/tests -I../lib  -DIN_M4_GNULIB_TESTS=1 -I. -I../../m4-1.4.19/tests -I.. -I../../m4-1.4.19/tests/.. -I../lib -I../../m4-1.4.19/tests/../lib -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o locale.o ../../m4-1.4.19/tests/locale.c
+gcc  -DEXEEXT=\"\" -I. -I../../m4-1.4.19/tests -I../lib  -DIN_M4_GNULIB_TESTS=1 -I. -I../../m4-1.4.19/tests -I.. -I../../m4-1.4.19/tests/.. -I../lib -I../../m4-1.4.19/tests/../lib -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o gl_array_list.o ../../m4-1.4.19/tests/gl_array_list.c
+gcc  -DEXEEXT=\"\" -I. -I../../m4-1.4.19/tests -I../lib  -DIN_M4_GNULIB_TESTS=1 -I. -I../../m4-1.4.19/tests -I.. -I../../m4-1.4.19/tests/.. -I../lib -I../../m4-1.4.19/tests/../lib -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o gl_array_oset.o ../../m4-1.4.19/tests/gl_array_oset.c
+gcc  -DEXEEXT=\"\" -I. -I../../m4-1.4.19/tests -I../lib  -DIN_M4_GNULIB_TESTS=1 -I. -I../../m4-1.4.19/tests -I.. -I../../m4-1.4.19/tests/.. -I../lib -I../../m4-1.4.19/tests/../lib -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o findprog.o ../../m4-1.4.19/tests/findprog.c
+gcc  -DEXEEXT=\"\" -I. -I../../m4-1.4.19/tests -I../lib  -DIN_M4_GNULIB_TESTS=1 -I. -I../../m4-1.4.19/tests -I.. -I../../m4-1.4.19/tests/.. -I../lib -I../../m4-1.4.19/tests/../lib -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o imaxtostr.o ../../m4-1.4.19/tests/imaxtostr.c
+gcc  -DEXEEXT=\"\" -I. -I../../m4-1.4.19/tests -I../lib  -DIN_M4_GNULIB_TESTS=1 -I. -I../../m4-1.4.19/tests -I.. -I../../m4-1.4.19/tests/.. -I../lib -I../../m4-1.4.19/tests/../lib -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o inttostr.o ../../m4-1.4.19/tests/inttostr.c
+gcc  -DEXEEXT=\"\" -I. -I../../m4-1.4.19/tests -I../lib  -DIN_M4_GNULIB_TESTS=1 -I. -I../../m4-1.4.19/tests -I.. -I../../m4-1.4.19/tests/.. -I../lib -I../../m4-1.4.19/tests/../lib -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o offtostr.o ../../m4-1.4.19/tests/offtostr.c
+gcc  -DEXEEXT=\"\" -I. -I../../m4-1.4.19/tests -I../lib  -DIN_M4_GNULIB_TESTS=1 -I. -I../../m4-1.4.19/tests -I.. -I../../m4-1.4.19/tests/.. -I../lib -I../../m4-1.4.19/tests/../lib -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o uinttostr.o ../../m4-1.4.19/tests/uinttostr.c
+gcc  -DEXEEXT=\"\" -I. -I../../m4-1.4.19/tests -I../lib  -DIN_M4_GNULIB_TESTS=1 -I. -I../../m4-1.4.19/tests -I.. -I../../m4-1.4.19/tests/.. -I../lib -I../../m4-1.4.19/tests/../lib -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o umaxtostr.o ../../m4-1.4.19/tests/umaxtostr.c
+gcc  -DEXEEXT=\"\" -I. -I../../m4-1.4.19/tests -I../lib  -DIN_M4_GNULIB_TESTS=1 -I. -I../../m4-1.4.19/tests -I.. -I../../m4-1.4.19/tests/.. -I../lib -I../../m4-1.4.19/tests/../lib -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o read-file.o ../../m4-1.4.19/tests/read-file.c
+gcc  -DEXEEXT=\"\" -I. -I../../m4-1.4.19/tests -I../lib  -DIN_M4_GNULIB_TESTS=1 -I. -I../../m4-1.4.19/tests -I.. -I../../m4-1.4.19/tests/.. -I../lib -I../../m4-1.4.19/tests/../lib -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o sockets.o ../../m4-1.4.19/tests/sockets.c
+gcc  -DEXEEXT=\"\" -I. -I../../m4-1.4.19/tests -I../lib  -DIN_M4_GNULIB_TESTS=1 -I. -I../../m4-1.4.19/tests -I.. -I../../m4-1.4.19/tests/.. -I../lib -I../../m4-1.4.19/tests/../lib -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o sys_socket.o ../../m4-1.4.19/tests/sys_socket.c
+gcc  -DEXEEXT=\"\" -I. -I../../m4-1.4.19/tests -I../lib  -DIN_M4_GNULIB_TESTS=1 -I. -I../../m4-1.4.19/tests -I.. -I../../m4-1.4.19/tests/.. -I../lib -I../../m4-1.4.19/tests/../lib -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o vma-iter.o ../../m4-1.4.19/tests/vma-iter.c
+gcc  -DEXEEXT=\"\" -I. -I../../m4-1.4.19/tests -I../lib  -DIN_M4_GNULIB_TESTS=1 -I. -I../../m4-1.4.19/tests -I.. -I../../m4-1.4.19/tests/.. -I../lib -I../../m4-1.4.19/tests/../lib -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o xconcat-filename.o ../../m4-1.4.19/tests/xconcat-filename.c
+gcc  -DEXEEXT=\"\" -I. -I../../m4-1.4.19/tests -I../lib  -DIN_M4_GNULIB_TESTS=1 -I. -I../../m4-1.4.19/tests -I.. -I../../m4-1.4.19/tests/.. -I../lib -I../../m4-1.4.19/tests/../lib -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o ioctl.o ../../m4-1.4.19/tests/ioctl.c
+gcc  -DEXEEXT=\"\" -I. -I../../m4-1.4.19/tests -I../lib  -DIN_M4_GNULIB_TESTS=1 -I. -I../../m4-1.4.19/tests -I.. -I../../m4-1.4.19/tests/.. -I../lib -I../../m4-1.4.19/tests/../lib -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o nanosleep.o ../../m4-1.4.19/tests/nanosleep.c
+gcc  -DEXEEXT=\"\" -I. -I../../m4-1.4.19/tests -I../lib  -DIN_M4_GNULIB_TESTS=1 -I. -I../../m4-1.4.19/tests -I.. -I../../m4-1.4.19/tests/.. -I../lib -I../../m4-1.4.19/tests/../lib -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o pthread_sigmask.o ../../m4-1.4.19/tests/pthread_sigmask.c
+gcc  -DEXEEXT=\"\" -I. -I../../m4-1.4.19/tests -I../lib  -DIN_M4_GNULIB_TESTS=1 -I. -I../../m4-1.4.19/tests -I.. -I../../m4-1.4.19/tests/.. -I../lib -I../../m4-1.4.19/tests/../lib -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o strerror_r.o ../../m4-1.4.19/tests/strerror_r.c
+gcc  -DEXEEXT=\"\" -I. -I../../m4-1.4.19/tests -I../lib  -DIN_M4_GNULIB_TESTS=1 -I. -I../../m4-1.4.19/tests -I.. -I../../m4-1.4.19/tests/.. -I../lib -I../../m4-1.4.19/tests/../lib -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o test-localcharset.o ../../m4-1.4.19/tests/test-localcharset.c
+gcc  -DEXEEXT=\"\" -I. -I../../m4-1.4.19/tests -I../lib  -DIN_M4_GNULIB_TESTS=1 -I. -I../../m4-1.4.19/tests -I.. -I../../m4-1.4.19/tests/.. -I../lib -I../../m4-1.4.19/tests/../lib -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe -c -o glthread/thread.o ../../m4-1.4.19/tests/glthread/thread.c
+rm -f libtests.a
+ar cr libtests.a gl_array_list.o gl_array_oset.o findprog.o imaxtostr.o inttostr.o offtostr.o uinttostr.o umaxtostr.o read-file.o sockets.o sys_socket.o glthread/thread.o vma-iter.o xconcat-filename.o ioctl.o nanosleep.o pthread_sigmask.o strerror_r.o 
+ranlib -D libtests.a
+gcc   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe  -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/lib                         -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/lib                         -Wl,--enable-new-dtags                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/lib                         -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2 -o test-localcharset test-localcharset.o libtests.a ../lib/libm4.a libtests.a ../lib/libm4.a libtests.a   
+gcc   -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/include -O2 -pipe  -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/lib                         -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/lib                         -Wl,--enable-new-dtags                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/recipe-sysroot-native/lib                         -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2 -o current-locale locale.o libtests.a ../lib/libm4.a libtests.a ../lib/libm4.a libtests.a  
+make[4]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/build/tests'
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/build/tests'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/build/tests'
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/m4-native/1.4.19-r0/build'
+DEBUG: Shell function do_compile finished

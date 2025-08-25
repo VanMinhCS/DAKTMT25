@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756091128.93 
+rsync-native-3.2.7-r0: do_populate_sysroot
+Elapsed time: 1.23 seconds
+utime: 54
+stime: 6
+cutime: 13
+cstime: 11
+IO rchar: 5549075
+IO wchar: 2866294
+IO syscr: 1426
+IO syscw: 356
+IO read_bytes: 0
+IO write_bytes: 2252800
+IO cancelled_write_bytes: 569344
+rusage ru_utime: 0.543399
+rusage ru_stime: 0.065984
+rusage ru_maxrss: 111020
+rusage ru_minflt: 12829
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 1552
+rusage ru_nvcsw: 30
+rusage ru_nivcsw: 226
+Child rusage ru_utime: 0.138078
+Child rusage ru_stime: 0.112826
+Child rusage ru_maxrss: 111020
+Child rusage ru_minflt: 11660
+Child rusage ru_majflt: 1
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 2848
+Child rusage ru_nvcsw: 223
+Child rusage ru_nivcsw: 154
+Status: PASSED 
+Ended: 1756091130.16 

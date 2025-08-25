@@ -1,0 +1,531 @@
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+DEBUG: Searching for functions in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/functions to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/initscripts/1.0-r155/
+DEBUG: Searching for halt in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/halt to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/initscripts/1.0-r155/
+DEBUG: Searching for umountfs in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/umountfs to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/initscripts/1.0-r155/
+DEBUG: Searching for devpts.sh in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/devpts.sh to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/initscripts/1.0-r155/
+DEBUG: Searching for devpts in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/devpts to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/initscripts/1.0-r155/
+DEBUG: Searching for hostname.sh in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/hostname.sh to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/initscripts/1.0-r155/
+DEBUG: Searching for mountall.sh in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/mountall.sh to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/initscripts/1.0-r155/
+DEBUG: Searching for banner.sh in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/banner.sh to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/initscripts/1.0-r155/
+DEBUG: Searching for bootmisc.sh in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/bootmisc.sh to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/initscripts/1.0-r155/
+DEBUG: Searching for mountnfs.sh in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/mountnfs.sh to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/initscripts/1.0-r155/
+DEBUG: Searching for reboot in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/reboot to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/initscripts/1.0-r155/
+DEBUG: Searching for checkfs.sh in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/checkfs.sh to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/initscripts/1.0-r155/
+DEBUG: Searching for single in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/single to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/initscripts/1.0-r155/
+DEBUG: Searching for sendsigs in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/sendsigs to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/initscripts/1.0-r155/
+DEBUG: Searching for urandom in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/urandom to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/initscripts/1.0-r155/
+DEBUG: Searching for rmnologin.sh in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/rmnologin.sh to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/initscripts/1.0-r155/
+DEBUG: Searching for checkroot.sh in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/checkroot.sh to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/initscripts/1.0-r155/
+DEBUG: Searching for umountnfs.sh in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/umountnfs.sh to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/initscripts/1.0-r155/
+DEBUG: Searching for sysfs.sh in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/sysfs.sh to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/initscripts/1.0-r155/
+DEBUG: Searching for populate-volatile.sh in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/populate-volatile.sh to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/initscripts/1.0-r155/
+DEBUG: Searching for read-only-rootfs-hook.sh in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/read-only-rootfs-hook.sh to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/initscripts/1.0-r155/
+DEBUG: Searching for volatiles in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/volatiles to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/initscripts/1.0-r155/
+DEBUG: Searching for save-rtc.sh in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/save-rtc.sh to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/initscripts/1.0-r155/
+DEBUG: Searching for dmesg.sh in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/dmesg.sh to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/initscripts/1.0-r155/
+DEBUG: Searching for logrotate-dmesg.conf in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/logrotate-dmesg.conf to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/initscripts/1.0-r155/
+DEBUG: Searching for alignment.sh in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts/
+    /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/initscripts/initscripts-1.0/alignment.sh to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/initscripts/1.0-r155/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function create_source_date_epoch_stamp
+DEBUG: No tarball or git repo found to determine SOURCE_DATE_EPOCH
+DEBUG: Using SOURCE_DATE_EPOCH_FALLBACK
+DEBUG: SOURCE_DATE_EPOCH: 1302044400
+DEBUG: Python function create_source_date_epoch_stamp finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

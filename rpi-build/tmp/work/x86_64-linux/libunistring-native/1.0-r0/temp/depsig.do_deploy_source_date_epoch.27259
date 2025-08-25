@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:libunistring-native:x86_64-linux:1.0:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 3e711cca302acaa797107850acc2fc7c81e37a365a61071f55dd64d37db14be9 ./deploy-source-date-epoch/__source_date_epoch.txt

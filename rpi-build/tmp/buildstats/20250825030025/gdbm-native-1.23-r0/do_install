@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756091111.81 
+gdbm-native-1.23-r0: do_install
+Elapsed time: 2.53 seconds
+utime: 41
+stime: 3
+cutime: 78
+cstime: 32
+IO rchar: 5973554
+IO wchar: 782972
+IO syscr: 4719
+IO syscw: 756
+IO read_bytes: 0
+IO write_bytes: 761856
+IO cancelled_write_bytes: 8192
+rusage ru_utime: 0.419359
+rusage ru_stime: 0.034626
+rusage ru_maxrss: 110308
+rusage ru_minflt: 6565
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 136
+rusage ru_nvcsw: 81
+rusage ru_nivcsw: 132
+Child rusage ru_utime: 0.789841
+Child rusage ru_stime: 0.32198499999999997
+Child rusage ru_maxrss: 110180
+Child rusage ru_minflt: 66747
+Child rusage ru_majflt: 2
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 1352
+Child rusage ru_nvcsw: 936
+Child rusage ru_nivcsw: 589
+Status: PASSED 
+Ended: 1756091114.33 

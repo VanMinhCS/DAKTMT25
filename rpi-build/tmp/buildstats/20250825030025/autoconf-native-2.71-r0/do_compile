@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090913.45 
+autoconf-native-2.71-r0: do_compile
+Elapsed time: 0.66 seconds
+utime: 21
+stime: 2
+cutime: 150
+cstime: 62
+IO rchar: 13619818
+IO wchar: 2164484
+IO syscr: 8837
+IO syscw: 1617
+IO read_bytes: 1269760
+IO write_bytes: 1343488
+IO cancelled_write_bytes: 139264
+rusage ru_utime: 0.21334699999999998
+rusage ru_stime: 0.025099
+rusage ru_maxrss: 109360
+rusage ru_minflt: 4841
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 112
+rusage ru_nvcsw: 109
+rusage ru_nivcsw: 4
+Child rusage ru_utime: 1.5057399999999999
+Child rusage ru_stime: 0.6294259999999999
+Child rusage ru_maxrss: 105224
+Child rusage ru_minflt: 91596
+Child rusage ru_majflt: 44
+Child rusage ru_inblock: 2480
+Child rusage ru_oublock: 2512
+Child rusage ru_nvcsw: 1264
+Child rusage ru_nivcsw: 588
+Status: PASSED 
+Ended: 1756090914.11 

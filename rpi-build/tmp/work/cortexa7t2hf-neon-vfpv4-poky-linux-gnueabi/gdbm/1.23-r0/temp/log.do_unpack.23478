@@ -1,0 +1,51 @@
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+NOTE: Unpacking /home/ubuntu/yocto/rpi-build/downloads/gdbm-1.23.tar.gz to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gdbm/1.23-r0/
+DEBUG: Searching for run-ptest in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/gdbm-1.23/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/gdbm/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/gdbm-1.23/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/gdbm/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/gdbm-1.23/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/gdbm/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/gdbm-1.23/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/gdbm/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/gdbm-1.23/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/gdbm/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/gdbm-1.23/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/gdbm/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/files/run-ptest to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gdbm/1.23-r0/
+DEBUG: Searching for ptest.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/gdbm-1.23/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/gdbm/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/gdbm-1.23/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/gdbm/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/gdbm-1.23/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/gdbm/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/gdbm-1.23/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/gdbm/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/gdbm-1.23/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/gdbm/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/gdbm-1.23/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/gdbm/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-support/gdbm/files/ptest.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gdbm/1.23-r0/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function create_source_date_epoch_stamp
+DEBUG: Newest file found: /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/gdbm/1.23-r0/gdbm-1.23/src/version.c
+DEBUG: SOURCE_DATE_EPOCH: 1643983833
+DEBUG: Python function create_source_date_epoch_stamp finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

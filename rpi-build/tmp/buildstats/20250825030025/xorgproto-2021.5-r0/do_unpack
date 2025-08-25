@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090895.43 
+xorgproto-2021.5-r0: do_unpack
+Elapsed time: 0.36 seconds
+utime: 14
+stime: 2
+cutime: 32
+cstime: 9
+IO rchar: 8637590
+IO wchar: 15043645
+IO syscr: 2099
+IO syscw: 2983
+IO read_bytes: 0
+IO write_bytes: 8212480
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.14710099999999998
+rusage ru_stime: 0.026744999999999998
+rusage ru_maxrss: 108788
+rusage ru_minflt: 5005
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 56
+rusage ru_nvcsw: 6
+rusage ru_nivcsw: 1
+Child rusage ru_utime: 0.323345
+Child rusage ru_stime: 0.091817
+Child rusage ru_maxrss: 108660
+Child rusage ru_minflt: 1692
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 15984
+Child rusage ru_nvcsw: 1302
+Child rusage ru_nivcsw: 5
+Status: PASSED 
+Ended: 1756090895.79 

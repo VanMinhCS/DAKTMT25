@@ -1,0 +1,35 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are []
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_fetch
+DEBUG: Executing python function base_do_fetch
+DEBUG: Trying PREMIRRORS
+DEBUG: For url ['http', 'ftp.gnome.org', '/pub/GNOME/sources/vala/0.56/vala-0.56.3.tar.xz', '', '', OrderedDict()] comparing ['git', 'sourceware.org', '/git/glibc.git', '', '', OrderedDict()] to ['https', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['http', 'ftp.gnome.org', '/pub/GNOME/sources/vala/0.56/vala-0.56.3.tar.xz', '', '', OrderedDict()] comparing ['git', 'sourceware.org', '/git/binutils-gdb.git', '', '', OrderedDict()] to ['https', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: Trying Upstream
+DEBUG: Fetching http://ftp.gnome.org/pub/GNOME/sources/vala/0.56/vala-0.56.3.tar.xz using command '/usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/vala-0.56.3.tar.xz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'http://ftp.gnome.org/pub/GNOME/sources/vala/0.56/vala-0.56.3.tar.xz''
+DEBUG: Fetcher accessed the network with the command /usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/vala-0.56.3.tar.xz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'http://ftp.gnome.org/pub/GNOME/sources/vala/0.56/vala-0.56.3.tar.xz'
+DEBUG: Running export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/poky/scripts/native-intercept:/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/vala-native/0.56.3-r0/recipe-sysroot-native/usr/bin/x86_64-linux:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/vala-native/0.56.3-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/vala-native/0.56.3-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/vala-native/0.56.3-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/vala-native/0.56.3-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/vala-native/0.56.3-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; /usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/vala-0.56.3.tar.xz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'http://ftp.gnome.org/pub/GNOME/sources/vala/0.56/vala-0.56.3.tar.xz' --progress=dot -v
+--2025-08-25 03:01:54--  http://ftp.gnome.org/pub/GNOME/sources/vala/0.56/vala-0.56.3.tar.xz
+Resolving ftp.gnome.org (ftp.gnome.org)... 3.212.154.243, 34.207.0.248
+Connecting to ftp.gnome.org (ftp.gnome.org)|3.212.154.243|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.gnome.org/pub/GNOME/sources/vala/0.56/vala-0.56.3.tar.xz [following]
+--2025-08-25 03:01:55--  https://ftp.gnome.org/pub/GNOME/sources/vala/0.56/vala-0.56.3.tar.xz
+Connecting to ftp.gnome.org (ftp.gnome.org)|3.212.154.243|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://download.gnome.org/sources/vala/0.56/vala-0.56.3.tar.xz [following]
+--2025-08-25 03:01:56--  https://download.gnome.org/sources/vala/0.56/vala-0.56.3.tar.xz
+Resolving download.gnome.org (download.gnome.org)... 156.146.44.89, 84.17.57.27, 2a02:6ea0:d600::14, ...
+Connecting to download.gnome.org (download.gnome.org)|156.146.44.89|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3969676 (3.8M) [application/octet-stream]
+Saving to: ‘/home/ubuntu/yocto/rpi-build/downloads/vala-0.56.3.tar.xz.tmp’
+
+
+2025-08-25 03:01:56 (12.5 MB/s) - ‘/home/ubuntu/yocto/rpi-build/downloads/vala-0.56.3.tar.xz.tmp’ saved [3969676/3969676]
+
+DEBUG: Python function base_do_fetch finished
+DEBUG: Python function do_fetch finished

@@ -1,0 +1,2 @@
+Add-target-to-only-build-tests-not-run-them.patch
+check-header-files-of-openssl-only-if-enable_.patch

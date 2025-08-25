@@ -1,0 +1,93 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are ['virtual:native:/home/ubuntu/yocto/poky/meta/recipes-extended/xz/xz_5.2.6.bb:do_populate_sysroot']
+NOTE: Installed into sysroot: ['xz-native', 'gettext-minimal-native', 'libtool-native', 'texinfo-dummy-native']
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: sed -e 's:^[^/]*/:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/:g' /home/ubuntu/yocto/rpi-build/tmp/sysroots-components/x86_64/libtool-native/fixmepath | xargs sed -i -e 's:FIXMESTAGINGDIRTARGET:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot:g; s:FIXMESTAGINGDIRHOST:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native:g' -e 's:FIXME_PSEUDO_SYSROOT:/home/ubuntu/yocto/rpi-build/tmp/sysroots-components/x86_64/pseudo-native:g' -e 's:FIXME_HOSTTOOLS_DIR:/home/ubuntu/yocto/rpi-build/tmp/hosttools:g' -e 's:FIXME_PKGDATA_DIR:/home/ubuntu/yocto/rpi-build/tmp/pkgdata/raspberrypi4:g' -e 's:FIXME_PSEUDO_LOCALSTATEDIR:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/pseudo/:g' -e 's:FIXME_LOGFIFO:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/temp/fifo.66330:g'
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+DEBUG: Running 'export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/poky/scripts/native-intercept:/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/bin/x86_64-linux:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat branch --contains 28dcefb809ce95db997811b5662f0b893b9923e0 --list master 2> /dev/null | wc -l' in /home/ubuntu/yocto/rpi-build/downloads/git2/git.yoctoproject.org.pseudo
+DEBUG: Running export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/poky/scripts/native-intercept:/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/bin/x86_64-linux:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat clone -n -s /home/ubuntu/yocto/rpi-build/downloads/git2/git.yoctoproject.org.pseudo/ /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/git/
+DEBUG: Running 'export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/poky/scripts/native-intercept:/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/bin/x86_64-linux:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat remote set-url origin git://git.yoctoproject.org/pseudo' in /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/git/
+DEBUG: Running 'export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/poky/scripts/native-intercept:/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/bin/x86_64-linux:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat grep lfs origin/master:.gitattributes | wc -l' in /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/git/
+DEBUG: Running 'export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/poky/scripts/native-intercept:/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/bin/x86_64-linux:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat checkout -B master 28dcefb809ce95db997811b5662f0b893b9923e0' in /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/git/
+DEBUG: Running 'export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/poky/scripts/native-intercept:/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/bin/x86_64-linux:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat branch master --set-upstream-to origin/master' in /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/git/
+DEBUG: Searching for 0001-configure-Prune-PIE-flags.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo-1.9.0+gitAUTOINC+28dcefb809/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo-1.9.0+gitAUTOINC+28dcefb809/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo-1.9.0+gitAUTOINC+28dcefb809/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo-1.9.0+gitAUTOINC+28dcefb809/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/files/0001-configure-Prune-PIE-flags.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/
+DEBUG: Searching for glibc238.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo-1.9.0+gitAUTOINC+28dcefb809/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo-1.9.0+gitAUTOINC+28dcefb809/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo-1.9.0+gitAUTOINC+28dcefb809/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo-1.9.0+gitAUTOINC+28dcefb809/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/files/glibc238.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/
+DEBUG: Searching for fallback-passwd in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo-1.9.0+gitAUTOINC+28dcefb809/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo-1.9.0+gitAUTOINC+28dcefb809/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo-1.9.0+gitAUTOINC+28dcefb809/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo-1.9.0+gitAUTOINC+28dcefb809/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/files/fallback-passwd to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/
+DEBUG: Searching for fallback-group in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo-1.9.0+gitAUTOINC+28dcefb809/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo-1.9.0+gitAUTOINC+28dcefb809/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo-1.9.0+gitAUTOINC+28dcefb809/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo-1.9.0+gitAUTOINC+28dcefb809/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/files/fallback-group to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/
+NOTE: Unpacking /home/ubuntu/yocto/rpi-build/downloads/pseudo-prebuilt-2.33.tar.xz to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/git/prebuilt/
+DEBUG: Searching for older-glibc-symbols.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo-1.9.0+gitAUTOINC+28dcefb809/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo-1.9.0+gitAUTOINC+28dcefb809/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo-1.9.0+gitAUTOINC+28dcefb809/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo-1.9.0+gitAUTOINC+28dcefb809/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/pseudo/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/pseudo/files/older-glibc-symbols.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function create_source_date_epoch_stamp
+DEBUG: git repository: /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/git/.git
+DEBUG: SOURCE_DATE_EPOCH: 1728390204
+DEBUG: Python function create_source_date_epoch_stamp finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

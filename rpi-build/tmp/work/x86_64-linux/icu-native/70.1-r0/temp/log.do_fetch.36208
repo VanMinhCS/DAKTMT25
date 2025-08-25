@@ -1,0 +1,105 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are []
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_fetch
+DEBUG: Executing python function base_do_fetch
+DEBUG: Trying PREMIRRORS
+DEBUG: For url ['https', 'github.com', '/unicode-org/icu/releases/download/release-70-1/icu4c-70_1-src.tgz', '', '', OrderedDict([('name', 'code')])] comparing ['git', 'sourceware.org', '/git/glibc.git', '', '', OrderedDict()] to ['https', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['https', 'github.com', '/unicode-org/icu/releases/download/release-70-1/icu4c-70_1-src.tgz', '', '', OrderedDict([('name', 'code')])] comparing ['git', 'sourceware.org', '/git/binutils-gdb.git', '', '', OrderedDict()] to ['https', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: Trying Upstream
+DEBUG: Fetching https://github.com/unicode-org/icu/releases/download/release-70-1/icu4c-70_1-src.tgz;name=code using command '/usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/icu4c-70_1-src.tgz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://github.com/unicode-org/icu/releases/download/release-70-1/icu4c-70_1-src.tgz''
+DEBUG: Fetcher accessed the network with the command /usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/icu4c-70_1-src.tgz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://github.com/unicode-org/icu/releases/download/release-70-1/icu4c-70_1-src.tgz'
+DEBUG: Running export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/poky/scripts/native-intercept:/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/icu-native/70.1-r0/recipe-sysroot-native/usr/bin/x86_64-linux:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/icu-native/70.1-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/icu-native/70.1-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/icu-native/70.1-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/icu-native/70.1-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/icu-native/70.1-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; /usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/icu4c-70_1-src.tgz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://github.com/unicode-org/icu/releases/download/release-70-1/icu4c-70_1-src.tgz' --progress=dot -v
+--2025-08-25 03:01:52--  https://github.com/unicode-org/icu/releases/download/release-70-1/icu4c-70_1-src.tgz
+Resolving github.com (github.com)... 20.205.243.166
+Connecting to github.com (github.com)|20.205.243.166|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://release-assets.githubusercontent.com/github-production-release-asset/49244766/2b364418-d38d-4d23-b918-11d1194d4cb6?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-08-25T03%3A49%3A34Z&rscd=attachment%3B+filename%3Dicu4c-70_1-src.tgz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-08-25T02%3A49%3A14Z&ske=2025-08-25T03%3A49%3A34Z&sks=b&skv=2018-11-09&sig=9YN8H2jJ35KySk%2Br%2FJBTdXjZ7qdXl7JuhNrcleTKB9k%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc1NjA5MTIxNCwibmJmIjoxNzU2MDkwOTE0LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.m0Qv-Velsa2RYtUox5bd6Neac1MQWnmXnO8YtZGe4yg&response-content-disposition=attachment%3B%20filename%3Dicu4c-70_1-src.tgz&response-content-type=application%2Foctet-stream [following]
+--2025-08-25 03:01:53--  https://release-assets.githubusercontent.com/github-production-release-asset/49244766/2b364418-d38d-4d23-b918-11d1194d4cb6?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-08-25T03%3A49%3A34Z&rscd=attachment%3B+filename%3Dicu4c-70_1-src.tgz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-08-25T02%3A49%3A14Z&ske=2025-08-25T03%3A49%3A34Z&sks=b&skv=2018-11-09&sig=9YN8H2jJ35KySk%2Br%2FJBTdXjZ7qdXl7JuhNrcleTKB9k%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc1NjA5MTIxNCwibmJmIjoxNzU2MDkwOTE0LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.m0Qv-Velsa2RYtUox5bd6Neac1MQWnmXnO8YtZGe4yg&response-content-disposition=attachment%3B%20filename%3Dicu4c-70_1-src.tgz&response-content-type=application%2Foctet-stream
+Resolving release-assets.githubusercontent.com (release-assets.githubusercontent.com)... 185.199.110.133, 185.199.111.133, 185.199.108.133, ...
+Connecting to release-assets.githubusercontent.com (release-assets.githubusercontent.com)|185.199.110.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 25449582 (24M) [application/octet-stream]
+Saving to: ‘/home/ubuntu/yocto/rpi-build/downloads/icu4c-70_1-src.tgz.tmp’
+
+
+2025-08-25 03:01:55 (12.5 MB/s) - ‘/home/ubuntu/yocto/rpi-build/downloads/icu4c-70_1-src.tgz.tmp’ saved [25449582/25449582]
+
+DEBUG: Trying PREMIRRORS
+DEBUG: For url ['https', 'github.com', '/unicode-org/icu/releases/download/release-70-1/icu4c-70_1-data.zip', '', '', OrderedDict([('name', 'data')])] comparing ['git', 'sourceware.org', '/git/glibc.git', '', '', OrderedDict()] to ['https', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['https', 'github.com', '/unicode-org/icu/releases/download/release-70-1/icu4c-70_1-data.zip', '', '', OrderedDict([('name', 'data')])] comparing ['git', 'sourceware.org', '/git/binutils-gdb.git', '', '', OrderedDict()] to ['https', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: Trying Upstream
+DEBUG: Fetching https://github.com/unicode-org/icu/releases/download/release-70-1/icu4c-70_1-data.zip;name=data using command '/usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/icu4c-70_1-data.zip.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://github.com/unicode-org/icu/releases/download/release-70-1/icu4c-70_1-data.zip''
+DEBUG: Fetcher accessed the network with the command /usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/icu4c-70_1-data.zip.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://github.com/unicode-org/icu/releases/download/release-70-1/icu4c-70_1-data.zip'
+DEBUG: Running export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/poky/scripts/native-intercept:/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/icu-native/70.1-r0/recipe-sysroot-native/usr/bin/x86_64-linux:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/icu-native/70.1-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/icu-native/70.1-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/icu-native/70.1-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/icu-native/70.1-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/icu-native/70.1-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; /usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/icu4c-70_1-data.zip.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://github.com/unicode-org/icu/releases/download/release-70-1/icu4c-70_1-data.zip' --progress=dot -v
+--2025-08-25 03:01:55--  https://github.com/unicode-org/icu/releases/download/release-70-1/icu4c-70_1-data.zip
+Resolving github.com (github.com)... 20.205.243.166
+Connecting to github.com (github.com)|20.205.243.166|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://release-assets.githubusercontent.com/github-production-release-asset/49244766/6d6b16c3-79b6-4a04-a4e9-f508f91a11ea?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-08-25T03%3A56%3A53Z&rscd=attachment%3B+filename%3Dicu4c-70_1-data.zip&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-08-25T02%3A56%3A44Z&ske=2025-08-25T03%3A56%3A53Z&sks=b&skv=2018-11-09&sig=3C7aukKogj0LM31J8GmYN52s9IcfLUfHe63a%2B4PiZQo%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc1NjA5MTIxNywibmJmIjoxNzU2MDkwOTE3LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.PDIbW6WY5rQ5ifZwDj6x9VwTBrEg75oTG1Kg7Cmqht0&response-content-disposition=attachment%3B%20filename%3Dicu4c-70_1-data.zip&response-content-type=application%2Foctet-stream [following]
+--2025-08-25 03:01:56--  https://release-assets.githubusercontent.com/github-production-release-asset/49244766/6d6b16c3-79b6-4a04-a4e9-f508f91a11ea?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-08-25T03%3A56%3A53Z&rscd=attachment%3B+filename%3Dicu4c-70_1-data.zip&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-08-25T02%3A56%3A44Z&ske=2025-08-25T03%3A56%3A53Z&sks=b&skv=2018-11-09&sig=3C7aukKogj0LM31J8GmYN52s9IcfLUfHe63a%2B4PiZQo%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc1NjA5MTIxNywibmJmIjoxNzU2MDkwOTE3LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.PDIbW6WY5rQ5ifZwDj6x9VwTBrEg75oTG1Kg7Cmqht0&response-content-disposition=attachment%3B%20filename%3Dicu4c-70_1-data.zip&response-content-type=application%2Foctet-stream
+Resolving release-assets.githubusercontent.com (release-assets.githubusercontent.com)... 185.199.110.133, 185.199.111.133, 185.199.108.133, ...
+Connecting to release-assets.githubusercontent.com (release-assets.githubusercontent.com)|185.199.110.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 18770261 (18M) [application/octet-stream]
+Saving to: ‘/home/ubuntu/yocto/rpi-build/downloads/icu4c-70_1-data.zip.tmp’
+
+
+2025-08-25 03:01:57 (26.9 MB/s) - ‘/home/ubuntu/yocto/rpi-build/downloads/icu4c-70_1-data.zip.tmp’ saved [18770261/18770261]
+
+DEBUG: Searching for filter.json in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/
+DEBUG: Searching for fix-install-manx.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/
+DEBUG: Searching for 0001-icu-Added-armeb-support.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/
+DEBUG: Searching for CVE-2025-5222.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/
+DEBUG: Python function base_do_fetch finished
+DEBUG: Python function do_fetch finished

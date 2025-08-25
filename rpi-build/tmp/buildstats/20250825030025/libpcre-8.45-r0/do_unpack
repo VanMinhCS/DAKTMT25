@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090867.00 
+libpcre-8.45-r0: do_unpack
+Elapsed time: 1.58 seconds
+utime: 21
+stime: 2
+cutime: 61
+cstime: 12
+IO rchar: 11705444
+IO wchar: 19686387
+IO syscr: 2743
+IO syscw: 3791
+IO read_bytes: 1593344
+IO write_bytes: 10559488
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.217769
+rusage ru_stime: 0.0278
+rusage ru_maxrss: 108220
+rusage ru_minflt: 6315
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 56
+rusage ru_nvcsw: 8
+rusage ru_nivcsw: 70
+Child rusage ru_utime: 0.615544
+Child rusage ru_stime: 0.120474
+Child rusage ru_maxrss: 108220
+Child rusage ru_minflt: 2641
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 3112
+Child rusage ru_oublock: 20568
+Child rusage ru_nvcsw: 1604
+Child rusage ru_nivcsw: 1515
+Status: PASSED 
+Ended: 1756090868.58 

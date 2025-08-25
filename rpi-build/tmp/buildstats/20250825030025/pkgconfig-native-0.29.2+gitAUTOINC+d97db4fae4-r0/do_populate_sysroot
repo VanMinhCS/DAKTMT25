@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756091002.83 
+pkgconfig-native-0.29.2+gitAUTOINC+d97db4fae4-r0: do_populate_sysroot
+Elapsed time: 0.50 seconds
+utime: 47
+stime: 9
+cutime: 10
+cstime: 12
+IO rchar: 7883438
+IO wchar: 2994945
+IO syscr: 1784
+IO syscw: 383
+IO read_bytes: 0
+IO write_bytes: 2355200
+IO cancelled_write_bytes: 602112
+rusage ru_utime: 0.473427
+rusage ru_stime: 0.09809699999999999
+rusage ru_maxrss: 110516
+rusage ru_minflt: 15319
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 1704
+rusage ru_nvcsw: 39
+rusage ru_nivcsw: 42
+Child rusage ru_utime: 0.102656
+Child rusage ru_stime: 0.12972999999999998
+Child rusage ru_maxrss: 110516
+Child rusage ru_minflt: 14892
+Child rusage ru_majflt: 1
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 2896
+Child rusage ru_nvcsw: 202
+Child rusage ru_nivcsw: 50
+Status: PASSED 
+Ended: 1756091003.33 

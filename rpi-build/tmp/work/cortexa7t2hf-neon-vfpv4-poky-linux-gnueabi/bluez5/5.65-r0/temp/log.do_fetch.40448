@@ -1,0 +1,326 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are []
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_fetch
+DEBUG: Executing python function base_do_fetch
+DEBUG: Trying PREMIRRORS
+DEBUG: For url ['https', 'cdn.kernel.org', '/pub/linux/bluetooth/bluez-5.65.tar.xz', '', '', OrderedDict()] comparing ['git', 'sourceware.org', '/git/glibc.git', '', '', OrderedDict()] to ['https', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['https', 'cdn.kernel.org', '/pub/linux/bluetooth/bluez-5.65.tar.xz', '', '', OrderedDict()] comparing ['git', 'sourceware.org', '/git/binutils-gdb.git', '', '', OrderedDict()] to ['https', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: Trying Upstream
+DEBUG: Fetching https://cdn.kernel.org/pub/linux/bluetooth/bluez-5.65.tar.xz using command '/usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/bluez-5.65.tar.xz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://cdn.kernel.org/pub/linux/bluetooth/bluez-5.65.tar.xz''
+DEBUG: Fetcher accessed the network with the command /usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/bluez-5.65.tar.xz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://cdn.kernel.org/pub/linux/bluetooth/bluez-5.65.tar.xz'
+DEBUG: Running export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bluez5/5.65-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bluez5/5.65-r0/recipe-sysroot/usr/bin/crossscripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bluez5/5.65-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bluez5/5.65-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bluez5/5.65-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/bluez5/5.65-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; /usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/bluez-5.65.tar.xz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://cdn.kernel.org/pub/linux/bluetooth/bluez-5.65.tar.xz' --progress=dot -v
+--2025-08-25 03:02:02--  https://cdn.kernel.org/pub/linux/bluetooth/bluez-5.65.tar.xz
+Resolving cdn.kernel.org (cdn.kernel.org)... 151.101.77.176, 2a04:4e42:12::432
+Connecting to cdn.kernel.org (cdn.kernel.org)|151.101.77.176|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2208100 (2.1M) [application/x-xz]
+Saving to: ‘/home/ubuntu/yocto/rpi-build/downloads/bluez-5.65.tar.xz.tmp’
+
+
+2025-08-25 03:02:03 (7.63 MB/s) - ‘/home/ubuntu/yocto/rpi-build/downloads/bluez-5.65.tar.xz.tmp’ saved [2208100/2208100]
+
+DEBUG: Searching for init in paths:
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/poky
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/raspberrypi4
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/armv7ve
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/rpi
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/arm
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/arm
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/arm
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/arm
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/
+DEBUG: Searching for run-ptest in paths:
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/poky
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/raspberrypi4
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/armv7ve
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/rpi
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/arm
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/arm
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/arm
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/arm
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/
+DEBUG: Searching for 0001-Allow-using-obexd-without-systemd-in-the-user-sessio.patch in paths:
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/poky
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/raspberrypi4
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/armv7ve
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/rpi
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/arm
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/arm
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/arm
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/arm
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/
+DEBUG: Searching for 0001-tests-add-a-target-for-building-tests-without-runnin.patch in paths:
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/poky
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/raspberrypi4
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/armv7ve
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/rpi
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/arm
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/arm
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/arm
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/arm
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/
+DEBUG: Searching for 0001-test-gatt-Fix-hung-issue.patch in paths:
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/poky
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/raspberrypi4
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/armv7ve
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/rpi
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/arm
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/arm
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/arm
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/arm
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/
+DEBUG: Searching for CVE-2023-45866.patch in paths:
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/poky
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/raspberrypi4
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/armv7ve
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/rpi
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/arm
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/arm
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/arm
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/arm
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/
+DEBUG: Searching for CVE-2023-27349.patch in paths:
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/poky
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/raspberrypi4
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/armv7ve
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/rpi
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/arm
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/arm
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/arm
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/arm
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/
+DEBUG: Searching for CVE-2023-50229_CVE-2023-50230.patch in paths:
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/poky
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/raspberrypi4
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/armv7ve
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/rpi
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/arm
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/arm
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/arm
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/arm
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/
+DEBUG: Searching for 0001-bcm43xx-Add-bcm43xx-3wire-variant.patch in paths:
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/poky
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/raspberrypi4
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/armv7ve
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/rpi
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/arm
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/arm
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/arm
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/arm
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/
+DEBUG: Searching for 0002-bcm43xx-The-UART-speed-must-be-reset-after-the-firmw.patch in paths:
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/poky
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/raspberrypi4
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/armv7ve
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/rpi
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/arm
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/arm
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/arm
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/arm
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/
+DEBUG: Searching for 0003-Increase-firmware-load-timeout-to-30s.patch in paths:
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/poky
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/raspberrypi4
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/armv7ve
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/rpi
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/arm
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/arm
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/arm
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/arm
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/
+DEBUG: Searching for 0004-Move-the-43xx-firmware-into-lib-firmware.patch in paths:
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/poky
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/raspberrypi4
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/armv7ve
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/rpi
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/arm
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/arm
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/arm
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/arm
+    /home/ubuntu/yocto/meta-raspberrypi/recipes-connectivity/bluez5/bluez5/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5-5.65/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/bluez5/
+    /home/ubuntu/yocto/poky/meta/recipes-connectivity/bluez5/files/
+DEBUG: Python function base_do_fetch finished
+DEBUG: Python function do_fetch finished

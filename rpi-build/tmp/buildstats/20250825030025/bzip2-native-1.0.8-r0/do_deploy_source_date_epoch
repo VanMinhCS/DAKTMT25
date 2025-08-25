@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090853.59 
+bzip2-native-1.0.8-r0: do_deploy_source_date_epoch
+Elapsed time: 0.44 seconds
+utime: 40
+stime: 5
+cutime: 3
+cstime: 2
+IO rchar: 341618
+IO wchar: 143060
+IO syscr: 385
+IO syscw: 109
+IO read_bytes: 0
+IO write_bytes: 118784
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.40375099999999997
+rusage ru_stime: 0.056525
+rusage ru_maxrss: 108656
+rusage ru_minflt: 8673
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 192
+rusage ru_nvcsw: 12
+rusage ru_nivcsw: 150
+Child rusage ru_utime: 0.034689
+Child rusage ru_stime: 0.02472
+Child rusage ru_maxrss: 108656
+Child rusage ru_minflt: 4343
+Child rusage ru_majflt: 1
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 40
+Child rusage ru_nvcsw: 72
+Child rusage ru_nivcsw: 33
+Status: PASSED 
+Ended: 1756090854.03 

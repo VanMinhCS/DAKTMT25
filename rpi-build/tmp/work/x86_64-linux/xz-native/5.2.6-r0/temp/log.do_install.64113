@@ -1,0 +1,220 @@
+DEBUG: Executing python function autotools_aclocals
+DEBUG: SITE files ['endian-little', 'common-linux', 'common-glibc', 'bit-64', 'x86_64-linux', 'common']
+DEBUG: Python function autotools_aclocals finished
+DEBUG: Executing shell function do_install
+NOTE: make -j 8 DESTDIR=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image install
+Making install in src
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src'
+Making install in liblzma
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src/liblzma'
+Making install in api
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src/liblzma/api'
+make[4]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src/liblzma/api'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/include'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/include/lzma'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644  ../../../../xz-5.2.6/src/liblzma/api/lzma/base.h ../../../../xz-5.2.6/src/liblzma/api/lzma/bcj.h ../../../../xz-5.2.6/src/liblzma/api/lzma/block.h ../../../../xz-5.2.6/src/liblzma/api/lzma/check.h ../../../../xz-5.2.6/src/liblzma/api/lzma/container.h ../../../../xz-5.2.6/src/liblzma/api/lzma/delta.h ../../../../xz-5.2.6/src/liblzma/api/lzma/filter.h ../../../../xz-5.2.6/src/liblzma/api/lzma/hardware.h ../../../../xz-5.2.6/src/liblzma/api/lzma/index.h ../../../../xz-5.2.6/src/liblzma/api/lzma/index_hash.h ../../../../xz-5.2.6/src/liblzma/api/lzma/lzma12.h ../../../../xz-5.2.6/src/liblzma/api/lzma/stream_flags.h ../../../../xz-5.2.6/src/liblzma/api/lzma/version.h ../../../../xz-5.2.6/src/liblzma/api/lzma/vli.h '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/include/lzma'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644  ../../../../xz-5.2.6/src/liblzma/api/lzma.h '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/include/.'
+make[4]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src/liblzma/api'
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src/liblzma/api'
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src/liblzma'
+make[4]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src/liblzma'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/lib'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/lib/pkgconfig'
+ /bin/bash ../../libtool   --mode=install /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c   liblzma.la '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/lib'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 liblzma.pc '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/lib/pkgconfig'
+libtool: install: /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c .libs/liblzma.so.5.2.6 /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/lib/liblzma.so.5.2.6
+libtool: install: (cd /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/lib && { ln -s -f liblzma.so.5.2.6 liblzma.so.5 || { rm -f liblzma.so.5 && ln -s liblzma.so.5.2.6 liblzma.so.5; }; })
+libtool: install: (cd /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/lib && { ln -s -f liblzma.so.5.2.6 liblzma.so || { rm -f liblzma.so && ln -s liblzma.so.5.2.6 liblzma.so; }; })
+libtool: install: /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c .libs/liblzma.lai /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/lib/liblzma.la
+libtool: warning: remember to run 'libtool --finish /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/lib'
+make[4]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src/liblzma'
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src/liblzma'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src/liblzma'
+Making install in xzdec
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src/xzdec'
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src/xzdec'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/bin'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/share/man/man1'
+  /bin/bash ../../libtool   --mode=install /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c xzdec lzmadec '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/bin'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../../../xz-5.2.6/src/xzdec/xzdec.1 '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/share/man/man1'
+make  install-data-hook
+make[4]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src/xzdec'
+languages= ; \
+if test "no" = yes && test -d "../../../xz-5.2.6/po4a/man"; then \
+	languages=`ls "../../../xz-5.2.6/po4a/man"`; \
+fi; \
+target=`echo xzdec | sed 's,x,x,'` && \
+link=`echo lzmadec | sed 's,x,x,'` && \
+for lang in . $languages; do \
+	man="../../../xz-5.2.6/po4a/man/$lang/xzdec.1" ; \
+	if test -f "$man"; then \
+		make dist_man_MANS="$man" man_MANS= \
+			mandir="/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/share/man/$lang" install-man; \
+	fi; \
+	man1dir="/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/share/man/$lang/man1" && \
+	if test -f "$man1dir/$target.1"; then \
+		if test -n "lzmadec"; then ( \
+			cd "$man1dir" && \
+			rm -f "$link.1" && \
+			ln -s "$target.1" "$link.1" \
+		); fi; \
+	fi; \
+done
+make[4]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src/xzdec'
+libtool: warning: '../../src/liblzma/liblzma.la' has not been installed in '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/lib'
+libtool: install: /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c .libs/xzdec /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/bin/xzdec
+libtool: warning: '../../src/liblzma/liblzma.la' has not been installed in '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/lib'
+libtool: install: /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c .libs/lzmadec /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/bin/lzmadec
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src/xzdec'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src/xzdec'
+Making install in xz
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src/xz'
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src/xz'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/bin'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/share/man/man1'
+  /bin/bash ../../libtool   --mode=install /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c xz '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/bin'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../../../xz-5.2.6/src/xz/xz.1 '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/share/man/man1'
+make  install-data-hook
+make[4]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src/xz'
+languages= ; \
+if test "no" = yes && test -d "../../../xz-5.2.6/po4a/man"; then \
+	languages=`ls "../../../xz-5.2.6/po4a/man"`; \
+fi; \
+target=`echo xz | sed 's,x,x,'` && \
+for lang in . $languages; do \
+	man="../../../xz-5.2.6/po4a/man/$lang/xz.1" ; \
+	if test -f "$man"; then \
+		make dist_man_MANS="$man" man_MANS= \
+			mandir="/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/share/man/$lang" install-man; \
+	fi; \
+	man1dir="/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/share/man/$lang/man1" && \
+	if test -f "$man1dir/$target.1"; then ( \
+		cd "$man1dir" && \
+		for name in unxz xzcat lzma unlzma lzcat; do \
+			link=`echo $name | sed 's,x,x,'` && \
+			rm -f "$link.1" && \
+			ln -s "$target.1" "$link.1"; \
+		done \
+	); fi; \
+done
+make[4]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src/xz'
+libtool: warning: '../../src/liblzma/liblzma.la' has not been installed in '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/lib'
+libtool: install: /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c .libs/xz /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/bin/xz
+make  install-exec-hook
+make[4]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src/xz'
+cd "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/bin" && \
+target=`echo xz | sed 's,x,x,'` && \
+for name in unxz xzcat lzma unlzma lzcat; do \
+	link=`echo $name | sed 's,x,x,'` && \
+	rm -f "$link" && \
+	ln -s "$target" "$link"; \
+done
+make[4]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src/xz'
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src/xz'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src/xz'
+Making install in lzmainfo
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src/lzmainfo'
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src/lzmainfo'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/bin'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/share/man/man1'
+  /bin/bash ../../libtool   --mode=install /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c lzmainfo '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/bin'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../../../xz-5.2.6/src/lzmainfo/lzmainfo.1 '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/share/man/man1'
+libtool: warning: '../../src/liblzma/liblzma.la' has not been installed in '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/lib'
+libtool: install: /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c .libs/lzmainfo /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/bin/lzmainfo
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src/lzmainfo'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src/lzmainfo'
+Making install in scripts
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src/scripts'
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src/scripts'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/bin'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/share/man/man1'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c xzdiff xzgrep xzmore xzless '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/bin'
+make  install-exec-hook
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../../../xz-5.2.6/src/scripts/xzdiff.1 ../../../xz-5.2.6/src/scripts/xzgrep.1 ../../../xz-5.2.6/src/scripts/xzmore.1 ../../../xz-5.2.6/src/scripts/xzless.1 '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/share/man/man1'
+make[4]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src/scripts'
+cd "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/bin" && \
+for pair in xzdiff-xzcmp xzgrep-xzegrep xzgrep-xzfgrep xzdiff-lzdiff xzdiff-lzcmp xzgrep-lzgrep xzgrep-lzegrep xzgrep-lzfgrep xzmore-lzmore xzless-lzless; do \
+	target=`echo $pair | sed 's/-.*$//' | sed 's,x,x,'` && \
+	link=`echo $pair | sed 's/^.*-//' | sed 's,x,x,'` && \
+	rm -f "$link" && \
+	ln -s "$target" "$link"; \
+done
+make  install-data-hook
+make[4]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src/scripts'
+languages= ; \
+if test "no" = yes && test -d "../../../xz-5.2.6/po4a/man"; then \
+	languages=`ls "../../../xz-5.2.6/po4a/man"`; \
+fi; \
+for lang in $languages; do \
+	mans= ; \
+	for man in xzdiff.1 xzgrep.1 xzmore.1 xzless.1; do \
+		man="../../../xz-5.2.6/po4a/man/$lang/$man" ; \
+		if test -f "$man"; then \
+			mans="$mans $man"; \
+		fi; \
+	done; \
+	make dist_man_MANS="$mans" man_MANS= \
+			mandir="/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/share/man/$lang" install-man; \
+done; \
+for lang in . $languages; do \
+	for pair in xzdiff-xzcmp xzgrep-xzegrep xzgrep-xzfgrep xzdiff-lzdiff xzdiff-lzcmp xzgrep-lzgrep xzgrep-lzegrep xzgrep-lzfgrep xzmore-lzmore xzless-lzless; do \
+		target=`echo $pair | sed 's/-.*$//' \
+				| sed 's,x,x,'` && \
+		link=`echo $pair | sed 's/^.*-//' \
+				| sed 's,x,x,'` && \
+		man1dir="/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/share/man/$lang/man1" && \
+		if test -f "$man1dir/$target.1"; then ( \
+			cd "$man1dir" && \
+			rm -f "$link.1" && \
+			ln -s "$target.1" "$link.1" \
+		); fi; \
+	done; \
+done
+make[4]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src/scripts'
+make[4]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src/scripts'
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src/scripts'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src/scripts'
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src'
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src'
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/src'
+Making install in po
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/po'
+if test "xz" = "gettext-tools"; then \
+  /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../../xz-5.2.6/po/$file \
+		    /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/po'
+Making install in tests
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/tests'
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/tests'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/tests'
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build/tests'
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build'
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/share/doc/xz'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/share/doc/xz/examples'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/share/doc/xz/examples_old'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../xz-5.2.6/AUTHORS ../xz-5.2.6/COPYING ../xz-5.2.6/COPYING.GPLv2 ../xz-5.2.6/NEWS ../xz-5.2.6/README ../xz-5.2.6/THANKS ../xz-5.2.6/TODO ../xz-5.2.6/doc/faq.txt ../xz-5.2.6/doc/history.txt ../xz-5.2.6/doc/xz-file-format.txt ../xz-5.2.6/doc/lzma-file-format.txt '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/share/doc/xz'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../xz-5.2.6/doc/examples/00_README.txt ../xz-5.2.6/doc/examples/01_compress_easy.c ../xz-5.2.6/doc/examples/02_decompress.c ../xz-5.2.6/doc/examples/03_compress_custom.c ../xz-5.2.6/doc/examples/04_compress_easy_mt.c ../xz-5.2.6/doc/examples/Makefile '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/share/doc/xz/examples'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../xz-5.2.6/doc/examples_old/xz_pipe_comp.c ../xz-5.2.6/doc/examples_old/xz_pipe_decomp.c '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/recipe-sysroot-native/usr/share/doc/xz/examples_old'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build'
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/xz-native/5.2.6-r0/build'
+DEBUG: Shell function do_install finished
+DEBUG: Executing shell function remove_libtool_la
+DEBUG: Shell function remove_libtool_la finished

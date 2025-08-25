@@ -1,0 +1,507 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are ['virtual:native:/home/ubuntu/yocto/poky/meta/recipes-extended/xz/xz_5.2.6.bb:do_populate_sysroot']
+NOTE: Installed into sysroot: ['xz-native', 'gettext-minimal-native', 'libtool-native', 'texinfo-dummy-native']
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: sed -e 's:^[^/]*/:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/recipe-sysroot-native/:g' /home/ubuntu/yocto/rpi-build/tmp/sysroots-components/x86_64/libtool-native/fixmepath | xargs sed -i -e 's:FIXMESTAGINGDIRTARGET:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/recipe-sysroot:g; s:FIXMESTAGINGDIRHOST:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/recipe-sysroot-native:g' -e 's:FIXME_PSEUDO_SYSROOT:/home/ubuntu/yocto/rpi-build/tmp/sysroots-components/x86_64/pseudo-native:g' -e 's:FIXME_HOSTTOOLS_DIR:/home/ubuntu/yocto/rpi-build/tmp/hosttools:g' -e 's:FIXME_PKGDATA_DIR:/home/ubuntu/yocto/rpi-build/tmp/pkgdata/raspberrypi4:g' -e 's:FIXME_PSEUDO_LOCALSTATEDIR:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/pseudo/:g' -e 's:FIXME_LOGFIFO:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/temp/fifo.185183:g'
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+NOTE: Unpacking /home/ubuntu/yocto/rpi-build/downloads/Python-3.10.18.tar.xz to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/
+DEBUG: Searching for run-ptest in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/run-ptest to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/
+DEBUG: Searching for create_manifest3.py in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/create_manifest3.py to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/
+DEBUG: Searching for get_module_deps3.py in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/get_module_deps3.py to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/
+DEBUG: Searching for python3-manifest.json in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/python3-manifest.json to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/
+DEBUG: Searching for check_build_completeness.py in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/check_build_completeness.py to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/
+DEBUG: Searching for reformat_sysconfig.py in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/reformat_sysconfig.py to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/
+DEBUG: Searching for cgi_py.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/cgi_py.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/
+DEBUG: Searching for 0001-Do-not-add-usr-lib-termcap-to-linker-flags-to-avoid-.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/0001-Do-not-add-usr-lib-termcap-to-linker-flags-to-avoid-.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/
+DEBUG: Searching for avoid_warning_about_tkinter.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/avoid_warning_about_tkinter.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/
+DEBUG: Searching for 0001-Do-not-use-the-shell-version-of-python-config-that-w.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/0001-Do-not-use-the-shell-version-of-python-config-that-w.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/
+DEBUG: Searching for python-config.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/python-config.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/
+DEBUG: Searching for 0001-Makefile.pre-use-qemu-wrapper-when-gathering-profile.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/0001-Makefile.pre-use-qemu-wrapper-when-gathering-profile.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/
+DEBUG: Searching for 0001-python3-use-cc_basename-to-replace-CC-for-checking-c.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/0001-python3-use-cc_basename-to-replace-CC-for-checking-c.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/
+DEBUG: Searching for 0001-bpo-36852-proper-detection-of-mips-architecture-for-.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/0001-bpo-36852-proper-detection-of-mips-architecture-for-.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/
+DEBUG: Searching for crosspythonpath.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/crosspythonpath.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/
+DEBUG: Searching for 0001-Use-FLAG_REF-always-for-interned-strings.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/0001-Use-FLAG_REF-always-for-interned-strings.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/
+DEBUG: Searching for 0001-test_locale.py-correct-the-test-output-format.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/0001-test_locale.py-correct-the-test-output-format.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/
+DEBUG: Searching for 0017-setup.py-do-not-report-missing-dependencies-for-disa.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/0017-setup.py-do-not-report-missing-dependencies-for-disa.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/
+DEBUG: Searching for 0001-Makefile-do-not-compile-.pyc-in-parallel.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/0001-Makefile-do-not-compile-.pyc-in-parallel.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/
+DEBUG: Searching for 0020-configure.ac-setup.py-do-not-add-a-curses-include-pa.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/0020-configure.ac-setup.py-do-not-add-a-curses-include-pa.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/
+DEBUG: Searching for 0001-Skip-failing-tests-due-to-load-variability-on-YP-AB.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/0001-Skip-failing-tests-due-to-load-variability-on-YP-AB.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/
+DEBUG: Searching for 0001-test_ctypes.test_find-skip-without-tools-sdk.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/0001-test_ctypes.test_find-skip-without-tools-sdk.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/
+DEBUG: Searching for makerace.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/makerace.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/
+DEBUG: Searching for 0001-sysconfig.py-use-platlibdir-also-for-purelib.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/0001-sysconfig.py-use-platlibdir-also-for-purelib.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/
+DEBUG: Searching for 0001-Lib-pty.py-handle-stdin-I-O-errors-same-way-as-maste.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/0001-Lib-pty.py-handle-stdin-I-O-errors-same-way-as-maste.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/
+DEBUG: Searching for 0001-setup.py-Do-not-detect-multiarch-paths-when-cross-co.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/0001-setup.py-Do-not-detect-multiarch-paths-when-cross-co.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/
+DEBUG: Searching for deterministic_imports.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/deterministic_imports.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/
+DEBUG: Searching for 0001-Avoid-shebang-overflow-on-python-config.py.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/0001-Avoid-shebang-overflow-on-python-config.py.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/
+DEBUG: Searching for 0001-test_storlines-skip-due-to-load-variability.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/0001-test_storlines-skip-due-to-load-variability.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/
+DEBUG: Searching for 0001-gh-107811-tarfile-treat-overflow-in-UID-GID-as-failu.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/0001-gh-107811-tarfile-treat-overflow-in-UID-GID-as-failu.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/
+DEBUG: Searching for CVE-2025-8194.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/CVE-2025-8194.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/
+DEBUG: Searching for 0001-Lib-sysconfig.py-use-prefix-value-from-build-configu.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/0001-Lib-sysconfig.py-use-prefix-value-from-build-configu.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/
+DEBUG: Searching for 0001-distutils-sysconfig-append-STAGING_LIBDIR-python-sys.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/0001-distutils-sysconfig-append-STAGING_LIBDIR-python-sys.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/
+DEBUG: Searching for 12-distutils-prefix-is-inside-staging-area.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/12-distutils-prefix-is-inside-staging-area.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/
+DEBUG: Searching for 0001-Don-t-search-system-for-headers-libraries.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-3.10.18/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3/0001-Don-t-search-system-for-headers-libraries.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function create_source_date_epoch_stamp
+DEBUG: Newest file found: /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-native/3.10.18-r0/Python-3.10.18/install-sh
+DEBUG: SOURCE_DATE_EPOCH: 1748975021
+DEBUG: Python function create_source_date_epoch_stamp finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

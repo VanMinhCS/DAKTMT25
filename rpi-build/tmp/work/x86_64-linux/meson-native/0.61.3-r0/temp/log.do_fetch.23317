@@ -1,0 +1,113 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are []
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_fetch
+DEBUG: Executing python function base_do_fetch
+DEBUG: Searching for meson-setup.py in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson-0.61.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson-0.61.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson-0.61.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson-0.61.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/files/
+DEBUG: Searching for meson-wrapper in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson-0.61.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson-0.61.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson-0.61.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson-0.61.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/files/
+DEBUG: Searching for 0001-python-module-do-not-manipulate-the-environment-when.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson-0.61.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson-0.61.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson-0.61.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson-0.61.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/files/
+DEBUG: Searching for disable-rpath-handling.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson-0.61.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson-0.61.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson-0.61.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson-0.61.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/files/
+DEBUG: Searching for 0001-Make-CPU-family-warnings-fatal.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson-0.61.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson-0.61.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson-0.61.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson-0.61.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/files/
+DEBUG: Searching for 0002-Support-building-allarch-recipes-again.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson-0.61.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson-0.61.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson-0.61.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson-0.61.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/files/
+DEBUG: Searching for 0001-is_debianlike-always-return-False.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson-0.61.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson-0.61.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson-0.61.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson-0.61.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/files/
+DEBUG: Searching for 0001-Check-for-clang-before-guessing-gcc-or-lcc.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson-0.61.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson-0.61.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson-0.61.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson-0.61.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/meson/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/meson/files/
+DEBUG: Python function base_do_fetch finished
+DEBUG: Python function do_fetch finished

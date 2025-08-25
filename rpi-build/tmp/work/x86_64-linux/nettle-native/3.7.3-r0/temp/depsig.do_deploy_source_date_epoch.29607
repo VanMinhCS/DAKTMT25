@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:nettle-native:x86_64-linux:3.7.3:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 f58311c26151bad62d10d2b0f53ee8470adc564331a5eb594757845f3dcade3e ./deploy-source-date-epoch/__source_date_epoch.txt

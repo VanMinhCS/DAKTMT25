@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090897.36 
+libxau-1_1.0.9-r0: do_fetch
+Elapsed time: 7.37 seconds
+utime: 13
+stime: 4
+cutime: 1
+cstime: 1
+IO rchar: 450014
+IO wchar: 376511
+IO syscr: 875
+IO syscw: 585
+IO read_bytes: 0
+IO write_bytes: 380928
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.13672299999999998
+rusage ru_stime: 0.044233999999999996
+rusage ru_maxrss: 109740
+rusage ru_minflt: 5193
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 112
+rusage ru_nvcsw: 107
+rusage ru_nivcsw: 7
+Child rusage ru_utime: 0.01147
+Child rusage ru_stime: 0.018498
+Child rusage ru_maxrss: 105136
+Child rusage ru_minflt: 1086
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 632
+Child rusage ru_nvcsw: 80
+Child rusage ru_nivcsw: 70
+Status: PASSED 
+Ended: 1756090904.73 

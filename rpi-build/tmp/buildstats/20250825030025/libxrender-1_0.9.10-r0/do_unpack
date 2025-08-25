@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090934.19 
+libxrender-1_0.9.10-r0: do_unpack
+Elapsed time: 0.12 seconds
+utime: 14
+stime: 2
+cutime: 9
+cstime: 1
+IO rchar: 2116861
+IO wchar: 3375175
+IO syscr: 571
+IO syscw: 660
+IO read_bytes: 0
+IO write_bytes: 1765376
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.148727
+rusage ru_stime: 0.020656
+rusage ru_maxrss: 109456
+rusage ru_minflt: 4896
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 56
+rusage ru_nvcsw: 6
+rusage ru_nivcsw: 2
+Child rusage ru_utime: 0.091045
+Child rusage ru_stime: 0.018432999999999998
+Child rusage ru_maxrss: 109456
+Child rusage ru_minflt: 1692
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 3392
+Child rusage ru_nvcsw: 297
+Child rusage ru_nivcsw: 5
+Status: PASSED 
+Ended: 1756090934.30 

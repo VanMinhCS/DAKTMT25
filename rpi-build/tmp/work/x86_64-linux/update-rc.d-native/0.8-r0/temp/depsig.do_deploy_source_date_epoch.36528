@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:update-rc.d-native:x86_64-linux:0.8:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 8888d608d65735ff42ca0a1be5808e24d3355784b0b430357894ecb4042c46af ./deploy-source-date-epoch/__source_date_epoch.txt

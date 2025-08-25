@@ -1,0 +1,109 @@
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+NOTE: Unpacking /home/ubuntu/yocto/rpi-build/downloads/setuptools-59.5.0.tar.gz to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-setuptools-native/59.5.0-r0/
+DEBUG: Searching for 0001-change-shebang-to-python3.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools-59.5.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools-59.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools-59.5.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools-59.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools/0001-change-shebang-to-python3.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-setuptools-native/59.5.0-r0/
+DEBUG: Searching for 0001-_distutils-sysconfig-append-STAGING_LIBDIR-python-sy.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools-59.5.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools-59.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools-59.5.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools-59.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools/0001-_distutils-sysconfig-append-STAGING_LIBDIR-python-sy.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-setuptools-native/59.5.0-r0/
+DEBUG: Searching for 0001-Limit-the-amount-of-whitespace-to-search-backtrack.-.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools-59.5.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools-59.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools-59.5.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools-59.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools/0001-Limit-the-amount-of-whitespace-to-search-backtrack.-.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-setuptools-native/59.5.0-r0/
+DEBUG: Searching for CVE-2024-6345.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools-59.5.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools-59.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools-59.5.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools-59.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools/CVE-2024-6345.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-setuptools-native/59.5.0-r0/
+DEBUG: Searching for CVE-2025-47273-pre1.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools-59.5.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools-59.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools-59.5.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools-59.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools/CVE-2025-47273-pre1.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-setuptools-native/59.5.0-r0/
+DEBUG: Searching for CVE-2025-47273.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools-59.5.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools-59.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools-59.5.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools-59.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools/CVE-2025-47273.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-setuptools-native/59.5.0-r0/
+DEBUG: Searching for 0001-conditionally-do-not-fetch-code-by-easy_install.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools-59.5.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools-59.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools-59.5.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools-59.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/python3-setuptools/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/python/files/0001-conditionally-do-not-fetch-code-by-easy_install.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-setuptools-native/59.5.0-r0/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function create_source_date_epoch_stamp
+DEBUG: Newest file found: /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/python3-setuptools-native/59.5.0-r0/setuptools-59.5.0/setup.cfg
+DEBUG: SOURCE_DATE_EPOCH: 1638725317
+DEBUG: Python function create_source_date_epoch_stamp finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

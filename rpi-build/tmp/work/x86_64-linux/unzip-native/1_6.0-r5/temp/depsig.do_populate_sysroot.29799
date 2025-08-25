@@ -1,0 +1,17 @@
+OEOuthashBasic
+14
+quilt-native: 3057d956d8a64c8d0c95902855fb8674038582d1c445513dc0b3cc45351763ca
+SSTATE_PKGSPEC=sstate:unzip-native:x86_64-linux:6.0:r5:x86_64:10:
+task=populate_sysroot
+drwx                                                                                       .
+drwx                                                                                       ./recipe-sysroot-native
+drwx                                                                                       ./recipe-sysroot-native/sysroot-providers
+-rw-                   12 33bc380eba52884f8df42102870be002892f098804d583f8c6b299813c845598 ./recipe-sysroot-native/sysroot-providers/unzip-native
+drwx                                                                                       ./recipe-sysroot-native/usr
+drwx                                                                                       ./recipe-sysroot-native/usr/bin
+-rwx                22552 139bcd5c82d6754dad0d9166faf122044690b503ad3d4246b209d1849a7f81a6 ./recipe-sysroot-native/usr/bin/funzip
+-rwx               178336 397ad306e0b23cc04f388f85ebc43d75ef6a40a844a3bb607007d6b0ac2b9981 ./recipe-sysroot-native/usr/bin/unzip
+-rwx                84112 c9cbcd2ed018fdbcd27e73f4d0d58c7c98fa7ba81eddf71f0ad6a6bf5cc35772 ./recipe-sysroot-native/usr/bin/unzipsfx
+-rwx                 2953 d077ccd18e5719776df7f06b667bda8f7547aa5c3b9cf174c0005608e9309bb8 ./recipe-sysroot-native/usr/bin/zipgrep
+-rwx               178336 397ad306e0b23cc04f388f85ebc43d75ef6a40a844a3bb607007d6b0ac2b9981 ./recipe-sysroot-native/usr/bin/zipinfo
+drwx                                                                                       ./recipe-sysroot-native/usr/share

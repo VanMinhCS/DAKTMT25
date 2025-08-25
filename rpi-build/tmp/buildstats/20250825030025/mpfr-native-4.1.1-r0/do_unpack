@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090985.06 
+mpfr-native-4.1.1-r0: do_unpack
+Elapsed time: 0.23 seconds
+utime: 21
+stime: 2
+cutime: 14
+cstime: 8
+IO rchar: 11637191
+IO wchar: 19202476
+IO syscr: 2086
+IO syscw: 2801
+IO read_bytes: 1437696
+IO write_bytes: 10805248
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.214164
+rusage ru_stime: 0.029983
+rusage ru_maxrss: 110312
+rusage ru_minflt: 5336
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 128
+rusage ru_nvcsw: 8
+rusage ru_nivcsw: 1
+Child rusage ru_utime: 0.14411
+Child rusage ru_stime: 0.086005
+Child rusage ru_maxrss: 110312
+Child rusage ru_minflt: 3444
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 2808
+Child rusage ru_oublock: 20976
+Child rusage ru_nvcsw: 873
+Child rusage ru_nivcsw: 8
+Status: PASSED 
+Ended: 1756090985.29 

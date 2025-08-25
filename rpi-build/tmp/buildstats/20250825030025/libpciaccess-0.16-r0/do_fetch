@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090939.26 
+libpciaccess-0.16-r0: do_fetch
+Elapsed time: 10.78 seconds
+utime: 16
+stime: 2
+cutime: 1
+cstime: 2
+IO rchar: 493217
+IO wchar: 420242
+IO syscr: 547
+IO syscw: 655
+IO read_bytes: 0
+IO write_bytes: 425984
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.16153499999999998
+rusage ru_stime: 0.020708999999999998
+rusage ru_maxrss: 110432
+rusage ru_minflt: 5214
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 112
+rusage ru_nvcsw: 53
+rusage ru_nivcsw: 3
+Child rusage ru_utime: 0.010924999999999999
+Child rusage ru_stime: 0.020446
+Child rusage ru_maxrss: 105916
+Child rusage ru_minflt: 1088
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 720
+Child rusage ru_nvcsw: 129
+Child rusage ru_nivcsw: 1
+Status: PASSED 
+Ended: 1756090950.04 

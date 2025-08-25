@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756091068.49 
+unifdef-native-2.12-r0: do_compile
+Elapsed time: 1.70 seconds
+utime: 21
+stime: 3
+cutime: 82
+cstime: 16
+IO rchar: 1798251
+IO wchar: 231377
+IO syscr: 922
+IO syscw: 156
+IO read_bytes: 4096
+IO write_bytes: 143360
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.21845799999999999
+rusage ru_stime: 0.032973999999999996
+rusage ru_maxrss: 110176
+rusage ru_minflt: 4704
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 40
+rusage ru_nvcsw: 6
+rusage ru_nivcsw: 22
+Child rusage ru_utime: 0.8280719999999999
+Child rusage ru_stime: 0.160101
+Child rusage ru_maxrss: 105972
+Child rusage ru_minflt: 7728
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 8
+Child rusage ru_oublock: 240
+Child rusage ru_nvcsw: 42
+Child rusage ru_nivcsw: 261
+Status: PASSED 
+Ended: 1756091070.19 

@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090934.25 
+libogg-1.3.5-r0: do_fetch
+Elapsed time: 4.78 seconds
+utime: 17
+stime: 2
+cutime: 1
+cstime: 0
+IO rchar: 560094
+IO wchar: 482461
+IO syscr: 355
+IO syscw: 751
+IO read_bytes: 0
+IO write_bytes: 487424
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.17299199999999998
+rusage ru_stime: 0.020593999999999998
+rusage ru_maxrss: 110236
+rusage ru_minflt: 5222
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 112
+rusage ru_nvcsw: 26
+rusage ru_nivcsw: 7
+Child rusage ru_utime: 0.015955999999999998
+Child rusage ru_stime: 0.007009
+Child rusage ru_maxrss: 105864
+Child rusage ru_minflt: 1085
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 840
+Child rusage ru_nvcsw: 27
+Child rusage ru_nivcsw: 2
+Status: PASSED 
+Ended: 1756090939.03 

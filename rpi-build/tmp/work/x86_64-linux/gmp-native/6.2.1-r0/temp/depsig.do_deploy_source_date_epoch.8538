@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:gmp-native:x86_64-linux:6.2.1:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 18b5910d6ee167aa07a87d9cdfed64a9dd869bf8a19c996c66b7a2511113736a ./deploy-source-date-epoch/__source_date_epoch.txt

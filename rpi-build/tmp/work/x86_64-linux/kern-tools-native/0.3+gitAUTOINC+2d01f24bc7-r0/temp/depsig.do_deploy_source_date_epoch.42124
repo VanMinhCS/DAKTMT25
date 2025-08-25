@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:kern-tools-native:x86_64-linux:0.3+gitAUTOINC+2d01f24bc7:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 e1d008775f91275bce0bebcdd63dfa81992608b9f0f2273fabca55d7d6e888de ./deploy-source-date-epoch/__source_date_epoch.txt

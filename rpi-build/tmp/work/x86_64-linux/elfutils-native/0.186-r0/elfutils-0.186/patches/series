@@ -1,0 +1,13 @@
+0001-dso-link-change.patch -p1
+0002-Fix-elf_cvt_gunhash-if-dest-and-src-are-same.patch -p1
+0003-fixheadercheck.patch -p1
+0006-Fix-build-on-aarch64-musl.patch -p1
+0001-libasm-may-link-with-libbz2-if-found.patch -p1
+0001-libelf-elf_end.c-check-data_list.data.d.d_buf-before.patch -p1
+0001-skip-the-test-when-gcc-not-deployed.patch -p1
+ptest.patch -p1
+0001-tests-Makefile.am-compile-test_nlist-with-standard-C.patch -p1
+0001-debuginfod-fix-compilation-on-platforms-without-erro.patch -p1
+0001-debuginfod-debuginfod-client.c-use-long-for-cache-ti.patch -p1
+CVE-2025-1352.patch -p1
+CVE-2025-1372.patch -p1

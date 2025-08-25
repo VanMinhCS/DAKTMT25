@@ -1,0 +1,14 @@
+DEBUG: Executing shell function do_install
+NOTE: make -j 8 install DESTDIR=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unifdef-native/2.12-r0/image prefix=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unifdef-native/2.12-r0/recipe-sysroot-native/usr
+scripts/reversion.sh
+: commands
+install -m 755 -d  /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unifdef-native/2.12-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unifdef-native/2.12-r0/recipe-sysroot-native/usr/bin
+install -m 755 unifdef  /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unifdef-native/2.12-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unifdef-native/2.12-r0/recipe-sysroot-native/usr/bin/
+install -m 755 unifdefall.sh  /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unifdef-native/2.12-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unifdef-native/2.12-r0/recipe-sysroot-native/usr/bin/unifdefall
+: manual
+install -m 755 -d  /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unifdef-native/2.12-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unifdef-native/2.12-r0/recipe-sysroot-native/usr/share/man/man1
+install -m 644 unifdef.1  /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unifdef-native/2.12-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unifdef-native/2.12-r0/recipe-sysroot-native/usr/share/man/man1/
+ln -s unifdef.1  /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unifdef-native/2.12-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unifdef-native/2.12-r0/recipe-sysroot-native/usr/share/man/man1/unifdefall.1
+DEBUG: Shell function do_install finished
+DEBUG: Executing shell function remove_libtool_la
+DEBUG: Shell function remove_libtool_la finished

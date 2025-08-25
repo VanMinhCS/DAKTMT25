@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090871.91 
+lzo-native-2.10-r0: do_unpack
+Elapsed time: 0.32 seconds
+utime: 25
+stime: 4
+cutime: 4
+cstime: 6
+IO rchar: 4099665
+IO wchar: 6424782
+IO syscr: 553
+IO syscw: 772
+IO read_bytes: 733184
+IO write_bytes: 3850240
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.25621099999999997
+rusage ru_stime: 0.044147
+rusage ru_maxrss: 108588
+rusage ru_minflt: 6787
+rusage ru_majflt: 0
+rusage ru_inblock: 232
+rusage ru_oublock: 56
+rusage ru_nvcsw: 13
+rusage ru_nivcsw: 85
+Child rusage ru_utime: 0.042456999999999995
+Child rusage ru_stime: 0.063303
+Child rusage ru_maxrss: 108588
+Child rusage ru_minflt: 2284
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 1200
+Child rusage ru_oublock: 7464
+Child rusage ru_nvcsw: 202
+Child rusage ru_nivcsw: 168
+Status: PASSED 
+Ended: 1756090872.23 

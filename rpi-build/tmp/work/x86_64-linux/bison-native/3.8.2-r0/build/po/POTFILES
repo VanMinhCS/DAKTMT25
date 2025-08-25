@@ -1,0 +1,24 @@
+     ../../bison-3.8.2/examples/c/bistromathic/parse.y \
+     ../../bison-3.8.2/examples/java/calc/Calc.y \
+     ../../bison-3.8.2/src/complain.c \
+     ../../bison-3.8.2/src/conflicts.c \
+     ../../bison-3.8.2/src/counterexample.c \
+     ../../bison-3.8.2/src/files.c \
+     ../../bison-3.8.2/src/fixits.c \
+     ../../bison-3.8.2/src/getargs.c \
+     ../../bison-3.8.2/src/gram.c \
+     ../../bison-3.8.2/src/graphviz.c \
+     ../../bison-3.8.2/src/i18n-strings.c \
+     ../../bison-3.8.2/src/location.c \
+     ../../bison-3.8.2/src/main.c \
+     ../../bison-3.8.2/src/muscle-tab.c \
+     ../../bison-3.8.2/src/parse-gram.y \
+     ../../bison-3.8.2/src/print-graph.c \
+     ../../bison-3.8.2/src/print-xml.c \
+     ../../bison-3.8.2/src/print.c \
+     ../../bison-3.8.2/src/reader.c \
+     ../../bison-3.8.2/src/reduce.c \
+     ../../bison-3.8.2/src/scan-code.l \
+     ../../bison-3.8.2/src/scan-gram.l \
+     ../../bison-3.8.2/src/scan-skel.l \
+     ../../bison-3.8.2/src/symtab.c

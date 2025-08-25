@@ -1,0 +1,17 @@
+     ../../flex-2.6.4/src/buf.c \
+     ../../flex-2.6.4/src/ccl.c \
+     ../../flex-2.6.4/src/dfa.c \
+     ../../flex-2.6.4/src/ecs.c \
+     ../../flex-2.6.4/src/gen.c \
+     ../../flex-2.6.4/src/libmain.c \
+     ../../flex-2.6.4/src/libyywrap.c \
+     ../../flex-2.6.4/src/main.c \
+     ../../flex-2.6.4/src/misc.c \
+     ../../flex-2.6.4/src/nfa.c \
+     ../../flex-2.6.4/src/options.c \
+     ../../flex-2.6.4/src/parse.y \
+     ../../flex-2.6.4/src/scan.l \
+     ../../flex-2.6.4/src/scanopt.c \
+     ../../flex-2.6.4/src/sym.c \
+     ../../flex-2.6.4/src/tblcmp.c \
+     ../../flex-2.6.4/src/yylex.c

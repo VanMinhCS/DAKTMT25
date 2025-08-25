@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756091097.69 
+ncurses-native-6.3+20220423-r0: do_prepare_recipe_sysroot
+Elapsed time: 0.13 seconds
+utime: 27
+stime: 7
+cutime: 3
+cstime: 1
+IO rchar: 1446199
+IO wchar: 1350788
+IO syscr: 467
+IO syscw: 378
+IO read_bytes: 0
+IO write_bytes: 1388544
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.27644399999999997
+rusage ru_stime: 0.07120499999999999
+rusage ru_maxrss: 110516
+rusage ru_minflt: 4355
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 144
+rusage ru_nvcsw: 2
+rusage ru_nivcsw: 39
+Child rusage ru_utime: 0.033074
+Child rusage ru_stime: 0.014936
+Child rusage ru_maxrss: 110516
+Child rusage ru_minflt: 590
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 2568
+Child rusage ru_nvcsw: 8
+Child rusage ru_nivcsw: 1
+Status: PASSED 
+Ended: 1756091097.83 

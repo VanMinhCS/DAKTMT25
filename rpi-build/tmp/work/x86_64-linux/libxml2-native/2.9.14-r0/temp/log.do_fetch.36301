@@ -1,0 +1,373 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are []
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_fetch
+DEBUG: Executing python function base_do_fetch
+DEBUG: Searching for libxml-64bit.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+DEBUG: Searching for runtest.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+DEBUG: Searching for run-ptest in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+DEBUG: Searching for python-sitepackages-dir.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+DEBUG: Searching for 0001-Make-ptest-run-the-python-tests-if-python-is-enabled.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+DEBUG: Searching for fix-execution-of-ptests.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+DEBUG: Searching for remove-fuzz-from-ptests.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+DEBUG: Searching for libxml-m4-use-pkgconfig.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+DEBUG: Searching for 0001-Port-gentest.py-to-Python-3.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+DEBUG: Searching for CVE-2022-40303.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+DEBUG: Searching for CVE-2022-40304.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+DEBUG: Searching for CVE-2023-28484.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+DEBUG: Searching for CVE-2023-29469.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+DEBUG: Searching for CVE-2023-39615-0001.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+DEBUG: Searching for CVE-2023-39615-0002.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+DEBUG: Searching for CVE-2023-45322-1.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+DEBUG: Searching for CVE-2023-45322-2.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+DEBUG: Searching for CVE-2024-25062.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+DEBUG: Searching for CVE-2024-34459.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+DEBUG: Searching for CVE-2022-49043.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+DEBUG: Searching for CVE-2025-27113.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+DEBUG: Searching for CVE-2024-56171.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+DEBUG: Searching for CVE-2025-24928.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+DEBUG: Searching for CVE-2025-32414.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+DEBUG: Searching for CVE-2025-32415.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+DEBUG: Searching for CVE-2025-6021.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+DEBUG: Searching for CVE-2025-49794-CVE-2025-49796.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+DEBUG: Searching for CVE-2025-6170.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2-2.9.14/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/libxml2/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxml/files/
+DEBUG: Python function base_do_fetch finished
+DEBUG: Python function do_fetch finished

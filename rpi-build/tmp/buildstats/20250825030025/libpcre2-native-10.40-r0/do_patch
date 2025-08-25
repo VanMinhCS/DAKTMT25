@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090869.82 
+libpcre2-native-10.40-r0: do_patch
+Elapsed time: 0.40 seconds
+utime: 25
+stime: 5
+cutime: 8
+cstime: 3
+IO rchar: 1415918
+IO wchar: 1033855
+IO syscr: 603
+IO syscw: 357
+IO read_bytes: 0
+IO write_bytes: 1069056
+IO cancelled_write_bytes: 4096
+rusage ru_utime: 0.251446
+rusage ru_stime: 0.052936
+rusage ru_maxrss: 108928
+rusage ru_minflt: 4278
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 120
+rusage ru_nvcsw: 13
+rusage ru_nivcsw: 93
+Child rusage ru_utime: 0.08426499999999999
+Child rusage ru_stime: 0.035887999999999996
+Child rusage ru_maxrss: 108928
+Child rusage ru_minflt: 9582
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 1968
+Child rusage ru_nvcsw: 129
+Child rusage ru_nivcsw: 60
+Status: PASSED 
+Ended: 1756090870.22 

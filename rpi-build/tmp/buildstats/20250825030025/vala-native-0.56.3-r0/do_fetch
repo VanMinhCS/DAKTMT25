@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090914.66 
+vala-native-0.56.3-r0: do_fetch
+Elapsed time: 2.36 seconds
+utime: 28
+stime: 4
+cutime: 1
+cstime: 4
+IO rchar: 4138049
+IO wchar: 4042351
+IO syscr: 1719
+IO syscw: 5778
+IO read_bytes: 0
+IO write_bytes: 4030464
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.283176
+rusage ru_stime: 0.044246
+rusage ru_maxrss: 113976
+rusage ru_minflt: 5672
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 112
+rusage ru_nvcsw: 134
+rusage ru_nivcsw: 13
+Child rusage ru_utime: 0.014572
+Child rusage ru_stime: 0.04609
+Child rusage ru_maxrss: 105700
+Child rusage ru_minflt: 1110
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 7760
+Child rusage ru_nvcsw: 136
+Child rusage ru_nivcsw: 0
+Status: PASSED 
+Ended: 1756090917.02 

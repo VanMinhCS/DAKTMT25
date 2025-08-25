@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756091040.35 
+mpfr-native-4.1.1-r0: do_deploy_source_date_epoch
+Elapsed time: 0.99 seconds
+utime: 69
+stime: 35
+cutime: 3
+cstime: 7
+IO rchar: 327282
+IO wchar: 140834
+IO syscr: 384
+IO syscw: 106
+IO read_bytes: 0
+IO write_bytes: 118784
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.694705
+rusage ru_stime: 0.352537
+rusage ru_maxrss: 110220
+rusage ru_minflt: 8698
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 192
+rusage ru_nvcsw: 11
+rusage ru_nivcsw: 202
+Child rusage ru_utime: 0.037201
+Child rusage ru_stime: 0.075837
+Child rusage ru_maxrss: 110220
+Child rusage ru_minflt: 4344
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 40
+Child rusage ru_nvcsw: 78
+Child rusage ru_nivcsw: 22
+Status: PASSED 
+Ended: 1756091041.34 

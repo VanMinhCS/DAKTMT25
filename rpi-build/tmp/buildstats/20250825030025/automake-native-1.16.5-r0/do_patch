@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090838.72 
+automake-native-1.16.5-r0: do_patch
+Elapsed time: 0.98 seconds
+utime: 29
+stime: 6
+cutime: 47
+cstime: 34
+IO rchar: 2762221
+IO wchar: 847125
+IO syscr: 3300
+IO syscw: 539
+IO read_bytes: 0
+IO write_bytes: 868352
+IO cancelled_write_bytes: 4096
+rusage ru_utime: 0.29484699999999997
+rusage ru_stime: 0.068663
+rusage ru_maxrss: 108652
+rusage ru_minflt: 4141
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 128
+rusage ru_nvcsw: 41
+rusage ru_nivcsw: 63
+Child rusage ru_utime: 0.47757499999999997
+Child rusage ru_stime: 0.344313
+Child rusage ru_maxrss: 108652
+Child rusage ru_minflt: 57866
+Child rusage ru_majflt: 2
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 1568
+Child rusage ru_nvcsw: 866
+Child rusage ru_nivcsw: 308
+Status: PASSED 
+Ended: 1756090839.70 

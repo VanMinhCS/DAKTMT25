@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090917.75 
+icu-native-70.1-r0: do_unpack
+Elapsed time: 3.68 seconds
+utime: 23
+stime: 7
+cutime: 132
+cstime: 89
+IO rchar: 151846143
+IO wchar: 302935562
+IO syscr: 15195
+IO syscw: 21226
+IO read_bytes: 53248
+IO write_bytes: 213970944
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.23596399999999998
+rusage ru_stime: 0.07323
+rusage ru_maxrss: 109988
+rusage ru_minflt: 8194
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 136
+rusage ru_nvcsw: 16
+rusage ru_nivcsw: 11
+Child rusage ru_utime: 1.3265419999999999
+Child rusage ru_stime: 0.898181
+Child rusage ru_maxrss: 109988
+Child rusage ru_minflt: 3530
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 104
+Child rusage ru_oublock: 417776
+Child rusage ru_nvcsw: 3008
+Child rusage ru_nivcsw: 188
+Status: PASSED 
+Ended: 1756090921.43 

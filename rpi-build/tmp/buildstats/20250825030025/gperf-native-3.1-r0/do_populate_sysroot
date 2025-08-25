@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756091096.86 
+gperf-native-3.1-r0: do_populate_sysroot
+Elapsed time: 0.54 seconds
+utime: 53
+stime: 9
+cutime: 10
+cstime: 8
+IO rchar: 1631248
+IO wchar: 710548
+IO syscr: 1046
+IO syscw: 233
+IO read_bytes: 0
+IO write_bytes: 569344
+IO cancelled_write_bytes: 106496
+rusage ru_utime: 0.5338689999999999
+rusage ru_stime: 0.092481
+rusage ru_maxrss: 110640
+rusage ru_minflt: 12423
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 560
+rusage ru_nvcsw: 29
+rusage ru_nivcsw: 74
+Child rusage ru_utime: 0.101071
+Child rusage ru_stime: 0.085724
+Child rusage ru_maxrss: 110640
+Child rusage ru_minflt: 9595
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 552
+Child rusage ru_nvcsw: 156
+Child rusage ru_nivcsw: 48
+Status: PASSED 
+Ended: 1756091097.39 

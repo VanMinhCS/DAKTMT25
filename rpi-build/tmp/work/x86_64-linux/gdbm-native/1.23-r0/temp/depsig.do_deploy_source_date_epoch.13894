@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:gdbm-native:x86_64-linux:1.23:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 3ef6ebde45371d25685c1011765ae210fe3bae12e31345f3a6aeebddc8f77d6d ./deploy-source-date-epoch/__source_date_epoch.txt

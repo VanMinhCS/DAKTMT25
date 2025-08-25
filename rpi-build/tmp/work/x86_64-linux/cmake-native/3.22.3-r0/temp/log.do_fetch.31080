@@ -1,0 +1,117 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are []
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_fetch
+DEBUG: Executing python function base_do_fetch
+DEBUG: Trying PREMIRRORS
+DEBUG: For url ['https', 'cmake.org', '/files/v3.22/cmake-3.22.3.tar.gz', '', '', OrderedDict()] comparing ['git', 'sourceware.org', '/git/glibc.git', '', '', OrderedDict()] to ['https', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['https', 'cmake.org', '/files/v3.22/cmake-3.22.3.tar.gz', '', '', OrderedDict()] comparing ['git', 'sourceware.org', '/git/binutils-gdb.git', '', '', OrderedDict()] to ['https', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: Trying Upstream
+DEBUG: Fetching https://cmake.org/files/v3.22/cmake-3.22.3.tar.gz using command '/usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/cmake-3.22.3.tar.gz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://cmake.org/files/v3.22/cmake-3.22.3.tar.gz''
+DEBUG: Fetcher accessed the network with the command /usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/cmake-3.22.3.tar.gz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://cmake.org/files/v3.22/cmake-3.22.3.tar.gz'
+DEBUG: Running export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/poky/scripts/native-intercept:/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/cmake-native/3.22.3-r0/recipe-sysroot-native/usr/bin/x86_64-linux:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/cmake-native/3.22.3-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/cmake-native/3.22.3-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/cmake-native/3.22.3-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/cmake-native/3.22.3-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/cmake-native/3.22.3-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; /usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/cmake-3.22.3.tar.gz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://cmake.org/files/v3.22/cmake-3.22.3.tar.gz' --progress=dot -v
+--2025-08-25 03:01:29--  https://cmake.org/files/v3.22/cmake-3.22.3.tar.gz
+Resolving cmake.org (cmake.org)... 66.194.253.25
+Connecting to cmake.org (cmake.org)|66.194.253.25|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 9779118 (9.3M) [application/x-gzip]
+Saving to: ‘/home/ubuntu/yocto/rpi-build/downloads/cmake-3.22.3.tar.gz.tmp’
+
+
+2025-08-25 03:01:43 (760 KB/s) - ‘/home/ubuntu/yocto/rpi-build/downloads/cmake-3.22.3.tar.gz.tmp’ saved [9779118/9779118]
+
+DEBUG: Searching for 0001-CMakeDetermineCompilerABI-Strip-pipe-from-compile-fl.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake-3.22.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake-3.22.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake-3.22.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake-3.22.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/files/
+DEBUG: Searching for 0003-cmake-support-OpenEmbedded-Qt4-tool-binary-names.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake-3.22.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake-3.22.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake-3.22.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake-3.22.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/files/
+DEBUG: Searching for 0004-Fail-silently-if-system-Qt-installation-is-broken.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake-3.22.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake-3.22.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake-3.22.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake-3.22.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/files/
+DEBUG: Searching for OEToolchainConfig.cmake in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake-3.22.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake-3.22.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake-3.22.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake-3.22.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/files/
+DEBUG: Searching for environment.d-cmake.sh in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake-3.22.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake-3.22.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake-3.22.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake-3.22.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/files/
+DEBUG: Searching for 0001-CMakeDetermineSystem-use-oe-environment-vars-to-load.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake-3.22.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake-3.22.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake-3.22.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake-3.22.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/files/
+DEBUG: Searching for 0005-Disable-use-of-ext2fs-ext2_fs.h-by-cmake-s-internal-.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake-3.22.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake-3.22.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake-3.22.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake-3.22.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/cmake/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/cmake/files/
+DEBUG: Python function base_do_fetch finished
+DEBUG: Python function do_fetch finished

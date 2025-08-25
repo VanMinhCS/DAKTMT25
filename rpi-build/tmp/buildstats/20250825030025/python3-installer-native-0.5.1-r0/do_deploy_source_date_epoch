@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090860.03 
+python3-installer-native-0.5.1-r0: do_deploy_source_date_epoch
+Elapsed time: 0.57 seconds
+utime: 36
+stime: 7
+cutime: 2
+cstime: 3
+IO rchar: 305813
+IO wchar: 145404
+IO syscr: 380
+IO syscw: 108
+IO read_bytes: 0
+IO write_bytes: 114688
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.368741
+rusage ru_stime: 0.072145
+rusage ru_maxrss: 108556
+rusage ru_minflt: 8486
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 184
+rusage ru_nvcsw: 14
+rusage ru_nivcsw: 116
+Child rusage ru_utime: 0.025949999999999997
+Child rusage ru_stime: 0.03764
+Child rusage ru_maxrss: 108556
+Child rusage ru_minflt: 4337
+Child rusage ru_majflt: 1
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 40
+Child rusage ru_nvcsw: 71
+Child rusage ru_nivcsw: 40
+Status: PASSED 
+Ended: 1756090860.60 

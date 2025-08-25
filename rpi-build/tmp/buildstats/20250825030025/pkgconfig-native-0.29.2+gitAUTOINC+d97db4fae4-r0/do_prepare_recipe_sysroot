@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090950.20 
+pkgconfig-native-0.29.2+gitAUTOINC+d97db4fae4-r0: do_prepare_recipe_sysroot
+Elapsed time: 0.08 seconds
+utime: 14
+stime: 4
+cutime: 3
+cstime: 0
+IO rchar: 1417234
+IO wchar: 1346326
+IO syscr: 447
+IO syscw: 371
+IO read_bytes: 0
+IO write_bytes: 1380352
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.14665799999999998
+rusage ru_stime: 0.041901999999999995
+rusage ru_maxrss: 110340
+rusage ru_minflt: 4224
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 144
+rusage ru_nvcsw: 2
+rusage ru_nivcsw: 5
+Child rusage ru_utime: 0.030296
+Child rusage ru_stime: 0.0018659999999999998
+Child rusage ru_maxrss: 110212
+Child rusage ru_minflt: 598
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 2552
+Child rusage ru_nvcsw: 7
+Child rusage ru_nivcsw: 3
+Status: PASSED 
+Ended: 1756090950.27 

@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:perlcross-native:x86_64-linux:1.5.2:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 4ff4765302c03c6313a51e1b1a9bf7a5c1ffedfe27af2dadbf30c15568735a6b ./deploy-source-date-epoch/__source_date_epoch.txt

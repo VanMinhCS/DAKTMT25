@@ -1,0 +1,28 @@
+OEOuthashBasic
+14
+autoconf-native: a082d55df4b7dac9894c5feaf9f362ebbbf3242ae22430b84c4e8dd6f794fd94
+automake-native: 14963faa76d47d1639f6c0b28acf6361fc204ea39070d937e3951fc646a0a957
+gettext-minimal-native: 0d39582068b641490d184ea9f722f819aafcee1d652d8d8c5248ab8e4971ea09
+gnu-config-native: dcfcdd2de1b71130dc89903a2fc775551b0256cdcd7880cbdc731dcb33a59563
+libtool-native: edf42e87001d7a64879d4959f5b66885251d0230f2a9095a0fb57a5e3f9993fb
+m4-native: 2e220b13b48306f3a02a7bf65e00356873aed6cd266e2e6ce4daa34264a50398
+quilt-native: 3057d956d8a64c8d0c95902855fb8674038582d1c445513dc0b3cc45351763ca
+texinfo-dummy-native: c19dfc74595ada505d502217fe29d7dea1eb64a849a4eeb895b475baa979ac9e
+SSTATE_PKGSPEC=sstate:flex-native:x86_64-linux:2.6.4:r0:x86_64:10:
+task=populate_sysroot
+drwx                                                                                       .
+drwx                                                                                       ./recipe-sysroot-native
+drwx                                                                                       ./recipe-sysroot-native/sysroot-providers
+-rw-                   11 cef81a30f882acffbfd9508726dd2ba8236c3839d93fca221344403a44cbeffe ./recipe-sysroot-native/sysroot-providers/flex-native
+drwx                                                                                       ./recipe-sysroot-native/usr
+drwx                                                                                       ./recipe-sysroot-native/usr/bin
+-rwx                  140 8fa2741880b7c0c0dae7c17aaac8d1ddcc5aae9838f6d1bd73ba47264a24c0d0 ./recipe-sysroot-native/usr/bin/flex
+lrwx                                                                                       ./recipe-sysroot-native/usr/bin/flex++ -> flex
+-rwx               447176 99a0e395a63bb2948c2c2661aca70cec683a28fc3d216a2deb81b1a1ff71dcff ./recipe-sysroot-native/usr/bin/flex.real
+drwx                                                                                       ./recipe-sysroot-native/usr/include
+-rw-                 6893 ee9859d6b3027ed565f98f42744e438ab31b2cd2e9f797ddf870029ca2021686 ./recipe-sysroot-native/usr/include/FlexLexer.h
+drwx                                                                                       ./recipe-sysroot-native/usr/lib
+lrwx                                                                                       ./recipe-sysroot-native/usr/lib/libfl.so -> libfl.so.2.0.0
+lrwx                                                                                       ./recipe-sysroot-native/usr/lib/libfl.so.2 -> libfl.so.2.0.0
+-rwx                14240 44230146d24af254a170d4c110e0b58821c457a230c21afdffd4728366ed07ca ./recipe-sysroot-native/usr/lib/libfl.so.2.0.0
+drwx                                                                                       ./recipe-sysroot-native/usr/share

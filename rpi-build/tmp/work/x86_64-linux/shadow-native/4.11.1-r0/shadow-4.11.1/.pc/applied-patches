@@ -1,0 +1,9 @@
+shadow-4.1.3-dots-in-usernames.patch
+shadow-relaxed-usernames.patch
+CVE-2023-29383.patch
+0001-Overhaul-valid_field.patch
+CVE-2023-4641-0001.patch
+CVE-2023-4641-0002.patch
+0001-Disable-use-of-syslog-for-sysroot.patch
+commonio.c-fix-unexpected-open-failure-in-chroot-env.patch
+0001-Drop-nsswitch.conf-message-when-not-in-place-eg.-musl.patch

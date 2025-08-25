@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090922.52 
+libical-native-3.0.16-r0: do_unpack
+Elapsed time: 0.17 seconds
+utime: 22
+stime: 4
+cutime: 4
+cstime: 10
+IO rchar: 7285833
+IO wchar: 11715184
+IO syscr: 798
+IO syscw: 1767
+IO read_bytes: 20480
+IO write_bytes: 8691712
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.22444
+rusage ru_stime: 0.044888
+rusage ru_maxrss: 109412
+rusage ru_minflt: 5953
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 56
+rusage ru_nvcsw: 9
+rusage ru_nivcsw: 8
+Child rusage ru_utime: 0.047587
+Child rusage ru_stime: 0.108085
+Child rusage ru_maxrss: 109412
+Child rusage ru_minflt: 1385
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 40
+Child rusage ru_oublock: 16920
+Child rusage ru_nvcsw: 237
+Child rusage ru_nivcsw: 23
+Status: PASSED 
+Ended: 1756090922.69 

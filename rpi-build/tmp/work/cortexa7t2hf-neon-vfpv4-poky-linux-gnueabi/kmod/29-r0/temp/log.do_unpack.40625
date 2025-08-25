@@ -1,0 +1,76 @@
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+DEBUG: Running 'export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot-native/usr/bin/python3-native:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot/usr/bin/crossscripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat branch --contains b6ecfc916a17eab8f93be5b09f4e4f845aabd3d1 --list master 2> /dev/null | wc -l' in /home/ubuntu/yocto/rpi-build/downloads/git2/git.kernel.org.pub.scm.utils.kernel.kmod.kmod.git
+DEBUG: Running export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot-native/usr/bin/python3-native:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot/usr/bin/crossscripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat clone -n -s /home/ubuntu/yocto/rpi-build/downloads/git2/git.kernel.org.pub.scm.utils.kernel.kmod.kmod.git/ /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/git/
+DEBUG: Running 'export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot-native/usr/bin/python3-native:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot/usr/bin/crossscripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat remote set-url origin git://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git' in /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/git/
+DEBUG: Running 'export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot-native/usr/bin/python3-native:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot/usr/bin/crossscripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat grep lfs origin/master:.gitattributes | wc -l' in /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/git/
+DEBUG: Running 'export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot-native/usr/bin/python3-native:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot/usr/bin/crossscripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat checkout -B master b6ecfc916a17eab8f93be5b09f4e4f845aabd3d1' in /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/git/
+DEBUG: Running 'export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot-native/usr/bin/python3-native:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot/usr/bin/crossscripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat branch master --set-upstream-to origin/master' in /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/git/
+DEBUG: Searching for depmod-search.conf in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod-29/poky
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod/poky
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod-29/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod-29/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod-29/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod-29/arm
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod/arm
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod-29/
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod/
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod/depmod-search.conf to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/
+DEBUG: Searching for avoid_parallel_tests.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod-29/poky
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod/poky
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod-29/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod-29/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod-29/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod-29/arm
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod/arm
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod-29/
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod/
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod/avoid_parallel_tests.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/
+DEBUG: Searching for 0001-depmod-Add-support-for-excluding-a-directory.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod-29/poky
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod/poky
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod-29/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod-29/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod-29/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod-29/arm
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod/arm
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod-29/
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod/
+    /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-kernel/kmod/kmod/0001-depmod-Add-support-for-excluding-a-directory.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function create_source_date_epoch_stamp
+DEBUG: git repository: /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/kmod/29-r0/git/.git
+DEBUG: SOURCE_DATE_EPOCH: 1621551777
+DEBUG: Python function create_source_date_epoch_stamp finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

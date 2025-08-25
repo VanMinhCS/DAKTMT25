@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756091048.79 
+acl-native-2.3.1-r0: do_configure
+Elapsed time: 19.70 seconds
+utime: 58
+stime: 13
+cutime: 1144
+cstime: 296
+IO rchar: 85854211
+IO wchar: 17894052
+IO syscr: 42072
+IO syscw: 13989
+IO read_bytes: 4096
+IO write_bytes: 15966208
+IO cancelled_write_bytes: 7958528
+rusage ru_utime: 0.5828679999999999
+rusage ru_stime: 0.134213
+rusage ru_maxrss: 110648
+rusage ru_minflt: 8974
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 256
+rusage ru_nvcsw: 211
+rusage ru_nivcsw: 232
+Child rusage ru_utime: 11.441838
+Child rusage ru_stime: 2.967352
+Child rusage ru_maxrss: 110520
+Child rusage ru_minflt: 500554
+Child rusage ru_majflt: 15
+Child rusage ru_inblock: 8
+Child rusage ru_oublock: 30928
+Child rusage ru_nvcsw: 5298
+Child rusage ru_nivcsw: 3489
+Status: PASSED 
+Ended: 1756091068.48 

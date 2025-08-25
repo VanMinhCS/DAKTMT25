@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090891.05 
+xtrans-1_1.4.0-r0: do_fetch
+Elapsed time: 135.42 seconds
+utime: 23
+stime: 2
+cutime: 2
+cstime: 0
+IO rchar: 320171
+IO wchar: 243144
+IO syscr: 428
+IO syscw: 386
+IO read_bytes: 0
+IO write_bytes: 253952
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.237831
+rusage ru_stime: 0.027979999999999998
+rusage ru_maxrss: 109472
+rusage ru_minflt: 5534
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 128
+rusage ru_nvcsw: 210
+rusage ru_nivcsw: 56
+Child rusage ru_utime: 0.023077999999999998
+Child rusage ru_stime: 0.006741
+Child rusage ru_maxrss: 105068
+Child rusage ru_minflt: 1087
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 368
+Child rusage ru_nvcsw: 54
+Child rusage ru_nivcsw: 69
+Status: PASSED 
+Ended: 1756091026.46 

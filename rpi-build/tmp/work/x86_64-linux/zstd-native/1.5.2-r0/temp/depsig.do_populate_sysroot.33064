@@ -1,0 +1,30 @@
+OEOuthashBasic
+14
+quilt-native: 3057d956d8a64c8d0c95902855fb8674038582d1c445513dc0b3cc45351763ca
+SSTATE_PKGSPEC=sstate:zstd-native:x86_64-linux:1.5.2:r0:x86_64:10:
+task=populate_sysroot
+drwx                                                                                       .
+drwx                                                                                       ./recipe-sysroot-native
+drwx                                                                                       ./recipe-sysroot-native/sysroot-providers
+-rw-                   11 835deb563f5d59c3768e9f24b2cb3c355d6fb3470dcff52e548a82900967f82a ./recipe-sysroot-native/sysroot-providers/zstd-native
+drwx                                                                                       ./recipe-sysroot-native/usr
+drwx                                                                                       ./recipe-sysroot-native/usr/bin
+-rwx               756120 36067e797edfad594164a259b9d17edbf0d7eb632c679eba308f99abd83b7c9c ./recipe-sysroot-native/usr/bin/pzstd
+lrwx                                                                                       ./recipe-sysroot-native/usr/bin/unzstd -> zstd
+-rwx               903784 0e61acb3483713d4b99a9746ee35c155c3b15616f247cfda721a4c3c78caf059 ./recipe-sysroot-native/usr/bin/zstd
+lrwx                                                                                       ./recipe-sysroot-native/usr/bin/zstdcat -> zstd
+-rwx                 3869 9bc769b26542ef2efa14ae29b3178b7f10639cd95544207691cb258fe06bbe17 ./recipe-sysroot-native/usr/bin/zstdgrep
+-rwx                   30 d088aa04d1e60fa093bbe0a8c5defd71cff7aec4333a7b4cd774a5ced40eece3 ./recipe-sysroot-native/usr/bin/zstdless
+lrwx                                                                                       ./recipe-sysroot-native/usr/bin/zstdmt -> zstd
+drwx                                                                                       ./recipe-sysroot-native/usr/include
+-rw-                25631 39105bb1975d62ed34d3494123bde1ba5e4c2698b2c9cb30cddbf3ef6de90dd9 ./recipe-sysroot-native/usr/include/zdict.h
+-rw-               148639 cd5ba03dd05083169a9cf5016daadad7fc8326ec3d249d6331db2e73eab86886 ./recipe-sysroot-native/usr/include/zstd.h
+-rw-                 3817 4cf99f343cad91d81bf88c7bbc9197eda6f78ff21f3e85ca1664273f595f0222 ./recipe-sysroot-native/usr/include/zstd_errors.h
+drwx                                                                                       ./recipe-sysroot-native/usr/lib
+-rw-               963684 17b2109e3967babc2aa6ede106cde3c92d9d57f3de8e2fe9ccf69d6caf2ab7ee ./recipe-sysroot-native/usr/lib/libzstd.a
+lrwx                                                                                       ./recipe-sysroot-native/usr/lib/libzstd.so -> libzstd.so.1.5.2
+lrwx                                                                                       ./recipe-sysroot-native/usr/lib/libzstd.so.1 -> libzstd.so.1.5.2
+-rwx               773160 17a5edc5313bd6d112c72bc6ed5ed1be2f3bcb778bae7da221d596d1ba3c11af ./recipe-sysroot-native/usr/lib/libzstd.so.1.5.2
+drwx                                                                                       ./recipe-sysroot-native/usr/lib/pkgconfig
+-rw-                  480 7633e1fadd05b75381a87520a153a596de89415637004e10ec5904df50849c21 ./recipe-sysroot-native/usr/lib/pkgconfig/libzstd.pc
+drwx                                                                                       ./recipe-sysroot-native/usr/share

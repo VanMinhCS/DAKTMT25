@@ -1,0 +1,11 @@
+prefix=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr
+exec_prefix=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr
+includedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/include
+libdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gmp-native/6.2.1-r0/recipe-sysroot-native/usr/lib
+
+Name: GNU MP
+Description: GNU Multiple Precision Arithmetic Library
+URL: https://gmplib.org
+Version: 6.2.1
+Cflags: -I${includedir}
+Libs: -L${libdir} -lgmp

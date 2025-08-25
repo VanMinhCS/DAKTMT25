@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:openssl-native:x86_64-linux:3.0.17:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 fe62a2e8d14e5fba38fb6b42fa0f88a7372bbb7793c42cd472528625f6e057c8 ./deploy-source-date-epoch/__source_date_epoch.txt

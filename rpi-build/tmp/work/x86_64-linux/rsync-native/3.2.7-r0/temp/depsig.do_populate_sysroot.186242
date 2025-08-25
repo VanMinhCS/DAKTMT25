@@ -1,0 +1,26 @@
+OEOuthashBasic
+14
+acl-native: 362c3684d068b99d46b22be2be3cd10409711f353484133e2c2d3173d36fde6a
+attr-native: 97235f0e8217b8f52e6b432128704bee6252eef1ecafc469d798a5a5fa13e2e1
+autoconf-native: a082d55df4b7dac9894c5feaf9f362ebbbf3242ae22430b84c4e8dd6f794fd94
+automake-native: 14963faa76d47d1639f6c0b28acf6361fc204ea39070d937e3951fc646a0a957
+gettext-minimal-native: 0d39582068b641490d184ea9f722f819aafcee1d652d8d8c5248ab8e4971ea09
+gnu-config-native: dcfcdd2de1b71130dc89903a2fc775551b0256cdcd7880cbdc731dcb33a59563
+libtool-native: edf42e87001d7a64879d4959f5b66885251d0230f2a9095a0fb57a5e3f9993fb
+m4-native: 2e220b13b48306f3a02a7bf65e00356873aed6cd266e2e6ce4daa34264a50398
+popt-native: 5ec13138f9efe13e473071d039a74f4f0a5ac6c253121c703ac97899f5ee3b83
+quilt-native: 3057d956d8a64c8d0c95902855fb8674038582d1c445513dc0b3cc45351763ca
+texinfo-dummy-native: c19dfc74595ada505d502217fe29d7dea1eb64a849a4eeb895b475baa979ac9e
+SSTATE_PKGSPEC=sstate:rsync-native:x86_64-linux:3.2.7:r0:x86_64:10:
+task=populate_sysroot
+drwx                                                                                       .
+drwx                                                                                       ./recipe-sysroot-native
+drwx                                                                                       ./recipe-sysroot-native/etc
+-rw-                  370 6f57993cac51dcb67f9305413f0b77588529440cfd237aa65a926a654b5421c0 ./recipe-sysroot-native/etc/rsyncd.conf
+drwx                                                                                       ./recipe-sysroot-native/sysroot-providers
+-rw-                   12 0712987139e3d1b6719e2f09152947fd2b72b0d59edf1a06204881febf72a766 ./recipe-sysroot-native/sysroot-providers/rsync-native
+drwx                                                                                       ./recipe-sysroot-native/usr
+drwx                                                                                       ./recipe-sysroot-native/usr/bin
+-rwx               567432 ada78bb66114abe09ffd585c6311f6ce0d01a82575625dfa573b8fa02d44c153 ./recipe-sysroot-native/usr/bin/rsync
+-rwx                 5136 b25e002f448246d7271adb0d9e72281e33aa822b07afff4c96c476d79fe1fc80 ./recipe-sysroot-native/usr/bin/rsync-ssl
+drwx                                                                                       ./recipe-sysroot-native/usr/share

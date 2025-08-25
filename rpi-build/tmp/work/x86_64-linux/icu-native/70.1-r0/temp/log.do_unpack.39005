@@ -1,0 +1,73 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are ['virtual:native:/home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip_6.0.bb:do_populate_sysroot']
+NOTE: Installed into sysroot: ['unzip-native']
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+NOTE: Unpacking /home/ubuntu/yocto/rpi-build/downloads/icu4c-70_1-src.tgz to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/icu-native/70.1-r0/
+NOTE: Unpacking /home/ubuntu/yocto/rpi-build/downloads/icu4c-70_1-data.zip to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/icu-native/70.1-r0/
+DEBUG: Searching for filter.json in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/filter.json to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/icu-native/70.1-r0/
+DEBUG: Searching for fix-install-manx.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/fix-install-manx.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/icu-native/70.1-r0/
+DEBUG: Searching for 0001-icu-Added-armeb-support.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/0001-icu-Added-armeb-support.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/icu-native/70.1-r0/
+DEBUG: Searching for CVE-2025-5222.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu-70.1/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/
+    /home/ubuntu/yocto/poky/meta/recipes-support/icu/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-support/icu/icu/CVE-2025-5222.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/icu-native/70.1-r0/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function create_source_date_epoch_stamp
+DEBUG: Newest file found: /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/icu-native/70.1-r0/icu/source/data/in/icudt70l.dat
+DEBUG: SOURCE_DATE_EPOCH: 1635437101
+DEBUG: Python function create_source_date_epoch_stamp finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

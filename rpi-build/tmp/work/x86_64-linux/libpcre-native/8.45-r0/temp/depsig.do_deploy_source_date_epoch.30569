@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:libpcre-native:x86_64-linux:8.45:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 03d5e3dacef83d7d427468744eb603274d01b2679480ca8664801866f4418269 ./deploy-source-date-epoch/__source_date_epoch.txt

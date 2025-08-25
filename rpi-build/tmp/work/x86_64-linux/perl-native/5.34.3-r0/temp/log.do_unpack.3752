@@ -1,0 +1,221 @@
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+NOTE: Unpacking /home/ubuntu/yocto/rpi-build/downloads/perl-5.34.3.tar.gz to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/perl-native/5.34.3-r0/
+DEBUG: Searching for perl-rdepends.txt in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/perl-rdepends.txt to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/perl-native/5.34.3-r0/
+DEBUG: Searching for 0001-Somehow-this-module-breaks-through-the-perl-wrapper-.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/0001-Somehow-this-module-breaks-through-the-perl-wrapper-.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/perl-native/5.34.3-r0/
+DEBUG: Searching for errno_ver.diff in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/errno_ver.diff to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/perl-native/5.34.3-r0/
+DEBUG: Searching for native-perlinc.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/native-perlinc.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/perl-native/5.34.3-r0/
+DEBUG: Searching for perl-dynloader.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/perl-dynloader.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/perl-native/5.34.3-r0/
+DEBUG: Searching for 0002-Constant-Fix-up-shebang.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/0002-Constant-Fix-up-shebang.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/perl-native/5.34.3-r0/
+DEBUG: Searching for determinism.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/determinism.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/perl-native/5.34.3-r0/
+DEBUG: Searching for 0001-cpan-Sys-Syslog-Makefile.PL-Fix-_PATH_LOG-for-determ.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/0001-cpan-Sys-Syslog-Makefile.PL-Fix-_PATH_LOG-for-determ.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/perl-native/5.34.3-r0/
+DEBUG: Searching for 0001-Fix-build-with-gcc-12.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/0001-Fix-build-with-gcc-12.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/perl-native/5.34.3-r0/
+DEBUG: Searching for CVE-2023-31484.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/CVE-2023-31484.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/perl-native/5.34.3-r0/
+DEBUG: Searching for CVE-2023-31486-0001.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/CVE-2023-31486-0001.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/perl-native/5.34.3-r0/
+DEBUG: Searching for CVE-2023-31486-0002.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/CVE-2023-31486-0002.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/perl-native/5.34.3-r0/
+DEBUG: Searching for 0001-CVE-2024-56406-Heap-buffer-overflow-with-tr.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/0001-CVE-2024-56406-Heap-buffer-overflow-with-tr.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/perl-native/5.34.3-r0/
+DEBUG: Searching for run-ptest in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/run-ptest to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/perl-native/5.34.3-r0/
+DEBUG: Searching for perl-configpm-switch.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl-5.34.3/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/perl/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/perl/files/perl-configpm-switch.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/perl-native/5.34.3-r0/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function create_source_date_epoch_stamp
+DEBUG: Newest file found: /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/perl-native/5.34.3-r0/perl-5.34.3/pod/perlhist.pod
+DEBUG: SOURCE_DATE_EPOCH: 1701179635
+DEBUG: Python function create_source_date_epoch_stamp finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

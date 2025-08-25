@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090941.40 
+gawk-5.1.1-r0: do_fetch
+Elapsed time: 55.62 seconds
+utime: 29
+stime: 8
+cutime: 7
+cstime: 10
+IO rchar: 6436678
+IO wchar: 6340840
+IO syscr: 6859
+IO syscw: 9017
+IO read_bytes: 0
+IO write_bytes: 6332416
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.29242199999999996
+rusage ru_stime: 0.08528899999999999
+rusage ru_maxrss: 116392
+rusage ru_minflt: 6141
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 128
+rusage ru_nvcsw: 1099
+rusage ru_nivcsw: 30
+Child rusage ru_utime: 0.07296699999999999
+Child rusage ru_stime: 0.105206
+Child rusage ru_maxrss: 106112
+Child rusage ru_minflt: 1083
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 12240
+Child rusage ru_nvcsw: 1288
+Child rusage ru_nivcsw: 541
+Status: PASSED 
+Ended: 1756090997.02 

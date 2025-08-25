@@ -1,0 +1,50 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are []
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_fetch
+DEBUG: Executing python function base_do_fetch
+DEBUG: Trying PREMIRRORS
+DEBUG: For url ['https', 'github.com', '/libical/libical/releases/download/v3.0.16/libical-3.0.16.tar.gz', '', '', OrderedDict()] comparing ['git', 'sourceware.org', '/git/glibc.git', '', '', OrderedDict()] to ['https', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['https', 'github.com', '/libical/libical/releases/download/v3.0.16/libical-3.0.16.tar.gz', '', '', OrderedDict()] comparing ['git', 'sourceware.org', '/git/binutils-gdb.git', '', '', OrderedDict()] to ['https', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: Trying Upstream
+DEBUG: Fetching https://github.com/libical/libical/releases/download/v3.0.16/libical-3.0.16.tar.gz using command '/usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/libical-3.0.16.tar.gz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://github.com/libical/libical/releases/download/v3.0.16/libical-3.0.16.tar.gz''
+DEBUG: Fetcher accessed the network with the command /usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/libical-3.0.16.tar.gz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://github.com/libical/libical/releases/download/v3.0.16/libical-3.0.16.tar.gz'
+DEBUG: Running export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libical/3.0.16-r0/recipe-sysroot-native/usr/bin/python3-native:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libical/3.0.16-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libical/3.0.16-r0/recipe-sysroot/usr/bin/crossscripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libical/3.0.16-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libical/3.0.16-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libical/3.0.16-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libical/3.0.16-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; /usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/libical-3.0.16.tar.gz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://github.com/libical/libical/releases/download/v3.0.16/libical-3.0.16.tar.gz' --progress=dot -v
+--2025-08-25 03:01:56--  https://github.com/libical/libical/releases/download/v3.0.16/libical-3.0.16.tar.gz
+Resolving github.com (github.com)... 20.205.243.166
+Connecting to github.com (github.com)|20.205.243.166|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://release-assets.githubusercontent.com/github-production-release-asset/20364962/413da576-fdcd-4301-99bc-992d5a8cd31d?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-08-25T03%3A47%3A59Z&rscd=attachment%3B+filename%3Dlibical-3.0.16.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-08-25T02%3A47%3A05Z&ske=2025-08-25T03%3A47%3A59Z&sks=b&skv=2018-11-09&sig=7XwNwYhFr%2Bsh3%2BNVDbXfNoj0vLFzzDIE%2F%2BAdyqp1B5U%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc1NjA5MTIxOCwibmJmIjoxNzU2MDkwOTE4LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.D-5ot8mbc4fUBQ4b24bxC_iX8pfRuJQwdlwYc1mlAK0&response-content-disposition=attachment%3B%20filename%3Dlibical-3.0.16.tar.gz&response-content-type=application%2Foctet-stream [following]
+--2025-08-25 03:01:57--  https://release-assets.githubusercontent.com/github-production-release-asset/20364962/413da576-fdcd-4301-99bc-992d5a8cd31d?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-08-25T03%3A47%3A59Z&rscd=attachment%3B+filename%3Dlibical-3.0.16.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-08-25T02%3A47%3A05Z&ske=2025-08-25T03%3A47%3A59Z&sks=b&skv=2018-11-09&sig=7XwNwYhFr%2Bsh3%2BNVDbXfNoj0vLFzzDIE%2F%2BAdyqp1B5U%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc1NjA5MTIxOCwibmJmIjoxNzU2MDkwOTE4LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.D-5ot8mbc4fUBQ4b24bxC_iX8pfRuJQwdlwYc1mlAK0&response-content-disposition=attachment%3B%20filename%3Dlibical-3.0.16.tar.gz&response-content-type=application%2Foctet-stream
+Resolving release-assets.githubusercontent.com (release-assets.githubusercontent.com)... 185.199.110.133, 185.199.111.133, 185.199.108.133, ...
+Connecting to release-assets.githubusercontent.com (release-assets.githubusercontent.com)|185.199.110.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 921245 (900K) [application/octet-stream]
+Saving to: ‘/home/ubuntu/yocto/rpi-build/downloads/libical-3.0.16.tar.gz.tmp’
+
+
+2025-08-25 03:01:57 (6.39 MB/s) - ‘/home/ubuntu/yocto/rpi-build/downloads/libical-3.0.16.tar.gz.tmp’ saved [921245/921245]
+
+DEBUG: Searching for 0001-cmake-Do-not-export-CC-into-gir-compiler.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/libical/libical-3.0.16/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/libical/libical/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/libical/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/libical/libical-3.0.16/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/libical/libical/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/libical/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/libical/libical-3.0.16/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/libical/libical/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/libical/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/libical/libical-3.0.16/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/libical/libical/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/libical/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/libical/libical-3.0.16/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/libical/libical/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/libical/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/libical/libical-3.0.16/
+    /home/ubuntu/yocto/poky/meta/recipes-support/libical/libical/
+    /home/ubuntu/yocto/poky/meta/recipes-support/libical/files/
+DEBUG: Python function base_do_fetch finished
+DEBUG: Python function do_fetch finished

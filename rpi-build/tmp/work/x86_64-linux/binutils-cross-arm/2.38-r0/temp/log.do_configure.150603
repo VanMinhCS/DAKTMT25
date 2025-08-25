@@ -1,0 +1,140 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are ['/home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-native_0.67.bb:do_populate_sysroot', '/home/ubuntu/yocto/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-native.bb:do_populate_sysroot', 'virtual:native:/home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib_1.2.11.bb:do_populate_sysroot', 'virtual:native:/home/ubuntu/yocto/poky/meta/recipes-devtools/autoconf/autoconf_2.71.bb:do_populate_sysroot', 'virtual:native:/home/ubuntu/yocto/poky/meta/recipes-devtools/bison/bison_3.8.2.bb:do_populate_sysroot', 'virtual:native:/home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex_2.6.4.bb:do_populate_sysroot', 'virtual:native:/home/ubuntu/yocto/poky/meta/recipes-devtools/gnu-config/gnu-config_git.bb:do_populate_sysroot', 'virtual:native:/home/ubuntu/yocto/poky/meta/recipes-devtools/pkgconfig/pkgconfig_git.bb:do_populate_sysroot']
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: ['quilt-native', 'texinfo-dummy-native', 'zlib-native', 'autoconf-native', 'bison-native', 'flex-native', 'gnu-config-native', 'pkgconfig-native', 'm4-native', 'gettext-minimal-native', 'libtool-native', 'xz-native']
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing shell function autotools_preconfigure
+DEBUG: Shell function autotools_preconfigure finished
+DEBUG: Executing python function autotools_aclocals
+DEBUG: SITE files ['endian-little', 'common-linux', 'common-glibc', 'bit-64', 'x86_64-linux', 'common']
+DEBUG: Python function autotools_aclocals finished
+DEBUG: Executing shell function do_configure
+configure.ac:34: error: Please use exactly Autoconf 2.69 instead of 2.71.
+config/override.m4:12: _GCC_AUTOCONF_VERSION_CHECK is expanded from...
+configure.ac:34: the top level
+autom4te: error: m4 failed with exit status: 1
+NOTE: Running ../configure  --build=x86_64-linux 		  --host=x86_64-linux 		  --target=arm-poky-linux-gnueabi 		  --prefix=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/binutils-cross-arm/2.38-r0/recipe-sysroot-native/usr 		  --exec_prefix=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/binutils-cross-arm/2.38-r0/recipe-sysroot-native/usr 		  --bindir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/binutils-cross-arm/2.38-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi 		  --sbindir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/binutils-cross-arm/2.38-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi 		  --libexecdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/binutils-cross-arm/2.38-r0/recipe-sysroot-native/usr/libexec/arm-poky-linux-gnueabi 		  --datadir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/binutils-cross-arm/2.38-r0/recipe-sysroot-native/usr/share 		  --sysconfdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/binutils-cross-arm/2.38-r0/recipe-sysroot-native/etc 		  --sharedstatedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/binutils-cross-arm/2.38-r0/recipe-sysroot-native/com 		  --localstatedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/binutils-cross-arm/2.38-r0/recipe-sysroot-native/var 		  --libdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/binutils-cross-arm/2.38-r0/recipe-sysroot-native/usr/lib/arm-poky-linux-gnueabi 		  --includedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/binutils-cross-arm/2.38-r0/recipe-sysroot-native/usr/include 		  --oldincludedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/binutils-cross-arm/2.38-r0/recipe-sysroot-native/usr/include 		  --infodir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/binutils-cross-arm/2.38-r0/recipe-sysroot-native/usr/share/info 		  --mandir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/binutils-cross-arm/2.38-r0/recipe-sysroot-native/usr/share/man 		  --disable-silent-rules 		  --disable-dependency-tracking 		  --with-libtool-sysroot=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/binutils-cross-arm/2.38-r0/recipe-sysroot-native --program-prefix=arm-poky-linux-gnueabi-                 --disable-werror                 --enable-deterministic-archives                 --enable-plugins                 --disable-gdb                 --disable-gdbserver                 --disable-libdecnumber                 --disable-readline                 --disable-sim                 --enable-gold --enable-ld=default --enable-threads                                  --enable-64-bit-bfd --with-sysroot=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/binutils-cross-arm/2.38-r0/recipe-sysroot                 --disable-install-libbfd                 --enable-poison-system-directories                 --with-lib-path==/lib:=/usr/lib                  --disable-static  --disable-nls 
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking target system type... arm-poky-linux-gnueabi
+checking for a BSD-compatible install... /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c
+checking whether ln works... yes
+checking whether ln -s works... yes
+checking for a sed that does not truncate output... /home/ubuntu/yocto/rpi-build/tmp/hosttools/sed
+checking for gawk... gawk
+checking for x86_64-linux-gcc... gcc 
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc  accepts -g... yes
+checking for gcc  option to accept ISO C89... none needed
+checking for gcc  option to accept ISO C99... none needed
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++  accepts -g... yes
+checking whether g++ accepts -static-libstdc++ -static-libgcc... yes
+checking for x86_64-linux-gnatbind... no
+checking for gnatbind... no
+checking for x86_64-linux-gnatmake... no
+checking for gnatmake... no
+checking whether compiler driver understands Ada... no
+checking how to compare bootstrapped objects... cmp --ignore-initial=16 $$f1 $$f2
+checking for objdir... .libs
+checking for isl 0.15 or later... no
+required isl version is 0.15 or later
+*** This configuration is not supported in the following subdirectories:
+     readline libdecnumber sim gdb gdbserver
+    (Any other directories should still work fine.)
+checking for default BUILD_CONFIG... 
+checking for --enable-vtable-verify... no
+checking for bison... bison -y
+checking for bison... bison
+checking for gm4... no
+checking for gnum4... no
+checking for m4... m4
+checking for flex... flex
+checking for flex... flex
+checking for makeinfo... makeinfo
+checking for expect... no
+checking for runtest... no
+checking for ar... (cached) ar
+checking for x86_64-linux-ar... (cached) ar
+checking for as... (cached) as 
+checking for x86_64-linux-as... (cached) as 
+checking for x86_64-linux-dlltool... no
+checking for dlltool... no
+checking for ld... (cached) ld 
+checking for x86_64-linux-ld... (cached) ld 
+checking for x86_64-linux-lipo... no
+checking for lipo... no
+checking for nm... (cached) nm
+checking for x86_64-linux-nm... (cached) nm
+checking for ranlib... (cached) ranlib -D
+checking for x86_64-linux-ranlib... (cached) ranlib -D
+checking for strip... (cached) strip
+checking for x86_64-linux-strip... (cached) strip
+checking for x86_64-linux-windres... no
+checking for windres... no
+checking for x86_64-linux-windmc... no
+checking for windmc... no
+checking for objcopy... (cached) objcopy
+checking for x86_64-linux-objcopy... (cached) objcopy
+checking for objdump... (cached) objdump
+checking for x86_64-linux-objdump... (cached) objdump
+checking for readelf... (cached) readelf
+checking for x86_64-linux-readelf... (cached) readelf
+checking for -plugin option... checking for x86_64-linux-ar... (cached) ar
+--plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so
+checking for arm-poky-linux-gnueabi-cc... no
+checking for arm-poky-linux-gnueabi-gcc... no
+checking for arm-poky-linux-gnueabi-c++... no
+checking for arm-poky-linux-gnueabi-g++... no
+checking for arm-poky-linux-gnueabi-cxx... no
+checking for arm-poky-linux-gnueabi-gxx... no
+checking for arm-poky-linux-gnueabi-gcc... no
+checking for arm-poky-linux-gnueabi-gfortran... no
+checking for arm-poky-linux-gnueabi-gccgo... no
+checking for ar... (cached) arm-poky-linux-gnueabi-ar
+checking for as... (cached) arm-poky-linux-gnueabi-as
+checking for arm-poky-linux-gnueabi-dlltool... no
+checking for ld... (cached) arm-poky-linux-gnueabi-ld
+checking for arm-poky-linux-gnueabi-lipo... no
+checking for nm... (cached) arm-poky-linux-gnueabi-nm
+checking for arm-poky-linux-gnueabi-objcopy... no
+checking for arm-poky-linux-gnueabi-objdump... no
+checking for ranlib... (cached) arm-poky-linux-gnueabi-ranlib
+checking for arm-poky-linux-gnueabi-readelf... no
+checking for arm-poky-linux-gnueabi-strip... no
+checking for arm-poky-linux-gnueabi-windres... no
+checking for arm-poky-linux-gnueabi-windmc... no
+checking where to find the target ar... just compiled
+checking where to find the target as... just compiled
+checking where to find the target cc... pre-installed
+checking where to find the target c++... pre-installed
+checking where to find the target c++ for libstdc++... pre-installed
+checking where to find the target dlltool... just compiled
+checking where to find the target gcc... pre-installed
+checking where to find the target gfortran... pre-installed
+checking where to find the target gccgo... pre-installed
+checking where to find the target ld... just compiled
+checking where to find the target lipo... pre-installed
+checking where to find the target nm... just compiled
+checking where to find the target objcopy... just compiled
+checking where to find the target objdump... just compiled
+checking where to find the target ranlib... just compiled
+checking where to find the target readelf... just compiled
+checking where to find the target strip... just compiled
+checking where to find the target windres... just compiled
+checking where to find the target windmc... just compiled
+checking whether to enable maintainer-specific portions of Makefiles... no
+configure: creating ./config.status
+config.status: creating Makefile
+DEBUG: Shell function do_configure finished
+DEBUG: Executing python function do_qa_configure
+NOTE: Checking autotools environment for common misconfiguration
+NOTE: Checking configure output for unrecognised options
+DEBUG: Python function do_qa_configure finished
+DEBUG: Executing shell function autotools_postconfigure
+DEBUG: Shell function autotools_postconfigure finished

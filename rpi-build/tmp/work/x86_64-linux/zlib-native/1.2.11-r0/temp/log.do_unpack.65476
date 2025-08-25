@@ -1,0 +1,115 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are ['virtual:native:/home/ubuntu/yocto/poky/meta/recipes-extended/xz/xz_5.2.6.bb:do_populate_sysroot']
+NOTE: Installed into sysroot: ['xz-native', 'gettext-minimal-native', 'libtool-native', 'texinfo-dummy-native']
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: sed -e 's:^[^/]*/:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/:g' /home/ubuntu/yocto/rpi-build/tmp/sysroots-components/x86_64/libtool-native/fixmepath | xargs sed -i -e 's:FIXMESTAGINGDIRTARGET:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot:g; s:FIXMESTAGINGDIRHOST:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native:g' -e 's:FIXME_PSEUDO_SYSROOT:/home/ubuntu/yocto/rpi-build/tmp/sysroots-components/x86_64/pseudo-native:g' -e 's:FIXME_HOSTTOOLS_DIR:/home/ubuntu/yocto/rpi-build/tmp/hosttools:g' -e 's:FIXME_PKGDATA_DIR:/home/ubuntu/yocto/rpi-build/tmp/pkgdata/raspberrypi4:g' -e 's:FIXME_PSEUDO_LOCALSTATEDIR:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/pseudo/:g' -e 's:FIXME_LOGFIFO:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/temp/fifo.65476:g'
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+NOTE: Unpacking /home/ubuntu/yocto/rpi-build/downloads/zlib-1.2.11.tar.xz to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/
+DEBUG: Searching for ldflags-tests.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib-1.2.11/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib-1.2.11/
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib/
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib-1.2.11/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib-1.2.11/
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib/
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib/ldflags-tests.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/
+DEBUG: Searching for 0001-configure-Pass-LDFLAGS-to-link-tests.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib-1.2.11/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib-1.2.11/
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib/
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib-1.2.11/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib-1.2.11/
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib/
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib/0001-configure-Pass-LDFLAGS-to-link-tests.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/
+DEBUG: Searching for CVE-2018-25032.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib-1.2.11/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib-1.2.11/
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib/
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib-1.2.11/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib-1.2.11/
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib/
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib/CVE-2018-25032.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/
+DEBUG: Searching for run-ptest in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib-1.2.11/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib-1.2.11/
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib/
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib-1.2.11/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib-1.2.11/
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib/
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib/run-ptest to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/
+DEBUG: Searching for CVE-2022-37434.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib-1.2.11/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib-1.2.11/
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib/
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib-1.2.11/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib-1.2.11/
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib/
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib/CVE-2022-37434.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/
+DEBUG: Searching for CVE-2023-45853.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib-1.2.11/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib-1.2.11/
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib/
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib-1.2.11/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib-1.2.11/
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib/
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib/CVE-2023-45853.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/
+DEBUG: Searching for CVE-2014-9485.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib-1.2.11/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib-1.2.11/
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib/
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib-1.2.11/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib-1.2.11/
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib/
+    /home/ubuntu/yocto/poky/meta/recipes-core/zlib/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/zlib/zlib/CVE-2014-9485.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function create_source_date_epoch_stamp
+DEBUG: Newest file found: /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/zlib-1.2.11/CMakeLists.txt
+DEBUG: SOURCE_DATE_EPOCH: 1484501380
+DEBUG: Python function create_source_date_epoch_stamp finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

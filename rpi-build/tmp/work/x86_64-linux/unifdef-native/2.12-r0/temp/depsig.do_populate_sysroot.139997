@@ -1,0 +1,22 @@
+OEOuthashBasic
+14
+autoconf-native: a082d55df4b7dac9894c5feaf9f362ebbbf3242ae22430b84c4e8dd6f794fd94
+automake-native: 14963faa76d47d1639f6c0b28acf6361fc204ea39070d937e3951fc646a0a957
+gettext-minimal-native: 0d39582068b641490d184ea9f722f819aafcee1d652d8d8c5248ab8e4971ea09
+gnu-config-native: dcfcdd2de1b71130dc89903a2fc775551b0256cdcd7880cbdc731dcb33a59563
+libtool-native: edf42e87001d7a64879d4959f5b66885251d0230f2a9095a0fb57a5e3f9993fb
+m4-native: 2e220b13b48306f3a02a7bf65e00356873aed6cd266e2e6ce4daa34264a50398
+quilt-native: 3057d956d8a64c8d0c95902855fb8674038582d1c445513dc0b3cc45351763ca
+texinfo-dummy-native: c19dfc74595ada505d502217fe29d7dea1eb64a849a4eeb895b475baa979ac9e
+xz-native: 4b21ae5e7e20710403f0af40c4614b090bd491f321699fe166454b3e15e79a4f
+SSTATE_PKGSPEC=sstate:unifdef-native:x86_64-linux:2.12:r0:x86_64:10:
+task=populate_sysroot
+drwx                                                                                       .
+drwx                                                                                       ./recipe-sysroot-native
+drwx                                                                                       ./recipe-sysroot-native/sysroot-providers
+-rw-                   14 d84629f67187fd7d48473f2d1770b89b22317207a9b982f399e9ded21b2f94c4 ./recipe-sysroot-native/sysroot-providers/unifdef-native
+drwx                                                                                       ./recipe-sysroot-native/usr
+drwx                                                                                       ./recipe-sysroot-native/usr/bin
+-rwx                47200 bf9ef2f99843ad46bd0382495807e0c3aa6c50e1832eb2ca9d150b79f24798c1 ./recipe-sysroot-native/usr/bin/unifdef
+-rwx                 2096 c8755754f211ffc154ea78e00b455c5e7357160de5b1d70af15e6c9760e4d181 ./recipe-sysroot-native/usr/bin/unifdefall
+drwx                                                                                       ./recipe-sysroot-native/usr/share

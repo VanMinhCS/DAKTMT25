@@ -1,0 +1,13 @@
+0001-pax-writer-fix-multiple-security-vulnerabilities.patch -p1
+CVE-2024-26256.patch -p1
+CVE-2024-48957.patch -p1
+CVE-2024-48958.patch -p1
+CVE-2024-20696.patch -p1
+CVE-2025-25724.patch -p1
+CVE-2025-5914.patch -p1
+CVE-2025-5915.patch -p1
+CVE-2025-5916.patch -p1
+CVE-2025-5917.patch -p1
+0001-FILE-seeking-support-2539.patch -p1
+0001-Improve-lseek-handling-2564.patch -p1
+CVE-2025-5918.patch -p1

@@ -1,0 +1,95 @@
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+NOTE: Unpacking /home/ubuntu/yocto/rpi-build/downloads/automake-1.16.5.tar.gz to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/automake-native/1.16.5-r0/
+DEBUG: Searching for 0001-automake-Update-for-python.m4-to-respect-libdir.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake-1.16.5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake-1.16.5/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake-1.16.5/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake-1.16.5/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake/0001-automake-Update-for-python.m4-to-respect-libdir.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/automake-native/1.16.5-r0/
+DEBUG: Searching for buildtest.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake-1.16.5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake-1.16.5/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake-1.16.5/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake-1.16.5/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake/buildtest.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/automake-native/1.16.5-r0/
+DEBUG: Searching for performance.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake-1.16.5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake-1.16.5/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake-1.16.5/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake-1.16.5/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake/performance.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/automake-native/1.16.5-r0/
+DEBUG: Searching for new_rt_path_for_test-driver.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake-1.16.5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake-1.16.5/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake-1.16.5/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake-1.16.5/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake/new_rt_path_for_test-driver.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/automake-native/1.16.5-r0/
+DEBUG: Searching for 0001-automake-Add-default-libtool_tag-to-cppasm.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake-1.16.5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake-1.16.5/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake-1.16.5/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake-1.16.5/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake/0001-automake-Add-default-libtool_tag-to-cppasm.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/automake-native/1.16.5-r0/
+DEBUG: Searching for 0001-build-fix-race-in-parallel-builds.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake-1.16.5/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake-1.16.5/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake-1.16.5/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake-1.16.5/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/automake/automake/0001-build-fix-race-in-parallel-builds.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/automake-native/1.16.5-r0/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function create_source_date_epoch_stamp
+DEBUG: Newest file found: /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/automake-native/1.16.5-r0/automake-1.16.5/ChangeLog
+DEBUG: SOURCE_DATE_EPOCH: 1633317798
+DEBUG: Python function create_source_date_epoch_stamp finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

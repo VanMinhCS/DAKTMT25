@@ -1,0 +1,67 @@
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+NOTE: Unpacking /home/ubuntu/yocto/rpi-build/downloads/perl-cross-1.5.2.tar.gz to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/perlcross-native/1.5.2-r0/
+DEBUG: Searching for README.md in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/README.md to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/perlcross-native/1.5.2-r0/
+DEBUG: Searching for 0001-perl-cross-add-LDFLAGS-when-linking-libperl.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/0001-perl-cross-add-LDFLAGS-when-linking-libperl.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/perlcross-native/1.5.2-r0/
+DEBUG: Searching for determinism.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/determinism.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/perlcross-native/1.5.2-r0/
+DEBUG: Searching for 0001-Makefile-check-the-file-if-patched-or-not.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/0001-Makefile-check-the-file-if-patched-or-not.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/perlcross-native/1.5.2-r0/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function create_source_date_epoch_stamp
+DEBUG: Newest file found: /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/perlcross-native/1.5.2-r0/perl-cross-1.5.2/configure
+DEBUG: SOURCE_DATE_EPOCH: 1701034364
+DEBUG: Python function create_source_date_epoch_stamp finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

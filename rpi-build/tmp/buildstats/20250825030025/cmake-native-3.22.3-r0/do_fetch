@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090889.24 
+cmake-native-3.22.3-r0: do_fetch
+Elapsed time: 14.09 seconds
+utime: 35
+stime: 3
+cutime: 5
+cstime: 6
+IO rchar: 9935312
+IO wchar: 9870624
+IO syscr: 5467
+IO syscw: 13909
+IO read_bytes: 0
+IO write_bytes: 9850880
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.35440499999999997
+rusage ru_stime: 0.037524999999999996
+rusage ru_maxrss: 118856
+rusage ru_minflt: 5866
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 128
+rusage ru_nvcsw: 523
+rusage ru_nivcsw: 27
+Child rusage ru_utime: 0.058383
+Child rusage ru_stime: 0.060217
+Child rusage ru_maxrss: 104948
+Child rusage ru_minflt: 1090
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 19112
+Child rusage ru_nvcsw: 318
+Child rusage ru_nivcsw: 168
+Status: PASSED 
+Ended: 1756090903.34 

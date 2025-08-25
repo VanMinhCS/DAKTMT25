@@ -1,0 +1,34 @@
+OEOuthashBasic
+14
+attr-native: 97235f0e8217b8f52e6b432128704bee6252eef1ecafc469d798a5a5fa13e2e1
+autoconf-native: a082d55df4b7dac9894c5feaf9f362ebbbf3242ae22430b84c4e8dd6f794fd94
+automake-native: 14963faa76d47d1639f6c0b28acf6361fc204ea39070d937e3951fc646a0a957
+gettext-minimal-native: 0d39582068b641490d184ea9f722f819aafcee1d652d8d8c5248ab8e4971ea09
+gnu-config-native: dcfcdd2de1b71130dc89903a2fc775551b0256cdcd7880cbdc731dcb33a59563
+libtool-native: edf42e87001d7a64879d4959f5b66885251d0230f2a9095a0fb57a5e3f9993fb
+m4-native: 2e220b13b48306f3a02a7bf65e00356873aed6cd266e2e6ce4daa34264a50398
+quilt-native: 3057d956d8a64c8d0c95902855fb8674038582d1c445513dc0b3cc45351763ca
+texinfo-dummy-native: c19dfc74595ada505d502217fe29d7dea1eb64a849a4eeb895b475baa979ac9e
+SSTATE_PKGSPEC=sstate:acl-native:x86_64-linux:2.3.1:r0:x86_64:10:
+task=populate_sysroot
+drwx                                                                                       .
+drwx                                                                                       ./recipe-sysroot-native
+drwx                                                                                       ./recipe-sysroot-native/sysroot-providers
+-rw-                   10 479b32e6e024e8b70f2063fb15741bb8c174fd09227bd40c7c3fc2b7fa5db599 ./recipe-sysroot-native/sysroot-providers/acl-native
+drwx                                                                                       ./recipe-sysroot-native/usr
+drwx                                                                                       ./recipe-sysroot-native/usr/bin
+-rwx                14360 0874d71b97eca856f35b4b1febb47d5f1f5efd64833327ef0b318a86caa8c565 ./recipe-sysroot-native/usr/bin/chacl
+-rwx                31336 b76d6c015721b3e8fbb56f846dfb0bc2506dd2ae8b0c2db423ca957cf969622e ./recipe-sysroot-native/usr/bin/getfacl
+-rwx                39560 7e3a1cd021e8010636acc347269fb90ac444979078ec46ff6ff914aba518170c ./recipe-sysroot-native/usr/bin/setfacl
+drwx                                                                                       ./recipe-sysroot-native/usr/include
+drwx                                                                                       ./recipe-sysroot-native/usr/include/acl
+-rw-                 2611 04f0336bf33c213ff1becd622c97794d345593203fcc5e3e4ea77296c7f4aff5 ./recipe-sysroot-native/usr/include/acl/libacl.h
+drwx                                                                                       ./recipe-sysroot-native/usr/include/sys
+-rw-                 3700 f45fb88f57192ba818bd8dc837fbb7fde62d6c2a2c6852517802b8700417f711 ./recipe-sysroot-native/usr/include/sys/acl.h
+drwx                                                                                       ./recipe-sysroot-native/usr/lib
+lrwx                                                                                       ./recipe-sysroot-native/usr/lib/libacl.so -> libacl.so.1.1.2301
+lrwx                                                                                       ./recipe-sysroot-native/usr/lib/libacl.so.1 -> libacl.so.1.1.2301
+-rwx                39368 f63ae21f4bcb67703235e04b71a97ffaa90a6595c328c3c07c966e7453670c9a ./recipe-sysroot-native/usr/lib/libacl.so.1.1.2301
+drwx                                                                                       ./recipe-sysroot-native/usr/lib/pkgconfig
+-rw-                  287 fbb3cc95c457ae92544bf13ea84bb7eea52c0482f947a61846e4babe8105beaf ./recipe-sysroot-native/usr/lib/pkgconfig/libacl.pc
+drwx                                                                                       ./recipe-sysroot-native/usr/share

@@ -1,0 +1,6 @@
+0001-python-module-do-not-manipulate-the-environment-when.patch -p1
+disable-rpath-handling.patch -p1
+0001-Make-CPU-family-warnings-fatal.patch -p1
+0002-Support-building-allarch-recipes-again.patch -p1
+0001-is_debianlike-always-return-False.patch -p1
+0001-Check-for-clang-before-guessing-gcc-or-lcc.patch -p1

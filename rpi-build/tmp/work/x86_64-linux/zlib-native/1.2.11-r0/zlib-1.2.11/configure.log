@@ -1,0 +1,164 @@
+--------------------
+./configure --prefix=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr --shared --libdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr/lib --uname=GNU
+Mon Aug 25 03:03:18 AM UTC 2025
+=== ztest86036.c ===
+extern int getchar();
+int hello() {return getchar();}
+===
+gcc -c ztest86036.c
+... using gcc
+
+Checking for obsessive-compulsive compiler options...
+=== ztest86036.c ===
+int foo() { return 0; }
+===
+gcc -c -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr/include -O2 -pipe ztest86036.c
+
+Checking for shared library support...
+=== ztest86036.c ===
+extern int getchar();
+int hello() {return getchar();}
+===
+gcc -w -c -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr/include -O2 -pipe -fPIC ztest86036.c
+gcc -shared -Wl,-soname,libz.so.1,--version-script,zlib.map -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr/include -O2 -pipe -fPIC -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr/lib -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/lib -Wl,--enable-new-dtags -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr/lib -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/lib -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr/lib -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/lib -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2 -o ztest86036.so ztest86036.o
+Building shared library libz.so.1.2.11 with gcc .
+
+=== ztest86036.c ===
+#include <stdio.h>
+#include <stdlib.h>
+size_t dummy = 0;
+===
+gcc -c -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr/include -O2 -pipe ztest86036.c
+Checking for size_t... Yes.
+
+
+=== ztest86036.c ===
+#include <sys/types.h>
+off64_t dummy = 0;
+===
+gcc -c -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr/include -O2 -pipe -D_LARGEFILE64_SOURCE=1 ztest86036.c
+Checking for off64_t... Yes.
+Checking for fseeko... Yes.
+
+=== ztest86036.c ===
+#include <string.h>
+#include <errno.h>
+int main() { return strlen(strerror(errno)); }
+===
+gcc -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr/include -O2 -pipe -D_LARGEFILE64_SOURCE=1 -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr/lib -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/lib -Wl,--enable-new-dtags -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr/lib -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/lib -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr/lib -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/lib -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2 -o ztest86036 ztest86036.c
+Checking for strerror... Yes.
+
+=== ztest86036.c ===
+#include <unistd.h>
+int main() { return 0; }
+===
+gcc -c -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr/include -O2 -pipe -D_LARGEFILE64_SOURCE=1 ztest86036.c
+Checking for unistd.h... Yes.
+
+=== ztest86036.c ===
+#include <stdarg.h>
+int main() { return 0; }
+===
+gcc -c -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr/include -O2 -pipe -D_LARGEFILE64_SOURCE=1 ztest86036.c
+Checking for stdarg.h... Yes.
+
+=== ztest86036.c ===
+#include <stdio.h>
+#include <stdarg.h>
+#include "zconf.h"
+int main()
+{
+#ifndef STDC
+  choke me
+#endif
+  return 0;
+}
+===
+gcc -c -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr/include -O2 -pipe -D_LARGEFILE64_SOURCE=1 ztest86036.c
+Checking whether to use vs[n]printf() or s[n]printf()... using vs[n]printf().
+
+=== ztest86036.c ===
+#include <stdio.h>
+#include <stdarg.h>
+int mytest(const char *fmt, ...)
+{
+  char buf[20];
+  va_list ap;
+  va_start(ap, fmt);
+  vsnprintf(buf, sizeof(buf), fmt, ap);
+  va_end(ap);
+  return 0;
+}
+int main()
+{
+  return (mytest("Hello%d\n", 1));
+}
+===
+gcc -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr/include -O2 -pipe -D_LARGEFILE64_SOURCE=1 -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr/lib -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/lib -Wl,--enable-new-dtags -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr/lib -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/lib -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr/lib -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/lib -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2 -o ztest86036 ztest86036.c
+Checking for vsnprintf() in stdio.h... Yes.
+
+=== ztest86036.c ===
+#include <stdio.h>
+#include <stdarg.h>
+int mytest(const char *fmt, ...)
+{
+  int n;
+  char buf[20];
+  va_list ap;
+  va_start(ap, fmt);
+  n = vsnprintf(buf, sizeof(buf), fmt, ap);
+  va_end(ap);
+  return n;
+}
+int main()
+{
+  return (mytest("Hello%d\n", 1));
+}
+===
+gcc -c -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr/include -O2 -pipe -D_LARGEFILE64_SOURCE=1 ztest86036.c
+Checking for return value of vsnprintf()... Yes.
+
+=== ztest86036.c ===
+#define ZLIB_INTERNAL __attribute__((visibility ("hidden")))
+int ZLIB_INTERNAL foo;
+int main()
+{
+  return 0;
+}
+===
+gcc -c -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr/include -O2 -pipe -D_LARGEFILE64_SOURCE=1 ztest86036.c
+Checking for attribute(visibility) support... Yes.
+
+ALL = static shared all64
+AR = ar
+ARFLAGS = rc
+CC = gcc
+CFLAGS = -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr/include -O2 -pipe -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN
+CPP = gcc -E
+EXE =
+LDCONFIG = true
+LDFLAGS = -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr/lib -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/lib -Wl,--enable-new-dtags -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr/lib -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/lib -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr/lib -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/lib -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2
+LDSHARED = gcc -shared -Wl,-soname,libz.so.1,--version-script,zlib.map
+LDSHAREDLIBC = -lc
+OBJC = $(OBJZ) $(OBJG)
+PIC_OBJC = $(PIC_OBJZ) $(PIC_OBJG)
+RANLIB = ranlib -D
+SFLAGS = -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr/include -O2 -pipe -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN
+SHAREDLIB = libz.so
+SHAREDLIBM = libz.so.1
+SHAREDLIBV = libz.so.1.2.11
+STATICLIB = libz.a
+TEST = all teststatic testshared test64
+VER = 1.2.11
+Z_U4 =
+SRCDIR =
+exec_prefix = /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr
+includedir = /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr/include
+libdir = /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr/lib
+mandir = /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr/share/man
+prefix = /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zlib-native/1.2.11-r0/recipe-sysroot-native/usr
+sharedlibdir = ${libdir}
+uname = GNU
+--------------------
+
+

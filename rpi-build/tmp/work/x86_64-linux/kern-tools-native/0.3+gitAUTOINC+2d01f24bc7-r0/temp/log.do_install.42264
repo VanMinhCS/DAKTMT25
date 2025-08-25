@@ -1,0 +1,8 @@
+DEBUG: Executing shell function do_install
+NOTE: make -j 8 DESTDIR=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/kern-tools-native/0.3+gitAUTOINC+2d01f24bc7-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/kern-tools-native/0.3+gitAUTOINC+2d01f24bc7-r0/recipe-sysroot-native/usr/bin install
+-e ------------------------------------------------------- 
+Install: kern_tools 
+-------------------------------------------------------
+DEBUG: Shell function do_install finished
+DEBUG: Executing shell function remove_libtool_la
+DEBUG: Shell function remove_libtool_la finished

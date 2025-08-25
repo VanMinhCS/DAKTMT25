@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756091100.24 
+sqlite3-native-3_3.38.5-r0: do_install
+Elapsed time: 0.59 seconds
+utime: 41
+stime: 4
+cutime: 17
+cstime: 15
+IO rchar: 3510423
+IO wchar: 2453453
+IO syscr: 1444
+IO syscw: 288
+IO read_bytes: 0
+IO write_bytes: 2457600
+IO cancelled_write_bytes: 4096
+rusage ru_utime: 0.41870599999999997
+rusage ru_stime: 0.0463
+rusage ru_maxrss: 110152
+rusage ru_minflt: 6439
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 120
+rusage ru_nvcsw: 25
+rusage ru_nivcsw: 138
+Child rusage ru_utime: 0.177219
+Child rusage ru_stime: 0.157433
+Child rusage ru_maxrss: 110152
+Child rusage ru_minflt: 22194
+Child rusage ru_majflt: 2
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 4680
+Child rusage ru_nvcsw: 304
+Child rusage ru_nivcsw: 152
+Status: PASSED 
+Ended: 1756091100.83 

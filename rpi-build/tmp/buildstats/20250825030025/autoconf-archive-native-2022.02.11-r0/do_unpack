@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090979.89 
+autoconf-archive-native-2022.02.11-r0: do_unpack
+Elapsed time: 0.75 seconds
+utime: 30
+stime: 12
+cutime: 15
+cstime: 17
+IO rchar: 7720769
+IO wchar: 12381327
+IO syscr: 1193
+IO syscw: 2946
+IO read_bytes: 675840
+IO write_bytes: 8749056
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.30679999999999996
+rusage ru_stime: 0.121879
+rusage ru_maxrss: 110272
+rusage ru_minflt: 5241
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 128
+rusage ru_nvcsw: 7
+rusage ru_nivcsw: 77
+Child rusage ru_utime: 0.153699
+Child rusage ru_stime: 0.179475
+Child rusage ru_maxrss: 110272
+Child rusage ru_minflt: 2963
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 1320
+Child rusage ru_oublock: 16960
+Child rusage ru_nvcsw: 444
+Child rusage ru_nivcsw: 210
+Status: PASSED 
+Ended: 1756090980.64 

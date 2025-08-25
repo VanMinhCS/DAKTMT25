@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090832.03 
+gnu-config-native-20211108+gitAUTOINC+191bcb948f-r0: do_fetch
+Elapsed time: 0.23 seconds
+utime: 22
+stime: 3
+cutime: 10
+cstime: 5
+IO rchar: 1628359
+IO wchar: 52806
+IO syscr: 530
+IO syscw: 56
+IO read_bytes: 1531904
+IO write_bytes: 57344
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.220496
+rusage ru_stime: 0.030264
+rusage ru_maxrss: 107972
+rusage ru_minflt: 6297
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 112
+rusage ru_nvcsw: 9
+rusage ru_nivcsw: 26
+Child rusage ru_utime: 0.102597
+Child rusage ru_stime: 0.054889
+Child rusage ru_maxrss: 104056
+Child rusage ru_minflt: 5724
+Child rusage ru_majflt: 21
+Child rusage ru_inblock: 2992
+Child rusage ru_oublock: 0
+Child rusage ru_nvcsw: 60
+Child rusage ru_nivcsw: 28
+Status: PASSED 
+Ended: 1756090832.26 

@@ -1,0 +1,142 @@
+DEBUG: Executing python function autotools_aclocals
+DEBUG: SITE files ['endian-little', 'common-linux', 'common-glibc', 'bit-64', 'x86_64-linux', 'common']
+DEBUG: Python function autotools_aclocals finished
+DEBUG: Executing shell function do_install
+NOTE: make -j 8 DESTDIR=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image install
+make  install-recursive
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/build'
+Making install in po
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/build/po'
+if test "bison" = "gettext-tools"; then \
+  /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../../bison-3.8.2/po/$file \
+		    /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/build/po'
+Making install in runtime-po
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/build/runtime-po'
+if test "bison" = "gettext-tools"; then \
+  /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../../bison-3.8.2/runtime-po/$file \
+		    /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/build/runtime-po'
+Making install in gnulib-po
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/build/gnulib-po'
+if test "bison" = "gettext-tools"; then \
+  /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../../bison-3.8.2/gnulib-po/$file \
+		    /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/build/gnulib-po'
+Making install in .
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/build'
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p doc
+LC_ALL=C tests/bison --version >doc/bison.help.tmp
+LC_ALL=C tests/bison --help | \
+  sed -e 's,^Usage: .*/bison \[OPTION\],Usage: bison [OPTION],g' \
+      -e '/translation bugs/d'  >>doc/bison.help.tmp
+../bison-3.8.2/build-aux/move-if-change doc/bison.help.tmp ../bison-3.8.2/doc/bison.help
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/build'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/bin'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/lib'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/aclocal'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/bin'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644  lib/liby.a '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/lib'
+  /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c src/bison '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/bin'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/c++/calc++'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../bison-3.8.2/m4/bison-i18n.m4 '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/aclocal'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/c++'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c src/yacc '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/bin'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/c/bistromathic'
+ ( cd '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/lib' && ranlib -D liby.a )
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../bison-3.8.2/examples/c++/calc++/driver.cc ../bison-3.8.2/examples/c++/calc++/driver.hh ../bison-3.8.2/examples/c++/calc++/scanner.ll ../bison-3.8.2/examples/c++/calc++/calc++.cc ../bison-3.8.2/examples/c++/calc++/parser.yy '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/c++/calc++'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/c'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../bison-3.8.2/examples/c++/simple.yy '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/c++'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/c/calc'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../bison-3.8.2/examples/c/bistromathic/parse.y ../bison-3.8.2/examples/c/bistromathic/Makefile ../bison-3.8.2/examples/c/bistromathic/README.md '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/c/bistromathic'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../bison-3.8.2/examples/c/README.md '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/c'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/d/calc'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../bison-3.8.2/examples/c/calc/calc.y ../bison-3.8.2/examples/c/calc/Makefile ../bison-3.8.2/examples/c/calc/README.md '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/c/calc'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/c++/calc++'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/c++'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/d'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../bison-3.8.2/examples/c++/calc++/README.md ../bison-3.8.2/examples/c++/calc++/Makefile '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/c++/calc++'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../bison-3.8.2/examples/c++/README.md ../bison-3.8.2/examples/c++/Makefile ../bison-3.8.2/examples/c++/variant.yy ../bison-3.8.2/examples/c++/variant-11.yy '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/c++'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../bison-3.8.2/examples/d/calc/calc.y ../bison-3.8.2/examples/d/calc/Makefile '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/d/calc'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/c/glr'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../bison-3.8.2/examples/d/README.md '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/d'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/java'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/java/calc'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../bison-3.8.2/examples/README.md '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../bison-3.8.2/AUTHORS ../bison-3.8.2/COPYING ../bison-3.8.2/NEWS ../bison-3.8.2/README ../bison-3.8.2/THANKS ../bison-3.8.2/TODO '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../bison-3.8.2/examples/c/glr/c++-types.y ../bison-3.8.2/examples/c/glr/Makefile ../bison-3.8.2/examples/c/glr/README.md '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/c/glr'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../bison-3.8.2/examples/java/README.md '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/java'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/java/simple'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/c/lexcalc'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/bison/m4sugar'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/c/mfcalc'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/bison'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../bison-3.8.2/examples/java/calc/Calc.y ../bison-3.8.2/examples/java/calc/Makefile '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/java/calc'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../bison-3.8.2/examples/java/simple/Calc.y ../bison-3.8.2/examples/java/simple/Makefile '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/java/simple'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/c/pushcalc'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/c/reccalc'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/c/rpcalc'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../bison-3.8.2/examples/c/mfcalc/Makefile '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/c/mfcalc'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../bison-3.8.2/data/m4sugar/foreach.m4 ../bison-3.8.2/data/m4sugar/m4sugar.m4 '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/bison/m4sugar'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../bison-3.8.2/examples/c/pushcalc/calc.y ../bison-3.8.2/examples/c/pushcalc/Makefile ../bison-3.8.2/examples/c/pushcalc/README.md '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/c/pushcalc'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../bison-3.8.2/data/README.md ../bison-3.8.2/data/bison-default.css '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/bison'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../bison-3.8.2/examples/c/rpcalc/Makefile '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/c/rpcalc'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/d/simple'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../bison-3.8.2/examples/c/lexcalc/parse.y ../bison-3.8.2/examples/c/lexcalc/scan.l ../bison-3.8.2/examples/c/lexcalc/Makefile ../bison-3.8.2/examples/c/lexcalc/README.md '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/c/lexcalc'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../bison-3.8.2/examples/d/simple/calc.y ../bison-3.8.2/examples/d/simple/Makefile '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/d/simple'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/bison/skeletons'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../bison-3.8.2/examples/c/reccalc/parse.y ../bison-3.8.2/examples/c/reccalc/scan.l ../bison-3.8.2/examples/c/reccalc/Makefile ../bison-3.8.2/examples/c/reccalc/README.md '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/c/reccalc'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/bison/xslt'
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p doc
+LC_ALL=C tests/bison --version >doc/bison.help.tmp
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../bison-3.8.2/data/skeletons/bison.m4 ../bison-3.8.2/data/skeletons/c++-skel.m4 ../bison-3.8.2/data/skeletons/c++.m4 ../bison-3.8.2/data/skeletons/c-like.m4 ../bison-3.8.2/data/skeletons/c-skel.m4 ../bison-3.8.2/data/skeletons/c.m4 ../bison-3.8.2/data/skeletons/glr.c ../bison-3.8.2/data/skeletons/glr.cc ../bison-3.8.2/data/skeletons/glr2.cc ../bison-3.8.2/data/skeletons/java-skel.m4 ../bison-3.8.2/data/skeletons/java.m4 ../bison-3.8.2/data/skeletons/lalr1.cc ../bison-3.8.2/data/skeletons/lalr1.java ../bison-3.8.2/data/skeletons/location.cc ../bison-3.8.2/data/skeletons/stack.hh ../bison-3.8.2/data/skeletons/traceon.m4 ../bison-3.8.2/data/skeletons/variant.hh ../bison-3.8.2/data/skeletons/yacc.c ../bison-3.8.2/data/skeletons/d-skel.m4 ../bison-3.8.2/data/skeletons/d.m4 ../bison-3.8.2/data/skeletons/lalr1.d '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/bison/skeletons'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../bison-3.8.2/data/xslt/bison.xsl ../bison-3.8.2/data/xslt/xml2dot.xsl ../bison-3.8.2/data/xslt/xml2text.xsl ../bison-3.8.2/data/xslt/xml2xhtml.xsl '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/bison/xslt'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/c/mfcalc'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/c/rpcalc'
+LC_ALL=C tests/bison --help | \
+  sed -e 's,^Usage: .*/bison \[OPTION\],Usage: bison [OPTION],g' \
+      -e '/translation bugs/d'  >>doc/bison.help.tmp
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../bison-3.8.2/examples/c/mfcalc/calc.h ../bison-3.8.2/examples/c/mfcalc/mfcalc.y '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/c/mfcalc'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../bison-3.8.2/examples/c/rpcalc/rpcalc.y '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/doc/bison/examples/c/rpcalc'
+../bison-3.8.2/build-aux/move-if-change doc/bison.help.tmp ../bison-3.8.2/doc/bison.help
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/man/man1'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/info'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../bison-3.8.2/doc/bison.1 doc/yacc.1 '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/man/man1'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../bison-3.8.2/doc/bison.info '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/info'
+ install-info --info-dir='/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/info' '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/share/info/bison.info'
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/build'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/build'
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/build'
+Generating wrapper script for /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/image//home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/bison-native/3.8.2-r0/recipe-sysroot-native/usr/bin/bison
+DEBUG: Shell function do_install finished
+DEBUG: Executing shell function remove_libtool_la
+DEBUG: Shell function remove_libtool_la finished

@@ -1,0 +1,76 @@
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+DEBUG: Running 'export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/recipe-sysroot/usr/bin/crossscripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat branch --contains d7fe1ac04c326dba7e0440868889d1dccb41a175 --list master 2> /dev/null | wc -l' in /home/ubuntu/yocto/rpi-build/downloads/git2/github.com.besser82.libxcrypt.git
+DEBUG: Running export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/recipe-sysroot/usr/bin/crossscripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat clone -n -s /home/ubuntu/yocto/rpi-build/downloads/git2/github.com.besser82.libxcrypt.git/ /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/git/
+DEBUG: Running 'export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/recipe-sysroot/usr/bin/crossscripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat remote set-url origin https://github.com/besser82/libxcrypt.git' in /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/git/
+DEBUG: Running 'export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/recipe-sysroot/usr/bin/crossscripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat grep lfs origin/master:.gitattributes | wc -l' in /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/git/
+DEBUG: Running 'export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/recipe-sysroot/usr/bin/crossscripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat checkout -B master d7fe1ac04c326dba7e0440868889d1dccb41a175' in /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/git/
+DEBUG: Running 'export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/recipe-sysroot/usr/bin/crossscripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat branch master --set-upstream-to origin/master' in /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/git/
+DEBUG: Searching for fix_cflags_handling.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/libxcrypt-4.4.33/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/libxcrypt/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/libxcrypt-4.4.33/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/libxcrypt/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/libxcrypt-4.4.33/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/libxcrypt/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/libxcrypt-4.4.33/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/libxcrypt/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/libxcrypt-4.4.33/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/libxcrypt/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/libxcrypt-4.4.33/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/libxcrypt/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/files/fix_cflags_handling.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/
+DEBUG: Searching for 0001-Make-BuildCommon.pm-compatible-with-latest-perl.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/libxcrypt-4.4.33/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/libxcrypt/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/libxcrypt-4.4.33/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/libxcrypt/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/libxcrypt-4.4.33/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/libxcrypt/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/libxcrypt-4.4.33/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/libxcrypt/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/libxcrypt-4.4.33/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/libxcrypt/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/libxcrypt-4.4.33/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/libxcrypt/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/files/0001-Make-BuildCommon.pm-compatible-with-latest-perl.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/
+DEBUG: Searching for 0002-Remove-smartmatch-usage-from-gen-crypt-h.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/libxcrypt-4.4.33/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/libxcrypt/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/libxcrypt-4.4.33/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/libxcrypt/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/libxcrypt-4.4.33/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/libxcrypt/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/libxcrypt-4.4.33/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/libxcrypt/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/libxcrypt-4.4.33/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/libxcrypt/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/libxcrypt-4.4.33/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/libxcrypt/
+    /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/libxcrypt/files/0002-Remove-smartmatch-usage-from-gen-crypt-h.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function create_source_date_epoch_stamp
+DEBUG: git repository: /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libxcrypt/4.4.33-r0/git/.git
+DEBUG: SOURCE_DATE_EPOCH: 1668797153
+DEBUG: Python function create_source_date_epoch_stamp finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

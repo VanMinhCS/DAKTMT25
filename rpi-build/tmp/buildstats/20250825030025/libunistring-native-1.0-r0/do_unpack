@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090865.24 
+libunistring-native-1.0-r0: do_unpack
+Elapsed time: 0.65 seconds
+utime: 25
+stime: 4
+cutime: 20
+cstime: 20
+IO rchar: 33799874
+IO wchar: 57350750
+IO syscr: 3393
+IO syscw: 5696
+IO read_bytes: 4648960
+IO write_bytes: 32796672
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.25110099999999996
+rusage ru_stime: 0.040029999999999996
+rusage ru_maxrss: 108312
+rusage ru_minflt: 5026
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 56
+rusage ru_nvcsw: 4
+rusage ru_nivcsw: 92
+Child rusage ru_utime: 0.201947
+Child rusage ru_stime: 0.207198
+Child rusage ru_maxrss: 108312
+Child rusage ru_minflt: 913
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 9080
+Child rusage ru_oublock: 64000
+Child rusage ru_nvcsw: 1278
+Child rusage ru_nivcsw: 800
+Status: PASSED 
+Ended: 1756090865.89 

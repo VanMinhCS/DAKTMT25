@@ -1,0 +1,11 @@
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+NOTE: Unpacking /home/ubuntu/yocto/rpi-build/downloads/libunistring-1.0.tar.gz to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libunistring-native/1.0-r0/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function create_source_date_epoch_stamp
+DEBUG: Newest file found: /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/libunistring-native/1.0-r0/libunistring-1.0/lib/libunistring.sym
+DEBUG: SOURCE_DATE_EPOCH: 1641299510
+DEBUG: Python function create_source_date_epoch_stamp finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

@@ -1,0 +1,8 @@
+parallel.patch
+use-pkgconfig.patch
+serial-tests-config.patch
+0001-tests-autopoint-3-unset-MAKEFLAGS.patch
+0001-init-env.in-do-not-add-C-CXX-parameters.patch
+mingw.patch
+0001-msgmerge-29-Add-executable-file-mode-bits.patch
+0001-libtextstyle-fix-builds-with-automake-1.16.4-and-new.patch

@@ -1,0 +1,6 @@
+debug_logfile: fd 2
+pid 192895 [parent 192884], doing new pid setup and server start
+Setup complete, sending SIGUSR1 to pid 192884.
+db cleanup for server shutdown, 03:05:56.969
+memory-to-file backup complete, 03:05:56.969.
+db cleanup finished, 03:05:56.969

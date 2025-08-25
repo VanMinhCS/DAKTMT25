@@ -1,0 +1,214 @@
+#!/bin/sh
+
+__BITBAKE_LAST_LINE=0
+
+# Emit a useful diagnostic if something fails:
+bb_sh_exit_handler() {
+    ret=$?
+    if [ "$ret" != 0 ]; then
+        echo "WARNING: exit code $ret from a shell command."
+    fi
+    exit $ret
+}
+
+bb_bash_exit_handler() {
+    ret=$?
+    { set +x; } > /dev/null
+    trap "" DEBUG
+    if [ "$ret" != 0 ]; then
+        echo "WARNING: ${BASH_SOURCE[0]}:${__BITBAKE_LAST_LINE} exit $ret from '$1'"
+
+        echo "WARNING: Backtrace (BB generated script): "
+        for i in $(seq 1 $((${#FUNCNAME[@]} - 1))); do
+            if [ "$i" -eq 1 ]; then
+                echo -e "	#$((i)): ${FUNCNAME[$i]}, ${BASH_SOURCE[$((i-1))]}, line ${__BITBAKE_LAST_LINE}"
+            else
+                echo -e "	#$((i)): ${FUNCNAME[$i]}, ${BASH_SOURCE[$((i-1))]}, line ${BASH_LINENO[$((i-1))]}"
+            fi
+        done
+    fi
+    exit $ret
+}
+
+bb_bash_debug_handler() {
+    local line=${BASH_LINENO[0]}
+    # For some reason the DEBUG trap trips with lineno=1 when scripts exit; ignore it
+    if [ "$line" -eq 1 ]; then
+        return
+    fi
+
+    # Track the line number of commands as they execute. This is so we can have access to the failing line number
+    # in the EXIT trap. See http://gnu-bash.2382.n7.nabble.com/trap-echo-quot-trap-exit-on-LINENO-quot-EXIT-gt-wrong-linenumber-td3666.html
+    if [ "${FUNCNAME[1]}" != "bb_bash_exit_handler" ]; then
+        __BITBAKE_LAST_LINE=$line
+    fi
+}
+
+case $BASH_VERSION in
+"") trap 'bb_sh_exit_handler' 0
+    set -e
+    ;;
+*)  trap 'bb_bash_exit_handler "$BASH_COMMAND"' 0
+    trap '{ bb_bash_debug_handler; } 2>/dev/null' DEBUG
+    set -e
+    shopt -s extdebug
+    ;;
+esac
+export AR="ar"
+export AS="as "
+export BUILD_AR="ar"
+export BUILD_AS="as "
+export BUILD_CC="gcc "
+export BUILD_CCLD="gcc "
+export BUILD_CFLAGS="-isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/include -O2 -pipe"
+export BUILD_CPP="gcc  -E"
+export BUILD_CPPFLAGS="-isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/include"
+export BUILD_CXX="g++ "
+export BUILD_CXXFLAGS="-isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/include -O2 -pipe"
+export BUILD_FC="gfortran "
+export BUILD_LD="ld "
+export BUILD_LDFLAGS="-L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/lib                         -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/lib                         -Wl,--enable-new-dtags                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/lib                         -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2"
+export BUILD_NM="nm"
+export BUILD_RANLIB="ranlib -D"
+export BUILD_STRIP="strip"
+export CC="gcc "
+export CCLD="gcc "
+export CFLAGS="-isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/include -O2 -pipe"
+export CONFIG_SITE="/home/ubuntu/yocto/poky/meta/site/native"
+export CPP="gcc  -E"
+export CPPFLAGS="-isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/include"
+export CXX="g++ "
+export CXXFLAGS="-isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/include -O2 -pipe"
+export FC="gfortran "
+export GIT_CEILING_DIRECTORIES="/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0"
+export HOME="/home/ubuntu"
+export LC_ALL="en_US.UTF-8"
+export LD="ld "
+export LDFLAGS="-L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/lib                         -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/lib                         -Wl,--enable-new-dtags                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/lib                         -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2"
+export LOGNAME="ubuntu"
+export MAKE="make"
+export NM="nm"
+export OBJCOPY="objcopy"
+export OBJDUMP="objdump"
+export OMP_NUM_THREADS="8"
+export PATH="/home/ubuntu/yocto/poky/scripts/native-intercept:/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/bin/x86_64-linux:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"
+export PERL_HASH_SEED="0"
+export PKG_CONFIG_DIR="/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/lib/pkgconfig"
+export PKG_CONFIG_DISABLE_UNINSTALLED="yes"
+export PKG_CONFIG_LIBDIR="/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/lib/pkgconfig"
+export PKG_CONFIG_PATH="/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/lib/pkgconfig:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/share/pkgconfig"
+export PKG_CONFIG_SYSROOT_DIR=""
+unset PKG_CONFIG_SYSTEM_INCLUDE_PATH
+unset PKG_CONFIG_SYSTEM_LIBRARY_PATH
+export PSEUDO_DISABLED="1"
+export PSEUDO_UNLOAD="1"
+export PYTHONHASHSEED="0"
+export RANLIB="ranlib -D"
+export READELF="readelf"
+unset SHELL
+export SOURCE_DATE_EPOCH="1666712098"
+export STRINGS="strings"
+export STRIP="strip"
+export TZ="UTC"
+export USER="ubuntu"
+export base_bindir="/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/bin"
+export base_libdir="/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/lib"
+export base_prefix="/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native"
+export base_sbindir="/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/sbin"
+export bindir="/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/bin"
+export datadir="/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/share"
+export docdir="/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/share/doc"
+export exec_prefix="/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr"
+export includedir="/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/include"
+export infodir="/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/share/info"
+export libdir="/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/lib"
+export libexecdir="/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/libexec"
+export localstatedir="/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/var"
+export lt_cv_sys_lib_dlsearch_path_spec="/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/lib /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/lib /lib /lib64 /usr/lib /usr/lib64"
+export mandir="/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/share/man"
+export nonarch_base_libdir="/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/lib"
+export nonarch_libdir="/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/lib"
+export oldincludedir="/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/include"
+export prefix="/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr"
+export sbindir="/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/sbin"
+export servicedir="/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/srv"
+export sharedstatedir="/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/com"
+export sysconfdir="/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/etc"
+export systemd_system_unitdir="/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/lib/systemd/system"
+export systemd_unitdir="/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/lib/systemd"
+export systemd_user_unitdir="/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/lib/systemd/user"
+
+# line: 1, file: autogenerated
+do_generate_toolchain_file() {
+    cmake_do_generate_toolchain_file
+}
+
+# line: 91, file: /home/ubuntu/yocto/poky/meta/classes/cmake.bbclass
+cmake_do_generate_toolchain_file() {
+	if [ "x86_64-linux" = "x86_64-linux" ]; then
+		cmake_crosscompiling="set( CMAKE_CROSSCOMPILING FALSE )"
+	else
+		cmake_sysroot="set( CMAKE_SYSROOT \"/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot\" )"
+	fi
+	cat > /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/toolchain.cmake <<EOF
+# CMake system name must be something like "Linux".
+# This is important for cross-compiling.
+$cmake_crosscompiling
+set( CMAKE_SYSTEM_NAME Linux )
+set( CMAKE_SYSTEM_PROCESSOR x86_64 )
+set( CMAKE_C_COMPILER gcc )
+set( CMAKE_CXX_COMPILER g++ )
+set( CMAKE_C_COMPILER_LAUNCHER  )
+set( CMAKE_CXX_COMPILER_LAUNCHER  )
+set( CMAKE_ASM_COMPILER gcc )
+find_program( CMAKE_AR ar DOC "Archiver" REQUIRED )
+
+set( CMAKE_C_FLAGS "  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/include -O2 -pipe" CACHE STRING "CFLAGS" )
+set( CMAKE_CXX_FLAGS "  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/include -O2 -pipe" CACHE STRING "CXXFLAGS" )
+set( CMAKE_ASM_FLAGS "  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/include -O2 -pipe" CACHE STRING "ASM FLAGS" )
+set( CMAKE_C_FLAGS_RELEASE "-DNDEBUG" CACHE STRING "Additional CFLAGS for release" )
+set( CMAKE_CXX_FLAGS_RELEASE "-DNDEBUG" CACHE STRING "Additional CXXFLAGS for release" )
+set( CMAKE_ASM_FLAGS_RELEASE "-DNDEBUG" CACHE STRING "Additional ASM FLAGS for release" )
+set( CMAKE_C_LINK_FLAGS "  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/include -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/lib                         -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/lib                         -Wl,--enable-new-dtags                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/lib                         -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2" CACHE STRING "LDFLAGS" )
+set( CMAKE_CXX_LINK_FLAGS "  -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/include -O2 -pipe -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/lib                         -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/lib                         -Wl,--enable-new-dtags                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/lib                         -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2" CACHE STRING "LDFLAGS" )
+
+# only search in the paths provided so cmake doesnt pick
+# up libraries and tools from the native build machine
+set( CMAKE_FIND_ROOT_PATH  /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native ${CROSS_DIR}   ${EXTERNAL_TOOLCHAIN} /home/ubuntu/yocto/rpi-build/tmp/hosttools)
+set( CMAKE_FIND_ROOT_PATH_MODE_PACKAGE ONLY )
+set( CMAKE_FIND_ROOT_PATH_MODE_PROGRAM BOTH )
+set( CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY )
+set( CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY )
+set( CMAKE_PROGRAM_PATH "/" )
+
+$cmake_sysroot
+
+# Use qt.conf settings
+set( ENV{QT_CONF_PATH} /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/qt.conf )
+
+# We need to set the rpath to the correct directory as cmake does not provide any
+# directory as rpath by default
+set( CMAKE_INSTALL_RPATH /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/lib )
+
+# Use RPATHs relative to build directory for reproducibility
+set( CMAKE_BUILD_RPATH_USE_ORIGIN ON )
+
+# Use our cmake modules
+list(APPEND CMAKE_MODULE_PATH "/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/share/cmake/Modules/")
+
+# add for non /usr/lib libdir, e.g. /usr/lib64
+set( CMAKE_LIBRARY_PATH /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/lib /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/lib)
+
+# add include dir to implicit includes in case it differs from /usr/include
+list(APPEND CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/include)
+list(APPEND CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/recipe-sysroot-native/usr/include)
+
+EOF
+}
+
+do_generate_toolchain_file
+
+# cleanup
+ret=$?
+trap '' 0
+exit $ret

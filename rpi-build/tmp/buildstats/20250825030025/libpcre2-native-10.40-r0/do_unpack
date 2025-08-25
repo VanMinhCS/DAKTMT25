@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090867.62 
+libpcre2-native-10.40-r0: do_unpack
+Elapsed time: 1.66 seconds
+utime: 23
+stime: 3
+cutime: 74
+cstime: 8
+IO rchar: 13060303
+IO wchar: 22017829
+IO syscr: 3009
+IO syscw: 4243
+IO read_bytes: 1773568
+IO write_bytes: 11816960
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.23066699999999998
+rusage ru_stime: 0.039169999999999996
+rusage ru_maxrss: 108488
+rusage ru_minflt: 5910
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 56
+rusage ru_nvcsw: 6
+rusage ru_nivcsw: 75
+Child rusage ru_utime: 0.7447659999999999
+Child rusage ru_stime: 0.083148
+Child rusage ru_maxrss: 108232
+Child rusage ru_minflt: 2148
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 3464
+Child rusage ru_oublock: 23024
+Child rusage ru_nvcsw: 1774
+Child rusage ru_nivcsw: 1723
+Status: PASSED 
+Ended: 1756090869.28 

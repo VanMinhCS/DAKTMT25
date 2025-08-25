@@ -1,0 +1,34 @@
+DEBUG: Executing python function autotools_aclocals
+DEBUG: SITE files ['endian-little', 'common-linux', 'common-glibc', 'bit-64', 'x86_64-linux', 'common']
+DEBUG: Python function autotools_aclocals finished
+DEBUG: Executing shell function do_install
+NOTE: make -j 8 DESTDIR=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/image install
+cd lib; make install
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/build/lib'
+make[1]: Nothing to be done for 'install'.
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/build/lib'
+cd src; make install
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/build/src'
+/bin/sh ../../gperf-3.1/src/../build-aux/mkinstalldirs /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/bin
+mkdir -p -- /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/bin
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c gperf /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/bin/gperf
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/build/src'
+cd tests; make install
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/build/tests'
+make[1]: Nothing to be done for 'install'.
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/build/tests'
+cd doc; make install
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/build/doc'
+/bin/sh ../../gperf-3.1/doc/../build-aux/mkinstalldirs /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/share/info
+mkdir -p -- /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/share/info
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../../gperf-3.1/doc/gperf.info /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/share/info/gperf.info
+/bin/sh ../../gperf-3.1/doc/../build-aux/mkinstalldirs /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/share/man/man1
+mkdir -p -- /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/share/man/man1
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../../gperf-3.1/doc/gperf.1 /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/share/man/man1/gperf.1
+/bin/sh ../../gperf-3.1/doc/../build-aux/mkinstalldirs /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/share/doc/
+mkdir -p -- /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/share/doc/
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../../gperf-3.1/doc/gperf.html /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/recipe-sysroot-native/usr/share/doc//gperf.html
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/gperf-native/3.1-r0/build/doc'
+DEBUG: Shell function do_install finished
+DEBUG: Executing shell function remove_libtool_la
+DEBUG: Shell function remove_libtool_la finished

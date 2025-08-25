@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090914.98 
+autoconf-native-2.71-r0: do_populate_sysroot
+Elapsed time: 0.43 seconds
+utime: 35
+stime: 8
+cutime: 10
+cstime: 16
+IO rchar: 9334114
+IO wchar: 2807258
+IO syscr: 2244
+IO syscw: 485
+IO read_bytes: 0
+IO write_bytes: 737280
+IO cancelled_write_bytes: 4096
+rusage ru_utime: 0.35886799999999996
+rusage ru_stime: 0.08763
+rusage ru_maxrss: 109560
+rusage ru_minflt: 14789
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 360
+rusage ru_nvcsw: 25
+rusage ru_nivcsw: 10
+Child rusage ru_utime: 0.106418
+Child rusage ru_stime: 0.169975
+Child rusage ru_maxrss: 109560
+Child rusage ru_minflt: 18383
+Child rusage ru_majflt: 1
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 1080
+Child rusage ru_nvcsw: 231
+Child rusage ru_nivcsw: 21
+Status: PASSED 
+Ended: 1756090915.41 

@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090857.17 
+python3-flit-core-native-3.7.1-r0: do_patch
+Elapsed time: 0.14 seconds
+utime: 24
+stime: 4
+cutime: 1
+cstime: 0
+IO rchar: 209664
+IO wchar: 117552
+IO syscr: 162
+IO syscw: 79
+IO read_bytes: 0
+IO write_bytes: 122880
+IO cancelled_write_bytes: 4096
+rusage ru_utime: 0.243336
+rusage ru_stime: 0.047929
+rusage ru_maxrss: 108620
+rusage ru_minflt: 4074
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 112
+rusage ru_nvcsw: 6
+rusage ru_nivcsw: 102
+Child rusage ru_utime: 0.017991
+Child rusage ru_stime: 0.0
+Child rusage ru_maxrss: 108620
+Child rusage ru_minflt: 830
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 128
+Child rusage ru_nvcsw: 12
+Child rusage ru_nivcsw: 6
+Status: PASSED 
+Ended: 1756090857.30 

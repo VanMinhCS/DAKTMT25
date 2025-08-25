@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:python3-flit-core-native:x86_64-linux:3.7.1:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 e1ff102c3a53c176297127aec07a579c4715b756f9f2964310011946d3501e13 ./deploy-source-date-epoch/__source_date_epoch.txt

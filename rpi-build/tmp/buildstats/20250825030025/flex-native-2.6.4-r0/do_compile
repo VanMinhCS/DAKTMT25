@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090978.08 
+flex-native-2.6.4-r0: do_compile
+Elapsed time: 5.56 seconds
+utime: 18
+stime: 2
+cutime: 2024
+cstime: 324
+IO rchar: 64504418
+IO wchar: 5754804
+IO syscr: 17641
+IO syscw: 2467
+IO read_bytes: 28672
+IO write_bytes: 2887680
+IO cancelled_write_bytes: 4096
+rusage ru_utime: 0.18337399999999998
+rusage ru_stime: 0.026196
+rusage ru_maxrss: 110012
+rusage ru_minflt: 4988
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 160
+rusage ru_nvcsw: 114
+rusage ru_nivcsw: 3
+Child rusage ru_utime: 20.246064
+Child rusage ru_stime: 3.246684
+Child rusage ru_maxrss: 105952
+Child rusage ru_minflt: 325502
+Child rusage ru_majflt: 5
+Child rusage ru_inblock: 56
+Child rusage ru_oublock: 5480
+Child rusage ru_nvcsw: 1470
+Child rusage ru_nivcsw: 3407
+Status: PASSED 
+Ended: 1756090983.63 

@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756091115.19 
+gdbm-native-1.23-r0: do_populate_sysroot
+Elapsed time: 1.86 seconds
+utime: 56
+stime: 11
+cutime: 15
+cstime: 19
+IO rchar: 3975697
+IO wchar: 1658077
+IO syscr: 2317
+IO syscw: 418
+IO read_bytes: 0
+IO write_bytes: 1314816
+IO cancelled_write_bytes: 315392
+rusage ru_utime: 0.567414
+rusage ru_stime: 0.114329
+rusage ru_maxrss: 110576
+rusage ru_minflt: 15000
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 1048
+rusage ru_nvcsw: 47
+rusage ru_nivcsw: 216
+Child rusage ru_utime: 0.157128
+Child rusage ru_stime: 0.190085
+Child rusage ru_maxrss: 110576
+Child rusage ru_minflt: 19766
+Child rusage ru_majflt: 2
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 1520
+Child rusage ru_nvcsw: 230
+Child rusage ru_nivcsw: 109
+Status: PASSED 
+Ended: 1756091117.05 

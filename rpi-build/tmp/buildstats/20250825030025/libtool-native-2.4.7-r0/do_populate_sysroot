@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090941.41 
+libtool-native-2.4.7-r0: do_populate_sysroot
+Elapsed time: 0.35 seconds
+utime: 20
+stime: 8
+cutime: 14
+cstime: 15
+IO rchar: 12776040
+IO wchar: 3563989
+IO syscr: 2850
+IO syscw: 633
+IO read_bytes: 0
+IO write_bytes: 1241088
+IO cancelled_write_bytes: 53248
+rusage ru_utime: 0.203557
+rusage ru_stime: 0.083817
+rusage ru_maxrss: 110320
+rusage ru_minflt: 14779
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 472
+rusage ru_nvcsw: 36
+rusage ru_nivcsw: 7
+Child rusage ru_utime: 0.146026
+Child rusage ru_stime: 0.157459
+Child rusage ru_maxrss: 110192
+Child rusage ru_minflt: 22987
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 1952
+Child rusage ru_nvcsw: 288
+Child rusage ru_nivcsw: 11
+Status: PASSED 
+Ended: 1756090941.76 

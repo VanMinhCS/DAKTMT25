@@ -1,0 +1,68 @@
+DEBUG: Executing python function autotools_aclocals
+DEBUG: SITE files ['endian-little', 'common-linux', 'common-glibc', 'bit-64', 'x86_64-linux', 'common']
+DEBUG: Python function autotools_aclocals finished
+DEBUG: Executing shell function do_install
+NOTE: make -j 8 DESTDIR=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/image install
+make  install-recursive
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/build'
+Making install in lib
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/build/lib'
+make  install-am
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/build/lib'
+make[4]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/build/lib'
+if test yes = no; then \
+  case 'linux-gnu' in \
+    darwin[56]*) \
+      need_charset_alias=true ;; \
+    darwin* | cygwin* | mingw* | pw32* | cegcc* | linux-musl*) \
+      need_charset_alias=false ;; \
+    *) \
+      need_charset_alias=true ;; \
+  esac ; \
+else \
+  need_charset_alias=false ; \
+fi ; \
+if $need_charset_alias; then \
+  /bin/bash /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/patch-2.7.6/build-aux/install-sh -d /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/lib ; \
+fi ; \
+if test -f /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/lib/charset.alias; then \
+  sed -f ref-add.sed /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/lib/charset.alias > /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/lib/charset.tmp ; \
+  /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/lib/charset.tmp /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/lib/charset.alias ; \
+  rm -f /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/lib/charset.tmp ; \
+else \
+  if $need_charset_alias; then \
+    sed -f ref-add.sed charset.alias > /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/lib/charset.tmp ; \
+    /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/lib/charset.tmp /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/lib/charset.alias ; \
+    rm -f /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/lib/charset.tmp ; \
+  fi ; \
+fi
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/build/lib'
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/build/lib'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/build/lib'
+Making install in src
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/build/src'
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/build/src'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/bin'
+make[3]: Nothing to be done for 'install-data-am'.
+  /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c patch '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/bin'
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/build/src'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/build/src'
+Making install in tests
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/build/tests'
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/build/tests'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/build/tests'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/build/tests'
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/build'
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/build'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/share/man/man1'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 '../patch-2.7.6/patch.man' '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/recipe-sysroot-native/usr/share/man/man1/patch.1'
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/build'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/build'
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/patch-native/2.7.6-r0/build'
+DEBUG: Shell function do_install finished
+DEBUG: Executing shell function remove_libtool_la
+DEBUG: Shell function remove_libtool_la finished

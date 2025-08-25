@@ -1,0 +1,224 @@
+DEBUG: Executing python function autotools_aclocals
+DEBUG: SITE files ['endian-little', 'common-linux', 'common-glibc', 'bit-64', 'x86_64-linux', 'common']
+DEBUG: Python function autotools_aclocals finished
+DEBUG: Executing shell function do_compile
+NOTE: make -j 8
+make  all-am
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/build'
+rm -f bin/autom4te bin/autom4te.tmp
+rm -f lib/autom4te.cfg lib/autom4te.cfg-t
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/build'
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p bin
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p lib/m4sugar
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p lib
+srcdir=''; \
+  test -f ./bin/autom4te.in || srcdir=../autoconf-2.71/; \
+  sed -e 's|@SHELL[@]|/bin/bash|g' -e 's|@PERL[@]|/usr/bin/env perl|g' -e 's|@PERL_FLOCK[@]|yes|g' -e 's|@bindir[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/bin|g' -e 's|@pkgdatadir[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/autoconf|g' -e 's|@prefix[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr|g' -e 's|@autoconf-name[@]|'`echo autoconf | sed 's,x,x,'`'|g' -e 's|@autoheader-name[@]|'`echo autoheader | sed 's,x,x,'`'|g' -e 's|@autom4te-name[@]|'`echo autom4te | sed 's,x,x,'`'|g' -e 's|@M4[@]|m4|g' -e 's|@M4_DEBUGFILE[@]|--debugfile|g' -e 's|@M4_GNU[@]|--gnu|g' -e 's|@AWK[@]|gawk|g' -e 's|@RELEASE_YEAR[@]|2021|g' -e 's|@VERSION[@]|2.71|g' -e 's|@PACKAGE_NAME[@]|GNU Autoconf|g' -e 's|@configure_input[@]|Generated from bin/autom4te.in; do not edit by hand.|g' ${srcdir}bin/autom4te.in >bin/autom4te.tmp
+rm -f bin/autoheader bin/autoheader.tmp
+sed -e 's|@SHELL[@]|/bin/bash|g' -e 's|@PERL[@]|/usr/bin/env perl|g' -e 's|@PERL_FLOCK[@]|yes|g' -e 's|@bindir[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/bin|g' -e 's|@pkgdatadir[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/autoconf|g' -e 's|@prefix[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr|g' -e 's|@autoconf-name[@]|'`echo autoconf | sed 's,x,x,'`'|g' -e 's|@autoheader-name[@]|'`echo autoheader | sed 's,x,x,'`'|g' -e 's|@autom4te-name[@]|'`echo autom4te | sed 's,x,x,'`'|g' -e 's|@M4[@]|m4|g' -e 's|@M4_DEBUGFILE[@]|--debugfile|g' -e 's|@M4_GNU[@]|--gnu|g' -e 's|@AWK[@]|gawk|g' -e 's|@RELEASE_YEAR[@]|2021|g' -e 's|@VERSION[@]|2.71|g' -e 's|@PACKAGE_NAME[@]|GNU Autoconf|g' -e 's|@configure_input[@]|Generated from lib/autom4te.cfg.in; do not edit by hand.|g' ../autoconf-2.71/lib/autom4te.in >lib/autom4te.cfg-t
+:;{ \
+  echo '# This file is part of -*- Autoconf -*-.' && \
+  echo '# Version of Autoconf.' && \
+  echo '# Copyright (C) 1999, 2000, 2001, 2002, 2006, 2007, 2009' && \
+  echo '# Free Software Foundation, Inc.' && \
+  echo  &&\
+  echo 'm4_define([m4_PACKAGE_NAME],      [GNU Autoconf])' && \
+  echo 'm4_define([m4_PACKAGE_TARNAME],   [autoconf])' && \
+  echo 'm4_define([m4_PACKAGE_VERSION],   [2.71])' && \
+  echo 'm4_define([m4_PACKAGE_STRING],    [GNU Autoconf 2.71])' && \
+  echo 'm4_define([m4_PACKAGE_BUGREPORT], [bug-autoconf@gnu.org])' && \
+  echo 'm4_define([m4_PACKAGE_URL],       [https://www.gnu.org/software/autoconf/])' && \
+  echo 'm4_define([m4_PACKAGE_YEAR],      [2021])'; \
+} > lib/m4sugar/version.m4-t
+mv lib/m4sugar/version.m4-t lib/m4sugar/version.m4
+rm -f bin/autoreconf bin/autoreconf.tmp
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p bin
+rm -f bin/autoscan bin/autoscan.tmp
+chmod +x bin/autom4te.tmp
+srcdir=''; \
+  test -f ./bin/autoheader.in || srcdir=../autoconf-2.71/; \
+  sed -e 's|@SHELL[@]|/bin/bash|g' -e 's|@PERL[@]|/usr/bin/env perl|g' -e 's|@PERL_FLOCK[@]|yes|g' -e 's|@bindir[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/bin|g' -e 's|@pkgdatadir[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/autoconf|g' -e 's|@prefix[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr|g' -e 's|@autoconf-name[@]|'`echo autoconf | sed 's,x,x,'`'|g' -e 's|@autoheader-name[@]|'`echo autoheader | sed 's,x,x,'`'|g' -e 's|@autom4te-name[@]|'`echo autom4te | sed 's,x,x,'`'|g' -e 's|@M4[@]|m4|g' -e 's|@M4_DEBUGFILE[@]|--debugfile|g' -e 's|@M4_GNU[@]|--gnu|g' -e 's|@AWK[@]|gawk|g' -e 's|@RELEASE_YEAR[@]|2021|g' -e 's|@VERSION[@]|2.71|g' -e 's|@PACKAGE_NAME[@]|GNU Autoconf|g' -e 's|@configure_input[@]|Generated from bin/autoheader.in; do not edit by hand.|g' ${srcdir}bin/autoheader.in >bin/autoheader.tmp
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/build'
+chmod a-w lib/autom4te.cfg-t
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p bin
+chmod a-w bin/autom4te.tmp
+mv -f lib/autom4te.cfg-t lib/autom4te.cfg
+srcdir=''; \
+  test -f ./bin/autoreconf.in || srcdir=../autoconf-2.71/; \
+  sed -e 's|@SHELL[@]|/bin/bash|g' -e 's|@PERL[@]|/usr/bin/env perl|g' -e 's|@PERL_FLOCK[@]|yes|g' -e 's|@bindir[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/bin|g' -e 's|@pkgdatadir[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/autoconf|g' -e 's|@prefix[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr|g' -e 's|@autoconf-name[@]|'`echo autoconf | sed 's,x,x,'`'|g' -e 's|@autoheader-name[@]|'`echo autoheader | sed 's,x,x,'`'|g' -e 's|@autom4te-name[@]|'`echo autom4te | sed 's,x,x,'`'|g' -e 's|@M4[@]|m4|g' -e 's|@M4_DEBUGFILE[@]|--debugfile|g' -e 's|@M4_GNU[@]|--gnu|g' -e 's|@AWK[@]|gawk|g' -e 's|@RELEASE_YEAR[@]|2021|g' -e 's|@VERSION[@]|2.71|g' -e 's|@PACKAGE_NAME[@]|GNU Autoconf|g' -e 's|@configure_input[@]|Generated from bin/autoreconf.in; do not edit by hand.|g' ${srcdir}bin/autoreconf.in >bin/autoreconf.tmp
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p bin
+mv bin/autom4te.tmp bin/autom4te
+rm -f bin/autoupdate bin/autoupdate.tmp
+srcdir=''; \
+  test -f ./bin/autoscan.in || srcdir=../autoconf-2.71/; \
+  sed -e 's|@SHELL[@]|/bin/bash|g' -e 's|@PERL[@]|/usr/bin/env perl|g' -e 's|@PERL_FLOCK[@]|yes|g' -e 's|@bindir[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/bin|g' -e 's|@pkgdatadir[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/autoconf|g' -e 's|@prefix[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr|g' -e 's|@autoconf-name[@]|'`echo autoconf | sed 's,x,x,'`'|g' -e 's|@autoheader-name[@]|'`echo autoheader | sed 's,x,x,'`'|g' -e 's|@autom4te-name[@]|'`echo autom4te | sed 's,x,x,'`'|g' -e 's|@M4[@]|m4|g' -e 's|@M4_DEBUGFILE[@]|--debugfile|g' -e 's|@M4_GNU[@]|--gnu|g' -e 's|@AWK[@]|gawk|g' -e 's|@RELEASE_YEAR[@]|2021|g' -e 's|@VERSION[@]|2.71|g' -e 's|@PACKAGE_NAME[@]|GNU Autoconf|g' -e 's|@configure_input[@]|Generated from bin/autoscan.in; do not edit by hand.|g' ${srcdir}bin/autoscan.in >bin/autoscan.tmp
+rm -f bin/ifnames bin/ifnames.tmp
+chmod +x bin/autoheader.tmp
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p bin
+chmod a-w bin/autoheader.tmp
+srcdir=''; \
+  test -f ./bin/autoupdate.in || srcdir=../autoconf-2.71/; \
+  sed -e 's|@SHELL[@]|/bin/bash|g' -e 's|@PERL[@]|/usr/bin/env perl|g' -e 's|@PERL_FLOCK[@]|yes|g' -e 's|@bindir[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/bin|g' -e 's|@pkgdatadir[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/autoconf|g' -e 's|@prefix[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr|g' -e 's|@autoconf-name[@]|'`echo autoconf | sed 's,x,x,'`'|g' -e 's|@autoheader-name[@]|'`echo autoheader | sed 's,x,x,'`'|g' -e 's|@autom4te-name[@]|'`echo autom4te | sed 's,x,x,'`'|g' -e 's|@M4[@]|m4|g' -e 's|@M4_DEBUGFILE[@]|--debugfile|g' -e 's|@M4_GNU[@]|--gnu|g' -e 's|@AWK[@]|gawk|g' -e 's|@RELEASE_YEAR[@]|2021|g' -e 's|@VERSION[@]|2.71|g' -e 's|@PACKAGE_NAME[@]|GNU Autoconf|g' -e 's|@configure_input[@]|Generated from bin/autoupdate.in; do not edit by hand.|g' ${srcdir}bin/autoupdate.in >bin/autoupdate.tmp
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p bin
+Updating ../autoconf-2.71/doc/version.texi
+autom4te_perllibdir='../autoconf-2.71'/lib AUTOM4TE_CFG='lib/autom4te.cfg'         bin/autom4te -B ''lib -B '../autoconf-2.71'/lib         --language=M4sh ../autoconf-2.71/tests/wrapper.as -o tests/wrapper.in
+mv bin/autoheader.tmp bin/autoheader
+srcdir=''; \
+  test -f ./bin/ifnames.in || srcdir=../autoconf-2.71/; \
+  sed -e 's|@SHELL[@]|/bin/bash|g' -e 's|@PERL[@]|/usr/bin/env perl|g' -e 's|@PERL_FLOCK[@]|yes|g' -e 's|@bindir[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/bin|g' -e 's|@pkgdatadir[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/autoconf|g' -e 's|@prefix[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr|g' -e 's|@autoconf-name[@]|'`echo autoconf | sed 's,x,x,'`'|g' -e 's|@autoheader-name[@]|'`echo autoheader | sed 's,x,x,'`'|g' -e 's|@autom4te-name[@]|'`echo autom4te | sed 's,x,x,'`'|g' -e 's|@M4[@]|m4|g' -e 's|@M4_DEBUGFILE[@]|--debugfile|g' -e 's|@M4_GNU[@]|--gnu|g' -e 's|@AWK[@]|gawk|g' -e 's|@RELEASE_YEAR[@]|2021|g' -e 's|@VERSION[@]|2.71|g' -e 's|@PACKAGE_NAME[@]|GNU Autoconf|g' -e 's|@configure_input[@]|Generated from bin/ifnames.in; do not edit by hand.|g' ${srcdir}bin/ifnames.in >bin/ifnames.tmp
+if test 'no' != no; then \
+  am__dir=. am__subdir_includes=''; \
+  case lib/emacs/autoconf-mode.elc in */*) \
+    am__dir=`echo 'lib/emacs/autoconf-mode.elc' | sed 's,/[^/]*$,,'`; \
+    am__subdir_includes="-L $am__dir -L ../autoconf-2.71/$am__dir"; \
+  esac; \
+  test -d "$am__dir" || /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p "$am__dir" || exit 1; \
+  no --batch \
+      \
+    $am__subdir_includes -L . -L ../autoconf-2.71 \
+    --eval '(if (boundp (quote byte-compile-dest-file-function)) (setq byte-compile-dest-file-function (lambda (_) "lib/emacs/autoconf-mode.elc")) (defun byte-compile-dest-file (_) "lib/emacs/autoconf-mode.elc") )' \
+    -f batch-byte-compile '../autoconf-2.71/lib/emacs/autoconf-mode.el'; \
+else :; fi
+chmod +x bin/autoreconf.tmp
+chmod +x bin/autoscan.tmp
+chmod a-w bin/autoreconf.tmp
+chmod a-w bin/autoscan.tmp
+mv bin/autoreconf.tmp bin/autoreconf
+mv bin/autoscan.tmp bin/autoscan
+if test 'no' != no; then \
+  am__dir=. am__subdir_includes=''; \
+  case lib/emacs/autotest-mode.elc in */*) \
+    am__dir=`echo 'lib/emacs/autotest-mode.elc' | sed 's,/[^/]*$,,'`; \
+    am__subdir_includes="-L $am__dir -L ../autoconf-2.71/$am__dir"; \
+  esac; \
+  test -d "$am__dir" || /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p "$am__dir" || exit 1; \
+  no --batch \
+      \
+    $am__subdir_includes -L . -L ../autoconf-2.71 \
+    --eval '(if (boundp (quote byte-compile-dest-file-function)) (setq byte-compile-dest-file-function (lambda (_) "lib/emacs/autotest-mode.elc")) (defun byte-compile-dest-file (_) "lib/emacs/autotest-mode.elc") )' \
+    -f batch-byte-compile '../autoconf-2.71/lib/emacs/autotest-mode.el'; \
+else :; fi
+chmod +x bin/ifnames.tmp
+chmod +x bin/autoupdate.tmp
+chmod a-w bin/ifnames.tmp
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p lib/autoconf
+chmod a-w bin/autoupdate.tmp
+mv bin/ifnames.tmp bin/ifnames
+mv bin/autoupdate.tmp bin/autoupdate
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p lib/autoscan
+lang=`echo 'lib/autoconf/autoconf' | sed 's,.*/,,'` \
+  && if test $lang = autoconf; then \
+       lang=autoconf-without-aclocal-m4; \
+     else :; fi \
+  && autom4te_perllibdir='../autoconf-2.71'/lib AUTOM4TE_CFG='lib/autom4te.cfg'         bin/autom4te -B ''lib -B '../autoconf-2.71'/lib         \
+	--language=$lang \
+	--freeze \
+	--output=lib/autoconf/autoconf.m4f
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p lib/autotest
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p lib/m4sugar
+echo '# Automatically Generated: do not edit this file' >lib/autoscan/autoscan.list
+lang=`echo 'lib/autotest/autotest' | sed 's,.*/,,'` \
+  && if test $lang = autoconf; then \
+       lang=autoconf-without-aclocal-m4; \
+     else :; fi \
+  && autom4te_perllibdir='../autoconf-2.71'/lib AUTOM4TE_CFG='lib/autom4te.cfg'         bin/autom4te -B ''lib -B '../autoconf-2.71'/lib         \
+	--language=$lang \
+	--freeze \
+	--output=lib/autotest/autotest.m4f
+sed '/^[#]/!q' ../autoconf-2.71/lib/autoscan/autoscan.pre >>lib/autoscan/autoscan.list
+lang=`echo 'lib/m4sugar/m4sugar' | sed 's,.*/,,'` \
+  && if test $lang = autoconf; then \
+       lang=autoconf-without-aclocal-m4; \
+     else :; fi \
+  && autom4te_perllibdir='../autoconf-2.71'/lib AUTOM4TE_CFG='lib/autom4te.cfg'         bin/autom4te -B ''lib -B '../autoconf-2.71'/lib         \
+	--language=$lang \
+	--freeze \
+	--output=lib/m4sugar/m4sugar.m4f
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p lib/m4sugar
+( \
+  sed -n '/^[^#]/p' ../autoconf-2.71/lib/autoscan/autoscan.pre; \
+  autom4te_perllibdir='../autoconf-2.71'/lib AUTOM4TE_CFG='lib/autom4te.cfg'         bin/autom4te -B ''lib -B '../autoconf-2.71'/lib         --cache '' -M -l autoconf-without-aclocal-m4 \
+    -t'AN_OUTPUT:$1: $2		$3' \
+) | LC_ALL=C sort >>lib/autoscan/autoscan.list
+lang=`echo 'lib/m4sugar/m4sh' | sed 's,.*/,,'` \
+  && if test $lang = autoconf; then \
+       lang=autoconf-without-aclocal-m4; \
+     else :; fi \
+  && autom4te_perllibdir='../autoconf-2.71'/lib AUTOM4TE_CFG='lib/autom4te.cfg'         bin/autom4te -B ''lib -B '../autoconf-2.71'/lib         \
+	--language=$lang \
+	--freeze \
+	--output=lib/m4sugar/m4sh.m4f
+restore=: && backupdir=".am$$" && \
+am__cwd=`pwd` && CDPATH="${ZSH_VERSION+.}:" && cd ../autoconf-2.71 && \
+rm -rf $backupdir && mkdir $backupdir && \
+if (/bin/bash '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/autoconf-2.71/build-aux/missing' makeinfo --version) >/dev/null 2>&1; then \
+  for f in ../autoconf-2.71/doc/autoconf.info ../autoconf-2.71/doc/autoconf.info-[0-9] ../autoconf-2.71/doc/autoconf.info-[0-9][0-9] ../autoconf-2.71/doc/autoconf.i[0-9] ../autoconf-2.71/doc/autoconf.i[0-9][0-9]; do \
+    if test -f $f; then mv $f $backupdir; restore=mv; else :; fi; \
+  done; \
+else :; fi && \
+cd "$am__cwd"; \
+if /bin/bash '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/autoconf-2.71/build-aux/missing' makeinfo --no-split  -I doc -I ../autoconf-2.71/doc \
+ -o ../autoconf-2.71/doc/autoconf.info ../autoconf-2.71/doc/autoconf.texi; \
+then \
+  rc=0; \
+  CDPATH="${ZSH_VERSION+.}:" && cd ../autoconf-2.71; \
+else \
+  rc=$?; \
+  CDPATH="${ZSH_VERSION+.}:" && cd ../autoconf-2.71 && \
+  $restore $backupdir/* `echo "./../autoconf-2.71/doc/autoconf.info" | sed 's|[^/]*$||'`; \
+fi; \
+rm -rf $backupdir; exit $rc
+autom4te_perllibdir='../autoconf-2.71'/lib AUTOM4TE_CFG='lib/autom4te.cfg'         bin/autom4te -B ''lib -B '../autoconf-2.71'/lib         --language M4sh --cache '' \
+  --melt ../autoconf-2.71/bin/autoconf.as -o bin/autoconf.in
+rm -f tests/autoconf tests/autoconf.tmp
+rm -f tests/autoheader tests/autoheader.tmp
+input=tests/wrapper.in \
+  && sed -e 's|@wrap_program[@]|autoconf|g' -e 's|@abs_top_srcdir[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/build/../autoconf-2.71|g' -e 's|@abs_top_builddir[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/build|g' -e "s|@configure_input[@]|Generated from $input.|g" tests/wrapper.in >tests/autoconf.tmp
+rm -f tests/autom4te tests/autom4te.tmp
+input=tests/wrapper.in \
+  && sed -e 's|@wrap_program[@]|autoheader|g' -e 's|@abs_top_srcdir[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/build/../autoconf-2.71|g' -e 's|@abs_top_builddir[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/build|g' -e "s|@configure_input[@]|Generated from $input.|g" tests/wrapper.in >tests/autoheader.tmp
+chmod +x tests/autoconf.tmp
+chmod +x tests/autoheader.tmp
+chmod a-w tests/autoconf.tmp
+input=tests/wrapper.in \
+  && sed -e 's|@wrap_program[@]|autom4te|g' -e 's|@abs_top_srcdir[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/build/../autoconf-2.71|g' -e 's|@abs_top_builddir[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/build|g' -e "s|@configure_input[@]|Generated from $input.|g" tests/wrapper.in >tests/autom4te.tmp
+chmod a-w tests/autoheader.tmp
+mv -f tests/autoconf.tmp tests/autoconf
+chmod +x tests/autom4te.tmp
+mv -f tests/autoheader.tmp tests/autoheader
+rm -f tests/autoreconf tests/autoreconf.tmp
+chmod a-w tests/autom4te.tmp
+rm -f tests/autoscan tests/autoscan.tmp
+mv -f tests/autom4te.tmp tests/autom4te
+input=tests/wrapper.in \
+  && sed -e 's|@wrap_program[@]|autoreconf|g' -e 's|@abs_top_srcdir[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/build/../autoconf-2.71|g' -e 's|@abs_top_builddir[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/build|g' -e "s|@configure_input[@]|Generated from $input.|g" tests/wrapper.in >tests/autoreconf.tmp
+rm -f tests/autoupdate tests/autoupdate.tmp
+chmod +x tests/autoreconf.tmp
+input=tests/wrapper.in \
+  && sed -e 's|@wrap_program[@]|autoscan|g' -e 's|@abs_top_srcdir[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/build/../autoconf-2.71|g' -e 's|@abs_top_builddir[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/build|g' -e "s|@configure_input[@]|Generated from $input.|g" tests/wrapper.in >tests/autoscan.tmp
+chmod a-w tests/autoreconf.tmp
+input=tests/wrapper.in \
+  && sed -e 's|@wrap_program[@]|autoupdate|g' -e 's|@abs_top_srcdir[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/build/../autoconf-2.71|g' -e 's|@abs_top_builddir[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/build|g' -e "s|@configure_input[@]|Generated from $input.|g" tests/wrapper.in >tests/autoupdate.tmp
+chmod +x tests/autoscan.tmp
+mv -f tests/autoreconf.tmp tests/autoreconf
+rm -f tests/ifnames tests/ifnames.tmp
+chmod +x tests/autoupdate.tmp
+chmod a-w tests/autoscan.tmp
+chmod a-w tests/autoupdate.tmp
+mv -f tests/autoscan.tmp tests/autoscan
+input=tests/wrapper.in \
+  && sed -e 's|@wrap_program[@]|ifnames|g' -e 's|@abs_top_srcdir[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/build/../autoconf-2.71|g' -e 's|@abs_top_builddir[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/build|g' -e "s|@configure_input[@]|Generated from $input.|g" tests/wrapper.in >tests/ifnames.tmp
+mv -f tests/autoupdate.tmp tests/autoupdate
+chmod +x tests/ifnames.tmp
+chmod a-w tests/ifnames.tmp
+mv -f tests/ifnames.tmp tests/ifnames
+rm -f bin/autoconf bin/autoconf.tmp
+/home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p bin
+srcdir=''; \
+  test -f ./bin/autoconf.in || srcdir=../autoconf-2.71/; \
+  sed -e 's|@SHELL[@]|/bin/bash|g' -e 's|@PERL[@]|/usr/bin/env perl|g' -e 's|@PERL_FLOCK[@]|yes|g' -e 's|@bindir[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/bin|g' -e 's|@pkgdatadir[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr/share/autoconf|g' -e 's|@prefix[@]|/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/recipe-sysroot-native/usr|g' -e 's|@autoconf-name[@]|'`echo autoconf | sed 's,x,x,'`'|g' -e 's|@autoheader-name[@]|'`echo autoheader | sed 's,x,x,'`'|g' -e 's|@autom4te-name[@]|'`echo autom4te | sed 's,x,x,'`'|g' -e 's|@M4[@]|m4|g' -e 's|@M4_DEBUGFILE[@]|--debugfile|g' -e 's|@M4_GNU[@]|--gnu|g' -e 's|@AWK[@]|gawk|g' -e 's|@RELEASE_YEAR[@]|2021|g' -e 's|@VERSION[@]|2.71|g' -e 's|@PACKAGE_NAME[@]|GNU Autoconf|g' -e 's|@configure_input[@]|Generated from bin/autoconf.in; do not edit by hand.|g' ${srcdir}bin/autoconf.in >bin/autoconf.tmp
+chmod +x bin/autoconf.tmp
+chmod a-w bin/autoconf.tmp
+mv bin/autoconf.tmp bin/autoconf
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/autoconf-native/2.71-r0/build'
+DEBUG: Shell function do_compile finished

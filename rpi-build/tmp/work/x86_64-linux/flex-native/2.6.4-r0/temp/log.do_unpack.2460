@@ -1,0 +1,95 @@
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+NOTE: Unpacking /home/ubuntu/yocto/rpi-build/downloads/flex-2.6.4.tar.gz to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/
+DEBUG: Searching for run-ptest in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex-2.6.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex-2.6.4/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex-2.6.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex-2.6.4/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex/run-ptest to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/
+DEBUG: Searching for 0001-tests-add-a-target-for-building-tests-without-runnin.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex-2.6.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex-2.6.4/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex-2.6.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex-2.6.4/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex/0001-tests-add-a-target-for-building-tests-without-runnin.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/
+DEBUG: Searching for disable-tests.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex-2.6.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex-2.6.4/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex-2.6.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex-2.6.4/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex/disable-tests.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/
+DEBUG: Searching for 0001-build-AC_USE_SYSTEM_EXTENSIONS-in-configure.ac.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex-2.6.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex-2.6.4/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex-2.6.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex-2.6.4/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex/0001-build-AC_USE_SYSTEM_EXTENSIONS-in-configure.ac.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/
+DEBUG: Searching for check-funcs.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex-2.6.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex-2.6.4/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex-2.6.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex-2.6.4/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex/check-funcs.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/
+DEBUG: Searching for 0001-Emit-no-line-directives-if-gen_line_dirs-is-false.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex-2.6.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex-2.6.4/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex-2.6.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex-2.6.4/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-devtools/flex/flex/0001-Emit-no-line-directives-if-gen_line_dirs-is-false.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function create_source_date_epoch_stamp
+DEBUG: Newest file found: /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/flex-native/2.6.4-r0/flex-2.6.4/po/da.gmo
+DEBUG: SOURCE_DATE_EPOCH: 1494103102
+DEBUG: Python function create_source_date_epoch_stamp finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

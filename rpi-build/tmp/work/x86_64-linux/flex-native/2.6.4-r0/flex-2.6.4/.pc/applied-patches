@@ -1,0 +1,5 @@
+0001-tests-add-a-target-for-building-tests-without-runnin.patch
+disable-tests.patch
+0001-build-AC_USE_SYSTEM_EXTENSIONS-in-configure.ac.patch
+check-funcs.patch
+0001-Emit-no-line-directives-if-gen_line_dirs-is-false.patch

@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756091046.01 
+autoconf-archive-native-2022.02.11-r0: do_populate_sysroot
+Elapsed time: 1.54 seconds
+utime: 73
+stime: 11
+cutime: 23
+cstime: 13
+IO rchar: 9446087
+IO wchar: 3352135
+IO syscr: 4724
+IO syscw: 504
+IO read_bytes: 0
+IO write_bytes: 720896
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.730144
+rusage ru_stime: 0.114895
+rusage ru_maxrss: 110512
+rusage ru_minflt: 10491
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 656
+rusage ru_nvcsw: 20
+rusage ru_nivcsw: 239
+Child rusage ru_utime: 0.231262
+Child rusage ru_stime: 0.13901
+Child rusage ru_maxrss: 110512
+Child rusage ru_minflt: 8294
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 752
+Child rusage ru_nvcsw: 266
+Child rusage ru_nivcsw: 136
+Status: PASSED 
+Ended: 1756091047.55 

@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090857.78 
+gettext-native-0.21-r0: do_unpack
+Elapsed time: 3.74 seconds
+utime: 33
+stime: 9
+cutime: 103
+cstime: 104
+IO rchar: 149268140
+IO wchar: 244753718
+IO syscr: 14704
+IO syscw: 21673
+IO read_bytes: 24866816
+IO write_bytes: 135516160
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.333263
+rusage ru_stime: 0.099185
+rusage ru_maxrss: 108252
+rusage ru_minflt: 9724
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 72
+rusage ru_nvcsw: 23
+rusage ru_nivcsw: 131
+Child rusage ru_utime: 1.034717
+Child rusage ru_stime: 1.046918
+Child rusage ru_maxrss: 108252
+Child rusage ru_minflt: 5036
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 48568
+Child rusage ru_oublock: 264608
+Child rusage ru_nvcsw: 4602
+Child rusage ru_nivcsw: 2943
+Status: PASSED 
+Ended: 1756090861.52 

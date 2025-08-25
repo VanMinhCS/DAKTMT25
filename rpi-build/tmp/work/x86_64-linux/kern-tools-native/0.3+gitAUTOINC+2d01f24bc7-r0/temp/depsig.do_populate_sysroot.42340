@@ -1,0 +1,30 @@
+OEOuthashBasic
+14
+quilt-native: 3057d956d8a64c8d0c95902855fb8674038582d1c445513dc0b3cc45351763ca
+SSTATE_PKGSPEC=sstate:kern-tools-native:x86_64-linux:0.3+gitAUTOINC+2d01f24bc7:r0:x86_64:10:
+task=populate_sysroot
+drwx                                                                                       .
+drwx                                                                                       ./recipe-sysroot-native
+drwx                                                                                       ./recipe-sysroot-native/sysroot-providers
+-rw-                   17 75b338ec95c59e0325412eab7de7cb3bf86f7fcdc6ebadc9ffcb7208efd3d4ab ./recipe-sysroot-native/sysroot-providers/kern-tools-native
+drwx                                                                                       ./recipe-sysroot-native/usr
+drwx                                                                                       ./recipe-sysroot-native/usr/bin
+-rwx                 1450 d3110768cb0d859aa170f837fe937f81c150d9fcdf7d245a0a0cac06b48f8df2 ./recipe-sysroot-native/usr/bin/get_defconfig
+-rwx                19924 632111f941888d08f73b687ea1fb7fff3e3b9bcdb41048401447e384f289207b ./recipe-sysroot-native/usr/bin/kconf_check
+-rwx               260795 2d06b437d54f4747d6c497e5e7fba52ff430e72fad065e5839b63ece16f3daf4 ./recipe-sysroot-native/usr/bin/kconfiglib.py
+-rwx                 8337 aba9a942fd3e2b7e4498cfe004193db55879c855f005446f81f3f597b9039b87 ./recipe-sysroot-native/usr/bin/kgit
+-rwx                 5167 3dfd7e133debf39c7394061932139db20308f05a571e9e9a653c40562c982347 ./recipe-sysroot-native/usr/bin/kgit-create-buckets
+-rwx                 6858 689e0d079f73ce55fedd588d1899be3eeb0786c60eb068c223ed147b48f05e77 ./recipe-sysroot-native/usr/bin/kgit-meta
+-rwx                19194 07cd8a675a0f494c41881f862d549573298aee89737031c9f4865131470e7166 ./recipe-sysroot-native/usr/bin/kgit-s2q
+-rwx                 4432 e59f0f4e2768022c47cfc4a8577ecc3c576b2ef8b5c5d5786c42b7e09aaae07a ./recipe-sysroot-native/usr/bin/merge_config.sh
+-rwx                10850 3311cd2f5c642ccf35628a4d74d035cff076592423bf119a6c276175c1a3f6b4 ./recipe-sysroot-native/usr/bin/scc
+-rwx                20257 6291693f9f581f6fc96c1bb6972eaa80a02bb036427864de68d439f636f46c37 ./recipe-sysroot-native/usr/bin/spp
+-rwx                50174 dfb57a9c6e6482545624265e18eada12072ace781f3cffc6359ea920d34b0401 ./recipe-sysroot-native/usr/bin/symbol_why.py
+drwx                                                                                       ./recipe-sysroot-native/usr/bin/scc-cmds
+-rwx                  405 669bef490d0ab307d47e12ed23ae4bc6aac00d029710a9ceb433e357c6110f83 ./recipe-sysroot-native/usr/bin/scc-cmds/auto.cmd
+-rwx                 1099 97b28a5a50d99a1baaf60d91a6d3dfad98e5e49e49a826cddc0899d16feeee97 ./recipe-sysroot-native/usr/bin/scc-cmds/branch.cmd
+-rwx                  188 a8aa89219020e14ee07181f555ef25637a33523452a34abae4a8b355e9d76988 ./recipe-sysroot-native/usr/bin/scc-cmds/define.cmd
+-rwx                 3359 823a9b4516d7218a25bcaf9928e8785b88693e28830d1db0a4d7f91191526a1e ./recipe-sysroot-native/usr/bin/scc-cmds/kconf.cmd
+-rwx                   83 6ec87a1b255e3e2ec1aee4f175a6a0cc234e08d26e3006315f1e16ae73636001 ./recipe-sysroot-native/usr/bin/scc-cmds/mark.cmd
+-rwx                  440 4edb2ab298ee1d16ead38982cef444dbc32349563fe461de9d93d4aed599b6fa ./recipe-sysroot-native/usr/bin/scc-cmds/merge.cmd
+-rwx                 1440 58acaa1fa3046fd85de382c7d2418e9d1f81d3c126027733f8523fcf0c570eae ./recipe-sysroot-native/usr/bin/scc-cmds/patch.cmd

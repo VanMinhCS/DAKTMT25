@@ -1,0 +1,126 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are []
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_fetch
+DEBUG: Executing python function base_do_fetch
+DEBUG: Searching for parallel.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/
+DEBUG: Searching for use-pkgconfig.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/
+DEBUG: Searching for run-ptest in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/
+DEBUG: Searching for serial-tests-config.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/
+DEBUG: Searching for 0001-tests-autopoint-3-unset-MAKEFLAGS.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/
+DEBUG: Searching for 0001-init-env.in-do-not-add-C-CXX-parameters.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/
+DEBUG: Searching for mingw.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/
+DEBUG: Searching for 0001-msgmerge-29-Add-executable-file-mode-bits.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/
+DEBUG: Searching for 0001-libtextstyle-fix-builds-with-automake-1.16.4-and-new.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext-0.21/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/gettext/
+    /home/ubuntu/yocto/poky/meta/recipes-core/gettext/files/
+DEBUG: Python function base_do_fetch finished
+DEBUG: Python function do_fetch finished

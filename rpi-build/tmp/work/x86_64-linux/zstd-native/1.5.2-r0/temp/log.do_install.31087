@@ -1,0 +1,59 @@
+DEBUG: Executing shell function do_install
+NOTE: make -j 8 install DESTDIR=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/image
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/git/lib'
+Installing shared library
+Installing includes
+Installing static library
+zstd static and shared library installed
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/git/lib'
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/git/programs'
+Installing binaries
+Installing man pages
+zstd installation completed
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/git/programs'
+NOTE: make -j 8 install DESTDIR=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/image PREFIX=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/usr -C contrib/pzstd
+make: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/git/contrib/pzstd'
+CFLAGS=" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/usr/include -I../../lib -I../../lib/common -I../../programs -I. -DNDEBUG -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/usr/include -O2 -pipe -Wno-deprecated-declarations   " LDFLAGS=" -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/usr/include -O2 -pipe -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/usr/lib                         -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/lib                         -Wl,--enable-new-dtags                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/lib                         -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2 " make -C ../../lib libzstd.a
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/git/lib'
+CC obj/conf_65ba9308c4cf40eff9af780317304550/static/debug.o
+CC obj/conf_65ba9308c4cf40eff9af780317304550/static/entropy_common.o
+CC obj/conf_65ba9308c4cf40eff9af780317304550/static/error_private.o
+CC obj/conf_65ba9308c4cf40eff9af780317304550/static/fse_decompress.o
+CC obj/conf_65ba9308c4cf40eff9af780317304550/static/pool.o
+CC obj/conf_65ba9308c4cf40eff9af780317304550/static/threading.o
+CC obj/conf_65ba9308c4cf40eff9af780317304550/static/xxhash.o
+CC obj/conf_65ba9308c4cf40eff9af780317304550/static/zstd_common.o
+CC obj/conf_65ba9308c4cf40eff9af780317304550/static/zstd_v05.o
+CC obj/conf_65ba9308c4cf40eff9af780317304550/static/zstd_v06.o
+CC obj/conf_65ba9308c4cf40eff9af780317304550/static/zstd_v07.o
+CC obj/conf_65ba9308c4cf40eff9af780317304550/static/fse_compress.o
+CC obj/conf_65ba9308c4cf40eff9af780317304550/static/hist.o
+CC obj/conf_65ba9308c4cf40eff9af780317304550/static/zstd_compress.o
+CC obj/conf_65ba9308c4cf40eff9af780317304550/static/huf_compress.o
+CC obj/conf_65ba9308c4cf40eff9af780317304550/static/zstd_compress_literals.o
+CC obj/conf_65ba9308c4cf40eff9af780317304550/static/zstd_compress_sequences.o
+CC obj/conf_65ba9308c4cf40eff9af780317304550/static/zstd_compress_superblock.o
+CC obj/conf_65ba9308c4cf40eff9af780317304550/static/zstd_double_fast.o
+CC obj/conf_65ba9308c4cf40eff9af780317304550/static/zstd_fast.o
+CC obj/conf_65ba9308c4cf40eff9af780317304550/static/zstd_lazy.o
+CC obj/conf_65ba9308c4cf40eff9af780317304550/static/zstd_ldm.o
+CC obj/conf_65ba9308c4cf40eff9af780317304550/static/zstd_opt.o
+CC obj/conf_65ba9308c4cf40eff9af780317304550/static/zstdmt_compress.o
+CC obj/conf_65ba9308c4cf40eff9af780317304550/static/huf_decompress.o
+CC obj/conf_65ba9308c4cf40eff9af780317304550/static/zstd_ddict.o
+CC obj/conf_65ba9308c4cf40eff9af780317304550/static/zstd_decompress.o
+CC obj/conf_65ba9308c4cf40eff9af780317304550/static/zstd_decompress_block.o
+AS obj/conf_65ba9308c4cf40eff9af780317304550/static/huf_decompress_amd64.o
+CC obj/conf_65ba9308c4cf40eff9af780317304550/static/cover.o
+CC obj/conf_65ba9308c4cf40eff9af780317304550/static/divsufsort.o
+CC obj/conf_65ba9308c4cf40eff9af780317304550/static/fastcover.o
+CC obj/conf_65ba9308c4cf40eff9af780317304550/static/zdict.o
+compiling single-threaded static library 1.5.2
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/git/lib'
+g++  main.o ../../programs/util.o Options.o Pzstd.o SkippableFrame.o ../../lib/libzstd.a           -isystem/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/usr/include -O2 -pipe -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/usr/lib                         -L/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/lib                         -Wl,--enable-new-dtags                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath-link,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/usr/lib                         -Wl,-rpath,/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/lib                         -Wl,-O1 -Wl,--allow-shlib-undefined -Wl,--dynamic-linker=/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2   -pthread -o pzstd
+install -d -m 755 /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/usr/bin/
+install -m 755 pzstd /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/recipe-sysroot-native/usr/bin/pzstd
+make: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/zstd-native/1.5.2-r0/git/contrib/pzstd'
+DEBUG: Shell function do_install finished
+DEBUG: Executing shell function remove_libtool_la
+DEBUG: Shell function remove_libtool_la finished

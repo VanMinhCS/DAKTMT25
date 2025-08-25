@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090999.72 
+zlib-native-1.2.11-r0: do_compile
+Elapsed time: 2.23 seconds
+utime: 26
+stime: 5
+cutime: 777
+cstime: 101
+IO rchar: 27230121
+IO wchar: 1777194
+IO syscr: 7755
+IO syscw: 1048
+IO read_bytes: 0
+IO write_bytes: 1032192
+IO cancelled_write_bytes: 258048
+rusage ru_utime: 0.26356799999999997
+rusage ru_stime: 0.051012999999999996
+rusage ru_maxrss: 109732
+rusage ru_minflt: 4802
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 56
+rusage ru_nvcsw: 41
+rusage ru_nivcsw: 24
+Child rusage ru_utime: 7.778458
+Child rusage ru_stime: 1.011506
+Child rusage ru_maxrss: 105880
+Child rusage ru_minflt: 125794
+Child rusage ru_majflt: 2
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 1960
+Child rusage ru_nvcsw: 610
+Child rusage ru_nivcsw: 2515
+Status: PASSED 
+Ended: 1756091001.95 

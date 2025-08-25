@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090877.97 
+lua-native-5.4.4-r0: do_fetch
+Elapsed time: 6.62 seconds
+utime: 23
+stime: 6
+cutime: 0
+cstime: 2
+IO rchar: 500118
+IO wchar: 424303
+IO syscr: 492
+IO syscw: 672
+IO read_bytes: 4096
+IO write_bytes: 430080
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.2399
+rusage ru_stime: 0.06734
+rusage ru_maxrss: 109648
+rusage ru_minflt: 5612
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 120
+rusage ru_nvcsw: 98
+rusage ru_nivcsw: 85
+Child rusage ru_utime: 0.007833999999999999
+Child rusage ru_stime: 0.026387999999999998
+Child rusage ru_maxrss: 105000
+Child rusage ru_minflt: 1090
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 8
+Child rusage ru_oublock: 720
+Child rusage ru_nvcsw: 72
+Child rusage ru_nivcsw: 78
+Status: PASSED 
+Ended: 1756090884.59 

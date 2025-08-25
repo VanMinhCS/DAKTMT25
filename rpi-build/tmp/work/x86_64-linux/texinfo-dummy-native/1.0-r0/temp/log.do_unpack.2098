@@ -1,0 +1,39 @@
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+DEBUG: Searching for template.py in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-1.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/texinfo-dummy-native/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-1.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/texinfo-dummy-native/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-1.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/texinfo-dummy-native/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-1.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/texinfo-dummy-native/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy/template.py to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/
+DEBUG: Searching for COPYING in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-1.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/texinfo-dummy-native/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-1.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/texinfo-dummy-native/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-1.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/texinfo-dummy-native/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-1.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/texinfo-dummy-native/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy/COPYING to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/texinfo-dummy-native/1.0-r0/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function create_source_date_epoch_stamp
+DEBUG: No tarball or git repo found to determine SOURCE_DATE_EPOCH
+DEBUG: Using SOURCE_DATE_EPOCH_FALLBACK
+DEBUG: SOURCE_DATE_EPOCH: 1302044400
+DEBUG: Python function create_source_date_epoch_stamp finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

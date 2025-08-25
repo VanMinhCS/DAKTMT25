@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090911.84 
+shadow-4.11.1-r0: do_unpack
+Elapsed time: 0.33 seconds
+utime: 15
+stime: 6
+cutime: 15
+cstime: 17
+IO rchar: 24297281
+IO wchar: 39066534
+IO syscr: 2677
+IO syscw: 3527
+IO read_bytes: 147456
+IO write_bytes: 21508096
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.153919
+rusage ru_stime: 0.064133
+rusage ru_maxrss: 109016
+rusage ru_minflt: 9538
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 80
+rusage ru_nvcsw: 24
+rusage ru_nivcsw: 6
+Child rusage ru_utime: 0.153925
+Child rusage ru_stime: 0.173984
+Child rusage ru_maxrss: 109016
+Child rusage ru_minflt: 5125
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 288
+Child rusage ru_oublock: 41928
+Child rusage ru_nvcsw: 700
+Child rusage ru_nivcsw: 22
+Status: PASSED 
+Ended: 1756090912.17 

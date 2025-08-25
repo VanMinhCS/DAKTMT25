@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090914.12 
+update-rc.d-native-0.8-r0: do_install
+Elapsed time: 0.09 seconds
+utime: 21
+stime: 3
+cutime: 0
+cstime: 1
+IO rchar: 138601
+IO wchar: 38974
+IO syscr: 126
+IO syscw: 36
+IO read_bytes: 0
+IO write_bytes: 40960
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.21892099999999998
+rusage ru_stime: 0.033044
+rusage ru_maxrss: 109004
+rusage ru_minflt: 6270
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 64
+rusage ru_nvcsw: 6
+rusage ru_nivcsw: 23
+Child rusage ru_utime: 0.0028339999999999997
+Child rusage ru_stime: 0.014313999999999999
+Child rusage ru_maxrss: 109004
+Child rusage ru_minflt: 1144
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 16
+Child rusage ru_nvcsw: 8
+Child rusage ru_nivcsw: 3
+Status: PASSED 
+Ended: 1756090914.21 

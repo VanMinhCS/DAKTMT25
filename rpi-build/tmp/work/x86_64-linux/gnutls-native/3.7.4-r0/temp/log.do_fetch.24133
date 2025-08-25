@@ -1,0 +1,243 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are []
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_fetch
+DEBUG: Executing python function base_do_fetch
+DEBUG: Searching for arm_eabi.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/
+DEBUG: Searching for CVE-2022-2509.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/
+DEBUG: Searching for CVE-2023-0361.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/
+DEBUG: Searching for CVE-2023-5981.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/
+DEBUG: Searching for CVE-2024-0553.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/
+DEBUG: Searching for CVE-2024-0567.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/
+DEBUG: Searching for CVE-2024-28834.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/
+DEBUG: Searching for CVE-2024-28835.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/
+DEBUG: Searching for CVE-2024-12243.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/
+DEBUG: Searching for CVE-2025-32989.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/
+DEBUG: Searching for 04939b75417cc95b7372c6f208c4bda4579bdc34 in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/
+DEBUG: Searching for 0001-psk-fix-read-buffer-overrun-in-the-pre_shared_key-ex.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/
+DEBUG: Searching for 5477db1bb507a35e8833c758ce344f4b5b246d8e in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/
+DEBUG: Searching for 0001-x509-reject-zero-length-version-in-certificate-reque.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/
+DEBUG: Searching for 3e94dcdff862ef5d6db8b5cc8e59310b5f0cdfe2 in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/
+DEBUG: Searching for CVE-2025-32988.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/
+DEBUG: Searching for CVE-2025-32990.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/
+DEBUG: Searching for CVE-2025-6395.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls-3.7.4/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/gnutls/
+    /home/ubuntu/yocto/poky/meta/recipes-support/gnutls/files/
+DEBUG: Python function base_do_fetch finished
+DEBUG: Python function do_fetch finished

@@ -1,0 +1,31 @@
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+DEBUG: Searching for login.defs_shadow-sysroot in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-sysroot-4.6/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-sysroot/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-sysroot-4.6/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-sysroot/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-sysroot-4.6/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-sysroot/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-sysroot-4.6/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-sysroot/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-sysroot-4.6/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-sysroot/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-sysroot-4.6/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/shadow-sysroot/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-extended/shadow/files/login.defs_shadow-sysroot to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/shadow-sysroot/4.6-r3/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function create_source_date_epoch_stamp
+DEBUG: No tarball or git repo found to determine SOURCE_DATE_EPOCH
+DEBUG: Using SOURCE_DATE_EPOCH_FALLBACK
+DEBUG: SOURCE_DATE_EPOCH: 1302044400
+DEBUG: Python function create_source_date_epoch_stamp finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

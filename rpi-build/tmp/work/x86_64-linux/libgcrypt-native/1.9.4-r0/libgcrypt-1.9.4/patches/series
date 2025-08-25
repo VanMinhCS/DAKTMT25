@@ -1,0 +1,5 @@
+0001-libgcrypt-fix-m4-file-for-oe-core.patch -p1
+0003-tests-bench-slope.c-workaround-ICE-failure-on-mips-w.patch -p1
+0002-libgcrypt-fix-building-error-with-O2-in-sysroot-path.patch -p1
+0004-tests-Makefile.am-fix-undefined-reference-to-pthread.patch -p1
+0001-Makefile.am-add-a-missing-space.patch -p1

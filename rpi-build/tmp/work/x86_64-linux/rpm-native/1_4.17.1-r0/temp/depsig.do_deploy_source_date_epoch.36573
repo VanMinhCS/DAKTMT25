@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:rpm-native:x86_64-linux:4.17.1:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 2c2ef4e0e79b8e006ae9c8bbdd5de875a4166522dbd94db5f215eff085041fc2 ./deploy-source-date-epoch/__source_date_epoch.txt

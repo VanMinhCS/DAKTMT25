@@ -1,0 +1,84 @@
+OEOuthashBasic
+14
+autoconf-native: a082d55df4b7dac9894c5feaf9f362ebbbf3242ae22430b84c4e8dd6f794fd94
+automake-native: 14963faa76d47d1639f6c0b28acf6361fc204ea39070d937e3951fc646a0a957
+gettext-minimal-native: 0d39582068b641490d184ea9f722f819aafcee1d652d8d8c5248ab8e4971ea09
+gnu-config-native: dcfcdd2de1b71130dc89903a2fc775551b0256cdcd7880cbdc731dcb33a59563
+m4-native: 2e220b13b48306f3a02a7bf65e00356873aed6cd266e2e6ce4daa34264a50398
+quilt-native: 3057d956d8a64c8d0c95902855fb8674038582d1c445513dc0b3cc45351763ca
+texinfo-dummy-native: c19dfc74595ada505d502217fe29d7dea1eb64a849a4eeb895b475baa979ac9e
+SSTATE_PKGSPEC=sstate:libtool-native:x86_64-linux:2.4.7:r0:x86_64:10:
+task=populate_sysroot
+drwx                                                                                       .
+drwx                                                                                       ./recipe-sysroot-native
+drwx                                                                                       ./recipe-sysroot-native/sysroot-providers
+-rw-                   14 2b9a7f941ba3dbacc4516534bdaee3ee59b2c9b7cc37eade3bc61e9f8359808b ./recipe-sysroot-native/sysroot-providers/libtool-native
+drwx                                                                                       ./recipe-sysroot-native/usr
+drwx                                                                                       ./recipe-sysroot-native/usr/bin
+-rwx               377638 a9c907c2b26a88906cfe56d5ba763a2051f741bbfbd9c605a60f1572bb4e9d31 ./recipe-sysroot-native/usr/bin/libtool
+-rwx               136741 5ed67f92c79b854913b8787d9ae2f1e98a4554fba56fb2cbe8b8230c4e3d1e1a ./recipe-sysroot-native/usr/bin/libtoolize
+drwx                                                                                       ./recipe-sysroot-native/usr/include
+-rw-                 5720 f48e2f62aa659f3d3c6fa34ae0a806d8bbc3914158ebf90fef726b2fe022c6b4 ./recipe-sysroot-native/usr/include/ltdl.h
+drwx                                                                                       ./recipe-sysroot-native/usr/include/libltdl
+-rw-                 3222 28547b64e68540bcc61399bad2e7383cc7e00e3992d9f26a4e1d34274605941d ./recipe-sysroot-native/usr/include/libltdl/lt_dlloader.h
+-rw-                 3658 2204a2c0fba048899edef6702f05d58f6f4f044b593e94717b8ca374c70374cd ./recipe-sysroot-native/usr/include/libltdl/lt_error.h
+-rw-                 5356 5925e03a6730f6b641af098f692a6711fb04b308c7ee3ebcbbf8f55be8f66ba3 ./recipe-sysroot-native/usr/include/libltdl/lt_system.h
+drwx                                                                                       ./recipe-sysroot-native/usr/lib
+lrwx                                                                                       ./recipe-sysroot-native/usr/lib/libltdl.so -> libltdl.so.7.3.2
+lrwx                                                                                       ./recipe-sysroot-native/usr/lib/libltdl.so.7 -> libltdl.so.7.3.2
+-rwx                47704 13ef14c2793ea5825d889c2ddec339311706c8d3e78a08e3a7de4585e365be5c ./recipe-sysroot-native/usr/lib/libltdl.so.7.3.2
+drwx                                                                                       ./recipe-sysroot-native/usr/share
+drwx                                                                                       ./recipe-sysroot-native/usr/share/aclocal
+-rw-               307149 48a2eea7c6a6ed10afcd783540646ed1ac88169d10f53bf52dddf4c6a23d9b9f ./recipe-sysroot-native/usr/share/aclocal/libtool.m4
+-rw-                 2670 d4f82071a87563a0f41b7a9277d691afb02654d4a37adb37bb9966d5920d8c70 ./recipe-sysroot-native/usr/share/aclocal/ltargz.m4
+-rw-                30061 b82472ffd7c5455e28793fcdcc93ce2f6da05d0461c729a7ba365d9d990fa8e9 ./recipe-sysroot-native/usr/share/aclocal/ltdl.m4
+-rw-                14525 f3d4ed0426501308028dd7690cf343cb280479d637a2ebee6c289ec2e708df3b ./recipe-sysroot-native/usr/share/aclocal/ltoptions.m4
+-rw-                 4395 0896f153a5a40546566028a4272642ae291532f3e65c25fcae950c8812b8c265 ./recipe-sysroot-native/usr/share/aclocal/ltsugar.m4
+-rw-                  714 2a6baf40b64f34234e0b76c7ff62b01a1f6bbf60089f4f74506b49f800ffaf9e ./recipe-sysroot-native/usr/share/aclocal/ltversion.m4
+-rw-                 6151 8533006830e1ea9625fc5e4c060e653eedf9d5464a9b2f5f494244ee272e2e2f ./recipe-sysroot-native/usr/share/aclocal/lt~obsolete.m4
+drwx                                                                                       ./recipe-sysroot-native/usr/share/libtool
+-rw-                26530 dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551 ./recipe-sysroot-native/usr/share/libtool/COPYING.LIB
+-rw-                 5157 2c191dd4476a314b39cfae3c00aac0121bf59963223d12b1f63d5f87f055e6f9 ./recipe-sysroot-native/usr/share/libtool/Makefile.am
+-rw-                56935 d0a9eace3be7fb98f79325d92345dce76aceb720c3e4d1a084e31fa0918f7f61 ./recipe-sysroot-native/usr/share/libtool/Makefile.in
+-rw-                  707 faada42e5c1f83316e0a713adfc1de55f6aad9b5b1b90ced629811b5ee32ef94 ./recipe-sysroot-native/usr/share/libtool/README
+-rw-                40708 78c7bd5888de262f000c634807aa3d476169b245950f6941ae00df643b70f11b ./recipe-sysroot-native/usr/share/libtool/aclocal.m4
+-rw-                 5008 236a73c95d2aa036d19b9e88dc49552639f8b191ed4e0ff2d489897ebdc906f1 ./recipe-sysroot-native/usr/share/libtool/config-h.in
+-rwx               480730 731820528812ae94fe12f0b04ffcb0b1c505e98970df4d411d7bfadc33c0d048 ./recipe-sysroot-native/usr/share/libtool/configure
+-rw-                 2639 120424a23dbac151fe52f04a35ec3253edf07cd98feaa9e9831ffa6a4564e9e8 ./recipe-sysroot-native/usr/share/libtool/configure.ac
+-rw-                 2309 a4d4ea02033c6a5f188c8c696ea87d2244eceef0bb960dffd230b02fc55650f7 ./recipe-sysroot-native/usr/share/libtool/lt__alloc.c
+-rw-                 5907 50bea2c4a4d575bd8c9c2f62562a629f7b383f5e2c8b44acd8b84e3a4b9ac6aa ./recipe-sysroot-native/usr/share/libtool/lt__argz.c
+-rw-                 3028 67dc987558b62698e76629f86cb6f2b174b7644371f879b26e7f28e6d9d9548a ./recipe-sysroot-native/usr/share/libtool/lt__dirent.c
+-rw-                 3624 706bab658de2f5ecdb4703f43e903cf12c51caeda4c3b2be096346a590951ada ./recipe-sysroot-native/usr/share/libtool/lt__strl.c
+-rw-                 6171 4f9aab8d761f9cdcfecb2c341a28036ebfec71798a902b6b3b8e79550fa01d4d ./recipe-sysroot-native/usr/share/libtool/lt_dlloader.c
+-rw-                 2978 a300d10103b071fa09dc088d53280203b70875dd892dbfbaa9b996e6d72f03a4 ./recipe-sysroot-native/usr/share/libtool/lt_error.c
+-rw-                55335 d23f4e29ea8c48cbea78d810795a44347b0c64a8db78d5f82967eff6e7c4d684 ./recipe-sysroot-native/usr/share/libtool/ltdl.c
+-rw-                 5720 f48e2f62aa659f3d3c6fa34ae0a806d8bbc3914158ebf90fef726b2fe022c6b4 ./recipe-sysroot-native/usr/share/libtool/ltdl.h
+-rw-                 5680 1b60a39b2510ba7894ae25267536b724a3b0049acf13eba3c520a3f65e9c06dc ./recipe-sysroot-native/usr/share/libtool/ltdl.mk
+-rw-                 9841 e2b776fe36d7425b77e2f0a7afc9a5d3b895aec1e874793d91727cd08ee13cc6 ./recipe-sysroot-native/usr/share/libtool/slist.c
+drwx                                                                                       ./recipe-sysroot-native/usr/share/libtool/build-aux
+-rwx                 7400 c207b390aac6323062b982214a6c63448e53e6911107993abe96f35fe7a30a18 ./recipe-sysroot-native/usr/share/libtool/build-aux/compile
+-rwx                49348 af8a1922c9b3c240bf2119d4ec0965a0b5ec36b1016017ba66db44b3b53e9cea ./recipe-sysroot-native/usr/share/libtool/build-aux/config.guess
+-rwx                35276 d611751fba98e807c9684d253bb02aa73d6825fe0e0b9ae3cbf258a59171c9b0 ./recipe-sysroot-native/usr/share/libtool/build-aux/config.sub
+-rwx                23568 e44b49f71b265788187993090027193a6cd2b4718f9aa7be34412f537bce6873 ./recipe-sysroot-native/usr/share/libtool/build-aux/depcomp
+-rwx                15358 3d7488bebd0cfc9b5c440c55d5b44f1c6e2e3d3e19894821bae4a27f9307f1d2 ./recipe-sysroot-native/usr/share/libtool/build-aux/install-sh
+-rw-               335456 83d38e648db5cdf4f7732b0ddad591f4da9d004f8a72c8c9fc6ab162deb283f8 ./recipe-sysroot-native/usr/share/libtool/build-aux/ltmain.sh
+-rwx                 6878 a9865db4f39574ff128c0312c367f070d20f81847817021ecce95fd70a610c9d ./recipe-sysroot-native/usr/share/libtool/build-aux/missing
+drwx                                                                                       ./recipe-sysroot-native/usr/share/libtool/libltdl
+-rw-                 2192 1556b92e90ab3e4719176c6ec2550ef6ced8d06870fd3e4d87e8df319c2a96e7 ./recipe-sysroot-native/usr/share/libtool/libltdl/lt__alloc.h
+-rw-                 2238 83d41bd8d1e137c5b53e899a53dc029b54c97034157a7aa5222e29d2572534fc ./recipe-sysroot-native/usr/share/libtool/libltdl/lt__argz_.h
+-rw-                 2536 37548f4559b96b14f38edc8c316a8e03b5451853d457a5f2a08e9d1c59cd99c7 ./recipe-sysroot-native/usr/share/libtool/libltdl/lt__dirent.h
+-rw-                 2827 dbc08244ba1920b5d269129d5026c9ae3d400a80fe20d8247f98595f55c02a5f ./recipe-sysroot-native/usr/share/libtool/libltdl/lt__glibc.h
+-rw-                 4521 31f9d5c39c2a06df45a9cb7b3ba601008b7fcb962d512190b3722fc24bad62b6 ./recipe-sysroot-native/usr/share/libtool/libltdl/lt__private.h
+-rw-                 2002 c86caf11fce08eb0c61f6a776247c4aa5b549035c13e14e79b6973bac6252b42 ./recipe-sysroot-native/usr/share/libtool/libltdl/lt__strl.h
+-rw-                 3222 28547b64e68540bcc61399bad2e7383cc7e00e3992d9f26a4e1d34274605941d ./recipe-sysroot-native/usr/share/libtool/libltdl/lt_dlloader.h
+-rw-                 3658 2204a2c0fba048899edef6702f05d58f6f4f044b593e94717b8ca374c70374cd ./recipe-sysroot-native/usr/share/libtool/libltdl/lt_error.h
+-rw-                 5356 5925e03a6730f6b641af098f692a6711fb04b308c7ee3ebcbbf8f55be8f66ba3 ./recipe-sysroot-native/usr/share/libtool/libltdl/lt_system.h
+-rw-                 3244 641b6509d39d8ace30b34611fb83152b1442439aedabbedffb3d9544ffcc6419 ./recipe-sysroot-native/usr/share/libtool/libltdl/slist.h
+drwx                                                                                       ./recipe-sysroot-native/usr/share/libtool/loaders
+-rw-                 4580 a9c8335ef527c98106f0a61942c871a16c42550fd4066a435d134273b0f3a0fb ./recipe-sysroot-native/usr/share/libtool/loaders/dld_link.c
+-rw-                 7596 8664c6be42f29b5ae131a49a676b1671319d5e6165d2540db8400220c21eaa3e ./recipe-sysroot-native/usr/share/libtool/loaders/dlopen.c
+-rw-                13628 8695af30d3a5127c5d58b062b9ae1560f52698b664b2b35b288babb678bea8a4 ./recipe-sysroot-native/usr/share/libtool/loaders/dyld.c
+-rw-                 4798 6803f7ad806be1454a790bc4774a96757a67ce247bc79d355445058ef4ac31ea ./recipe-sysroot-native/usr/share/libtool/loaders/load_add_on.c
+-rw-                10847 76489948eceba2e88b1320fdf57ffafdff874971abbd1431e6d240e36e9e902f ./recipe-sysroot-native/usr/share/libtool/loaders/loadlibrary.c
+-rw-                 9824 ca4f95d53fe453f80a96a37062a2e2e112ed16d231457d8f4ee8dc911d7615c7 ./recipe-sysroot-native/usr/share/libtool/loaders/preopen.c
+-rw-                 6705 24717017ecba6a99dbab27a70a1e19b55e57ec03b2f74cf9e377d627393855af ./recipe-sysroot-native/usr/share/libtool/loaders/shl_load.c

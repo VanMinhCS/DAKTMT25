@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:libgcrypt-native:x86_64-linux:1.9.4:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 73bed317548bb419e5aa0cb7ea5cc0da7e1930e40c9126d215d6a16524700df2 ./deploy-source-date-epoch/__source_date_epoch.txt

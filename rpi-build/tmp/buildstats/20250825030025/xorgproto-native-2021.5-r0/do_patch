@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090911.98 
+xorgproto-native-2021.5-r0: do_patch
+Elapsed time: 0.06 seconds
+utime: 22
+stime: 2
+cutime: 0
+cstime: 0
+IO rchar: 226102
+IO wchar: 120171
+IO syscr: 161
+IO syscw: 84
+IO read_bytes: 0
+IO write_bytes: 122880
+IO cancelled_write_bytes: 4096
+rusage ru_utime: 0.222074
+rusage ru_stime: 0.020562
+rusage ru_maxrss: 109536
+rusage ru_minflt: 4326
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 112
+rusage ru_nvcsw: 7
+rusage ru_nivcsw: 6
+Child rusage ru_utime: 0.006535999999999999
+Child rusage ru_stime: 0.0033209999999999997
+Child rusage ru_maxrss: 109536
+Child rusage ru_minflt: 833
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 128
+Child rusage ru_nvcsw: 10
+Child rusage ru_nivcsw: 0
+Status: PASSED 
+Ended: 1756090912.04 

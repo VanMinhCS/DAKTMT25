@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756091118.33 
+mpfr-native-4.1.1-r0: do_compile
+Elapsed time: 24.59 seconds
+utime: 37
+stime: 5
+cutime: 5473
+cstime: 1239
+IO rchar: 286540802
+IO wchar: 6805537
+IO syscr: 91926
+IO syscw: 14773
+IO read_bytes: 544768
+IO write_bytes: 4313088
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.37166
+rusage ru_stime: 0.051399
+rusage ru_maxrss: 110848
+rusage ru_minflt: 5304
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 1568
+rusage ru_nvcsw: 506
+rusage ru_nivcsw: 123
+Child rusage ru_utime: 54.73501
+Child rusage ru_stime: 12.394479
+Child rusage ru_maxrss: 106264
+Child rusage ru_minflt: 2344950
+Child rusage ru_majflt: 48
+Child rusage ru_inblock: 1064
+Child rusage ru_oublock: 6856
+Child rusage ru_nvcsw: 19570
+Child rusage ru_nivcsw: 31511
+Status: PASSED 
+Ended: 1756091142.92 

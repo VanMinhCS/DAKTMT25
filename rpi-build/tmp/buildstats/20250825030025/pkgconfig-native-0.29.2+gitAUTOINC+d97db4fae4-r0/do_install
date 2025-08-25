@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756091002.14 
+pkgconfig-native-0.29.2+gitAUTOINC+d97db4fae4-r0: do_install
+Elapsed time: 0.44 seconds
+utime: 27
+stime: 4
+cutime: 28
+cstime: 25
+IO rchar: 4024596
+IO wchar: 812888
+IO syscr: 3382
+IO syscw: 299
+IO read_bytes: 0
+IO write_bytes: 815104
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.27529
+rusage ru_stime: 0.046586999999999996
+rusage ru_maxrss: 109864
+rusage ru_minflt: 6630
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 128
+rusage ru_nvcsw: 58
+rusage ru_nivcsw: 22
+Child rusage ru_utime: 0.283528
+Child rusage ru_stime: 0.25956599999999996
+Child rusage ru_maxrss: 109864
+Child rusage ru_minflt: 37206
+Child rusage ru_majflt: 3
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 1464
+Child rusage ru_nvcsw: 501
+Child rusage ru_nivcsw: 173
+Status: PASSED 
+Ended: 1756091002.59 

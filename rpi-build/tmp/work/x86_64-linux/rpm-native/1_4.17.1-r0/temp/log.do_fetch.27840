@@ -1,0 +1,221 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are []
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_fetch
+DEBUG: Executing python function base_do_fetch
+DEBUG: Trying PREMIRRORS
+DEBUG: For url ['git', 'github.com', '/rpm-software-management/rpm', '', '', OrderedDict([('branch', 'rpm-4.17.x'), ('protocol', 'https')])] comparing ['git', 'sourceware.org', '/git/glibc.git', '', '', OrderedDict()] to ['https', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['git', 'github.com', '/rpm-software-management/rpm', '', '', OrderedDict([('branch', 'rpm-4.17.x'), ('protocol', 'https')])] comparing ['git', 'sourceware.org', '/git/binutils-gdb.git', '', '', OrderedDict()] to ['https', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: Trying Upstream
+DEBUG: Fetcher accessed the network with the command LANG=C git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat clone --bare --mirror https://github.com/rpm-software-management/rpm /home/ubuntu/yocto/rpi-build/downloads/git2/github.com.rpm-software-management.rpm --progress
+DEBUG: Running export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/poky/scripts/native-intercept:/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/rpm-native/1_4.17.1-r0/recipe-sysroot-native/usr/bin/python3-native:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/rpm-native/1_4.17.1-r0/recipe-sysroot-native/usr/bin/x86_64-linux:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/rpm-native/1_4.17.1-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/rpm-native/1_4.17.1-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/rpm-native/1_4.17.1-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/rpm-native/1_4.17.1-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/rpm-native/1_4.17.1-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; LANG=C git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat clone --bare --mirror https://github.com/rpm-software-management/rpm /home/ubuntu/yocto/rpi-build/downloads/git2/github.com.rpm-software-management.rpm --progress
+Cloning into bare repository '/home/ubuntu/yocto/rpi-build/downloads/git2/github.com.rpm-software-management.rpm'...
+remote: Enumerating objects: 165430, done.        
+remote: Counting objects: 100% (302/302), done.        
+remote: Compressing objects:   0% (1/206)        remote: Compressing objects:   1% (3/206)        remote: Compressing objects:   2% (5/206)        remote: Compressing objects:   3% (7/206)        remote: Compressing objects:   4% (9/206)        remote: Compressing objects:   5% (11/206)        remote: Compressing objects:   6% (13/206)        remote: Compressing objects:   7% (15/206)        remote: Compressing objects:   8% (17/206)        remote: Compressing objects:   9% (19/206)        remote: Compressing objects:  10% (21/206)        remote: Compressing objects:  11% (23/206)        remote: Compressing objects:  12% (25/206)        remote: Compressing objects:  13% (27/206)        remote: Compressing objects:  14% (29/206)        remote: Compressing objects:  15% (31/206)        remote: Compressing objects:  16% (33/206)        remote: Compressing objects:  17% (36/206)        remote: Compressing objects:  18% (38/206)        remote: Compressing objects:  19% (40/206)        remote: Compressing objects:  20% (42/206)        remote: Compressing objects:  21% (44/206)        remote: Compressing objects:  22% (46/206)        remote: Compressing objects:  23% (48/206)        remote: Compressing objects:  24% (50/206)        remote: Compressing objects:  25% (52/206)        remote: Compressing objects:  26% (54/206)        remote: Compressing objects:  27% (56/206)        remote: Compressing objects:  28% (58/206)        remote: Compressing objects:  29% (60/206)        remote: Compressing objects:  30% (62/206)        remote: Compressing objects:  31% (64/206)        remote: Compressing objects:  32% (66/206)        remote: Compressing objects:  33% (68/206)        remote: Compressing objects: 100% (206/206), done.        
+Receiving objects:   0% (1/165430)Receiving objects:   0% (1329/165430), 468.01 KiB | 447.00 KiB/sReceiving objects:   1% (1655/165430), 468.01 KiB | 447.00 KiB/sReceiving objects:   2% (3309/165430), 844.01 KiB | 538.00 KiB/sReceiving objects:   2% (3777/165430), 1.23 MiB | 603.00 KiB/s  Receiving objects:   3% (4963/165430), 1.23 MiB | 603.00 KiB/sReceiving objects:   3% (6317/165430), 1.76 MiB | 696.00 KiB/sReceiving objects:   4% (6618/165430), 2.11 MiB | 689.00 KiB/sReceiving objects:   5% (8272/165430), 2.11 MiB | 689.00 KiB/sReceiving objects:   5% (8930/165430), 2.62 MiB | 736.00 KiB/sReceiving objects:   6% (9926/165430), 2.92 MiB | 718.00 KiB/sReceiving objects:   7% (11581/165430), 3.28 MiB | 712.00 KiB/sReceiving objects:   7% (11799/165430), 3.28 MiB | 712.00 KiB/sReceiving objects:   8% (13235/165430), 3.71 MiB | 764.00 KiB/sReceiving objects:   9% (14889/165430), 3.71 MiB | 764.00 KiB/sReceiving objects:  10% (16543/165430), 4.18 MiB | 804.00 KiB/sReceiving objects:  10% (16825/165430), 4.18 MiB | 804.00 KiB/sReceiving objects:  11% (18198/165430), 4.18 MiB | 804.00 KiB/sReceiving objects:  12% (19852/165430), 4.88 MiB | 874.00 KiB/sReceiving objects:  12% (20754/165430), 5.26 MiB | 868.00 KiB/sReceiving objects:  13% (21506/165430), 5.85 MiB | 874.00 KiB/sReceiving objects:  13% (21863/165430), 6.50 MiB | 944.00 KiB/sReceiving objects:  14% (23161/165430), 7.97 MiB | 1.06 MiB/s  Receiving objects:  14% (23209/165430), 7.97 MiB | 1.06 MiB/sReceiving objects:  14% (24231/165430), 9.80 MiB | 1.30 MiB/sReceiving objects:  15% (24815/165430), 9.80 MiB | 1.30 MiB/sReceiving objects:  16% (26469/165430), 10.82 MiB | 1.41 MiB/sReceiving objects:  16% (27353/165430), 11.92 MiB | 1.51 MiB/sReceiving objects:  17% (28124/165430), 11.92 MiB | 1.51 MiB/sReceiving objects:  17% (29010/165430), 14.40 MiB | 1.85 MiB/sReceiving objects:  17% (29765/165430), 17.25 MiB | 2.19 MiB/sReceiving objects:  18% (29778/165430), 17.25 MiB | 2.19 MiB/sReceiving objects:  18% (31299/165430), 18.93 MiB | 2.36 MiB/sReceiving objects:  19% (31432/165430), 18.93 MiB | 2.36 MiB/sReceiving objects:  20% (33086/165430), 20.57 MiB | 2.54 MiB/sReceiving objects:  21% (34741/165430), 20.57 MiB | 2.54 MiB/sReceiving objects:  22% (36395/165430), 20.57 MiB | 2.54 MiB/sReceiving objects:  23% (38049/165430), 22.26 MiB | 2.70 MiB/sReceiving objects:  23% (38605/165430), 22.26 MiB | 2.70 MiB/sReceiving objects:  24% (39704/165430), 22.26 MiB | 2.70 MiB/sReceiving objects:  25% (41358/165430), 24.07 MiB | 2.87 MiB/sReceiving objects:  25% (43004/165430), 26.14 MiB | 3.06 MiB/sReceiving objects:  26% (43012/165430), 26.14 MiB | 3.06 MiB/sReceiving objects:  27% (44667/165430), 28.14 MiB | 3.24 MiB/sReceiving objects:  28% (46321/165430), 30.31 MiB | 3.43 MiB/sReceiving objects:  28% (46640/165430), 30.31 MiB | 3.43 MiB/sReceiving objects:  29% (47975/165430), 32.94 MiB | 3.70 MiB/sReceiving objects:  30% (49629/165430), 32.94 MiB | 3.70 MiB/sReceiving objects:  31% (51284/165430), 32.94 MiB | 3.70 MiB/sReceiving objects:  32% (52938/165430), 36.00 MiB | 4.04 MiB/sReceiving objects:  33% (54592/165430), 36.00 MiB | 4.04 MiB/sReceiving objects:  34% (56247/165430), 36.00 MiB | 4.04 MiB/sReceiving objects:  34% (57615/165430), 36.00 MiB | 4.04 MiB/sReceiving objects:  35% (57901/165430), 36.00 MiB | 4.04 MiB/sReceiving objects:  36% (59555/165430), 36.00 MiB | 4.04 MiB/sReceiving objects:  37% (61210/165430), 39.71 MiB | 4.51 MiB/sReceiving objects:  38% (62864/165430), 39.71 MiB | 4.51 MiB/sReceiving objects:  39% (64518/165430), 39.71 MiB | 4.51 MiB/sReceiving objects:  40% (66172/165430), 39.71 MiB | 4.51 MiB/sReceiving objects:  41% (67827/165430), 43.93 MiB | 5.06 MiB/sReceiving objects:  42% (69481/165430), 43.93 MiB | 5.06 MiB/sReceiving objects:  43% (71135/165430), 43.93 MiB | 5.06 MiB/sReceiving objects:  44% (72790/165430), 43.93 MiB | 5.06 MiB/sReceiving objects:  44% (74198/165430), 43.93 MiB | 5.06 MiB/sReceiving objects:  45% (74444/165430), 43.93 MiB | 5.06 MiB/sReceiving objects:  46% (76098/165430), 43.93 MiB | 5.06 MiB/sReceiving objects:  47% (77753/165430), 43.93 MiB | 5.06 MiB/sReceiving objects:  48% (79407/165430), 43.93 MiB | 5.06 MiB/sReceiving objects:  49% (81061/165430), 48.88 MiB | 5.80 MiB/sReceiving objects:  50% (82715/165430), 48.88 MiB | 5.80 MiB/sReceiving objects:  51% (84370/165430), 54.38 MiB | 6.62 MiB/sReceiving objects:  52% (86024/165430), 54.38 MiB | 6.62 MiB/sReceiving objects:  52% (87486/165430), 54.38 MiB | 6.62 MiB/sReceiving objects:  53% (87678/165430), 54.38 MiB | 6.62 MiB/sReceiving objects:  54% (89333/165430), 54.38 MiB | 6.62 MiB/sReceiving objects:  55% (90987/165430), 54.38 MiB | 6.62 MiB/sReceiving objects:  56% (92641/165430), 54.38 MiB | 6.62 MiB/sReceiving objects:  57% (94296/165430), 54.38 MiB | 6.62 MiB/sReceiving objects:  58% (95950/165430), 60.93 MiB | 7.64 MiB/sReceiving objects:  59% (97604/165430), 60.93 MiB | 7.64 MiB/sReceiving objects:  60% (99258/165430), 67.21 MiB | 8.60 MiB/sReceiving objects:  61% (100913/165430), 67.21 MiB | 8.60 MiB/sReceiving objects:  62% (102567/165430), 67.21 MiB | 8.60 MiB/sReceiving objects:  63% (104221/165430), 67.21 MiB | 8.60 MiB/sReceiving objects:  64% (105876/165430), 67.21 MiB | 8.60 MiB/sReceiving objects:  65% (107530/165430), 67.21 MiB | 8.60 MiB/sReceiving objects:  66% (109184/165430), 67.21 MiB | 8.60 MiB/sReceiving objects:  66% (109928/165430), 67.21 MiB | 8.60 MiB/sReceiving objects:  67% (110839/165430), 67.21 MiB | 8.60 MiB/sReceiving objects:  68% (112493/165430), 67.21 MiB | 8.60 MiB/sReceiving objects:  69% (114147/165430), 67.21 MiB | 8.60 MiB/sReceiving objects:  70% (115801/165430), 67.21 MiB | 8.60 MiB/sReceiving objects:  71% (117456/165430), 67.21 MiB | 8.60 MiB/sReceiving objects:  72% (119110/165430), 67.21 MiB | 8.60 MiB/sReceiving objects:  73% (120764/165430), 75.03 MiB | 9.83 MiB/sReceiving objects:  74% (122419/165430), 75.03 MiB | 9.83 MiB/sReceiving objects:  75% (124073/165430), 75.03 MiB | 9.83 MiB/sReceiving objects:  76% (125727/165430), 75.03 MiB | 9.83 MiB/sReceiving objects:  77% (127382/165430), 75.03 MiB | 9.83 MiB/sReceiving objects:  78% (129036/165430), 75.03 MiB | 9.83 MiB/sReceiving objects:  79% (130690/165430), 75.03 MiB | 9.83 MiB/sReceiving objects:  80% (132344/165430), 75.03 MiB | 9.83 MiB/sReceiving objects:  81% (133999/165430), 75.03 MiB | 9.83 MiB/sReceiving objects:  82% (135653/165430), 75.03 MiB | 9.83 MiB/sReceiving objects:  83% (137307/165430), 75.03 MiB | 9.83 MiB/sReceiving objects:  84% (138962/165430), 83.08 MiB | 11.05 MiB/sReceiving objects:  85% (140616/165430), 83.08 MiB | 11.05 MiB/sReceiving objects:  86% (142270/165430), 83.08 MiB | 11.05 MiB/sReceiving objects:  87% (143925/165430), 83.08 MiB | 11.05 MiB/sReceiving objects:  88% (145579/165430), 83.08 MiB | 11.05 MiB/sReceiving objects:  89% (147233/165430), 83.08 MiB | 11.05 MiB/sReceiving objects:  90% (148887/165430), 83.08 MiB | 11.05 MiB/sReceiving objects:  91% (150542/165430), 83.08 MiB | 11.05 MiB/sReceiving objects:  92% (152196/165430), 83.08 MiB | 11.05 MiB/sReceiving objects:  93% (153850/165430), 83.08 MiB | 11.05 MiB/sReceiving objects:  94% (155505/165430), 83.08 MiB | 11.05 MiB/sReceiving objects:  95% (157159/165430), 83.08 MiB | 11.05 MiB/sReceiving objects:  96% (158813/165430), 83.08 MiB | 11.05 MiB/sReceiving objects:  96% (159585/165430), 83.08 MiB | 11.05 MiB/sReceiving objects:  97% (160468/165430), 83.08 MiB | 11.05 MiB/sReceiving objects:  98% (162122/165430), 83.08 MiB | 11.05 MiB/sReceiving objects:  99% (163776/165430), 83.08 MiB | 11.05 MiB/sremote: Total 165430 (delta 185), reused 97 (delta 96), pack-reused 165128 (from 3)        
+Receiving objects: 100% (165430/165430), 83.08 MiB | 11.05 MiB/sReceiving objects: 100% (165430/165430), 89.31 MiB | 4.03 MiB/s, done.
+Resolving deltas:   0% (0/128671)Resolving deltas:   1% (1287/128671)Resolving deltas:   2% (2574/128671)Resolving deltas:   3% (3861/128671)Resolving deltas:   4% (5147/128671)Resolving deltas:   5% (6434/128671)Resolving deltas:   6% (7721/128671)Resolving deltas:   7% (9007/128671)Resolving deltas:   8% (10294/128671)Resolving deltas:   9% (11581/128671)Resolving deltas:  10% (12868/128671)Resolving deltas:  11% (14154/128671)Resolving deltas:  11% (15035/128671)Resolving deltas:  12% (15441/128671)Resolving deltas:  13% (16728/128671)Resolving deltas:  14% (18014/128671)Resolving deltas:  15% (19301/128671)Resolving deltas:  16% (20588/128671)Resolving deltas:  17% (21875/128671)Resolving deltas:  18% (23161/128671)Resolving deltas:  19% (24448/128671)Resolving deltas:  20% (25735/128671)Resolving deltas:  21% (27021/128671)Resolving deltas:  22% (28308/128671)Resolving deltas:  23% (29595/128671)Resolving deltas:  23% (29649/128671)Resolving deltas:  24% (30882/128671)Resolving deltas:  25% (32168/128671)Resolving deltas:  26% (33455/128671)Resolving deltas:  27% (34742/128671)Resolving deltas:  28% (36028/128671)Resolving deltas:  29% (37315/128671)Resolving deltas:  30% (38602/128671)Resolving deltas:  31% (39889/128671)Resolving deltas:  32% (41175/128671)Resolving deltas:  33% (42462/128671)Resolving deltas:  34% (43749/128671)Resolving deltas:  35% (45035/128671)Resolving deltas:  36% (46322/128671)Resolving deltas:  37% (47609/128671)Resolving deltas:  38% (48895/128671)Resolving deltas:  38% (49231/128671)Resolving deltas:  39% (50182/128671)Resolving deltas:  40% (51469/128671)Resolving deltas:  41% (52756/128671)Resolving deltas:  42% (54042/128671)Resolving deltas:  43% (55329/128671)Resolving deltas:  44% (56616/128671)Resolving deltas:  45% (57902/128671)Resolving deltas:  46% (59189/128671)Resolving deltas:  47% (60476/128671)Resolving deltas:  48% (61763/128671)Resolving deltas:  49% (63049/128671)Resolving deltas:  50% (64336/128671)Resolving deltas:  51% (65623/128671)Resolving deltas:  52% (66909/128671)Resolving deltas:  53% (68196/128671)Resolving deltas:  54% (69483/128671)Resolving deltas:  55% (70770/128671)Resolving deltas:  56% (72056/128671)Resolving deltas:  57% (73343/128671)Resolving deltas:  58% (74630/128671)Resolving deltas:  59% (75916/128671)Resolving deltas:  60% (77203/128671)Resolving deltas:  60% (77935/128671)Resolving deltas:  61% (78490/128671)Resolving deltas:  62% (79777/128671)Resolving deltas:  63% (81063/128671)Resolving deltas:  64% (82350/128671)Resolving deltas:  65% (83637/128671)Resolving deltas:  66% (84923/128671)Resolving deltas:  67% (86210/128671)Resolving deltas:  68% (87497/128671)Resolving deltas:  69% (88783/128671)Resolving deltas:  70% (90070/128671)Resolving deltas:  71% (91357/128671)Resolving deltas:  72% (92644/128671)Resolving deltas:  73% (93930/128671)Resolving deltas:  74% (95217/128671)Resolving deltas:  75% (96504/128671)Resolving deltas:  76% (97790/128671)Resolving deltas:  77% (99077/128671)Resolving deltas:  78% (100364/128671)Resolving deltas:  79% (101651/128671)Resolving deltas:  80% (102937/128671)Resolving deltas:  81% (104224/128671)Resolving deltas:  82% (105511/128671)Resolving deltas:  83% (106797/128671)Resolving deltas:  83% (108065/128671)Resolving deltas:  84% (108084/128671)Resolving deltas:  85% (109371/128671)Resolving deltas:  86% (110658/128671)Resolving deltas:  87% (111944/128671)Resolving deltas:  88% (113231/128671)Resolving deltas:  89% (114518/128671)Resolving deltas:  90% (115804/128671)Resolving deltas:  91% (117091/128671)Resolving deltas:  92% (118378/128671)Resolving deltas:  93% (119665/128671)Resolving deltas:  94% (120951/128671)Resolving deltas:  95% (122238/128671)Resolving deltas:  96% (123525/128671)Resolving deltas:  97% (124811/128671)Resolving deltas:  98% (126098/128671)Resolving deltas:  99% (127385/128671)Resolving deltas: 100% (128671/128671)Resolving deltas: 100% (128671/128671), done.
+DEBUG: Running 'export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/poky/scripts/native-intercept:/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/rpm-native/1_4.17.1-r0/recipe-sysroot-native/usr/bin/python3-native:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/rpm-native/1_4.17.1-r0/recipe-sysroot-native/usr/bin/x86_64-linux:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/rpm-native/1_4.17.1-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/rpm-native/1_4.17.1-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/rpm-native/1_4.17.1-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/rpm-native/1_4.17.1-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/rpm-native/1_4.17.1-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat branch --contains 5bef402da334595ed9302b8bca1acdf5e88bfe11 --list rpm-4.17.x 2> /dev/null | wc -l' in /home/ubuntu/yocto/rpi-build/downloads/git2/github.com.rpm-software-management.rpm
+DEBUG: Running 'export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/poky/scripts/native-intercept:/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/rpm-native/1_4.17.1-r0/recipe-sysroot-native/usr/bin/python3-native:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/rpm-native/1_4.17.1-r0/recipe-sysroot-native/usr/bin/x86_64-linux:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/rpm-native/1_4.17.1-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/rpm-native/1_4.17.1-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/rpm-native/1_4.17.1-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/rpm-native/1_4.17.1-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/rpm-native/1_4.17.1-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat branch --contains 5bef402da334595ed9302b8bca1acdf5e88bfe11 --list rpm-4.17.x 2> /dev/null | wc -l' in /home/ubuntu/yocto/rpi-build/downloads/git2/github.com.rpm-software-management.rpm
+DEBUG: Running 'export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/poky/scripts/native-intercept:/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/rpm-native/1_4.17.1-r0/recipe-sysroot-native/usr/bin/python3-native:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/rpm-native/1_4.17.1-r0/recipe-sysroot-native/usr/bin/x86_64-linux:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/rpm-native/1_4.17.1-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/rpm-native/1_4.17.1-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/rpm-native/1_4.17.1-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/rpm-native/1_4.17.1-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/rpm-native/1_4.17.1-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat branch --contains 5bef402da334595ed9302b8bca1acdf5e88bfe11 --list rpm-4.17.x 2> /dev/null | wc -l' in /home/ubuntu/yocto/rpi-build/downloads/git2/github.com.rpm-software-management.rpm
+DEBUG: Running 'export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/poky/scripts/native-intercept:/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/rpm-native/1_4.17.1-r0/recipe-sysroot-native/usr/bin/python3-native:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/rpm-native/1_4.17.1-r0/recipe-sysroot-native/usr/bin/x86_64-linux:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/rpm-native/1_4.17.1-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/rpm-native/1_4.17.1-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/rpm-native/1_4.17.1-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/rpm-native/1_4.17.1-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/rpm-native/1_4.17.1-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat grep lfs rpm-4.17.x:.gitattributes | wc -l' in /home/ubuntu/yocto/rpi-build/downloads/git2/github.com.rpm-software-management.rpm
+DEBUG: Searching for environment.d-rpm.sh in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/
+DEBUG: Searching for 0001-Do-not-add-an-unsatisfiable-dependency-when-building.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/
+DEBUG: Searching for 0001-Do-not-read-config-files-from-HOME.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/
+DEBUG: Searching for 0001-When-cross-installing-execute-package-scriptlets-wit.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/
+DEBUG: Searching for 0001-Do-not-reset-the-PATH-environment-variable-before-ru.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/
+DEBUG: Searching for 0002-Add-support-for-prefixing-etc-from-RPM_ETCCONFIGDIR-.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/
+DEBUG: Searching for 0001-Do-not-hardcode-lib-rpm-as-the-installation-path-for.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/
+DEBUG: Searching for 0001-Add-a-color-setting-for-mips64_n32-binaries.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/
+DEBUG: Searching for 0001-perl-disable-auto-reqs.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/
+DEBUG: Searching for 0016-rpmscript.c-change-logging-level-around-scriptlets-t.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/
+DEBUG: Searching for 0001-lib-transaction.c-fix-file-conflicts-for-MIPS64-N32.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/
+DEBUG: Searching for 0001-tools-Add-error.h-for-non-glibc-case.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/
+DEBUG: Searching for 0001-docs-do-not-build-manpages-requires-pandoc.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/
+DEBUG: Searching for 0001-build-pack.c-do-not-insert-payloadflags-into-.rpm-me.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/
+DEBUG: Searching for 0001-configure.ac-add-linux-gnux32-variant-to-triplet-han.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm-4.17.1/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/rpm/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/rpm/files/
+DEBUG: Python function base_do_fetch finished
+DEBUG: Python function do_fetch finished

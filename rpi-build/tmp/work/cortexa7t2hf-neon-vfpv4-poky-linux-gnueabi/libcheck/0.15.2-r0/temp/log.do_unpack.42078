@@ -1,0 +1,31 @@
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+NOTE: Unpacking /home/ubuntu/yocto/rpi-build/downloads/check-0.15.2.tar.gz to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libcheck/0.15.2-r0/
+DEBUG: Searching for not-echo-compiler-info-to-check_stdint.h.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/libcheck/libcheck-0.15.2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/libcheck/libcheck/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/libcheck/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/libcheck/libcheck-0.15.2/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/libcheck/libcheck/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/libcheck/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/libcheck/libcheck-0.15.2/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/libcheck/libcheck/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/libcheck/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/libcheck/libcheck-0.15.2/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/libcheck/libcheck/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/libcheck/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/libcheck/libcheck-0.15.2/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/libcheck/libcheck/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/libcheck/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/libcheck/libcheck-0.15.2/
+    /home/ubuntu/yocto/poky/meta/recipes-support/libcheck/libcheck/
+    /home/ubuntu/yocto/poky/meta/recipes-support/libcheck/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-support/libcheck/libcheck/not-echo-compiler-info-to-check_stdint.h.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libcheck/0.15.2-r0/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function create_source_date_epoch_stamp
+DEBUG: Newest file found: /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libcheck/0.15.2-r0/check-0.15.2/checkmk/test/check_checkmk.trs
+DEBUG: SOURCE_DATE_EPOCH: 1596852709
+DEBUG: Python function create_source_date_epoch_stamp finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

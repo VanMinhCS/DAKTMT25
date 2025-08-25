@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090865.90 
+python3-wheel-native-0.37.1-r0: do_deploy_source_date_epoch
+Elapsed time: 0.55 seconds
+utime: 37
+stime: 3
+cutime: 3
+cstime: 3
+IO rchar: 306171
+IO wchar: 144842
+IO syscr: 381
+IO syscw: 108
+IO read_bytes: 0
+IO write_bytes: 114688
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.380084
+rusage ru_stime: 0.036198
+rusage ru_maxrss: 108708
+rusage ru_minflt: 8510
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 184
+rusage ru_nvcsw: 13
+rusage ru_nivcsw: 113
+Child rusage ru_utime: 0.038807
+Child rusage ru_stime: 0.035911
+Child rusage ru_maxrss: 108708
+Child rusage ru_minflt: 4352
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 40
+Child rusage ru_nvcsw: 71
+Child rusage ru_nivcsw: 38
+Status: PASSED 
+Ended: 1756090866.45 

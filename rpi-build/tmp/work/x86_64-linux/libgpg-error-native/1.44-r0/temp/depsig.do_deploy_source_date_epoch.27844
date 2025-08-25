@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:libgpg-error-native:x86_64-linux:1.44:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 2733560da4b973e79ff48f20fc0b3efcccb3ecec030eff9e417949494c27b7d9 ./deploy-source-date-epoch/__source_date_epoch.txt

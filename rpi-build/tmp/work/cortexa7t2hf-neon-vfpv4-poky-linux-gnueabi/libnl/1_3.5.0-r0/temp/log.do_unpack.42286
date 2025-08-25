@@ -1,0 +1,51 @@
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+NOTE: Unpacking /home/ubuntu/yocto/rpi-build/downloads/libnl-3.5.0.tar.gz to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libnl/1_3.5.0-r0/
+DEBUG: Searching for enable-serial-tests.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/libnl/libnl-3.5.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/libnl/libnl/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/libnl/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/libnl/libnl-3.5.0/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/libnl/libnl/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/libnl/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/libnl/libnl-3.5.0/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/libnl/libnl/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/libnl/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/libnl/libnl-3.5.0/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/libnl/libnl/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/libnl/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/libnl/libnl-3.5.0/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/libnl/libnl/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/libnl/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/libnl/libnl-3.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-support/libnl/libnl/
+    /home/ubuntu/yocto/poky/meta/recipes-support/libnl/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-support/libnl/files/enable-serial-tests.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libnl/1_3.5.0-r0/
+DEBUG: Searching for run-ptest in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/libnl/libnl-3.5.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/libnl/libnl/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/libnl/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/libnl/libnl-3.5.0/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/libnl/libnl/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/libnl/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-support/libnl/libnl-3.5.0/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/libnl/libnl/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/libnl/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-support/libnl/libnl-3.5.0/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/libnl/libnl/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/libnl/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-support/libnl/libnl-3.5.0/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/libnl/libnl/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/libnl/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-support/libnl/libnl-3.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-support/libnl/libnl/
+    /home/ubuntu/yocto/poky/meta/recipes-support/libnl/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-support/libnl/files/run-ptest to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libnl/1_3.5.0-r0/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function create_source_date_epoch_stamp
+DEBUG: Newest file found: /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libnl/1_3.5.0-r0/libnl-3.5.0/include/netlink/version.h
+DEBUG: SOURCE_DATE_EPOCH: 1567347567
+DEBUG: Python function create_source_date_epoch_stamp finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

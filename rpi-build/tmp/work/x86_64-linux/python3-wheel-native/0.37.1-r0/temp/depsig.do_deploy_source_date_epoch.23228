@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:python3-wheel-native:x86_64-linux:0.37.1:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 94ee8bbe6b4ef476beeada32276a50623854df20b63db8bbabc008366088362f ./deploy-source-date-epoch/__source_date_epoch.txt

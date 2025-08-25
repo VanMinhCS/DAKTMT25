@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756091072.26 
+popt-native-1.18-r0: do_install
+Elapsed time: 0.38 seconds
+utime: 35
+stime: 4
+cutime: 13
+cstime: 11
+IO rchar: 1185303
+IO wchar: 183528
+IO syscr: 1230
+IO syscw: 197
+IO read_bytes: 0
+IO write_bytes: 184320
+IO cancelled_write_bytes: 4096
+rusage ru_utime: 0.358385
+rusage ru_stime: 0.045313
+rusage ru_maxrss: 110052
+rusage ru_minflt: 6453
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 112
+rusage ru_nvcsw: 37
+rusage ru_nivcsw: 43
+Child rusage ru_utime: 0.13053499999999998
+Child rusage ru_stime: 0.118639
+Child rusage ru_maxrss: 110052
+Child rusage ru_minflt: 16080
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 248
+Child rusage ru_nvcsw: 216
+Child rusage ru_nivcsw: 80
+Status: PASSED 
+Ended: 1756091072.64 

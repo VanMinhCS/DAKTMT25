@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090873.99 
+nettle-native-3.7.3-r0: do_patch
+Elapsed time: 0.54 seconds
+utime: 27
+stime: 5
+cutime: 18
+cstime: 5
+IO rchar: 883650
+IO wchar: 192300
+IO syscr: 1180
+IO syscw: 198
+IO read_bytes: 0
+IO write_bytes: 217088
+IO cancelled_write_bytes: 4096
+rusage ru_utime: 0.271304
+rusage ru_stime: 0.058434
+rusage ru_maxrss: 108920
+rusage ru_minflt: 4268
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 128
+rusage ru_nvcsw: 14
+rusage ru_nivcsw: 92
+Child rusage ru_utime: 0.182893
+Child rusage ru_stime: 0.05828
+Child rusage ru_maxrss: 108920
+Child rusage ru_minflt: 19168
+Child rusage ru_majflt: 3
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 296
+Child rusage ru_nvcsw: 277
+Child rusage ru_nivcsw: 130
+Status: PASSED 
+Ended: 1756090874.53 

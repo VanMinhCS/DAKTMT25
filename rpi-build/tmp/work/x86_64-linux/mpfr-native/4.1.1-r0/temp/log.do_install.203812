@@ -1,0 +1,68 @@
+DEBUG: Executing python function autotools_aclocals
+DEBUG: SITE files ['endian-little', 'common-linux', 'common-glibc', 'bit-64', 'x86_64-linux', 'common']
+DEBUG: Python function autotools_aclocals finished
+DEBUG: Executing shell function do_install
+NOTE: make -j 8 DESTDIR=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/image install
+Making install in doc
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/build/doc'
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/build/doc'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/recipe-sysroot-native/usr/share/doc/mpfr'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/recipe-sysroot-native/usr/share/info'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../../mpfr-4.1.1/doc/FAQ.html '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/recipe-sysroot-native/usr/share/doc/mpfr'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../../mpfr-4.1.1/doc/mpfr.info '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/recipe-sysroot-native/usr/share/info'
+ install-info --info-dir='/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/recipe-sysroot-native/usr/share/info' '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/recipe-sysroot-native/usr/share/info/mpfr.info'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/build/doc'
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/build/doc'
+Making install in src
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/build/src'
+make  install-am
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/build/src'
+make[3]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/build/src'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/recipe-sysroot-native/usr/lib'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/recipe-sysroot-native/usr/include'
+ /bin/bash ../libtool   --mode=install /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c   libmpfr.la '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/recipe-sysroot-native/usr/lib'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 ../../mpfr-4.1.1/src/mpfr.h ../../mpfr-4.1.1/src/mpf2mpfr.h '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/recipe-sysroot-native/usr/include'
+libtool: install: /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c .libs/libmpfr.so.6.1.1 /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/recipe-sysroot-native/usr/lib/libmpfr.so.6.1.1
+libtool: install: (cd /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/recipe-sysroot-native/usr/lib && { ln -s -f libmpfr.so.6.1.1 libmpfr.so.6 || { rm -f libmpfr.so.6 && ln -s libmpfr.so.6.1.1 libmpfr.so.6; }; })
+libtool: install: (cd /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/recipe-sysroot-native/usr/lib && { ln -s -f libmpfr.so.6.1.1 libmpfr.so || { rm -f libmpfr.so && ln -s libmpfr.so.6.1.1 libmpfr.so; }; })
+libtool: install: /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c .libs/libmpfr.lai /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/recipe-sysroot-native/usr/lib/libmpfr.la
+libtool: warning: remember to run 'libtool --finish /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/recipe-sysroot-native/usr/lib'
+make[3]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/build/src'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/build/src'
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/build/src'
+Making install in tests
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/build/tests'
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/build/tests'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/build/tests'
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/build/tests'
+Making install in tune
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/build/tune'
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/build/tune'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/build/tune'
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/build/tune'
+Making install in tools/bench
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/build/tools/bench'
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/build/tools/bench'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/build/tools/bench'
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/build/tools/bench'
+make[1]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/build'
+make[2]: Entering directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/build'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/recipe-sysroot-native/usr/share/doc/mpfr'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/recipe-sysroot-native/usr/lib/pkgconfig'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644 mpfr.pc '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/recipe-sysroot-native/usr/lib/pkgconfig'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/mkdir -p '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/recipe-sysroot-native/usr/share/doc/mpfr/examples'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644  ../mpfr-4.1.1/examples/ReadMe ../mpfr-4.1.1/examples/can_round.c ../mpfr-4.1.1/examples/divworst.c ../mpfr-4.1.1/examples/rndo-add.c ../mpfr-4.1.1/examples/sample.c ../mpfr-4.1.1/examples/threads.c ../mpfr-4.1.1/examples/version.c '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/recipe-sysroot-native/usr/share/doc/mpfr/examples'
+ /home/ubuntu/yocto/rpi-build/tmp/hosttools/install -c -m 644  ../mpfr-4.1.1/AUTHORS ../mpfr-4.1.1/BUGS ../mpfr-4.1.1/COPYING ../mpfr-4.1.1/COPYING.LESSER ../mpfr-4.1.1/NEWS ../mpfr-4.1.1/TODO '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/recipe-sysroot-native/usr/share/doc/mpfr/.'
+make[2]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/build'
+make[1]: Leaving directory '/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/mpfr-native/4.1.1-r0/build'
+DEBUG: Shell function do_install finished
+DEBUG: Executing shell function remove_libtool_la
+DEBUG: Shell function remove_libtool_la finished

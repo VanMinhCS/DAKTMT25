@@ -1,0 +1,9 @@
+do_fetch (2377): log.do_fetch.2377
+do_unpack (2460): log.do_unpack.2460
+do_patch (6115): log.do_patch.6115
+do_deploy_source_date_epoch (7702): log.do_deploy_source_date_epoch.7702
+do_prepare_recipe_sysroot (63533): log.do_prepare_recipe_sysroot.63533
+do_configure (63613): log.do_configure.63613
+do_compile (74374): log.do_compile.74374
+do_install (76241): log.do_install.76241
+do_populate_sysroot (76740): log.do_populate_sysroot.76740

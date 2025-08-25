@@ -1,0 +1,77 @@
+OEOuthashBasic
+14
+gettext-minimal-native: 0d39582068b641490d184ea9f722f819aafcee1d652d8d8c5248ab8e4971ea09
+gnu-config-native: dcfcdd2de1b71130dc89903a2fc775551b0256cdcd7880cbdc731dcb33a59563
+m4-native: 2e220b13b48306f3a02a7bf65e00356873aed6cd266e2e6ce4daa34264a50398
+quilt-native: 3057d956d8a64c8d0c95902855fb8674038582d1c445513dc0b3cc45351763ca
+texinfo-dummy-native: c19dfc74595ada505d502217fe29d7dea1eb64a849a4eeb895b475baa979ac9e
+SSTATE_PKGSPEC=sstate:autoconf-native:x86_64-linux:2.71:r0:x86_64:10:
+task=populate_sysroot
+drwx                                                                                       .
+drwx                                                                                       ./recipe-sysroot-native
+drwx                                                                                       ./recipe-sysroot-native/sysroot-providers
+-rw-                   15 d7889158f10081f702213a43fb4e2ed85b1c0a4d1a609594a6dd91118c89f935 ./recipe-sysroot-native/sysroot-providers/autoconf-native
+drwx                                                                                       ./recipe-sysroot-native/usr
+drwx                                                                                       ./recipe-sysroot-native/usr/bin
+-rwx                15242 640c20362b9a1e74078dda6d6ba160e37f066e8b8a0ea0d9d9967075aa3e5855 ./recipe-sysroot-native/usr/bin/autoconf
+-rwx                 9086 06a704cf0035c689c85dc467878cdf73e2e64b2773695513b69d487ea1ebb649 ./recipe-sysroot-native/usr/bin/autoheader
+-rwx                33518 9f9ef4ba6c402f68dd58ddf9bf4b7f54649bf2e487c77cbb017ddce7b1d074a1 ./recipe-sysroot-native/usr/bin/autom4te
+-rwx                27644 3cc501da3c687b0bc6a23f8dd678b60924fbe0c66d06600c7c77a825b47a6a08 ./recipe-sysroot-native/usr/bin/autoreconf
+-rwx                17248 4b66dd68470f0435d80cdde5d825eea997eb864dca790371a3722dba39678cee ./recipe-sysroot-native/usr/bin/autoscan
+-rwx                34079 5e80e6e496ec370917b0d79b99cb0900ef4055ef56f100981662862c69ae135c ./recipe-sysroot-native/usr/bin/autoupdate
+-rwx                 4216 5380a99a385792f516d4f7182682b0dc990c83430abd6a2333b2656e4604426b ./recipe-sysroot-native/usr/bin/ifnames
+drwx                                                                                       ./recipe-sysroot-native/usr/share
+drwx                                                                                       ./recipe-sysroot-native/usr/share/autoconf
+-rw-                15756 54be5efe708bd5a7b433ab227130c5548221151698d17eb7eb142f640cf291ec ./recipe-sysroot-native/usr/share/autoconf/INSTALL
+-rw-                 5219 3c93c77a8e261c68b34ffbf19942d44f33c2fad7179dc2dc1cee941804b0e9d9 ./recipe-sysroot-native/usr/share/autoconf/autom4te.cfg
+drwx                                                                                       ./recipe-sysroot-native/usr/share/autoconf/Autom4te
+-rw-                 5269 c78080561dee7f87324cfcfe561cf391208742b271b52a1efc1e1debb3228236 ./recipe-sysroot-native/usr/share/autoconf/Autom4te/C4che.pm
+-rw-                14085 51849589b81abcd024da554acd54f0d21c68ea8adece4c70a15fbabb56c3dfe1 ./recipe-sysroot-native/usr/share/autoconf/Autom4te/ChannelDefs.pm
+-rw-                20238 8e6d1e4553e4146bafd7b80b013a1c842e12e8a2ef45859408c2819ba3bf838e ./recipe-sysroot-native/usr/share/autoconf/Autom4te/Channels.pm
+-rw-                 1425 8963081655142fbb342c1a59aa1a6ec891ecab9bee11e6c9be18f7ee9bb1f16c ./recipe-sysroot-native/usr/share/autoconf/Autom4te/Config.pm
+-rw-                 2986 335c632ecd3c4f1b5a3881611bc15047579f9b59bc964ce7aa5fe893fa39dbd5 ./recipe-sysroot-native/usr/share/autoconf/Autom4te/Configure_ac.pm
+-rw-                 8671 de946f01934937b202e183c8eec32cd3038f28f5c2b7792ad5ded81fda808384 ./recipe-sysroot-native/usr/share/autoconf/Autom4te/FileUtils.pm
+-rw-                 8719 e6b74b4b3ffea5b3a25aca348a9f1d10fbc27a00079f3c224b5b3cb1e5605009 ./recipe-sysroot-native/usr/share/autoconf/Autom4te/General.pm
+-rw-                 2283 5c83f1d56bade3387c9bcb29d5dbcdde30b95f101dd06a758e6dc4ab23b1c489 ./recipe-sysroot-native/usr/share/autoconf/Autom4te/Getopt.pm
+-rw-                 2605 efcf5c1f62905a57748b756e7d461921b127a1441b0f4737c7740c2120be649c ./recipe-sysroot-native/usr/share/autoconf/Autom4te/Request.pm
+-rw-                 7461 5705a8bdcb100e0cb2a5fca6f0db19831fb4c8b9fea7658bbd2258a29cb741be ./recipe-sysroot-native/usr/share/autoconf/Autom4te/XFile.pm
+drwx                                                                                       ./recipe-sysroot-native/usr/share/autoconf/autoconf
+-rw-                 3710 05ff2afceee548b40e1c2982fd5d0915507f62eb6bf56d646539540d29fce202 ./recipe-sysroot-native/usr/share/autoconf/autoconf/autoconf.m4
+-rw-               523820 62123d7cb477f3b490555876c914e869fa30c1b467ee412bbdcce39db40811cc ./recipe-sysroot-native/usr/share/autoconf/autoconf/autoconf.m4f
+-rw-                 2753 a4fdae8831fee28d19431cbfe1d641bbbdf03fb963f94c0c373da8eaed49fc9c ./recipe-sysroot-native/usr/share/autoconf/autoconf/autoheader.m4
+-rw-                 2038 ceced7b915652a6a7f807ad98a8ded94d131dbc9cc44994c00a22f210fc7316e ./recipe-sysroot-native/usr/share/autoconf/autoconf/autoscan.m4
+-rw-                 3053 375c8120ebab0808b94524bc5e93c1a5a94557db7a6baec9c6d6cda3c00dcd54 ./recipe-sysroot-native/usr/share/autoconf/autoconf/autotest.m4
+-rw-                 5107 5a15ed67121be5d2116486bc6cc73b6dc8fb95f55f029dad18206669811c88e4 ./recipe-sysroot-native/usr/share/autoconf/autoconf/autoupdate.m4
+-rw-                84455 bcfef2be3f66d0131d83047dd187819be60aace8e9651fd4479a66651798ca29 ./recipe-sysroot-native/usr/share/autoconf/autoconf/c.m4
+-rw-                 8717 2e3d9b2b29fe2c91217b9ee48665b667e517af0fe55e2e953509cfe8050890b5 ./recipe-sysroot-native/usr/share/autoconf/autoconf/erlang.m4
+-rw-                65390 e75835c1da761aa8f166377d5830025c579cfb6e068efc3cf5b0f5eb9cb08d51 ./recipe-sysroot-native/usr/share/autoconf/autoconf/fortran.m4
+-rw-                67093 507e7f670ea637fef4c3a1fc89d825774ea2015406e8006fdea1ccec3dc205ca ./recipe-sysroot-native/usr/share/autoconf/autoconf/functions.m4
+-rw-               115862 1e001e9323dc9bc67e5eb7356696c052a872bf78a963072cbe497f7b2db2d855 ./recipe-sysroot-native/usr/share/autoconf/autoconf/general.m4
+-rw-                 4657 820bf1a0f2116c528a6876a34238d940c98d193bb871875c76e14fc8ef4c8517 ./recipe-sysroot-native/usr/share/autoconf/autoconf/go.m4
+-rw-                31580 bb87b3f10089c1b26462cd01ce11351308272ebd20d407fd93e85406664fd939 ./recipe-sysroot-native/usr/share/autoconf/autoconf/headers.m4
+-rw-                24282 ff7ce2df1f7d68ceaf5a6c30dc8b1a189d1e0a60c9dcec915a8fda34982574c5 ./recipe-sysroot-native/usr/share/autoconf/autoconf/lang.m4
+-rw-                16797 bf3906b973afc0a5e2c7fe19a6f34235b97e486d295c7007da35b7163a7cba28 ./recipe-sysroot-native/usr/share/autoconf/autoconf/libs.m4
+-rw-                 3883 ceac2a3317a272d6630888496bdcef7f9074c48b52161104fdf0ee6dc606b932 ./recipe-sysroot-native/usr/share/autoconf/autoconf/oldnames.m4
+-rw-                32056 4727396b4315201919c8a5c7cae471c0de7004182457c821012283990c450b96 ./recipe-sysroot-native/usr/share/autoconf/autoconf/programs.m4
+-rw-                18353 998973ef1e1659898864a145166824a9564b92f35456761ab2be94e51f8b758c ./recipe-sysroot-native/usr/share/autoconf/autoconf/specific.m4
+-rw-                56024 cb912c7c7fb95024328110d6c289956262da88b67f3b79d079912ee1f51ab829 ./recipe-sysroot-native/usr/share/autoconf/autoconf/status.m4
+-rw-                  231 e33fe22b679667efb6684bcd66ddc4c2817e864838e0b42cf26ef549435027ea ./recipe-sysroot-native/usr/share/autoconf/autoconf/trailer.m4
+-rw-                37059 cc1ed5decff5c40c93f23bfa6850b39cf08ba095dcac50ad1ade790788f29669 ./recipe-sysroot-native/usr/share/autoconf/autoconf/types.m4
+drwx                                                                                       ./recipe-sysroot-native/usr/share/autoconf/autoscan
+-rw-                 9372 7c96f1610abf714b4dde1691d901e93dfbbd879e911b9e65ef0d8bf86bc5099a ./recipe-sysroot-native/usr/share/autoconf/autoscan/autoscan.list
+drwx                                                                                       ./recipe-sysroot-native/usr/share/autoconf/autotest
+-rw-                 1227 a26d1dba167b843474c69178686bc52e4f3f6c8222636fc53afa7aa377f117a4 ./recipe-sysroot-native/usr/share/autoconf/autotest/autotest.m4
+-rw-               132936 e3258808422edb51410077a3580ff765ca97c54af596fb5e2ea3fe9aec27e8fd ./recipe-sysroot-native/usr/share/autoconf/autotest/autotest.m4f
+-rw-                76156 2444269861baa318e365db8210740db04ef22f3fc6383504864d4cdb7a933d8d ./recipe-sysroot-native/usr/share/autoconf/autotest/general.m4
+-rw-                 3054 84904f4404be39a9891685489b2dc5c83bc5b6a3c3e45754fec2c3e58610b17a ./recipe-sysroot-native/usr/share/autoconf/autotest/specific.m4
+drwx                                                                                       ./recipe-sysroot-native/usr/share/autoconf/build-aux
+-rwx                49348 af8a1922c9b3c240bf2119d4ec0965a0b5ec36b1016017ba66db44b3b53e9cea ./recipe-sysroot-native/usr/share/autoconf/build-aux/config.guess
+-rwx                35276 d611751fba98e807c9684d253bb02aa73d6825fe0e0b9ae3cbf258a59171c9b0 ./recipe-sysroot-native/usr/share/autoconf/build-aux/config.sub
+-rwx                15358 3d7488bebd0cfc9b5c440c55d5b44f1c6e2e3d3e19894821bae4a27f9307f1d2 ./recipe-sysroot-native/usr/share/autoconf/build-aux/install-sh
+drwx                                                                                       ./recipe-sysroot-native/usr/share/autoconf/m4sugar
+-rw-                14766 99731e9da2e60ff01e79ef9ad220f36a274975f5a3ada1c23d5b29b2d9a0a87d ./recipe-sysroot-native/usr/share/autoconf/m4sugar/foreach.m4
+-rw-                78639 ba506145ef860fc557cc018cec83212ece20f9a854f6950ce554ebb222ab761f ./recipe-sysroot-native/usr/share/autoconf/m4sugar/m4sh.m4
+-rw-                73817 3d2e25cbe4cbeed25a7aaf182d4512414ba44b3361650e1a0d79f14f4f535418 ./recipe-sysroot-native/usr/share/autoconf/m4sugar/m4sh.m4f
+-rw-               123141 91eaa6054b7b85a9ddea2f7e67c81d57302f127a0d10e7838a976890d99709d9 ./recipe-sysroot-native/usr/share/autoconf/m4sugar/m4sugar.m4
+-rw-                31054 d04344fc9f3ab7c5e35e70fb69603a7ea1857e021d8380275418945ab8ea15bb ./recipe-sysroot-native/usr/share/autoconf/m4sugar/m4sugar.m4f
+-rw-                  524 5570a158601ff1a43a8af5eaed1615e6f677f0944548b8bfc9ba673ed93d3a0c ./recipe-sysroot-native/usr/share/autoconf/m4sugar/version.m4

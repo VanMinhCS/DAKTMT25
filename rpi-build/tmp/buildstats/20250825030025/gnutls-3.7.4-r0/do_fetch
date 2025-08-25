@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090927.41 
+gnutls-3.7.4-r0: do_fetch
+Elapsed time: 0.09 seconds
+utime: 17
+stime: 4
+cutime: 0
+cstime: 0
+IO rchar: 87025
+IO wchar: 100710
+IO syscr: 37
+IO syscw: 84
+IO read_bytes: 0
+IO write_bytes: 73728
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.178724
+rusage ru_stime: 0.04572
+rusage ru_maxrss: 110004
+rusage ru_minflt: 4154
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 144
+rusage ru_nvcsw: 1
+rusage ru_nivcsw: 2
+Child rusage ru_utime: 0.0
+Child rusage ru_stime: 0.0
+Child rusage ru_maxrss: 0
+Child rusage ru_minflt: 0
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 0
+Child rusage ru_nvcsw: 0
+Child rusage ru_nivcsw: 0
+Status: PASSED 
+Ended: 1756090927.50 

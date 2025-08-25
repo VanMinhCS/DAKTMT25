@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090865.23 
+libxcrypt-4.4.33-r0: do_unpack
+Elapsed time: 1.19 seconds
+utime: 20
+stime: 6
+cutime: 29
+cstime: 21
+IO rchar: 4398317
+IO wchar: 2194162
+IO syscr: 1764
+IO syscw: 412
+IO read_bytes: 1617920
+IO write_bytes: 2691072
+IO cancelled_write_bytes: 8192
+rusage ru_utime: 0.200981
+rusage ru_stime: 0.060294
+rusage ru_maxrss: 108060
+rusage ru_minflt: 9663
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 80
+rusage ru_nvcsw: 36
+rusage ru_nivcsw: 78
+Child rusage ru_utime: 0.290626
+Child rusage ru_stime: 0.213918
+Child rusage ru_maxrss: 108060
+Child rusage ru_minflt: 16536
+Child rusage ru_majflt: 23
+Child rusage ru_inblock: 3160
+Child rusage ru_oublock: 5176
+Child rusage ru_nvcsw: 70
+Child rusage ru_nivcsw: 140
+Status: PASSED 
+Ended: 1756090866.42 

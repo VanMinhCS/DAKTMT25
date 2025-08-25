@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:gnu-config-native:x86_64-linux:20211108+gitAUTOINC+191bcb948f:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 a285e96fbef22a181a16a5149e6cf873d4e3c60ced7efd46ff261b5049a0ad7f ./deploy-source-date-epoch/__source_date_epoch.txt

@@ -1,0 +1,25 @@
+OEOuthashBasic
+14
+autoconf-native: a082d55df4b7dac9894c5feaf9f362ebbbf3242ae22430b84c4e8dd6f794fd94
+automake-native: 14963faa76d47d1639f6c0b28acf6361fc204ea39070d937e3951fc646a0a957
+gettext-minimal-native: 0d39582068b641490d184ea9f722f819aafcee1d652d8d8c5248ab8e4971ea09
+gnu-config-native: dcfcdd2de1b71130dc89903a2fc775551b0256cdcd7880cbdc731dcb33a59563
+libtool-native: edf42e87001d7a64879d4959f5b66885251d0230f2a9095a0fb57a5e3f9993fb
+m4-native: 2e220b13b48306f3a02a7bf65e00356873aed6cd266e2e6ce4daa34264a50398
+quilt-native: 3057d956d8a64c8d0c95902855fb8674038582d1c445513dc0b3cc45351763ca
+texinfo-dummy-native: c19dfc74595ada505d502217fe29d7dea1eb64a849a4eeb895b475baa979ac9e
+SSTATE_PKGSPEC=sstate:pkgconfig-native:x86_64-linux:0.29.2+gitAUTOINC+d97db4fae4:r0:x86_64:10:
+task=populate_sysroot
+drwx                                                                                       .
+drwx                                                                                       ./recipe-sysroot-native
+drwx                                                                                       ./recipe-sysroot-native/sysroot-providers
+-rw-                   16 95511e6f235c3ca22f87af261767073b0a6a74ab368b82ae04b2ad6bef41bafd ./recipe-sysroot-native/sysroot-providers/pkgconfig-native
+drwx                                                                                       ./recipe-sysroot-native/usr
+drwx                                                                                       ./recipe-sysroot-native/usr/bin
+-rwx               597136 1684c2d5c1d4c29c2edc6158c1726ed3cefef7cfebdd23289bcd358e94f8e5df ./recipe-sysroot-native/usr/bin/pkg-config
+-rwx                  870 c425c0d02e19c6baf020d9739f0a64c3c35660bdc3470c1fb1227cc0bb63870b ./recipe-sysroot-native/usr/bin/pkg-config-esdk
+-rwx                  226 2ca7a5147a6c30d358a98e1c9653c918d62d60f6f88216fe5d95a4ed3c9ec24d ./recipe-sysroot-native/usr/bin/pkg-config-native
+-rwx               597136 1684c2d5c1d4c29c2edc6158c1726ed3cefef7cfebdd23289bcd358e94f8e5df ./recipe-sysroot-native/usr/bin/x86_64-pc-linux-gnu-pkg-config
+drwx                                                                                       ./recipe-sysroot-native/usr/share
+drwx                                                                                       ./recipe-sysroot-native/usr/share/aclocal
+-rw-                10244 3de62c5d767491e2a1ef51df737715c0d409a4a70d7cba6bda499e090e468da2 ./recipe-sysroot-native/usr/share/aclocal/pkg.m4

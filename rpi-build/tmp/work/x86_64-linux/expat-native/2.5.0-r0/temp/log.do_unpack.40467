@@ -1,0 +1,305 @@
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+NOTE: Unpacking /home/ubuntu/yocto/rpi-build/downloads/expat-2.5.0.tar.bz2 to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/
+DEBUG: Searching for run-ptest in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/run-ptest to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/
+DEBUG: Searching for CVE-2024-28757.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/CVE-2024-28757.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/
+DEBUG: Searching for CVE-2023-52426-001.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/CVE-2023-52426-001.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/
+DEBUG: Searching for CVE-2023-52426-002.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/CVE-2023-52426-002.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/
+DEBUG: Searching for CVE-2023-52426-003.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/CVE-2023-52426-003.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/
+DEBUG: Searching for CVE-2023-52426-004.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/CVE-2023-52426-004.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/
+DEBUG: Searching for CVE-2023-52426-005.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/CVE-2023-52426-005.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/
+DEBUG: Searching for CVE-2023-52426-006.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/CVE-2023-52426-006.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/
+DEBUG: Searching for CVE-2023-52426-007.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/CVE-2023-52426-007.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/
+DEBUG: Searching for CVE-2023-52426-008.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/CVE-2023-52426-008.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/
+DEBUG: Searching for CVE-2023-52426-009.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/CVE-2023-52426-009.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/
+DEBUG: Searching for CVE-2023-52426-010.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/CVE-2023-52426-010.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/
+DEBUG: Searching for CVE-2023-52426-011.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/CVE-2023-52426-011.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/
+DEBUG: Searching for CVE-2024-45490-0001.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/CVE-2024-45490-0001.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/
+DEBUG: Searching for CVE-2024-45490-0002.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/CVE-2024-45490-0002.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/
+DEBUG: Searching for CVE-2024-45490-0003.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/CVE-2024-45490-0003.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/
+DEBUG: Searching for CVE-2024-45490-0004.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/CVE-2024-45490-0004.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/
+DEBUG: Searching for CVE-2024-45491.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/CVE-2024-45491.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/
+DEBUG: Searching for CVE-2024-45492.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/CVE-2024-45492.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/
+DEBUG: Searching for CVE-2024-50602-01.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/CVE-2024-50602-01.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/
+DEBUG: Searching for CVE-2024-50602-02.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat-2.5.0/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/
+    /home/ubuntu/yocto/poky/meta/recipes-core/expat/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/expat/expat/CVE-2024-50602-02.patch to /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function create_source_date_epoch_stamp
+DEBUG: Newest file found: /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/expat-native/2.5.0-r0/expat-2.5.0/expat_config.h
+DEBUG: SOURCE_DATE_EPOCH: 1666712098
+DEBUG: Python function create_source_date_epoch_stamp finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

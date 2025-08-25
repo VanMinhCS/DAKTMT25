@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090912.88 
+shadow-native-4.11.1-r0: do_patch
+Elapsed time: 0.78 seconds
+utime: 21
+stime: 2
+cutime: 34
+cstime: 31
+IO rchar: 3190220
+IO wchar: 339174
+IO syscr: 4900
+IO syscw: 549
+IO read_bytes: 0
+IO write_bytes: 352256
+IO cancelled_write_bytes: 4096
+rusage ru_utime: 0.21231899999999998
+rusage ru_stime: 0.028581
+rusage ru_maxrss: 109844
+rusage ru_minflt: 4403
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 136
+rusage ru_nvcsw: 45
+rusage ru_nivcsw: 5
+Child rusage ru_utime: 0.349359
+Child rusage ru_stime: 0.313337
+Child rusage ru_maxrss: 109844
+Child rusage ru_minflt: 86585
+Child rusage ru_majflt: 12
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 552
+Child rusage ru_nvcsw: 1002
+Child rusage ru_nivcsw: 85
+Status: PASSED 
+Ended: 1756090913.65 

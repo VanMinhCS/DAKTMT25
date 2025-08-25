@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090839.43 
+autoconf-native-2.71-r0: do_deploy_source_date_epoch
+Elapsed time: 0.31 seconds
+utime: 41
+stime: 5
+cutime: 4
+cstime: 2
+IO rchar: 314405
+IO wchar: 141327
+IO syscr: 381
+IO syscw: 106
+IO read_bytes: 0
+IO write_bytes: 114688
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.42006299999999996
+rusage ru_stime: 0.056546
+rusage ru_maxrss: 108044
+rusage ru_minflt: 8249
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 184
+rusage ru_nvcsw: 15
+rusage ru_nivcsw: 75
+Child rusage ru_utime: 0.040295
+Child rusage ru_stime: 0.027083
+Child rusage ru_maxrss: 108044
+Child rusage ru_minflt: 4347
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 40
+Child rusage ru_nvcsw: 80
+Child rusage ru_nivcsw: 21
+Status: PASSED 
+Ended: 1756090839.74 

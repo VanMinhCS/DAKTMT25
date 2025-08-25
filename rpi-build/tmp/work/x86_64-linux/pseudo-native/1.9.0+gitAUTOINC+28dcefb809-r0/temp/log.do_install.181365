@@ -1,0 +1,15 @@
+DEBUG: Executing shell function do_install
+NOTE: make -j 8 DESTDIR=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/image RPATH=-Wl,--rpath=XORIGIN/../../../sqlite3-native/usr/lib/ LIB=lib/pseudo/lib$(MARK64) install
+mkdir -p /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/lib/pseudo/lib64
+mkdir -p /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/bin
+mkdir -p /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/var/pseudo
+cp lib/pseudo/lib64/libpseudo.so /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/lib/pseudo/lib64
+cp bin/pseudo bin/pseudodb bin/pseudolog  /home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/bin
+:
+/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/bin/pseudo: RUNPATH=XORIGIN/../../../sqlite3-native/usr/lib/:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/lib:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/lib
+/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/image/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/bin/pseudo: new RUNPATH: $ORIGIN/../../../sqlite3-native/usr/lib/:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/usr/lib:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/pseudo-native/1.9.0+gitAUTOINC+28dcefb809-r0/recipe-sysroot-native/lib
+NOTE: Building/installing only 64-bit libpseudo.so for pseudo-native.
+NOTE: If you need to run 32-bit executables, ensure that NO32LIBS is set to 0.
+DEBUG: Shell function do_install finished
+DEBUG: Executing shell function remove_libtool_la
+DEBUG: Shell function remove_libtool_la finished

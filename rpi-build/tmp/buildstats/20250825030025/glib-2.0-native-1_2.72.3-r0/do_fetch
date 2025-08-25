@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090876.36 
+glib-2.0-native-1_2.72.3-r0: do_fetch
+Elapsed time: 1.05 seconds
+utime: 45
+stime: 8
+cutime: 2
+cstime: 4
+IO rchar: 5070752
+IO wchar: 5107697
+IO syscr: 1075
+IO syscw: 7188
+IO read_bytes: 1683456
+IO write_bytes: 5005312
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.450414
+rusage ru_stime: 0.08923299999999999
+rusage ru_maxrss: 114332
+rusage ru_minflt: 6152
+rusage ru_majflt: 1
+rusage ru_inblock: 400
+rusage ru_oublock: 216
+rusage ru_nvcsw: 108
+rusage ru_nivcsw: 218
+Child rusage ru_utime: 0.020437999999999998
+Child rusage ru_stime: 0.042855
+Child rusage ru_maxrss: 105160
+Child rusage ru_minflt: 1076
+Child rusage ru_majflt: 27
+Child rusage ru_inblock: 2888
+Child rusage ru_oublock: 9560
+Child rusage ru_nvcsw: 94
+Child rusage ru_nivcsw: 78
+Status: PASSED 
+Ended: 1756090877.42 

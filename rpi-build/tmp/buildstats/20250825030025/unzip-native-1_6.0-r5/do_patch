@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090855.19 
+unzip-native-1_6.0-r5: do_patch
+Elapsed time: 7.56 seconds
+utime: 25
+stime: 10
+cutime: 235
+cstime: 81
+IO rchar: 11167536
+IO wchar: 3298688
+IO syscr: 13390
+IO syscw: 2008
+IO read_bytes: 0
+IO write_bytes: 3280896
+IO cancelled_write_bytes: 4096
+rusage ru_utime: 0.259616
+rusage ru_stime: 0.10560599999999999
+rusage ru_maxrss: 108572
+rusage ru_minflt: 4202
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 168
+rusage ru_nvcsw: 111
+rusage ru_nivcsw: 123
+Child rusage ru_utime: 2.3520339999999997
+Child rusage ru_stime: 0.811933
+Child rusage ru_maxrss: 108572
+Child rusage ru_minflt: 242634
+Child rusage ru_majflt: 10
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 6240
+Child rusage ru_nvcsw: 3440
+Child rusage ru_nivcsw: 1516
+Status: PASSED 
+Ended: 1756090862.75 

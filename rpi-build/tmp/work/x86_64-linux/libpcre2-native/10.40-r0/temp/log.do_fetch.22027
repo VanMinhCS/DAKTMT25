@@ -1,0 +1,22 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are []
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_fetch
+DEBUG: Executing python function base_do_fetch
+DEBUG: Searching for CVE-2022-41409.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-support/libpcre/libpcre2-10.40/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/libpcre/libpcre2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/libpcre/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-support/libpcre/libpcre2-10.40/
+    /home/ubuntu/yocto/poky/meta/recipes-support/libpcre/libpcre2/
+    /home/ubuntu/yocto/poky/meta/recipes-support/libpcre/files/
+    /home/ubuntu/yocto/poky/meta/recipes-support/libpcre/libpcre2-10.40/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/libpcre/libpcre2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/libpcre/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-support/libpcre/libpcre2-10.40/
+    /home/ubuntu/yocto/poky/meta/recipes-support/libpcre/libpcre2/
+    /home/ubuntu/yocto/poky/meta/recipes-support/libpcre/files/
+DEBUG: Python function base_do_fetch finished
+DEBUG: Python function do_fetch finished

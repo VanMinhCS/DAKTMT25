@@ -1,0 +1,27 @@
+OEOuthashBasic
+14
+quilt-native: 3057d956d8a64c8d0c95902855fb8674038582d1c445513dc0b3cc45351763ca
+SSTATE_PKGSPEC=sstate:gettext-minimal-native:x86_64-linux:0.21:r0:x86_64:10:
+task=populate_sysroot
+drwx                                                                                       .
+drwx                                                                                       ./recipe-sysroot-native
+drwx                                                                                       ./recipe-sysroot-native/sysroot-providers
+-rw-                   22 aafa838a35f4c1f72422515263b1ed987077a42ac32de1f0d16dd982d01437be ./recipe-sysroot-native/sysroot-providers/gettext-minimal-native
+drwx                                                                                       ./recipe-sysroot-native/usr
+drwx                                                                                       ./recipe-sysroot-native/usr/share
+drwx                                                                                       ./recipe-sysroot-native/usr/share/aclocal
+-rw-                14488 6b8ca63d019cf362cfeb9d4b52e7d431b4feb14d5f3f03f97bef824319c0375b ./recipe-sysroot-native/usr/share/aclocal/gettext.m4
+-rw-                22432 e57eed3ec16c8f4c3555469e1defe954a55ddcb45d3de4022f811f2cd3428f8a ./recipe-sysroot-native/usr/share/aclocal/host-cpu-c-abi.m4
+-rw-                 9731 45d19e622dd2710126b3bd1376597a461309f26409be3bc0a640d5aabfc7edb8 ./recipe-sysroot-native/usr/share/aclocal/iconv.m4
+-rw-                 3229 fa6e64ba32baf3288d18c332fc4cc3746fc52de51a908d6fe8ed65a50445815f ./recipe-sysroot-native/usr/share/aclocal/intlmacosx.m4
+-rw-                 5370 55d2a7427d8486e457b4a03c577299bf18116d98b9c8e58a1879f75ec10a0388 ./recipe-sysroot-native/usr/share/aclocal/lib-ld.m4
+-rw-                34802 e9fd2728210c10668902329281cfa8430285180e964acc103f8c1a9a0e2c5f4f ./recipe-sysroot-native/usr/share/aclocal/lib-link.m4
+-rw-                11944 7acf0b725120cdbe81415333685d196baea274c18aa8ad0380616498a1fe1fb6 ./recipe-sysroot-native/usr/share/aclocal/lib-prefix.m4
+-rw-                 1234 f20554b3126292f1b1282ad31f219f52abe520e7ac53782944f54cc901e5c7d7 ./recipe-sysroot-native/usr/share/aclocal/nls.m4
+-rw-                18831 2b0014754884aa7aaa581a9dd848ca83e3420781ad76ed2bef8a733e811ea112 ./recipe-sysroot-native/usr/share/aclocal/po.m4
+-rw-                 3090 9a3f23956f09b5555d37c657513316001f7d6de4bad0af531384fdf533f327e0 ./recipe-sysroot-native/usr/share/aclocal/progtest.m4
+drwx                                                                                       ./recipe-sysroot-native/usr/share/gettext
+-rwx                18574 9153320951eac143ec6e2715fe660f0eb842a5a058bcbfef98870d114ed6f07a ./recipe-sysroot-native/usr/share/gettext/config.rpath
+drwx                                                                                       ./recipe-sysroot-native/usr/share/gettext/po
+-rw-                19571 57598157a99797e01050c095625a6904feedf196d06259101f424521a88494e0 ./recipe-sysroot-native/usr/share/gettext/po/Makefile.in.in
+-rw-                  720 d582513385c800f75224f4041fbff207053d4229be6038c6810af382420ac362 ./recipe-sysroot-native/usr/share/gettext/po/remove-potcdate.sin

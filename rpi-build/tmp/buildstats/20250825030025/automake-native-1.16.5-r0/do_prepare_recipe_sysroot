@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090915.61 
+automake-native-1.16.5-r0: do_prepare_recipe_sysroot
+Elapsed time: 0.05 seconds
+utime: 20
+stime: 2
+cutime: 0
+cstime: 0
+IO rchar: 281118
+IO wchar: 233796
+IO syscr: 159
+IO syscw: 98
+IO read_bytes: 0
+IO write_bytes: 253952
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.203374
+rusage ru_stime: 0.020752
+rusage ru_maxrss: 109816
+rusage ru_minflt: 4187
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 152
+rusage ru_nvcsw: 2
+rusage ru_nivcsw: 0
+Child rusage ru_utime: 0.001692
+Child rusage ru_stime: 0.005732999999999999
+Child rusage ru_maxrss: 109688
+Child rusage ru_minflt: 567
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 344
+Child rusage ru_nvcsw: 7
+Child rusage ru_nivcsw: 0
+Status: PASSED 
+Ended: 1756090915.65 

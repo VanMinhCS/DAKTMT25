@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090985.47 
+mpfr-native-4.1.1-r0: do_patch
+Elapsed time: 0.06 seconds
+utime: 16
+stime: 3
+cutime: 0
+cstime: 0
+IO rchar: 225193
+IO wchar: 116800
+IO syscr: 158
+IO syscw: 78
+IO read_bytes: 0
+IO write_bytes: 122880
+IO cancelled_write_bytes: 4096
+rusage ru_utime: 0.16708599999999998
+rusage ru_stime: 0.034274
+rusage ru_maxrss: 110320
+rusage ru_minflt: 4263
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 112
+rusage ru_nvcsw: 6
+rusage ru_nivcsw: 4
+Child rusage ru_utime: 0.008048
+Child rusage ru_stime: 0.003955
+Child rusage ru_maxrss: 110320
+Child rusage ru_minflt: 830
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 128
+Child rusage ru_nvcsw: 11
+Child rusage ru_nivcsw: 2
+Status: PASSED 
+Ended: 1756090985.52 

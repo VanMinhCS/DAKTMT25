@@ -1,0 +1,4 @@
+@set UPDATED 25 August 2025
+@set UPDATED-MONTH August 2025
+@set EDITION 2.71
+@set VERSION 2.71

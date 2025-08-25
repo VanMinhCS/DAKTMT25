@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090838.04 
+texinfo-dummy-native-1.0-r0: do_configure
+Elapsed time: 0.10 seconds
+utime: 17
+stime: 3
+cutime: 0
+cstime: 0
+IO rchar: 94738
+IO wchar: 57111
+IO syscr: 188
+IO syscw: 46
+IO read_bytes: 0
+IO write_bytes: 69632
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.17668999999999999
+rusage ru_stime: 0.038785
+rusage ru_maxrss: 108108
+rusage ru_minflt: 4709
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 128
+rusage ru_nvcsw: 2
+rusage ru_nivcsw: 39
+Child rusage ru_utime: 0.001127
+Child rusage ru_stime: 0.00855
+Child rusage ru_maxrss: 103964
+Child rusage ru_minflt: 562
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 8
+Child rusage ru_nvcsw: 5
+Child rusage ru_nivcsw: 9
+Status: PASSED 
+Ended: 1756090838.14 

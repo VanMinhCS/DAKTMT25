@@ -1,0 +1,31 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are []
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_fetch
+DEBUG: Executing python function base_do_fetch
+DEBUG: Trying PREMIRRORS
+DEBUG: For url ['http', 'downloads.xiph.org', '/releases/ogg/libogg-1.3.5.tar.xz', '', '', OrderedDict()] comparing ['git', 'sourceware.org', '/git/glibc.git', '', '', OrderedDict()] to ['https', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['http', 'downloads.xiph.org', '/releases/ogg/libogg-1.3.5.tar.xz', '', '', OrderedDict()] comparing ['git', 'sourceware.org', '/git/binutils-gdb.git', '', '', OrderedDict()] to ['https', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: Trying Upstream
+DEBUG: Fetching http://downloads.xiph.org/releases/ogg/libogg-1.3.5.tar.xz using command '/usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/libogg-1.3.5.tar.xz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'http://downloads.xiph.org/releases/ogg/libogg-1.3.5.tar.xz''
+DEBUG: Fetcher accessed the network with the command /usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/libogg-1.3.5.tar.xz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'http://downloads.xiph.org/releases/ogg/libogg-1.3.5.tar.xz'
+DEBUG: Running export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libogg/1.3.5-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libogg/1.3.5-r0/recipe-sysroot/usr/bin/crossscripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libogg/1.3.5-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libogg/1.3.5-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libogg/1.3.5-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/libogg/1.3.5-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; /usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/libogg-1.3.5.tar.xz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'http://downloads.xiph.org/releases/ogg/libogg-1.3.5.tar.xz' --progress=dot -v
+--2025-08-25 03:02:14--  http://downloads.xiph.org/releases/ogg/libogg-1.3.5.tar.xz
+Resolving downloads.xiph.org (downloads.xiph.org)... 140.211.166.31, 140.211.166.31, 140.211.166.31, ...
+Connecting to downloads.xiph.org (downloads.xiph.org)|140.211.166.31|:80... connected.
+HTTP request sent, awaiting response... 302 Moved Temporarily
+Location: https://ftp.osuosl.org/pub/xiph/releases/ogg/libogg-1.3.5.tar.xz [following]
+--2025-08-25 03:02:15--  https://ftp.osuosl.org/pub/xiph/releases/ogg/libogg-1.3.5.tar.xz
+Resolving ftp.osuosl.org (ftp.osuosl.org)... 64.50.236.52, 64.50.233.100, 140.211.166.134, ...
+Connecting to ftp.osuosl.org (ftp.osuosl.org)|64.50.236.52|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 429076 (419K) [application/x-xz]
+Saving to: ‘/home/ubuntu/yocto/rpi-build/downloads/libogg-1.3.5.tar.xz.tmp’
+
+
+2025-08-25 03:02:19 (189 KB/s) - ‘/home/ubuntu/yocto/rpi-build/downloads/libogg-1.3.5.tar.xz.tmp’ saved [429076/429076]
+
+DEBUG: Python function base_do_fetch finished
+DEBUG: Python function do_fetch finished

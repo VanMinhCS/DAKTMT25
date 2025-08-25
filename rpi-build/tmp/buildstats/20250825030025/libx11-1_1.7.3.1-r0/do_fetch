@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090905.18 
+libx11-1_1.7.3.1-r0: do_fetch
+Elapsed time: 10.89 seconds
+utime: 27
+stime: 4
+cutime: 2
+cstime: 3
+IO rchar: 1999355
+IO wchar: 1960457
+IO syscr: 1572
+IO syscw: 2789
+IO read_bytes: 0
+IO write_bytes: 1941504
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.275761
+rusage ru_stime: 0.041158
+rusage ru_maxrss: 111172
+rusage ru_minflt: 5707
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 144
+rusage ru_nvcsw: 203
+rusage ru_nivcsw: 64
+Child rusage ru_utime: 0.020416999999999998
+Child rusage ru_stime: 0.032512
+Child rusage ru_maxrss: 105208
+Child rusage ru_minflt: 1089
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 0
+Child rusage ru_oublock: 3648
+Child rusage ru_nvcsw: 235
+Child rusage ru_nivcsw: 78
+Status: PASSED 
+Ended: 1756090916.07 

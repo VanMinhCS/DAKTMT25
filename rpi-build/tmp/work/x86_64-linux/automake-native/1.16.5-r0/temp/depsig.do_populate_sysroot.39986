@@ -1,0 +1,137 @@
+OEOuthashBasic
+14
+autoconf-native: a082d55df4b7dac9894c5feaf9f362ebbbf3242ae22430b84c4e8dd6f794fd94
+gettext-minimal-native: 0d39582068b641490d184ea9f722f819aafcee1d652d8d8c5248ab8e4971ea09
+gnu-config-native: dcfcdd2de1b71130dc89903a2fc775551b0256cdcd7880cbdc731dcb33a59563
+m4-native: 2e220b13b48306f3a02a7bf65e00356873aed6cd266e2e6ce4daa34264a50398
+quilt-native: 3057d956d8a64c8d0c95902855fb8674038582d1c445513dc0b3cc45351763ca
+texinfo-dummy-native: c19dfc74595ada505d502217fe29d7dea1eb64a849a4eeb895b475baa979ac9e
+SSTATE_PKGSPEC=sstate:automake-native:x86_64-linux:1.16.5:r0:x86_64:10:
+task=populate_sysroot
+drwx                                                                                       .
+drwx                                                                                       ./recipe-sysroot-native
+drwx                                                                                       ./recipe-sysroot-native/sysroot-providers
+-rw-                   15 584d2ab7ccfa8e0db21b82f8d507eca131da7210a1a0c293c4ffe3bed0ad99b2 ./recipe-sysroot-native/sysroot-providers/automake-native
+drwx                                                                                       ./recipe-sysroot-native/usr
+drwx                                                                                       ./recipe-sysroot-native/usr/bin
+-rwx                36081 74f04a1e008ab1cb61f756ae73a4c84b813160c27a706a09048909a112a25120 ./recipe-sysroot-native/usr/bin/aclocal
+-rwx                36081 74f04a1e008ab1cb61f756ae73a4c84b813160c27a706a09048909a112a25120 ./recipe-sysroot-native/usr/bin/aclocal-1.16
+-rwx               262376 4a3a473da126ce80011f2c4e3e62cac6573819105877856185e4a2aadc19235b ./recipe-sysroot-native/usr/bin/automake
+-rwx               262376 4a3a473da126ce80011f2c4e3e62cac6573819105877856185e4a2aadc19235b ./recipe-sysroot-native/usr/bin/automake-1.16
+drwx                                                                                       ./recipe-sysroot-native/usr/share
+drwx                                                                                       ./recipe-sysroot-native/usr/share/aclocal
+-rw-                  368 c66ef355b4ae47c43f59701cfd38bb9573ddd6a84d9033eac52ff422762562a7 ./recipe-sysroot-native/usr/share/aclocal/README
+drwx                                                                                       ./recipe-sysroot-native/usr/share/aclocal-1.16
+-rw-                 1617 f5ffff4db74e1d536a31480cd763ef6e91a3c48a13df2412cca8fb6dc1005ae0 ./recipe-sysroot-native/usr/share/aclocal-1.16/amversion.m4
+-rw-                 2066 dd74133aa8b24c754d0fb92e7a3f07ead4db696498aa4e7015db35dc0db69d52 ./recipe-sysroot-native/usr/share/aclocal-1.16/ar-lib.m4
+-rw-                  767 881d9e707e31525d53e715b0fba589c67737a306330da12d2fdd928e6dc47cb5 ./recipe-sysroot-native/usr/share/aclocal-1.16/as.m4
+-rw-                 2407 06bc191af50cfcfcaa7dc27f26323158f804ebf0740a40ebaad83e2d5f395e09 ./recipe-sysroot-native/usr/share/aclocal-1.16/auxdir.m4
+-rw-                 1030 f586bfdfe98671e9f7b1b696be6f718ea3c7b1c919d63989f633268d515ccfc9 ./recipe-sysroot-native/usr/share/aclocal-1.16/cond-if.m4
+-rw-                 1036 2d7052c88290f1c263a6d7e81e95ad1aa5249faf216156f68cdd51af3ce499f7 ./recipe-sysroot-native/usr/share/aclocal-1.16/cond.m4
+-rw-                 7281 8902372e1be4b6687a6924e5cbb71149d5604f6b5b00bcf3db4e511ed299401f ./recipe-sysroot-native/usr/share/aclocal-1.16/depend.m4
+-rw-                 2772 69c78dbc03c9513e7638f12914d60f12329da97c090e50d776b46a37e2223d0f ./recipe-sysroot-native/usr/share/aclocal-1.16/depout.m4
+-rw-                  906 c9136d2e27f646953e9b068ac7574ae40f2c867b77f6f024736a0f964c7bcd49 ./recipe-sysroot-native/usr/share/aclocal-1.16/dmalloc.m4
+-rw-                  738 3a0189d9563501e6a16bb9b5da006d2a40d3cee131f43c167ed8f6ea5eb7cf6f ./recipe-sysroot-native/usr/share/aclocal-1.16/extra-recurs.m4
+-rw-                  649 dc0d6022705abf92a3a875a740c0d5a62e91a717e31f6ffbc0591628ecc0dc2f ./recipe-sysroot-native/usr/share/aclocal-1.16/gcj.m4
+-rw-                 8426 dfaee61f8fc76387439d7117c7c39a9b04216557405b9e1f7474f453413f54b3 ./recipe-sysroot-native/usr/share/aclocal-1.16/init.m4
+-rw-                  681 0e535b0a40529f7cacb8e3d662443146f82346291a80a60488128c7152979bf2 ./recipe-sysroot-native/usr/share/aclocal-1.16/install-sh.m4
+-rw-                  641 9a32ded001acb05e756a0379a7433bf299ce188119f37248490ec475b38cff1d ./recipe-sysroot-native/usr/share/aclocal-1.16/lead-dot.m4
+-rw-                  689 9bf4c67cb88e8af859d08901dfdb394d9a58583ce62b25bbd69ce3a4557db6d5 ./recipe-sysroot-native/usr/share/aclocal-1.16/lex.m4
+-rw-                 2152 c4a023cbb9153791496c93661829556bb73f9b89563a1a0f48b9333baf74d009 ./recipe-sysroot-native/usr/share/aclocal-1.16/lispdir.m4
+-rw-                 1656 8ab0bb0d57dad5bac8553963560cbeb94af15426d1a449fee2718aeae869aed0 ./recipe-sysroot-native/usr/share/aclocal-1.16/maintainer.m4
+-rw-                 1434 45568aa389aab80005651e4d09d5f067bb024cd53efb07f59cf730e773c653c1 ./recipe-sysroot-native/usr/share/aclocal-1.16/make.m4
+-rw-                 1052 2210c760450c277967328aff49241369f1c3efe44d4b0a31ade3ef8b807699a9 ./recipe-sysroot-native/usr/share/aclocal-1.16/missing.m4
+-rw-                 1349 a0224d026d451fccdad0f368445b04b2a689f2a24f741c4310c3bf3f7d153efd ./recipe-sysroot-native/usr/share/aclocal-1.16/mkdirp.m4
+-rw-                 1008 2fa06554712ba43c11e3c0a0d6f1be27eaea32ea474839c96018edc014bff21f ./recipe-sysroot-native/usr/share/aclocal-1.16/obsolete.m4
+-rw-                 1090 9564a9d373687034d864cabaad75265c1b073b024e5bddbaeb7cb687d1d8921d ./recipe-sysroot-native/usr/share/aclocal-1.16/options.m4
+-rw-                 1691 047f9494a7e4ecb51caea4de65a3c03afd964c961f00a5e06c51074325a7be64 ./recipe-sysroot-native/usr/share/aclocal-1.16/prog-cc-c-o.m4
+-rw-                13474 7a87b32965a378662c551787ab6b301a108c6555114244396a3423a84ad37b4b ./recipe-sysroot-native/usr/share/aclocal-1.16/python.m4
+-rw-                  718 5327131fd27b14e9b2850f88ad0a1ebf7b994c2ed9a42c2970f4a2c254427b20 ./recipe-sysroot-native/usr/share/aclocal-1.16/runlog.m4
+-rw-                  819 da5c9afac4f99e5b2474d165c12f5c91e5f4ddaee993f7bce6a35cb4524295e6 ./recipe-sysroot-native/usr/share/aclocal-1.16/sanity.m4
+-rw-                 1911 9606325986958adda8c7137d400934c23d9c0a81268a548db43181333ed3e73f ./recipe-sysroot-native/usr/share/aclocal-1.16/silent.m4
+-rw-                 1392 70c7b64527f043263578ef055e0aabccf8cd93346f633c16ead9d88db8377e9a ./recipe-sysroot-native/usr/share/aclocal-1.16/strip.m4
+-rw-                  675 d4ebf7a592fc0dea1081c7f21758cdb731f944ef4ee46e76c2d9736081dc8424 ./recipe-sysroot-native/usr/share/aclocal-1.16/substnot.m4
+-rw-                 4471 c925c561cb562510d61c136048d05107a18ec9e4eb1a14efc4fcd4ff5d8ca293 ./recipe-sysroot-native/usr/share/aclocal-1.16/tar.m4
+-rw-                  836 6cd3846f4f9e7e81899bcb6c9e572e2d170ab1355d1dfd4a6f7f104943b845aa ./recipe-sysroot-native/usr/share/aclocal-1.16/upc.m4
+-rw-                 1884 859c52138a6acea27aa70a10606691bd7f91377f7c9a42ed5fcc040632285643 ./recipe-sysroot-native/usr/share/aclocal-1.16/vala.m4
+drwx                                                                                       ./recipe-sysroot-native/usr/share/aclocal-1.16/internal
+-rw-                  667 a3cf2769de5bb2f7d9e2ad382fa3edf5fa8bcfe62b856940ce7d9564f821b451 ./recipe-sysroot-native/usr/share/aclocal-1.16/internal/ac-config-macro-dirs.m4
+drwx                                                                                       ./recipe-sysroot-native/usr/share/automake-1.16
+-rw-                35149 3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986 ./recipe-sysroot-native/usr/share/automake-1.16/COPYING
+-rw-                15766 edebc46c7d07258a20170050d9595ce4e630f5d584a4eb00220bb90c8997a31b ./recipe-sysroot-native/usr/share/automake-1.16/INSTALL
+-rwx                 5875 84416b321e061e716c917c0f733079c050781588d0381d7dfb6cc9aefd7b0f37 ./recipe-sysroot-native/usr/share/automake-1.16/ar-lib
+-rwx                 7400 c207b390aac6323062b982214a6c63448e53e6911107993abe96f35fe7a30a18 ./recipe-sysroot-native/usr/share/automake-1.16/compile
+-rwx                49348 af8a1922c9b3c240bf2119d4ec0965a0b5ec36b1016017ba66db44b3b53e9cea ./recipe-sysroot-native/usr/share/automake-1.16/config.guess
+-rwx                35276 d611751fba98e807c9684d253bb02aa73d6825fe0e0b9ae3cbf258a59171c9b0 ./recipe-sysroot-native/usr/share/automake-1.16/config.sub
+-rwx                23568 e44b49f71b265788187993090027193a6cd2b4718f9aa7be34412f537bce6873 ./recipe-sysroot-native/usr/share/automake-1.16/depcomp
+-rwx                15358 3d7488bebd0cfc9b5c440c55d5b44f1c6e2e3d3e19894821bae4a27f9307f1d2 ./recipe-sysroot-native/usr/share/automake-1.16/install-sh
+-rwx                 6106 d2cdc464a268dfa3039f3c7f32f3d0901f8be3dab26645abe45a1a25c05a5a20 ./recipe-sysroot-native/usr/share/automake-1.16/mdate-sh
+-rwx                 6878 a9865db4f39574ff128c0312c367f070d20f81847817021ecce95fd70a610c9d ./recipe-sysroot-native/usr/share/automake-1.16/missing
+-rwx                 3514 42262b72fea21c2b40e283498d74c3fd704a11292da195e813896cebd1528b91 ./recipe-sysroot-native/usr/share/automake-1.16/mkinstalldirs
+-rwx                 5234 70be023f8bfc85f74344da2ed0739ea95ec18bfcb18cd7cc4063234463de63e8 ./recipe-sysroot-native/usr/share/automake-1.16/py-compile
+-rwx                19461 52f1896f456d0108be7db7a0dc56620e4a3c4842616ede6125a46cc10a75c918 ./recipe-sysroot-native/usr/share/automake-1.16/tap-driver.sh
+-rwx                 4879 08ff8986c3a0ce8bf32d25ec7e4752ffbce9c89589f018836c97a08b6573ac2c ./recipe-sysroot-native/usr/share/automake-1.16/test-driver
+-rw-               374230 1d33f69c72e9bcd880fd02f2153c6475fc887042ae87569256cd8be009ce83b4 ./recipe-sysroot-native/usr/share/automake-1.16/texinfo.tex
+-rwx                 6860 3f064d6a73ee59ba5c0e611a3223adc36d64cca41f7e97dfb048589780f5cb02 ./recipe-sysroot-native/usr/share/automake-1.16/ylwrap
+drwx                                                                                       ./recipe-sysroot-native/usr/share/automake-1.16/Automake
+-rw-                14085 8dc84a7ca9af0eee18db36ce1b631840ae92812baa97cb62cd3b1939e814b5ef ./recipe-sysroot-native/usr/share/automake-1.16/Automake/ChannelDefs.pm
+-rw-                20238 17e42cf78d48b031c56a3a534504b42a47c6d3be191a7852951e3b879a514584 ./recipe-sysroot-native/usr/share/automake-1.16/Automake/Channels.pm
+-rw-                15177 5e4c754d02db5a21ca3361c09f44e7003c5be6bc09b446f5982c30dd626eaf9f ./recipe-sysroot-native/usr/share/automake-1.16/Automake/Condition.pm
+-rw-                 1541 da4ce7b8870c4872e16f0e95ea2bdac69da97ac3b5ac91985afa1d27f177fe03 ./recipe-sysroot-native/usr/share/automake-1.16/Automake/Config.pm
+-rw-                 2986 258e4d45491ea00175c918a9e420fbaf22cc2c8c0e0c4fdbd0c68d5c58dd4bbd ./recipe-sysroot-native/usr/share/automake-1.16/Automake/Configure_ac.pm
+-rw-                14333 2069dcfcc5a1a54e95968e728b16cb90a34729900175056b9337f948293aaa80 ./recipe-sysroot-native/usr/share/automake-1.16/Automake/DisjConditions.pm
+-rw-                 8671 352b3f8249739806e17a24e996f6297055a7aa8348aa8910c0f79c09b42c2aca ./recipe-sysroot-native/usr/share/automake-1.16/Automake/FileUtils.pm
+-rw-                 2023 c0ef7dabe6a318b1930bcc07d9caa7e8c4ca0d351ca3d10288fa945d983b8bc9 ./recipe-sysroot-native/usr/share/automake-1.16/Automake/General.pm
+-rw-                 2283 cff5454537770fd6d266d3da6d46fc306bb374f10388635612ab8017b1752e2e ./recipe-sysroot-native/usr/share/automake-1.16/Automake/Getopt.pm
+-rw-                 4162 d2a99d94e2867259d9bd0ec7079135fc096cc795a44995b4a7cb7dee1de9bb01 ./recipe-sysroot-native/usr/share/automake-1.16/Automake/Item.pm
+-rw-                 2006 a0b7d0c9f8a7003eb848f25a1288c7440122b1f759da4cb047cabb551018c959 ./recipe-sysroot-native/usr/share/automake-1.16/Automake/ItemDef.pm
+-rw-                 2841 e0b2c6ac106a3263547dffa470943743721c1c7d717573c20b91b893ea250fcb ./recipe-sysroot-native/usr/share/automake-1.16/Automake/Language.pm
+-rw-                 5542 fdbb34020376e730ee5441272264136663b1c0051a661f4f338b923e7a84f17b ./recipe-sysroot-native/usr/share/automake-1.16/Automake/Location.pm
+-rw-                11424 b630e7a0f86fca8ff8045c9576b56fed7a97e61c9735902cf7a0f2db7072224a ./recipe-sysroot-native/usr/share/automake-1.16/Automake/Options.pm
+-rw-                24103 8cbf823ae28054cc13fae3870dc3a8e608509a01caacc06e4f0ed8df1cffa76d ./recipe-sysroot-native/usr/share/automake-1.16/Automake/Rule.pm
+-rw-                 2288 cffdb6eb753e1308c6ab87df0b23773c71c42d11b575ec7add3f8d057bed9b73 ./recipe-sysroot-native/usr/share/automake-1.16/Automake/RuleDef.pm
+-rw-                 8566 55d06996ecec96a51517097fe2d18fd91baefb7629b36d5ac7d74e0fa54b92bf ./recipe-sysroot-native/usr/share/automake-1.16/Automake/VarDef.pm
+-rw-                45957 b9cfd97b955c201f8a596134bbd66d091c21473982f8e1cd2cecef90982c530f ./recipe-sysroot-native/usr/share/automake-1.16/Automake/Variable.pm
+-rw-                 3901 ba4a6dbd16b72afd476e83bd3f147b0e7b8ce64f6f710306b52b571b0adf086a ./recipe-sysroot-native/usr/share/automake-1.16/Automake/Version.pm
+-rw-                 3738 7a014ea1465af8c49aee3039ad093a7bfa8e3f64c5baf5b0a5cc7fcb84a3f355 ./recipe-sysroot-native/usr/share/automake-1.16/Automake/Wrap.pm
+-rw-                 7461 5bc99c64e6a41c698667cffbe784bde79c6a045272862b9885db8138e45374f2 ./recipe-sysroot-native/usr/share/automake-1.16/Automake/XFile.pm
+drwx                                                                                       ./recipe-sysroot-native/usr/share/automake-1.16/am
+-rw-                22441 b3844af1202d46013cb3ecfa04d8d8a02b35709410efbf0764414e2ad9f51c39 ./recipe-sysroot-native/usr/share/automake-1.16/am/check.am
+-rw-                 2196 bc353f793df8e6c900f46b83b7f516b8d788adfb22212e083440790f29f7f42b ./recipe-sysroot-native/usr/share/automake-1.16/am/check2.am
+-rw-                  819 1f37f2a76ff5bc0a0cbe5a67a8a9671253ff8fc75c8e663ece9709ea5249f30f ./recipe-sysroot-native/usr/share/automake-1.16/am/clean-hdr.am
+-rw-                 2332 1acbc550654e08656f7851e9c5653216568c5a949c63272cadeb1d6c3bd7dcb8 ./recipe-sysroot-native/usr/share/automake-1.16/am/clean.am
+-rw-                 1011 0b2fe479512684d984bb108b9cd6b7b681dd31f9b37e57bc0f1f39a8f659d384 ./recipe-sysroot-native/usr/share/automake-1.16/am/compile.am
+-rw-                 6877 0fc02113875aca37a3cee53eb7dded51d2ac92b2b712b99524d40ebae7438023 ./recipe-sysroot-native/usr/share/automake-1.16/am/configure.am
+-rw-                 3399 da29683ae8ab1e9382b720fa56a6b5f6857d87d55ce7361b44429a5ffbe80e8b ./recipe-sysroot-native/usr/share/automake-1.16/am/data.am
+-rw-                 3672 a19940c09d7b72a70d96144c09dc611a034990834b5e0abd267e8a4ac2453f4a ./recipe-sysroot-native/usr/share/automake-1.16/am/dejagnu.am
+-rw-                 1190 3095ff5a4253b330ff78791b3e387ef2640e962bde93f47675d49d4e2e638c44 ./recipe-sysroot-native/usr/share/automake-1.16/am/depend.am
+-rw-                 6092 462fa54eece9dbf2fcb3970807b6e2bbb4231d86d39f8b7b15e8666d9470bef7 ./recipe-sysroot-native/usr/share/automake-1.16/am/depend2.am
+-rw-                22825 daca8604ecc7b7da04a77a877b2539c8b9675d46d205dfd57495d227fea87d1e ./recipe-sysroot-native/usr/share/automake-1.16/am/distdir.am
+-rw-                  882 c677219d6eafcc2484a89f5da44e84b2f0bed4f83099f89fa768f669af4a032d ./recipe-sysroot-native/usr/share/automake-1.16/am/footer.am
+-rw-                 6392 665594e6cbae88f263f6691f9378b16963b8d3c939855410158f582f79149581 ./recipe-sysroot-native/usr/share/automake-1.16/am/header-vars.am
+-rw-                  787 0a8bc13d21e9082a1e271e42e1777ae8103dde9483f1a0c17869e66e3d74840a ./recipe-sysroot-native/usr/share/automake-1.16/am/header.am
+-rw-                 3473 a658522a5af4cd0e43936a2a247f5a191c67c4812795cfe43e00ae716e0a607f ./recipe-sysroot-native/usr/share/automake-1.16/am/inst-vars.am
+-rw-                 4056 0af0cd56f34aaa037dd17ac74dd4aaab71d2f205f434dfb88747bbbb8f62e642 ./recipe-sysroot-native/usr/share/automake-1.16/am/install.am
+-rw-                 2861 1a86f7189386d3f47026f8864346248b95651671e0bb89b240a7c5b66d9c02b8 ./recipe-sysroot-native/usr/share/automake-1.16/am/java.am
+-rw-                 1198 082970af1a6e3d22e28e5f28af909ef31e4cac2f7c67c552a95a56fdede6b51d ./recipe-sysroot-native/usr/share/automake-1.16/am/lang-compile.am
+-rw-                 1324 009c11b981f169efaf4fec98028deed5c48f833805483b25e6afbfbcf020dd26 ./recipe-sysroot-native/usr/share/automake-1.16/am/lex.am
+-rw-                  977 0feeb3aa65424dd2fab32dbe4938ae23717af1b242c189cb23e5dbda99dcf38e ./recipe-sysroot-native/usr/share/automake-1.16/am/library.am
+-rw-                 3890 621a07e8317b7e977e83db16c7888c9fabb6a19c37ea2f81a4eee78fd002187a ./recipe-sysroot-native/usr/share/automake-1.16/am/libs.am
+-rw-                 1031 e21451cd40f1771784e8ae7fa504613100f7ea2ab07ff0fc0a8b001026ccbf20 ./recipe-sysroot-native/usr/share/automake-1.16/am/libtool.am
+-rw-                 4982 8a24bff115d1c532fe27e105555ab8caddfb1840579f18e1ab48432427948800 ./recipe-sysroot-native/usr/share/automake-1.16/am/lisp.am
+-rw-                 4994 118efaa064a8c53cbebaa5a12b3b97155d35368be320a650b8c10a892ab788b4 ./recipe-sysroot-native/usr/share/automake-1.16/am/ltlib.am
+-rw-                  934 6e6191d9b7dd16d8465fd9ff7196e06275d7bbb918ab30a7a6827a58bcbb4159 ./recipe-sysroot-native/usr/share/automake-1.16/am/ltlibrary.am
+-rw-                  858 eedbb5b9bd1fa5f2a3c0f485e8123d043589c4b9edb2a7d77db32c8715f216b9 ./recipe-sysroot-native/usr/share/automake-1.16/am/mans-vars.am
+-rw-                 6494 575ac8d051b5c05d0af20243b415a930c4cca0dbb8dbe68f2f30d19f97bd5dfb ./recipe-sysroot-native/usr/share/automake-1.16/am/mans.am
+-rw-                 1232 4fdf128b9b4b5b8935131a586b2e42d8707acff030ad0e7f81fb0674054ad205 ./recipe-sysroot-native/usr/share/automake-1.16/am/program.am
+-rw-                 6391 6b96f80d4eebe4d026f214999a1bb082d66c70c1fdfaa11c2ff0bb2aa230d406 ./recipe-sysroot-native/usr/share/automake-1.16/am/progs.am
+-rw-                 5064 12f3c16613d2011c48d53e7eec73540b6b3a44958d4c990d7c9b9066cdf5a0d2 ./recipe-sysroot-native/usr/share/automake-1.16/am/python.am
+-rw-                 3219 e2ae2cbe3b98d0243e8b6b7968ef5de0c98839b3a517bee829147c2682e45347 ./recipe-sysroot-native/usr/share/automake-1.16/am/remake-hdr.am
+-rw-                 4714 584d2f41d83aa9232ce1be99270eb53a20712d4a201ae8bc75371dabd9f14a8b ./recipe-sysroot-native/usr/share/automake-1.16/am/scripts.am
+-rw-                 2868 cb3cec7663f8c3224bc6304e83211b5ff797eff5de66da232b684df1599904ae ./recipe-sysroot-native/usr/share/automake-1.16/am/subdirs.am
+-rw-                 5118 505d63757bc1e38e1b05e2ea0b0e47cfd09692a533a286777d36cb9395096486 ./recipe-sysroot-native/usr/share/automake-1.16/am/tags.am
+-rw-                 2473 5c4426ee2c9b6d12c87ebb6f5934b139f7b3ccbc86470161dc4f4372f3d9c0e8 ./recipe-sysroot-native/usr/share/automake-1.16/am/texi-vers.am
+-rw-                 6330 7f22147e636b0eeb54278610aba9f2252e0b03fa1ebdd98a4d3823ec63eacb6b ./recipe-sysroot-native/usr/share/automake-1.16/am/texibuild.am
+-rw-                13440 c1f562f6f44158587667abcb78de830b1cbd81d2fc2678206fd77cdeb207b1ae ./recipe-sysroot-native/usr/share/automake-1.16/am/texinfos.am
+-rw-                  769 439612fa53df84f763ef10232cf18126476fc90a55b6a40d2338735cadc160ee ./recipe-sysroot-native/usr/share/automake-1.16/am/vala.am
+-rw-                 2405 1be3ba267bd10b2d71680bdecb41664aeaa72114667a7157bf9fc2aea960e1c3 ./recipe-sysroot-native/usr/share/automake-1.16/am/yacc.am

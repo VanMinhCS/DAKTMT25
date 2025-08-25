@@ -1,0 +1,21 @@
+OEOuthashBasic
+14
+quilt-native: 3057d956d8a64c8d0c95902855fb8674038582d1c445513dc0b3cc45351763ca
+SSTATE_PKGSPEC=sstate:texinfo-dummy-native:x86_64-linux:1.0:r0:x86_64:10:
+task=populate_sysroot
+drwx                                                                                       .
+drwx                                                                                       ./recipe-sysroot-native
+drwx                                                                                       ./recipe-sysroot-native/bin
+-rwx                 3993 8a77b10cb45e201998fd59075139eaa249499a071431cc0fd3b9f0c6cff8dce9 ./recipe-sysroot-native/bin/ginstall-info
+-rwx                 3993 8a77b10cb45e201998fd59075139eaa249499a071431cc0fd3b9f0c6cff8dce9 ./recipe-sysroot-native/bin/install-info
+-rwx                 3993 8a77b10cb45e201998fd59075139eaa249499a071431cc0fd3b9f0c6cff8dce9 ./recipe-sysroot-native/bin/makeinfo
+-rwx                 3993 8a77b10cb45e201998fd59075139eaa249499a071431cc0fd3b9f0c6cff8dce9 ./recipe-sysroot-native/bin/pdftexi2dvi
+-rwx                 3993 8a77b10cb45e201998fd59075139eaa249499a071431cc0fd3b9f0c6cff8dce9 ./recipe-sysroot-native/bin/pod2texi
+-rwx                 3993 8a77b10cb45e201998fd59075139eaa249499a071431cc0fd3b9f0c6cff8dce9 ./recipe-sysroot-native/bin/texi2any
+-rwx                 3993 8a77b10cb45e201998fd59075139eaa249499a071431cc0fd3b9f0c6cff8dce9 ./recipe-sysroot-native/bin/texi2dvi
+-rwx                 3993 8a77b10cb45e201998fd59075139eaa249499a071431cc0fd3b9f0c6cff8dce9 ./recipe-sysroot-native/bin/texi2pdf
+-rwx                 3993 8a77b10cb45e201998fd59075139eaa249499a071431cc0fd3b9f0c6cff8dce9 ./recipe-sysroot-native/bin/texindex
+-rwx                 3993 8a77b10cb45e201998fd59075139eaa249499a071431cc0fd3b9f0c6cff8dce9 ./recipe-sysroot-native/bin/txixml2texi
+-rwx                 3993 8a77b10cb45e201998fd59075139eaa249499a071431cc0fd3b9f0c6cff8dce9 ./recipe-sysroot-native/bin/update-info-dir
+drwx                                                                                       ./recipe-sysroot-native/sysroot-providers
+-rw-                   20 e865bd334afd3f344f978849972ee1773704412edf44ea319577df15882dadc6 ./recipe-sysroot-native/sysroot-providers/texinfo-dummy-native

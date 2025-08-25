@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:libmpc-native:x86_64-linux:1.2.1:r0:x86_64:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 829284808e1eec4d7da078c178ba7aa18f8b23769436a580f26a7cc4f324c07e ./deploy-source-date-epoch/__source_date_epoch.txt

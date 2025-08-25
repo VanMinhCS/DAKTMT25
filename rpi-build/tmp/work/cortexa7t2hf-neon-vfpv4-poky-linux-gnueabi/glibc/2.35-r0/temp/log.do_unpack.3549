@@ -1,0 +1,595 @@
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+DEBUG: Running 'export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/recipe-sysroot/usr/bin/crossscripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; tar -xzf /home/ubuntu/yocto/rpi-build/downloads/gitshallow_sourceware.org.git.glibc.git_a66bc39-1_release.2.35.master.tar.gz' in /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/git/
+DEBUG: Running 'export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/recipe-sysroot/usr/bin/crossscripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat remote set-url origin git://sourceware.org/git/glibc.git' in /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/git/
+DEBUG: Running 'export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/recipe-sysroot/usr/bin/crossscripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat grep lfs origin/release/2.35/master:.gitattributes | wc -l' in /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/git/
+DEBUG: Running 'export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/recipe-sysroot/usr/bin/crossscripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat checkout -B release/2.35/master a66bc3941ff298e474d5f02d0c3303401951141f' in /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/git/
+DEBUG: Running 'export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/recipe-sysroot/usr/bin/crossscripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; git -c core.fsyncobjectfiles=0 -c gc.autoDetach=false -c core.pager=cat branch release/2.35/master --set-upstream-to origin/release/2.35/master' in /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/git/
+DEBUG: Searching for etc/ld.so.conf in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/etc/ld.so.conf to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/
+DEBUG: Searching for generate-supported.mk in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/generate-supported.mk to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/
+DEBUG: Searching for makedbs.sh in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/makedbs.sh to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/
+DEBUG: Searching for 0009-yes-within-the-path-sets-wrong-config-variables.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/0009-yes-within-the-path-sets-wrong-config-variables.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/
+DEBUG: Searching for 0010-eglibc-Cross-building-and-testing-instructions.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/0010-eglibc-Cross-building-and-testing-instructions.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/
+DEBUG: Searching for 0011-eglibc-Help-bootstrap-cross-toolchain.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/0011-eglibc-Help-bootstrap-cross-toolchain.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/
+DEBUG: Searching for 0012-eglibc-Resolve-__fpscr_values-on-SH4.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/0012-eglibc-Resolve-__fpscr_values-on-SH4.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/
+DEBUG: Searching for 0013-eglibc-Forward-port-cross-locale-generation-support.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/0013-eglibc-Forward-port-cross-locale-generation-support.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/
+DEBUG: Searching for 0014-localedef-add-to-archive-uses-a-hard-coded-locale-pa.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/0014-localedef-add-to-archive-uses-a-hard-coded-locale-pa.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/
+DEBUG: Searching for 0016-locale-prevent-maybe-uninitialized-errors-with-Os-BZ.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/0016-locale-prevent-maybe-uninitialized-errors-with-Os-BZ.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/
+DEBUG: Searching for 0017-readlib-Add-OECORE_KNOWN_INTERPRETER_NAMES-to-known-.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/0017-readlib-Add-OECORE_KNOWN_INTERPRETER_NAMES-to-known-.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/
+DEBUG: Searching for 0018-wordsize.h-Unify-the-header-between-arm-and-aarch64.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/0018-wordsize.h-Unify-the-header-between-arm-and-aarch64.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/
+DEBUG: Searching for 0019-powerpc-Do-not-ask-compiler-for-finding-arch.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/0019-powerpc-Do-not-ask-compiler-for-finding-arch.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/
+DEBUG: Searching for 0021-Replace-echo-with-printf-builtin-in-nscd-init-script.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/0021-Replace-echo-with-printf-builtin-in-nscd-init-script.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/
+DEBUG: Searching for 0022-sysdeps-gnu-configure.ac-Set-libc_cv_rootsbindir-onl.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/0022-sysdeps-gnu-configure.ac-Set-libc_cv_rootsbindir-onl.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/
+DEBUG: Searching for 0023-timezone-Make-shell-interpreter-overridable-in-tzsel.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/0023-timezone-Make-shell-interpreter-overridable-in-tzsel.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/
+DEBUG: Searching for 0024-fix-create-thread-failed-in-unprivileged-process-BZ-.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/0024-fix-create-thread-failed-in-unprivileged-process-BZ-.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/
+DEBUG: Searching for 0026-PR25847-1.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/0026-PR25847-1.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/
+DEBUG: Searching for 0026-PR25847-2.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/0026-PR25847-2.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/
+DEBUG: Searching for 0026-PR25847-3.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/0026-PR25847-3.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/
+DEBUG: Searching for 0026-PR25847-4.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/0026-PR25847-4.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/
+DEBUG: Searching for 0026-PR25847-5.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/0026-PR25847-5.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/
+DEBUG: Searching for 0026-PR25847-6.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/0026-PR25847-6.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/
+DEBUG: Searching for 0026-PR25847-7.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/0026-PR25847-7.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/
+DEBUG: Searching for 0026-PR25847-8.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/0026-PR25847-8.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/
+DEBUG: Searching for 0001-Revert-Linux-Implement-a-useful-version-of-_startup_.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/0001-Revert-Linux-Implement-a-useful-version-of-_startup_.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/
+DEBUG: Searching for 0002-get_nscd_addresses-Fix-subscript-typos-BZ-29605.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/0002-get_nscd_addresses-Fix-subscript-typos-BZ-29605.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/
+DEBUG: Searching for 0003-sunrpc-suppress-gcc-os-warning-on-user2netname.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/0003-sunrpc-suppress-gcc-os-warning-on-user2netname.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/
+DEBUG: Searching for 0001-stdlib-Add-single-threaded-fast-path-to-rand.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc-2.35/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/
+    /home/ubuntu/yocto/poky/meta/recipes-core/glibc/files/
+NOTE: Unpacking /home/ubuntu/yocto/poky/meta/recipes-core/glibc/glibc/0001-stdlib-Add-single-threaded-fast-path-to-rand.patch to /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function create_source_date_epoch_stamp
+DEBUG: git repository: /home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/glibc/2.35-r0/git/.git
+DEBUG: SOURCE_DATE_EPOCH: 1753347354
+DEBUG: Python function create_source_date_epoch_stamp finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

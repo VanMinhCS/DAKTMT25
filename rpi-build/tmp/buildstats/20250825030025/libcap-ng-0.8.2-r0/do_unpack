@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090866.92 
+libcap-ng-0.8.2-r0: do_unpack
+Elapsed time: 0.22 seconds
+utime: 18
+stime: 3
+cutime: 2
+cstime: 3
+IO rchar: 2493909
+IO wchar: 3767998
+IO syscr: 336
+IO syscw: 384
+IO read_bytes: 462848
+IO write_bytes: 2080768
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.19006699999999999
+rusage ru_stime: 0.033261
+rusage ru_maxrss: 108216
+rusage ru_minflt: 5662
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 56
+rusage ru_nvcsw: 8
+rusage ru_nivcsw: 78
+Child rusage ru_utime: 0.021335999999999997
+Child rusage ru_stime: 0.032607
+Child rusage ru_maxrss: 108088
+Child rusage ru_minflt: 1350
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 904
+Child rusage ru_oublock: 4008
+Child rusage ru_nvcsw: 75
+Child rusage ru_nivcsw: 24
+Status: PASSED 
+Ended: 1756090867.14 

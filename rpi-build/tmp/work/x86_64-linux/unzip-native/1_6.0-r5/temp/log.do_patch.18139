@@ -1,0 +1,362 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are ['/home/ubuntu/yocto/poky/meta/recipes-devtools/quilt/quilt-native_0.67.bb:do_populate_sysroot']
+NOTE: Installed into sysroot: ['quilt-native']
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: sed -e 's:^[^/]*/:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native/:g' /home/ubuntu/yocto/rpi-build/tmp/sysroots-components/x86_64/quilt-native/fixmepath | xargs sed -i -e 's:FIXMESTAGINGDIRTARGET:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot:g; s:FIXMESTAGINGDIRHOST:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/recipe-sysroot-native:g' -e 's:FIXME_PSEUDO_SYSROOT:/home/ubuntu/yocto/rpi-build/tmp/sysroots-components/x86_64/pseudo-native:g' -e 's:FIXME_HOSTTOOLS_DIR:/home/ubuntu/yocto/rpi-build/tmp/hosttools:g' -e 's:FIXME_PKGDATA_DIR:/home/ubuntu/yocto/rpi-build/tmp/pkgdata/raspberrypi4:g' -e 's:FIXME_PSEUDO_LOCALSTATEDIR:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/pseudo/:g' -e 's:FIXME_LOGFIFO:/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/unzip-native/1_6.0-r5/temp/fifo.18139:g'
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_patch
+DEBUG: Executing python function patch_do_patch
+DEBUG: Searching for avoid-strip.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+DEBUG: Searching for define-ldflags.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+DEBUG: Searching for 06-unzip60-alt-iconv-utf8_CVE-2015-1315.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+DEBUG: Searching for cve-2014-9636.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+DEBUG: Searching for 09-cve-2014-8139-crc-overflow.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+DEBUG: Searching for 10-cve-2014-8140-test-compr-eb.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+DEBUG: Searching for 11-cve-2014-8141-getzip64data.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+DEBUG: Searching for CVE-2015-7696.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+DEBUG: Searching for CVE-2015-7697.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+DEBUG: Searching for fix-security-format.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+DEBUG: Searching for 18-cve-2014-9913-unzip-buffer-overflow.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+DEBUG: Searching for 19-cve-2016-9844-zipinfo-buffer-overflow.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+DEBUG: Searching for symlink.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+DEBUG: Searching for 0001-unzip-fix-CVE-2018-1000035.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+DEBUG: Searching for CVE-2018-18384.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+DEBUG: Searching for CVE-2019-13232_p1.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+DEBUG: Searching for CVE-2019-13232_p2.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+DEBUG: Searching for CVE-2019-13232_p3.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+DEBUG: Searching for unzip_optimization.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+DEBUG: Searching for 0001-configure-Pass-LDFLAGS-to-tests-doing-link-step.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+DEBUG: Searching for CVE-2021-4217.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+DEBUG: Searching for CVE-2022-0529.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+DEBUG: Searching for CVE-2022-0530.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+DEBUG: Searching for 0001-unix-configure-fix-detection-for-cross-compilation.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+DEBUG: Searching for 0001-configure-Add-correct-system-headers-and-prototypes-.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip-6.0/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/unzip/
+    /home/ubuntu/yocto/poky/meta/recipes-extended/unzip/files/
+NOTE: Applying patch 'avoid-strip.patch' (../poky/meta/recipes-extended/unzip/unzip/avoid-strip.patch)
+NOTE: Applying patch 'define-ldflags.patch' (../poky/meta/recipes-extended/unzip/unzip/define-ldflags.patch)
+NOTE: Applying patch '06-unzip60-alt-iconv-utf8_CVE-2015-1315.patch' (../poky/meta/recipes-extended/unzip/unzip/06-unzip60-alt-iconv-utf8_CVE-2015-1315.patch)
+NOTE: Applying patch 'cve-2014-9636.patch' (../poky/meta/recipes-extended/unzip/unzip/cve-2014-9636.patch)
+NOTE: Applying patch '09-cve-2014-8139-crc-overflow.patch' (../poky/meta/recipes-extended/unzip/unzip/09-cve-2014-8139-crc-overflow.patch)
+NOTE: Applying patch '10-cve-2014-8140-test-compr-eb.patch' (../poky/meta/recipes-extended/unzip/unzip/10-cve-2014-8140-test-compr-eb.patch)
+NOTE: Applying patch '11-cve-2014-8141-getzip64data.patch' (../poky/meta/recipes-extended/unzip/unzip/11-cve-2014-8141-getzip64data.patch)
+NOTE: Applying patch 'CVE-2015-7696.patch' (../poky/meta/recipes-extended/unzip/unzip/CVE-2015-7696.patch)
+NOTE: Applying patch 'CVE-2015-7697.patch' (../poky/meta/recipes-extended/unzip/unzip/CVE-2015-7697.patch)
+NOTE: Applying patch 'fix-security-format.patch' (../poky/meta/recipes-extended/unzip/unzip/fix-security-format.patch)
+NOTE: Applying patch '18-cve-2014-9913-unzip-buffer-overflow.patch' (../poky/meta/recipes-extended/unzip/unzip/18-cve-2014-9913-unzip-buffer-overflow.patch)
+NOTE: Applying patch '19-cve-2016-9844-zipinfo-buffer-overflow.patch' (../poky/meta/recipes-extended/unzip/unzip/19-cve-2016-9844-zipinfo-buffer-overflow.patch)
+NOTE: Applying patch 'symlink.patch' (../poky/meta/recipes-extended/unzip/unzip/symlink.patch)
+NOTE: Applying patch '0001-unzip-fix-CVE-2018-1000035.patch' (../poky/meta/recipes-extended/unzip/unzip/0001-unzip-fix-CVE-2018-1000035.patch)
+NOTE: Applying patch 'CVE-2018-18384.patch' (../poky/meta/recipes-extended/unzip/unzip/CVE-2018-18384.patch)
+NOTE: Applying patch 'CVE-2019-13232_p1.patch' (../poky/meta/recipes-extended/unzip/unzip/CVE-2019-13232_p1.patch)
+NOTE: Applying patch 'CVE-2019-13232_p2.patch' (../poky/meta/recipes-extended/unzip/unzip/CVE-2019-13232_p2.patch)
+NOTE: Applying patch 'CVE-2019-13232_p3.patch' (../poky/meta/recipes-extended/unzip/unzip/CVE-2019-13232_p3.patch)
+NOTE: Applying patch 'unzip_optimization.patch' (../poky/meta/recipes-extended/unzip/unzip/unzip_optimization.patch)
+NOTE: Applying patch '0001-configure-Pass-LDFLAGS-to-tests-doing-link-step.patch' (../poky/meta/recipes-extended/unzip/unzip/0001-configure-Pass-LDFLAGS-to-tests-doing-link-step.patch)
+NOTE: Applying patch 'CVE-2021-4217.patch' (../poky/meta/recipes-extended/unzip/unzip/CVE-2021-4217.patch)
+NOTE: Applying patch 'CVE-2022-0529.patch' (../poky/meta/recipes-extended/unzip/unzip/CVE-2022-0529.patch)
+NOTE: Applying patch 'CVE-2022-0530.patch' (../poky/meta/recipes-extended/unzip/unzip/CVE-2022-0530.patch)
+NOTE: Applying patch '0001-unix-configure-fix-detection-for-cross-compilation.patch' (../poky/meta/recipes-extended/unzip/unzip/0001-unix-configure-fix-detection-for-cross-compilation.patch)
+NOTE: Applying patch '0001-configure-Add-correct-system-headers-and-prototypes-.patch' (../poky/meta/recipes-extended/unzip/unzip/0001-configure-Add-correct-system-headers-and-prototypes-.patch)
+DEBUG: Python function patch_do_patch finished
+DEBUG: Python function do_patch finished
+DEBUG: Executing python function do_qa_patch
+DEBUG: Python function do_qa_patch finished

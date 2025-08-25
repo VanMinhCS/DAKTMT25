@@ -1,0 +1,35 @@
+Event: TaskStarted 
+Started: 1756090884.04 
+dwarfsrcfiles-native-1.0-r0: do_unpack
+Elapsed time: 0.04 seconds
+utime: 20
+stime: 2
+cutime: 0
+cstime: 0
+IO rchar: 89331
+IO wchar: 21762
+IO syscr: 72
+IO syscw: 54
+IO read_bytes: 4096
+IO write_bytes: 32768
+IO cancelled_write_bytes: 0
+rusage ru_utime: 0.209788
+rusage ru_stime: 0.020567
+rusage ru_maxrss: 108468
+rusage ru_minflt: 4918
+rusage ru_majflt: 0
+rusage ru_inblock: 0
+rusage ru_oublock: 56
+rusage ru_nvcsw: 6
+rusage ru_nivcsw: 1
+Child rusage ru_utime: 0.003359
+Child rusage ru_stime: 0.007503999999999999
+Child rusage ru_maxrss: 108468
+Child rusage ru_minflt: 666
+Child rusage ru_majflt: 0
+Child rusage ru_inblock: 8
+Child rusage ru_oublock: 8
+Child rusage ru_nvcsw: 5
+Child rusage ru_nivcsw: 2
+Status: PASSED 
+Ended: 1756090884.07 

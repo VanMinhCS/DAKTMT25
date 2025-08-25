@@ -1,0 +1,83 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are []
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_fetch
+DEBUG: Executing python function base_do_fetch
+DEBUG: Trying PREMIRRORS
+DEBUG: For url ['https', 'dbus.freedesktop.org', '/releases/dbus/dbus-1.14.8.tar.xz', '', '', OrderedDict()] comparing ['git', 'sourceware.org', '/git/glibc.git', '', '', OrderedDict()] to ['https', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: For url ['https', 'dbus.freedesktop.org', '/releases/dbus/dbus-1.14.8.tar.xz', '', '', OrderedDict()] comparing ['git', 'sourceware.org', '/git/binutils-gdb.git', '', '', OrderedDict()] to ['https', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', OrderedDict()]
+DEBUG: Trying Upstream
+DEBUG: Fetching https://dbus.freedesktop.org/releases/dbus/dbus-1.14.8.tar.xz using command '/usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/dbus-1.14.8.tar.xz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://dbus.freedesktop.org/releases/dbus/dbus-1.14.8.tar.xz''
+DEBUG: Fetcher accessed the network with the command /usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/dbus-1.14.8.tar.xz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://dbus.freedesktop.org/releases/dbus/dbus-1.14.8.tar.xz'
+DEBUG: Running export PSEUDO_DISABLED=1; export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"; export PATH="/home/ubuntu/yocto/rpi-build/tmp/sysroots-uninative/x86_64-linux/usr/bin:/home/ubuntu/yocto/poky/scripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/dbus/1.14.8-r0/recipe-sysroot-native/usr/bin/arm-poky-linux-gnueabi:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/dbus/1.14.8-r0/recipe-sysroot/usr/bin/crossscripts:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/dbus/1.14.8-r0/recipe-sysroot-native/usr/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/dbus/1.14.8-r0/recipe-sysroot-native/usr/bin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/dbus/1.14.8-r0/recipe-sysroot-native/sbin:/home/ubuntu/yocto/rpi-build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/dbus/1.14.8-r0/recipe-sysroot-native/bin:/home/ubuntu/yocto/poky/bitbake/bin:/home/ubuntu/yocto/rpi-build/tmp/hosttools"; export HOME="/home/ubuntu"; /usr/bin/env wget -t 2 -T 100 -O /home/ubuntu/yocto/rpi-build/downloads/dbus-1.14.8.tar.xz.tmp -P /home/ubuntu/yocto/rpi-build/downloads 'https://dbus.freedesktop.org/releases/dbus/dbus-1.14.8.tar.xz' --progress=dot -v
+--2025-08-25 03:01:47--  https://dbus.freedesktop.org/releases/dbus/dbus-1.14.8.tar.xz
+Resolving dbus.freedesktop.org (dbus.freedesktop.org)... 131.252.210.176
+Connecting to dbus.freedesktop.org (dbus.freedesktop.org)|131.252.210.176|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1371236 (1.3M) [application/x-xz]
+Saving to: ‘/home/ubuntu/yocto/rpi-build/downloads/dbus-1.14.8.tar.xz.tmp’
+
+
+2025-08-25 03:01:51 (947 KB/s) - ‘/home/ubuntu/yocto/rpi-build/downloads/dbus-1.14.8.tar.xz.tmp’ saved [1371236/1371236]
+
+DEBUG: Searching for run-ptest in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/dbus-1.14.8/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/dbus/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/dbus-1.14.8/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/dbus/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/dbus-1.14.8/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/dbus/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/dbus-1.14.8/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/dbus/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/dbus-1.14.8/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/dbus/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/dbus-1.14.8/
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/dbus/
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/files/
+DEBUG: Searching for tmpdir.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/dbus-1.14.8/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/dbus/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/dbus-1.14.8/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/dbus/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/dbus-1.14.8/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/dbus/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/dbus-1.14.8/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/dbus/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/dbus-1.14.8/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/dbus/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/dbus-1.14.8/
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/dbus/
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/files/
+DEBUG: Searching for dbus-1.init in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/dbus-1.14.8/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/dbus/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/dbus-1.14.8/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/dbus/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/files/raspberrypi4
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/dbus-1.14.8/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/dbus/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/files/armv7ve
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/dbus-1.14.8/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/dbus/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/files/rpi
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/dbus-1.14.8/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/dbus/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/files/arm
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/dbus-1.14.8/
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/dbus/
+    /home/ubuntu/yocto/poky/meta/recipes-core/dbus/files/
+DEBUG: Python function base_do_fetch finished
+DEBUG: Python function do_fetch finished

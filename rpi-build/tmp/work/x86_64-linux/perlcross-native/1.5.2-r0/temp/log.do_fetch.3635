@@ -1,0 +1,61 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are []
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_fetch
+DEBUG: Executing python function base_do_fetch
+DEBUG: Searching for README.md in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/
+DEBUG: Searching for 0001-perl-cross-add-LDFLAGS-when-linking-libperl.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/
+DEBUG: Searching for determinism.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/
+DEBUG: Searching for 0001-Makefile-check-the-file-if-patched-or-not.patch in paths:
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/poky
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/x86-64
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross-1.5.2/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/perlcross/
+    /home/ubuntu/yocto/poky/meta/recipes-devtools/perl-cross/files/
+DEBUG: Python function base_do_fetch finished
+DEBUG: Python function do_fetch finished

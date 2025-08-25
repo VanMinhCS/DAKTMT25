@@ -1,0 +1,10 @@
+prefix=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/recipe-sysroot-native/usr
+exec_prefix=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/recipe-sysroot-native/usr
+libdir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/recipe-sysroot-native/usr/lib
+includedir=/home/ubuntu/yocto/rpi-build/tmp/work/x86_64-linux/popt-native/1.18-r0/recipe-sysroot-native/usr/include
+
+Name: popt
+Version: 1.18
+Description: popt library.
+Libs: -L${libdir} -lpopt
+Cflags: -I${includedir}

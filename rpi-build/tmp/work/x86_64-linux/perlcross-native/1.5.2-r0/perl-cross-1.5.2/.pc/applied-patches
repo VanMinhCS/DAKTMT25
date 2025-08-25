@@ -1,0 +1,3 @@
+0001-perl-cross-add-LDFLAGS-when-linking-libperl.patch
+determinism.patch
+0001-Makefile-check-the-file-if-patched-or-not.patch
