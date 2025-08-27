@@ -1,6 +1,4 @@
 import paho.mqtt.client as mqtt
-import requests
-import random
 import json
 import time
 import queue
@@ -21,10 +19,9 @@ MQTT_ATTRIBUTE = "v1/devices/me/attributes"
 MQTT_BROKER = "localhost"
 MQTT_BROKER_PORT = 1883
 
-# ===== Core IoT Client ====
+# Core IoT Client 
 def mqtt_connected(client, userdata, flags, reasonCode, properties):
     print("Connect with IoT Broker reson code: ", reasonCode)
-    client.subscribe(MQTT_TOPIC)
     client.subscribe(MQTT_ATTRIBUTE)
 
 def mqtt_subscribed(client, userdata, mid, granted_qos, properties=None):
@@ -38,6 +35,14 @@ def mqtt_recv_message(client, userdata, message):
     
 def mqtt_unsubscribed (client, userdata, mid, rc, properties):
     print("Disconnect IoT Broker with reason code: ", rc)
+    while True:
+        try:
+            client.reconnect()
+            print("Reconnect to IoT Broker")
+            break
+        except:
+            print("Reconnect failed")
+            time.sleep(1)
 
 mqttClient = mqtt.Client(
     client_id="IoT Broker",
@@ -55,7 +60,7 @@ mqttClient.connect(MQTT_SERVER, int(MQTT_PORT), 120)
 
 mqttClient.loop_start()
 
-# ==== Local Client ====
+# Local Client
 def local_connected(client, userdata, flags, reasonCode, properties):
     print("Connect local broker with reson code: ", reasonCode)
     client.subscribe("#")
@@ -64,8 +69,6 @@ def local_subscribed(client, userdata, mid, granted_qos, properties=None):
     print("Subscribed to Topic!!!")
 
 def local_recv_message(client, userdata, message):
-    #print("Received: ", message.payload.decode("utf-8"))
-    mqtt_client = userdata["mqttClient"]
     payload = message.payload.decode("utf-8")
     print(f"Recive message: {payload} on topic {message.topic} with QoS {message.qos}")
     data_queue.put(payload)
@@ -89,13 +92,17 @@ local_client.connect(MQTT_BROKER, MQTT_BROKER_PORT, 60)
 
 local_client.loop_start()
 
-# ======== Luồng xử lý chính ========
+# Main thread
 def forward_loop():
     while True:
         if not data_queue.empty():
             data = data_queue.get()
+            try:
+                json.loads(data)
+            except:
+                data = json.dumps(data)
             print(f"[FORWARD] Đẩy lên CoreIoT: {data}")
-            mqttClient.publish(MQTT_TOPIC, data)
+            mqttClient.publish(MQTT_TOPIC, data, qos=1)
         time.sleep(0.1)
 
 forward_thread = threading.Thread(target=forward_loop, daemon=True)
@@ -104,17 +111,7 @@ forward_thread.start()
 counter = 0
 try:
     while True:
-        # data = {
-        #     "Dump": counter,
-        #     "Temp": random.randrange(0, 100),
-        #     "Name": "Minh"
-        # }
-        # mqttClient.publish(MQTT_TOPIC, json.dumps(data))
-        # mqttClient.publish(MQTT_ATTRIBUTE, json.dumps({"Mac": "192.162.121.2"}))
-        # print("Data Sent: ", data)
-        # counter = counter + 1
         time.sleep(1)
-        # pass
 except KeyboardInterrupt:
     print("Stopping")
     mqttClient.loop_stop()
