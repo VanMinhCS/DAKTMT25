@@ -1,2 +1,2 @@
 # DAKTMT25
-Repo cho đồ án KTMT.
+Thư viện cần thiết: paho mqtt, CMD: pip install paho-mqtt
