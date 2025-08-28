@@ -107,7 +107,6 @@ def forward_loop():
 forward_thread = threading.Thread(target=forward_loop, daemon=True)
 forward_thread.start()
 
-counter = 0
 try:
     while True:
         time.sleep(1)
