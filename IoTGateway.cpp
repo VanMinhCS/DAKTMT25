@@ -35,8 +35,6 @@ const int LOCAL_QOS = 1;
 const int TIMEOUT = 1000;
 
 queue<string> message_queue;
-mutex queue_mutex;
-condition_variable cv;
 atomic<bool> running{true};
 
 class PublisherCallback : public virtual mqtt::callback
@@ -74,7 +72,6 @@ public:
         try
         {
             string recieved_payload = message->get_payload_str();
-            // Đặt mutex lock ở đây
             message_queue.push(recieved_payload);
             cout << "Recived message: " << recieved_payload << '\n';
         }
@@ -91,34 +88,6 @@ public:
         std::cout << "Message delivered" << std::endl;
     }
 };
-
-// Hàm chạy trên luồng riêng để publish dữ liệu
-void publisher_thread(mqtt::async_client& core_iot_client) {
-    while (running) {
-        unique_lock<mutex> lock(queue_mutex);
-        cv.wait(lock, [&]{ 
-            return !message_queue.empty() || !running; 
-        });
-
-        if (!running) break;
-
-        string payload_to_publish = message_queue.front();
-        message_queue.pop();
-        lock.unlock(); // Giải phóng lock ngay sau khi lấy dữ liệu
-
-        if (core_iot_client.is_connected()) {
-            try {
-                mqtt::message_ptr pub_msg = mqtt::make_message(MQTT_TOPIC, payload_to_publish, MQTT_QOS, false);
-                core_iot_client.publish(pub_msg);
-                this_thread::sleep_for(chrono::milliseconds(10));
-            } catch (const mqtt::exception& exc) {
-                cerr << "Error when publish to Core IoT: " << exc.what() << endl;
-            }
-        } else {
-            cout << "Cannot publish: Core IoT do not connect" << endl;
-        }
-    }
-}
 
 int main() {
     mqtt::async_client local_client(LOCAL_BROKER, LOCAL_CLIENT_ID);
@@ -139,7 +108,6 @@ int main() {
     try {
         PublisherCallback mqtt_callback;
         mqtt_client.set_callback(mqtt_callback);
-        // mqtt_client.connect(mqtt_connOpts)->wait();
         mqtt::token_ptr mqtt_connection_token = mqtt_client.connect(mqtt_connOpts);
         mqtt_connection_token->wait();
         if (mqtt_connection_token->is_complete()) {
@@ -152,7 +120,6 @@ int main() {
 
         SubscriberCallback local_callback;
         local_client.set_callback(local_callback);
-        // local_client.connect(local_connOpts)->wait();
         mqtt::token_ptr local_connection_token = local_client.connect(local_connOpts);
         local_connection_token->wait();
         if (local_connection_token->is_complete()) {
@@ -175,9 +142,6 @@ int main() {
 
         // shutdown
         running = false;
-        cv.notify_all();
-        // if (pub_thread.joinable()) pub_thread.join();
-
 
         local_client.disconnect()->wait();
         mqtt_client.disconnect()->wait();
