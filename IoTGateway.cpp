@@ -20,8 +20,8 @@ const mqtt::binary mqtt::message::EMPTY_BIN;
 
 const string MQTT_SERVER = "tcp://app.coreiot.io:1883";
 const string MQTT_CLIENT_ID = "publisher";
-const string MQTT_USERNAME = "97d6dfc0-784a-11f0-a34b-bd0b37111391"; // No need so much
-const string MQTT_TOKEN = "pVOXiHmqVMOf7ZkpDnED";
+const string MQTT_USERNAME = "YOUR_USER_NAME"; // No need so much
+const string MQTT_TOKEN = "YOUR_TOKEN";
 const string MQTT_PASSWORD = "";
 const string MQTT_TOPIC = "v1/devices/me/telemetry";
 const string MQTT_ATTRIBUTE = "v1/devices/me/attributes";
@@ -153,4 +153,5 @@ int main() {
 
     cout << "End of gateway!\n";
     return 0;
+
 }
