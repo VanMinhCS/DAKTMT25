@@ -9,8 +9,8 @@ data_queue = queue.Queue()
 # Core IoT info
 MQTT_SERVER = "app.coreiot.io"
 MQTT_PORT = 1883
-MQTT_USERNAME = "97d6dfc0-784a-11f0-a34b-bd0b37111391"
-MQTT_TOKEN = "pVOXiHmqVMOf7ZkpDnED"
+MQTT_USERNAME = "YOUR_USER_NAME"
+MQTT_TOKEN = "YOUR_TOKEN"
 MQTT_PASSWORD = ""
 MQTT_TOPIC = "v1/devices/me/telemetry"
 MQTT_ATTRIBUTE = "v1/devices/me/attributes"
