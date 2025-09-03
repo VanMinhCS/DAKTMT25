@@ -4,128 +4,149 @@ import time
 import queue
 import threading
 
-data_queue = queue.Queue()
+class MQTTGateway:
+    def __init__(self):
+        self.data_queue = queue.Queue()
+        self.device_data = {}
+        
+        # Core IoT info
+        self.MQTT_SERVER = "app.coreiot.io"
+        self.MQTT_PORT = 1883
+        self.MQTT_USERNAME = "YOUR_USER_NAME"
+        self.MQTT_TOKEN = "YOUR_TOKEN"
+        self.MQTT_PASSWORD = ""
+        self.MQTT_TOPIC = "v1/devices/me/telemetry"
+        self.MQTT_ATTRIBUTE = "v1/devices/me/attributes"
+        
+        # Mosquitto info
+        self.MQTT_BROKER = "192.168.1.42" # demo
+        self.MQTT_BROKER_PORT = 1883
+        
+        self.mqttClient = None
+        self.local_client = None
+        self.forward_thread = None
+        
+    # Core IoT Client callbacks
+    def mqtt_connected(self, client, userdata, flags, reasonCode, properties):
+        print("Connect with IoT Broker reason code: ", reasonCode)
+        client.subscribe(self.MQTT_ATTRIBUTE)
 
-# Core IoT info
-MQTT_SERVER = "app.coreiot.io"
-MQTT_PORT = 1883
-MQTT_USERNAME = "YOUR_USER_NAME"
-MQTT_TOKEN = "YOUR_TOKEN"
-MQTT_PASSWORD = ""
-MQTT_TOPIC = "v1/devices/me/telemetry"
-MQTT_ATTRIBUTE = "v1/devices/me/attributes"
+    def mqtt_subscribed(self, client, userdata, mid, granted_qos, properties=None):
+        print("Subscribed to Topic!!!")
 
-# Mosquitto info
-MQTT_BROKER = "192.168.1.42"
-MQTT_BROKER_PORT = 1883
+    def mqtt_recv_message(self, client, userdata, message):
+        print("Received message " + message.payload.decode("utf-8")
+              + " on topic '" + message.topic
+              + "' with QoS " + str(message.qos))
+        
+    def mqtt_unsubscribed(self, client, userdata, mid, rc, properties):
+        print("Disconnect IoT Broker with reason code: ", rc)
 
-# Core IoT Client 
-def mqtt_connected(client, userdata, flags, reasonCode, properties):
-    print("Connect with IoT Broker reson code: ", reasonCode)
-    client.subscribe(MQTT_ATTRIBUTE)
+    # Local Client callbacks
+    def local_connected(self, client, userdata, flags, reasonCode, properties):
+        print("Connect local broker with reason code: ", reasonCode)
+        client.subscribe("#")
 
-def mqtt_subscribed(client, userdata, mid, granted_qos, properties=None):
-    print("Subscribed to Topic!!!")
+    def local_subscribed(self, client, userdata, mid, granted_qos, properties=None):
+        print("Subscribed to Topic!!!")
 
-def mqtt_recv_message(client, userdata, message):
-    print("Received message " + message.payload.decode("utf-8")
-          + " on topic '" + message.topic
-          + "' with QoS " + str(message.qos))
-    
-def mqtt_unsubscribed (client, userdata, mid, rc, properties):
-    print("Disconnect IoT Broker with reason code: ", rc)
+    def local_recv_message(self, client, userdata, message):
+        payload = message.payload.decode("utf-8")
+        topic = message.topic
+        print(f"Receive message: {payload} on topic {topic} with QoS {message.qos}")
+        self.data_queue.put((topic, payload))
+        
+    def local_unsubscribed(self, client, userdata, mid, rc, properties):
+        print("Disconnect local broker with reason code: ", rc)
 
-mqttClient = mqtt.Client(
-    client_id="IoT Broker",
-    userdata=None,
-    protocol=mqtt.MQTTv5,
-    transport="tcp",
-    callback_api_version=mqtt.CallbackAPIVersion.VERSION2
-)
-mqttClient.username_pw_set(MQTT_TOKEN, MQTT_PASSWORD)
-mqttClient.on_connect = mqtt_connected
-mqttClient.on_subscribe = mqtt_subscribed
-mqttClient.on_message = mqtt_recv_message
-mqttClient.on_disconnect = mqtt_unsubscribed
-mqttClient.connect(MQTT_SERVER, int(MQTT_PORT), 60)
+    def setup_core_iot_client(self):
+        """Khởi tạo và kết nối Core IoT client"""
+        self.mqttClient = mqtt.Client(
+            client_id="IoT Broker",
+            userdata=None,
+            protocol=mqtt.MQTTv5,
+            transport="tcp",
+            callback_api_version=mqtt.CallbackAPIVersion.VERSION2
+        )
+        self.mqttClient.username_pw_set(self.MQTT_TOKEN, self.MQTT_PASSWORD)
+        self.mqttClient.on_connect = self.mqtt_connected
+        self.mqttClient.on_subscribe = self.mqtt_subscribed
+        self.mqttClient.on_message = self.mqtt_recv_message
+        self.mqttClient.on_disconnect = self.mqtt_unsubscribed
+        self.mqttClient.connect(self.MQTT_SERVER, int(self.MQTT_PORT), 60)
+        self.mqttClient.loop_start()
 
-mqttClient.loop_start()
+    def setup_local_client(self):
+        """Khởi tạo và kết nối Local client"""
+        self.local_client = mqtt.Client(
+            client_id="Local Broker",
+            userdata={"mqttClient": self.mqttClient},
+            protocol=mqtt.MQTTv5,
+            transport="tcp",
+            callback_api_version=mqtt.CallbackAPIVersion.VERSION2
+        )
+        self.local_client.on_connect = self.local_connected
+        self.local_client.on_subscribe = self.local_subscribed
+        self.local_client.on_message = self.local_recv_message
+        self.local_client.on_disconnect = self.local_unsubscribed
+        self.local_client.connect(self.MQTT_BROKER, self.MQTT_BROKER_PORT, 60)
+        self.local_client.loop_start()
 
-# Local Client
-def local_connected(client, userdata, flags, reasonCode, properties):
-    print("Connect local broker with reson code: ", reasonCode)
-    client.subscribe("#")
+    def forward_loop(self):
+        """Vòng lặp chính để forward dữ liệu"""
+        last_send = time.time()
+        while True:
+            if not self.data_queue.empty():
+                topic, payload = self.data_queue.get()
+                try:
+                    data = json.loads(payload)
+                except:
+                    continue
+                
+                device_id = data.get("device_id", "unknown")
+                if "device_id" in data:
+                    del data["device_id"]
 
-def local_subscribed(client, userdata, mid, granted_qos, properties=None):
-    print("Subscribed to Topic!!!")
+                # Phẳng dữ liệu thành device.key
+                for key, value in data.items():
+                    flat_key = f"{device_id}.{key}"
+                    self.device_data[flat_key] = value
 
-def local_recv_message(client, userdata, message):
-    payload = message.payload.decode("utf-8")
-    topic = message.topic
-    print(f"Recive message: {payload} on topic {message.topic} with QoS {message.qos}")
-    data_queue.put((topic, payload))
-    
-def local_unsubscribed (client, userdata, mid, rc, properties):
-    print("Disconnect local broker with reason code: ", rc)
+                # gửi mỗi giây
+                if time.time() - last_send >= 1 and self.device_data:
+                    payload_to_send = json.dumps(self.device_data)
+                    print(f"[FORWARD] Đẩy lên CoreIoT: {payload_to_send}")
+                    self.mqttClient.publish(self.MQTT_TOPIC, payload_to_send, qos=1)
+                    last_send = time.time()
+            time.sleep(0.1)
 
-local_client = mqtt.Client(
-    client_id="Local Broker",
-    userdata={"mqttClient": mqttClient},
-    protocol=mqtt.MQTTv5,
-    transport="tcp",
-    callback_api_version=mqtt.CallbackAPIVersion.VERSION2
-    
-)
-local_client.on_connect = local_connected
-local_client.on_subscribe = local_subscribed
-local_client.on_message = local_recv_message
-local_client.on_disconnect = local_unsubscribed
-local_client.connect(MQTT_BROKER, MQTT_BROKER_PORT, 60)
+    def start(self):
+        """Khởi động gateway"""
+        print("Starting MQTT Gateway...")
+        self.setup_core_iot_client()
+        self.setup_local_client()
+        
+        # Khởi động forward thread
+        self.forward_thread = threading.Thread(target=self.forward_loop, daemon=True)
+        self.forward_thread.start()
+        
+        try:
+            while True:
+                time.sleep(1)
+        except KeyboardInterrupt:
+            self.stop()
 
-local_client.loop_start()
+    def stop(self):
+        """Dừng gateway"""
+        print("Stopping MQTT Gateway...")
+        if self.mqttClient:
+            self.mqttClient.loop_stop()
+            self.mqttClient.disconnect()
+        if self.local_client:
+            self.local_client.loop_stop()
+            self.local_client.disconnect()
 
-device_data = {}
-#  Main thread
-def forward_loop():
-    global device_data
-    last_send = time.time()
-    while True:
-        if not data_queue.empty():
-            topic, payload = data_queue.get()
-            try:
-                data = json.loads(payload)
-            except:
-                continue
-            
-            device_id = data.get("device_id", "unknown")
-            if "device_id" in data:
-                del data["device_id"]
-
-            # Phẳng dữ liệu thành device.key
-            for key, value in data.items():
-                flat_key = f"{device_id}.{key}"
-                device_data[flat_key] = value
-
-            # gửi mỗi giây
-            if time.time() - last_send >= 1 and device_data:
-                payload = json.dumps(device_data)
-                print(f"[FORWARD] Đẩy lên CoreIoT: {payload}")
-                mqttClient.publish(MQTT_TOPIC, payload, qos=1)
-                last_send = time.time()
-        time.sleep(0.1)
-
-forward_thread = threading.Thread(target=forward_loop, daemon=True)
-forward_thread.start()
-
-forward_thread = threading.Thread(target=forward_loop, daemon=True)
-forward_thread.start()
-
-try:
-    while True:
-        time.sleep(1)
-except KeyboardInterrupt:
-    print("Stopping")
-    mqttClient.loop_stop()
-    mqttClient.disconnect()
-    local_client.loop_stop()
-    local_client.disconnect()
+# Sử dụng
+if __name__ == "__main__":
+    gateway = MQTTGateway()
+    gateway.start()
