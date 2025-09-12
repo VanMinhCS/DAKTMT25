@@ -13,10 +13,11 @@ class MQTTGateway:
         self.MQTT_SERVER = "app.coreiot.io"
         self.MQTT_PORT = 1883
         self.MQTT_USERNAME = "YOUR_USER_NAME"
-        self.MQTT_TOKEN = "YOUR_TOKEN"
+        self.MQTT_TOKEN = "pVOXiHmqVMOf7ZkpDnED"
         self.MQTT_PASSWORD = ""
         self.MQTT_TOPIC = "v1/devices/me/telemetry"
         self.MQTT_ATTRIBUTE = "v1/devices/me/attributes"
+        self.MQTT_RPC = "v1/devices/me/rpc/request/+"
         
         # Mosquitto info
         self.MQTT_BROKER = "192.168.1.42" # demo
@@ -28,16 +29,27 @@ class MQTTGateway:
         
     # Core IoT Client callbacks
     def mqtt_connected(self, client, userdata, flags, reasonCode, properties):
-        print("Connect with IoT Broker reason code: ", reasonCode)
-        client.subscribe(self.MQTT_ATTRIBUTE)
+        if reasonCode == 0:
+            print("Connect with IoT Broker reason code: ", reasonCode)
+            client.subscribe(self.MQTT_RPC)
+        else:
+            print("Connection failed!")
+        
 
     def mqtt_subscribed(self, client, userdata, mid, granted_qos, properties=None):
         print("Subscribed to Topic!!!")
 
     def mqtt_recv_message(self, client, userdata, message):
-        print("Received message " + message.payload.decode("utf-8")
-              + " on topic '" + message.topic
-              + "' with QoS " + str(message.qos))
+        # Xử lý RPC
+        print("Recived from Core IoT:", message.payload.decode("utf-8"), " on topic: ", message.topic)
+        temp_data = {'value': True}
+        try:
+            jsonobj = json.loads(message.payload)
+            if jsonobj['method'] == "setValue":
+                temp_data["value"] = jsonobj['params']
+                client.publish(self.MQTT_ATTRIBUTE, json.dumps(temp_data), 1)
+        except:
+            pass
         
     def mqtt_unsubscribed(self, client, userdata, mid, rc, properties):
         print("Disconnect IoT Broker with reason code: ", rc)
@@ -131,7 +143,14 @@ class MQTTGateway:
         self.forward_thread.start()
         
         try:
+            # Test button
+            check = True
             while True:
+                data_temp1 = {"button1": check}
+                data_temp2 = {"button2": not check}
+                self.mqttClient.publish(self.MQTT_ATTRIBUTE, json.dumps(data_temp1))
+                self.mqttClient.publish(self.MQTT_ATTRIBUTE, json.dumps(data_temp2))
+                check = not check
                 time.sleep(1)
         except KeyboardInterrupt:
             self.stop()
