@@ -13,7 +13,7 @@ class MQTTGateway:
         self.MQTT_SERVER = "app.coreiot.io"
         self.MQTT_PORT = 1883
         self.MQTT_USERNAME = "YOUR_USER_NAME"
-        self.MQTT_TOKEN = "pVOXiHmqVMOf7ZkpDnED"
+        self.MQTT_TOKEN = "YOUR_TOKEN"
         self.MQTT_PASSWORD = ""
         self.MQTT_TOPIC = "v1/devices/me/telemetry"
         self.MQTT_ATTRIBUTE = "v1/devices/me/attributes"
