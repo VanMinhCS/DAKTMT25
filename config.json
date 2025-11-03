@@ -1,0 +1,10 @@
+{
+  "model_path": "plant_disease_v3.pt",
+  "confidence_threshold": 0.35,
+  "camera_id": 0,
+  "save_video": false,
+  "show_fps": true,
+  "thingsboard_host": "app.coreiot.io",
+  "thingsboard_access_token": "48y68r05run4tjflusny",
+  "send_interval_seconds": 10
+}
