@@ -1,10 +1,18 @@
 {
-  "model_path": "plant_disease_v3.pt",
-  "confidence_threshold": 0.35,
+  "model_path": "model/plant_disease_v4.pt",
+  "confidence_threshold": 0.65,
+  "inference_imgsz": 480,
+  "camera_width": 640,
+  "camera_height": 480,
   "camera_id": 0,
-  "save_video": false,
+  "rtsp_stream_name": "mystream",
   "show_fps": true,
+  
   "thingsboard_host": "app.coreiot.io",
-  "thingsboard_access_token": "48y68r05run4tjflusny",
-  "send_interval_seconds": 10
+  "thingsboard_access_token": "y4eus2ugz3grxa90f711",
+  "send_interval_seconds": 10,
+  "current_version": "v1.0",
+  
+  "deviceId": "Mika-device-001",
+  "plantId": "Mika-plant-001"
 }
