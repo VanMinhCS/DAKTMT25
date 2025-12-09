@@ -94,10 +94,10 @@ class MainApp:
         self.iot_client.stop()
         print("System Stopped.")
 
-    def handle_test_image(self, b64_image):
+    def handle_test_image(self, b64_image, report_id=None):
         """Callback khi nhận được ảnh test từ IoT"""
         print("Processing test image...")
-        result = self.ai_engine.process_test_image(b64_image)
+        result = self.ai_engine.process_test_image(b64_image, report_id)
         if result:
             self.iot_client.send_telemetry(result)
             print("Test result sent.")

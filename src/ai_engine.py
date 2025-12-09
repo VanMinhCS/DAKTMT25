@@ -88,7 +88,7 @@ class AIEngine:
             self.detection_aggregator.clear()
             return data
 
-    def process_test_image(self, b64_str):
+    def process_test_image(self, b64_str, report_id=None):
         """Xử lý ảnh test từ Base64"""
         try:
             if ',' in b64_str:
@@ -101,7 +101,7 @@ class AIEngine:
                 return None
 
             plant_report = {
-                "report_id": str(uuid.uuid4()),
+                "report_id": report_id if report_id else str(uuid.uuid4()),
                 "plant_name": "Unknown",
                 "plant_disease": "None",
                 "stable_health_status": "Checking",

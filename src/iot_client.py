@@ -63,9 +63,26 @@ class IoTClient:
                 if data.get('target_version') and self.on_update_received:
                     self.on_update_received(data.get('target_version'), data.get('firmware_url'))
                 
-                # Xử lý Test Ảnh
-                if data.get('Image') and self.on_test_image_received:
-                    # Chạy trên thread riêng để không block MQTT loop
-                    threading.Thread(target=self.on_test_image_received, args=(data['Image'],), daemon=True).start()
+                # Xử lý Test Ảnh (Chỉ hỗ trợ key 'image_request' chứa JSON {image, uuid})
+                if data.get('image_request') and self.on_test_image_received:
+                    payload = data.get('image_request')
+                    b64_img = None
+                    req_id = None
+
+                    try:
+                        # Parse JSON nếu là string
+                        if isinstance(payload, str):
+                            payload = json.loads(payload)
+                        
+                        # Lấy dữ liệu từ Dict
+                        if isinstance(payload, dict):
+                            b64_img = payload.get('image')
+                            req_id = payload.get('uuid')
+                    except Exception as e:
+                        print(f"Error parsing image_request: {e}")
+
+                    # Chỉ xử lý nếu có ảnh
+                    if b64_img:
+                        threading.Thread(target=self.on_test_image_received, args=(b64_img, req_id), daemon=True).start()
             except Exception as e:
                 print(f"Message Error: {e}")
