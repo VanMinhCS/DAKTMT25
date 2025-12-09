@@ -8,22 +8,48 @@ import requests
 import zipfile
 from datetime import datetime
 
-from src.utils import load_config, get_sensor_data
+from src.utils import load_config
 from src.camera import Camera
 from src.ai_engine import AIEngine
 from src.iot_client import IoTClient
 from src.streamer import RTSPStreamer
+from src.sensor_server import SensorServer
 
 class MainApp:
     def __init__(self):
         self.config = load_config("config.json")
         self.running = True
         
+        # Cache lưu dữ liệu sensor mới nhất.
+        # Khởi tạo None để biết là chưa có dữ liệu thực
+        self.latest_sensor_data = None
+        self.sensor_lock = threading.Lock() # Lock để đồng bộ hóa dữ liệu
+
         # Khởi tạo các module
         self.camera = Camera(self.config)
-        self.ai_engine = AIEngine(self.config)
+        
+        # Wrapper để AI Engine có thể lấy dữ liệu sensor mới nhất từ MainApp
+        class SensorProvider:
+            def __init__(self, app): self.app = app
+            def get_data(self): 
+                with self.app.sensor_lock:
+                    # Nếu chưa có dữ liệu thực, trả về dữ liệu mặc định (giá trị 0) để tránh lỗi Dashboard
+                    if self.app.latest_sensor_data is None:
+                        return [
+                            {"type": "temperature", "value": 0, "unit": "C"},
+                            {"type": "humidity", "value": 0, "unit": "%"},
+                            {"type": "soil_moisture", "value": 0, "unit": "%"}
+                        ]
+                    return self.app.latest_sensor_data
+            
+        self.ai_engine = AIEngine(self.config, sensor_manager=SensorProvider(self))
+        
         self.iot_client = IoTClient(self.config)
         self.streamer = RTSPStreamer(self.config)
+
+        # Khởi tạo Sensor Server
+        # Khi nhận data: 1. Gửi lên TB ngay, 2. Cập nhật vào cache local
+        self.sensor_server = SensorServer(self.config, data_callback=self.update_sensor_data)
         
         # Kết nối các module (Wiring)
         # 1. Camera đẩy frame cho AI và Streamer
@@ -50,6 +76,7 @@ class MainApp:
         self.ai_engine.start()
         self.streamer.start()
         self.iot_client.start()
+        self.sensor_server.start()
         self.report_thread.start()
         
         try:
@@ -95,6 +122,34 @@ class MainApp:
             except Exception as e:
                 print(f"Update Failed: {e}")
 
+    def update_sensor_data(self, data):
+        """Callback xử lý dữ liệu từ Sensor Server"""
+        # Chỉ cập nhật Cache, KHÔNG gửi lên ThingsBoard ngay lập tức
+        
+        # Trường hợp 1: Data là List (Format mới từ ESP32: [{"type":..., "value":...}])
+        if isinstance(data, list):
+            with self.sensor_lock:
+                self.latest_sensor_data = data
+
+        # Trường hợp 2: Data là Dict (Format cũ: {"temperature": 25, ...})
+        elif isinstance(data, dict):
+            # Convert sang List để lưu Cache
+            formatted_list = []
+            for key, value in data.items():
+                unit = ""
+                if "temp" in key.lower(): unit = "C"
+                elif "humid" in key.lower() or "moisture" in key.lower(): unit = "%"
+                
+                formatted_list.append({
+                    "type": key,
+                    "value": value,
+                    "unit": unit
+                })
+            
+            with self.sensor_lock:
+                self.latest_sensor_data = formatted_list
+        # print(f"Local Sensor Cache Updated: {data}")
+
     def _report_loop(self):
         """Gửi báo cáo định kỳ"""
         while self.running:
@@ -138,12 +193,24 @@ class MainApp:
                 else:
                     plant_report["stable_health_status"] = "Checking"
 
+            # Lấy dữ liệu sensor (xử lý fallback nếu chưa có)
+            current_sensors = None
+            with self.sensor_lock:
+                if self.latest_sensor_data is None:
+                    current_sensors = [
+                        {"type": "temperature", "value": 0, "unit": "C"},
+                        {"type": "humidity", "value": 0, "unit": "%"},
+                        {"type": "soil_moisture", "value": 0, "unit": "%"}
+                    ]
+                else:
+                    current_sensors = self.latest_sensor_data
+
             full_payload = {
                 "device_report": {
                     "deviceId": self.config.get("deviceId"),
                     "plantId": self.config.get("plantId"),
                     "plant": plant_report,
-                    "sensors": get_sensor_data()
+                    "sensors": current_sensors
                 }
             }
             

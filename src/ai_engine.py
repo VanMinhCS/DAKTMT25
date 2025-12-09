@@ -148,14 +148,11 @@ class AIEngine:
                 b64_res = base64.b64encode(buf).decode('utf-8')
                 plant_report["evidence_image"] = f"data:image/jpeg;base64,{b64_res}"
 
-            return {
-                "image_report": {
-                    "deviceId": self.config.get("deviceId"),
-                    "plantId": self.config.get("plantId"),
-                    "plant": plant_report,
-                    "sensors": self.sensor_manager.get_data() if self.sensor_manager else []
-                }
-            }
+            # Lấy dữ liệu sensor nếu có
+            if self.sensor_manager:
+                plant_report["sensors"] = self.sensor_manager.get_data()
+
+            return plant_report
         except Exception as e:
             print(f"Test Image Processing Error: {e}")
             return None

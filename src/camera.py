@@ -61,7 +61,6 @@ class Camera:
         while self.running:
             if not self.cap or not self.cap.isOpened():
                 time.sleep(1)
-                self._init_camera()
                 continue
 
             ret, frame = self.cap.read()

@@ -4,3 +4,5 @@ ultralytics
 paho-mqtt
 requests
 pyserial
+flask
+flask
