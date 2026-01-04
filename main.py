@@ -99,7 +99,43 @@ class MainApp:
         print("Processing test image...")
         result = self.ai_engine.process_test_image(b64_image, report_id)
         if result:
-            self.iot_client.send_telemetry(result)
+            # Kiểm tra kích thước payload trước khi gửi
+            # Nếu > 60KB (giới hạn an toàn của MQTT), thực hiện nén ảnh
+            try:
+                payload_str = json.dumps({"image_report": result})
+                if len(payload_str) > 60000:
+                    print(f"[Main] Payload too large ({len(payload_str)} bytes). Compressing image to avoid disconnect...")
+                    import cv2
+                    import numpy as np
+                    import base64
+                    
+                    img_data = result.get("evidence_image", "")
+                    if img_data and "base64," in img_data:
+                        img_data = img_data.split("base64,")[1]
+                    
+                    if img_data:
+                        img_bytes = base64.b64decode(img_data)
+                        nparr = np.frombuffer(img_bytes, np.uint8)
+                        img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
+                        
+                        if img is not None:
+                            # Resize và nén
+                            h, w = img.shape[:2]
+                            if w > 640:
+                                scale = 640 / w
+                                img = cv2.resize(img, (0, 0), fx=scale, fy=scale)
+                            
+                            # Nén JPEG quality 50
+                            ret, buf = cv2.imencode('.jpg', img, [int(cv2.IMWRITE_JPEG_QUALITY), 50])
+                            if ret:
+                                b64_res = base64.b64encode(buf).decode('utf-8')
+                                result["evidence_image"] = f"data:image/jpeg;base64,{b64_res}"
+                                print("[Main] Image compressed successfully.")
+            except Exception as e:
+                print(f"[Main] Error checking/compressing payload: {e}")
+
+            # Đóng gói kết quả vào key "image_report" để gửi dạng JSON Object
+            self.iot_client.send_telemetry({"image_report": result})
             print("Test result sent.")
 
     def handle_ota_update(self, target_version, url):
