@@ -1,122 +1,120 @@
-#include "WiFi.h"
-#include "ESPAsyncWebServer.h"
-#include "SPIFFS.h"
-#include "DHT20.h"
-#include "DHT.h"
-#include "freertos/FreeRTOS.h"
-#include "freertos/task.h"
-#include <ThingsBoard.h>
-#include <Arduino_MQTT_Client.h>
+#include <Arduino.h>
+#include <Wire.h>
+#include <DHT20.h>
+#include <WiFi.h>
+#include <HTTPClient.h>
 
-#define DHT_PIN 6
-#define DHT_TYPE DHT11
-DHT dht(DHT_PIN, DHT_TYPE);
-float temperature = 0;
-float humidity = 0;
+// Cấu hình chân
+#define SDA_PIN 11
+#define SCL_PIN 12
+#define SOIL_MOISTURE_PIN 1
 
-WiFiClient wifiClient;
-Arduino_MQTT_Client mqttClient(wifiClient);
-ThingsBoard tb(mqttClient);
-
-// DHT20 dht;              // Create DHT20 sensor object
-
-const char *ssid = "Redmi Note 11";
+// Thông tin WiFi
+const char *ssid = "MikaSoCute!!!";
 const char *password = "12345671";
 
-const char *token_id = "es12alt4fa25ryy4yej4";
-const char *thingBoard_Sever = "app.coreiot.io";
-const int port = 1883;
+// API Endpoint
+const char* serverName = "http://10.92.151.212:5000/api/sensor"; 
 
-void wifiTask(void *pvParameters)
-{
-  Serial.begin(115200);
-  WiFi.begin(ssid, password);
-  while (WiFi.status() != WL_CONNECTED)
-  {
-    vTaskDelay(1000 / portTICK_PERIOD_MS);
-    Serial.println("Connecting to WiFi..");
+DHT20 dht;
+
+void scanWiFi() {
+  Serial.println("Scanning for WiFi networks...");
+  int n = WiFi.scanNetworks();
+  Serial.println("Scan done");
+  if (n == 0) {
+      Serial.println("no networks found");
+  } else {
+      Serial.print(n);
+      Serial.println(" networks found");
+      for (int i = 0; i < n; ++i) {
+          Serial.print(i + 1);
+          Serial.print(": ");
+          Serial.print(WiFi.SSID(i));
+          Serial.print(" (");
+          Serial.print(WiFi.RSSI(i));
+          Serial.print(")");
+          Serial.println((WiFi.encryptionType(i) == WIFI_AUTH_OPEN)?" ":"*");
+          delay(10);
+      }
   }
-
-  // Print ESP32 Local IP Address
-  Serial.println(WiFi.localIP());
-  vTaskDelete(NULL); // Delete the task when done
+  Serial.println("");
 }
 
-void SensorTask(void *pvParameters)
-{
+void setup() {
+  Serial.begin(115200);
+  
+  // Khởi tạo I2C
+  Wire.begin(SDA_PIN, SCL_PIN);
+  
+  // Khởi tạo DHT20
   dht.begin();
-  while (1)
-  {
-    temperature = dht.readTemperature();
-    humidity = dht.readHumidity();
 
-    if (isnan(temperature) || isnan(humidity))
-    {
-      Serial.println("Failed to read from DHT sensor!");
-    }
-    else
-    {
-      Serial.print("Temp: ");
-      Serial.print(temperature);
-      Serial.print(" *C ");
-      Serial.print("Humidity: ");
-      Serial.print(humidity);
-      Serial.println(" %");
-      tb.sendTelemetryData("temperature", temperature);
-      tb.sendTelemetryData("humidity", humidity);
-    }
-    vTaskDelay(3000 / portTICK_PERIOD_MS);
-    tb.loop();
+  // Quét WiFi trước khi kết nối
+  scanWiFi();
+  
+  // Kết nối WiFi
+  WiFi.begin(ssid, password);
+  Serial.println("Connecting to WiFi");
+  while(WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
   }
+  Serial.println("");
+  Serial.print("Connected to WiFi network with IP Address: ");
+  Serial.println(WiFi.localIP());
 }
 
-void SeverTask(void *pvParameters)
-{
-  if (!tb.connected())
-  {
-    Serial.println("Reconnecting to ThingsBoard...");
-    while (!tb.connect(thingBoard_Sever, token_id, port))
-    {
-      vTaskDelay(1000 / portTICK_PERIOD_MS);
-      Serial.println("Failed to reconnect");
+void loop() {
+  // Đọc dữ liệu từ DHT20
+  dht.read();
+  float temp = dht.getTemperature();
+  float hum = dht.getHumidity();
+  
+  // Đọc dữ liệu từ cảm biến độ ẩm đất
+  int soilMoistureValue = analogRead(SOIL_MOISTURE_PIN);
+  // Chuyển đổi sang phần trăm (cần hiệu chỉnh thực tế tùy cảm biến)
+  // Giả sử 0 là khô (0%) và 4095 là ướt (100%) hoặc ngược lại
+  // Bạn cần đo giá trị khi khô và khi ướt để thay vào hàm map()
+  int soilMoisturePercent = map(soilMoistureValue, 0, 4095, 0, 100); 
+
+  // Kiểm tra dữ liệu hợp lệ
+  // Lưu ý: DHT20 trả về 0 khi lỗi hoặc chưa đọc được, cần kiểm tra status nếu thư viện hỗ trợ
+  // Ở đây ta kiểm tra cơ bản
+  
+  Serial.printf("Temp: %.2f, Hum: %.2f, Soil: %d (Raw), %d (%%)\n", temp, hum, soilMoistureValue, soilMoisturePercent);
+  
+  // Gửi dữ liệu qua API
+  if(WiFi.status() == WL_CONNECTED){
+    HTTPClient http;
+    
+    http.begin(serverName);
+    http.addHeader("Content-Type", "application/json");
+    
+    // Tạo payload JSON
+    String httpRequestData = "[";
+    httpRequestData += "{\"type\":\"temperature\",\"value\":" + String(temp) + ",\"unit\":\"C\"},";
+    httpRequestData += "{\"type\":\"humidity\",\"value\":" + String(hum) + ",\"unit\":\"%\"},";
+    httpRequestData += "{\"type\":\"soil_moisture\",\"value\":" + String(soilMoisturePercent) + ",\"unit\":\"%\"}";
+    httpRequestData += "]";
+    
+    int httpResponseCode = http.POST(httpRequestData);
+    
+    if (httpResponseCode > 0) {
+      String response = http.getString();
+      Serial.println(httpResponseCode);
+      Serial.println(response);
     }
+    else {
+      Serial.print("Error on sending POST: ");
+      Serial.println(httpResponseCode);
+    }
+    
+    http.end();
   }
-  vTaskDelete(NULL);
-}
-
-void setup()
-{
-  // Initialize Serial communication to display information on Serial Monitor
-  Serial.begin(115200);
-
-  // Initialize I2C with custom SDA = 11, SCL = 12
-  // Wire.begin(11, 12);  // SDA = 11, SCL = 12
-
-  // Initialize DHT20 sensor
-  // if (!dht.begin()) {
-  //   Serial.println("Failed to initialize DHT20 sensor!");
-  //   while (1);  // Halt if sensor initialization fails
-  // }
-  // Serial.println("DHT20 sensor initialized.");
-
-  xTaskCreate(wifiTask, "WiFiTask", 4096, NULL, 1, NULL);
-  xTaskCreate(SensorTask, "SensorTask", 4096, NULL, 1, NULL);
-  xTaskCreate(SeverTask, "SeverTask", 4096, NULL, 1, NULL);
-}
-
-void loop()
-{
-  // if (!tb.connected())
-  // {
-  //   Serial.println("Reconnecting to ThingsBoard...");
-  //   if (!tb.connect(thingBoard_Sever, token_id, port))
-  //   {
-  //     Serial.println("Failed to reconnect");
-  //     return;
-  //   }
-  // }
-  // tb.sendTelemetryData("temperature", temperature);
-  // tb.sendTelemetryData("humidity", humidity);
-
-  // tb.loop();
+  else {
+    Serial.println("WiFi Disconnected");
+  }
+  
+  delay(5000); // Gửi mỗi 5 giây
 }
