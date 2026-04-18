@@ -1,3 +1,25 @@
+# IDE
 .vscode/
+
+# Virtual environments
 .venv/
+venv/
+
+# Python cache
 __pycache__/
+*.pyc
+*.pyo
+
+# ⚠️ SECRETS — KHÔNG BAO GIỜ COMMIT
+.env
+
+# Log files
+logs/
+
+# Model files nặng (quản lý bằng Git LFS hoặc Drive)
+model/*.pt
+model/*.h5
+
+# Temp files
+update.zip
+*.log

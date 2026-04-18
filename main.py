@@ -1,84 +1,175 @@
 import time
-import sys
-import os
-import uuid
-import json
 import threading
-import requests
-import zipfile
-from datetime import datetime
 
-from src.utils import load_config
-from src.camera import Camera
-from src.ai_engine import AIEngine
-from src.iot_client import IoTClient
-from src.streamer import RTSPStreamer
-from src.sensor_server import SensorServer
+from src.utils          import load_config
+from src.logger         import get_logger
+from src.alert_engine   import AlertEngine
+from src.image_processor import ImageProcessor
+from src.ota_manager    import OTAManager
+from src.report_builder import ReportBuilder, DEFAULT_SENSORS
 
+logger = get_logger("Main")
+
+# ══════════════════════════════════════════════════════════════════════════════
+# Feature-flag guarded imports
+# Chỉ import khi tính năng được bật, tránh crash khi thiếu dependency
+# ══════════════════════════════════════════════════════════════════════════════
+
+def _import_camera():
+    from src.camera import Camera
+    return Camera
+
+def _import_ai_engine():
+    from src.ai_engine import AIEngine
+    return AIEngine
+
+def _import_iot():
+    from src.iot_client import IoTClient
+    return IoTClient
+
+def _import_streamer():
+    from src.streamer import RTSPStreamer
+    return RTSPStreamer
+
+def _import_sensor_server():
+    from src.sensor_server import SensorServer
+    return SensorServer
+
+def _import_lstm():
+    from src.lstm_predictor import LSTMPredictor
+    return LSTMPredictor
+
+
+# ══════════════════════════════════════════════════════════════════════════════
 class MainApp:
+    """
+    Điểm kết nối (orchestrator) của toàn bộ hệ thống.
+
+    Nhiệm vụ DUY NHẤT của class này:
+      - Khởi tạo và wire các module lại với nhau.
+      - Quản lý lifecycle (start / stop).
+      - Điều phối luồng dữ liệu giữa các module.
+
+    Mọi business logic đều nằm trong các class chuyên biệt:
+      AlertEngine, ImageProcessor, OTAManager, ReportBuilder.
+    """
+
     def __init__(self):
-        self.config = load_config("config.json")
+        self.config  = load_config("config.json")
         self.running = True
-        
-        # Cache lưu dữ liệu sensor mới nhất.
-        # Khởi tạo None để biết là chưa có dữ liệu thực
+
+        # ── Feature flags ──────────────────────────────────────────────────
+        self.f_camera   = self.config.get("enable_camera",   True)
+        self.f_sensor   = self.config.get("enable_sensor",   True)
+        self.f_mqtt     = self.config.get("enable_mqtt",     True)
+        self.f_streamer = self.config.get("enable_streamer", True)
+        self.f_lstm     = self.config.get("enable_lstm",     True)
+        self._print_flags()
+
+        # ── Shared sensor cache ────────────────────────────────────────────
         self.latest_sensor_data = None
-        self.sensor_lock = threading.Lock() # Lock để đồng bộ hóa dữ liệu
+        self.sensor_lock        = threading.Lock()
 
-        # Khởi tạo các module
-        self.camera = Camera(self.config)
-        
-        # Wrapper để AI Engine có thể lấy dữ liệu sensor mới nhất từ MainApp
+        # ── Hardware / network modules ─────────────────────────────────────
+        self.camera        = self._init_camera()
+        self.ai_engine     = self._init_ai_engine()
+        self.iot_client    = self._init_iot_client()
+        self.streamer      = self._init_streamer()
+        self.sensor_server = self._init_sensor_server()
+        self.lstm          = self._init_lstm()
+
+        # ── Business-logic services ────────────────────────────────────────
+        self.alert_engine    = AlertEngine()
+        self.image_processor = ImageProcessor()
+        self.ota_manager     = OTAManager(self.config)
+        self.report_builder  = ReportBuilder()
+
+        # ── Wire modules & start report thread ────────────────────────────
+        self._wire_modules()
+        self.report_thread = threading.Thread(
+            target=self._report_loop, daemon=True
+        )
+
+    # ──────────────────────────────────────────────────────────────────────
+    # Init helpers — mỗi module có 1 hàm _init_* riêng, dễ đọc và override
+    # ──────────────────────────────────────────────────────────────────────
+
+    def _init_camera(self):
+        if not self.f_camera:
+            return None
+        return _import_camera()(self.config)
+
+    def _init_ai_engine(self):
+        if not self.f_camera:
+            return None
+
+        app = self  # reference để SensorProvider đọc latest_sensor_data
+
         class SensorProvider:
-            def __init__(self, app): self.app = app
-            def get_data(self): 
-                with self.app.sensor_lock:
-                    # Nếu chưa có dữ liệu thực, trả về dữ liệu mặc định (giá trị 0) để tránh lỗi Dashboard
-                    if self.app.latest_sensor_data is None:
-                        return [
-                            {"type": "temperature", "value": 0, "unit": "C"},
-                            {"type": "humidity", "value": 0, "unit": "%"},
-                            {"type": "soil_moisture", "value": 0, "unit": "%"}
-                        ]
-                    return self.app.latest_sensor_data
-            
-        self.ai_engine = AIEngine(self.config, sensor_manager=SensorProvider(self))
-        
-        self.iot_client = IoTClient(self.config)
-        self.streamer = RTSPStreamer(self.config)
+            def get_data(self_inner):
+                with app.sensor_lock:
+                    return app.latest_sensor_data or DEFAULT_SENSORS
 
-        # Khởi tạo Sensor Server
-        # Khi nhận data: 1. Gửi lên TB ngay, 2. Cập nhật vào cache local
-        self.sensor_server = SensorServer(self.config, data_callback=self.update_sensor_data)
-        
-        # Kết nối các module (Wiring)
-        # 1. Camera đẩy frame cho AI và Streamer
-        self.camera.add_queue(self.ai_engine.input_queue)
-        self.camera.add_queue(self.streamer.frame_queue)
-        
-        # 2. AI đẩy kết quả vẽ cho Streamer
-        # (Chúng ta cần một cơ chế để chuyển data từ queue này sang queue kia, 
-        # hoặc để Streamer đọc trực tiếp từ queue của AI. 
-        # Ở đây tôi gán queue của Streamer bằng queue output của AI để đơn giản hóa, 
-        # nhưng đúng ra Streamer nên có queue riêng và ta forward dữ liệu qua)
-        self.streamer.result_queue = self.ai_engine.output_queue
-        
-        # 3. Đăng ký callback cho IoT Client
-        self.iot_client.on_test_image_received = self.handle_test_image
-        self.iot_client.on_update_received = self.handle_ota_update
+        return _import_ai_engine()(self.config, sensor_manager=SensorProvider())
 
-        # Thread gửi báo cáo định kỳ
-        self.report_thread = threading.Thread(target=self._report_loop, daemon=True)
+    def _init_iot_client(self):
+        if not self.f_mqtt:
+            return None
+        return _import_iot()(self.config)
+
+    def _init_streamer(self):
+        if not (self.f_streamer and self.f_camera):
+            return None
+        return _import_streamer()(self.config)
+
+    def _init_sensor_server(self):
+        if not self.f_sensor:
+            return None
+        return _import_sensor_server()(
+            self.config, data_callback=self.update_sensor_data
+        )
+
+    def _init_lstm(self):
+        if not self.f_lstm:
+            return None
+        return _import_lstm()(self.config)
+
+    def _wire_modules(self):
+        """Kết nối các queue giữa các module với nhau."""
+        if self.camera and self.ai_engine:
+            self.camera.add_queue(self.ai_engine.input_queue)
+        if self.camera and self.streamer:
+            self.camera.add_queue(self.streamer.frame_queue)
+        if self.ai_engine and self.streamer:
+            self.streamer.result_queue = self.ai_engine.output_queue
+        if self.iot_client:
+            self.iot_client.on_test_image_received = self.handle_test_image
+            self.iot_client.on_update_received     = self.handle_ota_update
+
+    # ──────────────────────────────────────────────────────────────────────
+    # Lifecycle
+    # ──────────────────────────────────────────────────────────────────────
+
+    def _print_flags(self):
+        print("=" * 50)
+        print("  FEATURE FLAGS")
+        print("=" * 50)
+        print(f"  Camera   : {'ON  ✅' if self.f_camera   else 'OFF ❌'}")
+        print(f"  Sensor   : {'ON  ✅' if self.f_sensor   else 'OFF ❌'}")
+        print(f"  MQTT     : {'ON  ✅' if self.f_mqtt     else 'OFF ❌'}")
+        print(f"  Streamer : {'ON  ✅' if self.f_streamer else 'OFF ❌'}")
+        print(f"  LSTM     : {'ON  ✅' if self.f_lstm     else 'OFF ❌'}")
+        print("=" * 50)
 
     def start(self):
-        print("Starting System...")
-        self.camera.start()
-        self.ai_engine.start()
-        self.streamer.start()
-        self.iot_client.start()
-        self.sensor_server.start()
+        logger.info("Starting System...")
+        if self.camera:        self.camera.start()
+        if self.ai_engine:     self.ai_engine.start()
+        if self.streamer:      self.streamer.start()
+        if self.iot_client:    self.iot_client.start()
+        if self.sensor_server: self.sensor_server.start()
         self.report_thread.start()
-        
+
         try:
             while self.running:
                 time.sleep(1)
@@ -86,172 +177,108 @@ class MainApp:
             self.stop()
 
     def stop(self):
-        print("Stopping System...")
+        logger.info("Stopping System...")
         self.running = False
-        self.camera.stop()
-        self.ai_engine.stop()
-        self.streamer.stop()
-        self.iot_client.stop()
-        print("System Stopped.")
+        if self.camera:     self.camera.stop()
+        if self.ai_engine:  self.ai_engine.stop()
+        if self.streamer:   self.streamer.stop()
+        if self.iot_client: self.iot_client.stop()
+        logger.info("System Stopped.")
+
+    # ──────────────────────────────────────────────────────────────────────
+    # Event handlers — nhận sự kiện từ IoT, ủy thác xử lý cho service
+    # ──────────────────────────────────────────────────────────────────────
 
     def handle_test_image(self, b64_image, report_id=None):
-        """Callback khi nhận được ảnh test từ IoT"""
-        print("Processing test image...")
+        """Callback khi nhận ảnh test từ ThingsBoard."""
+        if not self.ai_engine:
+            logger.warning("AI Engine OFF — cannot process test image.")
+            return
+
+        logger.info("Processing test image...")
         result = self.ai_engine.process_test_image(b64_image, report_id)
         if result:
-            # Kiểm tra kích thước payload trước khi gửi
-            # Nếu > 60KB (giới hạn an toàn của MQTT), thực hiện nén ảnh
-            try:
-                payload_str = json.dumps({"image_report": result})
-                if len(payload_str) > 60000:
-                    print(f"[Main] Payload too large ({len(payload_str)} bytes). Compressing image to avoid disconnect...")
-                    import cv2
-                    import numpy as np
-                    import base64
-                    
-                    img_data = result.get("evidence_image", "")
-                    if img_data and "base64," in img_data:
-                        img_data = img_data.split("base64,")[1]
-                    
-                    if img_data:
-                        img_bytes = base64.b64decode(img_data)
-                        nparr = np.frombuffer(img_bytes, np.uint8)
-                        img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
-                        
-                        if img is not None:
-                            # Resize và nén
-                            h, w = img.shape[:2]
-                            if w > 640:
-                                scale = 640 / w
-                                img = cv2.resize(img, (0, 0), fx=scale, fy=scale)
-                            
-                            # Nén JPEG quality 50
-                            ret, buf = cv2.imencode('.jpg', img, [int(cv2.IMWRITE_JPEG_QUALITY), 50])
-                            if ret:
-                                b64_res = base64.b64encode(buf).decode('utf-8')
-                                result["evidence_image"] = f"data:image/jpeg;base64,{b64_res}"
-                                print("[Main] Image compressed successfully.")
-            except Exception as e:
-                print(f"[Main] Error checking/compressing payload: {e}")
-
-            # Đóng gói kết quả vào key "image_report" để gửi dạng JSON Object
-            self.iot_client.send_telemetry({"image_report": result})
-            print("Test result sent.")
+            result = self.image_processor.compress_if_needed(result)
+            if self.iot_client:
+                self.iot_client.send_telemetry({"image_report": result})
+                logger.info("Test image result sent.")
 
     def handle_ota_update(self, target_version, url):
-        """Callback khi có bản cập nhật"""
-        current_version = self.config.get('current_version', 'v1.0')
-        if target_version != current_version:
-            print(f"Updating firmware to {target_version}...")
-            try:
-                r = requests.get(url, timeout=60)
-                r.raise_for_status()
-                with open("update.zip", "wb") as f:
-                    f.write(r.content)
-                with zipfile.ZipFile("update.zip", 'r') as z:
-                    z.extractall(".")
-                os.remove("update.zip")
-                
-                print("Update installed. Restarting...")
-                self.stop()
-                os.execv(sys.executable, ['python'] + sys.argv)
-            except Exception as e:
-                print(f"Update Failed: {e}")
+        """Callback khi nhận lệnh cập nhật OTA từ ThingsBoard."""
+        self.ota_manager.handle_update(
+            target_version, url, stop_callback=self.stop
+        )
 
     def update_sensor_data(self, data):
-        """Callback xử lý dữ liệu từ Sensor Server"""
-        # Chỉ cập nhật Cache, KHÔNG gửi lên ThingsBoard ngay lập tức
-        
-        # Trường hợp 1: Data là List (Format mới từ ESP32: [{"type":..., "value":...}])
+        """Callback xử lý dữ liệu cảm biến từ ESP32 (qua HTTP)."""
+        # Chuẩn hóa về dạng list[{type, value, unit}]
         if isinstance(data, list):
-            with self.sensor_lock:
-                self.latest_sensor_data = data
-
-        # Trường hợp 2: Data là Dict (Format cũ: {"temperature": 25, ...})
+            normalized = data
         elif isinstance(data, dict):
-            # Convert sang List để lưu Cache
-            formatted_list = []
+            normalized = []
             for key, value in data.items():
                 unit = ""
-                if "temp" in key.lower(): unit = "C"
-                elif "humid" in key.lower() or "moisture" in key.lower(): unit = "%"
-                
-                formatted_list.append({
-                    "type": key,
-                    "value": value,
-                    "unit": unit
-                })
-            
-            with self.sensor_lock:
-                self.latest_sensor_data = formatted_list
-        # print(f"Local Sensor Cache Updated: {data}")
+                if "temp"     in key.lower(): unit = "C"
+                elif "humid"  in key.lower(): unit = "%"
+                elif "moisture" in key.lower(): unit = "%"
+                normalized.append({"type": key, "value": value, "unit": unit})
+        else:
+            return
+
+        with self.sensor_lock:
+            self.latest_sensor_data = normalized
+
+        if self.lstm:
+            self.lstm.update(normalized)
+
+    # ──────────────────────────────────────────────────────────────────────
+    # Report loop — thu thập, build và gửi báo cáo định kỳ
+    # ──────────────────────────────────────────────────────────────────────
 
     def _report_loop(self):
-        """Gửi báo cáo định kỳ"""
+        """Gửi báo cáo tổng hợp lên ThingsBoard theo chu kỳ."""
         while self.running:
             interval = self.config.get('send_interval_seconds', 10)
             for _ in range(interval):
-                if not self.running: return
+                if not self.running:
+                    return
                 time.sleep(1)
-            
-            # Lấy dữ liệu tổng hợp từ AI Engine
-            detection_counts = self.ai_engine.get_aggregated_data()
-            
-            plant_report = {
-                "report_id": str(uuid.uuid4()),
-                "plant_name": "Unknown",
-                "plant_disease": "None",
-                "stable_health_status": "Checking",
-                "detectedAt": datetime.now().isoformat()
-            }
 
-            if not detection_counts:
-                plant_report["stable_health_status"] = "Checking"
-            else:
-                best_class = max(detection_counts, key=detection_counts.get)
-                count = detection_counts[best_class]
-                CONF_THRESH = 5
-                
-                parts = best_class.split('_', 1)
-                p_name = parts[0].lower() if len(parts)==2 else "Unknown"
-                d_name = parts[1].replace('_', ' ') if len(parts)==2 else best_class
-                
-                plant_report.update({
-                    "plant_name": p_name,
-                    "plant_disease": d_name,
-                    "debug_detection_count": count
-                })
+            # 1. Kết quả YOLO
+            plant_report = self.report_builder.build_plant_report(self.ai_engine)
 
-                if "healthy" in best_class.lower():
-                    plant_report["stable_health_status"] = "Healthy"
-                elif count >= CONF_THRESH:
-                    plant_report["stable_health_status"] = "Warning"
-                else:
-                    plant_report["stable_health_status"] = "Checking"
-
-            # Lấy dữ liệu sensor (xử lý fallback nếu chưa có)
-            current_sensors = None
+            # 2. Dữ liệu cảm biến hiện tại
             with self.sensor_lock:
-                if self.latest_sensor_data is None:
-                    current_sensors = [
-                        {"type": "temperature", "value": 0, "unit": "C"},
-                        {"type": "humidity", "value": 0, "unit": "%"},
-                        {"type": "soil_moisture", "value": 0, "unit": "%"}
-                    ]
-                else:
-                    current_sensors = self.latest_sensor_data
+                sensors = self.latest_sensor_data or DEFAULT_SENSORS
 
-            full_payload = {
-                "device_report": {
-                    "deviceId": self.config.get("deviceId"),
-                    "plantId": self.config.get("plantId"),
-                    "plant": plant_report,
-                    "sensors": current_sensors
-                }
-            }
-            
-            self.iot_client.send_telemetry(full_payload)
-            print(f"Sent Periodic Report: {plant_report['stable_health_status']}")
+            # 3. Dự đoán LSTM
+            sensor_health = self.report_builder.build_sensor_health(self.lstm)
+
+            # 4. Cảnh báo tổng hợp YOLO + LSTM
+            lstm_status_str = (
+                sensor_health.get("lstm_status")
+                if sensor_health and sensor_health.get("lstm_ready") else None
+            )
+            alert = self.alert_engine.build(
+                yolo_status=plant_report["stable_health_status"],
+                lstm_status=lstm_status_str,
+            )
+
+            # 5. Build payload cuối & gửi
+            device_report = self.report_builder.build_device_report(
+                self.config, plant_report, sensors, alert, sensor_health
+            )
+            if self.iot_client:
+                self.iot_client.send_telemetry({"device_report": device_report})
+
+            lstm_info = (
+                f"LSTM: {sensor_health['lstm_status']}"
+                if sensor_health else "LSTM: OFF"
+            )
+            logger.info("Report sent | YOLO: %s | %s | Alert: %s",
+                        plant_report['stable_health_status'],
+                        lstm_info, alert['level'])
+
 
 if __name__ == "__main__":
     app = MainApp()

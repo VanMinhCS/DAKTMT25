@@ -7,6 +7,9 @@ import base64
 import uuid
 from datetime import datetime
 from .utils import draw_detection
+from .logger import get_logger
+
+logger = get_logger("AIEngine")
 
 class AIEngine:
     def __init__(self, config, sensor_manager=None):
@@ -27,7 +30,7 @@ class AIEngine:
         self.running = True
         self.thread = threading.Thread(target=self._worker_loop, daemon=True)
         self.thread.start()
-        print("AI Engine started.")
+        logger.info("AI Engine started.")
 
     def stop(self):
         self.running = False
@@ -38,9 +41,9 @@ class AIEngine:
         try:
             model_path = self.config.get('model_path', 'plant_disease.pt')
             self.model = YOLO(model_path)
-            print(f"Model loaded: {model_path}")
+            logger.info("Model loaded: %s", model_path)
         except Exception as e:
-            print(f"Model Load Error: {e}")
+            logger.error("Model load error: %s", e)
 
     def _worker_loop(self):
         while self.running:
@@ -79,7 +82,7 @@ class AIEngine:
             except queue.Empty:
                 continue
             except Exception as e:
-                print(f"AI Worker Error: {e}")
+                logger.error("AI Worker error: %s", e)
 
     def get_aggregated_data(self):
         """Lấy dữ liệu đã tổng hợp và reset bộ đếm"""

@@ -5,3 +5,7 @@ paho-mqtt
 requests
 pyserial
 flask
+tensorflow
+scikit-learn
+python-dotenv
+pydantic
