@@ -15,11 +15,28 @@ __pycache__/
 
 # Log files
 logs/
-
-# Model files nặng (quản lý bằng Git LFS hoặc Drive)
-model/*.pt
-model/*.h5
-
-# Temp files
-update.zip
 *.log
+
+# ── Model files nặng (dùng Git LFS hoặc lưu trên Drive) ──
+# Runtime models (cần thiết, nên commit nếu < 100MB)
+# models/yolo/*.onnx          ← commit được (10MB)
+# models/lstm/*.tflite        ← commit được (185KB)
+# models/lstm/*.pkl           ← commit được (nhỏ)
+#
+# Source models (nặng, chỉ giữ local)
+models/yolo/*.pt              
+models/lstm/*.keras
+models/lstm/*.h5
+
+# ── Dataset (quá nặng để commit, lưu trên Drive/Kaggle) ──
+data/*.csv
+data/*.parquet
+
+# ── Notebook output nặng (chỉ giữ collab notebook train LSTM) ──
+collab/Plant_Disease_YOLOv11.ipynb
+collab/_Plant_Leaf_Disease.ipynb
+
+# ── Temp / debug files ──
+test_results.txt
+tmp_*.py
+update.zip

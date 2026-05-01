@@ -1,12 +1,12 @@
 import time
 import threading
 
-from src.utils          import load_config
-from src.logger         import get_logger
-from src.alert_engine   import AlertEngine
-from src.image_processor import ImageProcessor
-from src.ota_manager    import OTAManager
-from src.report_builder import ReportBuilder, DEFAULT_SENSORS
+from src.core.utils          import load_config
+from src.core.logger         import get_logger
+from src.services.alert_engine   import AlertEngine
+from src.ai.image_processor import ImageProcessor
+from src.services.ota_manager    import OTAManager
+from src.services.report_builder import ReportBuilder, DEFAULT_SENSORS
 
 logger = get_logger("Main")
 
@@ -16,27 +16,27 @@ logger = get_logger("Main")
 # ══════════════════════════════════════════════════════════════════════════════
 
 def _import_camera():
-    from src.camera import Camera
+    from src.hardware.camera import Camera
     return Camera
 
 def _import_ai_engine():
-    from src.ai_engine import AIEngine
+    from src.ai.ai_engine import AIEngine
     return AIEngine
 
 def _import_iot():
-    from src.iot_client import IoTClient
+    from src.network.iot_client import IoTClient
     return IoTClient
 
 def _import_streamer():
-    from src.streamer import RTSPStreamer
+    from src.network.streamer import RTSPStreamer
     return RTSPStreamer
 
 def _import_sensor_server():
-    from src.sensor_server import SensorServer
+    from src.hardware.sensor_server import SensorServer
     return SensorServer
 
 def _import_lstm():
-    from src.lstm_predictor import LSTMPredictor
+    from src.ai.lstm_predictor import LSTMPredictor
     return LSTMPredictor
 
 
@@ -154,11 +154,11 @@ class MainApp:
         print("=" * 50)
         print("  FEATURE FLAGS")
         print("=" * 50)
-        print(f"  Camera   : {'ON  ✅' if self.f_camera   else 'OFF ❌'}")
-        print(f"  Sensor   : {'ON  ✅' if self.f_sensor   else 'OFF ❌'}")
-        print(f"  MQTT     : {'ON  ✅' if self.f_mqtt     else 'OFF ❌'}")
-        print(f"  Streamer : {'ON  ✅' if self.f_streamer else 'OFF ❌'}")
-        print(f"  LSTM     : {'ON  ✅' if self.f_lstm     else 'OFF ❌'}")
+        print(f"  Camera   : {'[ON]' if self.f_camera   else '[OFF]'}")
+        print(f"  Sensor   : {'[ON]' if self.f_sensor   else '[OFF]'}")
+        print(f"  MQTT     : {'[ON]' if self.f_mqtt     else '[OFF]'}")
+        print(f"  Streamer : {'[ON]' if self.f_streamer else '[OFF]'}")
+        print(f"  LSTM     : {'[ON]' if self.f_lstm     else '[OFF]'}")
         print("=" * 50)
 
     def start(self):

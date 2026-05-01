@@ -1,0 +1,31 @@
+{
+  "model_name": "tomato_potato_lstm",
+  "window_size": 24,
+  "feature_cols": [
+    "Soil_Moisture",
+    "Soil_Temperature",
+    "EC",
+    "pH",
+    "Nitrogen",
+    "Phosphorus",
+    "Potassium"
+  ],
+  "num_classes": 9,
+  "classes": [
+    "Bacterial_Spot_Risk",
+    "Early_Blight_Risk",
+    "Fe_Deficient",
+    "Healthy",
+    "K_Deficient",
+    "Late_Blight_Risk",
+    "Leaf_Mold_Risk",
+    "N_Deficient",
+    "P_Deficient"
+  ],
+  "test_accuracy": 0.8990291357040405,
+  "test_loss": 0.25137877464294434,
+  "n_train": 8241,
+  "n_val": 1029,
+  "n_test": 1030,
+  "epochs_ran": 35
+}

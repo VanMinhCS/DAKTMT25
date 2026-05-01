@@ -3,7 +3,7 @@ import base64
 import json
 import numpy as np
 import cv2
-from src.image_processor import ImageProcessor
+from src.ai.image_processor import ImageProcessor
 
 @pytest.fixture
 def image_processor():

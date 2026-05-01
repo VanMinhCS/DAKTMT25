@@ -1,5 +1,5 @@
 import pytest
-from src.alert_engine import AlertEngine
+from src.services.alert_engine import AlertEngine
 
 @pytest.fixture
 def alert_engine():

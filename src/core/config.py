@@ -33,10 +33,10 @@ class AppConfig(BaseModel):
     camera_height: int = Field(480, ge=120,  description="Chiều cao frame camera (px)")
 
     # ── AI / YOLO ─────────────────────────────────────────────────────────
-    model_path:           str   = "models/yolo/plant_disease_v4.pt"
+    model_path:           str   = "models/yolo/plant_disease_v4.onnx"
     confidence_threshold: float = Field(0.65, ge=0.0, le=1.0,
                                         description="Ngưỡng confidence YOLO (0.0–1.0)")
-    inference_imgsz:      int   = Field(480, ge=320, le=1280,
+    inference_imgsz:      int   = Field(640, ge=320, le=1280,
                                         description="Kích thước ảnh khi inference (px)")
 
     # ── RTSP Streaming ─────────────────────────────────────────────────────
@@ -66,20 +66,20 @@ class AppConfig(BaseModel):
                                      description="Port HTTP nhận dữ liệu cảm biến")
 
     # ── LSTM ──────────────────────────────────────────────────────────────
-    lstm_model_path:   str = "models/lstm/potato_health_lstm.h5"
-    lstm_scaler_path:  str = "models/lstm/potato_scaler.pkl"
-    lstm_encoder_path: str = "models/lstm/potato_encoder.pkl"
-    lstm_window_size:  int = Field(12, ge=1,
+    lstm_model_path:   str = "models/lstm/tomato_potato_lstm.tflite"
+    lstm_scaler_path:  str = "models/lstm/tomato_potato_lstm_scaler.pkl"
+    lstm_encoder_path: str = "models/lstm/tomato_potato_lstm_encoder.pkl"
+    lstm_window_size:  int = Field(24, ge=1,
                                    description="Số bước thời gian LSTM cần để predict")
 
     # Giá trị mặc định khi sensor không gửi đủ 7 feature
     lstm_default_soil_moisture:    float = Field(72.0,   ge=0.0)
     lstm_default_soil_temperature: float = Field(18.0,   ge=-50.0, le=100.0)
-    lstm_default_ec:               float = Field(1200.0, ge=0.0)
-    lstm_default_ph:               float = Field(6.0,    ge=0.0,   le=14.0)
-    lstm_default_nitrogen:         float = Field(60.0,   ge=0.0)
-    lstm_default_phosphorus:       float = Field(40.0,   ge=0.0)
-    lstm_default_potassium:        float = Field(160.0,  ge=0.0)
+    lstm_default_ec:               float = Field(1600.0, ge=0.0)
+    lstm_default_ph:               float = Field(6.2,    ge=0.0,   le=14.0)
+    lstm_default_nitrogen:         float = Field(130.0,  ge=0.0)
+    lstm_default_phosphorus:       float = Field(55.0,   ge=0.0)
+    lstm_default_potassium:        float = Field(210.0,  ge=0.0)
 
     # ── Cross-field validation ─────────────────────────────────────────────
     @model_validator(mode="after")

@@ -1,5 +1,5 @@
 import pytest
-from src.report_builder import ReportBuilder
+from src.services.report_builder import ReportBuilder
 
 @pytest.fixture
 def report_builder():

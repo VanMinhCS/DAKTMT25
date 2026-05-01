@@ -6,8 +6,8 @@ import queue
 import base64
 import uuid
 from datetime import datetime
-from .utils import draw_detection
-from .logger import get_logger
+from ..core.utils import draw_detection
+from ..core.logger import get_logger
 
 logger = get_logger("AIEngine")
 
@@ -157,5 +157,5 @@ class AIEngine:
 
             return plant_report
         except Exception as e:
-            print(f"Test Image Processing Error: {e}")
+            logger.error("Test image processing error: %s", e)
             return None
