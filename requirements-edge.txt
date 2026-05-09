@@ -1,11 +1,11 @@
-opencv-python
+opencv-python-headless
 numpy
 onnxruntime
 paho-mqtt
 requests
 pyserial
 flask
-tensorflow
+tflite-runtime
 scikit-learn
 python-dotenv
 pydantic

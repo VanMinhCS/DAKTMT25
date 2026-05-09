@@ -1,0 +1,31 @@
+{
+  "names": [
+    "Apple__Alternaria",
+    "Apple__Brown Spot",
+    "Apple__Gray Spot",
+    "Apple__Healthy",
+    "Apple__Rust",
+    "Corn__Blight",
+    "Corn__Common Rust",
+    "Corn__Gray Spot",
+    "Corn__Healthy",
+    "Grape__Black Measles",
+    "Grape__Black Rot",
+    "Grape__Blight Fungus",
+    "Grape__Healthy",
+    "Potato__Early Blight",
+    "Potato__Healthy Plant",
+    "Potato__Late Blight",
+    "Tomato__Bacterial Spot",
+    "Tomato__Early Blight",
+    "Tomato__Healthy",
+    "Tomato__Iron Deficiency",
+    "Tomato__Late Blight",
+    "Tomato__Leaf Mold",
+    "Tomato__Leaf_Miner",
+    "Tomato__Mosaic Virus",
+    "Tomato__Septoria",
+    "Tomato__Spider Mites",
+    "Tomato__Yellow Leaf Curl Virus"
+  ]
+}

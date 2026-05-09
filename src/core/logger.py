@@ -64,7 +64,7 @@ def _setup_root_logger():
 
     # Tắt log verbose của các thư viện bên thứ ba
     logging.getLogger("werkzeug").setLevel(logging.ERROR)
-    logging.getLogger("ultralytics").setLevel(logging.WARNING)
+    logging.getLogger("onnxruntime").setLevel(logging.WARNING)
     logging.getLogger("tensorflow").setLevel(logging.ERROR)
 
 
