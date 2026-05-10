@@ -1,5 +1,6 @@
 {
   "model_name": "tomato_potato_lstm",
+  "format": "tflite",
   "window_size": 24,
   "feature_cols": [
     "Soil_Moisture",
@@ -22,10 +23,8 @@
     "N_Deficient",
     "P_Deficient"
   ],
-  "test_accuracy": 0.8990291357040405,
-  "test_loss": 0.25137877464294434,
-  "n_train": 8241,
-  "n_val": 1029,
-  "n_test": 1030,
-  "epochs_ran": 35
+  "keras_acc": 0.931067943572998,
+  "tflite_acc": 0.9300970873786408,
+  "tflite_size_kb": 123.0,
+  "epochs_ran": 37
 }

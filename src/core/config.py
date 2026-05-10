@@ -25,7 +25,7 @@ class AppConfig(BaseModel):
     model_config extra="ignore" để bỏ qua các key _comment_* trong JSON.
     """
 
-    model_config = {"extra": "ignore"}
+    model_config = {"extra": "ignore", "protected_namespaces": ()}
 
     # ── Camera ────────────────────────────────────────────────────────────
     camera_id:     Any = 0          # int hoặc string (RTSP URL)
@@ -60,6 +60,15 @@ class AppConfig(BaseModel):
     enable_mqtt:    bool = True
     enable_streamer: bool = True
     enable_lstm:    bool = True
+    enable_cloud_upload: bool = False
+
+    # ── Firebase Cloud Upload ─────────────────────────────────────────────
+    cloud_device_id: str = "rpi-greenhouse-01"
+    cloud_offline_queue_path: str = "logs/offline_queue.jsonl"
+    cloud_upload_image: bool = True
+    firebase_api_key: str = ""
+    firebase_project_id: str = ""
+    firebase_bucket: str = ""
 
     # ── Sensor Server ─────────────────────────────────────────────────────
     sensor_server_port: int = Field(5000, ge=1024, le=65535,

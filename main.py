@@ -39,6 +39,26 @@ def _import_lstm():
     from src.ai.lstm_predictor import LSTMPredictor
     return LSTMPredictor
 
+def _import_cloud_uploader():
+    from src.services.cloud_uploader import CloudUploader
+    return CloudUploader
+
+# ── Frame Cacher ──────────────────────────────────────────────────────────────
+class FrameCacher:
+    """A mock queue to cache the latest frame from the camera."""
+    def __init__(self):
+        self.latest_frame = None
+        self.lock = threading.Lock()
+        
+    def put_nowait(self, frame):
+        with self.lock:
+            self.latest_frame = frame
+            
+    def get_latest(self):
+        with self.lock:
+            return self.latest_frame
+
+
 
 # ══════════════════════════════════════════════════════════════════════════════
 class MainApp:
@@ -64,11 +84,13 @@ class MainApp:
         self.f_mqtt     = self.config.get("enable_mqtt",     True)
         self.f_streamer = self.config.get("enable_streamer", True)
         self.f_lstm     = self.config.get("enable_lstm",     True)
+        self.f_cloud    = self.config.get("enable_cloud_upload", False)
         self._print_flags()
 
         # ── Shared sensor cache ────────────────────────────────────────────
         self.latest_sensor_data = None
         self.sensor_lock        = threading.Lock()
+        self.frame_cacher       = FrameCacher()
 
         # ── Hardware / network modules ─────────────────────────────────────
         self.camera        = self._init_camera()
@@ -83,6 +105,7 @@ class MainApp:
         self.image_processor = ImageProcessor()
         self.ota_manager     = OTAManager(self.config)
         self.report_builder  = ReportBuilder()
+        self.cloud_uploader  = self._init_cloud_uploader()
 
         # ── Wire modules & start report thread ────────────────────────────
         self._wire_modules()
@@ -134,12 +157,19 @@ class MainApp:
             return None
         return _import_lstm()(self.config)
 
+    def _init_cloud_uploader(self):
+        if not self.f_cloud:
+            return None
+        return _import_cloud_uploader()(self.config)
+
     def _wire_modules(self):
         """Kết nối các queue giữa các module với nhau."""
         if self.camera and self.ai_engine:
             self.camera.add_queue(self.ai_engine.input_queue)
         if self.camera and self.streamer:
             self.camera.add_queue(self.streamer.frame_queue)
+        if self.camera:
+            self.camera.add_queue(self.frame_cacher)
         if self.ai_engine and self.streamer:
             self.streamer.result_queue = self.ai_engine.output_queue
         if self.iot_client:
@@ -159,6 +189,7 @@ class MainApp:
         print(f"  MQTT     : {'[ON]' if self.f_mqtt     else '[OFF]'}")
         print(f"  Streamer : {'[ON]' if self.f_streamer else '[OFF]'}")
         print(f"  LSTM     : {'[ON]' if self.f_lstm     else '[OFF]'}")
+        print(f"  Cloud    : {'[ON]' if self.f_cloud    else '[OFF]'}")
         print("=" * 50)
 
     def start(self):
@@ -168,6 +199,7 @@ class MainApp:
         if self.streamer:      self.streamer.start()
         if self.iot_client:    self.iot_client.start()
         if self.sensor_server: self.sensor_server.start()
+        if self.cloud_uploader: self.cloud_uploader.start()
         self.report_thread.start()
 
         try:
@@ -183,6 +215,7 @@ class MainApp:
         if self.ai_engine:  self.ai_engine.stop()
         if self.streamer:   self.streamer.stop()
         if self.iot_client: self.iot_client.stop()
+        if self.cloud_uploader: self.cloud_uploader.stop()
         logger.info("System Stopped.")
 
     # ──────────────────────────────────────────────────────────────────────
@@ -270,6 +303,16 @@ class MainApp:
             )
             if self.iot_client:
                 self.iot_client.send_telemetry({"device_report": device_report})
+                
+            # 6. Cloud upload (chỉ upload khi phát hiện bất thường)
+            if self.cloud_uploader:
+                self.cloud_uploader.enqueue_record(
+                    frame=self.frame_cacher.get_latest(),
+                    plant_report=plant_report,
+                    sensors=sensors,
+                    lstm_status=lstm_status_str,
+                    alert_level=alert["level"],
+                )
 
             lstm_info = (
                 f"LSTM: {sensor_health['lstm_status']}"

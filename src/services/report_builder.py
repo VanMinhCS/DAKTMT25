@@ -3,6 +3,8 @@ from datetime import datetime
 
 # Số lần xuất hiện tối thiểu để xác nhận một bệnh (tránh false positive nhất thời)
 DETECTION_CONF_THRESH = 5
+# Số lần xuất hiện tối thiểu để xác nhận cây KHỎE (tránh 1 frame healthy phủ nhận bệnh)
+HEALTHY_CONF_THRESH   = 3
 
 # Giá trị sensor mặc định khi không có dữ liệu từ ESP32
 DEFAULT_SENSORS = [
@@ -30,7 +32,7 @@ class ReportBuilder:
             "report_id":            str(uuid.uuid4()),
             "plant_name":           "Unknown",
             "plant_disease":        "None",
-            "stable_health_status": "Checking",
+            "stable_health_status": "No_Detection",   # Mặc định: chưa thấy gì
             "detectedAt":           datetime.now().isoformat(),
         }
 
@@ -39,27 +41,45 @@ class ReportBuilder:
 
         detection_counts = ai_engine.get_aggregated_data()
         if not detection_counts:
-            return report
+            return report  # status = "No_Detection" (camera trống/bị che)
 
-        best_class = max(detection_counts, key=detection_counts.get)
-        count      = detection_counts[best_class]
+        # ── Phân tách disease vs healthy ─────────────────────────────────
+        disease_detections  = {k: v for k, v in detection_counts.items()
+                               if "healthy" not in k.lower()}
+        healthy_detections  = {k: v for k, v in detection_counts.items()
+                               if "healthy" in k.lower()}
+        confirmed_diseases  = {k: v for k, v in disease_detections.items()
+                               if v >= DETECTION_CONF_THRESH}
+
+        # ── Thứ tự ưu tiên: Warning > Healthy > Checking > No_Detection ──
+        if confirmed_diseases:
+            # Có ít nhất 1 bệnh được xác nhận → Warning (kể cả khi healthy nhiều hơn)
+            best_class    = max(confirmed_diseases, key=confirmed_diseases.get)
+            health_status = "Warning"
+        elif healthy_detections and max(healthy_detections.values()) >= HEALTHY_CONF_THRESH:
+            # Không có bệnh xác nhận, healthy đủ ngưỡng → Healthy
+            best_class    = max(healthy_detections, key=healthy_detections.get)
+            health_status = "Healthy"
+        elif disease_detections:
+            # Bệnh được thấy nhưng chưa đủ ngưỡng → Checking (đang xác nhận)
+            best_class    = max(disease_detections, key=disease_detections.get)
+            health_status = "Checking"
+        else:
+            # Chỉ thấy healthy nhưng < HEALTHY_CONF_THRESH → chưa đủ căn cứ
+            best_class    = max(healthy_detections, key=healthy_detections.get)
+            health_status = "No_Detection"
+
+        report["stable_health_status"] = health_status
 
         parts  = best_class.split('_', 1)
-        p_name = parts[0].lower()          if len(parts) == 2 else "Unknown"
+        p_name = parts[0].lower()           if len(parts) == 2 else "Unknown"
         d_name = parts[1].replace('_', ' ') if len(parts) == 2 else best_class
 
         report.update({
             "plant_name":            p_name,
             "plant_disease":         d_name,
-            "debug_detection_count": count,
+            "debug_detection_count": detection_counts.get(best_class, 0),
         })
-
-        if "healthy" in best_class.lower():
-            report["stable_health_status"] = "Healthy"
-        elif count >= DETECTION_CONF_THRESH:
-            report["stable_health_status"] = "Warning"
-        else:
-            report["stable_health_status"] = "Checking"
 
         return report
 

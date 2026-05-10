@@ -17,9 +17,9 @@ SCENARIOS = {
             "soil_moisture": (60.0, 80.0),
             "ec":            (1000, 1500),
             "ph":            (6.0, 6.5),
-            "n":             (50, 70),
-            "p":             (35, 50),
-            "k":             (140, 180),
+            "nitrogen":             (50, 70),
+            "phosphorus":             (35, 50),
+            "potassium":             (140, 180),
         }
     },
     "high_stress": {
@@ -29,9 +29,9 @@ SCENARIOS = {
             "soil_moisture": (15.0, 30.0),  # Đất rất khô
             "ec":            (200, 500),    # Thiếu khoáng
             "ph":            (4.0, 5.0),    # Đất chua
-            "n":             (10, 20),
-            "p":             (5, 15),
-            "k":             (30, 60),
+            "nitrogen":             (10, 20),
+            "phosphorus":             (5, 15),
+            "potassium":             (30, 60),
         }
     },
     "moderate_stress": {
@@ -41,9 +41,9 @@ SCENARIOS = {
             "soil_moisture": (40.0, 55.0),
             "ec":            (800, 1000),
             "ph":            (5.0, 5.8),
-            "n":             (30, 45),
-            "p":             (20, 30),
-            "k":             (90, 120),
+            "nitrogen":             (30, 45),
+            "phosphorus":             (20, 30),
+            "potassium":             (90, 120),
         }
     }
 }
@@ -61,9 +61,17 @@ def generate_sensor_payload(scenario_name="healthy"):
         if key in ["n", "p", "k", "ec"]:
             val = int(val)
             
+        # Xác định unit (đơn vị) cho 7 in 1 sensor
+        unit = ""
+        if key == "temperature": unit = "C"
+        elif key == "soil_moisture": unit = "%"
+        elif key == "ec": unit = "us/cm"
+        elif key in ["n", "p", "k"]: unit = "mg/kg"
+
         payload.append({
             "type": key,
-            "value": val
+            "value": val,
+            "unit": unit
         })
     return payload
 

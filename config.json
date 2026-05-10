@@ -1,6 +1,5 @@
 {
   "_comment_secrets": "=== SECRETS được quản lý trong file .env (xem .env.example) ===",
-
   "model_path": "models/yolo/plant_disease_v4.onnx",
   "confidence_threshold": 0.65,
   "inference_imgsz": 640,
@@ -9,29 +8,30 @@
   "camera_id": 0,
   "rtsp_stream_name": "mystream",
   "show_fps": true,
-
   "send_interval_seconds": 10,
   "current_version": "v1.0",
-
+  "_comment_cloud": "=== FIREBASE CLOUD UPLOAD ===",
+  "enable_cloud_upload": true,
+  "cloud_device_id": "rpi-greenhouse-01",
+  "cloud_offline_queue_path": "logs/offline_queue.jsonl",
+  "cloud_upload_image": true,
   "_comment_flags": "=== FEATURE FLAGS — đặt true/false để bật tắt từng khối ===",
-  "enable_camera":  true,
-  "enable_sensor":  true,
-  "enable_mqtt":    true,
+  "enable_camera": true,
+  "enable_sensor": true,
+  "enable_mqtt": true,
   "enable_streamer": true,
-  "enable_lstm":    true,
-
+  "enable_lstm": true,
   "_comment_lstm": "=== LSTM CONFIG ===",
-  "lstm_model_path":   "models/lstm/tomato_potato_lstm.tflite",
-  "lstm_scaler_path":  "models/lstm/tomato_potato_lstm_scaler.pkl",
+  "lstm_model_path": "models/lstm/tomato_potato_lstm.tflite",
+  "lstm_scaler_path": "models/lstm/tomato_potato_lstm_scaler.pkl",
   "lstm_encoder_path": "models/lstm/tomato_potato_lstm_encoder.pkl",
-  "lstm_window_size":  24,
-
+  "lstm_window_size": 24,
   "_comment_defaults": "=== Giá trị mặc định (đơn vị gốc) khi sensor không gửi đủ 7 feature ===",
-  "lstm_default_soil_moisture":    72.0,
+  "lstm_default_soil_moisture": 72.0,
   "lstm_default_soil_temperature": 18.0,
-  "lstm_default_ec":             1600.0,
-  "lstm_default_ph":                6.2,
-  "lstm_default_nitrogen":        130.0,
-  "lstm_default_phosphorus":       55.0,
-  "lstm_default_potassium":       210.0
-}
+  "lstm_default_ec": 1600.0,
+  "lstm_default_ph": 6.2,
+  "lstm_default_nitrogen": 130.0,
+  "lstm_default_phosphorus": 55.0,
+  "lstm_default_potassium": 210.0
+}

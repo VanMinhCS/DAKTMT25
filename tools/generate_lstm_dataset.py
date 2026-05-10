@@ -298,44 +298,109 @@ def seasonal_modifier(month: int) -> dict:
         return {"Soil_Moisture": -7.0, "Soil_Temperature": +3.0}
 
 
-# ── Sinh chuỗi thời gian ──────────────────────────────────────────────────────
+# ── Penman-Monteith & ODEs cho sinh chuỗi thời gian ───────────────────────────
+import math
+
+def calc_penman_monteith(Rn, G, T, u2, es_ea, delta, gamma):
+    """
+    Tính bốc thoát hơi nước tham chiếu (ETo) theo phương trình FAO-56.
+    """
+    numerator = 0.408 * delta * (Rn - G) + gamma * (900 / (T + 273)) * u2 * es_ea
+    denominator = delta + gamma * (1 + 0.34 * u2)
+    return numerator / denominator
+
 def generate_sequence(feature_ranges: dict, month: int) -> list:
     """
     Sinh 1 sequence gồm WINDOW_SIZE timestep cho 1 điều kiện.
-
-    - Chọn ngẫu nhiên giá trị trung tâm trong khoảng nông học
-    - Áp dụng seasonal offset
-    - Thêm Gaussian noise trên mỗi timestep
-    - Thêm drift nhỏ để sequence có xu hướng tự nhiên (không phẳng lặng)
-
+    Sử dụng phương pháp Euler để giải ODEs kết hợp Penman-Monteith.
+    
     Returns:
         list of WINDOW_SIZE rows, mỗi row = list of 7 floats (theo FEATURE_KEYS)
     """
     season = seasonal_modifier(month)
-
-    # Chọn center ngẫu nhiên cho sequence này (có seasonal offset)
-    centers = {}
+    
+    # 1. Xác định mục tiêu (target/center) để lực hồi quy (mean-reverting) kéo về
+    # Đảm bảo dữ liệu cuối cùng vẫn nằm trong ngưỡng của nhãn
+    targets = {}
     for k in FEATURE_KEYS:
         lo, hi = feature_ranges[k]
         offset = season.get(k, 0.0)
-        center = random.uniform(lo, hi) + offset
-        # Clip center về bound hợp lý
-        centers[k] = np.clip(center, lo * 0.85, hi * 1.15)
-
+        target = random.uniform(lo, hi) + offset
+        targets[k] = np.clip(target, lo * 0.85, hi * 1.15)
+        
+    # Khởi tạo giá trị ban đầu (t=0) có nhiễu nhẹ so với target
+    current = {}
+    for k in FEATURE_KEYS:
+        lo, hi = feature_ranges[k]
+        range_size = hi - lo
+        current[k] = targets[k] + np.random.normal(0, range_size * 0.02)
+        current[k] = np.clip(current[k], lo * 0.82, hi * 1.18)
+        
+    # Các hệ số động học (dựa theo phương trình ODEs)
+    a_temp, b_temp, Q1 = 0.05, 0.1, 0.0  
+    b0, b1, c_ph, Q2 = 0.01, 0.015, 0.02, -0.001
+    
     rows = []
     for t in range(WINDOW_SIZE):
-        row = []
+        hour = t % 24
+        
+        # Mô phỏng thời tiết biến thiên trong ngày (diurnal cycle)
+        # Bức xạ Rn > 0 từ 6h đến 18h, đạt đỉnh lúc 12h trưa
+        if 6 <= hour <= 18:
+            R_n = math.sin(math.pi * (hour - 6) / 12) * 15.0
+        else:
+            R_n = 0.0
+            
+        T_air = 25 + 5 * math.sin(math.pi * (hour - 8) / 12) + season.get("Soil_Temperature", 0.0)
+        u2 = 2.0
+        
+        # Tính ETo bằng Penman-Monteith
+        ET_o = calc_penman_monteith(R_n, G=0.1*R_n, T=T_air, u2=u2, es_ea=1.5, delta=0.15, gamma=0.066)
+        
+        # --- Giải hệ vi phân (Euler Method) ---
+        
+        # 1. Nhiệt độ đất: dT_soil/dt = a*(Rn - b*ETo) + Q1
+        dT_soil = a_temp * (R_n - b_temp * ET_o) + Q1
+        dT_soil += 0.2 * (targets["Soil_Temperature"] - current["Soil_Temperature"]) # Lực kéo về đích
+        current["Soil_Temperature"] += dT_soil
+        
+        # 2. Động học pH: dpH/dt = Q2 + b0*L - b1*P + c*(dO/dt)
+        L_effect = 0 
+        dO_dt = 0.1 * math.sin(math.pi * hour / 12)
+        dpH = Q2 + b0 * L_effect - b1 * current["Phosphorus"] * 0.0001 + c_ph * dO_dt
+        dpH += 0.1 * (targets["pH"] - current["pH"])
+        current["pH"] += dpH
+        
+        # 3. Độ ẩm đất: Thất thoát do ETo
+        dMoisture = -ET_o * 0.5 
+        dMoisture += 0.3 * (targets["Soil_Moisture"] - current["Soil_Moisture"]) # Thẩm thấu bù lại
+        current["Soil_Moisture"] += dMoisture
+        
+        # 4. Động học dinh dưỡng & EC (tiêu hao quang hợp + hồi quy)
+        for k in ["Nitrogen", "Phosphorus", "Potassium", "EC"]:
+            uptake = 0.05 * R_n if k != "EC" else 0.1 * R_n
+            dNutrient = -uptake + 0.15 * (targets[k] - current[k])
+            current[k] += dNutrient
+
+        # Thêm nhiễu ngẫu nhiên siêu nhỏ (sensor noise)
         for k in FEATURE_KEYS:
             lo, hi = feature_ranges[k]
             range_size = hi - lo
-            noise = np.random.normal(0, range_size * NOISE_STD_FRAC)
-            # Drift: xu hướng nhỏ theo thời gian trong sequence
-            drift = (t / WINDOW_SIZE) * range_size * random.uniform(-0.03, 0.03)
-            val = centers[k] + noise + drift
-            val = np.clip(val, lo * 0.82, hi * 1.18)
-            row.append(round(float(val), 2))
-        rows.append(row)
+            current[k] += np.random.normal(0, range_size * 0.01)
+            # Clip bounds để không lệch ngoài ngưỡng quá lố
+            current[k] = np.clip(current[k], lo * 0.82, hi * 1.18)
 
+        row = [
+            round(float(current["Soil_Moisture"]), 2),
+            round(float(current["Soil_Temperature"]), 2),
+            round(float(current["EC"]), 2),
+            round(float(current["pH"]), 2),
+            round(float(current["Nitrogen"]), 2),
+            round(float(current["Phosphorus"]), 2),
+            round(float(current["Potassium"]), 2)
+        ]
+        rows.append(row)
+        
     return rows
 
 

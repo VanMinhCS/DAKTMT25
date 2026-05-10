@@ -41,6 +41,9 @@ def load_config(config_path="config.json") -> dict:
         "THINGSBOARD_ACCESS_TOKEN": "thingsboard_access_token",
         "DEVICE_ID":                "deviceId",
         "PLANT_ID":                 "plantId",
+        "FIREBASE_API_KEY":         "firebase_api_key",
+        "FIREBASE_PROJECT_ID":      "firebase_project_id",
+        "FIREBASE_BUCKET":          "firebase_bucket",
     }
     for env_key, cfg_key in env_mapping.items():
         val = os.getenv(env_key)
