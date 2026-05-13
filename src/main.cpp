@@ -2,8 +2,8 @@
 #include <HardwareSerial.h>
 
 // Định nghĩa chân RX, TX mới
-#define RS485RX D3
-#define RS485TX D4
+#define RS485RX D12
+#define RS485TX D13
 
 HardwareSerial mySerial(2);
 
