@@ -1,6 +1,6 @@
 {
   "_comment_secrets": "=== SECRETS được quản lý trong file .env (xem .env.example) ===",
-  "model_path": "models/yolo/plant_disease_v4.onnx",
+  "model_path": "models/yolo/plant_disease_int8.onnx",
   "confidence_threshold": 0.65,
   "inference_imgsz": 640,
   "camera_width": 640,

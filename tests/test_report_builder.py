@@ -23,7 +23,7 @@ class MockLSTM:
 
 def test_build_plant_report_no_data(report_builder):
     report = report_builder.build_plant_report(None)
-    assert report["stable_health_status"] == "Checking"
+    assert report["stable_health_status"] == "No_Detection"
     assert report["plant_disease"] == "None"
 
 def test_build_plant_report_with_data(report_builder):

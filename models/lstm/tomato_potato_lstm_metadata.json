@@ -23,8 +23,8 @@
     "N_Deficient",
     "P_Deficient"
   ],
-  "keras_acc": 0.931067943572998,
-  "tflite_acc": 0.9300970873786408,
-  "tflite_size_kb": 123.0,
-  "epochs_ran": 37
+  "keras_acc": 0.9116504788398743,
+  "tflite_acc": 0.8446601941747572,
+  "tflite_size_kb": 208.4,
+  "epochs_ran": 44
 }

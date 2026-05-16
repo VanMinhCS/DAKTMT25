@@ -33,7 +33,7 @@ class AppConfig(BaseModel):
     camera_height: int = Field(480, ge=120,  description="Chiều cao frame camera (px)")
 
     # ── AI / YOLO ─────────────────────────────────────────────────────────
-    model_path:           str   = "models/yolo/plant_disease_v4.onnx"
+    model_path:           str   = "models/yolo/plant_disease_int8.onnx"
     confidence_threshold: float = Field(0.65, ge=0.0, le=1.0,
                                         description="Ngưỡng confidence YOLO (0.0–1.0)")
     inference_imgsz:      int   = Field(640, ge=320, le=1280,

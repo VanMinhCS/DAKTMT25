@@ -37,6 +37,7 @@ collab/Plant_Disease_YOLOv11.ipynb
 collab/_Plant_Leaf_Disease.ipynb
 
 # ── Temp / debug files ──
-test_results.txt
+temp.py
+test_result*.txt
 tmp_*.py
 update.zip
