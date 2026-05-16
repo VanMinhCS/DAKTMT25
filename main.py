@@ -299,20 +299,15 @@ class MainApp:
 
             # 5. Build payload cuối & gửi
             device_report = self.report_builder.build_device_report(
-                self.config, plant_report, sensors, alert, sensor_health
+                self.config, plant_report, sensors, alert, sensor_health,
+                frame=self.frame_cacher.get_latest()
             )
             if self.iot_client:
                 self.iot_client.send_telemetry({"device_report": device_report})
                 
             # 6. Cloud upload (chỉ upload khi phát hiện bất thường)
             if self.cloud_uploader:
-                self.cloud_uploader.enqueue_record(
-                    frame=self.frame_cacher.get_latest(),
-                    plant_report=plant_report,
-                    sensors=sensors,
-                    lstm_status=lstm_status_str,
-                    alert_level=alert["level"],
-                )
+                self.cloud_uploader.enqueue_record(device_report)
 
             lstm_info = (
                 f"LSTM: {sensor_health['lstm_status']}"

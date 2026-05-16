@@ -65,10 +65,10 @@ class AppConfig(BaseModel):
     # ── Firebase Cloud Upload ─────────────────────────────────────────────
     cloud_device_id: str = "rpi-greenhouse-01"
     cloud_offline_queue_path: str = "logs/offline_queue.jsonl"
-    cloud_upload_image: bool = True
+    cloud_image_max_width: int = Field(320, description="Chiều rộng ảnh nén để lưu Firestore")
+    cloud_image_quality: int = Field(60, description="Chất lượng ảnh JPEG (0-100)")
     firebase_api_key: str = ""
     firebase_project_id: str = ""
-    firebase_bucket: str = ""
 
     # ── Sensor Server ─────────────────────────────────────────────────────
     sensor_server_port: int = Field(5000, ge=1024, le=65535,

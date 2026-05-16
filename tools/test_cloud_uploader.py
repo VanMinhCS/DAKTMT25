@@ -28,38 +28,40 @@ def test_cloud_uploader():
     uploader.start()
     
     print("Enqueueing test record (WARNING)...")
-    uploader.enqueue_record(
-        frame=None,
-        plant_report={
+    uploader.enqueue_record({
+        "alert": {"level": "WARNING", "status": "warning"},
+        "plant": {
             "plant_name": "Tomato",
             "plant_disease": "Early_Blight",
             "stable_health_status": "Warning",
             "confidence": 0.85
         },
-        sensors=[
+        "sensors": [
             {"type": "temperature", "value": 28.5},
             {"type": "humidity", "value": 70.0}
         ],
-        lstm_status="Early_Blight_Risk",
-        alert_level="WARNING"
-    )
+        "sensor_health": {
+            "lstm_status": "Early_Blight_Risk"
+        }
+    })
     
     print("Enqueueing test record (NORMAL) - should be skipped...")
-    uploader.enqueue_record(
-        frame=None,
-        plant_report={
+    uploader.enqueue_record({
+        "alert": {"level": "NORMAL", "status": "normal"},
+        "plant": {
             "plant_name": "Tomato",
             "plant_disease": "Healthy",
             "stable_health_status": "Healthy",
             "confidence": 0.95
         },
-        sensors=[
+        "sensors": [
             {"type": "temperature", "value": 25.0},
             {"type": "humidity", "value": 60.0}
         ],
-        lstm_status="Healthy",
-        alert_level="NORMAL"
-    )
+        "sensor_health": {
+            "lstm_status": "Healthy"
+        }
+    })
     
     time.sleep(2)
     uploader.stop()

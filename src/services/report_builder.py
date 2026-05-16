@@ -1,4 +1,6 @@
 import uuid
+import base64
+import cv2
 from datetime import datetime
 
 # Số lần xuất hiện tối thiểu để xác nhận một bệnh (tránh false positive nhất thời)
@@ -112,10 +114,29 @@ class ReportBuilder:
     @staticmethod
     def build_device_report(config: dict, plant_report: dict,
                             sensors: list, alert: dict,
-                            sensor_health: dict | None) -> dict:
+                            sensor_health: dict | None,
+                            frame=None) -> dict:
         """
         Ghép tất cả thành device_report cuối cùng để gửi lên ThingsBoard.
+        Có nén và đính kèm ảnh base64 nếu trạng thái không bình thường.
         """
+        # Nếu có cảnh báo bất thường và có ảnh gốc
+        if frame is not None and alert.get("level") != "NORMAL":
+            max_w = config.get("cloud_image_max_width", 320)
+            quality = config.get("cloud_image_quality", 60)
+            
+            # Tính toán kích thước resize giữ đúng tỉ lệ
+            h, w = frame.shape[:2]
+            if w > max_w:
+                ratio = max_w / float(w)
+                new_h = int(h * ratio)
+                frame = cv2.resize(frame, (max_w, new_h))
+            
+            # Encode to JPEG
+            ret, buf = cv2.imencode(".jpg", frame, [int(cv2.IMWRITE_JPEG_QUALITY), quality])
+            if ret:
+                plant_report["image_base64"] = base64.b64encode(buf).decode('utf-8')
+
         report = {
             "deviceId": config.get("deviceId"),
             "plantId":  config.get("plantId"),

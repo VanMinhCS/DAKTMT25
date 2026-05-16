@@ -5,11 +5,9 @@ Không cần pip install gì thêm — an toàn cho Yocto build.
 import urllib.request
 import urllib.parse
 import json
-import base64
 import os
 import threading
 import queue
-import cv2
 import time
 from datetime import datetime
 from src.core.logger import get_logger
@@ -25,10 +23,7 @@ class CloudUploader:
             
         self.api_key      = config.get("firebase_api_key")
         self.project_id   = config.get("firebase_project_id")
-        self.bucket_name  = config.get("firebase_bucket", f"{self.project_id}.appspot.com")
-        self.device_id    = config.get("cloud_device_id", config.get("deviceId", "rpi-edge-01"))
         self.offline_queue_path = config.get("cloud_offline_queue_path", "logs/offline_queue.jsonl")
-        self.upload_image_enabled = config.get("cloud_upload_image", True)
 
         if not self.api_key or not self.project_id:
             logger.warning("[Cloud] Missing firebase_api_key or firebase_project_id in config. Cloud upload will likely fail.")
@@ -37,10 +32,6 @@ class CloudUploader:
         self._firestore_url = (
             f"https://firestore.googleapis.com/v1/"
             f"projects/{self.project_id}/databases/(default)/documents"
-        )
-        self._storage_url = (
-            f"https://firebasestorage.googleapis.com/v0/b/"
-            f"{self.bucket_name}/o"
         )
         
         self.HEALTHY_ALERT_LEVELS = {"NORMAL"}
@@ -71,32 +62,17 @@ class CloudUploader:
             self.thread.join(timeout=2)
         logger.info("[Cloud] Uploader stopped.")
 
-    def enqueue_record(self, frame, plant_report, sensors, lstm_status, alert_level):
+    def enqueue_record(self, device_report: dict):
         if not self.enabled:
             return
             
+        alert_level = device_report.get("alert", {}).get("level", "NORMAL")
         if not self._should_upload(alert_level):
             return
             
-        record = {
-            "timestamp": datetime.now().isoformat(),
-            "plant_report": plant_report,
-            "sensors": sensors,
-            "lstm_status": lstm_status,
-            "alert_level": alert_level
-        }
+        record = device_report.copy()
+        record["uploaded_at"] = datetime.now().isoformat()
         
-        # Add frame to record if needed. But frame is not serializable.
-        # We need to encode it to jpg bytes here so we can queue it safely.
-        if self.upload_image_enabled and frame is not None:
-            ret, buf = cv2.imencode(".jpg", frame)
-            if ret:
-                record["frame_bytes"] = buf.tobytes()
-            else:
-                record["frame_bytes"] = None
-        else:
-            record["frame_bytes"] = None
-            
         self.queue.put(record)
 
     def _worker(self):
@@ -111,72 +87,34 @@ class CloudUploader:
                 logger.error(f"[Cloud] Worker error: {e}")
 
     def _process_record(self, record):
-        frame_bytes = record.pop("frame_bytes", None)
-        alert_level = record["alert_level"]
-        yolo_label = record["plant_report"].get("plant_disease", "None")
-        if record["plant_report"].get("plant_name") != "Unknown":
-            yolo_label = f"{record['plant_report'].get('plant_name')}__{yolo_label}"
-            
-        image_url = ""
-        if frame_bytes:
-            url = self._upload_image(frame_bytes, alert_level, yolo_label)
-            if url:
-                image_url = url
-            else:
-                pass
-                
-        # Build document
-        doc = self._build_firestore_doc(
-            timestamp=record["timestamp"],
-            yolo_label=yolo_label,
-            yolo_status=record["plant_report"].get("stable_health_status", "No_Detection"),
-            confidence=record["plant_report"].get("confidence", 0.0), # Assuming this might exist or just 0
-            lstm_status=record["lstm_status"] or "unknown",
-            alert_level=alert_level,
-            image_url=image_url,
-            sensor_data=record["sensors"]
-        )
+        doc = self._build_firestore_doc(record)
         
         success = self._upload_firestore(doc)
         if not success:
-            # Ghi vào offline queue
-            # Reconstruct offline record. Include image in base64 if it wasn't uploaded.
-            offline_rec = record.copy()
-            if not image_url and frame_bytes:
-                offline_rec["frame_base64"] = base64.b64encode(frame_bytes).decode('utf-8')
-            self._save_offline(offline_rec)
+            self._save_offline(record)
 
-    def _upload_image(self, image_bytes: bytes, alert_level: str, yolo_label: str):
-        try:
-            timestamp  = datetime.now().strftime("%Y%m%d_%H%M%S")
-            remote_path = f"images/{self.device_id}/{alert_level}/{yolo_label}/{timestamp}.jpg"
-            encoded     = urllib.parse.quote(remote_path, safe="")
+    def _to_firestore_value(self, val):
+        if isinstance(val, dict):
+            return {"mapValue": {"fields": {k: self._to_firestore_value(v) for k, v in val.items()}}}
+        elif isinstance(val, list):
+            return {"arrayValue": {"values": [self._to_firestore_value(v) for v in val]}}
+        elif isinstance(val, bool):
+            return {"booleanValue": val}
+        elif isinstance(val, int):
+            return {"integerValue": str(val)}
+        elif isinstance(val, float):
+            return {"doubleValue": val}
+        elif val is None:
+            return {"nullValue": None}
+        else:
+            return {"stringValue": str(val)}
 
-            url = f"{self._storage_url}?uploadType=media&name={encoded}&key={self.api_key}"
-
-            req = urllib.request.Request(
-                url,
-                data=image_bytes,
-                headers={"Content-Type": "image/jpeg"},
-                method="POST",
-            )
-            with urllib.request.urlopen(req, timeout=15) as resp:
-                result = json.loads(resp.read())
-
-            download_url = (
-                f"https://firebasestorage.googleapis.com/v0/b/{self.bucket_name}"
-                f"/o/{encoded}?alt=media"
-            )
-            logger.info(f"[Cloud] Image uploaded: {remote_path}")
-            return download_url
-
-        except Exception as e:
-            logger.error(f"[Cloud] Image upload failed: {e}")
-            return None
+    def _build_firestore_doc(self, record: dict) -> dict:
+        return {"fields": {k: self._to_firestore_value(v) for k, v in record.items()}}
 
     def _upload_firestore(self, doc: dict) -> bool:
         try:
-            url = f"{self._firestore_url}/sensor_records?key={self.api_key}"
+            url = f"{self._firestore_url}/device_reports?key={self.api_key}"
 
             req = urllib.request.Request(
                 url,
@@ -187,42 +125,13 @@ class CloudUploader:
             with urllib.request.urlopen(req, timeout=10) as resp:
                 resp.read()
 
-            logger.info(f"[Cloud] Sensor record uploaded — level: {doc['fields']['alert_level']['stringValue']}")
+            alert_level = doc.get("fields", {}).get("alert", {}).get("mapValue", {}).get("fields", {}).get("level", {}).get("stringValue", "UNKNOWN")
+            logger.info(f"[Cloud] Device report uploaded — level: {alert_level}")
             return True
 
         except Exception as e:
             logger.error(f"[Cloud] Firestore write failed: {e}")
             return False
-
-    def _build_firestore_doc(self, timestamp: str, yolo_label: str, yolo_status: str,
-                              confidence: float, lstm_status: str, alert_level: str, image_url: str, sensor_data: list) -> dict:
-        fields = {
-            "device_id":    {"stringValue": self.device_id},
-            "timestamp":    {"stringValue": timestamp},
-            "yolo_label":   {"stringValue": yolo_label},
-            "yolo_status":  {"stringValue": yolo_status},
-            "confidence":   {"doubleValue": float(confidence)},
-            "lstm_status":  {"stringValue": lstm_status},
-            "alert_level":  {"stringValue": alert_level},
-            "image_url":    {"stringValue": image_url or ""},
-        }
-
-        # Format sensors: [{'type': 'temp', 'value': 28.5}, ...] -> dict
-        sensor_dict = {}
-        for s in sensor_data:
-            sensor_dict[s["type"]] = s["value"]
-
-        sensor_map = {}
-        for k, v in sensor_dict.items():
-            if isinstance(v, float):
-                sensor_map[k] = {"doubleValue": v}
-            elif isinstance(v, int):
-                sensor_map[k] = {"integerValue": str(v)}
-            else:
-                sensor_map[k] = {"stringValue": str(v)}
-
-        fields["sensor_data"] = {"mapValue": {"fields": sensor_map}}
-        return {"fields": fields}
 
     def _save_offline(self, record):
         try:
@@ -252,14 +161,6 @@ class CloudUploader:
                 
                 try:
                     record = json.loads(line)
-                    # Re-enqueue the record to be processed by worker thread
-                    # Convert base64 image back to bytes if present
-                    if "frame_base64" in record:
-                        record["frame_bytes"] = base64.b64decode(record["frame_base64"])
-                        del record["frame_base64"]
-                    else:
-                        record["frame_bytes"] = None
-                        
                     self.queue.put(record)
                 except Exception as e:
                     logger.error(f"[Cloud] Failed to parse offline record: {e}")
