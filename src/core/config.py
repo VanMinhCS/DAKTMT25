@@ -60,16 +60,13 @@ class AppConfig(BaseModel):
     enable_mqtt:    bool = True
     enable_streamer: bool = True
     enable_lstm:    bool = True
-    enable_cloud_upload: bool = False
 
-    # ── Firebase Cloud Upload ─────────────────────────────────────────────
-    cloud_device_id: str = "rpi-greenhouse-01"
-    cloud_offline_queue_path: str = "logs/offline_queue.jsonl"
-    cloud_image_max_width: int = Field(320, description="Chiều rộng ảnh nén để lưu Firestore")
-    cloud_image_quality: int = Field(60, description="Chất lượng ảnh JPEG (0-100)")
-    firebase_api_key: str = ""
-    firebase_project_id: str = ""
-
+    # ── Logging & Metrics ───────────────────────────────────────────────
+    log_to_terminal:          bool = True
+    enable_metrics_log:       bool = True
+    metrics_log_path:         str  = "logs/evaluation_metrics.jsonl"
+    metrics_interval_seconds: int  = Field(30, ge=5, le=3600,
+                                           description="Chu kỳ ghi tài nguyên hệ thống (giây)")
     # ── Sensor Server ─────────────────────────────────────────────────────
     sensor_server_port: int = Field(5000, ge=1024, le=65535,
                                      description="Port HTTP nhận dữ liệu cảm biến")

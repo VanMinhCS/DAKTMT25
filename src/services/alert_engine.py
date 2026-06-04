@@ -53,6 +53,12 @@ class AlertEngine:
     └──────────────┴─────────────────────┴───────────────┘
     """
 
+    def __init__(self):
+        from ..core import metrics as _metrics
+        self._metrics = _metrics
+        # State theo dõi mức cảnh báo trước để phát hiện thay đổi
+        self._last_level: str | None = None
+
     def build(self, yolo_status: str, lstm_status: str | None,
               stream_url: str = "") -> dict:
 
@@ -110,6 +116,16 @@ class AlertEngine:
             else:
                 level, status = "NORMAL", "normal"
                 message = "Không phát hiện cây trong khung hình. Hệ thống đang chờ."
+
+        # ── Ghi metrics khi mức cảnh báo thay đổi ────────────────────────
+        if level != self._last_level:
+            self._metrics.log_alert_transition(
+                old_level=self._last_level,
+                new_level=level,
+                yolo_status=yolo_status,
+                lstm_status=lstm_status,
+            )
+            self._last_level = level
 
         payload = {
             "level":   level,

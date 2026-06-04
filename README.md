@@ -14,12 +14,12 @@ Hệ thống giám sát và phát hiện bệnh cây trồng thời gian thực,
 │  ESP32      │────▶│  Report      │────▶│  IoT Client      │
 │  Sensors    │     │  Builder     │     │  (MQTT/ThingsBoard)│
 └─────────────┘     └──────┬───────┘     └─────────────────┘
-       │                   │
-       ▼            ┌──────▼───────┐     ┌─────────────────┐
-┌─────────────┐     │  Alert       │     │  Cloud Uploader   │
-│  LSTM       │────▶│  Engine      │────▶│  (Firebase REST)  │
-│  Predictor  │     │  (Fusion)    │     └─────────────────┘
-└─────────────┘     └──────────────┘
+                           │
+                    ┌──────▼───────┐
+                    │  Alert       │
+                    │  Engine      │
+                    │  (Fusion)    │
+                    └──────────────┘
 ```
 
 ## Tính năng chính
@@ -28,7 +28,6 @@ Hệ thống giám sát và phát hiện bệnh cây trồng thời gian thực,
 - 📊 **LSTM Prediction**: Dự đoán sức khỏe đất từ 7 thông số cảm biến (chuỗi 24h)
 - ⚡ **Decision Fusion**: Kết hợp YOLO + LSTM tạo cảnh báo 5 cấp độ (NORMAL → CRITICAL)
 - 📡 **IoT Integration**: Gửi telemetry qua MQTT đến ThingsBoard/CoreIoT
-- ☁️ **Cloud Upload**: Upload dữ liệu bất thường lên Firebase (offline queue support)
 - 📹 **RTSP Streaming**: Stream video realtime với overlay detection
 - 🔄 **OTA Update**: Cập nhật firmware qua mạng từ ThingsBoard
 
@@ -75,7 +74,6 @@ cp .env.example .env
 Bao gồm:
 - `THINGSBOARD_HOST` / `THINGSBOARD_ACCESS_TOKEN` — kết nối MQTT
 - `DEVICE_ID` / `PLANT_ID` — định danh thiết bị
-- `FIREBASE_API_KEY` / `FIREBASE_PROJECT_ID` — upload cloud (tùy chọn)
 
 ## Chạy
 
@@ -110,7 +108,7 @@ plant-disease-detect/
 │   ├── core/                    # Config, Logger, Utils
 │   ├── hardware/                # Camera, Sensor Server
 │   ├── network/                 # MQTT IoT Client, RTSP Streamer
-│   └── services/                # AlertEngine, ReportBuilder, CloudUploader, OTA
+│   └── services/                # AlertEngine, ReportBuilder, OTA
 ├── models/
 │   ├── yolo/                    # YOLO ONNX model (INT8)
 │   └── lstm/                    # LSTM TFLite model + scaler + encoder

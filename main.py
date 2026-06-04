@@ -2,7 +2,8 @@ import time
 import threading
 
 from src.core.utils          import load_config
-from src.core.logger         import get_logger
+from src.core.logger         import get_logger, configure_from_config
+from src.core                import metrics
 from src.services.alert_engine   import AlertEngine
 from src.ai.image_processor import ImageProcessor
 from src.services.ota_manager    import OTAManager
@@ -39,9 +40,7 @@ def _import_lstm():
     from src.ai.lstm_predictor import LSTMPredictor
     return LSTMPredictor
 
-def _import_cloud_uploader():
-    from src.services.cloud_uploader import CloudUploader
-    return CloudUploader
+
 
 # ── Frame Cacher ──────────────────────────────────────────────────────────────
 class FrameCacher:
@@ -78,13 +77,16 @@ class MainApp:
         self.config  = load_config("config.json")
         self.running = True
 
+        # ── Áp dụng cấu hình log terminal và khởi tạo metrics ─────────────────
+        configure_from_config(self.config.get("log_to_terminal", True))
+        metrics.init(self.config)
+
         # ── Feature flags ──────────────────────────────────────────────────
         self.f_camera   = self.config.get("enable_camera",   True)
         self.f_sensor   = self.config.get("enable_sensor",   True)
         self.f_mqtt     = self.config.get("enable_mqtt",     True)
         self.f_streamer = self.config.get("enable_streamer", True)
         self.f_lstm     = self.config.get("enable_lstm",     True)
-        self.f_cloud    = self.config.get("enable_cloud_upload", False)
         self._print_flags()
 
         # ── Shared sensor cache ────────────────────────────────────────────
@@ -105,12 +107,15 @@ class MainApp:
         self.image_processor = ImageProcessor()
         self.ota_manager     = OTAManager(self.config)
         self.report_builder  = ReportBuilder()
-        self.cloud_uploader  = self._init_cloud_uploader()
 
-        # ── Wire modules & start report thread ────────────────────────────
+
+        # ── Wire modules & start report + metrics thread ──────────────────
         self._wire_modules()
         self.report_thread = threading.Thread(
             target=self._report_loop, daemon=True
+        )
+        self.metrics_thread = threading.Thread(
+            target=self._metrics_loop, daemon=True
         )
 
     # ──────────────────────────────────────────────────────────────────────
@@ -157,10 +162,7 @@ class MainApp:
             return None
         return _import_lstm()(self.config)
 
-    def _init_cloud_uploader(self):
-        if not self.f_cloud:
-            return None
-        return _import_cloud_uploader()(self.config)
+
 
     def _wire_modules(self):
         """Kết nối các queue giữa các module với nhau."""
@@ -189,7 +191,6 @@ class MainApp:
         print(f"  MQTT     : {'[ON]' if self.f_mqtt     else '[OFF]'}")
         print(f"  Streamer : {'[ON]' if self.f_streamer else '[OFF]'}")
         print(f"  LSTM     : {'[ON]' if self.f_lstm     else '[OFF]'}")
-        print(f"  Cloud    : {'[ON]' if self.f_cloud    else '[OFF]'}")
         print("=" * 50)
 
     def start(self):
@@ -199,8 +200,8 @@ class MainApp:
         if self.streamer:      self.streamer.start()
         if self.iot_client:    self.iot_client.start()
         if self.sensor_server: self.sensor_server.start()
-        if self.cloud_uploader: self.cloud_uploader.start()
         self.report_thread.start()
+        self.metrics_thread.start()
 
         try:
             while self.running:
@@ -215,7 +216,7 @@ class MainApp:
         if self.ai_engine:  self.ai_engine.stop()
         if self.streamer:   self.streamer.stop()
         if self.iot_client: self.iot_client.stop()
-        if self.cloud_uploader: self.cloud_uploader.stop()
+
         logger.info("System Stopped.")
 
     # ──────────────────────────────────────────────────────────────────────
@@ -305,9 +306,7 @@ class MainApp:
             if self.iot_client:
                 self.iot_client.send_telemetry({"device_report": device_report})
                 
-            # 6. Cloud upload (chỉ upload khi phát hiện bất thường)
-            if self.cloud_uploader:
-                self.cloud_uploader.enqueue_record(device_report)
+
 
             lstm_info = (
                 f"LSTM: {sensor_health['lstm_status']}"
@@ -317,7 +316,43 @@ class MainApp:
                         plant_report['stable_health_status'],
                         lstm_info, alert['level'])
 
+    # ──────────────────────────────────────────────────────────────────────
+    # Metrics loop — ghi tài nguyên hệ thống định kỳ (không dùng psutil)
+    # ──────────────────────────────────────────────────────────────────────
+
+    def _metrics_loop(self):
+        """
+        Thread chạy ngầm, định kỳ đọc tài nguyên hệ thống và ghi vào
+        logs/evaluation_metrics.jsonl. Không in ra terminal.
+
+        Đọc trực tiếp từ các file Linux chuẩn:
+          /proc/meminfo        → RAM còn trống
+          /sys/class/thermal/  → nhiệt độ CPU
+          /proc/stat           → CPU usage (%)
+        Hoàn toàn không cần psutil — an toàn với Yocto Linux.
+        """
+        from src.core import metrics as _metrics  # local import để tránh circular
+        interval = self.config.get("metrics_interval_seconds", 30)
+
+        while self.running:
+            # Ngủ trước, để hệ thống có thời gian khởi động xong
+            for _ in range(interval):
+                if not self.running:
+                    return
+                time.sleep(1)
+
+            ram  = _metrics.read_ram_available_mb()
+            temp = _metrics.read_temperature_c()
+            cpu  = _metrics.read_cpu_percent(interval=1.0)  # block 1s để đo chính xác
+
+            if ram is not None:
+                _metrics.log_system_resources(
+                    ram_available_mb=ram,
+                    temperature_c=temp,
+                    cpu_percent=cpu,
+                )
+
 
 if __name__ == "__main__":
     app = MainApp()
-    app.start()
+    app.start()

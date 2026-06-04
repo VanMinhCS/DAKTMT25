@@ -3,6 +3,7 @@ import re
 import threading
 import paho.mqtt.client as mqtt
 from ..core.logger import get_logger
+from ..core import metrics
 
 logger = get_logger("IoTClient")
 
@@ -163,6 +164,7 @@ class IoTClient:
             self._cancel_reconnect_timer()
             self._reset_backoff()
             logger.info("Connected to ThingsBoard!")
+            metrics.log_iot_event("MQTT_CONNECTED", {"host": self._host})
             self._subscribe_topics()
         else:
             logger.error("Connection failed, rc=%d. Will retry...", rc)
@@ -176,6 +178,10 @@ class IoTClient:
         else:
             # Mất kết nối bất ngờ — bắt đầu reconnect
             logger.warning("Unexpected disconnect (rc=%d). Scheduling reconnect...", rc)
+            metrics.log_iot_event("MQTT_DISCONNECT", {
+                "rc":   rc,
+                "host": getattr(self, "_host", "unknown"),
+            })
             self._schedule_reconnect()
 
     def _on_message(self, client, userdata, msg):

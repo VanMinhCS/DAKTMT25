@@ -75,3 +75,24 @@ def get_logger(name: str) -> logging.Logger:
     """
     _setup_root_logger()
     return logging.getLogger(name)
+
+
+def configure_from_config(log_to_terminal: bool) -> None:
+    """
+    Gọi một lần trong main.py sau khi load_config() để áp dụng
+    cờ log_to_terminal từ config.json.
+
+    Nếu log_to_terminal=False: xóa toàn bộ StreamHandler khỏi root logger.
+    Terminal sẽ hoàn toàn im lặng — log chỉ được ghi vào file app.log.
+    Việc này không cần rebuild Yocto image, chỉ cần sửa config.json.
+    """
+    if log_to_terminal:
+        return  # Giữ nguyên mặc định
+
+    root = logging.getLogger()
+    for handler in root.handlers[:]:
+        # Xóa StreamHandler nhưng giữ lại FileHandler (RotatingFileHandler)
+        if isinstance(handler, logging.StreamHandler) and \
+                not isinstance(handler, logging.FileHandler):
+            root.removeHandler(handler)
+

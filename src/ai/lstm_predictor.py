@@ -1,7 +1,9 @@
 import numpy as np
 import pickle
 import collections
+import time
 from ..core.logger import get_logger
+from ..core import metrics
 
 logger = get_logger("LSTM")
 
@@ -200,19 +202,31 @@ class LSTMPredictor:
             ).astype(np.float32)                                # (1, W, 7)
 
             if self.use_tflite:
-                # ── TFLite inference (nhẹ, nhanh) ────────────────────────
+                # ── TFLite inference (nhẹ, nhanh) ───────────────────────
                 self.interpreter.set_tensor(self.input_idx, X)
+                _t0 = time.perf_counter()
                 self.interpreter.invoke()
+                _lstm_ms = (time.perf_counter() - _t0) * 1000.0
                 probs = self.interpreter.get_tensor(self.output_idx)[0]  # (n_classes,)
             else:
-                # ── Keras inference ───────────────────────────────────────
+                # ── Keras inference ───────────────────────────────────
+                _t0 = time.perf_counter()
                 probs = self.model.predict(X, verbose=0)[0]
+                _lstm_ms = (time.perf_counter() - _t0) * 1000.0
 
             idx   = int(np.argmax(probs))
             label = self.classes[idx]
             conf  = float(probs[idx])
 
             logger.info("Prediction: %s (%.1f%%)", label, conf * 100)
+
+            # ── Ghi metrics (chỉ vào file, không ra terminal) ─────────────────
+            metrics.log_lstm_performance(
+                lstm_ms=_lstm_ms,
+                label=label,
+                confidence=conf,
+            )
+
             return label, conf
         except Exception as e:
             logger.error("Predict error: %s", e)

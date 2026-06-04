@@ -1,8 +1,23 @@
 import threading
 from flask import Flask, request, jsonify
 from ..core.logger import get_logger
+from ..core import metrics
 
 logger = get_logger("SensorServer")
+
+# Khoảng giới hạn hợp lệ để phát hiện sensor gửi dữ liệu rác
+_SENSOR_BOUNDS = {
+    "soil_moisture":    (0.0,   100.0),
+    "moisture":         (0.0,   100.0),
+    "soil_temperature": (-10.0, 80.0),
+    "temperature":      (-10.0, 80.0),
+    "temp":             (-10.0, 80.0),
+    "ph":               (0.0,   14.0),
+    "ec":               (0.0,   10000.0),
+    "nitrogen":         (0.0,   1000.0),
+    "phosphorus":       (0.0,   1000.0),
+    "potassium":        (0.0,   1000.0),
+}
 
 
 class SensorServer:
@@ -24,9 +39,37 @@ class SensorServer:
         try:
             data = request.json
             if not data:
+                metrics.log_iot_event("SENSOR_ERROR", {
+                    "reason": "No JSON body in request",
+                    "remote": request.remote_addr,
+                })
                 return jsonify({"status": "error", "message": "No JSON data provided"}), 400
 
             logger.debug("Received sensor data: %s", data)
+
+            # Kiểm tra các giá trị ngoài khoảng hợp lệ
+            items = data if isinstance(data, list) else [
+                {"type": k, "value": v} for k, v in data.items()
+                if isinstance(v, (int, float))
+            ]
+            for item in items:
+                key   = str(item.get("type", "")).lower().strip()
+                value = item.get("value")
+                if key in _SENSOR_BOUNDS and value is not None:
+                    lo, hi = _SENSOR_BOUNDS[key]
+                    try:
+                        fv = float(value)
+                        if fv < lo or fv > hi:
+                            metrics.log_iot_event("SENSOR_OUT_OF_RANGE", {
+                                "sensor": key,
+                                "value":  fv,
+                                "valid_range": [lo, hi],
+                            })
+                    except (TypeError, ValueError):
+                        metrics.log_iot_event("SENSOR_ERROR", {
+                            "reason": f"Non-numeric value for sensor '{key}'",
+                            "value":  str(value),
+                        })
 
             if self.data_callback:
                 self.data_callback(data)
@@ -35,6 +78,7 @@ class SensorServer:
 
         except Exception as e:
             logger.error("Error processing sensor request: %s", e)
+            metrics.log_iot_event("SENSOR_ERROR", {"reason": str(e)})
             return jsonify({"status": "error", "message": str(e)}), 500
 
     def start(self):

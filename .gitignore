@@ -40,4 +40,5 @@ collab/_Plant_Leaf_Disease.ipynb
 temp.py
 test_result*.txt
 tmp_*.py
-update.zip
+update.zip
+data/*.csv

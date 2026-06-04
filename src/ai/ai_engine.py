@@ -15,6 +15,7 @@ import numpy as np
 import onnxruntime as ort
 import threading
 import queue
+import time
 import base64
 import uuid
 import json
@@ -22,6 +23,7 @@ import os
 from datetime import datetime
 from ..core.utils import draw_detection
 from ..core.logger import get_logger
+from ..core import metrics
 
 logger = get_logger("AIEngine")
 
@@ -264,7 +266,9 @@ class AIEngine:
         with self.lock:
             if self.session is None:
                 return []
+            _t0 = time.perf_counter()
             output = self.session.run(None, {self.input_name: blob})[0]
+            _yolo_ms = (time.perf_counter() - _t0) * 1000.0
 
         detections = _postprocess(
             output, conf_thr, iou_thr,
@@ -279,6 +283,15 @@ class AIEngine:
                 else str(cls_id)
             )
             results.append((name, conf, box, cls_id))
+
+        # ── Ghi metrics (chỉ vào file, không ra terminal) ─────────────────
+        num_boxes = len(results)
+        avg_conf  = (sum(c for _, c, _, _ in results) / num_boxes) if num_boxes else 0.0
+        metrics.log_ai_performance(
+            yolo_ms=_yolo_ms,
+            num_boxes=num_boxes,
+            avg_conf=avg_conf,
+        )
 
         return results
 
