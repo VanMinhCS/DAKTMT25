@@ -293,9 +293,15 @@ class MainApp:
                 sensor_health.get("lstm_status")
                 if sensor_health and sensor_health.get("lstm_ready") else None
             )
+            lstm_conf = (
+                sensor_health.get("lstm_confidence", 0.0) / 100.0
+                if sensor_health and sensor_health.get("lstm_ready") else 0.0
+            )
             alert = self.alert_engine.build(
                 yolo_status=plant_report["stable_health_status"],
+                yolo_conf=plant_report.get("yolo_confidence", 0.0),
                 lstm_status=lstm_status_str,
+                lstm_conf=lstm_conf,
             )
 
             # 5. Build payload cuối & gửi

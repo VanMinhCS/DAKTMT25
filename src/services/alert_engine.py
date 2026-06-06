@@ -1,3 +1,10 @@
+import os
+import pickle
+import numpy as np
+from ..core.logger import get_logger
+
+logger = get_logger("AlertEngine")
+
 # ── LSTM class groups (dùng set membership, không dùng keyword matching) ──
 _DISEASE_RISK_CLASSES = {
     "Bacterial_Spot_Risk", "Early_Blight_Risk",
@@ -7,7 +14,6 @@ _NUTRIENT_DEFICIENT_CLASSES = {
     "N_Deficient", "P_Deficient",
     "K_Deficient", "Fe_Deficient",
 }
-
 
 def _classify_lstm(lstm_status: str | None) -> str:
     """
@@ -24,98 +30,92 @@ def _classify_lstm(lstm_status: str | None) -> str:
         return "nutrient_deficient"
     return "unknown"
 
-
 class AlertEngine:
     """
-    Kết hợp kết quả YOLO và LSTM để tạo cảnh báo tổng hợp (Decision Fusion).
-
-    YOLO status : "Healthy" | "Warning" | "Checking" | "No_Detection"
-    LSTM group  : "healthy" | "disease_risk" | "nutrient_deficient" | "unknown"
-                  (map từ 9 class: Healthy / *_Risk / *_Deficient / chưa đủ data)
-
-    Ma trận quyết định (5 cấp độ):
-    ┌──────────────┬─────────────────────┬───────────────┐
-    │ YOLO         │ LSTM group          │ Alert Level   │
-    ├──────────────┼─────────────────────┼───────────────┤
-    │ Warning      │ disease_risk        │ CRITICAL      │
-    │ Warning      │ nutrient_deficient  │ WARNING       │
-    │ Warning      │ healthy             │ VERIFICATION  │ ← môi trường tốt → nghi nhầm
-    │ Warning      │ unknown             │ WARNING       │ ← bệnh confirmed, thiếu data môi trường
-    ├──────────────┼─────────────────────┼───────────────┤
-    │ Checking     │ disease_risk/nutri  │ PRE_WARNING   │ ← LSTM là tín hiệu chủ đạo
-    │ Checking     │ healthy/unknown     │ NORMAL        │ ← tín hiệu yếu, chờ xác nhận
-    ├──────────────┼─────────────────────┼───────────────┤
-    │ Healthy      │ disease_risk/nutri  │ PRE_WARNING   │ ← phòng ngừa / bổ sung dinh dưỡng
-    │ Healthy      │ healthy/unknown     │ NORMAL        │
-    ├──────────────┼─────────────────────┼───────────────┤
-    │ No_Detection │ disease_risk/nutri  │ PRE_WARNING   │ ← chỉ dựa vào LSTM
-    │ No_Detection │ healthy/unknown     │ NORMAL        │
-    └──────────────┴─────────────────────┴───────────────┘
+    Kết hợp kết quả YOLO và LSTM để tạo cảnh báo tổng hợp (Decision Fusion)
+    sử dụng mô hình Random Forest (Meta-Learner).
     """
 
     def __init__(self):
         from ..core import metrics as _metrics
         self._metrics = _metrics
-        # State theo dõi mức cảnh báo trước để phát hiện thay đổi
         self._last_level: str | None = None
+        
+        self.model = None
+        self.yolo_map = {}
+        self.lstm_map = {}
+        self.level_names = []
+        
+        # Load Random Forest model
+        model_path = "models/fusion/rf_fusion_model.pkl"
+        if os.path.exists(model_path):
+            try:
+                with open(model_path, "rb") as f:
+                    data = pickle.load(f)
+                    self.model = data["model"]
+                    self.yolo_map = data["yolo_map"]
+                    self.lstm_map = data["lstm_map"]
+                    self.level_names = data["level_names"]
+                logger.info(f"Loaded Meta-Learner from {model_path}")
+            except Exception as e:
+                logger.error(f"Failed to load Meta-Learner: {e}")
+        else:
+            logger.warning(f"Meta-Learner not found at {model_path}. Using fallback logic.")
 
-    def build(self, yolo_status: str, lstm_status: str | None,
-              stream_url: str = "") -> dict:
+    def build(self, yolo_status: str, yolo_conf: float = 0.0, lstm_status: str | None = None,
+              lstm_conf: float = 0.0, stream_url: str = "") -> dict:
 
         lstm_group = _classify_lstm(lstm_status)
-        lstm_bad   = lstm_group in ("disease_risk", "nutrient_deficient")
+        
+        # Tiền xử lý thông báo tự động (tùy theo level)
+        lstm_str_display = lstm_status if lstm_status and lstm_status != "Collecting data..." else "Chưa đủ dữ liệu"
+        
+        level = "NORMAL"
+        status = "normal"
+        message = "Hệ thống hoạt động bình thường."
 
-        # ── YOLO xác nhận bệnh ────────────────────────────────────────────
-        if yolo_status == "Warning":
-            if lstm_group == "disease_risk":
-                level, status = "CRITICAL", "critical"
-                message = (f"Phát hiện bệnh trên lá + môi trường đang có nguy cơ cao "
-                           f"({lstm_status}). Kích hoạt báo động khẩn!")
-            elif lstm_group == "nutrient_deficient":
-                level, status = "WARNING", "warning"
-                message = (f"Phát hiện bệnh trên lá + cây thiếu dinh dưỡng "
-                           f"({lstm_status}). Cần điều trị và bổ sung dinh dưỡng.")
-            elif lstm_group == "healthy":
-                # Bệnh lá nhưng môi trường ổn → có thể nhận diện nhầm
-                level, status = "VERIFICATION", "verify"
-                message = ("Có dấu hiệu bệnh trên lá nhưng môi trường đang an toàn "
-                           f"({lstm_status}). Cần xác minh lại qua camera.")
-            else:
-                # unknown = LSTM chưa đủ data (≠ môi trường tốt)
-                # YOLO đã confirm ≥5 frame → bệnh có thật, chỉ là chưa rõ mức độ môi trường
-                level, status = "WARNING", "warning"
-                message = ("Xác nhận bệnh trên lá. Chưa có đủ dữ liệu môi trường từ LSTM "
-                           "để đánh giá nguy cơ lan rộng — cần kiểm tra và xử lý sớm.")
-
-        # ── YOLO đang xác nhận (thấy bệnh nhưng chưa đủ ngưỡng frame) ────
-        elif yolo_status == "Checking":
-            if lstm_bad:
-                level, status = "PRE_WARNING", "pre-warning"
-                message = (f"Camera đang ghi nhận dấu hiệu bệnh + môi trường "
-                           f"có rủi ro ({lstm_status}). Theo dõi chặt.")
-            else:
-                level, status = "NORMAL", "normal"
-                message = "Camera đang thu thập thêm dữ liệu — chưa phát hiện bất thường."
-
-        # ── YOLO thấy cây khỏe ────────────────────────────────────────────
-        elif yolo_status == "Healthy":
-            if lstm_bad:
-                level, status = "PRE_WARNING", "pre-warning"
-                message = (f"Lá đang khỏe mạnh nhưng môi trường có dấu hiệu bất ổn "
-                           f"({lstm_status}). Cần phòng ngừa.")
-            else:
-                level, status = "NORMAL", "normal"
-                message = "Cây khỏe mạnh — lá và đất đều ổn định."
-
-        # ── YOLO không thấy gì (camera trống / bị che) ───────────────────
-        else:  # No_Detection hoặc giá trị không xác định
-            if lstm_bad:
-                level, status = "PRE_WARNING", "pre-warning"
-                message = (f"Camera không phát hiện cây — nhưng LSTM cảnh báo "
-                           f"môi trường có vấn đề ({lstm_status}).")
-            else:
-                level, status = "NORMAL", "normal"
-                message = "Không phát hiện cây trong khung hình. Hệ thống đang chờ."
+        # Nếu mô hình RF được nạp thành công -> Sử dụng Random Forest
+        if self.model is not None:
+            try:
+                # Map inputs
+                x_yolo = self.yolo_map.get(yolo_status, 0)
+                x_lstm = self.lstm_map.get(lstm_group, 0)
+                
+                # Predict
+                X_input = np.array([[x_yolo, yolo_conf, x_lstm, lstm_conf]])
+                pred_idx = int(self.model.predict(X_input)[0])
+                level = self.level_names[pred_idx]
+                
+                # Tạo trạng thái string cho frontend
+                status = level.lower().replace("_", "-")
+                if level == "VERIFICATION": status = "verify"
+                
+                # Gán message tùy theo Level
+                if level == "CRITICAL":
+                    message = f"[AI Tầng 2] Mức độ NGUY HIỂM: Lá có bệnh + Môi trường rủi ro ({lstm_str_display})."
+                elif level == "WARNING":
+                    message = f"[AI Tầng 2] CẢNH BÁO: Phát hiện bất thường cần xử lý sớm ({lstm_str_display})."
+                elif level == "PRE_WARNING":
+                    message = f"[AI Tầng 2] Cảnh báo sớm: Có rủi ro tiềm ẩn từ môi trường hoặc lá ({lstm_str_display})."
+                elif level == "VERIFICATION":
+                    message = f"[AI Tầng 2] Cần xác minh: Phát hiện bệnh nhưng môi trường rất tốt ({lstm_str_display})."
+                else:
+                    message = f"[AI Tầng 2] Bình thường: Không phát hiện bất thường nghiêm trọng."
+                    
+            except Exception as e:
+                logger.error(f"Random Forest Predict Error: {e}")
+                level = "NORMAL"
+        
+        else:
+            # Fallback (IF-ELSE cũ) nếu file pkl bị xóa hoặc lỗi
+            lstm_bad = lstm_group in ("disease_risk", "nutrient_deficient")
+            if yolo_status == "Warning":
+                level, status = "CRITICAL" if lstm_group == "disease_risk" else "WARNING", "critical"
+            elif yolo_status == "Checking":
+                level, status = "PRE_WARNING" if lstm_bad else "NORMAL", "pre-warning"
+            elif yolo_status == "Healthy" or yolo_status == "No_Detection":
+                level, status = "PRE_WARNING" if lstm_bad else "NORMAL", "normal"
+            message = "[Fallback] Cảnh báo bằng cơ chế IF-ELSE do không tìm thấy Model."
 
         # ── Ghi metrics khi mức cảnh báo thay đổi ────────────────────────
         if level != self._last_level:
@@ -130,7 +130,7 @@ class AlertEngine:
         payload = {
             "level":   level,
             "status":  status,
-            "source":  "Decision_Fusion_YOLO_LSTM",
+            "source":  "Decision_Fusion_RF_MetaLearner",
             "message": message,
         }
 

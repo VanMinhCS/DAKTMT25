@@ -304,7 +304,7 @@ class AIEngine:
                 detections = self._run_inference(frame)
 
                 detections_drawing  = [(n, c, b, i) for n, c, b, i in detections]
-                detections_sending  = [n for n, c, b, i in detections]
+                detections_sending  = [(n, c) for n, c, b, i in detections]
 
                 # Đẩy kết quả vẽ ra queue (cho Streamer)
                 try:
@@ -315,10 +315,11 @@ class AIEngine:
                 # Cập nhật bộ đếm (cho Network gửi báo cáo định kỳ)
                 if detections_sending:
                     with self.aggregator_lock:
-                        for name in detections_sending:
-                            self.detection_aggregator[name] = (
-                                self.detection_aggregator.get(name, 0) + 1
-                            )
+                        for name, conf in detections_sending:
+                            if name not in self.detection_aggregator:
+                                self.detection_aggregator[name] = {"count": 0, "conf_sum": 0.0}
+                            self.detection_aggregator[name]["count"] += 1
+                            self.detection_aggregator[name]["conf_sum"] += conf
 
             except queue.Empty:
                 continue

@@ -51,37 +51,43 @@ class ReportBuilder:
         healthy_detections  = {k: v for k, v in detection_counts.items()
                                if "healthy" in k.lower()}
         confirmed_diseases  = {k: v for k, v in disease_detections.items()
-                               if v >= DETECTION_CONF_THRESH}
+                               if v["count"] >= DETECTION_CONF_THRESH}
 
         # ── Thứ tự ưu tiên: Warning > Healthy > Checking > No_Detection ──
         if confirmed_diseases:
             # Có ít nhất 1 bệnh được xác nhận → Warning (kể cả khi healthy nhiều hơn)
-            best_class    = max(confirmed_diseases, key=confirmed_diseases.get)
+            best_class    = max(confirmed_diseases, key=lambda k: confirmed_diseases[k]["count"])
             health_status = "Warning"
-        elif healthy_detections and max(healthy_detections.values()) >= HEALTHY_CONF_THRESH:
+        elif healthy_detections and max(v["count"] for v in healthy_detections.values()) >= HEALTHY_CONF_THRESH:
             # Không có bệnh xác nhận, healthy đủ ngưỡng → Healthy
-            best_class    = max(healthy_detections, key=healthy_detections.get)
+            best_class    = max(healthy_detections, key=lambda k: healthy_detections[k]["count"])
             health_status = "Healthy"
         elif disease_detections:
             # Bệnh được thấy nhưng chưa đủ ngưỡng → Checking (đang xác nhận)
-            best_class    = max(disease_detections, key=disease_detections.get)
+            best_class    = max(disease_detections, key=lambda k: disease_detections[k]["count"])
             health_status = "Checking"
         else:
             # Chỉ thấy healthy nhưng < HEALTHY_CONF_THRESH → chưa đủ căn cứ
-            best_class    = max(healthy_detections, key=healthy_detections.get)
+            best_class    = max(healthy_detections, key=lambda k: healthy_detections[k]["count"]) if healthy_detections else None
             health_status = "No_Detection"
 
         report["stable_health_status"] = health_status
+        report["yolo_confidence"] = 0.0
 
-        parts  = best_class.split('_', 1)
-        p_name = parts[0].lower()           if len(parts) == 2 else "Unknown"
-        d_name = parts[1].replace('_', ' ') if len(parts) == 2 else best_class
+        if best_class:
+            parts  = best_class.split('_', 1)
+            p_name = parts[0].lower()           if len(parts) == 2 else "Unknown"
+            d_name = parts[1].replace('_', ' ') if len(parts) == 2 else best_class
+            
+            best_data = detection_counts[best_class]
+            yolo_conf = best_data["conf_sum"] / best_data["count"] if best_data["count"] > 0 else 0.0
 
-        report.update({
-            "plant_name":            p_name,
-            "plant_disease":         d_name,
-            "debug_detection_count": detection_counts.get(best_class, 0),
-        })
+            report.update({
+                "plant_name":            p_name,
+                "plant_disease":         d_name,
+                "debug_detection_count": best_data["count"],
+                "yolo_confidence":       round(yolo_conf, 3)
+            })
 
         return report
 
