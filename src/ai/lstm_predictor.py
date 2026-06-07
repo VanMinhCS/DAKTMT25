@@ -130,6 +130,8 @@ class LSTMPredictor:
                 with open(encoder_path, "rb") as f: self.encoder = pickle.load(f)
             self.classes = list(self.encoder.classes_)
             logger.info("Classes (%d): %s", len(self.classes), self.classes)
+            # Log backend SAU KHI tất cả đã được set (use_tflite, model, interpreter)
+            # → self.backend luôn trả về đúng 'tflite' | 'keras' | 'none'
             logger.info("Active backend: [%s] | Window: %d steps", self.backend.upper(), self.window_size)
 
         except Exception as e:

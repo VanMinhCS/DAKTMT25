@@ -38,6 +38,14 @@ class AppConfig(BaseModel):
                                         description="Ngưỡng confidence YOLO (0.0–1.0)")
     inference_imgsz:      int   = Field(640, ge=320, le=1280,
                                         description="Kích thước ảnh khi inference (px)")
+    iou_threshold:        float = Field(0.45, ge=0.0, le=1.0,
+                                        description="NMS IoU threshold (0.0–1.0)")
+
+    # ── Performance Tuning ────────────────────────────────────────────────
+    camera_fps_limit: int = Field(15, ge=1, le=120,
+                                   description="FPS tối đa camera push vào AI queue")
+    ai_skip_frames:   int = Field(1,  ge=1, le=10,
+                                   description="Xử lý 1 frame mỗi N frame để giảm tải AI")
 
     # ── RTSP Streaming ─────────────────────────────────────────────────────
     rtsp_stream_name: str  = "mystream"
@@ -55,6 +63,7 @@ class AppConfig(BaseModel):
     plantId:  str = "unknown-plant"
 
     # ── Feature Flags ─────────────────────────────────────────────────────
+    show_local_window: bool = False
     enable_camera:  bool = True
     enable_sensor:  bool = True
     enable_mqtt:    bool = True
@@ -122,7 +131,10 @@ class AppConfig(BaseModel):
             f"  Plant       : {self.plantId}",
             f"  Model       : {self.model_path}",
             f"  Confidence  : {self.confidence_threshold}",
+            f"  IOU thresh  : {self.iou_threshold}",
             f"  Img size    : {self.inference_imgsz}px",
+            f"  Cam FPS lim : {self.camera_fps_limit}",
+            f"  AI skip N   : {self.ai_skip_frames}",
             f"  MQTT host   : {self.thingsboard_host or '(not set)'}",
             f"  Send every  : {self.send_interval_seconds}s",
             f"  LSTM window : {self.lstm_window_size} steps",

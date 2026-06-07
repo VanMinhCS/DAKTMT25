@@ -48,7 +48,16 @@ class Camera:
         except Exception:
             cam_source = cam_id
 
-        self.cap = cv2.VideoCapture(cam_source)
+        # Thử DSHOW trước trên Windows để tránh lỗi MSMF
+        import sys
+        if sys.platform == "win32":
+            self.cap = cv2.VideoCapture(cam_source, cv2.CAP_DSHOW)
+            if not self.cap.isOpened():
+                logger.warning("DSHOW failed, falling back to default backend...")
+                self.cap = cv2.VideoCapture(cam_source)
+        else:
+            self.cap = cv2.VideoCapture(cam_source)
+
         if not self.cap.isOpened():
             logger.error("Could not open camera: %s", cam_source)
             return
@@ -66,7 +75,22 @@ class Camera:
             self.fps = 20
 
     def _capture_loop(self):
+        """
+        Vòng lặp capture với frame throttle thông minh.
+
+        Thay vì sleep cứng 1/fps (không chính xác, lãng phí CPU),
+        ta đo thời gian thực của mỗi vòng lặp và sleep phần còn thiếu.
+        Điều này giúp camera không oversaturate queue của AI engine.
+
+        Mỗi frame được .copy() trước khi push để tránh race condition:
+        AI engine có thể resize/annotate frame trong khi camera capture frame tiếp theo.
+        """
+        fps_limit  = self.config.get("camera_fps_limit", 15)
+        frame_time = 1.0 / max(1, fps_limit)   # giây/frame theo giới hạn config
+
         while self.running:
+            t_start = time.perf_counter()
+
             if not self.cap or not self.cap.isOpened():
                 time.sleep(1)
                 continue
@@ -79,11 +103,20 @@ class Camera:
                 self._init_camera()
                 continue
 
+            # Copy frame trước khi push để tránh race condition với các module
+            # có thể annotate/resize trên cùng ndarray (vd: AIEngine, LocalViewer)
+            frame_copy = frame.copy()
+
             # Phân phối frame cho tất cả các hàng đợi đã đăng ký
             for q in self.queues:
                 try:
-                    q.put_nowait(frame)
+                    q.put_nowait(frame_copy)
                 except queue.Full:
                     pass
 
-            time.sleep(1 / self.fps)
+            # Throttle thông minh: sleep chỉ phần thời gian còn lại
+            # Nếu cap.read() đã tốn nhiều thời gian hơn frame_time → không sleep
+            elapsed = time.perf_counter() - t_start
+            sleep_t = frame_time - elapsed
+            if sleep_t > 0:
+                time.sleep(sleep_t)

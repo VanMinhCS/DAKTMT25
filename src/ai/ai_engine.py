@@ -197,12 +197,16 @@ class AIEngine:
 
         self.running             = False
         self.input_queue         = queue.Queue(maxsize=1)
-        self.output_queue        = queue.Queue(maxsize=1)
+        self.output_queues       = []
         self.detection_aggregator = {}
         self.aggregator_lock     = threading.Lock()
         self.colors              = {}
         self.thread              = None
         self.lock                = threading.Lock()
+        self._frame_counter      = 0   # dùng cho ai_skip_frames
+
+    def add_output_queue(self, q: queue.Queue):
+        self.output_queues.append(q)
 
     # ── Lifecycle ─────────────────────────────────────────────────────────────
 
@@ -224,14 +228,29 @@ class AIEngine:
         try:
             model_path = self.config.get("model_path", "models/yolo/plant_disease_v4.onnx")
 
-            # Ưu tiên CPUExecutionProvider để nhẹ, không cần CUDA
+            # ── Session Options: tối ưu cho CPU (RPi4 có 4 core) ─────────────
+            opts = ort.SessionOptions()
+
+            # ORT_ENABLE_ALL: bật toàn bộ graph optimization (fold constants,
+            # fuse operators...) — quan trọng cho INT8 quantized model
+            opts.graph_optimization_level = ort.GraphOptimizationLevel.ORT_ENABLE_ALL
+
+            # Số thread cho phép tính toán bên trong 1 operator (vd: MatMul, Conv)
+            # RPi4 có 4 core → 4 là tối ưu
+            # Máy local (>4 core) sẽ tự động không vượt quá số core thực tế
+            opts.intra_op_num_threads = 4
+
+            # Số thread để chạy song song nhiều operator độc lập
+            # Để 1 tránh overhead scheduling trên thiết bị nhỏ
+            opts.inter_op_num_threads = 1
+
             providers = ["CPUExecutionProvider"]
-            self.session    = ort.InferenceSession(model_path, providers=providers)
+            self.session    = ort.InferenceSession(model_path, sess_options=opts,
+                                                   providers=providers)
             self.input_name = self.session.get_inputs()[0].name
 
             # Số class = output shape[-2] - 4 (4 cho bbox)
             out_shape = self.session.get_outputs()[0].shape
-            # output thường là [1, 4+C, N] hoặc [1, N, 4+C]
             # YOLOv8/v11 xuất [1, 4+C, N] → dim 1 là 4+C
             self.num_classes = int(out_shape[1]) - 4
 
@@ -243,9 +262,18 @@ class AIEngine:
                     os.path.splitext(model_path)[0]
                 )
 
+            # ── Warm-up: chạy dummy inference để ONNX compile computation graph ──
+            # ONNX Runtime lazy-compile: lần đầu session.run() tốn 3–5s để JIT
+            # optimize graph. Warm-up ở đây để chuyển thời gian chờ đó vào lúc
+            # khởi động (một lần) thay vì để user thấy delay lần đầu tiên.
+            imgsz = self.config.get("inference_imgsz", 640)
+            dummy = np.zeros((1, 3, imgsz, imgsz), dtype=np.float32)
+            _t_warmup = time.perf_counter()
+            self.session.run(None, {self.input_name: dummy})
+            _warmup_ms = (time.perf_counter() - _t_warmup) * 1000
             logger.info(
-                "ONNX model loaded: %s | classes=%d | provider=%s",
-                model_path, self.num_classes, providers[0]
+                "ONNX model loaded: %s | classes=%d | provider=%s | warm-up=%.0fms",
+                model_path, self.num_classes, providers[0], _warmup_ms
             )
         except Exception as e:
             logger.error("Model load error: %s", e)
@@ -259,9 +287,12 @@ class AIEngine:
         """
         imgsz    = self.config.get("inference_imgsz", 640)
         conf_thr = self.config.get("confidence_threshold", 0.65)
-        iou_thr  = 0.45
+        iou_thr  = self.config.get("iou_threshold", 0.45)  # đọc từ config, không hardcode
 
+        # ── Đo latency preprocessing riêng ───────────────────────────────────
+        _t_pre   = time.perf_counter()
         blob, scale, pad = _preprocess(frame, imgsz)
+        _pre_ms  = (time.perf_counter() - _t_pre) * 1000.0
 
         with self.lock:
             if self.session is None:
@@ -291,6 +322,7 @@ class AIEngine:
             yolo_ms=_yolo_ms,
             num_boxes=num_boxes,
             avg_conf=avg_conf,
+            pre_ms=_pre_ms,         # đo latency preprocess (hỗ trợ luận văn)
         )
 
         return results
@@ -298,19 +330,36 @@ class AIEngine:
     # ── Worker Loop (camera stream) ───────────────────────────────────────────
 
     def _worker_loop(self):
+        """
+        Vòng lầp chạy trong thread riêng, lấy frame từ input_queue và chạy inference.
+
+        ai_skip_frames (N): Xử lý 1 frame, bỏ qua N-1 frame tiếp theo.
+        Ví dụ: N=1 → xử lý tất cả; N=2 → xử lý 1, skip 1, xử lý 1, skip 1...
+        Frame bị skip được đẩy vào output_queues với result rỗng ([] ) để video vẫn chạy mượt.
+        """
+        skip_n = max(1, self.config.get("ai_skip_frames", 1))
+
         while self.running:
             try:
                 frame = self.input_queue.get(timeout=1)
-                detections = self._run_inference(frame)
+                self._frame_counter += 1
+
+                # N=1: luôn inference; N=2: inference 1 trong 2 frame; ...
+                if self._frame_counter % skip_n == 0:
+                    detections = self._run_inference(frame)
+                else:
+                    # Frame bị skip: đẩy kết quả rỗng để viewer/streamer không bị starve
+                    detections = []
 
                 detections_drawing  = [(n, c, b, i) for n, c, b, i in detections]
                 detections_sending  = [(n, c) for n, c, b, i in detections]
 
-                # Đẩy kết quả vẽ ra queue (cho Streamer)
-                try:
-                    self.output_queue.put_nowait(detections_drawing)
-                except queue.Full:
-                    pass
+                # Đẩy kết quả vẽ ra các queue đầu ra
+                for q in self.output_queues:
+                    try:
+                        q.put_nowait(detections_drawing)
+                    except queue.Full:
+                        pass
 
                 # Cập nhật bộ đếm (cho Network gửi báo cáo định kỳ)
                 if detections_sending:

@@ -92,17 +92,21 @@ def _write(event_type: str, data: dict) -> None:
 # Public API — log functions
 # ══════════════════════════════════════════════════════════════════════════════
 
-def log_ai_performance(yolo_ms: float, num_boxes: int, avg_conf: float) -> None:
+def log_ai_performance(yolo_ms: float, num_boxes: int, avg_conf: float,
+                       pre_ms: float = 0.0) -> None:
     """
     Ghi kết quả một lần chạy YOLO inference.
 
     Args:
-        yolo_ms:   Thời gian inference (milli-giây).
+        yolo_ms:   Thời gian inference thuần (milli-giây).
         num_boxes: Số bounding box vượt ngưỡng confidence.
         avg_conf:  Trung bình confidence của các box tìm được (0.0 nếu không có).
+        pre_ms:    Thời gian preprocessing letterbox+normalize (milli-giây).
     """
     _write(EVT_AI_PERF, {
         "yolo_ms":   round(yolo_ms, 2),
+        "pre_ms":    round(pre_ms, 2),
+        "total_ms":  round(yolo_ms + pre_ms, 2),
         "num_boxes": num_boxes,
         "avg_conf":  round(avg_conf, 4),
     })

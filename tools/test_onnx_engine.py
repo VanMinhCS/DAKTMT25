@@ -72,9 +72,10 @@ print("  TEST 4 · AIEngine._load_model")
 print("═══════════════════════════════════════════")
 
 config = {
-    "model_path":           "models/yolo/plant_disease_v4.onnx",
+    "model_path":           "models/yolo/plant_disease_int8.onnx",  # khớp config.json
     "confidence_threshold": 0.65,
     "inference_imgsz":      640,
+    "iou_threshold":        0.45,
 }
 
 engine = AIEngine(config)

@@ -107,10 +107,10 @@ class IoTClient:
     def _subscribe_topics(self):
         """Đăng ký lại tất cả topics sau mỗi lần connect/reconnect."""
         self.client.subscribe('v1/devices/me/attributes')
-        # Yêu cầu shared attributes từ server
+        # Yêu cầu shared attributes từ server (thêm firmware_sha256 cho OTA verify)
         self.client.publish(
             'v1/devices/me/attributes/request/1',
-            '{"sharedKeys":"target_version,firmware_url"}'
+            '{"sharedKeys":"target_version,firmware_url,firmware_sha256"}'
         )
 
     # ── Reconnect logic ───────────────────────────────────────────────────────
@@ -196,7 +196,8 @@ class IoTClient:
             if data.get('target_version') and self.on_update_received:
                 self.on_update_received(
                     data.get('target_version'),
-                    data.get('firmware_url')
+                    data.get('firmware_url'),
+                    data.get('firmware_sha256', ''),   # truyền sha256 để verify
                 )
 
             # ── Test Image ────────────────────────────────────────────────

@@ -32,6 +32,10 @@ def _import_streamer():
     from src.network.streamer import RTSPStreamer
     return RTSPStreamer
 
+def _import_local_viewer():
+    from src.services.local_viewer import LocalViewer
+    return LocalViewer
+
 def _import_sensor_server():
     from src.hardware.sensor_server import SensorServer
     return SensorServer
@@ -82,11 +86,12 @@ class MainApp:
         metrics.init(self.config)
 
         # ── Feature flags ──────────────────────────────────────────────────
-        self.f_camera   = self.config.get("enable_camera",   True)
-        self.f_sensor   = self.config.get("enable_sensor",   True)
-        self.f_mqtt     = self.config.get("enable_mqtt",     True)
-        self.f_streamer = self.config.get("enable_streamer", True)
-        self.f_lstm     = self.config.get("enable_lstm",     True)
+        self.f_camera         = self.config.get("enable_camera",   True)
+        self.f_sensor         = self.config.get("enable_sensor",   True)
+        self.f_mqtt           = self.config.get("enable_mqtt",     True)
+        self.f_streamer       = self.config.get("enable_streamer", True)
+        self.f_local_viewer   = self.config.get("show_local_window", False)
+        self.f_lstm           = self.config.get("enable_lstm",     True)
         self._print_flags()
 
         # ── Shared sensor cache ────────────────────────────────────────────
@@ -99,6 +104,7 @@ class MainApp:
         self.ai_engine     = self._init_ai_engine()
         self.iot_client    = self._init_iot_client()
         self.streamer      = self._init_streamer()
+        self.local_viewer  = self._init_local_viewer()
         self.sensor_server = self._init_sensor_server()
         self.lstm          = self._init_lstm()
 
@@ -150,6 +156,11 @@ class MainApp:
             return None
         return _import_streamer()(self.config)
 
+    def _init_local_viewer(self):
+        if not (self.f_local_viewer and self.f_camera):
+            return None
+        return _import_local_viewer()(self.config, stop_callback=self.stop)
+
     def _init_sensor_server(self):
         if not self.f_sensor:
             return None
@@ -170,10 +181,16 @@ class MainApp:
             self.camera.add_queue(self.ai_engine.input_queue)
         if self.camera and self.streamer:
             self.camera.add_queue(self.streamer.frame_queue)
+        if self.camera and self.local_viewer:
+            self.camera.add_queue(self.local_viewer.frame_queue)
         if self.camera:
             self.camera.add_queue(self.frame_cacher)
+            
         if self.ai_engine and self.streamer:
-            self.streamer.result_queue = self.ai_engine.output_queue
+            self.ai_engine.add_output_queue(self.streamer.result_queue)
+        if self.ai_engine and self.local_viewer:
+            self.ai_engine.add_output_queue(self.local_viewer.result_queue)
+            
         if self.iot_client:
             self.iot_client.on_test_image_received = self.handle_test_image
             self.iot_client.on_update_received     = self.handle_ota_update
@@ -186,11 +203,12 @@ class MainApp:
         print("=" * 50)
         print("  FEATURE FLAGS")
         print("=" * 50)
-        print(f"  Camera   : {'[ON]' if self.f_camera   else '[OFF]'}")
-        print(f"  Sensor   : {'[ON]' if self.f_sensor   else '[OFF]'}")
-        print(f"  MQTT     : {'[ON]' if self.f_mqtt     else '[OFF]'}")
-        print(f"  Streamer : {'[ON]' if self.f_streamer else '[OFF]'}")
-        print(f"  LSTM     : {'[ON]' if self.f_lstm     else '[OFF]'}")
+        print(f"  Camera       : {'[ON]' if self.f_camera       else '[OFF]'}")
+        print(f"  Sensor       : {'[ON]' if self.f_sensor       else '[OFF]'}")
+        print(f"  MQTT         : {'[ON]' if self.f_mqtt         else '[OFF]'}")
+        print(f"  Streamer     : {'[ON]' if self.f_streamer     else '[OFF]'}")
+        print(f"  Local Viewer : {'[ON]' if self.f_local_viewer else '[OFF]'}")
+        print(f"  LSTM         : {'[ON]' if self.f_lstm         else '[OFF]'}")
         print("=" * 50)
 
     def start(self):
@@ -198,6 +216,7 @@ class MainApp:
         if self.camera:        self.camera.start()
         if self.ai_engine:     self.ai_engine.start()
         if self.streamer:      self.streamer.start()
+        if self.local_viewer:  self.local_viewer.start()
         if self.iot_client:    self.iot_client.start()
         if self.sensor_server: self.sensor_server.start()
         self.report_thread.start()
@@ -212,10 +231,11 @@ class MainApp:
     def stop(self):
         logger.info("Stopping System...")
         self.running = False
-        if self.camera:     self.camera.stop()
-        if self.ai_engine:  self.ai_engine.stop()
-        if self.streamer:   self.streamer.stop()
-        if self.iot_client: self.iot_client.stop()
+        if self.camera:       self.camera.stop()
+        if self.ai_engine:    self.ai_engine.stop()
+        if self.streamer:     self.streamer.stop()
+        if self.local_viewer: self.local_viewer.stop()
+        if self.iot_client:   self.iot_client.stop()
 
         logger.info("System Stopped.")
 
@@ -237,10 +257,12 @@ class MainApp:
                 self.iot_client.send_telemetry({"image_report": result})
                 logger.info("Test image result sent.")
 
-    def handle_ota_update(self, target_version, url):
+    def handle_ota_update(self, target_version, url, sha256=""):
         """Callback khi nhận lệnh cập nhật OTA từ ThingsBoard."""
         self.ota_manager.handle_update(
-            target_version, url, stop_callback=self.stop
+            target_version, url,
+            expected_sha256=sha256,
+            stop_callback=self.stop,
         )
 
     def update_sensor_data(self, data):
@@ -278,49 +300,52 @@ class MainApp:
                     return
                 time.sleep(1)
 
-            # 1. Kết quả YOLO
-            plant_report = self.report_builder.build_plant_report(self.ai_engine)
+            try:
+                # 1. Kết quả YOLO
+                plant_report = self.report_builder.build_plant_report(self.ai_engine)
 
-            # 2. Dữ liệu cảm biến hiện tại
-            with self.sensor_lock:
-                sensors = self.latest_sensor_data or DEFAULT_SENSORS
+                # 2. Dữ liệu cảm biến hiện tại
+                with self.sensor_lock:
+                    sensors = self.latest_sensor_data or DEFAULT_SENSORS
 
-            # 3. Dự đoán LSTM
-            sensor_health = self.report_builder.build_sensor_health(self.lstm)
+                # 3. Dự đoán LSTM
+                sensor_health = self.report_builder.build_sensor_health(self.lstm)
 
-            # 4. Cảnh báo tổng hợp YOLO + LSTM
-            lstm_status_str = (
-                sensor_health.get("lstm_status")
-                if sensor_health and sensor_health.get("lstm_ready") else None
-            )
-            lstm_conf = (
-                sensor_health.get("lstm_confidence", 0.0) / 100.0
-                if sensor_health and sensor_health.get("lstm_ready") else 0.0
-            )
-            alert = self.alert_engine.build(
-                yolo_status=plant_report["stable_health_status"],
-                yolo_conf=plant_report.get("yolo_confidence", 0.0),
-                lstm_status=lstm_status_str,
-                lstm_conf=lstm_conf,
-            )
+                # 4. Cảnh báo tổng hợp YOLO + LSTM
+                lstm_status_str = (
+                    sensor_health.get("lstm_status")
+                    if sensor_health and sensor_health.get("lstm_ready") else None
+                )
+                lstm_conf = (
+                    sensor_health.get("lstm_confidence", 0.0) / 100.0
+                    if sensor_health and sensor_health.get("lstm_ready") else 0.0
+                )
+                alert = self.alert_engine.build(
+                    yolo_status=plant_report["stable_health_status"],
+                    yolo_conf=plant_report.get("yolo_confidence", 0.0),
+                    lstm_status=lstm_status_str,
+                    lstm_conf=lstm_conf,
+                )
 
-            # 5. Build payload cuối & gửi
-            device_report = self.report_builder.build_device_report(
-                self.config, plant_report, sensors, alert, sensor_health,
-                frame=self.frame_cacher.get_latest()
-            )
-            if self.iot_client:
-                self.iot_client.send_telemetry({"device_report": device_report})
-                
+                # 5. Build payload cuối & gửi
+                device_report = self.report_builder.build_device_report(
+                    self.config, plant_report, sensors, alert, sensor_health,
+                    frame=self.frame_cacher.get_latest()
+                )
+                if self.iot_client:
+                    self.iot_client.send_telemetry({"device_report": device_report})
 
+                lstm_info = (
+                    f"LSTM: {sensor_health['lstm_status']}"
+                    if sensor_health else "LSTM: OFF"
+                )
+                logger.info("Report sent | YOLO: %s | %s | Alert: %s",
+                            plant_report['stable_health_status'],
+                            lstm_info, alert['level'])
 
-            lstm_info = (
-                f"LSTM: {sensor_health['lstm_status']}"
-                if sensor_health else "LSTM: OFF"
-            )
-            logger.info("Report sent | YOLO: %s | %s | Alert: %s",
-                        plant_report['stable_health_status'],
-                        lstm_info, alert['level'])
+            except Exception as e:
+                # Log lỗi nhưng KHÔNG để thread chết — chu kỳ tiếp theo vẫn chạy
+                logger.error("Report loop error (will retry next cycle): %s", e)
 
     # ──────────────────────────────────────────────────────────────────────
     # Metrics loop — ghi tài nguyên hệ thống định kỳ (không dùng psutil)

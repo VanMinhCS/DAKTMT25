@@ -33,7 +33,7 @@ class RTSPStreamer:
         rtsp_url = f"rtsp://localhost:8554/{self.config.get('rtsp_stream_name', 'mystream')}"
         width  = 640
         height = 480
-        fps    = 20
+        fps    = self.config.get("camera_fps_limit", 15)   # đồng bộ với camera throttle
 
         # Đợi frame đầu tiên để lấy kích thước thực tế
         try:

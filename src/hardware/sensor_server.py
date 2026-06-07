@@ -28,8 +28,7 @@ class SensorServer:
         self.running = False
         self.thread = None
         self.data_callback = data_callback
-
-        # Đăng ký route
+        # Đăng ký routes
         self.app.add_url_rule(
             '/api/sensor', 'receive_sensor_data',
             self.receive_sensor_data, methods=['POST']
@@ -88,9 +87,23 @@ class SensorServer:
         logger.info("HTTP Sensor Server started on port %s", self.port)
 
     def _run_server(self):
-        # host='0.0.0.0' để nhận request từ mọi IP trong mạng LAN
+        """
+        Chạy Flask với app.run() chuẩn — an toàn trên Yocto stripped build.
+
+        Dùng app.run() thay vì werkzeug.make_server vì:
+          - werkzeug.serving có thể bị lược bỏ trong một số Yocto recipe tối giản
+          - Không cần graceful shutdown phức tạp vì:
+            · OTA dùng os.execv() → replace toàn bộ process → OS đóng tất cả socket
+            · Normal stop: daemon thread bị kill khi main thread kết thúc → OS đóng socket
+        """
         self.app.run(host='0.0.0.0', port=self.port, debug=False, use_reloader=False)
 
     def stop(self):
+        """
+        Đánh dấu dừng. Flask daemon thread sẽ bị OS thu hồi khi:
+          - Main process exit bình thường (KeyboardInterrupt)
+          - os.execv() được gọi trong OTA (replace process → đóng tất cả fd)
+        Trong cả 2 trường hợp, port được giải phóng tự động bởi OS.
+        """
         self.running = False
         logger.info("Sensor Server stopped.")
