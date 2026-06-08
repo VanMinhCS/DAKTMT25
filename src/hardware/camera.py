@@ -49,8 +49,13 @@ class Camera:
             cam_source = cam_id
 
         # Thử DSHOW trước trên Windows để tránh lỗi MSMF
+        # — chỉ áp dụng cho device index (số nguyên), KHÔNG dùng cho URL
+        # vì DSHOW không hỗ trợ HTTP/RTSP stream
         import sys
-        if sys.platform == "win32":
+        is_url = isinstance(cam_source, str) and (
+            cam_source.startswith("http") or cam_source.startswith("rtsp")
+        )
+        if sys.platform == "win32" and not is_url:
             self.cap = cv2.VideoCapture(cam_source, cv2.CAP_DSHOW)
             if not self.cap.isOpened():
                 logger.warning("DSHOW failed, falling back to default backend...")

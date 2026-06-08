@@ -99,6 +99,11 @@ class MainApp:
         self.sensor_lock        = threading.Lock()
         self.frame_cacher       = FrameCacher()
 
+        # ── LSTM update throttle ───────────────────────────────────────────
+        # Chỉ feed vào LSTM đúng interval lúc train (mặc định 3600s = 1h).
+        # Khi chưa đủ window_size bước → predict() tự trả None → skip.
+        self._lstm_last_update   = 0.0  # epoch time của lần update gần nhất
+
         # ── Hardware / network modules ─────────────────────────────────────
         self.camera        = self._init_camera()
         self.ai_engine     = self._init_ai_engine()
@@ -284,8 +289,21 @@ class MainApp:
         with self.sensor_lock:
             self.latest_sensor_data = normalized
 
+        # ── LSTM throttle: chỉ update đúng interval lúc train ─────────────
+        # Mục đích: tránh feature distribution shift (train trên dữ liệu giờ
+        # nhưng feed mỗi 60s → LSTM thấy 24 phút thay vì 24 giờ).
+        # Khi buffer chưa đủ window_size → predict() tự trả (None, None)
+        # → report_builder trả "Collecting data..." → alert fallback về YOLO.
         if self.lstm:
-            self.lstm.update(normalized)
+            lstm_interval = self.config.get("lstm_update_interval_seconds", 3600)
+            now = time.time()
+            if now - self._lstm_last_update >= lstm_interval:
+                self.lstm.update(normalized)
+                self._lstm_last_update = now
+                logger.debug(
+                    "LSTM buffer updated: %d/%d steps",
+                    len(self.lstm.buffer), self.lstm.window_size
+                )
 
     # ──────────────────────────────────────────────────────────────────────
     # Report loop — thu thập, build và gửi báo cáo định kỳ

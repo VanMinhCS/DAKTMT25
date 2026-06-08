@@ -1,6 +1,7 @@
 import numpy as np
 import pickle
 import collections
+import threading
 import time
 from ..core.logger import get_logger
 from ..core import metrics
@@ -79,7 +80,8 @@ class LSTMPredictor:
             "Potassium":        config.get("lstm_default_potassium",       210.0),
         }
 
-        self.buffer = collections.deque(maxlen=self.window_size)
+        self.buffer      = collections.deque(maxlen=self.window_size)
+        self._lock       = threading.Lock()   # bảo vệ buffer giữa update() và predict()
         self._load()
 
     # ------------------------------------------------------------------
@@ -149,6 +151,9 @@ class LSTMPredictor:
              [{"type": "soil_moisture", "value": 72}, ...]
           2. Dict trực tiếp với FeatureKey:
              {"Soil_Moisture": 72, "Soil_Temperature": 18, ...}
+
+        Thread-safe: giữ lock khi append vào buffer để predict() không
+        đọc buffer ở trạng thái dở dang.
         """
         if not sensor_data:
             return
@@ -177,26 +182,34 @@ class LSTMPredictor:
 
         # Build feature vector (dùng default nếu thiếu)
         row = [parsed.get(k, self.defaults[k]) for k in self.FEATURE_KEYS]
-        self.buffer.append(row)
+        with self._lock:
+            self.buffer.append(row)
 
     # ------------------------------------------------------------------
     def predict(self):
         """
         Trả về (label: str, confidence: float) hoặc (None, None) nếu chưa đủ data.
         Hỗ trợ cả TFLite interpreter và Keras model.
+
+        Thread-safe: snapshot buffer dưới lock → inference chạy ngoài lock
+        để không block update() trong suốt quá trình tính toán.
         """
         if self.interpreter is None and self.model is None:
             return None, None
-        if len(self.buffer) < self.window_size:
-            remaining = self.window_size - len(self.buffer)
-            logger.debug("Collecting data... (%d more readings needed)", remaining)
-            return None, None
+
+        # ── Snapshot buffer dưới lock (nhanh) ─────────────────────────────
+        with self._lock:
+            if len(self.buffer) < self.window_size:
+                remaining = self.window_size - len(self.buffer)
+                logger.debug("Collecting data... (%d more readings needed)", remaining)
+                return None, None
+            seq_raw = list(self.buffer)   # snapshot: list of rows, thoát lock ngay
 
         try:
             import warnings
             with warnings.catch_warnings():
                 warnings.simplefilter("ignore", UserWarning)
-                seq = np.array(self.buffer, dtype=np.float32)   # (W, 7)
+                seq = np.array(seq_raw, dtype=np.float32)       # (W, 7)
                 seq_scaled = self.scaler.transform(seq)         # (W, 7)
 
             X = seq_scaled.reshape(
@@ -237,13 +250,15 @@ class LSTMPredictor:
     # ------------------------------------------------------------------
     def reset_buffer(self):
         """Xoá toàn bộ buffer (dùng khi reset test)."""
-        self.buffer.clear()
+        with self._lock:
+            self.buffer.clear()
         logger.debug("Buffer cleared.")
 
     @property
     def is_ready(self) -> bool:
         """True khi buffer đã đủ window_size bước."""
-        return len(self.buffer) >= self.window_size
+        with self._lock:
+            return len(self.buffer) >= self.window_size
 
     @property
     def backend(self) -> str:
