@@ -107,15 +107,24 @@ class AlertEngine:
                 level = "NORMAL"
         
         else:
-            # Fallback (IF-ELSE cũ) nếu file pkl bị xóa hoặc lỗi
-            lstm_bad = lstm_group in ("disease_risk", "nutrient_deficient")
-            if yolo_status == "Warning":
-                level, status = "CRITICAL" if lstm_group == "disease_risk" else "WARNING", "critical"
-            elif yolo_status == "Checking":
-                level, status = "PRE_WARNING" if lstm_bad else "NORMAL", "pre-warning"
-            elif yolo_status == "Healthy" or yolo_status == "No_Detection":
-                level, status = "PRE_WARNING" if lstm_bad else "NORMAL", "normal"
-            message = "[Fallback] Cảnh báo bằng cơ chế IF-ELSE do không tìm thấy Model."
+            # Fallback (IF-ELSE) dựa theo 5 cấp độ chuẩn nếu file pkl bị xóa hoặc lỗi
+            if lstm_group == "healthy" and lstm_conf >= 0.85 and yolo_status == "Warning" and yolo_conf >= 0.85:
+                level = "VERIFICATION"
+                status = "verify"
+            elif lstm_group == "disease_risk" and lstm_conf >= 0.50 and yolo_status == "Warning" and yolo_conf >= 0.50:
+                level = "CRITICAL"
+                status = "critical"
+            elif yolo_status == "Warning" and yolo_conf >= 0.75:
+                level = "WARNING"
+                status = "warning"
+            elif (lstm_group in ["disease_risk", "nutrient_deficient"] and lstm_conf >= 0.50) or \
+                 (yolo_status == "Warning" and 0.50 <= yolo_conf < 0.75):
+                level = "PRE_WARNING"
+                status = "pre-warning"
+            else:
+                level = "NORMAL"
+                status = "normal"
+            message = "[Fallback] Cảnh báo bằng cơ chế IF-ELSE chuẩn do không tìm thấy Model."
 
         # ── Ghi metrics khi mức cảnh báo thay đổi ────────────────────────
         if level != self._last_level:

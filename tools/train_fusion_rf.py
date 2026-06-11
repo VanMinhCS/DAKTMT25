@@ -25,60 +25,55 @@ LSTM_MAP = {
 # 0: NORMAL, 1: VERIFICATION, 2: PRE_WARNING, 3: WARNING, 4: CRITICAL
 LEVEL_NAMES = ["NORMAL", "VERIFICATION", "PRE_WARNING", "WARNING", "CRITICAL"]
 
-def generate_mock_data(num_samples=1000):
-    """Sinh dữ liệu giả lập cho Random Forest học (Ưu tiên LSTM)."""
+def generate_mock_data(num_samples=10000):
+    """Sinh dữ liệu giả lập cân bằng cho Random Forest học (5 cấp độ chuẩn)."""
     X = []
     y = []
     
     for _ in range(num_samples):
-        yolo_str = random.choice(list(YOLO_MAP.keys()))
-        lstm_str = random.choice(list(LSTM_MAP.keys()))
+        # Ép tỷ lệ các trường hợp để cân bằng Class
+        rand_case = random.random()
         
-        yolo_conf = round(random.uniform(0.3, 0.99), 2)
-        lstm_conf = round(random.uniform(0.3, 0.99), 2)
+        if rand_case < 0.2:
+            # Ép case VERIFICATION (Mâu thuẫn gắt)
+            yolo_str = "Warning"
+            lstm_str = "healthy"
+            yolo_conf = random.uniform(0.85, 0.99)
+            lstm_conf = random.uniform(0.85, 0.99)
+        elif rand_case < 0.4:
+            # Ép case CRITICAL
+            yolo_str = "Warning"
+            lstm_str = "disease_risk"
+            yolo_conf = random.uniform(0.50, 0.99)
+            lstm_conf = random.uniform(0.50, 0.99)
+        elif rand_case < 0.6:
+            # Ép case WARNING (đất bình thường nhưng lá bệnh)
+            yolo_str = "Warning"
+            lstm_str = random.choice(["healthy", "unknown", "nutrient_deficient"])
+            yolo_conf = random.uniform(0.75, 0.99)
+            lstm_conf = random.uniform(0.3, 0.84) # Đất không quá tốt
+        else:
+            # Các case ngẫu nhiên khác
+            yolo_str = random.choice(list(YOLO_MAP.keys()))
+            lstm_str = random.choice(list(LSTM_MAP.keys()))
+            yolo_conf = round(random.uniform(0.3, 0.99), 2)
+            lstm_conf = round(random.uniform(0.3, 0.99), 2)
         
         yolo_val = YOLO_MAP[yolo_str]
         lstm_val = LSTM_MAP[lstm_str]
         
-        # ── LOGIC CHUYÊN GIA (THIÊN VỊ LSTM) ──
-        level = 0 # NORMAL
-        
-        lstm_bad = lstm_str in ["disease_risk", "nutrient_deficient"]
-        
-        if lstm_bad and lstm_conf >= 0.7:
-            # LSTM rất chắc chắn là môi trường có rủi ro cao
-            if yolo_str == "Warning" and yolo_conf >= 0.6:
-                level = 4 # CRITICAL
-            else:
-                level = 3 # WARNING (Bỏ qua YOLO, tin LSTM)
-                
-        elif lstm_bad and lstm_conf < 0.7:
-            # LSTM nghi ngờ môi trường có vấn đề nhưng chưa chắc chắn
-            if yolo_str == "Warning" and yolo_conf >= 0.7:
-                level = 3 # WARNING (YOLO gánh)
-            elif yolo_str in ["Checking", "Warning"]:
-                level = 2 # PRE_WARNING
-            else:
-                level = 2 # PRE_WARNING (Vì LSTM cảnh báo)
-
-        elif lstm_str == "healthy" and lstm_conf >= 0.7:
-            # LSTM cực kỳ chắc chắn là môi trường rất tốt
-            if yolo_str == "Warning":
-                if yolo_conf >= 0.8:
-                    level = 1 # VERIFICATION (YOLO quá tự tin, cần kiểm tra lại, nhưng TUYỆT ĐỐI không Critical)
-                else:
-                    level = 0 # NORMAL (Bỏ qua YOLO vì conf thấp)
-            else:
-                level = 0 # NORMAL
-
+        # ── LOGIC CHUẨN: 5 CẤP ĐỘ ──
+        if lstm_str == "healthy" and lstm_conf >= 0.85 and yolo_str == "Warning" and yolo_conf >= 0.85:
+            level = 1 # VERIFICATION
+        elif lstm_str == "disease_risk" and lstm_conf >= 0.50 and yolo_str == "Warning" and yolo_conf >= 0.50:
+            level = 4 # CRITICAL
+        elif yolo_str == "Warning" and yolo_conf >= 0.75:
+            level = 3 # WARNING
+        elif (lstm_str in ["disease_risk", "nutrient_deficient"] and lstm_conf >= 0.50) or \
+             (yolo_str == "Warning" and 0.50 <= yolo_conf < 0.75):
+            level = 2 # PRE_WARNING
         else:
-            # Các trường hợp LSTM healthy (nhưng conf thấp) hoặc unknown
-            if yolo_str == "Warning":
-                level = 3 if yolo_conf >= 0.6 else 1 # WARNING hoặc VERIFICATION
-            elif yolo_str == "Checking":
-                level = 2 if yolo_conf >= 0.7 else 0 # PRE_WARNING
-            else:
-                level = 0 # NORMAL
+            level = 0 # NORMAL
                 
         X.append([yolo_val, yolo_conf, lstm_val, lstm_conf])
         y.append(level)
